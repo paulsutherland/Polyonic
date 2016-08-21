@@ -36,6 +36,7 @@
     "postinstall": "cd src; npm install",
     "pretest": "gulp build --env=test",
     "release": "gulp release --env=production",
+    "prestart": "cd src; gulp build",
     "start": "gulp start",
     "test": "electron-mocha build"
   }
