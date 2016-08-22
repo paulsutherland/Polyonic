@@ -58,6 +58,7 @@ This application was built using the [Electron Boilerplate Project] (https://git
 - Add Karma and Protractor testing frameworks.  Use [Lathonez's example] (http://lathonez.github.io/2016/ionic-2-unit-testing/) in his [Clicker app] (https://github.com/lathonez/clicker) until the [Angular 2 testing docs] (https://angular.io/docs/ts/latest/testing/) are complete.
 - Add Office 365 add-in code for running Polyonic in Office 365 applications.
 - Add instructions for running Polyonic on the Hololens (Yep we can) :sunglasses:.
+- Remove express as we can run a simple node http server instead.  As it stands this app is just an example of what can de done.
 
 # License
 Released under the MIT license.
