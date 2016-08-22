@@ -6,6 +6,18 @@ An Electron Ionic application shell for creating Web Apps, Progressive Mobile We
 
 This project combines the [Electron Framework] (http://electron.atom.io/) with [Ionic 2](http://ionicframework.com/docs/v2/) and provides a starter for building out an app that can run on either the desktop (macOS, Windows and Linux), a browser or mobile devices (iOS, Android and Windows Phone).  You can use this application to build and run on one or even all of these platforms.
 
+#Motivation
+When working in small teams creating web and mobile applications, it is difficult and time consuming for new team members to pick up the different technologies for each platform. I have also been asked a few questions that motivated me to try Polyonic out: 
+- Is there was way to run this mobile app on the desktop?
+- Can we cache more in the browser for offline working?
+- Can we have one Universal app that can run on the desktop, mobile, web and Office 365?
+
+These questions made me think about the limitations of the browser for off-line editing and caching and was there a way to create a package that can be used to flesh out any app we require, whilst reducing the overhead of having to learn numerous libraries and frameworks for each platform.
+
+And that is why I decided to try combining Electron and Ionic. Is it wise to have a univeral app using a mobile framework? Probably not, but it is fun :wink:
+
+> Please be aware that this project is using beta software and you should give careful consideration about using it in production until the up stream frameworks are stable.  Angular2 is at 'release candidate' status and the Ionic team are waiting for Angular2 to be released before Ionic2 gets a stable production release.  Until then we can expect breaking changes.
+
 
 # Quick start
 The dependencies for this project are [Node.js](https://nodejs.org), [Ionic2 Framework] (http://ionicframework.com/docs/v2/getting-started/installation/) and [Cordova] (https://www.npmjs.com/package/cordova).
@@ -33,10 +45,9 @@ npm run live
 When developing a webapp, progressive app or native mobile app, all of the Ionic CLI commands are available when you are in the src directory, as this is a standard Ionic app.  Change into the src directory and run commands from the Ionic CLI.  
 ```
 cd src
-ionic --help
+ionic
 
 eg:
-
 ionic serve --lab --port 4000 -r
 ```
 
@@ -44,7 +55,9 @@ ionic serve --lab --port 4000 -r
 This application was built using the [Electron Boilerplate Project] (https://github.com/szwacz/electron-boilerplate/blob/master/README.md) for scaffolding out the Electron application, the [Electron Framework] (http://electron.atom.io/) for creating desktop apps and [Ionic 2](http://ionicframework.com/) for the UI and creating Native Mobile Applications, Progressive Mobile Web Applications and Web Applications.
 
 # Todo
-Add Karma and Protractor testing frameworks.  Use [Lathonez's example] (http://lathonez.github.io/2016/ionic-2-unit-testing/) in his [Clicker app] (https://github.com/lathonez/clicker) until the [Angular 2 testing docs] (https://angular.io/docs/ts/latest/testing/) are complete.
+- Add Karma and Protractor testing frameworks.  Use [Lathonez's example] (http://lathonez.github.io/2016/ionic-2-unit-testing/) in his [Clicker app] (https://github.com/lathonez/clicker) until the [Angular 2 testing docs] (https://angular.io/docs/ts/latest/testing/) are complete.
+- Add Office 365 add-in code for running Polyonic in Office 365 applications.
+- Add Instructions for running Polyonic on the Hololens (Yep we can) :sunglasses:.
 
 # License
 Released under the MIT license.
