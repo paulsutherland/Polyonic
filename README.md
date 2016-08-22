@@ -14,7 +14,7 @@ When working in small teams creating web and mobile applications, it is difficul
 
 These questions made me think about the limitations of the browser for off-line editing and caching and was there a way to create a package that can be used to flesh out any app we require, whilst reducing the overhead of having to learn numerous libraries and frameworks for each platform.
 
-And that is why I decided to try combining Electron and Ionic. Is it wise to have a univeral app using a mobile framework? Probably not, but it is fun :wink:
+And that is why I decided to try combining Electron and Ionic. Is it wise to have a universal app using a mobile framework? Probably not, but it is fun :wink:
 
 > Please be aware that this project is using beta software and you should give careful consideration about using it in production until the up stream frameworks are stable.  Angular2 is at 'release candidate' status and the Ionic team are waiting for Angular2 to be released before Ionic2 gets a stable production release.  Until then we can expect breaking changes.
 
@@ -42,7 +42,7 @@ When developing a desktop app, you will want to have the app live reload as you 
 npm run live
 ```
 # Ionic CLI Commands
-When developing a webapp, progressive app or native mobile app, all of the Ionic CLI commands are available when you are in the src directory, as this is a standard Ionic app.  Change into the src directory and run commands from the Ionic CLI.  
+When developing a web app, progressive app or native mobile app, all of the Ionic CLI commands are available when you are in the src directory, as this is a standard Ionic app.  Change into the src directory and run commands from the Ionic CLI.  
 ```
 cd src
 ionic
@@ -57,7 +57,7 @@ This application was built using the [Electron Boilerplate Project] (https://git
 # Todo
 - Add Karma and Protractor testing frameworks.  Use [Lathonez's example] (http://lathonez.github.io/2016/ionic-2-unit-testing/) in his [Clicker app] (https://github.com/lathonez/clicker) until the [Angular 2 testing docs] (https://angular.io/docs/ts/latest/testing/) are complete.
 - Add Office 365 add-in code for running Polyonic in Office 365 applications.
-- Add Instructions for running Polyonic on the Hololens (Yep we can) :sunglasses:.
+- Add instructions for running Polyonic on the Hololens (Yep we can) :sunglasses:.
 
 # License
 Released under the MIT license.
