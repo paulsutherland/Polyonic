@@ -41,10 +41,10 @@
     "build": "gulp build",
     "install-native": "node ./tasks/install_native_module",
     "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy || true",
-    "live": "cd src; gulp serve",
+    "live": "npm run lint; cd src; gulp serve",
     "postinstall": "cd src; npm install",
-    "pretest": "gulp build --env=test",
-    "release": "gulp release --env=production",
+    "pretest": "npm run lint; gulp build --env=test",
+    "release": "npm run lint; gulp release --env=production",
     "prestart": "cd src; gulp build",
     "start": "gulp start",
     "test": "electron-mocha build"
