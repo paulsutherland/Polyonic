@@ -1,10 +1,16 @@
 # Polyonic
 ## The ultimate "Universal App"
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![dependencies Status](https://david-dm.org/paulsutherland/Polyonic/status.svg)](https://david-dm.org/paulsutherland/Polyonic)
+[![devDependencies Status](https://david-dm.org/paulsutherland/Polyonic/dev-status.svg)](https://david-dm.org/paulsutherland/Polyonic?type=dev)
+[![optionalDependencies Status](https://david-dm.org/paulsutherland/Polyonic/optional-status.svg)](https://david-dm.org/paulsutherland/Polyonic?type=optional)
+[![npm version](https://badge.fury.io/js/polyonic.svg)](https://badge.fury.io/js/polyonic)
+[![GitHub version](https://badge.fury.io/gh/paulsutherland%2FPolyonic.svg)](https://badge.fury.io/gh/paulsutherland%2FPolyonic)
 
 ####Build once using web technologies and deploy everywhere!
 An Electron Ionic application shell for creating Web Apps, Progressive Mobile Web Apps, Native Mobile Apps and Desktop Apps.
 
-This project combines the [Electron Framework] (http://electron.atom.io/) with [Ionic 2](http://ionicframework.com/docs/v2/) and provides a starter for building out an app that can run on either the desktop (macOS, Windows and Linux), a browser or mobile devices (iOS, Android and Windows Phone).  You can use this application to build and run on one or even all of these platforms.
+This project combines the <a href="http://electron.atom.io/">Electron Framework</a> with <a href="http://ionicframework.com/docs/v2/">Ionic 2</a> and provides a starter for building out an app that can run on either the desktop (macOS, Windows and Linux), a browser or mobile devices (iOS, Android and Windows Phone).  You can use this application to build and run on one or even all of these platforms.
 
 #Motivation
 When working in small teams creating web and mobile applications, it is difficult and time consuming for new team members to pick up the different technologies for each platform. I have also been asked a few questions that motivated me to try Polyonic out: 
@@ -20,7 +26,7 @@ And that is why I decided to try combining Electron and Ionic. Is it wise to hav
 
 
 # Quick start
-The dependencies for this project are [Node.js](https://nodejs.org), [Ionic2 Framework] (http://ionicframework.com/docs/v2/getting-started/installation/) and [Cordova] (https://www.npmjs.com/package/cordova).
+The dependencies for this project are <a href="https://nodejs.org">Node.js</a>, <a href="http://ionicframework.com/docs/v2/getting-started/installation/">Ionic2 Framework</a> and <a href="https://www.npmjs.com/package/cordova">Cordova</a>.
 
 Make sure you have node installed and running, then install Ionic and Cordova globally using npm.
 ```
@@ -52,10 +58,10 @@ ionic serve --lab --port 4000 -r
 ```
 
 # Credits
-This application was built using the [Electron Boilerplate Project] (https://github.com/szwacz/electron-boilerplate/blob/master/README.md) for scaffolding out the Electron application, the [Electron Framework] (http://electron.atom.io/) for creating desktop apps and [Ionic 2](http://ionicframework.com/) for the UI and creating Native Mobile Applications, Progressive Mobile Web Applications and Web Applications.
+This application was built using the <a href="https://github.com/szwacz/electron-boilerplate/blob/master/README.md">Electron Boilerplate Project</a> for scaffolding out the Electron application, the <a href="http://electron.atom.io/">Electron Framework</a> for creating desktop apps and <a href="http://ionicframework.com/">Ionic 2</a> for the UI and creating Native Mobile Applications, Progressive Mobile Web Applications and Web Applications.
 
 # Todo
-- Add Karma and Protractor testing frameworks.  Use [Lathonez's example] (http://lathonez.github.io/2016/ionic-2-unit-testing/) in his [Clicker app] (https://github.com/lathonez/clicker) until the [Angular 2 testing docs] (https://angular.io/docs/ts/latest/testing/) are complete.
+- Add Karma and Protractor testing frameworks.  Use <a href="http://lathonez.github.io/2016/ionic-2-unit-testing/">Lathonez's example</a> in his <a href="https://github.com/lathonez/clicker">Clicker app</a> until the <a href="https://angular.io/docs/ts/latest/testing/">Angular 2 testing docs</a> are complete.
 - Add Office 365 add-in code for running Polyonic in Office 365 applications.
 - Add instructions for running Polyonic on the Hololens (Yep we can) :sunglasses:.
 - Remove express as we can run a simple node http server instead.  As it stands this app is just an example of what can de done.
