@@ -31,6 +31,8 @@
     "run-sequence": "^1.2.2",
     "snazzy": "*",
     "standard": "*",
+    "tslint": "^3.15.1",
+    "typescript": "^1.8.10",
     "yargs": "^5.0.0"
   },
   "optionalDependencies": {
@@ -40,7 +42,7 @@
   "scripts": {
     "build": "gulp build",
     "install-native": "node ./tasks/install_native_module",
-    "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy || true",
+    "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy; cd src; tslint 'app/**/*.ts' || true",
     "live": "npm run lint; cd src; gulp serve",
     "postinstall": "cd src; npm install",
     "pretest": "npm run lint; gulp build --env=test",
