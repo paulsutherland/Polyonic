@@ -1,33 +1,32 @@
 // Rebuilds native node modules for Electron.
 // More: https://github.com/atom/electron/blob/master/docs/tutorial/using-native-node-modules.md
 
-'use strict';
+'use strict'
 
-var path = require('path');
-var Q = require('q');
-var electron = require('electron-prebuilt');
-var electronPackage = require('electron-prebuilt/package.json');
-var rebuild = require('electron-rebuild');
+const path = require('path')
+const electron = require('electron-prebuilt')
+const electronPackage = require('electron-prebuilt/package.json')
+const rebuild = require('electron-rebuild')
 
-var pathToElectronNativeModules = path.join(__dirname, '../build/node_modules');
+let pathToElectronNativeModules = path.join(__dirname, '../build/node_modules')
 
 rebuild.shouldRebuildNativeModules(electron)
 .then(function (shouldBuild) {
-    if (!shouldBuild) {
-        return true;
-    }
+  if (!shouldBuild) {
+    return true
+  }
 
-    console.log('Rebuilding native modules for Electron...');
+  console.log('Rebuilding native modules for Electron...')
 
-    return rebuild.installNodeHeaders(electronPackage.version)
+  return rebuild.installNodeHeaders(electronPackage.version)
     .then(function () {
-        return rebuild.rebuildNativeModules(electronPackage.version, pathToElectronNativeModules);
-    });
+      return rebuild.rebuildNativeModules(electronPackage.version, pathToElectronNativeModules)
+    })
 })
 .then(function () {
-    console.log('Rebuilding complete.');
+  console.log('Rebuilding complete.')
 })
 .catch(function (err) {
-    console.error('Rebuilding error!');
-    console.error(err);
-});
+  console.error('Rebuilding error!')
+  console.error(err)
+})

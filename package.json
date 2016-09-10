@@ -23,6 +23,8 @@
     "q": "^1.4.1",
     "rollup": "^0.34.10",
     "run-sequence": "^1.2.2",
+    "snazzy": "*",
+    "standard": "*",
     "yargs": "^5.0.0"
   },
   "optionalDependencies": {
@@ -32,6 +34,7 @@
   "scripts": {
     "build": "gulp build",
     "install-native": "node ./tasks/install_native_module",
+    "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy || true",
     "live": "cd src; gulp serve",
     "postinstall": "cd src; npm install",
     "pretest": "gulp build --env=test",
