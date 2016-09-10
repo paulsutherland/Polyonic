@@ -1,4 +1,10 @@
 {
+  "name": "polyonic",
+  "productName": "A Polyonic App",
+  "description": "A Polyonic Electron Ionic 2 starter application",
+  "version": "0.0.1",
+  "author": "Author",
+  "copyright": "© 2016, Author",
   "main": "src/app.js",
   "repository": {
     "type": "git",
