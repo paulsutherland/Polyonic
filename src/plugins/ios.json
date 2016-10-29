@@ -8,25 +8,22 @@
     },
     "installed_plugins": {
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.electron-ionic2"
+            "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.electron-ionic2"
+            "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.electron-ionic2"
+            "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.electron-ionic2"
+            "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.electron-ionic2"
-        },
-        "cordova-sqlite-storage": {
-            "PACKAGE_NAME": "com.electron-ionic2"
+            "PACKAGE_NAME": "io.ionic.starter"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.electron-ionic2"
+            "PACKAGE_NAME": "io.ionic.starter"
         }
     },
     "dependent_plugins": {}
