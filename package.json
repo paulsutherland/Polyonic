@@ -50,7 +50,7 @@
     "build": "gulp build",
     "install-native": "node ./tasks/install_native_module",
     "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy; cd src; tslint 'app/**/*.ts' -t stylish || true",
-    "dev": "gulp serve",
+    "dev": "gulp dev",
     "postinstall": "cd src; npm install; gulp serve",
     "pretest": "npm run lint; gulp build --env=test",
     "release": "npm run lint; gulp release --env=production",
