@@ -51,8 +51,8 @@
       height: 900
     })
 
-    expressApp.use(express.static(path.join(__dirname, 'src/www')))
-    expressApp.use(express.static(path.join(__dirname, 'src/node_modules')))
+    expressApp.use(express.static(path.join(__dirname, 'www')))
+    expressApp.use(express.static(path.join(__dirname, 'node_modules')))
     expressApp.use(logger('dev'))
     expressApp.use(bodyParser.json())
     expressApp.use(bodyParser.urlencoded({ extended: false }))

@@ -17,7 +17,7 @@ gulp.task('electron-live', function () {
   // Start browser process
   electron.start()
 
-  gulp.watch('src/electron.js', electron.restart)
+  gulp.watch('src/app.js', electron.restart)
 
   // Reload renderer process
   gulp.watch([

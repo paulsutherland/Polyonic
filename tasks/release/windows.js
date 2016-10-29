@@ -24,7 +24,7 @@ let init = function () {
 }
 
 let copyRuntime = function () {
-  return projectDir.copyAsync('node_modules/electron-prebuilt/dist', readyAppDir.path(), { overwrite: true })
+  return projectDir.copyAsync('node_modules/electron/dist', readyAppDir.path(), { overwrite: true })
 }
 
 let cleanupRuntime = function () {

@@ -23,7 +23,7 @@ let init = function () {
 }
 
 let copyRuntime = function () {
-  return projectDir.copyAsync('node_modules/electron-prebuilt/dist/Electron.app', finalAppDir.path())
+  return projectDir.copyAsync('node_modules/electron/dist/Electron.app', finalAppDir.path())
 }
 
 let cleanupRuntime = function () {

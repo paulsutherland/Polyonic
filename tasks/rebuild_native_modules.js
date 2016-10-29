@@ -4,8 +4,8 @@
 'use strict'
 
 const path = require('path')
-const electron = require('electron-prebuilt')
-const electronPackage = require('electron-prebuilt/package.json')
+const electron = require('electron')
+const electronPackage = require('electron/package.json')
 const rebuild = require('electron-rebuild')
 
 let pathToElectronNativeModules = path.join(__dirname, '../build/node_modules')
