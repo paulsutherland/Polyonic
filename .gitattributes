@@ -1,2 +1,2 @@
-build/* linguist-vendored=false
-src/plugins/* linguist-vendored=false
+build/* linguist-language=JavaScript
+src/plugins/* linguist-language=JavaScript
