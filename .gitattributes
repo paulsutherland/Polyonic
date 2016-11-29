@@ -1,2 +1,2 @@
-build/* linguist-vendored
-src/plugins/* linguist-vendored
+build/* linguist-vendored=false
+src/plugins/* linguist-vendored=false
