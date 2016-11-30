@@ -2,7 +2,7 @@
   "name": "polyonic",
   "productName": "A Polyonic App",
   "description": "A Polyonic Electron Ionic 2 starter application",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Author",
   "copyright": "© 2016, Author",
   "main": "src/app.js",
@@ -12,7 +12,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@ionic/app-scripts": "0.0.38",
     "asar": "^0.12.1",
     "body-parser": "~1.15.2",
     "chai": "^3.5.0",
@@ -29,8 +28,6 @@
     "gulp-plumber": "^1.1.0",
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.9",
-    "ionic-angular": "^2.0.0-rc.1",
-    "ionicons": "^3.0.0",
     "morgan": "~1.7.0",
     "q": "^1.4.1",
     "rollup": "^0.35.0",
@@ -50,13 +47,14 @@
     "build": "gulp build",
     "install-native": "node ./tasks/install_native_module",
     "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy; cd src; tslint 'app/**/*.ts' -t stylish || true",
-    "dev": "gulp dev",
-    "postinstall": "cd src; npm install; gulp serve",
+    "dev": "cd src ; gulp dev",
+    "postinstall": "cd src ; npm install",
     "pretest": "npm run lint; gulp build --env=test",
     "release": "npm run lint; gulp release --env=production",
     "prestart": "cd src; gulp build",
     "start": "gulp start",
-    "test": "electron-mocha build"
+    "test": "electron-mocha build",
+    "ionic:build": "ionic-app-scripts build"
   },
   "dependencies": {
     "gulp-run": "^1.7.1",

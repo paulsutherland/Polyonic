@@ -11,6 +11,7 @@
   const logger = require('morgan')
   const cookieParser = require('cookie-parser')
   const bodyParser = require('body-parser')
+  const skipMap = require('skip-map')
   const expressApp = express()
   const debug = require('debug')('express-test:server')
   const http = require('http')
@@ -51,6 +52,7 @@
       height: 900
     })
 
+    expressApp.use(skipMap())
     expressApp.use(express.static(path.join(__dirname, 'www')))
     expressApp.use(express.static(path.join(__dirname, 'node_modules')))
     expressApp.use(logger('dev'))

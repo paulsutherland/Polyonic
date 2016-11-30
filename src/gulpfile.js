@@ -3,13 +3,6 @@ const electron = require('electron-connect').server.create()
 const env = require('gulp-env')
 const ionic = require('@ionic/app-scripts')
 
-const ionicContext = {
-  rootDir: './src/',
-  tmpDir: './src/.tmp',
-  srcDir: './src/src',
-  wwwDir: './src/www'
-}
-
 gulp.task('electron-live', function () {
   env.set({
     NODE_ENV: 'development'
@@ -21,14 +14,14 @@ gulp.task('electron-live', function () {
 
   // Reload renderer process
   gulp.watch([
-    'src/www/js/app.js',
-    'src/www/**/*.html',
-    'src/www/**/*.css',
-    'src/www/**/*.js'], electron.reload)
+    'www/js/app.js',
+    'www/**/*.html',
+    'www/**/*.css',
+    'www/**/*.js'], electron.reload)
 })
 
 gulp.task('dev', function () {
-  ionic.watch(ionicContext).then(function () {
+  ionic.watch().then(function () {
     gulp.start('electron-live')
   })
 })

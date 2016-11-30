@@ -1,7 +1,7 @@
 {
   "name": "polyonic",
   "productName": "A Polyonic App",
-  "description": "A Polyonic Electron Ionic 2 starter application",
+  "description": "ionic2: An Ionic project",
   "version": "0.0.3",
   "author": "Author",
   "copyright": "© 2016, Author",
@@ -22,31 +22,34 @@
     "run:before": "build"
   },
   "dependencies": {
-    "@angular/common": "^2.0.0",
-    "@angular/compiler": "^2.0.0",
-    "@angular/compiler-cli": "0.6.2",
-    "@angular/core": "^2.0.0",
-    "@angular/forms": "^2.0.0",
-    "@angular/http": "^2.0.0",
-    "@angular/platform-browser": "^2.0.0",
-    "@angular/platform-browser-dynamic": "^2.0.0",
-    "@angular/platform-server": "^2.0.0",
+    "@angular/common": "2.1.1",
+    "@angular/compiler": "2.1.1",
+    "@angular/compiler-cli": "2.1.1",
+    "@angular/core": "2.1.1",
+    "@angular/forms": "2.1.1",
+    "@angular/http": "2.1.1",
+    "@angular/platform-browser": "2.1.1",
+    "@angular/platform-browser-dynamic": "2.1.1",
+    "@angular/platform-server": "2.1.1",
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.1",
-    "electron-connect": "^0.4.4",
-    "express": "~4.14.0",    
-    "@ionic/storage": "^1.0.3",
-    "ionic-angular": "^2.0.0-rc.1",
-    "ionic-native": "^2.2.3",
-    "ionicons": "^3.0.0",
+    "express": "~4.14.0",
+    "electron": "^1.4.0",
+    "electron-connect": "0.6.1",
+    "@ionic/storage": "1.1.6",
+    "ionic-angular": "2.0.0-rc.3",
+    "ionic-native": "2.2.3",
+    "ionicons": "3.0.0",
     "morgan": "~1.7.0",
     "pouchdb": "^5.4.5",
     "rxjs": "5.0.0-beta.12",
-    "serve-favicon": "~2.3.0",   
-    "zone.js": "^0.6.21"
+    "serve-favicon": "~2.3.0",
+    "zone.js": "^0.6.26"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "^0.0.33",
+    "@ionic/app-scripts": "^0.0.45",
+    "gulp": "^3.9.1",
+    "skip-map": "^1.0.0",
     "typescript": "^2.0.3"
   },
   "osx": {
@@ -74,6 +77,5 @@
       "version": "",
       "locator": "ios"
     }
-  ],
-  "description": "ionic2: An Ionic project"
+  ]
 }
