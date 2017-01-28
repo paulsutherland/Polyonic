@@ -1,5 +1,7 @@
 # Polyonic
 ## The ultimate "Universal App"
+> Now using the latest Ionic 2.0.0 final release :tada:
+
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![dependencies Status](https://david-dm.org/paulsutherland/Polyonic/status.svg)](https://david-dm.org/paulsutherland/Polyonic)
 [![devDependencies Status](https://david-dm.org/paulsutherland/Polyonic/dev-status.svg)](https://david-dm.org/paulsutherland/Polyonic?type=dev)
@@ -23,9 +25,6 @@ When working in small teams creating web and mobile applications, it is difficul
 These questions made me think about the limitations of the browser for off-line editing and caching and was there a way to create a package that can be used to flesh out any app we require, whilst reducing the overhead of having to learn numerous libraries and frameworks for each platform.
 
 And that is why I decided to try combining Electron and Ionic. Is it wise to have a universal app using a mobile framework? Probably not, but it is fun :wink:
-
-> Please be aware that this project is using beta software and you should give careful consideration about using it in production until the up stream frameworks are stable.  Angular2 is at 'release candidate' status and the Ionic team are waiting for Angular2 to be released before Ionic2 gets a stable production release.  Until then we can expect breaking changes.
-
 
 # Quick start
 The dependencies for this project are <a href="https://nodejs.org">Node.js</a>, <a href="http://ionicframework.com/docs/v2/getting-started/installation/">Ionic2 Framework</a> and <a href="https://www.npmjs.com/package/cordova">Cordova</a>.
