@@ -54,9 +54,5 @@
     "start": "gulp start",
     "test": "electron-mocha build",
     "ionic:build": "ionic-app-scripts build"
-  },
-  "dependencies": {
-    "gulp-run": "^1.7.1",
-    "gulp-shell": "^0.5.2"
   }
 }
