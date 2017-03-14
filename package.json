@@ -45,12 +45,12 @@
   "scripts": {
     "build": "gulp build",
     "install-native": "node ./tasks/install_native_module",
-    "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy; cd src; tslint 'app/**/*.ts' -t stylish || true",
-    "dev": "cd src ; gulp dev",
-    "postinstall": "cd src ; npm install",
-    "pretest": "npm run lint; gulp build --env=test",
-    "release": "npm run lint; gulp release --env=production",
-    "prestart": "cd src; ionic build",
+    "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy && cd src; tslint 'app/**/*.ts' -t stylish || true",
+    "dev": "cd src && gulp dev",
+    "postinstall": "cd src && npm install",
+    "pretest": "npm run lint && gulp build --env=test",
+    "release": "npm run lint && gulp release --env=production",
+    "prestart": "cd src && ionic build",
     "start": "gulp start",
     "test": "electron-mocha build",
     "ionic:build": "ionic-app-scripts build"
