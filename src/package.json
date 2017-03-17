@@ -1,17 +1,9 @@
 {
-  "name": "polyonic",
-  "productName": "A Polyonic App",
-  "description": "ionic2: An Ionic project",
-  "version": "0.0.4",
-  "author": "Author",
-  "copyright": "© 2016, Author",
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/paulsutherland/Polyonic"
-  },
-  "license": "MIT",
+  "name": "ionic-hello-world",
+  "author": "Ionic Framework",
+  "homepage": "http://ionicframework.com/",
   "private": true,
+  "main": "app.js",
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
@@ -19,36 +11,28 @@
     "ionic:serve": "ionic-app-scripts serve"
   },
   "dependencies": {
-    "@angular/common": "2.2.1",
-    "@angular/compiler": "2.2.1",
-    "@angular/compiler-cli": "2.2.1",
-    "@angular/core": "2.2.1",
-    "@angular/forms": "2.2.1",
-    "@angular/http": "2.2.1",
-    "@angular/platform-browser": "2.2.1",
-    "@angular/platform-browser-dynamic": "2.2.1",
-    "@angular/platform-server": "2.2.1",
-    "body-parser": "1.16.0",
-    "cookie-parser": "1.4.3",
-    "express": "4.14.0",
-    "electron": "1.4.15",
-    "electron-connect": "0.6.1",
-    "@ionic/storage": "1.1.7",
-    "ionic-angular": "2.0.0",
-    "ionic-native": "2.4.1",
+    "@angular/common": "2.4.8",
+    "@angular/compiler": "2.4.8",
+    "@angular/compiler-cli": "2.4.8",
+    "@angular/core": "2.4.8",
+    "@angular/forms": "2.4.8",
+    "@angular/http": "2.4.8",
+    "@angular/platform-browser": "2.4.8",
+    "@angular/platform-browser-dynamic": "2.4.8",
+    "@angular/platform-server": "2.4.8",
+    "@ionic/storage": "2.0.0",
+    "ionic-angular": "2.2.0",
+    "ionic-native": "2.8.1",
     "ionicons": "3.0.0",
-    "morgan": "1.7.0",
-    "pouchdb": "6.1.1",
-    "rxjs": "5.0.0-beta.12",
-    "serve-favicon": "2.3.2",
-    "zone.js": "0.6.26",
-    "sw-toolbox": "3.4.0"
+    "rxjs": "5.0.1",
+    "sw-toolbox": "3.4.0",
+    "zone.js": "0.7.2"
   },
   "devDependencies": {
+    "@ionic/app-scripts": "1.1.4",
+    "typescript": "2.0.9",
     "gulp": "^3.9.1",
-    "@ionic/app-scripts": "1.0.0",
-    "skip-map": "1.0.0",
-    "typescript": "2.0.9"
+    "skip-map": "1.0.0"
   },
   "osx": {
     "build": "1",
@@ -62,9 +46,9 @@
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
-    "cordova-plugin-statusbar",
-    "cordova-plugin-console",
     "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-statusbar",
     "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard"
   ],
@@ -75,5 +59,6 @@
       "version": "",
       "locator": "ios"
     }
-  ]
+  ],
+  "description": "Polyonic: An Ionic project"
 }

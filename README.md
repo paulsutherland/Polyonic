@@ -1,6 +1,8 @@
 # Polyonic
 ## The ultimate "Universal App"
-> Now using the latest Ionic 2.0.0 final release :tada:
+> Now using the latest Ionic 2.2.0 release :tada:
+
+> Note: Me (North) has forked this repo to fix up the code base and get it running with the latest ionic :)
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![dependencies Status](https://david-dm.org/paulsutherland/Polyonic/status.svg)](https://david-dm.org/paulsutherland/Polyonic)
@@ -11,7 +13,7 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
 
-####Build once using web technologies and deploy everywhere!
+#### Build once using web technologies and deploy everywhere!
 An Electron Ionic application shell for creating Web Apps, Progressive Mobile Web Apps, Native Mobile Apps and Desktop Apps.
 
 This project combines the <a href="http://electron.atom.io/">Electron Framework</a> with <a href="http://ionicframework.com/docs/v2/">Ionic 2</a> and provides a starter for building out an app that can run on either the desktop (macOS, Windows and Linux), a browser or mobile devices (iOS, Android and Windows Phone).  You can use this application to build and run on one or even all of these platforms.
