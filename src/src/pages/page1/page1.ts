@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Device } from 'ionic-native';
-import { NavController } from 'ionic-angular';
+import { NavController, Platform } from 'ionic-angular';
 
 @Component({
   selector: 'page-page1',
@@ -8,13 +8,15 @@ import { NavController } from 'ionic-angular';
 })
 export class Page1 {
   public version: any = '';
-  public platform: any = '';
+  public dplatform: any = '';
   public deviceModel: any = '';
 
-  constructor(public navCtrl: NavController) {
-    this.version = Device.version;
-    this.deviceModel = Device.model;
-    this.platform = Device.platform;
+  constructor(public navCtrl: NavController, public platform: Platform) {
+    this.platform.ready().then(() => {
+      this.version = Device.version;
+      this.deviceModel = Device.model;
+      this.dplatform = Device.platform;
+    });
   }
 
 }
