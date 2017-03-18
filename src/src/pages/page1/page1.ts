@@ -8,9 +8,13 @@ import { NavController } from 'ionic-angular';
 })
 export class Page1 {
   public version: any = '';
+  public platform: any = '';
+  public model: any = '';
 
   constructor(public navCtrl: NavController) {
     this.version = Device.version;
+    this.model = Device.model;
+    this.platform = Device.platform;
   }
 
 }

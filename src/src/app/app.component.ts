@@ -5,8 +5,6 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 
-import { CordovaPluginDeviceElectron } from '../providers/cordova-plugin-device-electron';
-
 @Component({
   templateUrl: 'app.html'
 })
@@ -18,8 +16,6 @@ export class MyApp {
   pages: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform) {
-
-    var cdp = new CordovaPluginDeviceElectron();
     
     this.initializeApp();
 
