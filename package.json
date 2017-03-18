@@ -58,6 +58,7 @@
     "ionic:build": "ionic-app-scripts build"
   },
   "dependencies": {
+    "platform": "^1.3.3",
     "rollup": "^0.41.6"
   }
 }

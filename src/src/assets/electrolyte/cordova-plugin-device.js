@@ -1,12 +1,14 @@
-var os = require('os');
+var platform = require('electron').remote.require('platform');
 
 window.device = {
-  version: os.release(),
-  platform: os.platform(),
-  cordova: null,
-  model: os.hostname(),
+  version: platform.version,
+  platform: platform.os.family,
+  cordova: false,
+  model: platform.product,
   uuid: null,
-  manufacturer: null,
+  manufacturer: platform.manufacturer,
   isVirtual: null,
   serial: null
 };
+
+console.log(window.device);
