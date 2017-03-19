@@ -3,7 +3,7 @@
     //var app = require('electron').remote.require('app');
 
     try {
-      var app = require('electron').app;
+      var app = require('electron').remote.app;
 
       console.log('Cordova?', window.cordova);
 
@@ -29,7 +29,7 @@
 
           console.log('version number?');
 
-          success('0.0.1');
+          success(app.getVersion());
         }
       };
     } catch(e) {
