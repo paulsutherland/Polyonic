@@ -1,13 +1,7 @@
 (function() {
   if(!window.isCordovaApp) {
-    //var app = require('electron').remote.require('app');
-
     try {
       var app = require('electron').remote.app;
-
-      console.log('Cordova?', window.cordova);
-
-      /*console.log('Cordova?', window.cordova);*/
 
       window.cordova.getAppVersion = {
         getAppName: function(success, fail) {

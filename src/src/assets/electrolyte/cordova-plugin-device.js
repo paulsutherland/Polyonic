@@ -12,9 +12,5 @@
       isVirtual: null,
       serial: null
     };
-
-    console.log(window.device);
-  }else{
-    console.log(window.device);
   }
 })();
