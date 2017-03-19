@@ -11,24 +11,15 @@
 
       window.cordova.getAppVersion = {
         getAppName: function(success, fail) {
-          console.log('App name?');
-          success('TEST');
+          success(app.getAppName());
         },
         getPackageName: function(success, fail) {
-          console.log('package name?');
-
-          success('TEST.PACKAGE.NAME');
+          success(app.getName());
         },
         getVersionCode: function(success, fail) {
-
-          console.log('version code?');
-          
-          success('1234');
+          success(null);
         },
         getVersionNumber: function(success, fail) {
-
-          console.log('version number?');
-
           success(app.getVersion());
         }
       };
