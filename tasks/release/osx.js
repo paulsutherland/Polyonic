@@ -81,7 +81,7 @@ let renameApp = function () {
     finalAppDir.rename('Contents/Frameworks/Electron' + helperSuffix + '.app', manifest.productName + helperSuffix + '.app')
   })
     // Rename application
-  finalAppDir.rename('Contents/MacOS/Electron', manifest.productName)
+  //finalAppDir.rename('Contents/MacOS/Electron', manifest.productName)
   return new Q()
 }
 

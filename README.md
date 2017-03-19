@@ -1,6 +1,8 @@
 # Polyonic
 ## The ultimate "Universal App"
-> Now using the latest Ionic 2.0.0 final release :tada:
+> Now using the latest Ionic 2.2.0 release :tada:
+
+> Note: Me (North) has forked this repo to fix up the code base and get it running with the latest ionic :)
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![dependencies Status](https://david-dm.org/paulsutherland/Polyonic/status.svg)](https://david-dm.org/paulsutherland/Polyonic)
@@ -11,12 +13,12 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
 
-####Build once using web technologies and deploy everywhere!
+#### Build once using web technologies and deploy everywhere!
 An Electron Ionic application shell for creating Web Apps, Progressive Mobile Web Apps, Native Mobile Apps and Desktop Apps.
 
 This project combines the <a href="http://electron.atom.io/">Electron Framework</a> with <a href="http://ionicframework.com/docs/v2/">Ionic 2</a> and provides a starter for building out an app that can run on either the desktop (macOS, Windows and Linux), a browser or mobile devices (iOS, Android and Windows Phone).  You can use this application to build and run on one or even all of these platforms.
 
-#Motivation
+# Motivation
 When working in small teams creating web and mobile applications, it is difficult and time consuming for new team members to pick up the different technologies for each platform. I have also been asked a few questions that motivated me to try Polyonic out: 
 - Is there was way to run this mobile app on the desktop?
 - Can we cache more in the browser for offline working?
@@ -25,6 +27,16 @@ When working in small teams creating web and mobile applications, it is difficul
 These questions made me think about the limitations of the browser for off-line editing and caching and was there a way to create a package that can be used to flesh out any app we require, whilst reducing the overhead of having to learn numerous libraries and frameworks for each platform.
 
 And that is why I decided to try combining Electron and Ionic. Is it wise to have a universal app using a mobile framework? Probably not, but it is fun :wink:
+
+# Getting Started
+
+1) Clone this repo
+
+2) Overwrite the contents of the 'src' directory with the contents in the root directory of your ionic app
+
+3) Run `npm run create` to copy the new build tools in and modify your package.json for electron
+
+4) Run `npm run dev` to boot up your ionic app, the electron app, and start the live reload
 
 # Quick start
 The dependencies for this project are <a href="https://nodejs.org">Node.js</a>, <a href="http://ionicframework.com/docs/v2/getting-started/installation/">Ionic2 Framework</a> and <a href="https://www.npmjs.com/package/cordova">Cordova</a>.
