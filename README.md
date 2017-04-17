@@ -1,6 +1,6 @@
 # Polyonic
 ## The ultimate "Universal App"
-> Now using the latest Ionic 2.0.0 final release :tada:
+> Now using the latest Ionic 3.4.4 release :tada:
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![devDependencies Status](https://david-dm.org/paulsutherland/Polyonic/dev-status.svg)](https://david-dm.org/paulsutherland/Polyonic?type=dev)
