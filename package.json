@@ -45,15 +45,15 @@
   },
   "scripts": {
     "build": "gulp build",
+    "dev": "cd src && gulp dev",
+    "ionic:build": "cd src && npm run build",
     "install-native": "node ./tasks/install_native_module",
     "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy && cd src; tslint 'src/**/*.ts' -t stylish || true",
-    "dev": "cd src && gulp dev",
     "postinstall": "cd src && npm install",
+    "prestart": "cd src && ionic cordova build browser",
     "pretest": "npm run lint && gulp build --env=test",
     "release": "npm run lint && gulp release --env=production",
-    "prestart": "cd src && ionic cordova build browser",
     "start": "gulp start",
-    "test": "electron-mocha build",
-    "ionic:build": "cd src && npm run build"
+    "test": "electron-mocha build"
   }
 }
