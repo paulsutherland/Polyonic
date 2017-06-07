@@ -12,7 +12,14 @@
   <meta name="theme-color" content="#4e8ef7">
  
   <!-- cordova.js required for cordova apps -->
-  <script src="cordova.js"></script>
+  <!--<script src="cordova.js"></script>-->
+
+  <!-- un-comment this code for Node.JS integration in Ionic for Electron, we load the Node packages here-->
+  <script>
+      const electron  = require('electron');
+      const path      = require('path');
+      const ipc       = require('electron').ipcMain
+  </script>
 
   <!-- un-comment this code to enable service worker
   <script>
