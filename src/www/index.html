@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <script data-ionic="inject">
+    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.3.0';i.angular='4.1.3';i.staticDir='build/';})(window);
+  </script>
   <meta charset="UTF-8">
   <title>Ionic App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -14,10 +17,11 @@
   <!-- cordova.js required for cordova apps -->
   <!--<script src="cordova.js"></script>-->
 
-  <!-- un-comment this code for Node.JS integration in Ionic for Electron, we load Node packages here-->
+  <!-- un-comment this code for Node.JS integration in Ionic for Electron, we load the Node packages here-->
   <script>
       const electron  = require('electron');
       const path      = require('path');
+      const ipc       = require('electron').ipcMain
   </script>
 
   <!-- un-comment this code to enable service worker
