@@ -12,14 +12,14 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "asar": "0.13.0",
     "body-parser": "1.17.2",
     "chai": "4.0.2",
     "cookie-parser": "1.4.3",
     "del": "2.2.2",
-    "electron": "1.6.10",
+    "electron": "1.6.11",
     "electron-connect": "0.6.1",
     "electron-mocha": "3.4.0",
+    "electron-builder": "^19.11.1",
     "express": "4.15.3",
     "fs-jetpack": "1.0.0",
     "gulp": "3.9.1",
@@ -55,5 +55,16 @@
     "release": "npm run lint && gulp release --env=production",
     "start": "gulp start",
     "test": "electron-mocha build"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "YOUR.APPID.GOES.HERE",
+    "directories": {
+      "app": "build"
+    }
+  },
+  "dependencies": {
   }
 }
