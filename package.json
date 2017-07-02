@@ -54,7 +54,7 @@
     "pretest": "npm run lint && gulp build --env=test",
     "release": "npm run lint && gulp release --env=production",
     "start": "gulp start",
-    "test": "electron-mocha build"
+    "test": "electron-mocha build",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "postinstall": "electron-builder install-app-deps"
