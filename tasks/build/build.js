@@ -19,7 +19,10 @@ let paths = {
     './node_modules/**',
     './www/**',
     './routes/**',
-    './**/*.+(jpg|png|svg)'
+    './**/*.+(jpg|png|svg)',
+    './icon.ico',
+    './icon.icns',
+    './background.png'
   ]
 }
 
