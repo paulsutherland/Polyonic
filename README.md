@@ -17,7 +17,7 @@ This project combines the <a href="http://electron.atom.io/">Electron Framework<
 
 # Motivation
 When working in small teams creating web and mobile applications, it is difficult and time consuming for new team members to pick up the different technologies for each platform. I have also been asked a few questions that motivated me to try Polyonic out: 
-- Is there was way to run this mobile app on the desktop?
+- Is there a way to run this mobile app on the desktop?
 - Can we cache more in the browser for offline working?
 - Can we have one Universal app that can run on the desktop, mobile, web and Office 365?
 
