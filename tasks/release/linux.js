@@ -19,7 +19,7 @@ const init = function () {
   projectDir = jetpack
   tmpDir = projectDir.dir('./tmp', { empty: true })
   releasesDir = projectDir.dir('./releases')
-  manifest = projectDir.read('app/package.json', 'json')
+  manifest = projectDir.read('src/package.json', 'json')
   packName = manifest.name + '_' + manifest.version
   packDir = tmpDir.dir(packName)
   readyAppDir = packDir.cwd('opt', manifest.name)
@@ -56,7 +56,7 @@ let finalize = function () {
   packDir.write('usr/share/applications/' + manifest.name + '.desktop', desktop)
 
     // Copy icon
-  projectDir.copy('resources/icon.png', readyAppDir.path('icon.png'))
+  projectDir.copy('resources/polyonic.png', readyAppDir.path('icon.png'))
 
   return Q()
 }

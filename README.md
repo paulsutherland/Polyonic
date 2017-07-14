@@ -57,6 +57,13 @@ eg:
 ionic serve --lab --port 4000 -r
 ```
 
+# Running on Linux
+When developing on linux, you may run into a ENOSPC issue.  You will need to increase the number of file watchers to allow gulp to work.
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+See: <a href="https://stackoverflow.com/questions/22475849/node-js-error-enospc">Stack Overflow Post</a>
+
 # Credits
 This application was built using the <a href="https://github.com/szwacz/electron-boilerplate/blob/master/README.md">Electron Boilerplate Project</a> for scaffolding out the Electron application, the <a href="http://electron.atom.io/">Electron Framework</a> for creating desktop apps and <a href="http://ionicframework.com/">Ionic 2</a> for the UI and creating Native Mobile Applications, Progressive Mobile Web Applications and Web Applications.
 

@@ -12,6 +12,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "asar": "^0.13.0",
     "body-parser": "1.17.2",
     "chai": "4.0.2",
     "cookie-parser": "1.4.3",
@@ -56,8 +57,7 @@
     "start": "gulp start",
     "test": "electron-mocha build",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder",
-    "postinstall": "electron-builder install-app-deps"
+    "dist": "electron-builder"
   },
   "build": {
     "appId": "YOUR.APPID.GOES.HERE",
