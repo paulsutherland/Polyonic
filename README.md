@@ -30,7 +30,7 @@ The dependencies for this project are <a href="https://nodejs.org">Node.js</a>, 
 
 Make sure you have node installed and running, then install Ionic and Cordova globally using npm.
 ```
-npm install -g ionic@beta cordova
+npm install -g ionic cordova
 ```
 Clone the repo, change into the Polyonic directory, install the npm packages and run the Electron app
 ```
