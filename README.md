@@ -28,9 +28,13 @@ And that is why I decided to try combining Electron and Ionic. Is it wise to hav
 # Quick start
 The dependencies for this project are <a href="https://nodejs.org">Node.js</a>, <a href="http://ionicframework.com/docs/v2/getting-started/installation/">Ionic2 Framework</a> and <a href="https://www.npmjs.com/package/cordova">Cordova</a>.
 
+You will need:
+
+The latest Node 6 LTS and NPM 3+ installed.
+
 Make sure you have node installed and running, then install Ionic and Cordova globally using npm.
 ```
-npm install -g ionic cordova
+npm install -g ionic@latest cordova
 ```
 Clone the repo, change into the Polyonic directory, install the npm packages and run the Electron app
 ```
