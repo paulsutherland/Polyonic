@@ -68,6 +68,18 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 ```
 See: <a href="https://stackoverflow.com/questions/22475849/node-js-error-enospc">Stack Overflow Post</a>
 
+# Building on Windows
+For building on Windows you will need to install the Nullsoft Scriptable Install System.  
+
+You can download NSIS <a href="http://nsis.sourceforge.net/Main_Page">here</a>
+
+You will need to make sure the NSIS path is added as an environment variable:
+```
+setx PATH "%PATH%;C:\Program Files (x86)\NSIS"
+```
+
+Or using <a href="http://nsis.sourceforge.net/Main_Page">point and click.</a>
+
 # Credits
 This application was built using the <a href="https://github.com/szwacz/electron-boilerplate/blob/master/README.md">Electron Boilerplate Project</a> for scaffolding out the Electron application, the <a href="http://electron.atom.io/">Electron Framework</a> for creating desktop apps and <a href="http://ionicframework.com/">Ionic 2</a> for the UI and creating Native Mobile Applications, Progressive Mobile Web Applications and Web Applications.
 

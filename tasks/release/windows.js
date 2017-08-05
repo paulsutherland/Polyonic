@@ -17,7 +17,7 @@ let init = function () {
   projectDir = jetpack
   tmpDir = projectDir.dir('./tmp', { empty: true })
   releasesDir = projectDir.dir('./releases')
-  manifest = projectDir.read('app/package.json', 'json')
+  manifest = projectDir.read('src/package.json', 'json')
   readyAppDir = tmpDir.cwd(manifest.name)
 
   return Q()
@@ -97,7 +97,7 @@ let createInstaller = function () {
     // Remove destination file if already exists.
   releasesDir.remove(finalPackageName)
 
-    // Note: NSIS have to be added to PATH (environment letiables).
+    // Note: NSIS has to be added to PATH (environment variables).
   let nsis = childProcess.spawn('makensis', [
     tmpDir.path('installer.nsi')
   ], {
@@ -105,7 +105,7 @@ let createInstaller = function () {
   })
   nsis.on('error', function (err) {
     if (err.message === 'spawn makensis ENOENT') {
-      throw new Error('Can\'t find NSIS. Are you sure you\'ve installed it and added to PATH environment letiable?')
+      throw new Error('Can\'t find NSIS. Are you sure you\'ve installed it and added to PATH environment variable?')
     } else {
       throw err
     }

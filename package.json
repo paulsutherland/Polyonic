@@ -1,6 +1,6 @@
 {
   "name": "polyonic",
-  "productName": "A Polyonic App",
+  "productName": "Polyonic App",
   "description": "A Polyonic Electron Ionic 2 starter application",
   "version": "1.0.0",
   "author": "Author",
@@ -52,8 +52,8 @@
     "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy && cd src; tslint 'src/**/*.ts' -t stylish || true",
     "postinstall": "cd src && npm install",
     "prestart": "cd src && ionic cordova build browser",
-    "pretest": "npm run lint && gulp build --env=test",
-    "release": "npm run lint && gulp release --env=production",
+    "pretest": "gulp build --env=test",
+    "release": "gulp release --env=production",
     "start": "gulp start",
     "test": "electron-mocha build",
     "pack": "electron-builder --dir",
