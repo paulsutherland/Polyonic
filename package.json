@@ -53,6 +53,7 @@
     "postinstall": "cd src && npm install",
     "prestart": "cd src && ionic cordova build browser",
     "pretest": "gulp build --env=test",
+    "prerelease": "gulp build",
     "release": "gulp release --env=production",
     "start": "gulp start",
     "test": "electron-mocha build",
