@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <script data-ionic="inject">
-    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.3.0';i.angular='4.1.3';i.staticDir='build/';})(window);
+    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.6.0';i.angular='4.3.4';i.staticDir='build/';})(window);
   </script>
   <meta charset="UTF-8">
   <title>Ionic App</title>
@@ -44,7 +44,11 @@
   <!-- The polyfills js is generated during the build process -->
   <script src="build/polyfills.js"></script>
 
-  <!-- The bundle js is generated during the build process -->
+  <!-- The vendor js is generated during the build process
+       It contains all of the dependencies in node_modules -->
+  <script src="build/vendor.js"></script>
+
+  <!-- The main bundle js is generated during the build process -->
   <script src="build/main.js"></script>
 
 </body>
