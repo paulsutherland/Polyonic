@@ -80,6 +80,16 @@ setx PATH "%PATH%;C:\Program Files (x86)\NSIS"
 
 Or using <a href="http://nsis.sourceforge.net/Main_Page">point and click.</a>
 
+# Running on macOS
+If you are generating the error: ```Error: ENFILE: file table overflow on MacOS Sierra```, you will need to adjust the number for file watchers:
+```
+echo kern.maxfiles=65536 | sudo tee -a /etc/sysctl.conf
+echo kern.maxfilesperproc=65536 | sudo tee -a /etc/sysctl.conf
+sudo sysctl -w kern.maxfiles=65536
+sudo sysctl -w kern.maxfilesperproc=65536
+ulimit -n 65536 
+```
+
 # Credits
 This application was built using the <a href="https://github.com/szwacz/electron-boilerplate/blob/master/README.md">Electron Boilerplate Project</a> for scaffolding out the Electron application, the <a href="http://electron.atom.io/">Electron Framework</a> for creating desktop apps and <a href="http://ionicframework.com/">Ionic 2</a> for the UI and creating Native Mobile Applications, Progressive Mobile Web Applications and Web Applications.
 
