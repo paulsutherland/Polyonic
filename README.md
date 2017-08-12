@@ -81,7 +81,7 @@ setx PATH "%PATH%;C:\Program Files (x86)\NSIS"
 Or using <a href="http://nsis.sourceforge.net/Main_Page">point and click.</a>
 
 # Running on macOS
-If you are generating the error: ```Error: ENFILE: file table overflow on MacOS Sierra```, you will need to adjust the number for file watchers:
+If you are generating the error: ```Error: ENFILE: file table overflow on MacOS Sierra```, you will need to adjust the number of file watchers:
 ```
 echo kern.maxfiles=65536 | sudo tee -a /etc/sysctl.conf
 echo kern.maxfilesperproc=65536 | sudo tee -a /etc/sysctl.conf
