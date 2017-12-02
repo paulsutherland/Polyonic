@@ -2,5 +2,9 @@
   "name": "app",
   "app_id": "",
   "type": "ionic-angular",
-  "watchPatterns": []
+  "watchPatterns": [],
+  "integrations": {
+    "cordova": {},
+    "gulp": {}
+  }
 }
