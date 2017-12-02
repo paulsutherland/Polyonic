@@ -31,7 +31,7 @@
     "gulp-watch": "4.3.11",
     "morgan": "1.9.0",
     "q": "1.5.1",
-    "rollup": "0.52.0",
+    "rollup": "0.42.0",
     "run-sequence": "2.2.0",
     "snazzy": "7.0.0",
     "standard": "10.0.3",
