@@ -1,6 +1,6 @@
 # Polyonic
 ## The ultimate "Universal App"
-> Polyonic USing Ionic 1 :tada:
+> Polyonic Using Ionic 1 :tada:
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![devDependencies Status](https://david-dm.org/paulsutherland/Polyonic/dev-status.svg)](https://david-dm.org/paulsutherland/Polyonic?type=dev)
