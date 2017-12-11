@@ -47,10 +47,10 @@
   "scripts": {
     "build": "gulp build",
     "dev": "cd src && gulp dev",
-    "ionic:build": "cd src && npm run build",
+    "ionic:build": "cd src && ionic build",
     "install-native": "node ./tasks/install_native_module",
     "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy && cd src; tslint 'src/**/*.ts' -t stylish || true",
-    "postinstall": "cd src && npm install && npm run build",
+    "postinstall": "cd src && npm install && ionic build",
     "prestart": "cd src && ionic cordova build browser",
     "pretest": "gulp build --env=test",
     "release": "gulp release --env=production",
@@ -65,6 +65,5 @@
       "app": "build"
     }
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

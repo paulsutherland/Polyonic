@@ -1,8 +1,32 @@
-const gulp = require('gulp')
+var gulp = require('gulp')
+var sass = require('gulp-sass')
+var cleanCss = require('gulp-clean-css')
+var rename = require('gulp-rename')
 const electron = require('electron-connect').server.create()
 const env = require('gulp-env')
-const config = require('@ionic/app-scripts/dist/util/config')
-const ionic = require('@ionic/app-scripts')
+
+var paths = {
+  sass: ['./scss/**/*.scss']
+}
+
+gulp.task('default', ['sass'])
+
+gulp.task('sass', function (done) {
+  gulp.src('./scss/ionic.app.scss')
+    .pipe(sass())
+    .on('error', sass.logError)
+    .pipe(gulp.dest('./www/css/'))
+    .pipe(cleanCss({
+      keepSpecialComments: 0
+    }))
+    .pipe(rename({ extname: '.min.css' }))
+    .pipe(gulp.dest('./www/css/'))
+    .on('end', done)
+})
+
+gulp.task('watch', ['sass'], function () {
+  gulp.watch(paths.sass, ['sass'])
+})
 
 gulp.task('electron-live', function () {
   env.set({
@@ -11,7 +35,7 @@ gulp.task('electron-live', function () {
   // Start browser process
   electron.start()
 
-  gulp.watch('src/app.js', electron.restart)
+  gulp.watch('src/main.js', electron.restart)
 
   // Reload renderer process
   gulp.watch([
@@ -22,11 +46,5 @@ gulp.task('electron-live', function () {
 })
 
 gulp.task('dev', function () {
-  ionic.watch(config.generateContext())
-  .then(function () {
-    gulp.start('electron-live')
-  })
-  .catch(function (err) {
-    console.log('Error starting watch: ', err)
-  })
+  gulp.start('electron-live')
 })

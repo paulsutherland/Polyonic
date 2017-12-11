@@ -61,7 +61,7 @@
     expressApp.use(cookieParser())
     expressApp.set('port', port)
     expressApp.get('/', function (req, res) {
-      res.sendFile(path.join(path.join(__dirname, '/index.html')))
+      res.sendFile(path.join(path.join(__dirname, 'index.html')))
     })
 
     server = http.createServer(expressApp)
