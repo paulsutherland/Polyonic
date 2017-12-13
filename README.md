@@ -38,9 +38,8 @@ npm install -g ionic@latest cordova
 ```
 Clone the repo, change into the Polyonic directory, install the npm packages and run the Electron app
 ```
-git clone https://github.com/paulsutherland/Polyonic.git
+git clone -b Ionic1 https://github.com/paulsutherland/Polyonic.git
 cd Polyonic
-git checkout -b Ionic1
 
 npm install
 npm start
