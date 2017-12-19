@@ -29,8 +29,6 @@
     "electron": "^1.7.9",
     "electron-connect": "0.6.2",
     "express": "4.16.2",
-    "ionic-angular": "3.9.2",
-    "ionicons": "3.0.0",
     "morgan": "1.9.0",
     "pouchdb": "6.3.4",
     "rxjs": "5.5.3",
@@ -62,19 +60,5 @@
       "version": "",
       "locator": "ios"
     }
-  ],
-  "cordova": {
-    "platforms": [
-      "browser"
-    ],
-    "plugins": {
-      "cordova-plugin-console": {},
-      "cordova-plugin-device": {},
-      "cordova-plugin-splashscreen": {},
-      "cordova-plugin-statusbar": {},
-      "cordova-plugin-whitelist": {},
-      "ionic-plugin-keyboard": {},
-      "cordova-plugin-ionic-webview": {}
-    }
-  }
+  ]
 }
