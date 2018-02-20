@@ -12,37 +12,37 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "asar": "0.14.0",
+    "asar": "0.14.2",
     "body-parser": "1.18.2",
     "chai": "4.1.2",
     "cookie-parser": "1.4.3",
     "del": "3.0.0",
-    "electron": "1.7.9",
-    "electron-connect": "0.6.2",
+    "electron": "1.7.11",
+    "electron-connect": "0.6.3",
     "electron-mocha": "5.0.0",
-    "electron-builder": "19.47.1",
+    "electron-builder": "20.0.7",
     "express": "4.16.2",
-    "fs-jetpack": "1.2.0",
+    "fs-jetpack": "1.3.0",
     "gulp": "3.9.1",
     "gulp-batch": "1.0.5",
     "gulp-env": "0.4.0",
-    "gulp-plumber": "1.1.0",
+    "gulp-plumber": "1.2.0",
     "gulp-util": "3.0.8",
-    "gulp-watch": "4.3.11",
+    "gulp-watch": "5.0.0",
     "morgan": "1.9.0",
     "q": "1.5.1",
     "rollup": "0.42.0",
-    "run-sequence": "2.2.0",
+    "run-sequence": "2.2.1",
     "snazzy": "7.0.0",
-    "standard": "10.0.3",
-    "tslint": "5.8.0",
+    "standard": "11.0.0",
+    "tslint": "5.9.1",
     "tslint-stylish": "2.1.0",
-    "typescript": "2.6.2",
-    "yargs": "10.0.3"
+    "typescript": "2.7.2",
+    "yargs": "11.0.0"
   },
   "optionalDependencies": {
     "appdmg": "0.5.2",
-    "rcedit": "0.9.0"
+    "rcedit": "1.0.0"
   },
   "scripts": {
     "build": "gulp build",
@@ -65,6 +65,5 @@
       "app": "build"
     }
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

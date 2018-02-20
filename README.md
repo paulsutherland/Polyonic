@@ -1,6 +1,6 @@
 # Polyonic
 ## The ultimate "Universal App"
-> Now using the latest Ionic 3.9.0 release :tada:
+> Now using the latest Ionic 3.9.2 release :tada:
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![devDependencies Status](https://david-dm.org/paulsutherland/Polyonic/dev-status.svg)](https://david-dm.org/paulsutherland/Polyonic?type=dev)
@@ -16,7 +16,7 @@ An Electron Ionic application shell for creating Web Apps, Progressive Mobile We
 This project combines the <a href="http://electron.atom.io/">Electron Framework</a> with <a href="http://ionicframework.com/docs/v2/">Ionic 2</a> and provides a starter for building out an app that can run on either the desktop (macOS, Windows and Linux), a browser or mobile devices (iOS, Android and Windows Phone).  You can use this application to build and run on one or even all of these platforms.
 
 # Motivation
-When working in small teams creating web and mobile applications, it is difficult and time consuming for new team members to pick up the different technologies for each platform. I have also been asked a few questions that motivated me to try Polyonic out: 
+When working in small teams creating web and mobile applications, it is difficult and time consuming for new team members to pick up the different technologies for each platform. I have also been asked a few questions that motivated me to try Polyonic out:
 - Is there a way to run this mobile app on the desktop?
 - Can we cache more in the browser for offline working?
 - Can we have one Universal app that can run on the desktop, mobile, web and Office 365?
@@ -47,12 +47,12 @@ npm start
 You now have Electron and Ionic running as a Desktop app.
 
 # Running Live Reload for Electron Development
-When developing a desktop app, you will want to have the app live reload as you save your changes.  
+When developing a desktop app, you will want to have the app live reload as you save your changes.
 ```
 npm run dev
 ```
 # Ionic CLI Commands
-When developing a web app, progressive app or native mobile app, all of the Ionic CLI commands are available when you are in the src directory, as this is a standard Ionic app.  Change into the src directory and run commands from the Ionic CLI.  
+When developing a web app, progressive app or native mobile app, all of the Ionic CLI commands are available when you are in the src directory, as this is a standard Ionic app.  Change into the src directory and run commands from the Ionic CLI.
 ```
 cd src
 ionic
@@ -69,7 +69,7 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 See: <a href="https://stackoverflow.com/questions/22475849/node-js-error-enospc">Stack Overflow Post</a>
 
 # Building on Windows
-For building on Windows you will need to install the Nullsoft Scriptable Install System.  
+For building on Windows you will need to install the Nullsoft Scriptable Install System.
 
 You can download NSIS <a href="http://nsis.sourceforge.net/Main_Page">here</a>
 
@@ -87,7 +87,7 @@ echo kern.maxfiles=65536 | sudo tee -a /etc/sysctl.conf
 echo kern.maxfilesperproc=65536 | sudo tee -a /etc/sysctl.conf
 sudo sysctl -w kern.maxfiles=65536
 sudo sysctl -w kern.maxfilesperproc=65536
-ulimit -n 65536 
+ulimit -n 65536
 ```
 
 # Credits
