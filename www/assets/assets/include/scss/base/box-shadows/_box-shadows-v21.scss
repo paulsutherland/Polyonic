@@ -1,0 +1,16 @@
+/*------------------------------------
+  Box-shadows-v21
+------------------------------------*/
+.u-shadow-v21 {
+  box-shadow: 0 20px 25px -12px rgba($g-color-black, .09);
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-duration: .3s;
+
+  &--hover {
+  	&:hover {
+  		box-shadow: 0 20px 25px -12px rgba($g-color-black, .15);
+  	}
+  }
+}

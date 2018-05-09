@@ -1,0 +1,12 @@
+/*------------------------------------
+  Datepickers
+------------------------------------*/
+
+.u-has-dropdowns-in-popup {
+	.ui-autocomplete,
+	.ui-datepicker {
+		z-index: 100000 !important;
+	}
+}
+
+@import "datepickers-v1";

@@ -1,0 +1,76 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set title = "Coming soon" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main class="g-min-height-100vh g-flex-centered g-bg-size-cover g-bg-cover g-bg-bluegray-opacity-0_3--after g-pa-15" style="background-image: url(assets/img-temp/1920x1080/img1.jpg);">
+      <div class="text-center g-max-width-700 g-flex-centered-item g-z-index-1 g-color-white">
+        <h1 class="display-3 g-mb-30">Coming Soon</h1>
+        <p class="g-font-size-22 g-mb-50">Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
+
+        <div class="js-countdown row g-z-index-1"
+             data-end-date="2018/01/01"
+             data-month-format="%m"
+             data-days-format="%D"
+             data-hours-format="%H"
+             data-minutes-format="%M"
+             data-seconds-format="%S">
+          <div class="col-3 g-py-10">
+            <strong class="js-cd-days d-block display-4 mx-auto g-width-70 g-height-70 g-bg-white-opacity-0_2 g-font-weight-700 g-font-size-25 g-rounded-50x g-line-height-1 g-pa-20 mb-2"></strong>
+            <em class="g-font-style-normal g-font-size-20">Days</em>
+          </div>
+
+          <div class="col-3 g-brd-left g-brd-white-dark-v3 g-py-10">
+            <strong class="js-cd-hours d-block display-4 mx-auto g-width-70 g-height-70 g-bg-white-opacity-0_2 g-font-weight-700 g-font-size-25 g-rounded-50x g-line-height-1 g-pa-20 mb-2"></strong>
+            <em class="g-font-style-normal g-font-size-20">Hours</em>
+          </div>
+
+          <div class="col-3 g-brd-left g-brd-white-dark-v3 g-py-10">
+            <strong class="js-cd-minutes d-block display-4 mx-auto g-width-70 g-height-70 g-bg-white-opacity-0_2 g-font-weight-700 g-font-size-25 g-rounded-50x g-line-height-1 g-pa-20 m2-3"></strong>
+            <em class="g-font-style-normal g-font-size-20">Minutes</em>
+          </div>
+
+          <div class="col-3 g-brd-left g-brd-white-dark-v3 g-py-10">
+            <strong class="js-cd-seconds d-block display-4 mx-auto g-width-70 g-height-70 g-bg-white-opacity-0_2 g-font-weight-700 g-font-size-25 g-rounded-50x g-line-height-1 g-pa-20 m2-3"></strong>
+            <em class="g-font-style-normal g-font-size-20">Seconds</em>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/appear.js"></script>
+    <script src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of countdowns
+        var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+          yearsElSelector: '.js-cd-years',
+          monthElSelector: '.js-cd-month',
+          daysElSelector: '.js-cd-days',
+          hoursElSelector: '.js-cd-hours',
+          minutesElSelector: '.js-cd-minutes',
+          secondsElSelector: '.js-cd-seconds'
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+/*------------------------------------
+  Searchform v4
+------------------------------------*/
+
+.u-searchform-v4 {
+
+	.form-control {
+
+		font-family: $g-font-primary;
+		@include px-to-rem(font-size, 12px);
+		@include px-to-rem(width, 280px);
+		@include px-to-rem(padding, 10px 40px 10px 10px);
+
+		&::placeholder {
+			color: g-color-gray-dark-v4;
+			opacity: 1;
+		}
+
+		&::-webkit-input-placeholder {
+			color: g-color-gray-dark-v4;
+			opacity: 1;
+		}
+
+		&::-moz-placeholder {
+			color: g-color-gray-dark-v4;
+			opacity: 1;
+		}
+
+		&:not(:last-child) {
+			border-right: none;
+		}
+	}
+
+	.input-group-addon {
+		border-left: none;
+
+		@include absolute(right 0 top 0);
+		height: 100%;
+		z-index: 2;
+		
+
+		button[type="submit"] {
+			height: 100%;
+
+			cursor: pointer;
+
+			outline: none;
+			border: none;
+			background-color: transparent;
+		}
+	}
+}

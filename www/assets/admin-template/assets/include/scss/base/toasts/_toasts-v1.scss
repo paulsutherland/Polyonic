@@ -1,0 +1,181 @@
+/*------------------------------------
+  Toasts v1
+------------------------------------*/
+
+[class*="noty_theme__unify--v1"] {
+  box-shadow: 0 2px 15px 0 rgba($g-color-black, .15);
+  border-radius: 4px;
+  @include px-to-rem(padding, 22px);
+}
+
+.noty_theme__unify--v1--dark {
+  background-color: $g-color-darkblue-v4;
+}
+
+.noty_theme__unify--v1--light {
+  background-color: $g-color-white;
+  box-shadow: 0 2px 15px 0 rgba($g-color-black, .05);
+}
+
+.noty_type__success {
+  &.noty_theme__unify--v1 {
+    background-color: $g-color-lightblue-v3;
+  }
+}
+
+.noty_type__info {
+  &.noty_theme__unify--v1 {
+    background-color: $g-color-darkblue-v2;
+  }
+}
+
+.noty_type__error {
+  &.noty_theme__unify--v1 {
+    background-color: $g-color-primary;
+  }
+}
+
+.noty_type__warning {
+  &.noty_theme__unify--v1 {
+    background-color: $g-color-lightbrown;
+  }
+}
+
+.noty_body {
+  font-weight: 400;
+  @include px-to-rem(font-size, 14px);
+  color: $g-color-white;
+
+  [class*="noty_theme__unify--v1"] & {
+    display: flex;
+    align-items: center;
+  }
+
+  .noty_theme__unify--v1--light & {
+    color: $g-color-gray-dark-v11;
+  }
+}
+
+.noty_body__icon {
+  position: relative;
+  display: inline-block;
+  @extend %u-icon-size;
+  color: $g-color-white;
+  text-align: center;
+  border-radius: 50%;
+
+  &::before {
+    display: block;
+  }
+
+  > i {
+    position: relative;
+    top: 50%;
+    display: block;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .noty_theme__unify--v1 & {
+    background-color: rgba($g-color-gray-light-v8, .2);
+  }
+
+  .noty_theme__unify--v1--dark & {
+    background-color: rgba($g-color-gray-light-v8, .1);
+  }
+
+  .noty_theme__unify--v1--dark.noty_type__success & {
+    color: $g-color-lightblue-v3;
+  }
+
+  .noty_theme__unify--v1--dark.noty_type__info & {
+    color: $g-color-darkblue-v2;
+  }
+
+  .noty_theme__unify--v1--dark.noty_type__error & {
+    color: $g-color-primary;
+  }
+
+  .noty_theme__unify--v1--dark.noty_type__warning & {
+    color: $g-color-lightbrown;
+  }
+
+  .noty_theme__unify--v1--light.noty_type__success & {
+    background-color: rgba($g-color-lightblue-v3, .15);
+    color: $g-color-lightblue-v3;
+  }
+
+  .noty_theme__unify--v1--light.noty_type__info & {
+    background-color: rgba($g-color-darkblue-v2, .15);
+    color: $g-color-darkblue-v2;
+  }
+
+  .noty_theme__unify--v1--light.noty_type__error & {
+    background-color: rgba($g-color-primary, .15);
+    color: $g-color-primary;
+  }
+
+  .noty_theme__unify--v1--light.noty_type__warning & {
+    background-color: rgba($g-color-lightbrown, .15);
+    color: $g-color-lightbrown;
+  }
+}
+
+.noty_close_button {
+  [class*="noty_theme__unify--v1"] & {
+    top: 14px;
+    right: 14px;
+    @include px-to-rem(width, 12px);
+    @include px-to-rem(height, 12px);
+    @include px-to-rem(line-height, 12px);
+    background-color: transparent;
+    font-weight: 300;
+    @include px-to-rem(font-size, 24px);
+    color: $g-color-white;
+    border-radius: 0;
+  }
+
+  .noty_theme__unify--v1--light & {
+    color: $g-color-gray-light-v10;
+  }
+}
+
+.noty_progressbar {
+  @include px-to-rem(height, 7px !important);
+
+  .noty_theme__unify--v1 & {
+    background-color: rgba($g-color-black, .08) !important;
+  }
+
+  .noty_theme__unify--v1--dark.noty_type__success & {
+    background-color: $g-color-lightblue-v3;
+  }
+
+  .noty_theme__unify--v1--dark.noty_type__info & {
+    background-color: $g-color-darkblue-v2;
+  }
+
+  .noty_theme__unify--v1--dark.noty_type__error & {
+    background-color: $g-color-primary;
+  }
+
+  .noty_theme__unify--v1--dark.noty_type__warning & {
+    background-color: $g-color-lightbrown;
+  }
+
+  .noty_theme__unify--v1--light.noty_type__success & {
+    background-color: rgba($g-color-lightblue-v3, .15);
+  }
+
+  .noty_theme__unify--v1--light.noty_type__info & {
+    background-color: rgba($g-color-darkblue-v2, .15);
+  }
+
+  .noty_theme__unify--v1--light.noty_type__error & {
+    background-color: rgba($g-color-primary, .15);
+  }
+
+  .noty_theme__unify--v1--light.noty_type__warning & {
+    background-color: rgba($g-color-lightbrown, .15);
+  }
+}

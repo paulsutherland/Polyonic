@@ -1,0 +1,14 @@
+/*------------------------------------
+  Heading-v3
+------------------------------------*/
+[class*="u-heading-v3-"] {
+  border-bottom: 1px dotted $g-color-gray-light-v2;
+}
+.u-heading-v3__title {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  margin: 0;
+  @include px-to-rem(padding-bottom, 10px);
+  border-bottom: 1px solid $g-color-gray-dark-v3;
+}

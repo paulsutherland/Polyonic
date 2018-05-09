@@ -1,0 +1,120 @@
+/*------------------------------------
+  Placeholder
+------------------------------------*/
+.g-placeholder {
+  // White Color
+  &-white {
+    &::placeholder {
+      opacity: 1;
+      color: $g-color-white;
+    }
+
+    &::-moz-placeholder {
+      opacity: 1;
+      color: $g-color-white;
+    }
+
+    &::-webkit-input-placeholder {
+      opacity: 1;
+      color: $g-color-white;
+    }
+  }
+
+  // Primary Color
+  &-primary::placeholder {
+    color: $g-color-white;
+  }
+
+  &-inherit {
+    &::placeholder {
+      color: inherit;
+      opacity: 1;
+    }
+
+    &::-moz-placeholder {
+      color: inherit;
+      opacity: 1;
+    }
+
+    &::-webkit-input-placeholder {
+      color: inherit;
+      opacity: 1;
+    }
+  }
+}
+
+
+// /*------------------------------------
+//   Placeholder colors
+// ------------------------------------*/
+
+// [class*="g-placeholder"] {
+//   &:-moz-placeholder {
+//     opacity: 1;
+//   }
+
+//   &::-webkit-input-placeholder {
+//     opacity: 1;
+//   }
+
+//   &:focus {
+//     &:-moz-placeholder {
+//       color: $g-color-white;
+//       opacity: 0;
+//     }
+
+//     &::-webkit-input-placeholder {
+//       color: $g-color-white;
+//       opacity: 0;
+//     }
+//   }
+// }
+
+// .g-placeholder {
+//   &-primary {
+//     &:-moz-placeholder {
+//       color: $g-color-primary;
+//     }
+
+//     &::-webkit-input-placeholder {
+//       color: $g-color-primary;
+//     }
+//   }
+
+//   /* Gray */
+//   &-gray {
+//     /* Light */
+//     &-light {
+//       &-v1 {
+//         &:-moz-placeholder {
+//           color: $g-color-gray-light-v1;
+//         }
+
+//         &::-webkit-input-placeholder {
+//           color: $g-color-gray-light-v1;
+//         }
+//       }
+
+//       &-v2 {
+//         &:-moz-placeholder {
+//           color: $g-color-gray-light-v2;
+//         }
+
+//         &::-webkit-input-placeholder {
+//           color: $g-color-gray-light-v2;
+//         }
+//       }
+//     }
+//   }
+
+//   /* White */
+//   &-white {
+//     &:-moz-placeholder {
+//       color: $g-color-white;
+//     }
+
+//     &::-webkit-input-placeholder {
+//       color: $g-color-white;
+//     }
+//   }
+// }

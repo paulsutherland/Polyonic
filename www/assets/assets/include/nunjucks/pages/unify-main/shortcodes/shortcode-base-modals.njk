@@ -1,0 +1,1702 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-modals" %}
+{% set title = "Modals" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section>
+      <div class="g-py-100">
+        <div class="container">
+          <!-- Popup Animations -->
+          <section>
+            <!-- Heading -->
+            <header class="g-mb-80">
+              <div class="u-heading-v6-2  text-uppercase">
+                <h2 class="h4 u-heading-v6__title g-font-weight-300">Popup Animations</h2>
+              </div>
+
+              <div class="g-line-height-2 g-pl-90">
+                <p>Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl. In hac habitasse platea dictumst. Curabitur hendrerit.</p>
+              </div>
+            </header>
+            <!-- End Heading -->
+
+            <div class="row">
+              <!-- FadeIn -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">FadeIn</h3>
+
+                <div id="shortcode1">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal1"
+                       data-modal-target="#modal1"
+                       data-modal-effect="fadein">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal1" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode1" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End FadeIn -->
+
+              <!-- Slide -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Slide</h3>
+
+                <div id="shortcode2">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal2"
+                       data-modal-target="#modal2"
+                       data-modal-effect="slide">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal2" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode2" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Slide -->
+
+              <!-- Newspaper -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Newspaper</h3>
+
+                <div id="shortcode3">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal3"
+                       data-modal-target="#modal3"
+                       data-modal-effect="newspaper">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal3" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode3" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Newspaper -->
+
+              <!-- Fall -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Fall</h3>
+
+                <div id="shortcode4">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal4"
+                       data-modal-target="#modal4"
+                       data-modal-effect="fall">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal4" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode4" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Fall -->
+            </div>
+
+            <hr class="g-brd-gray-light-v4 g-mb-60">
+
+            <div class="row">
+              <!-- Sidefall -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Sidefall</h3>
+
+                <div id="shortcode5">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal5"
+                       data-modal-target="#modal5"
+                       data-modal-effect="sidefall">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal5" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode5" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Sidefall -->
+
+              <!-- Blur -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Blur</h3>
+
+                <div id="shortcode6">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal6"
+                       data-modal-target="#modal6"
+                       data-modal-effect="blur">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal6" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode6" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Blur -->
+
+              <!-- Flip -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Flip</h3>
+
+                <div id="shortcode7">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal7"
+                       data-modal-target="#modal7"
+                       data-modal-effect="flip">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal7" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode7" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Flip -->
+
+              <!-- Sign -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Sign</h3>
+
+                <div id="shortcode8">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal8"
+                       data-modal-target="#modal8"
+                       data-modal-effect="sign">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal8" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-html">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-html">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode8" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Sign -->
+            </div>
+
+            <hr class="g-brd-gray-light-v4 g-mb-60">
+
+            <div class="row">
+              <!-- Superscaled -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Superscaled</h3>
+
+                <div id="shortcode9">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal9"
+                       data-modal-target="#modal9"
+                       data-modal-effect="superscaled">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal9" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode9" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Superscaled -->
+
+              <!-- Slit -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Slit</h3>
+
+                <div id="shortcode10">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal10"
+                       data-modal-target="#modal10"
+                       data-modal-effect="slit">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal10" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode10" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Slit -->
+
+              <!-- Rotate -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Rotate</h3>
+
+                <div id="shortcode11">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal11"
+                       data-modal-target="#modal11"
+                       data-modal-effect="rotate">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal11" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode11" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Rotate -->
+
+              <!-- Letmein -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Letmein</h3>
+
+                <div id="shortcode12">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal12"
+                       data-modal-target="#modal12"
+                       data-modal-effect="letmein">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal12" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode12" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Letmein -->
+            </div>
+
+            <hr class="g-brd-gray-light-v4 g-mb-60">
+
+            <div class="row">
+              <!-- Makeway -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Makeway</h3>
+
+                <div id="shortcode13">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal13"
+                       data-modal-target="#modal13"
+                       data-modal-effect="makeway">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal13" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode13" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Makeway -->
+
+              <!-- Slip -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Slip</h3>
+
+                <div id="shortcode14">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal14"
+                       data-modal-target="#modal14"
+                       data-modal-effect="slip">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal14" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode14" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Slip -->
+
+              <!-- Corner -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Corner</h3>
+
+                <div id="shortcode15">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal15"
+                       data-modal-target="#modal15"
+                       data-modal-effect="corner">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal15" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode15" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Corner -->
+
+              <!-- Slide Together -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Slide Together</h3>
+
+                <div id="shortcode16">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal16"
+                       data-modal-target="#modal16"
+                       data-modal-effect="slidetogether">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal16" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode16" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Slide Together -->
+            </div>
+
+            <hr class="g-brd-gray-light-v4 g-mb-60">
+
+            <div class="row">
+              <!-- Scale -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Scale</h3>
+
+                <div id="shortcode17">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal17"
+                       data-modal-target="#modal17"
+                       data-modal-effect="scale">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal17" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode17" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Scale -->
+
+              <!-- Door -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Door</h3>
+
+                <div id="shortcode18">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal18"
+                       data-modal-target="#modal18"
+                       data-modal-effect="door">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal18" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode18" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Door -->
+
+              <!-- Push -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Push</h3>
+
+                <div id="shortcode19">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal19"
+                       data-modal-target="#modal19"
+                       data-modal-effect="push">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal19" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode19" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Push -->
+
+              <!-- Content Scale -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Content Scale</h3>
+
+                <div id="shortcode20">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal20"
+                       data-modal-target="#modal20"
+                       data-modal-effect="contentscale">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal20" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode20" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Content Scale -->
+            </div>
+
+            <hr class="g-brd-gray-light-v4 g-mb-60">
+
+            <div class="row">
+              <!-- Swell -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Swell</h3>
+
+                <div id="shortcode21">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal21"
+                       data-modal-target="#modal21"
+                       data-modal-effect="swell">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal21" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode21" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Swell -->
+
+              <!-- Rotate Down -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Rotate Down</h3>
+
+                <div id="shortcode22">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal22"
+                       data-modal-target="#modal22"
+                       data-modal-effect="rotatedown">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal22" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode22" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Rotate Down -->
+
+              <!-- Flash -->
+              <div class="col-md-3 g-mb-30">
+                <h3 class="h4 g-font-weight-300 g-mb-20">Flash</h3>
+
+                <div id="shortcode23">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal23"
+                       data-modal-target="#modal23"
+                       data-modal-effect="flash">Launch Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal23" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">Modal title</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode23" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+              <!-- End Flash -->
+            </div>
+          </section>
+          <!-- End Popup Animations -->
+
+          <hr class="g-brd-gray-light-v4 g-my-60">
+
+          <!-- Situational Modals -->
+          <section>
+            <!-- Heading -->
+            <header class="g-mb-80">
+              <div class="u-heading-v6-2  text-uppercase">
+                <h2 class="h4 u-heading-v6__title g-font-weight-300">Situational Modals</h2>
+              </div>
+
+              <div class="g-line-height-2 g-pl-90">
+                <p>Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl. In hac habitasse platea dictumst. Curabitur hendrerit.</p>
+              </div>
+            </header>
+            <!-- End Heading -->
+
+            <!-- Showing after some time -->
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Showing after some time</h3>
+              </div>
+
+              <div class="col-md-8">
+                <div id="shortcode24">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal-type-aftersometime"
+                       data-modal-target="#modal-type-aftersometime"
+                       data-modal-effect="fadein">Trigger Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal-type-aftersometime" class="js-autonomous-popup text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;"
+                         data-modal-type="aftersometime"
+                         data-open-effect="zoomIn"
+                         data-close-effect="zoomOut"
+                         data-delay="2000"
+                         data-speed="500">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">This modal window have been shown by "after some time"</h4>
+
+                      <hr>
+
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/appear.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of autonomous popups
+                        $.HSCore.components.HSModalWindow.init('.js-autonomous-popup', {
+                          autonomous: true
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode24" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Showing after some time -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- Showing on scroll -->
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Showing by "on scroll"</h3>
+              </div>
+
+              <div class="col-md-8">
+                <div id="shortcode25">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal-type-onscroll"
+                       data-modal-target="#modal-type-onscroll"
+                       data-modal-effect="fadein">Trigger Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal-type-onscroll" class="js-autonomous-popup text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;"
+                         data-modal-type="onscroll"
+                         data-open-effect="flipInY"
+                         data-close-effect="flipOutY"
+                         data-breakpoint="1000"
+                         data-speed="500">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">This modal window have been shown by "on scroll"</h4>
+
+                      <hr>
+
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/appear.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of autonomous popups
+                        $.HSCore.components.HSModalWindow.init('.js-autonomous-popup', {
+                          autonomous: true
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode25" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Showing on scroll -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- Showing on target -->
+            <div id="modal-anchor" class="row">
+              <div class="col-md-4">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Showing by "on target"</h3>
+              </div>
+
+              <div class="col-md-8">
+                <div id="shortcode26">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal-type-onscroll"
+                       data-modal-target="#modal-type-ontarget"
+                       data-modal-effect="fadein">Trigger Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal-type-ontarget" class="js-autonomous-popup text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;"
+                         data-modal-type="ontarget"
+                         data-open-effect="flipInY"
+                         data-close-effect="flipOutY"
+                         data-target="#modal-anchor"
+                         data-speed="500">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">This modal window have been shown by "on target"</h4>
+
+                      <hr>
+
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/appear.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of autonomous popups
+                        $.HSCore.components.HSModalWindow.init('.js-autonomous-popup', {
+                          autonomous: true
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode26" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Showing on target -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- Showing by hashlink -->
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Showing by "hashlink"</h3>
+              </div>
+
+              <div class="col-md-8">
+                <div id="shortcode27">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="shortcode-base-modals.html#modal-type-hashlink" target="_blank">Launch Modal</a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal-type-hashlink" class="js-autonomous-popup text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;"
+                         data-modal-type="hashlink"
+                         data-open-effect="flipInY"
+                         data-close-effect="flipOutY"
+                         data-speed="500">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">This modal window have been shown by "hashlink"</h4>
+
+                      <hr>
+
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/appear.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of autonomous popups
+                        $.HSCore.components.HSModalWindow.init('.js-autonomous-popup', {
+                          autonomous: true
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode27" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Showing by hashlink -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- Showing before unload -->
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Showing by "before unload"</h3>
+              </div>
+
+              <div class="col-md-8">
+                <div id="shortcode28">
+                  <div class="shortcode-html">
+                    <a class="btn u-btn-primary" href="#modal-type-beforeunload"
+                       data-modal-target="#modal-type-beforeunload"
+                       data-modal-effect="fadein">Trigger Modal
+                    </a>
+
+                    <!-- Demo modal window -->
+                    <div id="modal-type-beforeunload" class="js-autonomous-popup text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;"
+                         data-modal-type="beforeunload"
+                         data-open-effect="flipInY"
+                         data-close-effect="flipOutY"
+                         data-speed="500">
+                      <button type="button" class="close" onclick="Custombox.modal.close();">
+                        <i class="hs-icon hs-icon-close"></i>
+                      </button>
+                      <h4 class="g-mb-20">This modal window have been shown by "before unload"</h4>
+
+                      <hr>
+
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <!-- End Demo modal window -->
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/custombox/custombox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/appear.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of autonomous popups
+                        $.HSCore.components.HSModalWindow.init('.js-autonomous-popup', {
+                          autonomous: true
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode28" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Showing before unload -->
+          </section>
+          <!-- End Situational Modals -->
+        </div>
+      </div>
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/appear.js"></script>
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+  <script src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+  <script src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of autonomous popups
+      $.HSCore.components.HSModalWindow.init('.js-autonomous-popup', {
+        autonomous: true
+      });
+
+      $.HSCore.components.HSModalWindow.init('[data-modal-target]:not(.js-modal-markup)');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

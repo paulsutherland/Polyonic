@@ -1,0 +1,30 @@
+/*------------------------------------
+  Changing a shape Effect
+------------------------------------*/
+.u-icon-square--hover:hover,
+.u-icon-v4.u-icon-square--hover:hover .u-icon-v4-inner,
+.u-icon-block--hover:hover .u-icon-square--hover,
+.u-icon-block--hover:hover .u-icon-v4.u-icon-square--hover .u-icon-v4-inner {
+  border-radius: 0;
+}
+
+.u-icon-rounded-3--hover:hover,
+.u-icon-v4.u-icon-rounded-3--hover:hover .u-icon-v4-inner,
+.u-icon-block--hover:hover .u-icon-rounded-3--hover,
+.u-icon-block--hover:hover .u-icon-v4.u-icon-rounded-3--hover .u-icon-v4-inner {
+  border-radius: 3px;
+}
+
+.u-icon-rounded-10--hover:hover,
+.u-icon-v4.u-icon-rounded-10--hover:hover .u-icon-v4-inner,
+.u-icon-block--hover:hover .u-icon-rounded-10--hover,
+.u-icon-block--hover:hover .u-icon-v4.u-icon-rounded-10--hover .u-icon-v4-inner {
+  border-radius: 10px;
+}
+
+.u-icon-rounded-50x--hover:hover,
+.u-icon-v4.u-icon-rounded-50x--hover:hover .u-icon-v4-inner,
+.u-icon-block--hover:hover .u-icon-rounded-50x--hover,
+.u-icon-block--hover:hover .u-icon-v4.u-icon-rounded-50x--hover .u-icon-v4-inner {
+  border-radius: 50%;
+}

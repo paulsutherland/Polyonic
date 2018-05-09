@@ -1,0 +1,72 @@
+/*------------------------------------
+  Carousel indicators v21
+------------------------------------*/
+
+.u-carousel-indicators-v21,
+.u-carousel-indicators-v21--white {
+  white-space: nowrap;
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+    perspective: 1000px;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border-radius: 50%;
+      text-indent: -9999px;
+      transform-style: preserve-3d;
+      transition: transform .3s ease, opacity .3s ease;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        text-indent: 0;
+        backface-visibility: hidden;
+      }
+
+      &::after {
+        transform: rotateY(180deg);
+      }
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    &.slick-active {
+      span {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}
+
+.u-carousel-indicators-v21--white {
+  li {
+    span {
+      &::before {
+        background-color: $g-color-white;
+      }
+
+      &::after {
+        background-color: $g-color-primary;
+      }
+    }
+  }
+}

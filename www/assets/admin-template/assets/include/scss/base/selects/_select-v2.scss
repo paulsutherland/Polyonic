@@ -1,0 +1,72 @@
+/*------------------------------------
+  Select v2
+------------------------------------*/
+
+.u-select--v2 {
+  position: relative;
+  border: 1px solid;
+
+  &-select {
+    .divider {
+      border-top: 1px solid $g-color-gray-light-v7;
+    }
+
+    .dropdown-toggle {
+      background: none;
+      color: inherit;
+      border: none;
+      @include px-to-rem(padding, 10px 20px);
+
+      &::after {
+        content: "";
+        display: none;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        outline: 0 none !important;
+      }
+    }
+
+    .filter-option {
+      color: inherit;
+    }
+
+    .bs-caret {
+      display: none;
+    }
+
+    .dropdown-menu {
+      &[role="combobox"] {
+        min-width: calc(100% + 2px);
+        border: 1px solid #e1eaea;
+        @include px-to-rem(margin-top, 5px);
+        margin-left: -1px;
+      }
+
+      &[role="listbox"] {
+        a {
+          display: flex;
+          align-items: center;
+          color: $g-color-gray-dark-v6;
+          white-space: nowrap;
+          @include px-to-rem(min-height, 40px);
+          @include px-to-rem(padding, 0 20px);
+
+          &:hover {
+            text-decoration: none;
+            background-color: $g-color-gray-light-v8;
+          }
+        }
+      }
+    }
+
+    &.dropup {
+      .dropdown-menu[role="combobox"] {
+        margin-top: 0;
+        @include px-to-rem(margin-bottom, 5px);
+      }
+    }
+  }
+}

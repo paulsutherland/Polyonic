@@ -1,0 +1,18 @@
+//
+// All Styles
+//
+
+// Variables
+@import "settings/variables";
+
+// Unify
+@import "../../../../assets/include/scss/unify.scss";
+
+// Core Components
+@import "core/style";
+
+// Admin Components
+@import "unify-admin-components";
+
+// Admin Globals
+@import "unify-admin-globals";

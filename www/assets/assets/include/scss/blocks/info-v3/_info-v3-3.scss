@@ -1,0 +1,46 @@
+/*------------------------------------
+  Info Block v3-3
+------------------------------------*/
+.info-v3-3 {
+	overflow: hidden;
+
+	&:hover {
+		.info-v3-3__title {
+			color: $g-color-white;
+		}
+		.info-v3-3__img,
+		.info-v3-3__description {
+			transform: translate3d(0, 0, 0);
+		}
+		.info-v3-3__content {
+			display: block;
+		}
+		.info-v3-3__category {
+			display: none;
+		}
+		&::after {
+			opacity: 1;
+		}
+	}
+	&::after {
+		opacity: 0;
+		transition: opacity .5s;
+	}
+}
+
+/* Image */
+.info-v3-3__img {
+	transform: translate3d(70%, 0, 0);
+	transition: transform .5s;
+}
+
+/* Content */
+.info-v3-3__content {
+	display: none;
+}
+
+/* Description */
+.info-v3-3__description {
+	transform: translate3d(-20%, 0, 0);
+	transition: transform .5s;
+}

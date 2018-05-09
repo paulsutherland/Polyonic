@@ -1,0 +1,1108 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-tables" %}
+{% set title = "Tables" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section>
+      <section class="g-py-100">
+        <div class="container">
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Bootstrap Tables</h2>
+            </div>
+            <div class="g-line-height-2 g-pl-90">
+              <p>Due to the widespread use of tables across third-party widgets like calendars and date pickers, folks from Bootstap designed own tables to be
+                <strong>opt-in</strong>. Just add the base class <code>.table</code> to any
+                <code>&lt;table&gt;</code>, then extend with custom styles or our various included modifier classes. Check out the Bootstrap Table page for more information
+                <a href="#!">here</a>
+                .
+              </p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Basic Table -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Basic table</h3>
+              <p>Using the most basic table markup, just add a class <code>.table</code> to the table tag.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode1">
+                <div class="shortcode-html">
+                  <!-- Basic Table -->
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th class="hidden-sm">Last Name</th>
+                          <th>Username</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td class="hidden-sm">Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                            <span class="u-label u-label-warning g-color-white">Expiring</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td class="hidden-sm">Thornton</td>
+                          <td>@fat</td>
+                          <td>
+                            <span class="u-label u-label-success g-color-white">Success</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td class="hidden-sm">the Bird</td>
+                          <td>@twitter</td>
+                          <td>
+                            <span class="u-label u-label-danger g-color-white">Error!</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>htmlstream</td>
+                          <td class="hidden-sm">Web Design</td>
+                          <td>@htmlstream</td>
+                          <td>
+                            <span class="u-label u-label-info g-color-white">Pending</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- End Basic Table -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode1" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- Basic Table -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Table Inverse -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Table inverse</h3>
+              <p>You can also invert the colors—with light text on dark backgrounds—with <code>.table-dark</code>.
+              </p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode2">
+                <div class="shortcode-html">
+                  <!-- Table Inverse -->
+                  <div class="table-responsive">
+                    <table class="table table-dark">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th class="hidden-sm">Last Name</th>
+                          <th>Username</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td class="hidden-sm">Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                            <span class="u-label u-label-warning g-color-white">Expiring</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td class="hidden-sm">Thornton</td>
+                          <td>@fat</td>
+                          <td>
+                            <span class="u-label u-label-success g-color-white">Success</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td class="hidden-sm">the Bird</td>
+                          <td>@twitter</td>
+                          <td>
+                            <span class="u-label u-label-danger g-color-white">Error!</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>htmlstream</td>
+                          <td class="hidden-sm">Web Design</td>
+                          <td>@htmlstream</td>
+                          <td>
+                            <span class="u-label u-label-info g-color-white">Pending</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- End Table Inverse -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode2" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- Table Inverse -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Table Head Option -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Table head option</h3>
+              <p>Similar to default and inverse tables, use one of two modifier classes to make
+                <code>&lt;thead&gt;</code>s appear light or dark gray.</p>
+              <p><em>"Use a class <code>.thead-inverse</code> for dark gray and
+                  <code>thead-default</code> for light gray."</em></p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode3">
+                <div class="shortcode-html">
+                  <!-- Table Head Option -->
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr class="thead-inverse">
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th class="hidden-sm">Last Name</th>
+                          <th>Username</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td class="hidden-sm">Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                            <span class="u-label u-label-warning g-color-white">Expiring</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td class="hidden-sm">Thornton</td>
+                          <td>@fat</td>
+                          <td>
+                            <span class="u-label u-label-success g-color-white">Success</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td class="hidden-sm">the Bird</td>
+                          <td>@twitter</td>
+                          <td>
+                            <span class="u-label u-label-danger g-color-white">Error!</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>htmlstream</td>
+                          <td class="hidden-sm">Web Design</td>
+                          <td>@htmlstream</td>
+                          <td>
+                            <span class="u-label u-label-info g-color-white">Pending</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="table">
+                      <thead>
+                        <tr class="thead-default">
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th class="hidden-sm">Last Name</th>
+                          <th>Username</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td class="hidden-sm">Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                            <span class="u-label u-label-warning g-color-white">Expiring</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td class="hidden-sm">Thornton</td>
+                          <td>@fat</td>
+                          <td>
+                            <span class="u-label u-label-success g-color-white">Success</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td class="hidden-sm">the Bird</td>
+                          <td>@twitter</td>
+                          <td>
+                            <span class="u-label u-label-danger g-color-white">Error!</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>htmlstream</td>
+                          <td class="hidden-sm">Web Design</td>
+                          <td>@htmlstream</td>
+                          <td>
+                            <span class="u-label u-label-info g-color-white">Pending</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- End Table Head Option -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode3" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- Table Inverse -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Table Striped Rows -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Table striped rows</h3>
+              <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the
+                <code>&lt;tbody&gt;</code></p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode4">
+                <div class="shortcode-html">
+                  <!-- Table Striped Rows -->
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th class="hidden-sm">Last Name</th>
+                          <th>Username</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td class="hidden-sm">Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                            <span class="u-label u-label-warning g-color-white">Expiring</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td class="hidden-sm">Thornton</td>
+                          <td>@fat</td>
+                          <td>
+                            <span class="u-label u-label-success g-color-white">Success</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td class="hidden-sm">the Bird</td>
+                          <td>@twitter</td>
+                          <td>
+                            <span class="u-label u-label-danger g-color-white">Error!</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>htmlstream</td>
+                          <td class="hidden-sm">Web Design</td>
+                          <td>@htmlstream</td>
+                          <td>
+                            <span class="u-label u-label-info g-color-white">Pending</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- End Table Striped Rows -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode4" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Table Striped Rows -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Table Bordered -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Table bordered</h3>
+              <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode5">
+                <div class="shortcode-html">
+                  <!-- Table Bordered -->
+                  <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th class="hidden-sm">Last Name</th>
+                          <th>Username</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td class="hidden-sm">Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                            <span class="u-label u-label-warning g-color-white">Expiring</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td class="hidden-sm">Thornton</td>
+                          <td>@fat</td>
+                          <td>
+                            <span class="u-label u-label-success g-color-white">Success</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td class="hidden-sm">the Bird</td>
+                          <td>@twitter</td>
+                          <td>
+                            <span class="u-label u-label-danger g-color-white">Error!</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>htmlstream</td>
+                          <td class="hidden-sm">Web Design</td>
+                          <td>@htmlstream</td>
+                          <td>
+                            <span class="u-label u-label-info g-color-white">Pending</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- End Table Bordered -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode5" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Table Bordered -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Hoverable Rows -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Hoverable rows</h3>
+              <p>Add <code>.table-hover</code> to enable a hover state on table rows within a
+                <code>&lt;tbody&gt;</code>.
+              </p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode6">
+                <div class="shortcode-html">
+                  <!-- Hoverable Rows -->
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th class="hidden-sm">Last Name</th>
+                          <th>Username</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td class="hidden-sm">Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                            <span class="u-label u-label-warning g-color-white">Expiring</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td class="hidden-sm">Thornton</td>
+                          <td>@fat</td>
+                          <td>
+                            <span class="u-label u-label-success g-color-white">Success</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td class="hidden-sm">the Bird</td>
+                          <td>@twitter</td>
+                          <td>
+                            <span class="u-label u-label-danger g-color-white">Error!</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>htmlstream</td>
+                          <td class="hidden-sm">Web Design</td>
+                          <td>@htmlstream</td>
+                          <td>
+                            <span class="u-label u-label-info g-color-white">Pending</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- End Hoverable Rows -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode6" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Hoverable Rows -->
+        </div>
+      </section>
+
+      <hr class="g-brd-gray-light-v4 mt-50">
+
+      <section class="g-py-100">
+        <div class="container">
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Tables With Panel</h2>
+            </div>
+            <div class="g-pl-90">
+              <p>You may cover any tables with the panel examples. You may choose any predefined Unify panels from
+                <a href="#!">here</a>
+                . All panels styles can be changed with global classes. You may also create your own style.
+              </p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Basic Table -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Basic table</h3>
+              <p>Covered with primary card panel.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode7">
+                <div class="shortcode-html">
+                  <!-- Basic Table -->
+                  <div class="card g-brd-primary rounded-0">
+                    <h3 class="card-header g-bg-primary g-brd-transparent g-color-white g-font-size-16 rounded-0 mb-0">
+                      <i class="fa fa-tasks g-mr-5"></i>
+                      Basic Table
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+
+                    <div class="table-responsive">
+                      <table class="table u-table--v1 mb-0">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th class="hidden-sm">Last Name</th>
+                            <th>Username</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td class="hidden-sm">Otto</td>
+                            <td>@mdo</td>
+                            <td>
+                              <span class="u-label u-label-warning g-color-white">Expiring</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td class="hidden-sm">Thornton</td>
+                            <td>@fat</td>
+                            <td>
+                              <span class="u-label u-label-success g-color-white">Success</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td class="hidden-sm">the Bird</td>
+                            <td>@twitter</td>
+                            <td>
+                              <span class="u-label u-label-danger g-color-white">Error!</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>htmlstream</td>
+                            <td class="hidden-sm">Web Design</td>
+                            <td>@htmlstream</td>
+                            <td>
+                              <span class="u-label u-label-info g-color-white">Pending</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- End Basic Table -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode7" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- Basic Table -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Basic Table (Spacing) -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Basic table (spacing)</h3>
+              <p>Covered with primary card panel.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode8">
+                <div class="shortcode-html">
+                  <!-- Basic Table (Spacing) -->
+                  <div class="card g-brd-pink rounded-0">
+                    <h3 class="card-header g-bg-pink g-brd-transparent g-color-white g-font-size-16 rounded-0 mb-0">
+                      <i class="fa fa-user g-mr-5"></i>
+                      Basic Table (spacing)
+                    </h3>
+
+                    <div class="card-block table-responsive g-pa-15">
+                      <table class="table u-table--v1 mb-0">
+                        <thead>
+                          <tr class="g-col-border-top-0">
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th class="hidden-sm">Last Name</th>
+                            <th>Username</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td class="hidden-sm">Otto</td>
+                            <td>@mdo</td>
+                            <td>
+                              <a href="#!">
+                                <span class="u-label u-label-danger g-color-white u-label-with-icon">
+                                  <i class="fa fa-trash-o"></i>
+                                  Delete
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td class="hidden-sm">Thornton</td>
+                            <td>@fat</td>
+                            <td>
+                              <a href="#!">
+                                <span class="u-label u-label-warning g-color-white u-label-with-icon">
+                                  <i class="fa fa-pencil"></i>
+                                  Edit
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td class="hidden-sm">the Bird</td>
+                            <td>@twitter</td>
+                            <td>
+                              <a href="#!">
+                                <span class="u-label u-label-info g-color-white u-label-with-icon">
+                                  <i class="fa fa-share"></i>
+                                  Share
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>htmlstream</td>
+                            <td class="hidden-sm">Web Design</td>
+                            <td>@htmlstream</td>
+                            <td>
+                              <a href="#!">
+                                <span class="u-label u-label-success g-color-white u-label-with-icon">
+                                  <i class="fa fa-check"></i>
+                                  Submit
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- End Basic Table -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode8" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Basic Table (Spacing) -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Table Bordered -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Table bordered</h3>
+              <p>Covered with primary card panel.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode9">
+                <div class="shortcode-html">
+                  <!-- Table Bordered -->
+                  <div class="card g-brd-blue rounded-0 g-mb-30">
+                    <h3 class="card-header g-bg-blue g-brd-transparent g-color-white g-font-size-16 rounded-0 mb-0">
+                      <i class="fa fa-globe g-mr-5"></i>
+                      Table Bordered
+                    </h3>
+
+                    <div class="card-block table-responsive g-pa-15">
+                      <table class="table table-bordered u-table--v1 mb-0">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th class="hidden-sm">Last Name</th>
+                            <th>Username</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td class="hidden-sm">Otto</td>
+                            <td>@mdo</td>
+                            <td>
+                              <a href="#!">
+                                <span class="u-label u-label-danger g-color-white u-label-with-icon">
+                                  <i class="fa fa-trash-o"></i>
+                                  Delete
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td class="hidden-sm">Thornton</td>
+                            <td>@fat</td>
+                            <td>
+                              <a href="#!">
+                                <span class="u-label u-label-warning g-color-white u-label-with-icon">
+                                  <i class="fa fa-pencil"></i>
+                                  Edit
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td class="hidden-sm">the Bird</td>
+                            <td>@twitter</td>
+                            <td>
+                              <a href="#!">
+                                <span class="u-label u-label-info g-color-white u-label-with-icon">
+                                  <i class="fa fa-share"></i>
+                                  Share
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>htmlstream</td>
+                            <td class="hidden-sm">Web Design</td>
+                            <td>@htmlstream</td>
+                            <td>
+                              <a href="#!">
+                                <span class="u-label u-label-success g-color-white u-label-with-icon">
+                                  <i class="fa fa-check"></i>
+                                  Submit
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- End Table Bordered -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode9" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Table Bordered -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Striped Rows -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Striped rows</h3>
+              <p>Covered with primary card panel.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode10">
+                <div class="shortcode-html">
+                  <!-- Striped Rows -->
+                  <div class="card g-brd-teal rounded-0 g-mb-30">
+                    <h3 class="card-header g-bg-teal g-brd-transparent g-color-white g-font-size-16 rounded-0 mb-0">
+                      <i class="fa fa-edit g-mr-5"></i>
+                      Striped Rows
+                    </h3>
+
+                    <div class="table-responsive">
+                      <table class="table table-striped u-table--v1 mb-0">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th class="hidden-sm">Last Name</th>
+                            <th>Username</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td class="hidden-sm">Otto</td>
+                            <td>@mdo</td>
+                            <td>
+                              <span class="u-label u-label-warning g-color-white">Expiring</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td class="hidden-sm">Thornton</td>
+                            <td>@fat</td>
+                            <td>
+                              <span class="u-label u-label-success g-color-white">Success</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td class="hidden-sm">the Bird</td>
+                            <td>@twitter</td>
+                            <td>
+                              <span class="u-label u-label-danger g-color-white">Error!</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>htmlstream</td>
+                            <td class="hidden-sm">Web Design</td>
+                            <td>@htmlstream</td>
+                            <td>
+                              <span class="u-label u-label-info g-color-white">Pending</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- End Striped Rows -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode10" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Striped Rows -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Hover Rows -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Hover rows</h3>
+              <p>Covered with primary card panel.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode11">
+                <div class="shortcode-html">
+                  <!-- Hover Rows -->
+                  <div class="card g-brd-darkpurple rounded-0 g-mb-30">
+                    <h3 class="card-header g-bg-darkpurple g-brd-transparent g-color-white g-font-size-16 rounded-0 mb-0">
+                      <i class="fa fa-gear g-mr-5"></i>
+                      Hover Rows
+                    </h3>
+
+                    <div class="table-responsive">
+                      <table class="table table-hover u-table--v1 mb-0">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th class="hidden-sm">Last Name</th>
+                            <th>Username</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td class="hidden-sm">Otto</td>
+                            <td>@mdo</td>
+                            <td>
+                              <span class="u-label u-label-warning g-color-white">Expiring</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td class="hidden-sm">Thornton</td>
+                            <td>@fat</td>
+                            <td>
+                              <span class="u-label u-label-success g-color-white">Success</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td class="hidden-sm">the Bird</td>
+                            <td>@twitter</td>
+                            <td>
+                              <span class="u-label u-label-danger g-color-white">Error!</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>htmlstream</td>
+                            <td class="hidden-sm">Web Design</td>
+                            <td>@htmlstream</td>
+                            <td>
+                              <span class="u-label u-label-info g-color-white">Pending</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- End Hover Rows -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode11" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Hover Rows -->
+        </div>
+      </section>
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

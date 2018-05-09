@@ -1,0 +1,2838 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-news-image" %}
+{% set title = "News Image" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-block.njk" %}
+
+    <section>
+      <!-- News Image Block 01 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#01</span>
+            </h2>
+          </div>
+
+          <div id="shortcode1">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_3--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img7.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn u-btn-primary rounded-0" href="#!">Business</a>
+                    </span>
+
+                    <header class="g-pos-abs g-right-20 g-bottom-10 g-left-20">
+                      <span class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 26, 2016
+                      </span>
+                      <h3 class="h2 g-font-weight-600">
+                        <a class="g-color-white" href="#!">Our favourite images of the week would be great idea!</a>
+                      </h3>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_3--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img5.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn u-btn-yellow rounded-0" href="#!">Tech</a>
+                    </span>
+
+                    <header class="g-pos-abs g-right-20 g-bottom-10 g-left-20">
+                      <span class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 12, 2016
+                      </span>
+                      <h3 class="h2 g-font-weight-600">
+                        <a class="g-color-white" href="#!">Must be visited meetups in the USA with your team.</a>
+                      </h3>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode1" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 01 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 02 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#02</span>
+            </h2>
+          </div>
+
+          <div id="shortcode2">
+            <div class="shortcode-html">
+              <div class="row mx-0">
+                <div class="col-lg-4 g-px-0--md g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img11.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm u-btn-red rounded-0" href="#!">Fashion</a>
+                    </span>
+
+                    <span class="u-icon-v3 u-icon-size--sm g-bg-white g-color-black g-color-primary--hover rounded-circle g-font-size-12 g-cursor-pointer g-pos-abs g-top-20 g-right-20">
+                      <i class="icon-music-tone-alt"></i>
+                    </span>
+
+                    <header class="g-pos-abs g-bottom-10 g-left-20 g-right-20">
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 26, 2016
+                      </small>
+                      <h3 class="h4 g-font-weight-600 g-mt-5">
+                        <a class="g-color-white g-color-white--hover" href="#!">Be ready, fashion of the year is coming this year</a>
+                      </h3>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-px-0--md g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img7.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm u-btn-red rounded-0" href="#!">Beaches</a>
+                    </span>
+
+                    <span class="u-icon-v3 u-icon-size--sm g-bg-white g-color-black g-color-primary--hover rounded-circle g-font-size-12 g-cursor-pointer g-pos-abs g-top-20 g-right-20">
+                      <i class="icon-camera"></i>
+                    </span>
+
+                    <header class="g-pos-abs g-bottom-10 g-left-20 g-right-20">
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 15, 2016
+                      </small>
+                      <h3 class="h4 g-font-weight-600 g-mt-5">
+                        <a class="g-color-white g-color-white--hover" href="#!">Must be visited places in the USA - Florida Beaches</a>
+                      </h3>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-px-0--md g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img8.jpg" alt="Image Description">
+                    </figure>
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm u-btn-red rounded-0" href="#!">Food</a>
+                    </span>
+
+                    <span class="u-icon-v3 u-icon-size--sm g-bg-white g-color-black g-color-primary--hover rounded-circle g-font-size-12 g-cursor-pointer g-pos-abs g-top-20 g-right-20">
+                      <i class="icon-control-play g-left-2"></i>
+                    </span>
+
+                    <header class="g-pos-abs g-bottom-10 g-left-20 g-right-20">
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 8, 2016
+                      </small>
+                      <h3 class="h4 g-font-weight-600 g-mt-5">
+                        <a class="g-color-white g-color-white--hover" href="#!">Why your next glass of juice will cost you more</a>
+                      </h3>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode2" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 02 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 03 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#03</span>
+            </h2>
+          </div>
+
+          <div id="shortcode3">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img8.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-hidden-xs-down u-icon-v3 g-font-size-default g-bg-white g-color-black g-color-primary--hover rounded-circle g-cursor-pointer g-absolute-centered">
+                      <i class="fa fa-play g-left-2"></i>
+                    </span>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn u-btn-yellow rounded-0" href="#!">Business</a>
+                    </span>
+
+                    <div class="g-pos-abs g-right-20 g-bottom-10 g-left-20">
+                      <span class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        Mar 18, 2016
+                      </span>
+                      <h3 class="h2 g-font-weight-300">
+                        <a class="g-color-white g-color-white--hover" href="#!">Learn the next 10 best tips for your business.</a>
+                      </h3>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img9.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-hidden-xs-down u-icon-v3 g-font-size-default g-bg-white g-color-black g-color-primary--hover rounded-circle g-cursor-pointer g-pos-abs g-top-20 g-right-20">
+                      <i class="fa fa-play g-left-2"></i>
+                    </span>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn u-btn-blue rounded-0" href="#!">Co-Working</a>
+                    </span>
+
+                    <header class="g-pos-abs g-right-20 g-bottom-10 g-left-20">
+                      <span class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        Mar 06, 2016
+                      </span>
+                      <h3 class="h2 g-font-weight-300">
+                        <a class="g-color-white g-color-white--hover" href="#!">Teamwork improves your product and motivation.</a>
+                      </h3>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode3" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 03 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 04 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#04</span>
+            </h2>
+          </div>
+
+          <div id="shortcode4">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_7--after">
+                      <img class="img-fluid u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img11.jpg" alt="Image Description">
+                    </figure>
+
+                    <div class="w-100 text-center g-absolute-centered g-px-20">
+                      <a class="btn btn-xs u-btn-darkred rounded-0" href="#!">Fashion</a>
+                      <h3 class="h4 g-font-weight-600 g-mt-10">
+                        <a class="g-color-white" href="#!">Be ready, fashion of the year is coming this year</a>
+                      </h3>
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 26, 2016
+                      </small>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_7--after">
+                      <img class="img-fluid u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img7.jpg" alt="Image Description">
+                    </figure>
+
+                    <div class="w-100 text-center g-absolute-centered g-px-20">
+                      <a class="btn btn-xs u-btn-darkred rounded-0" href="#!">Beaches</a>
+                      <h3 class="h4 g-font-weight-600 g-mt-10">
+                        <a class="g-color-white" href="#!">Must be visited places in the USA - Florida Beaches</a>
+                      </h3>
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 18, 2016
+                      </small>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_7--after">
+                      <img class="img-fluid u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img8.jpg" alt="Image Description">
+                    </figure>
+
+                    <div class="w-100 text-center g-absolute-centered g-px-20">
+                      <a class="btn btn-xs u-btn-darkred rounded-0" href="#!">Food</a>
+                      <h3 class="h4 g-font-weight-600 g-mt-10">
+                        <a class="g-color-white" href="#!">Why your next glass of juice will cost you more</a>
+                      </h3>
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 5, 2016
+                      </small>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode4" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 04 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 05 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#05</span>
+            </h2>
+          </div>
+
+          <div id="shortcode5">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-pink-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img9.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-hidden-xs-down g-pos-abs g-top-20 g-left-20">
+                      <a class="btn u-btn-black rounded-0" href="#!">Discover</a>
+                    </span>
+
+                    <a class="g-hidden-xs-down g-pos-abs g-top-20 g-right-20" href="#!">
+                      <img class="img-fluid rounded-circle g-width-50" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                    </a>
+
+                    <div class="text-center g-pos-abs g-right-20 g-bottom-20 g-left-20">
+                      <span class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 12, 2016
+                      </span>
+
+                      <h3 class="h2 g-font-weight-600">
+                        <a class="g-color-white g-color-white--hover" href="#!">Must be visited places in the USA - Grand Canyon</a>
+                      </h3>
+
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          264
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          52
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          26
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-purple-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img1.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-hidden-xs-down g-pos-abs g-top-20 g-left-20">
+                      <a class="btn u-btn-cyan rounded-0" href="#!">Tech</a>
+                    </span>
+
+                    <a class="g-hidden-xs-down g-pos-abs g-top-20 g-right-20" href="#!">
+                      <img class="img-fluid rounded-circle g-width-50" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                    </a>
+
+                    <div class="text-center g-pos-abs g-right-20 g-bottom-20 g-left-20">
+                      <span class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 26, 2016
+                      </span>
+
+                      <h3 class="h2 g-font-weight-600">
+                        <a class="g-color-white g-color-white--hover" href="#!">Our favourite images of the week would be great idea!</a>
+                      </h3>
+
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          264
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          52
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          26
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode5" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 05 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 06 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#06</span>
+            </h2>
+          </div>
+
+          <div id="shortcode6">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-green-gradient-opacity-v1--after">
+                      <img class="img-fluid u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img9.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-right-20">
+                      <img class="img-fluid rounded-circle g-width-40" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                    </span>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <span class="btn btn-sm u-btn-darkred rounded-0">UX Design</span>
+
+                    </span>
+
+                    <header class="g-pos-abs g-right-20 g-bottom-10 g-left-20">
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 14, 2016
+                      </small>
+
+                      <h3 class="h5 g-font-weight-600 g-color-white">
+                        Start your next project with the top architectures of the World
+                      </h3>
+                    </header>
+                    <a class="u-link-v2" href="#!">Read More</a>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-pink-gradient-opacity-v1--after">
+                      <img class="img-fluid u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img5.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-right-20">
+                      <img class="img-fluid rounded-circle g-width-40" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                    </span>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <span class="btn btn-sm u-btn-darkpurple rounded-0">UX Design</span>
+                    </span>
+
+                    <header class="g-pos-abs g-right-20 g-bottom-10 g-left-20">
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 14, 2016
+                      </small>
+
+                      <h3 class="h5 g-font-weight-600 g-color-white">
+                        Top 10 UX Designs insparations in Pinterest for 2016
+                      </h3>
+                    </header>
+                    <a class="u-link-v2" href="#!">Read More</a>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-cyan-gradient-opacity-v1--after">
+                      <img class="img-fluid u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img4.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-right-20">
+                      <img class="img-fluid rounded-circle g-width-40" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                    </span>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <span class="btn btn-sm u-btn-cyan rounded-0">Templates</span>
+                    </span>
+
+                    <header class="g-pos-abs g-right-20 g-bottom-10 g-left-20">
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 3, 2016
+                      </small>
+
+                      <h3 class="h5 g-font-weight-600 g-color-white">
+                        Best product of the year for freelance designers - Unify Template
+                      </h3>
+                    </header>
+                    <a class="u-link-v2" href="#!">Read More</a>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode6" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 06 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 07 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#07</span>
+            </h2>
+          </div>
+
+          <div id="shortcode7">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img4.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-0">
+                      <a class="btn u-btn-yellow rounded-0" href="#!">Discover</a>
+                      <small class="g-bg-black g-color-white g-pa-5 d-block">July 09, 2016</small>
+                    </span>
+
+                    <span class="u-icon-v3 g-bg-white g-color-black g-color-primary--hover rounded-circle g-cursor-pointer g-absolute-centered">
+                      <i class="icon-control-play g-left-2"></i>
+                    </span>
+
+                    <header class="g-pos-abs g-bottom-20 g-left-0">
+                      <h3 class="h5 g-bg-yellow-opacity-0_7 g-pa-5-10--sm">
+                        <a class="g-color-white g-color-white--hover" href="#!">Waterfall View</a>
+                      </h3>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img5.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-0">
+                      <a class="btn u-btn-red rounded-0" href="#!">Space</a>
+                      <small class="g-bg-black g-color-white g-pa-5 d-block">July 12, 2016</small>
+                    </span>
+
+                    <span class="u-icon-v3 g-bg-white g-color-black g-color-primary--hover rounded-circle g-cursor-pointer g-absolute-centered">
+                      <i class="icon-control-play g-left-2"></i>
+                    </span>
+
+                    <header class="g-pos-abs g-bottom-20 g-left-0">
+                      <h3 class="h5 g-bg-red-opacity-0_5 g-pa-5-10--sm">
+                        <a class="g-color-white g-color-white--hover" href="#!">The Best Views Ever</a>
+                      </h3>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img6.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-0">
+                      <a class="btn u-btn-blue rounded-0" href="#!">Island</a>
+                      <small class="g-bg-black g-color-white g-pa-5 d-block">July 17, 2016</small>
+                    </span>
+
+                    <span class="u-icon-v3 g-bg-white g-color-black g-color-primary--hover rounded-circle g-cursor-pointer g-absolute-centered">
+                      <i class="icon-control-play g-left-2"></i>
+                    </span>
+
+                    <header class="g-pos-abs g-bottom-20 g-left-0">
+                      <h3 class="h5 g-bg-blue-opacity-0_7 g-pa-5-10--sm">
+                        <a class="g-color-white g-color-white--hover" href="#!">Kayaking Tour</a>
+                      </h3>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode7" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 07 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 08 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#08</span>
+            </h2>
+          </div>
+
+          <div id="shortcode8">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img2.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm u-btn-black rounded-0" href="#!">July 15, 2016</a>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-10 g-left-20 g-right-20">
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          264
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          52
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          26
+                        </li>
+                      </ul>
+
+                      <h3 class="h4 g-font-weight-600 g-mt-5">
+                        <a class="g-color-white g-color-white--hover" href="#!">Must be visited places in the USA - Florida Beaches</a>
+                      </h3>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img3.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm u-btn-black rounded-0" href="#!">July 15, 2016</a>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-10 g-left-20 g-right-20">
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          264
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          52
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          26
+                        </li>
+                      </ul>
+
+                      <h3 class="h4 g-font-weight-600 g-mt-5">
+                        <a class="g-color-white g-color-white--hover" href="#!">Must be visited places in the USA - Florida Beaches</a>
+                      </h3>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img6.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm u-btn-black rounded-0" href="#!">July 15, 2016</a>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-10 g-left-20 g-right-20">
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          264
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          52
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          26
+                        </li>
+                      </ul>
+
+                      <h3 class="h4 g-font-weight-600 g-mt-5">
+                        <a class="g-color-white g-color-white--hover" href="#!">Must be visited places in the USA - Florida Beaches</a>
+                      </h3>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode8" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 08 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 09 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#09</span>
+            </h2>
+          </div>
+
+          <div id="shortcode9">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img9.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="u-icon-v3 u-icon-size--sm g-bg-white g-color-black rounded-circle g-pos-abs g-top-20 g-right-20">
+                      <i class="icon-camera"></i>
+                    </span>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn u-btn-red rounded-0" href="#!">Startup</a>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-20 g-left-20 g-right-20">
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 8, 2016
+                      </small>
+
+                      <h3 class="h4 g-font-weight-600 g-mt-5">
+                        <a class="g-color-white g-color-white--hover" href="#!">Our goal is to be the next billion company. In order to do that, we should work hard.</a>
+                      </h3>
+
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          264
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          52
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          26
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img7.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="u-icon-v3 u-icon-size--sm g-bg-white g-color-black rounded-circle g-pos-abs g-top-20 g-right-20">
+                      <i class="icon-control-play g-left-2"></i>
+                    </span>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn u-btn-red rounded-0" href="#!">Business</a>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-20 g-left-20 g-right-20">
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 22, 2016
+                      </small>
+
+                      <h3 class="h4 g-font-weight-600 g-mt-5">
+                        <a class="g-color-white g-color-white--hover" href="#!">Why your customer support is very important? Learn the next 10 best tips for your business.</a>
+                      </h3>
+
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          127
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          152
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          32
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode9" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 09 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block v10 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#10</span>
+            </h2>
+          </div>
+
+          <div id="shortcode10">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-cover-v1 g-bg-black-opacity-0_7--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img8.jpg" alt="Image Description">
+                    </figure>
+
+                    <header class="w-100 text-center g-absolute-centered g-px-20">
+                      <span class="btn btn-xs u-btn-cyan rounded-0" href="#!">Travel</span>
+                      <h3 class="h4 g-font-weight-600 g-color-white g-mt-10">
+                        Best destinations around the World for holidays.
+                      </h3>
+
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 04, 2016
+                      </small>
+                    </header>
+
+                    <a class="u-link-v2" href="#!">Read More</a>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-cover-v1 g-bg-black-opacity-0_7--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img4.jpg" alt="Image Description">
+                    </figure>
+
+                    <header class="w-100 text-center g-absolute-centered g-px-20">
+                      <span class="btn btn-xs u-btn-cyan rounded-0" href="#!">Work</span>
+                      <h3 class="h4 g-font-weight-600 g-mt-10 g-color-white">
+                        Top 10 co-working places in Voctoria, BC.
+                      </h3>
+
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 18, 2016
+                      </small>
+                    </header>
+
+                    <a class="u-link-v2" href="#!">Read More</a>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-cover-v1 g-bg-black-opacity-0_7--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img7.jpg" alt="Image Description">
+                    </figure>
+
+                    <header class="w-100 text-center g-absolute-centered g-px-20">
+                      <span class="btn btn-xs u-btn-cyan rounded-0" href="#!">Beaches</span>
+
+                      <h3 class="h4 g-font-weight-600 g-mt-10 g-color-white">
+                        Must be visited places in the USA - Florida Beaches
+                      </h3>
+
+                      <small class="g-color-white">
+                        <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                        July 25, 2016
+                      </small>
+                    </header>
+
+                    <a class="u-link-v2" href="#!">Read More</a>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode10" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block v10 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 11 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#11</span>
+            </h2>
+          </div>
+
+          <div id="shortcode11">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_3--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img5.jpg" alt="Image Description">
+                    </figure>
+
+                    <ul class="list-inline g-font-size-12 g-color-white g-pos-abs g-top-20 g-left-20">
+                      <li class="list-inline-item">
+                        <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                        264
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                        52
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                        26
+                      </li>
+                    </ul>
+
+                    <div class="g-pos-abs g-bottom-10 g-left-20 g-right-20">
+                      <span class="g-mr-5">
+                        <a class="btn btn-xs u-btn-primary rounded-0" href="#!">Business</a>
+                      </span>
+
+                      <small class="g-color-white">
+                        July 15, 2016
+                      </small>
+
+                      <h3 class="h2 g-font-weight-600 g-mt-5">
+                        <a class="g-color-white g-color-white--hover" href="#!">Great tips for your next successful business company.</a>
+                      </h3>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_3--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img7.jpg" alt="Image Description">
+                    </figure>
+
+                    <ul class="list-inline g-font-size-12 g-color-white g-pos-abs g-top-20 g-left-20">
+                      <li class="list-inline-item">
+                        <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                        264
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                        52
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                        26
+                      </li>
+                    </ul>
+
+                    <div class="g-pos-abs g-bottom-10 g-left-20 g-right-20">
+                      <span class="g-mr-5">
+                        <a class="btn btn-xs u-btn-primary rounded-0" href="#!">Tech</a>
+                      </span>
+
+                      <small class="g-color-white">
+                        July 29, 2016
+                      </small>
+
+                      <h3 class="h2 g-font-weight-600 g-mt-5">
+                        <a class="g-color-white g-color-white--hover" href="#!">Top 10 web cloud hosting companies you should consider.</a>
+                      </h3>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode11" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 11 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 12 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#12</span>
+            </h2>
+          </div>
+
+          <div id="shortcode12">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img12.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm u-btn-red rounded-0" href="#!">
+                        <i class="icon-energy"></i>
+                      </a>
+                      <a class="btn btn-sm u-btn-black rounded-0" href="#!">July 06, 2016</a>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-20 g-left-20 g-right-20">
+                      <ul class="list-inline g-font-size-12 g-color-white g-mb-5">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          152
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          17
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          35
+                        </li>
+                      </ul>
+
+                      <h3 class="h2 g-font-weight-300 g-mb-20">
+                        <a class="g-color-white g-color-white--hover" href="#!">Best work places around the World for your company</a>
+                      </h3>
+
+                      <div class="media">
+                        <div class="d-flex mr-3">
+                          <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                        </div>
+
+                        <div class="media-body align-self-center g-color-white">
+                          <p class="mb-0">John Reyes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img3.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm u-btn-red rounded-0" href="#!">
+                        <i class="icon-energy"></i>
+                      </a>
+                      <a class="btn btn-sm u-btn-black rounded-0" href="#!">July 15, 2016</a>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-20 g-left-20 g-right-20">
+                      <ul class="list-inline g-font-size-12 g-color-white g-mb-5">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          264
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          52
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          26
+                        </li>
+                      </ul>
+
+                      <h3 class="h2 g-font-weight-300 g-mb-20">
+                        <a class="g-color-white g-color-white--hover" href="#!">Top 10 bust be used iOS apps for your next project</a>
+                      </h3>
+
+                      <div class="media">
+                        <div class="d-flex mr-3">
+                          <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                        </div>
+
+                        <div class="media-body align-self-center g-color-white">
+                          <p class="mb-0">Ashley Dolwood</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img13.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm u-btn-red rounded-0" href="#!">
+                        <i class="icon-energy"></i>
+                      </a>
+                      <a class="btn btn-sm u-btn-black rounded-0" href="#!">July 22, 2016</a>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-20 g-left-20 g-right-20">
+                      <ul class="list-inline g-font-size-12 g-color-white g-mb-5">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          124
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          65
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          14
+                        </li>
+                      </ul>
+
+                      <h3 class="h2 g-font-weight-300 g-mb-20">
+                        <a class="g-color-white g-color-white--hover" href="#!">Discussing the project details is good step with team mates</a>
+                      </h3>
+
+                      <div class="media">
+                        <div class="d-flex mr-3">
+                          <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                        </div>
+
+                        <div class="media-body align-self-center g-color-white">
+                          <p class="mb-0">Bill Watson</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode12" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 12 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 13 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#13</span>
+            </h2>
+          </div>
+
+          <div id="shortcode13">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img6.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="u-icon-v3 u-icon-size--sm g-bg-white g-color-black rounded-circle g-pos-abs g-top-20 g-right-20">
+                      <i class="icon-control-play g-left-2"></i>
+                    </span>
+
+                    <span class="g-hidden-xs-down g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm u-btn-aqua rounded-0" href="#!">Mobile Apps</a>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-20 g-left-20 g-right-20">
+                      <div class="media g-mb-15">
+                        <div class="d-flex mr-3">
+                          <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                        </div>
+
+                        <div class="media-body align-self-center g-color-white">
+                          <p class="mb-0">Kathy Reyes</p>
+                        </div>
+                      </div>
+
+                      <h3 class="g-font-weight-600 g-mb-15">
+                        <a class="g-color-white g-color-white--hover" href="#!">Enjoying reading news in our new app for iOS and Android</a>
+                      </h3>
+
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                          July 8, 2016
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          52
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          26
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x450/img4.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="u-icon-v3 u-icon-size--sm g-bg-white g-color-black rounded-circle g-pos-abs g-top-20 g-right-20">
+                      <i class="icon-camera"></i>
+                    </span>
+
+                    <span class="g-hidden-xs-down g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm u-btn-aqua rounded-0" href="#!">Meetup</a>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-20 g-left-20 g-right-20">
+                      <div class="media g-mb-15">
+                        <div class="d-flex mr-3">
+                          <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                        </div>
+
+                        <div class="media-body align-self-center g-color-white">
+                          <p class="mb-0">John Keny</p>
+                        </div>
+                      </div>
+
+                      <h3 class="g-font-weight-600 g-mb-15">
+                        <a class="g-color-white g-color-white--hover" href="#!">Best Web Design & Develiment meetups ever in Lonodn, UK</a>
+                      </h3>
+
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i>
+                          July 8, 2016
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          52
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          26
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode13" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 13 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 14 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#14</span>
+            </h2>
+          </div>
+
+          <div id="shortcode14">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_3--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img7.jpg" alt="Image Description">
+                    </figure>
+
+                    <div class="media g-pos-abs g-top-20 g-left-20">
+                      <div class="d-flex mr-3">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="media-body align-self-center g-color-white">
+                        <p class="mb-0">John Wallmart</p>
+                      </div>
+                    </div>
+
+                    <span class="u-icon-v3 g-bg-black-opacity-0_5 g-bg-black--hover g-color-white rounded-circle g-cursor-pointer g-absolute-centered">
+                      <i class="fa fa-play g-left-2"></i>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-20 g-left-20 g-right-20">
+                      <span class="g-mr-5">
+                        <a class="btn btn-xs u-btn-blue rounded-0" href="#!">Sea</a>
+                      </span>
+
+                      <small class="g-color-white">
+                        July 02, 2016
+                      </small>
+
+                      <h3 class="h4 g-font-weight-600 g-mt-10">
+                        <a class="g-color-white g-color-white--hover" href="#!">Must be visited places in the USA - Florida Beaches</a>
+                      </h3>
+
+                      <hr class="g-my-10 g-opacity-0_5">
+
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          132
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          23
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          12
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_3--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img8.jpg" alt="Image Description">
+                    </figure>
+
+                    <div class="media g-pos-abs g-top-20 g-left-20">
+                      <div class="d-flex mr-3">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="media-body align-self-center g-color-white">
+                        <p class="mb-0">Alisha Bower</p>
+                      </div>
+                    </div>
+
+                    <span class="u-icon-v3 g-bg-black-opacity-0_5 g-bg-black--hover g-color-white rounded-circle g-cursor-pointer g-absolute-centered">
+                      <i class="fa fa-play g-left-2"></i>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-20 g-left-20 g-right-20">
+                      <span class="g-mr-5">
+                        <a class="btn btn-xs u-btn-yellow rounded-0" href="#!">Gifts</a>
+                      </span>
+
+                      <small class="g-color-white">
+                        July 15, 2016
+                      </small>
+
+                      <h3 class="h4 g-font-weight-600 g-mt-10">
+                        <a class="g-color-white g-color-white--hover" href="#!">Holidays are coming, prepare your gifts to your...</a>
+                      </h3>
+
+                      <hr class="g-my-10 g-opacity-0_5">
+
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          264
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          52
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          26
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_3--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img9.jpg" alt="Image Description">
+                    </figure>
+
+                    <div class="media g-pos-abs g-top-20 g-left-20">
+                      <div class="d-flex mr-3">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="media-body align-self-center g-color-white">
+                        <p class="mb-0">Linda Reyes</p>
+                      </div>
+                    </div>
+
+                    <span class="u-icon-v3 g-bg-black-opacity-0_5 g-bg-black--hover g-color-white rounded-circle g-cursor-pointer g-absolute-centered">
+                      <i class="fa fa-play g-left-2"></i>
+                    </span>
+
+                    <div class="g-pos-abs g-bottom-20 g-left-20 g-right-20">
+                      <span class="g-mr-5">
+                        <a class="btn btn-xs u-btn-red rounded-0" href="#!">Food</a>
+                      </span>
+
+                      <small class="g-color-white">
+                        July 15, 2016
+                      </small>
+
+                      <h3 class="h4 g-font-weight-600 g-mt-10">
+                        <a class="g-color-white g-color-white--hover" href="#!">Best 10 breakfast receipts for your awesome morning day</a>
+                      </h3>
+
+                      <hr class="g-my-10 g-opacity-0_5">
+
+                      <ul class="u-list-inline g-font-size-12 g-color-white">
+                        <li class="list-inline-item">
+                          <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                          349
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                          152
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                          <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                          96
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode14" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 14 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 15 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#15</span>
+            </h2>
+          </div>
+
+          <div id="shortcode15">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img2.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm g-bg-white g-color-black text-uppercase rounded-0" href="#!">Tech</a>
+                    </span>
+
+                    <header class="g-color-white g-pos-abs g-right-20 g-bottom-20 g-left-20">
+                      <span class="text-uppercase small">
+                        <i class="h5 icon-calendar g-color-primary g-pos-rel g-top-2 g-mr-5"></i>
+                        Duration, 3 Months.
+                      </span>
+
+                      <h3 class="text-uppercase g-font-weight-600 g-mt-5 g-mb-10">
+                        <a class="g-color-white g-color-white--hover" href="#!">Courses For Tech</a>
+                      </h3>
+
+                      <div class="g-mb-20">
+                        <p>Vestibulum sodales massa vitae libero</p>
+                      </div>
+
+                      <a class="btn u-btn-primary text-uppercase g-font-size-12 rounded-0 g-pa-15" href="#!">Learn More</a>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img1.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm g-bg-white g-color-black text-uppercase rounded-0" href="#!">Speaker</a>
+                    </span>
+
+                    <header class="g-color-white g-pos-abs g-right-20 g-bottom-20 g-left-20">
+                      <span class="text-uppercase small">
+                        <i class="h5 icon-calendar g-color-primary g-pos-rel g-top-2 g-mr-5"></i>
+                        Duration, 7 Months.
+                      </span>
+
+                      <h3 class="text-uppercase g-font-weight-600 g-mt-5 g-mb-10">
+                        <a class="g-color-white g-color-white--hover" href="#!">Art Of Speaking</a>
+                      </h3>
+
+                      <div class="g-mb-20">
+                        <p>Etiam dolor tortor, egestas a libero eget</p>
+                      </div>
+
+                      <a class="btn u-btn-primary text-uppercase g-font-size-12 rounded-0 g-pa-15" href="#!">Learn More</a>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-gradient-opacity-v1--after">
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/500x650/img3.jpg" alt="Image Description">
+                    </figure>
+
+                    <span class="g-pos-abs g-top-20 g-left-20">
+                      <a class="btn btn-sm g-bg-white g-color-black text-uppercase rounded-0" href="#!">Business</a>
+                    </span>
+
+                    <header class="g-color-white g-pos-abs g-right-20 g-bottom-20 g-left-20">
+                      <span class="text-uppercase small">
+                        <i class="h5 icon-calendar g-color-primary g-pos-rel g-top-2 g-mr-5"></i>
+                        Duration, 2 Months.
+                      </span>
+
+                      <h3 class="text-uppercase g-font-weight-600 g-mt-5 g-mb-10">
+                        <a class="g-color-white g-color-white--hover" href="#!">Business Courses</a>
+                      </h3>
+
+                      <div class="g-mb-20">
+                        <p>Etiam dolor tortor, egestas a libero eget</p>
+                      </div>
+
+                      <a class="btn u-btn-primary text-uppercase g-font-size-12 rounded-0 g-pa-15" href="#!">Learn More</a>
+                    </header>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode15" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 15 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 16 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#16</span>
+            </h2>
+          </div>
+
+          <div id="shortcode16">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_3--after g-overflow-hidden">
+                      <img class="img-fluid w-100 u-block-hover__main--grayscale" src="{{ root }}assets/img-temp/400x270/img5.jpg" alt="Image Description">
+                    </figure>
+
+                    <div class="media g-pos-abs g-right-30 g-bottom-30 g-left-30">
+                      <div class="d-flex g-font-size-35 g-line-height-1 g-font-weight-600 g-color-primary g-mr-20" href="#!">15.08</div>
+
+                      <div class="media-body g-color-white">
+                        <h3 class="h5 text-uppercase g-font-weight-600">
+                          <a class="g-color-white g-color-white--hover" href="#!">Computer Science Courses</a>
+                        </h3>
+
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.</p>
+
+                        <ul class="u-list-inline g-font-size-12 g-color-white">
+                          <li class="list-inline-item">
+                            <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                            264
+                          </li>
+                          <li class="list-inline-item">/</li>
+                          <li class="list-inline-item">
+                            <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                            52
+                          </li>
+                          <li class="list-inline-item">/</li>
+                          <li class="list-inline-item">
+                            <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                            26
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover">
+                    <figure class="u-bg-overlay g-bg-black-opacity-0_3--after g-overflow-hidden">
+                      <img class="img-fluid w-100 u-block-hover__main--grayscale" src="{{ root }}assets/img-temp/400x270/img12.jpg" alt="Image Description">
+                    </figure>
+
+                    <div class="media g-pos-abs g-right-30 g-bottom-30 g-left-30">
+                      <div class="d-flex g-font-size-35 g-line-height-1 g-font-weight-600 g-color-primary g-mr-20" href="#!">24.07</div>
+
+                      <div class="media-body g-color-white">
+                        <h3 class="h5 text-uppercase g-font-weight-600">
+                          <a class="g-color-white g-color-white--hover" href="#!">New Weekly Courses</a>
+                        </h3>
+
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla velmetus scelerisque ante sollicitudin commodo.</p>
+
+                        <ul class="u-list-inline g-font-size-12 g-color-white">
+                          <li class="list-inline-item">
+                            <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i>
+                            157
+                          </li>
+                          <li class="list-inline-item">/</li>
+                          <li class="list-inline-item">
+                            <i class="icon-speech g-pos-rel g-top-1 g-mr-2"></i>
+                            19
+                          </li>
+                          <li class="list-inline-item">/</li>
+                          <li class="list-inline-item">
+                            <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i>
+                            32
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode16" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 16 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 17 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#17</span>
+            </h2>
+          </div>
+
+          <div id="shortcode17">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <article class="u-block-hover">
+                    <div class="g-bg-cover g-bg-white-gradient-opacity-v1--after">
+                      <img class="u-block-hover__main--mover-down" src="{{ root }}assets/img-temp/500x650/img9.jpg" alt="Image Description">
+                    </div>
+
+                    <div class="g-pos-abs g-top-0 g-right-0 g-z-index-1 g-pa-35">
+                      <span class="d-block g-color-white g-font-weight-600 g-font-size-12">June 12, 2017</span>
+                    </div>
+
+                    <div class="u-block-hover__additional--partially-slide-up g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-25">
+                        <span class="d-block g-color-white-opacity-0_7 g-font-weight-600 g-font-size-12 mb-2">web design</span>
+
+                        <h2 class="h2 g-color-white g-font-weight-600 mb-3">
+                          <a class="u-link-v5 g-color-white g-color-primary--hover g-cursor-pointer" href="#!">Discover the Htmlstream Studio</a>
+                        </h2>
+
+                        <p class="g-color-white-opacity-0_7 mb-0">At Wake, our mission has always been focused on bringing openness and transparency to the design process.</p>
+                      </div>
+
+                      <div class="g-pl-25">
+                        <a class="d-inline-block g-brd-bottom g-brd-white g-color-white g-font-weight-600 g-font-size-12 text-uppercase g-text-underline--none--hover g-mb-30" href="#!">Read more</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <article class="u-block-hover">
+                    <div class="g-bg-cover g-bg-white-gradient-opacity-v1--after">
+                      <img class="u-block-hover__main--mover-down" src="{{ root }}assets/img-temp/500x650/img13.jpg" alt="Image Description">
+                    </div>
+
+                    <div class="g-pos-abs g-top-0 g-right-0 g-z-index-1 g-pa-35">
+                      <span class="d-block g-color-white g-font-weight-600 g-font-size-12">July 07, 2017</span>
+                    </div>
+
+                    <div class="u-block-hover__additional--partially-slide-up g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-25">
+                        <span class="d-block g-color-white-opacity-0_7 g-font-weight-600 g-font-size-12 mb-2">photography</span>
+
+                        <h2 class="h2 g-color-white g-font-weight-600 mb-3">
+                          <a class="u-link-v5 g-color-white g-color-primary--hover g-cursor-pointer" href="#!">Stunning Woman's Capture</a>
+                        </h2>
+
+                        <p class="g-color-white-opacity-0_7 mb-0">At Wake, our mission has always been focused on bringing openness and transparency to the design process.</p>
+                      </div>
+
+                      <div class="g-pl-25">
+                        <a class="d-inline-block g-brd-bottom g-brd-white g-color-white g-font-weight-600 g-font-size-12 text-uppercase g-text-underline--none--hover g-mb-30" href="#!">Read more</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <article class="u-block-hover">
+                    <div class="g-bg-cover g-bg-white-gradient-opacity-v1--after">
+                      <img class="u-block-hover__main--mover-down" src="{{ root }}assets/img-temp/500x650/img8.jpg" alt="Image Description">
+                    </div>
+
+                    <div class="g-pos-abs g-top-0 g-right-0 g-z-index-1 g-pa-35">
+                      <span class="d-block g-color-white g-font-weight-600 g-font-size-12">July 03, 2017</span>
+                    </div>
+
+                    <div class="u-block-hover__additional--partially-slide-up g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-25">
+                        <span class="d-block g-color-white-opacity-0_7 g-font-weight-600 g-font-size-12 mb-2">travel</span>
+
+                        <h2 class="h2 g-color-white g-font-weight-600 mb-3">
+                          <a class="u-link-v5 g-color-white g-color-primary--hover g-cursor-pointer" href="#!">London Eye with Friends</a>
+                        </h2>
+
+                        <p class="g-color-white-opacity-0_7 mb-0">At Wake, our mission has always been focused on bringing openness and transparency to the design process.</p>
+                      </div>
+
+                      <div class="g-pl-25">
+                        <a class="d-inline-block g-brd-bottom g-brd-white g-color-white g-font-weight-600 g-font-size-12 text-uppercase g-text-underline--none--hover g-mb-30" href="#!">Read more</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode17" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 17 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 18 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#18</span>
+            </h2>
+          </div>
+
+          <div id="shortcode18">
+            <div class="shortcode-html">
+              <div class="row">
+                <!-- Video Article -->
+                <div class="col-lg-6 g-mb-30">
+                  <div class="h-100 g-bg-size-cover g-bg-pos-center g-bg-cover g-bg-black-opacity-0_4--after g-pos-rel g-py-150 g-mb-30 g-mb-0--lg" data-bg-img-src="{{ root }}assets/img-temp/900x600/img10.jpg">
+                    <article class="text-center g-absolute-centered--y g-z-index-1 g-px-50">
+                      <a class="js-fancybox d-inline-block g-text-underline--none--hover mb-3" href="javascript:;"
+                         data-src="//www.youtube.com/embed/BNpiwOkKIJ8?autoplay=1"
+                         data-speed="350"
+                         data-caption="Video Popup">
+                        <span class="u-icon-v3 u-icon-size--xl u-icon-scale-1_2--hover g-bg-primary g-color-white rounded-circle g-cursor-pointer">
+                          <i class="g-font-size-17 g-pos-rel g-left-2 fa fa-play"></i>
+                        </span>
+                      </a>
+                      <h4 class="g-color-white">Top advisers in more displays of agreement with Unify Marketing</h4>
+                    </article>
+                  </div>
+                </div>
+                <!-- End Video Article -->
+
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <!-- Video Article -->
+                  <div class="g-bg-size-cover g-bg-pos-center g-bg-cover g-bg-black-opacity-0_4--after g-pos-rel g-py-50 g-mb-30" data-bg-img-src="{{ root }}assets/img-temp/300x300/img2.jpg">
+                    <article class="text-center g-pos-rel g-z-index-1 g-px-20">
+                      <a class="js-fancybox d-inline-block g-text-underline--none--hover mb-3" href="javascript:;"
+                         data-src="//www.youtube.com/embed/BNpiwOkKIJ8?autoplay=1"
+                         data-speed="350"
+                         data-caption="Video Popup">
+                        <span class="u-icon-v3 u-icon-size--md u-icon-scale-1_2--hover g-bg-primary g-color-white rounded-circle g-cursor-pointer">
+                          <i class="g-font-size-13 g-pos-rel g-left-2 fa fa-play"></i>
+                        </span>
+                      </a>
+                      <h4 class="h5 g-color-white">What does it take to break into Global Markets?</h4>
+                    </article>
+                  </div>
+                  <!-- End Video Article -->
+
+                  <!-- Video Article -->
+                  <div class="g-bg-size-cover g-bg-pos-center g-bg-cover g-bg-black-opacity-0_4--after g-pos-rel g-py-50 g-mb-30 g-mb-0--lg" data-bg-img-src="{{ root }}assets/img-temp/300x300/img3.jpg">
+                    <article class="text-center g-pos-rel g-z-index-1 g-px-20">
+                      <a class="js-fancybox d-inline-block g-text-underline--none--hover mb-3" href="javascript:;"
+                         data-src="//www.youtube.com/embed/BNpiwOkKIJ8?autoplay=1"
+                         data-speed="350"
+                         data-caption="Video Popup">
+                        <span class="u-icon-v3 u-icon-size--md u-icon-scale-1_2--hover g-bg-primary g-color-white rounded-circle g-cursor-pointer">
+                          <i class="g-font-size-13 g-pos-rel g-left-2 fa fa-play"></i>
+                        </span>
+                      </a>
+                      <h4 class="h5 g-color-white">Office Goals: a peek inside Unify Marketing</h4>
+                    </article>
+                  </div>
+                  <!-- End Video Article -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <ul class="list-unstyled mb-0">
+                    <li class="g-brd-top g-brd-gray-light-v3 g-py-20">
+                      <a class="js-fancybox u-link-v5 g-color-gray-dark-v5 g-color-primary--hover g-font-size-13" href="javascript:;"
+                         data-src="//www.youtube.com/embed/BNpiwOkKIJ8?autoplay=1"
+                         data-speed="350"
+                         data-caption="Video Popup">
+                        <span class="d-block g-color-black g-font-weight-600 text-uppercase mb-1">September 18, 2017</span>
+                        3 ways marketers can navigate an ad-free world
+                      </a>
+                    </li>
+                    <li class="g-brd-top g-brd-gray-light-v3 g-py-20">
+                      <a class="js-fancybox u-link-v5 g-color-gray-dark-v5 g-color-primary--hover g-font-size-13" href="javascript:;"
+                         data-src="//www.youtube.com/embed/BNpiwOkKIJ8?autoplay=1"
+                         data-speed="350"
+                         data-caption="Video Popup">
+                        <span class="d-block g-color-black g-font-weight-600 text-uppercase mb-1">August 11, 2017</span>
+                        Small businesses are investing in tech and marketing to grow in 2017 with Unify Marketing
+                      </a>
+                    </li>
+                    <li class="g-brd-top g-brd-gray-light-v3 g-py-20">
+                      <a class="js-fancybox u-link-v5 g-color-gray-dark-v5 g-color-primary--hover g-font-size-13" href="javascript:;"
+                         data-src="//www.youtube.com/embed/BNpiwOkKIJ8?autoplay=1"
+                         data-speed="350"
+                         data-caption="Video Popup">
+                        <span class="d-block g-color-black g-font-weight-600 text-uppercase mb-1">July 25, 2017</span>
+                        Grads of life paves a path to employment for non-degree opportunity youth in Unify Marketing
+                      </a>
+                    </li>
+                    <li class="g-brd-y g-brd-gray-light-v3 g-py-20">
+                      <a class="js-fancybox u-link-v5 g-color-gray-dark-v5 g-color-primary--hover g-font-size-13" href="javascript:;"
+                         data-src="//www.youtube.com/embed/BNpiwOkKIJ8?autoplay=1"
+                         data-speed="350"
+                         data-caption="Video Popup">
+                        <span class="d-block g-color-black g-font-weight-600 text-uppercase mb-1">May 07, 2017</span>
+                        Agriculture company drives social engagement with 'serial'-inspired podcast
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).ready(function () {
+                  // initialization of popups
+                  $.HSCore.components.HSPopup.init('.js-fancybox');
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode18" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 18 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 19 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#19</span>
+            </h2>
+          </div>
+
+          <div id="shortcode19">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-min-height-360 g-bg-size-cover g-pos-rel" style="background-image: url({{ root }}assets/img-temp/900x600/img11.jpg);">
+                    <label class="u-ribbon-v1 g-color-white g-bg-primary g-font-weight-500 g-font-size-10 text-uppercase rounded g-top-30 g-left-30 g-px-10 g-py-4">News of the Day</label>
+
+                    <div class="g-bg-white-gradient-opacity-v1 g-pos-abs g-bottom-0 g-left-0 g-right-0 g-pa-30">
+                      <h3><a class="u-link-v5 g-color-white g-color-primary--hover" href="#">The beauty of a woman on the rocks</a></h3>
+
+                      <!-- List -->
+                      <ul class="list-inline mb-0">
+                        <li class="list-inline-item mr-1">
+                          <a class="d-inline-block g-color-white g-color-primary--hover g-font-size-13 g-text-underline--none--hover g-pr-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-medical-022 u-line-icon-pro"></i>
+                            5
+                          </a>
+                        </li>
+                        <li class="list-inline-item mx-1">
+                          <a class="d-inline-block g-color-white g-color-primary--hover g-font-size-13 g-text-underline--none--hover g-px-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-finance-206 u-line-icon-pro"></i>
+                            1
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-1">
+                          <span class="d-inline-block g-color-white g-font-size-13 g-px-5 g-py-4">
+                            <i class="align-middle mr-1 icon-education-097 u-line-icon-pro"></i>
+                            15 min ago
+                          </span>
+                        </li>
+                      </ul>
+                      <!-- End List -->
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover g-brd-around g-brd-gray-light-v4">
+                    <figure class="g-pos-rel">
+                      <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x568/img1.jpg" alt="Image Description">
+
+                      <figcaption>
+                        <label class="u-ribbon-v1 g-color-white g-bg-black g-font-weight-500 g-font-size-10 text-uppercase rounded g-top-20 g-left-20 g-px-10 g-py-4">Hi-Tech</label>
+                      </figcaption>
+                    </figure>
+
+                    <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-20">
+                        <h3 class="h5"><a class="u-link-v5 g-color-black g-color-primary--hover" href="#">Architects plan to stop skyscrapers from blocking out sunlight</a></h3>
+                        <p class="g-mb-0">At Wake, our mission has always been focused on...</p>
+                      </div>
+
+                      <!-- List -->
+                      <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0">
+                        <li class="list-inline-item mr-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-pr-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-medical-022 u-line-icon-pro"></i>
+                            23
+                          </a>
+                        </li>
+                        <li class="list-inline-item mx-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-px-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-finance-206 u-line-icon-pro"></i>
+                            6
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto ml-1">
+                          <span class="d-inline-block g-color-gray-dark-v4 g-font-size-12 g-px-5 g-py-4">
+                            <i class="align-middle mr-1 icon-education-097 u-line-icon-pro"></i>
+                            13 min ago
+                          </span>
+                        </li>
+                      </ul>
+                      <!-- End List -->
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover g-brd-around g-brd-gray-light-v4">
+                    <figure class="g-pos-rel">
+                      <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x568/img3.jpg" alt="Image Description">
+
+                      <figcaption>
+                        <label class="u-ribbon-v1 g-color-white g-bg-lightred g-font-weight-500 g-font-size-10 text-uppercase rounded g-top-20 g-left-20 g-px-10 g-py-4">Marketing</label>
+                      </figcaption>
+                    </figure>
+
+                    <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-20">
+                        <h3 class="h5"><a class="u-link-v5 g-color-black g-color-primary--hover" href="#">Why your next glass of juice will cost you more</a></h3>
+                        <p class="g-mb-0">At Wake, our mission has always been focused on...</p>
+                      </div>
+
+                      <!-- List -->
+                      <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0">
+                        <li class="list-inline-item mr-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-pr-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-medical-022 u-line-icon-pro"></i>
+                            23
+                          </a>
+                        </li>
+                        <li class="list-inline-item mx-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-px-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-finance-206 u-line-icon-pro"></i>
+                            6
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto ml-1">
+                          <span class="d-inline-block g-color-gray-dark-v4 g-font-size-12 g-px-5 g-py-4">
+                            <i class="align-middle mr-1 icon-education-097 u-line-icon-pro"></i>
+                            13 min ago
+                          </span>
+                        </li>
+                      </ul>
+                      <!-- End List -->
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover g-brd-around g-brd-gray-light-v4">
+                    <figure class="g-pos-rel">
+                      <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x568/img4.jpg" alt="Image Description">
+
+                      <figcaption>
+                        <label class="u-ribbon-v1 g-color-white g-bg-purple g-font-weight-500 g-font-size-10 text-uppercase rounded g-top-20 g-left-20 g-px-10 g-py-4">Science</label>
+                      </figcaption>
+                    </figure>
+
+                    <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-20">
+                        <h3 class="h5"><a class="u-link-v5 g-color-black g-color-primary--hover" href="#">10 best tips for architecture designs in 2017</a></h3>
+                        <p class="g-mb-0">At Wake, our mission has always been focused on...</p>
+                      </div>
+
+                      <!-- List -->
+                      <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0">
+                        <li class="list-inline-item mr-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-pr-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-medical-022 u-line-icon-pro"></i>
+                            23
+                          </a>
+                        </li>
+                        <li class="list-inline-item mx-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-px-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-finance-206 u-line-icon-pro"></i>
+                            6
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto ml-1">
+                          <span class="d-inline-block g-color-gray-dark-v4 g-font-size-12 g-px-5 g-py-4">
+                            <i class="align-middle mr-1 icon-education-097 u-line-icon-pro"></i>
+                            13 min ago
+                          </span>
+                        </li>
+                      </ul>
+                      <!-- End List -->
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover g-brd-around g-brd-gray-light-v4">
+                    <figure class="g-pos-rel">
+                      <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x568/img5.jpg" alt="Image Description">
+
+                      <figcaption>
+                        <label class="u-ribbon-v1 g-color-white g-bg-black g-font-weight-500 g-font-size-10 text-uppercase rounded g-top-20 g-left-20 g-px-10 g-py-4">Hi-Tech</label>
+                      </figcaption>
+                    </figure>
+
+                    <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-20">
+                        <h3 class="h5"><a class="u-link-v5 g-color-black g-color-primary--hover" href="#">We Love Education</a></h3>
+                        <p class="g-mb-0">At Wake, our mission has always been focused on...</p>
+                      </div>
+
+                      <!-- List -->
+                      <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0">
+                        <li class="list-inline-item mr-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-pr-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-medical-022 u-line-icon-pro"></i>
+                            23
+                          </a>
+                        </li>
+                        <li class="list-inline-item mx-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-px-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-finance-206 u-line-icon-pro"></i>
+                            6
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto ml-1">
+                          <span class="d-inline-block g-color-gray-dark-v4 g-font-size-12 g-px-5 g-py-4">
+                            <i class="align-middle mr-1 icon-education-097 u-line-icon-pro"></i>
+                            13 min ago
+                          </span>
+                        </li>
+                      </ul>
+                      <!-- End List -->
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover g-brd-around g-brd-gray-light-v4">
+                    <figure class="g-pos-rel">
+                      <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x568/img6.jpg" alt="Image Description">
+
+                      <figcaption>
+                        <label class="u-ribbon-v1 g-color-white g-bg-lightred g-font-weight-500 g-font-size-10 text-uppercase rounded g-top-20 g-left-20 g-px-10 g-py-4">Marketing</label>
+                      </figcaption>
+                    </figure>
+
+                    <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-20">
+                        <h3 class="h5"><a class="u-link-v5 g-color-black g-color-primary--hover" href="#">Be ready, fashion of the year is coming this year</a></h3>
+                        <p class="g-mb-0">At Wake, our mission has always been focused on...</p>
+                      </div>
+
+                      <!-- List -->
+                      <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0">
+                        <li class="list-inline-item mr-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-pr-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-medical-022 u-line-icon-pro"></i>
+                            23
+                          </a>
+                        </li>
+                        <li class="list-inline-item mx-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-px-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-finance-206 u-line-icon-pro"></i>
+                            6
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto ml-1">
+                          <span class="d-inline-block g-color-gray-dark-v4 g-font-size-12 g-px-5 g-py-4">
+                            <i class="align-middle mr-1 icon-education-097 u-line-icon-pro"></i>
+                            13 min ago
+                          </span>
+                        </li>
+                      </ul>
+                      <!-- End List -->
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-block-hover g-brd-around g-brd-gray-light-v4">
+                    <figure class="g-pos-rel">
+                      <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x568/img7.jpg" alt="Image Description">
+
+                      <figcaption>
+                        <label class="u-ribbon-v1 g-color-white g-bg-black g-font-weight-500 g-font-size-10 text-uppercase rounded g-top-20 g-left-20 g-px-10 g-py-4">Hi-Tech</label>
+                      </figcaption>
+                    </figure>
+
+                    <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-20">
+                        <h3 class="h5"><a class="u-link-v5 g-color-black g-color-primary--hover" href="#">Cooltex is one of the best watch companies..</a></h3>
+                        <p class="g-mb-0">At Wake, our mission has always been focused on...</p>
+                      </div>
+
+                      <!-- List -->
+                      <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0">
+                        <li class="list-inline-item mr-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-pr-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-medical-022 u-line-icon-pro"></i>
+                            23
+                          </a>
+                        </li>
+                        <li class="list-inline-item mx-1">
+                          <a class="d-inline-block g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover g-px-5 g-py-4" href="#">
+                            <i class="align-middle mr-1 icon-finance-206 u-line-icon-pro"></i>
+                            6
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto ml-1">
+                          <span class="d-inline-block g-color-gray-dark-v4 g-font-size-12 g-px-5 g-py-4">
+                            <i class="align-middle mr-1 icon-education-097 u-line-icon-pro"></i>
+                            13 min ago
+                          </span>
+                        </li>
+                      </ul>
+                      <!-- End List -->
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode19" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 19 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Image Block 20 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#20</span>
+            </h2>
+          </div>
+
+          <div id="shortcode20">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-pos-rel">
+                    <img class="img-fluid w-100" src="{{ root }}assets/img-temp/900x400/img5.jpg" alt="Image Description">
+                    <div class="g-bg-white-gradient-opacity-v1 g-pos-abs g-bottom-0 g-left-0 g-right-0 g-pa-30">
+                      <h3><a class="u-link-v5 g-color-white g-color-primary--hover" href="#">Learn how we're building a more diverse and inclusive Unify Marketing</a></h3>
+                      <a class="u-link-v6 g-color-white g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="page-hire-us-1.html">
+                        Read More
+                        <span class="u-link-v6-arrow g-font-size-18">&rightarrow;</span>
+                      </a>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-6 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-pos-rel">
+                    <img class="img-fluid w-100" src="{{ root }}assets/img-temp/900x400/img6.jpg" alt="Image Description">
+                    <div class="g-bg-white-gradient-opacity-v1 g-pos-abs g-bottom-0 g-left-0 g-right-0 g-pa-30">
+                      <h3><a class="u-link-v5 g-color-white g-color-primary--hover" href="#">Uncover the philosophy behind our employee benefits</a></h3>
+                      <a class="u-link-v6 g-color-white g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="page-hire-us-1.html">
+                        Read More
+                        <span class="u-link-v6-arrow g-font-size-18">&rightarrow;</span>
+                      </a>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode20" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Image Block 20 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Block 21 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#21</span>
+            </h2>
+          </div>
+
+          <div id="shortcode21">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-sm-6 col-md-4 g-mb-30">
+                  <!-- News -->
+                  <div class="d-flex u-shadow-v38 g-min-height-400 g-bg-size-cover g-bg-pos-center rounded g-my-30" style="background-image: url({{ root }}assets/img-temp/400x500/img4.jpg);">
+                    <article class="text-center g-pos-rel g-z-index-1 g-pa-40 mt-auto mx-auto">
+                      <h3 class="h4 g-color-white">Unify University announces a new student award in honour of Fashion</h3>
+                      <div class="mt-4">
+                        <span class="d-block g-color-white g-font-size-16 mb-2">Neyton Burchie</span>
+                        <div class="d-inline-block g-width-40 g-height-40">
+                          <img class="img-fluid g-brd-around g-brd-2 g-brd-primary-opacity-0_1 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                        </div>
+                      </div>
+                      <a class="u-link-v2" href="page-blog-single-item-1.html"></a>
+                    </article>
+                  </div>
+                  <!-- End News -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 g-mb-30">
+                  <!-- News -->
+                  <div class="d-flex u-shadow-v38 g-min-height-400 g-bg-size-cover g-bg-pos-center rounded g-my-30" style="background-image: url({{ root }}assets/img-temp/400x500/img2.jpg);">
+                    <article class="text-center g-pos-rel g-z-index-1 g-pa-40 mt-auto mx-auto">
+                      <h3 class="h4 g-color-white">University of Unify joins new network to drive defence research</h3>
+                      <div class="mt-4">
+                        <span class="d-block g-color-white g-font-size-16 mb-2">Liza Nelson</span>
+                        <div class="d-inline-block g-width-40 g-height-40">
+                          <img class="img-fluid g-brd-around g-brd-2 g-brd-primary-opacity-0_1 rounded-circle" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                        </div>
+                      </div>
+                      <a class="u-link-v2" href="page-blog-single-item-1.html"></a>
+                    </article>
+                  </div>
+                  <!-- End News -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 g-mb-30">
+                  <!-- News -->
+                  <div class="d-flex u-shadow-v38 g-min-height-400 g-bg-size-cover g-bg-pos-center rounded g-my-30" style="background-image: url({{ root }}assets/img-temp/400x500/img3.jpg);">
+                    <article class="text-center g-pos-rel g-z-index-1 g-pa-40 mt-auto mx-auto">
+                      <h3 class="h4 g-color-white">The Fashion Gallery of Unify welcomes downtown to the future of Ontario.</h3>
+                      <div class="mt-4">
+                        <span class="d-block g-color-white g-font-size-16 mb-2">Tina Krueger</span>
+                        <div class="d-inline-block g-width-40 g-height-40">
+                          <img class="img-fluid g-brd-around g-brd-2 g-brd-primary-opacity-0_1 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                        </div>
+                      </div>
+                      <a class="u-link-v2" href="page-blog-single-item-1.html"></a>
+                    </article>
+                  </div>
+                  <!-- End News -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode21" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Block 21 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Block 22 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#22</span>
+            </h2>
+          </div>
+
+          <div id="shortcode22">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <!-- Event Block -->
+                  <article class="u-block-hover u-shadow-v38">
+                    <div class="g-min-height-300 g-bg-img-hero g-bg-cover g-bg-white-gradient-opacity-v1--after g-pos-rel" style="background-image: url({{ root }}assets/img-temp/400x500/img5.jpg);">
+                      <div class="g-pos-abs g-bottom-0 g-left-0 g-right-0 g-z-index-1 g-pa-20">
+                        <div class="d-flex justify-content-between">
+                          <div class="mt-auto mb-2">
+                            <span class="d-block g-color-white g-line-height-1_4">9:00 am</span>
+                            <span class="d-block g-color-white g-line-height-1_4">12:00 pm</span>
+                          </div>
+                          <div class="text-center">
+                            <span class="g-color-white g-font-weight-500 g-font-size-40 g-line-height-0_7">24</span>
+                            <span class="g-color-white g-line-height-0_7">Nov</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="g-pa-25">
+                      <h3 class="g-color-primary--hover g-font-size-18 mb-0">Core Research Facilities, Annual Symposium</h3>
+                    </div>
+
+                    <a class="u-link-v2 g-z-index-2" href="#"></a>
+                  </article>
+                  <!-- End Event Block -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <!-- Event Block -->
+                  <article class="u-block-hover u-shadow-v38">
+                    <div class="g-min-height-300 g-bg-img-hero g-bg-cover g-bg-white-gradient-opacity-v1--after g-pos-rel" style="background-image: url({{ root }}assets/img-temp/400x500/img6.jpg);">
+                      <div class="g-pos-abs g-bottom-0 g-left-0 g-right-0 g-z-index-1 g-pa-20">
+                        <div class="d-flex justify-content-between">
+                          <div class="mt-auto mb-2">
+                            <span class="d-block g-color-white g-line-height-1_4">12:15 pm</span>
+                            <span class="d-block g-color-white g-line-height-1_4">12:45 pm</span>
+                          </div>
+                          <div class="text-center">
+                            <span class="g-color-white g-font-weight-500 g-font-size-40 g-line-height-0_7">07</span>
+                            <span class="g-color-white g-line-height-0_7">Dec</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="g-pa-25">
+                      <h3 class="g-color-primary--hover g-font-size-18 mb-0">Ontario Ideas - Digital Rights: what are they, and why do we need them?</h3>
+                    </div>
+
+                    <a class="u-link-v2 g-z-index-2" href="#"></a>
+                  </article>
+                  <!-- End Event Block -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <!-- Event Block -->
+                  <article class="u-block-hover u-shadow-v38">
+                    <div class="g-min-height-300 g-bg-img-hero g-bg-cover g-bg-white-gradient-opacity-v1--after g-pos-rel" style="background-image: url({{ root }}assets/img-temp/400x500/img7.jpg);">
+                      <div class="g-pos-abs g-bottom-0 g-left-0 g-right-0 g-z-index-1 g-pa-20">
+                        <div class="d-flex justify-content-between">
+                          <div class="mt-auto mb-2">
+                            <span class="d-block g-color-white g-line-height-1_4">03:00 pm</span>
+                            <span class="d-block g-color-white g-line-height-1_4">05:00 pm</span>
+                          </div>
+                          <div class="text-center">
+                            <span class="g-color-white g-font-weight-500 g-font-size-40 g-line-height-0_7">19</span>
+                            <span class="g-color-white g-line-height-0_7">Jan</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="g-pa-25">
+                      <h3 class="g-color-primary--hover g-font-size-18 mb-0">USEAC Masterclass</h3>
+                    </div>
+
+                    <a class="u-link-v2 g-z-index-2" href="#"></a>
+                  </article>
+                  <!-- End Event Block -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-30">
+                  <!-- Event Block -->
+                  <article class="u-block-hover u-shadow-v38">
+                    <div class="g-min-height-300 g-bg-img-hero g-bg-cover g-bg-white-gradient-opacity-v1--after g-pos-rel" style="background-image: url({{ root }}assets/img-temp/400x500/img8.jpg);">
+                      <div class="g-pos-abs g-bottom-0 g-left-0 g-right-0 g-z-index-1 g-pa-20">
+                        <div class="d-flex justify-content-between">
+                          <div class="mt-auto mb-2">
+                            <span class="d-block g-color-white g-line-height-1_4">11:30 am</span>
+                            <span class="d-block g-color-white g-line-height-1_4">1:00 pm</span>
+                          </div>
+                          <div class="text-center">
+                            <span class="g-color-white g-font-weight-500 g-font-size-40 g-line-height-0_7">20</span>
+                            <span class="g-color-white g-line-height-0_7">Jan</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="g-pa-25">
+                      <h3 class="g-color-primary--hover g-font-size-18 mb-0">2017 Unify College of the Arts Undergraduate Degree Show</h3>
+                    </div>
+
+                    <a class="u-link-v2 g-z-index-2" href="#"></a>
+                  </article>
+                  <!-- End Event Block -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode22" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Block 22 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- News Block 23 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#23</span>
+            </h2>
+          </div>
+
+          <div id="shortcode23">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-sm-6 col-lg-4 g-mb-30">
+                  <!-- Research Articles -->
+                  <article class="u-block-hover g-min-height-250 g-bg-img-hero g-bg-cover g-bg-white-gradient-opacity-v1--after g-pos-rel" style="background-image: url({{ root }}assets/img-temp/600x400/img2.jpg);">
+                    <div class="u-block-hover__additional--partially-slide-up g-pos-abs g-bottom-0 g-left-0 g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-20">
+                        <h3 class="h4 g-color-white mb-0">Professor Monica Reilly wins AFR Emerging Leader award</h3>
+                      </div>
+                      <div class="g-pa-5"></div>
+                    </div>
+                    <a class="u-link-v2 g-z-index-2" href="#"></a>
+                  </article>
+                  <!-- End Research Articles -->
+                </div>
+
+                <div class="col-sm-6 col-lg-4 g-mb-30">
+                  <!-- Research Articles -->
+                  <article class="u-block-hover g-min-height-250 g-bg-img-hero g-bg-cover g-bg-white-gradient-opacity-v1--after g-pos-rel" style="background-image: url({{ root }}assets/img-temp/600x400/img3.jpg);">
+                    <div class="u-block-hover__additional--partially-slide-up g-pos-abs g-bottom-0 g-left-0 g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-20">
+                        <h3 class="h4 g-color-white mb-0">Unify researchers recognised as Superstars of STEM</h3>
+                      </div>
+                      <div class="g-pa-5"></div>
+                    </div>
+                    <a class="u-link-v2 g-z-index-2" href="#"></a>
+                  </article>
+                  <!-- End Research Articles -->
+                </div>
+
+                <div class="col-sm-6 col-lg-4 g-mb-30">
+                  <!-- Research Articles -->
+                  <article class="u-block-hover g-min-height-250 g-bg-img-hero g-bg-cover g-bg-white-gradient-opacity-v1--after g-pos-rel" style="background-image: url({{ root }}assets/img-temp/600x400/img4.jpg);">
+                    <div class="u-block-hover__additional--partially-slide-up g-pos-abs g-bottom-0 g-left-0 g-z-index-1">
+                      <div class="u-block-hover__visible g-pa-20">
+                        <h3 class="h4 g-color-white mb-0">Professor Monica Reilly wins AFR Emerging Leader award</h3>
+                      </div>
+                      <div class="g-pa-5"></div>
+                    </div>
+                    <a class="u-link-v2 g-z-index-2" href="#"></a>
+                  </article>
+                  <!-- End Research Articles -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode23" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Block 23 -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+  <script src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+  <script src="{{ root }}assets/js/components/hs.popup.js"></script>
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

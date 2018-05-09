@@ -1,0 +1,562 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Notification's Builder" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu9 = "unCollapsed" %}
+{% set activeMenuItem = "notifications-builder" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: "Notifications",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/noty/lib/noty.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+  <section class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md g-overflow-hidden">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+        <div class="g-pa-20">
+          <h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-40">{{ title }}</h1>
+
+          <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-30--md">
+            <h2 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Toastr Examples</h2>
+
+            <hr class="d-flex g-brd-gray-light-v7 g-my-15 g-my-30--md">
+
+            <div class="row">
+              <div class="col-md-8 g-mb-30 g-mb-0--lg">
+                <form>
+                  <div class="row g-mb-20">
+                    <div class="col-md-3 align-self-center g-mb-5 g-mb-0--md">
+                      <label class="g-font-weight-300 g-color-black mb-0" for="#notieTitle">Title</label>
+                    </div>
+
+                    <div class="col-md-9 align-self-center">
+                      <div class="form-group mb-0">
+                        <input id="notieTitle" name="notieTitle" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-lightred-v2--error g-rounded-4 g-px-20 g-py-12" type="text" placeholder="Enter notification title">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-mb-20">
+                    <div class="col-md-3 g-pt-8 g-mb-5 g-mb-0--md">
+                      <label class="g-font-weight-300 g-color-black mb-0" for="#notieMessage">Message</label>
+                    </div>
+
+                    <div class="col-md-9 align-self-center">
+                      <div class="form-group mb-0">
+                        <textarea id="notieMessage" name="notieMessage" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-lightred-v2--error g-rounded-4 g-px-20 g-py-12" rows="6" placeholder="Enter notification message"></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-mb-20">
+                    <div class="col-md-3 g-pt-8 g-mb-5 g-mb-0--md">
+                      <label class="g-font-weight-300 g-color-black mb-0">Features</label>
+                    </div>
+
+                    <div class="col-md-9 align-self-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input id="closeButton" class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                              <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                                <i class="fa" data-check-icon="&#xf00c"></i>
+                              </div>
+                              Close Button
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input id="progressBar" class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="checked">
+                              <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                                <i class="fa" data-check-icon="&#xf00c"></i>
+                              </div>
+                              Progress Bar
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-mb-20">
+                    <div class="col-md-3 g-pt-8 g-mb-5 g-mb-0--md">
+                      <label class="g-font-weight-300 g-color-black mb-0">Toast Type</label>
+                    </div>
+
+                    <div class="col-md-9 align-self-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="toasts" type="radio" value="success" checked="checked">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Success
+                            </label>
+                          </div>
+
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="toasts" type="radio" value="info">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Info
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="toasts" type="radio" value="warning">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Warning
+                            </label>
+                          </div>
+
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="toasts" type="radio" value="error">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Error
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-mb-20">
+                    <div class="col-md-3 g-pt-8 g-mb-5 g-mb-0--md">
+                      <label class="g-font-weight-300 g-color-black mb-0">Position</label>
+                    </div>
+
+                    <div class="col-md-9 align-self-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="positions" type="radio" value="topRight" checked="checked">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Top Right
+                            </label>
+                          </div>
+
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="positions" value="bottomRight" type="radio">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Bottom Right
+                            </label>
+                          </div>
+
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="positions" value="bottomLeft" type="radio">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Bottom Left
+                            </label>
+                          </div>
+
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="positions" value="topLeft" type="radio">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Top Left
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="positions" value="topFullWidth" type="radio">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Top Full Width
+                            </label>
+                          </div>
+
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="positions" value="bottomFullWidth" type="radio">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Bottom Full Width
+                            </label>
+                          </div>
+
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="positions" value="topCenter" type="radio">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Top Center
+                            </label>
+                          </div>
+
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="positions" value="bottomCenter" type="radio">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Bottom Center
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-mb-20">
+                    <div class="col-md-3 g-pt-8 g-mb-5 g-mb-0--md">
+                      <label class="g-font-weight-300 g-color-black mb-0">Theme</label>
+                    </div>
+
+                    <div class="col-md-9 align-self-center">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="theme" type="radio" value="unify--v1" checked="checked">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Default
+                            </label>
+                          </div>
+
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="theme" type="radio" value="unify--v1--light">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Light
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group g-mb-10">
+                            <label class="u-check g-pl-25">
+                              <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="theme" type="radio" value="unify--v1--dark">
+                              <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                                <i></i>
+                              </div>
+                              Dark
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-mb-20">
+                    <div class="col-md-3 align-self-center g-mb-5 g-mb-0--md">
+                      <label class="g-font-weight-300 g-color-black mb-0" for="#showMethod">Show Method</label>
+                    </div>
+
+                    <div class="col-md-9 align-self-center">
+                      <div class="form-group u-select--v2 g-pos-rel g-brd-gray-light-v7 g-rounded-4 mb-0">
+                        <select id="showMethod" name="showMethod" class="js-select u-select--v2-select w-100" style="display: none;">
+                          <option value="bounce">bounce</option>
+                          <option value="flash">flash</option>
+                          <option value="pulse">pulse</option>
+                          <option value="rubberBand">rubberBand</option>
+                          <option value="shake">shake</option>
+                          <option value="swing">swing</option>
+                          <option value="tada">tada</option>
+                          <option value="wobble">wobble</option>
+                          <option value="jello">jello</option>
+
+                          <option value="bounceIn">bounceIn</option>
+                          <option value="bounceInDown">bounceInDown</option>
+                          <option value="bounceInLeft">bounceInLeft</option>
+                          <option value="bounceInRight">bounceInRight</option>
+                          <option value="bounceInUp">bounceInUp</option>
+
+                          <option value="fadeIn" selected="selected">fadeIn</option>
+                          <option value="fadeInDown">fadeInDown</option>
+                          <option value="fadeInDownBig">fadeInDownBig</option>
+                          <option value="fadeInLeft">fadeInLeft</option>
+                          <option value="fadeInLeftBig">fadeInLeftBig</option>
+                          <option value="fadeInRight">fadeInRight</option>
+                          <option value="fadeInRightBig">fadeInRightBig</option>
+                          <option value="fadeInUp">fadeInUp</option>
+                          <option value="fadeInUpBig">fadeInUpBig</option>
+
+                          <option value="flip">flip</option>
+                          <option value="flipInX">flipInX</option>
+                          <option value="flipInY">flipInY</option>
+
+                          <option value="lightSpeedIn">lightSpeedIn</option>
+
+                          <option value="rotateIn">rotateIn</option>
+                          <option value="rotateInDownLeft">rotateInDownLeft</option>
+                          <option value="rotateInDownRight">rotateInDownRight</option>
+                          <option value="rotateInUpLeft">rotateInUpLeft</option>
+                          <option value="rotateInUpRight">rotateInUpRight</option>
+
+                          <option value="slideInUp">slideInUp</option>
+                          <option value="slideInDown">slideInDown</option>
+                          <option value="slideInLeft">slideInLeft</option>
+                          <option value="slideInRight">slideInRight</option>
+
+                          <option value="zoomIn">zoomIn</option>
+                          <option value="zoomInDown">zoomInDown</option>
+                          <option value="zoomInLeft">zoomInLeft</option>
+                          <option value="zoomInRight">zoomInRight</option>
+                          <option value="zoomInUp">zoomInUp</option>
+
+                          <option value="hinge">hinge</option>
+                          <option value="jackInTheBox">jackInTheBox</option>
+                          <option value="rollIn">rollIn</option>
+                        </select>
+                        <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v6 ml-auto g-mr-15"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-mb-20">
+                    <div class="col-md-3 align-self-center g-mb-5 g-mb-0--md">
+                      <label class="g-font-weight-300 g-color-black mb-0" for="#hideMethod">Hide Method</label>
+                    </div>
+
+                    <div class="col-md-9 align-self-center">
+                      <div class="form-group u-select--v2 g-pos-rel g-brd-gray-light-v7 g-rounded-4 mb-0">
+                        <select id="hideMethod" name="hideMethod" class="js-select u-select--v2-select w-100" style="display: none;">
+                          <option value="bounceOut">bounceOut</option>
+                          <option value="bounceOutDown">bounceOutDown</option>
+                          <option value="bounceOutLeft">bounceOutLeft</option>
+                          <option value="bounceOutRight">bounceOutRight</option>
+                          <option value="bounceOutUp">bounceOutUp</option>
+
+                          <option value="fadeOut" selected="selected">fadeOut</option>
+                          <option value="fadeOutDown">fadeOutDown</option>
+                          <option value="fadeOutDownBig">fadeOutDownBig</option>
+                          <option value="fadeOutLeft">fadeOutLeft</option>
+                          <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+                          <option value="fadeOutRight">fadeOutRight</option>
+                          <option value="fadeOutRightBig">fadeOutRightBig</option>
+                          <option value="fadeOutUp">fadeOutUp</option>
+                          <option value="fadeOutUpBig">fadeOutUpBig</option>
+
+                          <option value="flipOutX">flipOutX</option>
+                          <option value="flipOutY">flipOutY</option>
+
+                          <option value="lightSpeedOut">lightSpeedOut</option>
+
+                          <option value="rotateOut">rotateOut</option>
+                          <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+                          <option value="rotateOutDownRight">rotateOutDownRight</option>
+                          <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+                          <option value="rotateOutUpRight">rotateOutUpRight</option>
+
+                          <option value="slideOutUp">slideOutUp</option>
+                          <option value="slideOutDown">slideOutDown</option>
+                          <option value="slideOutLeft">slideOutLeft</option>
+                          <option value="slideOutRight">slideOutRight</option>
+
+                          <option value="zoomOut">zoomOut</option>
+                          <option value="zoomOutDown">zoomOutDown</option>
+                          <option value="zoomOutLeft">zoomOutLeft</option>
+                          <option value="zoomOutRight">zoomOutRight</option>
+                          <option value="zoomOutUp">zoomOutUp</option>
+
+                          <option value="rollOut">rollOut</option>
+                        </select>
+                        <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v6 ml-auto g-mr-15"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-mb-20">
+                    <div class="col-md-3 align-self-center g-mb-5 g-mb-0--md">
+                      <label class="g-font-weight-300 g-color-black mb-0" for="#timeOut">Time out</label>
+                    </div>
+
+                    <div class="col-md-9 align-self-center">
+                      <div class="form-group mb-0">
+                        <input id="timeOut" name="timeOut" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-lightred-v2--error g-rounded-4 g-px-20 g-py-12" type="text" value="7000">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-9 ml-auto">
+                      <button id="showToast" class="btn btn-md btn-xl--md u-btn-lightblue-v3 g-width-160--md g-font-size-12 g-font-size-default--md g-mb-20" type="button">Show Toast</button>
+                      <button id="clearToasts" class="btn btn-md btn-xl--md u-btn-outline-gray-dark-v6 g-font-size-12 g-font-size-default--md g-ml-30--lg g-mb-20" type="reset">Clear Toast</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-md-4">
+                <h2 class="g-font-weight-300 g-font-size-default g-color-black g-mb-25">Toastr Options in JSON</h2>
+
+                <pre id="toastrOptions" class="g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-4 g-pa-20"></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/blocks/modals/project-form.njk" %}
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Plugins Init. -->
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/noty/lib/noty.min.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of noty
+    var markupDef = '<div class="g-mr-20"><div class="noty_body__icon"><i class="hs-admin-check"></i></div></div><div>Hi, welcome to Unify. This is example of Toastr notification box.</div>',
+      opts = {
+        type: 'success',
+        layout: 'topRight',
+        timeout: 7000,
+        animation: {
+          open: 'animated fadeIn',
+          close: 'animated fadeOut'
+        },
+        closeWith: ['click'],
+        text: markupDef,
+        theme: 'unify--v1'
+      };
+
+    $('#toastrOptions').text('var newNoty = new Noty(' + JSON.stringify(opts, null, 2) + ').show();');
+
+    $('#showToast').on('click', function () {
+      var title = $('#notieTitle').val(),
+        msg = $('#notieMessage').val(),
+
+        type = $('[name="toasts"]:checked').val(),
+        layout = $('[name="positions"]:checked').val(),
+        theme = $('[name="theme"]:checked').val(),
+
+        isCloseButton = $('#closeButton').is(':checked'),
+        isProgressBar = $('#progressBar').is(':checked'),
+        timeOut = $('#timeOut').val(),
+
+        animationIn = $('#showMethod').val(),
+        animationOut = $('#hideMethod').val(),
+
+        markup = '<div class="g-mr-20"><div class="noty_body__icon"><i class="hs-admin-check"></i></div></div><div>' + title + '<br>' + msg + '</div>',
+        resultMarkup = function () {
+          if (title != '' && msg != '') {
+            return markup;
+          } else {
+            return markupDef;
+          }
+        };
+
+      opts = {
+        type: type,
+        layout: layout,
+        timeout: isProgressBar == true ? timeOut : false,
+        animation: {
+          open: 'animated ' + animationIn,
+          close: 'animated ' + animationOut
+        },
+        closeWith: isCloseButton == true ? ['click', 'button'] : ['click'],
+        text: resultMarkup(),
+        theme: theme != '' ? theme : 'unify--v1'
+      };
+
+      var newNoty = new Noty(opts).show();
+
+      $('#toastrOptions').text('var newNoty = new Noty(' + JSON.stringify(opts, null, 2) + ').show();');
+    });
+  });
+</script>
+</body>
+</html>

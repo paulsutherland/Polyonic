@@ -1,0 +1,19 @@
+/*------------------------------------
+  Heading-v5-2
+------------------------------------*/
+.u-heading-v5-2 {
+  & .u-heading-v5__title::before {
+    left: 0;
+    bottom: 3px;
+  }
+  &.text-right .u-heading-v5__title::before {
+    left: auto;
+    right: 0;
+  }
+  & .u-heading-v5__title {
+    @include px-to-rem(padding-left, 25px);
+  }
+  &.text-right .u-heading-v5__title {
+    @include px-to-rem(padding-right, 25px);
+  }
+}

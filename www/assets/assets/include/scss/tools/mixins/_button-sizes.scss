@@ -1,0 +1,10 @@
+//
+// Button sizes
+//
+
+// e.g. @include u-button-size ($padding-y, $padding-x, $font-size);
+@mixin u-button-size ($padding-y, $padding-x, $font-size){
+  line-height: 1.4;
+  @include px-to-rem(padding, $padding-y $padding-x);
+  @include px-to-rem(font-size, $font-size);
+}

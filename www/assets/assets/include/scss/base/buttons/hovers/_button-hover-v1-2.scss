@@ -1,0 +1,10 @@
+/* Hover v1-2 */
+.u-btn-hover-v1-2::after {
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+}
+.u-btn-hover-v1-2:hover::after {
+  width: 100%;
+}

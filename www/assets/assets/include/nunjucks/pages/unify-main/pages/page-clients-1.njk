@@ -1,0 +1,378 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-others" %}
+{% set mainNavActive_3 = "page-clients-1" %}
+{% set title = "Clients Page | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Breadcrumbs -->
+      <section class="breadcrumbs g-bg-gray-light-v5 g-py-50">
+        <div class="container">
+          <div class="d-sm-flex text-center">
+            <div class="align-self-center">
+              <h1 class="h3 g-font-weight-300 w-100 g-mb-10 g-mb-0--md">Clients</h1>
+            </div>
+
+            <div class="align-self-center ml-auto">
+              <ul class="u-list-inline">
+                <li class="list-inline-item g-mr-5">
+                  <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Home</a>
+                  <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                </li>
+                <li class="list-inline-item g-mr-5">
+                  <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Pages</a>
+                  <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                </li>
+                <li class="list-inline-item g-color-primary">
+                  <span>Clients</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Breadcrumbs -->
+
+      <!-- Clients -->
+      <section class="container g-pt-100">
+        <div class="row justify-content-between g-mb-40">
+          <div class="col-lg-8 g-mb-30">
+            <!-- Clients -->
+            <div class="d-flex justify-content-between">
+              <div class="d-block mr-5">
+                <img class="g-width-120" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+              </div>
+              <div class="d-block">
+                <h2 class="h4 g-color-black g-font-weight-600">Invision</h2>
+                <ul class="list-inline g-font-size-13">
+                  <li class="list-inline-item mr-4 mb-0">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-hotel-restaurant-235 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      New York, United States
+                    </a>
+                  </li>
+                  <li class="list-inline-item mr-4">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-communication-101 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      http://www.grensboro.com
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-education-009 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      Business marketing
+                    </a>
+                  </li>
+                </ul>
+                <p>Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs.</p>
+              </div>
+            </div>
+            <!-- End Clients -->
+
+            <hr class="g-my-50">
+
+            <!-- Clients -->
+            <div class="d-flex justify-content-between">
+              <div class="d-block mr-5">
+                <img class="g-width-120" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+              </div>
+              <div class="d-block">
+                <h2 class="h4 g-color-black g-font-weight-600">FitBit</h2>
+                <ul class="list-inline g-font-size-13">
+                  <li class="list-inline-item mr-4 mb-0">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-hotel-restaurant-235 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      New York, United States
+                    </a>
+                  </li>
+                  <li class="list-inline-item mr-4">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-communication-101 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      http://www.herrywood.com
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-education-009 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      Wood &amp; Furniture
+                    </a>
+                  </li>
+                </ul>
+                <p>Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs.</p>
+              </div>
+            </div>
+            <!-- End Clients -->
+
+            <hr class="g-my-50">
+
+            <!-- Clients -->
+            <div class="d-flex justify-content-between">
+              <div class="d-block mr-5">
+                <img class="g-width-120" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+              </div>
+              <div class="d-block">
+                <h2 class="h4 g-color-black g-font-weight-600">Atlassian</h2>
+                <ul class="list-inline g-font-size-13">
+                  <li class="list-inline-item mr-4 mb-0">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-hotel-restaurant-235 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      New York, United States
+                    </a>
+                  </li>
+                  <li class="list-inline-item mr-4">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-communication-101 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      http://www.sevenmagazine.com
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-education-009 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      Newspaper
+                    </a>
+                  </li>
+                </ul>
+                <p>Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs.</p>
+              </div>
+            </div>
+            <!-- End Clients -->
+
+            <hr class="g-my-50">
+
+            <!-- Clients -->
+            <div class="d-flex justify-content-between">
+              <div class="d-block mr-5">
+                <img class="g-width-120" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+              </div>
+              <div class="d-block">
+                <h2 class="h4 g-color-black g-font-weight-600">Twillio</h2>
+                <ul class="list-inline g-font-size-13">
+                  <li class="list-inline-item mr-4 mb-0">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-hotel-restaurant-235 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      New York, United States
+                    </a>
+                  </li>
+                  <li class="list-inline-item mr-4">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-communication-101 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      http://www.jsconsulting.com
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-education-009 u-line-icon-pro"></i>
+                    <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#!">
+                      Consulting
+                    </a>
+                  </li>
+                </ul>
+                <p>Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs.</p>
+              </div>
+            </div>
+            <!-- End Clients -->
+
+            <hr class="g-my-50">
+          </div>
+
+          <div class="col-lg-3 g-mb-30">
+            <h2 class="h5 g-color-black g-font-weight-600 text-uppercase mb-4">Categories</h2>
+
+            <!-- Categories -->
+            <ul class="list-unstyled">
+              <li class="my-3">
+                <a class="d-flex justify-content-between g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover" href="#!">
+                  Design
+                  <span class="d-inline-block g-min-width-40 g-brd-around g-brd-gray-light-v3 text-center g-rounded-25 g-px-10 g-py-3">99</span>
+                </a>
+              </li>
+              <li class="my-3">
+                <a class="d-flex justify-content-between g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover" href="#!">
+                  Development
+                  <span class="d-inline-block g-min-width-40 g-brd-around g-brd-gray-light-v3 text-center g-rounded-25 g-px-10 g-py-3">5</span>
+                </a>
+              </li>
+              <li class="my-3">
+                <a class="d-flex justify-content-between g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover" href="#!">
+                  Services
+                  <span class="d-inline-block g-min-width-40 g-brd-around g-brd-gray-light-v3 text-center g-rounded-25 g-px-10 g-py-3">15</span>
+                </a>
+              </li>
+              <li class="my-3">
+                <a class="d-flex justify-content-between g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover" href="#!">
+                  Support
+                  <span class="d-inline-block g-min-width-40 g-brd-around g-brd-gray-light-v3 text-center g-rounded-25 g-px-10 g-py-3">12</span>
+                </a>
+              </li>
+              <li class="my-3">
+                <a class="d-flex justify-content-between g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover" href="#!">
+                  Investment
+                  <span class="d-inline-block g-min-width-40 g-brd-around g-brd-gray-light-v3 text-center g-rounded-25 g-px-10 g-py-3">5</span>
+                </a>
+              </li>
+              <li class="my-3">
+                <a class="d-flex justify-content-between g-color-gray-dark-v5 g-font-size-13 g-text-underline--none--hover" href="#!">
+                  Financing
+                  <span class="d-inline-block g-min-width-40 g-brd-around g-brd-gray-light-v3 text-center g-rounded-25 g-px-10 g-py-3">1</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Categories -->
+
+            <hr class="g-my-50">
+
+            <h2 class="h5 g-color-black g-font-weight-600 text-uppercase mb-4">Tags</h2>
+
+            <!-- Categories -->
+            <ul class="list-inline">
+              <li class="list-inline-item my-2">
+                <a class="d-inline-block g-brd-around g-brd-gray-light-v3 g-brd-primary--hover g-color-gray-dark-v5 g-color-white--hover g-bg-primary--hover g-font-size-13 g-text-underline--none--hover g-rounded-25 g-transition-0_3 g-px-15 g-py-4" href="#!">Design</a>
+              </li>
+              <li class="list-inline-item my-2">
+                <a class="d-inline-block g-brd-around g-brd-gray-light-v3 g-brd-primary--hover g-color-gray-dark-v5 g-color-white--hover g-bg-primary--hover g-font-size-13 g-text-underline--none--hover g-rounded-25 g-transition-0_3 g-px-15 g-py-4" href="#!">Unify</a>
+              </li>
+              <li class="list-inline-item my-2">
+                <a class="d-inline-block g-brd-around g-brd-gray-light-v3 g-brd-primary--hover g-color-gray-dark-v5 g-color-white--hover g-bg-primary--hover g-font-size-13 g-text-underline--none--hover g-rounded-25 g-transition-0_3 g-px-15 g-py-4" href="#!">Template</a>
+              </li>
+              <li class="list-inline-item my-2">
+                <a class="d-inline-block g-brd-around g-brd-gray-light-v3 g-brd-primary--hover g-color-gray-dark-v5 g-color-white--hover g-bg-primary--hover g-font-size-13 g-text-underline--none--hover g-rounded-25 g-transition-0_3 g-px-15 g-py-4" href="#!">HTML</a>
+              </li>
+              <li class="list-inline-item my-2">
+                <a class="d-inline-block g-brd-around g-brd-gray-light-v3 g-brd-primary--hover g-color-gray-dark-v5 g-color-white--hover g-bg-primary--hover g-font-size-13 g-text-underline--none--hover g-rounded-25 g-transition-0_3 g-px-15 g-py-4" href="#!">CSS</a>
+              </li>
+              <li class="list-inline-item my-2">
+                <a class="d-inline-block g-brd-around g-brd-gray-light-v3 g-brd-primary--hover g-color-gray-dark-v5 g-color-white--hover g-bg-primary--hover g-font-size-13 g-text-underline--none--hover g-rounded-25 g-transition-0_3 g-px-15 g-py-4" href="#!">Mobile</a>
+              </li>
+              <li class="list-inline-item my-2">
+                <a class="d-inline-block g-brd-around g-brd-gray-light-v3 g-brd-primary--hover g-color-gray-dark-v5 g-color-white--hover g-bg-primary--hover g-font-size-13 g-text-underline--none--hover g-rounded-25 g-transition-0_3 g-px-15 g-py-4" href="#!">iOS</a>
+              </li>
+              <li class="list-inline-item my-2">
+                <a class="d-inline-block g-brd-around g-brd-gray-light-v3 g-brd-primary--hover g-color-gray-dark-v5 g-color-white--hover g-bg-primary--hover g-font-size-13 g-text-underline--none--hover g-rounded-25 g-transition-0_3 g-px-15 g-py-4" href="#!">UI</a>
+              </li>
+              <li class="list-inline-item my-2">
+                <a class="d-inline-block g-brd-around g-brd-gray-light-v3 g-brd-primary--hover g-color-gray-dark-v5 g-color-white--hover g-bg-primary--hover g-font-size-13 g-text-underline--none--hover g-rounded-25 g-transition-0_3 g-px-15 g-py-4" href="#!">Web</a>
+              </li>
+            </ul>
+            <!-- End Categories -->
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="g-pb-100" aria-label="Page Navigation">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="#!" aria-label="Previous">
+              <span aria-hidden="true">
+                <i class="fa fa-angle-left g-mr-5"></i> Previous
+              </span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="list-inline-item g-hidden-sm-down">
+              <a class="u-pagination-v1__item u-pagination-v1-4 g-rounded-50 g-pa-7-14" href="#!">1</a>
+            </li>
+            <li class="list-inline-item g-hidden-sm-down">
+              <a class="u-pagination-v1__item u-pagination-v1-4 u-pagination-v1-4--active g-rounded-50 g-pa-7-14" href="#!">2</a>
+            </li>
+            <li class="list-inline-item g-hidden-sm-down">
+              <a class="u-pagination-v1__item u-pagination-v1-4 g-rounded-50 g-pa-7-14" href="#!">3</a>
+            </li>
+            <li class="list-inline-item g-hidden-sm-down">
+              <a class="g-pa-7-14">...</a>
+            </li>
+            <li class="list-inline-item g-hidden-sm-down">
+              <a class="u-pagination-v1__item u-pagination-v1-4 g-rounded-50 g-pa-7-14" href="#!">80</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="#!" aria-label="Next">
+              <span aria-hidden="true">
+                Next <i class="fa fa-angle-right g-ml-5"></i>
+              </span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- End Pagination -->
+      </section>
+      <!-- End Clients -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

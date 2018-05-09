@@ -1,0 +1,10 @@
+/*------------------------------------
+  Info Block v4-1
+------------------------------------*/
+.info-v4-1 {
+	&:hover {
+		.info-v4-1__divider {
+			border-color: $g-color-gray-dark-v2;
+		}
+	}
+}

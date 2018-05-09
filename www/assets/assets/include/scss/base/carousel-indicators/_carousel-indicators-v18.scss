@@ -1,0 +1,92 @@
+/*------------------------------------
+  Carousel indicators v18
+------------------------------------*/
+
+.u-carousel-indicators-v18,
+.u-carousel-indicators-v18--white {
+  white-space: nowrap;
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+
+    span {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      text-indent: -9999px;
+      transition: opacity .3s ease;
+
+      &::before,
+      &::after {
+        content: "";
+        display: none;
+      }
+
+      &:hover,
+      &:focus {
+        opacity: .5;
+      }
+    }
+
+    svg,
+    i {
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+
+      circle,
+      path,
+      polygon {
+        opacity: 0;
+        fill: none;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 39 39;
+        stroke-dashoffset: 39;
+        transition: stroke-dashoffset .3s, opacity .3s;
+      }
+    }
+
+    &.slick-active {
+      span {
+        opacity: .5;
+      }
+
+      svg,
+      i {
+        circle,
+        path,
+        polygon {
+          opacity: 1;
+          stroke-dashoffset: 0;
+          transition: stroke-dashoffset .3s, opacity .15s;
+        }
+      }
+    }
+  }
+}
+
+.u-carousel-indicators-v18--white {
+  li {
+    span {
+      background-color: $g-color-primary;
+    }
+
+    svg,
+    i {
+      circle,
+      path,
+      polygon {
+        stroke: $g-color-white;
+      }
+    }
+  }
+}

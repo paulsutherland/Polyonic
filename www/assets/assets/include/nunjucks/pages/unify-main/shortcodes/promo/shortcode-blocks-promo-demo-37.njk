@@ -1,0 +1,134 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-promo" %}
+{% set title = "Promo Blocks 37" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/chosen/chosen.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    <!-- Promo Block -->
+    <div class="g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-cover g-bg-black-opacity-0_3--after g-py-150" style="background-image: url({{ root }}assets/img-temp/1920x800/img34.jpg);">
+      <div class="container g-pos-rel g-z-index-1">
+        <div class="g-mb-20">
+          <h1 class="h2 g-color-white mb-0">Search for Flatmates &amp; Rooms for Rent</h1>
+        </div>
+
+        <div class="g-bg-white-opacity-0_3 g-pa-30 g-pb-0">
+          <!-- Input Group -->
+          <form>
+            <div class="row g-mx-0--md">
+              <div class="col-md-6 col-lg-8 g-px-0--md g-mb-30">
+                <input class="form-control rounded-0 g-brd-gray-light-v3 g-px-20 g-py-15" type="text" placeholder="Search by City, Address, ZIP ...">
+              </div>
+
+              <!-- Button Group -->
+              <div class="col-sm-6 col-md-3 col-lg-2 g-px-0--md g-mb-30">
+                <select class="js-custom-select w-100 u-select-v1 g-min-width-150 g-brd-left-none--md g-brd-gray-light-v3 g-color-black g-color-primary--hover g-bg-white g-pt-12 g-pb-13" required
+                        data-placeholder="All Listings"
+                        data-open-icon="fa fa-angle-down"
+                        data-close-icon="fa fa-angle-up">
+                  <option></option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="AL">All Listings</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="FL">Flatmates</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="RM">Roomates</option>
+                </select>
+              </div>
+              <!-- End Button Group -->
+
+              <div class="col-lg-2 g-px-0--md g-mb-30">
+                <button class="btn btn-block u-btn-primary g-color-white g-bg-primary-dark-v1--hover g-font-weight-600 rounded-0 g-px-18 g-py-15" type="submit">
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
+          <!-- End Input Group -->
+        </div>
+      </div>
+    </div>
+    <!-- End Promo Block -->
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/content-demo-1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="{{ root }}assets/vendor/chosen/chosen.jquery.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widget.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/slider.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+  <script src="{{ root }}assets/js/components/hs.slider.js"></script>
+  <script src="{{ root }}assets/js/components/hs.select.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of range slider
+      $.HSCore.components.HSSlider.init('#rangeSlider1');
+
+      // initialization of custom select
+      $.HSCore.components.HSSelect.init('.js-custom-select');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+  <!-- End JS Plugins Init. -->
+</body>
+</html>

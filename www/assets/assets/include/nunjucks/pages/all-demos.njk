@@ -1,0 +1,698 @@
+{# Settings #}
+{% set root = "" %}
+{% set mainNavActive_1 = "demos" %}
+{% set headerPositionType = "u-header--static" %}
+{% set headerTheme = "u-header__section--dark" %}
+{% set headerBgColor = "g-bg-gray-dark-v1" %}
+{% set title = "All Demos of Unify" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main-mini.njk" %}
+
+  <!-- Promo Block -->
+  <section class="g-py-50 g-py-80--lg">
+    <div class="container text-center">
+      <h1 class="g-font-weight-300 g-mb-10">45+ Ready to Start Templates</h1>
+      <div class="g-width-60x--md mx-auto">
+        <p class="g-color-accent g-font-size-16 g-mb-20">Start a new project with eye-catching modular <span class="text-nowrap g-brd-bottom--dashed g-brd-gray-light-v1" data-toggle="tooltip" data-placement="top" title="Corporate, Blog, Admin Dashboard, E-Commerce and more..">45+ Demo</span> Templates. Build websites faster and easily with ready to use solutions!</p>
+
+        <a class="btn u-btn-primary u-shadow-v24" href="index.html">
+           <span class="g-mr-3">←</span> Go to Previous Page
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Promo Block -->
+
+  <!-- Content -->
+  <div class="container-fluid text-center g-px-70--xl g-pb-80 g-brd-bottom g-brd-gray-light-v4">
+    <!-- All Demos Filter -->
+    <ul id="filterControls" class="d-block list-inline text-center g-mb-50">
+      <li class="list-inline-item cbp-filter-item cbp-filter-item-active g-brd-around g-brd-gray-light-v4 g-brd-primary--active g-color-gray-dark-v4 g-color-primary--hover g-color-primary--active g-font-size-12 rounded g-transition-0_3 g-px-20 g-py-7 mb-2"
+      role="button" data-filter="*">All
+      </li>
+      <li class="list-inline-item cbp-filter-item g-brd-around g-brd-gray-light-v4 g-brd-primary--active g-color-gray-dark-v4 g-color-primary--hover g-color-primary--active g-font-size-12 rounded g-transition-0_3 g-px-20 g-py-7 mb-2" role="button" data-filter=".unify-main">
+        <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Unify Main
+      </li>
+      <li class="list-inline-item cbp-filter-item g-brd-around g-brd-gray-light-v4 g-brd-primary--active g-color-gray-dark-v4 g-color-primary--hover g-color-primary--active g-font-size-12 rounded g-transition-0_3 g-px-20 g-py-7 mb-2" role="button" data-filter=".admin-dashboard">
+        <span class="d-inline-block g-bg-pink g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Admin Dashboard
+      </li>
+      <li class="list-inline-item cbp-filter-item g-brd-around g-brd-gray-light-v4 g-brd-primary--active g-color-gray-dark-v4 g-color-primary--hover g-color-primary--active g-font-size-12 rounded g-transition-0_3 g-px-20 g-py-7 mb-2" role="button" data-filter=".e-commerce">
+        <span class="d-inline-block g-bg-teal g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> E-Commerce
+      </li>
+      <li class="list-inline-item cbp-filter-item g-brd-around g-brd-gray-light-v4 g-brd-primary--active g-color-gray-dark-v4 g-color-primary--hover g-color-primary--active g-font-size-12 rounded g-transition-0_3 g-px-20 g-py-7 mb-2" role="button" data-filter=".multi-pages">
+        <span class="d-inline-block g-bg-darkpurple g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Multi Pages
+      </li>
+      <li class="list-inline-item cbp-filter-item g-brd-around g-brd-gray-light-v4 g-brd-primary--active g-color-gray-dark-v4 g-color-primary--hover g-color-primary--active g-font-size-12 rounded g-transition-0_3 g-px-20 g-py-7 mb-2" role="button" data-filter=".one-pages">
+        <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> One Pages
+      </li>
+    </ul>
+    <!-- End All Demos Filter -->
+
+    <!-- All Demos -->
+    <div class="cbp g-mb-60" data-controls="#filterControls" data-animation="quicksand" data-x-gap="30" data-y-gap="30" data-media-queries='[
+             {"width": 1500, "cols": 3},
+             {"width": 1100, "cols": 3},
+             {"width": 800, "cols": 3},
+             {"width": 480, "cols": 2},
+             {"width": 300, "cols": 1}
+           ]'>
+
+      <!-- Unify Default -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/home/home-default.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img1.jpg" alt="Unify Default Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Unify Default
+        </a>
+      </div>
+      <!-- End Unify Default -->
+
+      <!-- Admin Dashboard -->
+      <div class="cbp-item admin-dashboard">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}admin-template/dashboards/dashboard-v1.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img2.jpg" alt="Admin Dashboard Demo">
+          <span class="d-inline-block g-bg-pink g-width-10 g-height-10 g-rounded-20 g-mr-5"></span> Admin Dashboard
+        </a>
+      </div>
+      <!-- End Admin Dashboard -->
+
+      <!-- E-Commerce -->
+      <div class="cbp-item e-commerce">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}e-commerce/home-page-1.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img3.jpg" alt="E-Commerce Demo">
+          <span class="d-inline-block g-bg-teal g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> E-Commerce
+        </a>
+      </div>
+      <!-- End E-Commerce -->
+
+      <!-- University -->
+      <div class="cbp-item multi-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}multipage/education/home-page-1.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img4.jpg" alt="University Demo">
+          <span class="d-inline-block g-bg-darkpurple g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> University
+        </a>
+      </div>
+      <!-- End University -->
+
+      <!-- Real Estate -->
+      <div class="cbp-item multi-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}multipage/real-estate/home-page-1.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img5.jpg" alt="Real Estate Demo">
+          <span class="d-inline-block g-bg-darkpurple g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Real Estate
+        </a>
+      </div>
+      <!-- End Real Estate -->
+
+      <!-- Marketing -->
+      <div class="cbp-item multi-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}multipage/marketing/home-page-1.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img6.jpg" alt="Marketing Demo">
+          <span class="d-inline-block g-bg-darkpurple g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Marketing
+        </a>
+      </div>
+      <!-- End Marketing -->
+
+      <!-- Admin Dashboard -->
+      <div class="cbp-item admin-dashboard">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}admin-template/dashboards/dashboard-v2.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img2-1.jpg" alt="Admin Dashboard Demo">
+          <span class="d-inline-block g-bg-pink g-width-10 g-height-10 g-rounded-20 g-mr-5"></span> Admin Dashboard
+        </a>
+      </div>
+      <!-- End Admin Dashboard -->
+
+      <!-- Blog & Magazine -->
+      <div class="cbp-item multi-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}multipage/blog-magazine/classic/bm-classic-home-page-1.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img7.jpg" alt="Blog &amp; Magazine Demo">
+          <span class="d-inline-block g-bg-darkpurple g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Blog &amp; Magazine
+        </a>
+      </div>
+      <!-- End Blog & Magazine -->
+
+      <!-- Consulting -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/consulting/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img8.jpg" alt="Consulting Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Consulting
+        </a>
+      </div>
+      <!-- End Consulting -->
+
+      <!-- Architecture -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/architecture/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img9.jpg" alt="Architecture Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Architecture
+        </a>
+      </div>
+      <!-- End Architecture -->
+
+      <!-- App -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/app/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img10.jpg" alt="App Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> App
+        </a>
+      </div>
+      <!-- End App -->
+
+      <!-- Charity -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/charity/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img11.jpg" alt="Charity Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Charity
+        </a>
+      </div>
+      <!-- End Charity -->
+
+      <!-- Corporate -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/corporate/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img12.jpg" alt="Corporate Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Corporate
+        </a>
+      </div>
+      <!-- End Corporate -->
+
+      <!-- Accounting -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/accounting/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img13.jpg" alt="Accounting Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Accounting
+        </a>
+      </div>
+      <!-- End Accounting -->
+
+      <!-- Admin Dashboard -->
+      <div class="cbp-item admin-dashboard">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}admin-template/dashboards/dashboard-v3.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img2-2.jpg" alt="Admin Dashboard Demo">
+          <span class="d-inline-block g-bg-pink g-width-10 g-height-10 g-rounded-20 g-mr-5"></span> Admin Dashboard
+        </a>
+      </div>
+      <!-- End Admin Dashboard -->
+
+      <!-- Inspire -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/home/home-page-4.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img14.jpg" alt="Inspire Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Inspire
+        </a>
+      </div>
+      <!-- End Inspire -->
+
+      <!-- Business -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/business/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img15.jpg" alt="Business Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Business
+        </a>
+      </div>
+      <!-- End Business -->
+
+      <!-- Shop -->
+      <div class="cbp-item e-commerce">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}e-commerce/home-page-3.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img16.jpg" alt="Shop Demo">
+          <span class="d-inline-block g-bg-teal g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Shop
+        </a>
+      </div>
+      <!-- End Shop -->
+
+      <!-- Admin Dashboard -->
+      <div class="cbp-item admin-dashboard">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}admin-template/dashboards/dashboard-v4.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img2-3.jpg" alt="Admin Dashboard Demo">
+          <span class="d-inline-block g-bg-pink g-width-10 g-height-10 g-rounded-20 g-mr-5"></span> Admin Dashboard
+        </a>
+      </div>
+      <!-- End Admin Dashboard -->
+
+      <!-- Events -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/event/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img17.jpg" alt="Events Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Events
+        </a>
+      </div>
+      <!-- End Events -->
+
+      <!-- Construction -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/construction/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img18.jpg" alt="Construction Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Construction
+        </a>
+      </div>
+      <!-- End Construction -->
+
+      <!-- Travel -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/travel/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img19.jpg" alt="Travel Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Travel
+        </a>
+      </div>
+      <!-- End Travel -->
+
+      <!-- Creative -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/home/home-page-6.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img20.jpg" alt="Creative Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Creative
+        </a>
+      </div>
+      <!-- End Creative -->
+
+      <!-- Music -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/music/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img21.jpg" alt="Music Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Music
+        </a>
+      </div>
+      <!-- End Music -->
+
+      <!-- Studio -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/home/home-page-2.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img22.jpg" alt="Studio Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Studio
+        </a>
+      </div>
+      <!-- End Studio -->
+
+      <!-- Gym -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/gym/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img23.jpg" alt="Gym Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Gym
+        </a>
+      </div>
+      <!-- End Gym -->
+
+      <!-- Aspire -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/home/home-page-13.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img24.jpg" alt="Aspire Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Aspire
+        </a>
+      </div>
+      <!-- End Aspire -->
+
+      <!-- Spa -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/spa/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img25.jpg" alt="Spa Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Spa
+        </a>
+      </div>
+      <!-- End Spa -->
+
+      <!-- Incredible -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/home/home-page-1.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img26.jpg" alt="Incredible Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Incredible
+        </a>
+      </div>
+      <!-- End Incredible -->
+
+      <!-- Shipping -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/shipping/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img27.jpg" alt="Shipping Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Shipping
+        </a>
+      </div>
+      <!-- End Shipping -->
+
+      <!-- Outlet -->
+      <div class="cbp-item e-commerce">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}e-commerce/home-page-2.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img28.jpg" alt="Outlet Demo">
+          <span class="d-inline-block g-bg-teal g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Outlet
+        </a>
+      </div>
+      <!-- End Outlet -->
+
+      <!-- Real Estate Agency -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/real-estate/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img29.jpg" alt="Real Estate Agency Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Real Estate Agency
+        </a>
+      </div>
+      <!-- End Real Estate Agency -->
+
+      <!-- Blog -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/home/home-page-15.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img30.jpg" alt="Blog Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Blog
+        </a>
+      </div>
+      <!-- End Blog -->
+
+      <!-- Agency -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/agency/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img31.jpg" alt="Agency Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Agency
+        </a>
+      </div>
+      <!-- End Agency -->
+
+      <!-- Profile -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/pages/page-profile-main-1.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img32.jpg" alt="Profile Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Profile
+        </a>
+      </div>
+      <!-- End Profile -->
+
+      <!-- Courses -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/courses/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img33.jpg" alt="Courses Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Courses
+        </a>
+      </div>
+      <!-- End Courses -->
+
+      <!-- Photographer -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/photography/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img34.jpg" alt="Photographer Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Photographer
+        </a>
+      </div>
+      <!-- End Photographer -->
+
+      <!-- Restaurant -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/restaurant/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img35.jpg" alt="Restaurant Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Restaurant
+        </a>
+      </div>
+      <!-- End Restaurant -->
+
+      <!-- Allure -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/home/home-page-3.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img36.jpg" alt="Allure Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Allure
+        </a>
+      </div>
+      <!-- End Allure -->
+
+      <!-- Brave -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/home/home-page-9.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img37.jpg" alt="Brave Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Brave
+        </a>
+      </div>
+      <!-- End Brave -->
+
+      <!-- Lawyer -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/lawyer/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img38.jpg" alt="Lawyer Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Lawyer
+        </a>
+      </div>
+      <!-- End Lawyer -->
+
+      <!-- Wedding -->
+      <div class="cbp-item one-pages">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}one-pages/wedding/index.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img39.jpg" alt="Wedding Demo">
+          <span class="d-inline-block g-bg-cyan g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Wedding
+        </a>
+      </div>
+      <!-- End Wedding -->
+
+      <!-- Showcase -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/home/home-page-14.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img40.jpg" alt="Showcase Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Showcase
+        </a>
+      </div>
+      <!-- End Showcase -->
+
+      <!-- Jobs -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/pages/page-jobs-1.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img41.jpg" alt="Jobs Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Jobs
+        </a>
+      </div>
+      <!-- End Jobs -->
+
+      <!-- Web Agency -->
+      <div class="cbp-item unify-main">
+        <a class="u-link-v5 g-font-size-11 g-font-weight-600 g-letter-spacing-1 text-uppercase g-color-accent g-color-primary--hover" target="_blank" href="{{ root }}unify-main/home/home-page-12.html">
+          <img class="img-fluid d-block w-100 u-shadow-v25 u-shadow-v21--hover g-transition-0_3 rounded g-mb-15" src="{{ root }}assets/img-temp/unify-preview/img42.jpg" alt="Web Agency Demo">
+          <span class="d-inline-block g-bg-green g-width-10 g-height-10 g-rounded-20 g-bg-green g-mr-5"></span> Web Agency
+        </a>
+      </div>
+      <!-- End Web Agency -->
+    </div>
+    <!-- End All Demos -->
+
+    <div class="text-center">
+      <a class="btn btn-md u-btn-primary u-shadow-v24 g-py-14 g-px-20 g-mb-15" target="_blank" href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697?ref=htmlstream">
+        <i class="icon-basket g-pos-rel g-top-1 g-mr-5"></i> Get All of These for Only $30 <span class="g-ml-3">→</span>
+      </a>
+      <small class="d-block g-color-accent">Sells in Wrapbootstrap.</small>
+    </div>
+  </div>
+  <!-- End Content -->
+
+  <!-- Footer -->
+  <footer class="container g-pt-100 g-pb-60">
+    <div class="row justify-content-between">
+      <div class="col-lg-3 g-mb-30">
+        <a class="d-inline-block mb-4" href="unify-main/home/home-page-1.html">
+          <svg width="78px" height="29px" viewBox="0 0 86 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-78.000000, -19.000000)">
+                <g transform="translate(78.000000, 19.000000)">
+                  <path class="g-fill-primary" d="M0,0 L19.2941176,0 L19.2941176,0 C23.7123956,-8.11624501e-16 27.2941176,3.581722 27.2941176,8 L27.2941176,27.2941176 L8,27.2941176 L8,27.2941176 C3.581722,27.2941176 5.41083001e-16,23.7123956 0,19.2941176 L0,0 Z"></path>
+                  <path class="g-fill-white" d="M21.036662,24.8752523 L20.5338647,22.6659916 L20.3510293,22.6659916 C19.8533083,23.4481246 19.1448284,24.0626484 18.2255681,24.5095816 C17.3063079,24.9565147 16.2575544,25.1799779 15.0792761,25.1799779 C13.0376043,25.1799779 11.5139914,24.672107 10.5083918,23.6563498 C9.50279224,22.6405927 9,21.1017437 9,19.0397567 L9,8.02392554 L12.6109986,8.02392554 L12.6109986,18.4150692 C12.6109986,19.7050808 12.8750915,20.6725749 13.4032852,21.3175807 C13.9314789,21.9625865 14.7593086,22.2850846 15.886799,22.2850846 C17.3901196,22.2850846 18.4947389,21.8356188 19.2006901,20.9366737 C19.9066413,20.0377286 20.2596117,18.5318912 20.2596117,16.4191164 L20.2596117,8.02392554 L23.855374,8.02392554 L23.855374,24.8752523 L21.036662,24.8752523 Z"></path>
+                  <path class="g-fill-main" style="opacity: .9;" d="M44.4764678,24.4705882 L40.8807055,24.4705882 L40.8807055,14.1099172 C40.8807055,12.809748 40.6191519,11.8397145 40.096037,11.1997875 C39.5729221,10.5598605 38.7425531,10.2399018 37.6049051,10.2399018 C36.0914269,10.2399018 34.9842682,10.6868282 34.2833958,11.5806945 C33.5825234,12.4745608 33.2320924,13.9727801 33.2320924,16.0753974 L33.2320924,24.4705882 L29.6515664,24.4705882 L29.6515664,7.61926145 L32.4550421,7.61926145 L32.9578394,9.8285222 L33.1406747,9.8285222 C33.6485533,9.02607405 34.3697301,8.40647149 35.3042266,7.96969592 C36.2387232,7.53292034 37.27478,7.31453583 38.412428,7.31453583 C42.4551414,7.31453583 44.4764678,9.3714132 44.4764678,13.4852296 L44.4764678,24.4705882 Z M53.7357283,24.4705882 L50.1552023,24.4705882 L50.1552023,7.61926145 L53.7357283,7.61926145 L53.7357283,24.4705882 Z M49.9418944,3.15503112 C49.9418944,2.51510412 50.1171098,2.0224693 50.467546,1.67711187 C50.8179823,1.33175444 51.3182351,1.15907831 51.9683197,1.15907831 C52.5980892,1.15907831 53.0881846,1.33175444 53.4386208,1.67711187 C53.7890571,2.0224693 53.9642725,2.51510412 53.9642725,3.15503112 C53.9642725,3.76448541 53.7890571,4.24442346 53.4386208,4.59485968 C53.0881846,4.94529589 52.5980892,5.12051137 51.9683197,5.12051137 C51.3182351,5.12051137 50.8179823,4.94529589 50.467546,4.59485968 C50.1171098,4.24442346 49.9418944,3.76448541 49.9418944,3.15503112 Z M68.0077253,10.3313195 L63.8939294,10.3313195 L63.8939294,24.4705882 L60.2981671,24.4705882 L60.2981671,10.3313195 L57.525164,10.3313195 L57.525164,8.65532856 L60.2981671,7.55831633 L60.2981671,6.4613041 C60.2981671,4.47042009 60.7654084,2.99505497 61.699905,2.03516447 C62.6344015,1.07527397 64.0615189,0.595335915 65.9812999,0.595335915 C67.2408388,0.595335915 68.4800439,0.803563007 69.6989525,1.22002344 L68.7543031,3.93208145 C67.8705943,3.64766945 67.0275286,3.50546559 66.2250804,3.50546559 C65.4124747,3.50546559 64.820805,3.75686171 64.4500537,4.25966149 C64.0793023,4.76246128 63.8939294,5.51664965 63.8939294,6.52224922 L63.8939294,7.61926145 L68.0077253,7.61926145 L68.0077253,10.3313195 Z M69.0089215,7.61926145 L72.9094094,7.61926145 L76.3375727,17.1724096 C76.8556088,18.5335242 77.2009611,19.813359 77.3736398,21.0119524 L77.49553,21.0119524 C77.5869482,20.453286 77.7545456,19.7752783 77.9983273,18.9779089 C78.242109,18.1805396 79.5321012,14.3943616 81.8683427,7.61926145 L85.738358,7.61926145 L78.5315971,26.7103215 C77.2212704,30.2146837 75.0374253,31.9668385 71.9799963,31.9668385 C71.1877057,31.9668385 70.4157419,31.8805004 69.6640816,31.7078217 L69.6640816,28.8738734 C70.2024329,28.9957643 70.8169567,29.0567088 71.5076716,29.0567088 C73.2344587,29.0567088 74.4482703,28.056203 75.1491427,26.0551615 L75.7738303,24.4705882 L69.0089215,7.61926145 Z"></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+
+        <p class="g-color-gray-dark-v4 g-font-size-13 mb-0">Htmlstream 2018. &copy; All Rights Reserved.</p>
+      </div>
+
+      <div class="col-sm-6 col-lg-2 ml-auto g-mb-30">
+        <!-- Links -->
+        <ul class="list-unstyled g-color-gray-dark-v4 g-font-size-13 mb-0">
+          <li class="my-2"><i class="mr-2 fa fa-angle-right"></i>
+            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="https://wrapbootstrap.com/user/htmlstream">Support &amp; FAQ</a>
+          </li>
+          <li class="my-2"><i class="mr-2 fa fa-angle-right"></i>
+            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="http://support.wrapbootstrap.com/knowledge_base/topics/usage-licenses">License</a>
+          </li>
+        </ul>
+        <!-- End Links -->
+      </div>
+
+      <div class="col-sm-6 col-lg-3 g-mb-30">
+        <h3 class="h6 g-color-black g-font-weight-600 text-uppercase mb-4">Follow Us</h3>
+
+        <!-- Social Icons -->
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item g-mx-2">
+            <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-blue g-bg-blue-opacity-0_1 g-color-blue--hover rounded-circle" href="https://www.facebook.com/htmlstream">
+              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
+              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item g-mx-2">
+            <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-cyan g-bg-cyan-opacity-0_1 g-color-cyan--hover rounded-circle" href="https://twitter.com/htmlstream">
+              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item g-mx-2">
+            <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-bluegray g-bg-bluegray-opacity-0_1 g-color-bluegray--hover rounded-circle" href="https://github.com/htmlstream">
+              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-github"></i>
+              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-github"></i>
+            </a>
+          </li>
+          <li class="list-inline-item g-mx-2">
+            <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-red g-bg-red-opacity-0_1 g-color-red--hover rounded-circle" href="https://dribbble.com/htmlstream">
+              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-dribbble"></i>
+              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-dribbble"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- End Social Icons -->
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+</main>
+
+{% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Implementing Plugins -->
+<script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+{% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+<script src="{{ root }}assets/vendor/chosen/chosen.jquery.js"></script>
+<script src="{{ root }}assets/vendor/image-select/src/ImageSelect.jquery.js"></script>
+<script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+<script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.js"></script>
+<script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="{{ root }}assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ root }}assets/js/components/hs.header.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.scroll-nav.js"></script>
+<script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+<script src="{{ root }}assets/js/components/hs.sticky-block.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.height-calc.js"></script>
+<script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+<script src="{{ root }}assets/js/components/hs.cubeportfolio.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of carousel
+    $.HSCore.components.HSCarousel.init('.js-carousel');
+
+    // Header
+    $.HSCore.components.HSHeader.init($('#js-header'));
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of HSMegaMenu plugin
+    $('.js-mega-menu').HSMegaMenu({
+      event: 'hover',
+      pageContainer: $('.container'),
+      breakpoint: 991
+    });
+
+    // initialization of go to
+    $.HSCore.components.HSGoTo.init('.js-go-to');
+
+    $.HSCore.helpers.HSHeightCalc.init();
+
+    // initialization of cubeportfolio
+    $.HSCore.components.HSCubeportfolio.init('.cbp');
+  });
+
+  $(window).on('load', function () {
+    // initialization of HSScrollNav
+    $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
+      duration: 700,
+      over: $('.u-secondary-navigation')
+    });
+
+    // initialization of masonry.js
+    $('.masonry-grid').imagesLoaded().then(function () {
+      $('.masonry-grid').masonry({
+        // options
+        columnWidth: '.masonry-grid-sizer',
+        itemSelector: '.masonry-grid-item',
+        percentPosition: true
+      });
+    });
+
+    // initialization of sticky blocks
+    $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+  });
+</script>
+
+<script>
+  // Facebook Like
+  window.fbAsyncInit = function () {
+    // init the FB JS SDK
+    FB.init({
+      appId: '1972702999621713',
+      status: true,
+      xfbml: true,
+      version: 'v2.3'
+    });
+    if (typeof gaSocialTracking != 'undefined') gaSocialTracking.trackFacebook();
+    setTimeout(function () {
+      if (typeof window.fbCallback == 'function') {
+        window.fbCallback();
+      }
+    }, 3000); // to make sure FB was loaded
+  };
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  // Facebook Like
+
+  // Twitter Follow
+  window.twttr = (function (d, s, id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = {
+      _e: [], ready: function (f) {
+        t._e.push(f)
+      }
+    });
+  }(document, "script", "twitter-wjs"));
+  twttr.ready(function (twttr) {
+    twttr.events.bind('tweet', function (event) {
+      if (typeof gaSocialTracking != 'undefined') gaSocialTracking.trackTwitter();
+    });
+  });
+  // Twitter Follow
+</script>
+
+{% set SSCookiePrefix = "unify" %}
+{% set SSDefaultCustomColor = "#72c02c" %}
+{% set SSDefaultOuterSpaces = "0px" %}
+{% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+{% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+{% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+</body>
+</html>

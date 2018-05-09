@@ -1,0 +1,8 @@
+/* 3d Buttons */
+.u-btn-3d {
+  border-bottom: solid 3px rgba($g-color-black,.2);
+
+  &:hover {
+    border-bottom-color: rgba($g-color-black,.3);
+  }
+}

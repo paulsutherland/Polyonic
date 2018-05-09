@@ -1,0 +1,15 @@
+/*------------------------------------
+  Info Block v1-1
+------------------------------------*/
+.u-info-v1-1 {
+  overflow: hidden;
+  position: relative;
+}
+.u-info-v1-1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+}

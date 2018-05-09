@@ -1,0 +1,62 @@
+<!-- Logo -->
+<a class="navbar-brand g-pos-abs g-top-20 g-left-20 g-z-index-2" href="{{ root }}index.html">
+  <img src="{{ root }}assets/img/logo/logo-2.png" alt="Image Description">
+</a>
+<!-- End Logo -->
+
+<!-- Smart Menu -->
+<div class="js-smart-menu u-smart-nav u-smart-nav--top-right g-transition-0_3"
+     data-fix-moment="300">
+  <!-- Smart Menu Toggle Button -->
+  <button class="u-smart-nav__toggler btn u-btn-white g-pa-0" id="u-smart-menu-toggler-1"
+          aria-label="Toggle navigation"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="smart-menu-1">
+    <span class="hamburger hamburger--collapse">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </span>
+  </button>
+  <!-- End Smart Menu Toggle Button -->
+
+  <!-- Navbar -->
+  <nav class="navbar u-shadow-v17 g-bg-white g-rounded-10 g-pa-20 g-pb-15 g-transition-0_3" id="smart-menu-1"
+       aria-labelledby="u-smart-menu-toggler-1">
+    <ul class="navbar-nav text-uppercase">
+      <li class="nav-item{% if mainNavActive_1 == 'home' %} active{% endif %}">
+        <a href="#!" class="nav-link">Home
+          {% if mainNavActive_1 == 'home' %}<span class="sr-only">(current)</span>{% endif %}
+        </a>
+      </li>
+      <li class="nav-item{% if mainNavActive_1 == 'features' %} active{% endif %}">
+        <a href="#!" class="nav-link">Features
+          {% if mainNavActive_1 == 'features' %}<span class="sr-only">(current)</span>{% endif %}
+        </a>
+      </li>
+      <li class="nav-item{% if mainNavActive_1 == 'shortcodes' %} active{% endif %}">
+        <a href="#!" class="nav-link">Shortcodes
+          {% if mainNavActive_1 == 'shortcodes' %}<span class="sr-only">(current)</span>{% endif %}
+        </a>
+      </li>
+      <li class="nav-item{% if mainNavActive_1 == 'pages' %} active{% endif %}">
+        <a href="#!" class="nav-link">Pages
+          {% if mainNavActive_1 == 'pages' %}<span class="sr-only">(current)</span>{% endif %}
+        </a>
+      </li>
+      <li class="nav-item{% if mainNavActive_1 == 'demos' %} active{% endif %}">
+        <a href="#!" class="nav-link">Demos
+          {% if mainNavActive_1 == 'demos' %}<span class="sr-only">(current)</span>{% endif %}
+        </a>
+      </li>
+      <li class="nav-item{% if mainNavActive_1 == 'whats-new' %} active{% endif %}">
+        <a href="#!" class="nav-link">What's New
+          {% if mainNavActive_1 == 'whats-new' %}<span class="sr-only">(current)</span>{% endif %}
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- End Navbar -->
+</div>
+<!-- End Smart Menu -->

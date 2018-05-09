@@ -1,0 +1,170 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Buttons" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu5 = "unCollapsed" %}
+{% set activeMenuItem = "ui-buttons" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: " Forms",
+    href: "#!"
+  }, {
+    breadcrumb: " Elements",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/multiselect/css/multi-select.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+	{% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+	<section class="container-fluid px-0 g-pt-65">
+		<div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+			{% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+			<div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+				{% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+				<div class="g-pa-20">
+					<h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-28">{{ title }}</h1>
+
+					<div class="row">
+						<div class="col-md-6">
+							<!-- Default -->
+							<div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+								<h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Default</h3>
+                  <a href="#!" class="btn btn-md u-btn-primary g-mr-10 g-mb-15">Primary</a>
+                  <a href="#!" class="btn btn-md u-btn-red g-mr-10 g-mb-15">Red</a>
+                  <a href="#!" class="btn btn-md u-btn-lightred g-mr-10 g-mb-15">Light Red</a>
+                  <a href="#!" class="btn btn-md u-btn-darkred g-mr-10 g-mb-15">Dark Red</a>
+                  <a href="#!" class="btn btn-md u-btn-blue g-mr-10 g-mb-15">Blue</a>
+                  <a href="#!" class="btn btn-md u-btn-indigo g-mr-10 g-mb-15">Indigo</a>
+                  <a href="#!" class="btn btn-md u-btn-purple g-mr-10 g-mb-15">Purple</a>
+                  <a href="#!" class="btn btn-md u-btn-darkpurple g-mr-10 g-mb-15">Dark Purple</a>
+                  <a href="#!" class="btn btn-md u-btn-pink g-mr-10 g-mb-15">Pink</a>
+                  <a href="#!" class="btn btn-md u-btn-orange g-mr-10 g-mb-15">Orange</a>
+                  <a href="#!" class="btn btn-md u-btn-deeporange g-mr-10 g-mb-15">Deep Orange</a>
+                  <a href="#!" class="btn btn-md u-btn-aqua g-mr-10 g-mb-15">Aqua</a>
+                  <a href="#!" class="btn btn-md u-btn-yellow g-mr-10 g-mb-15">Yellow</a>
+                  <a href="#!" class="btn btn-md u-btn-cyan g-mr-10 g-mb-15">Cyan</a>
+                  <a href="#!" class="btn btn-md u-btn-teal g-mr-10 g-mb-15">Teal</a>
+                  <a href="#!" class="btn btn-md u-btn-brown g-mr-10 g-mb-15">Brown</a>
+                  <a href="#!" class="btn btn-md u-btn-bluegray g-mr-10 g-mb-15">Blue Gray</a>
+                  <a href="#!" class="btn btn-md u-btn-darkgray g-mr-10 g-mb-15">Dark Gray</a>
+                  <a href="#!" class="btn btn-md u-btn-black g-mr-10 g-mb-15">Black</a>
+							</div>
+							<!-- End Default -->
+						</div>
+
+            <div class="col-md-6">
+              <!-- Default Outline -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Default Outline</h3>
+                  <a href="#!" class="btn btn-md u-btn-outline-primary g-mr-10 g-mb-15">Primary</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-red g-mr-10 g-mb-15">Red</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-lightred g-mr-10 g-mb-15">Light Red</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-darkred g-mr-10 g-mb-15">Dark Red</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-blue g-mr-10 g-mb-15">Blue</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-indigo g-mr-10 g-mb-15">Indigo</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-purple g-mr-10 g-mb-15">Purple</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-darkpurple g-mr-10 g-mb-15">Dark Purple</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-pink g-mr-10 g-mb-15">Pink</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-orange g-mr-10 g-mb-15">Orange</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-deeporange g-mr-10 g-mb-15">Deep Orange</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-aqua g-mr-10 g-mb-15">Aqua</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-yellow g-mr-10 g-mb-15">Yellow</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-cyan g-mr-10 g-mb-15">Cyan</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-teal g-mr-10 g-mb-15">Teal</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-brown g-mr-10 g-mb-15">Brown</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-bluegray g-mr-10 g-mb-15">Blue Gray</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-darkgray g-mr-10 g-mb-15">Dark Gray</a>
+                  <a href="#!" class="btn btn-md u-btn-outline-black g-mr-10 g-mb-15">Black</a>
+              </div>
+              <!-- End Default Outline -->
+            </div>
+					</div>
+				</div>
+
+				{% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+			</div>
+		</div>
+	</section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/blocks/modals/project-form.njk" %}
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Plugins Init. -->
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/bloodhound.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/typeahead.jquery.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/multiselect/js/jquery.multi-select.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ root }}assets/js/components/hs.count-qty.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.multi-select.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+      dropdownHideOnScroll: false
+    });
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of forms
+    $.HSCore.components.HSCountQty.init('.js-quantity');
+
+    // initialization of custom multi select
+    $.HSCore.components.HSMultiSelect.init('.js-multi-select');
+  });
+</script>
+</body>
+</html>

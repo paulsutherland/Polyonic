@@ -1,0 +1,1554 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-accordions" %}
+{% set title = "Accordions" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/wait-animate.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section class="container-fluid g-px-0">
+      <!-- Accordions -->
+      <section class="container g-pt-100 g-pb-40">
+        <div class="row">
+          <div class="col-md-6 g-mb-60">
+            <!-- Accordion v1 -->
+            <section class="g-py-30">
+              <div class="text-center g-mb-50">
+                <h2 class="h4">Accordion <span class="g-color-primary g-ml-5">#01</span>
+                </h2>
+              </div>
+
+              <div id="shortcode11">
+                <div class="shortcode-html">
+                  <div id="accordion-11" class="u-accordion u-accordion-bg-primary u-accordion-color-white" role="tablist" aria-multiselectable="true">
+                    <!-- Card -->
+                    <div class="card g-brd-none rounded-0 g-mb-15">
+                      <div id="accordion-11-heading-01" class="u-accordion__header g-pa-0" role="tab">
+                        <h5 class="mb-0">
+                          <a class="d-flex g-color-main g-text-underline--none--hover g-brd-around g-brd-gray-light-v4 g-rounded-5 g-pa-10-15" href="#accordion-11-body-01" aria-expanded="true" aria-controls="accordion-11-body-01"
+                             data-toggle="collapse"
+                             data-parent="#accordion-11">
+                            <span class="u-accordion__control-icon g-mr-10">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                            Marketing
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-11-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-11-heading-01"
+                           data-parent="#accordion-11">
+                        <div class="u-accordion__body g-color-gray-dark-v5">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card g-brd-none rounded-0 g-mb-15">
+                      <div id="accordion-11-heading-02" class="u-accordion__header g-pa-0" role="tab">
+                        <h5 class="mb-0">
+                          <a class="collapsed d-flex g-color-main g-text-underline--none--hover g-brd-around g-brd-gray-light-v4 g-rounded-5 g-pa-10-15" href="#accordion-11-body-02" aria-expanded="false" aria-controls="accordion-11-body-02"
+                             data-toggle="collapse"
+                             data-parent="#accordion-11">
+                            <span class="u-accordion__control-icon g-mr-10">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                            Strategy
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-11-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-11-heading-02"
+                           data-parent="#accordion-11">
+                        <div class="u-accordion__body g-color-gray-dark-v5">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card g-brd-none rounded-0 g-mb-15">
+                      <div id="accordion-11-heading-03" class="u-accordion__header g-pa-0" role="tab">
+                        <h5 class="mb-0">
+                          <a class="collapsed d-flex g-color-main g-text-underline--none--hover g-brd-around g-brd-gray-light-v4 g-rounded-5 g-pa-10-15" href="#accordion-11-body-03" aria-expanded="false" aria-controls="accordion-11-body-03"
+                             data-toggle="collapse"
+                             data-parent="#accordion-11">
+                            <span class="u-accordion__control-icon g-mr-10">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                            Design
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-11-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-11-heading-03"
+                           data-parent="#accordion-11">
+                        <div class="u-accordion__body g-color-gray-dark-v5">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+              </div>
+
+              {% set SCExtendedClasses = "text-center" %}
+              {% set contentTarget = "#shortcode11" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </section>
+            <!-- End Accordion v1 -->
+          </div>
+
+          <div class="col-md-6 g-mb-60">
+            <!-- Accordion v2 -->
+            <section class="g-py-30">
+              <div class="text-center g-mb-50">
+                <h2 class="h4">Accordion
+                  <span class="g-color-primary g-ml-5">#02</span>
+                </h2>
+              </div>
+
+              <div id="shortcode12">
+                <div class="shortcode-html">
+                  <div id="accordion-12" class="u-accordion u-accordion-color-primary"
+                       role="tablist"
+                       aria-multiselectable="true">
+                    <!-- Card -->
+                    <div class="card g-brd-none rounded-0 g-mb-15">
+                      <div id="accordion-12-heading-01" class="u-accordion__header g-pa-0" role="tab">
+                        <h5 class="mb-0">
+                          <a class="d-flex g-color-main g-text-underline--none--hover g-brd-around g-brd-gray-light-v4 g-rounded-5 g-pa-10-15" href="#accordion-12-body-01"
+                             data-toggle="collapse"
+                             data-parent="#accordion-12"
+                             aria-expanded="true"
+                             aria-controls="accordion-12-body-01">
+                            <span class="u-accordion__control-icon g-mr-10">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                            Marketing
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-12-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-12-heading-01"
+                           data-parent="#accordion-12">
+                        <div class="u-accordion__body g-color-gray-dark-v5">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card g-brd-none rounded-0 g-mb-15">
+                      <div id="accordion-12-heading-02" class="u-accordion__header g-pa-0" role="tab">
+                        <h5 class="mb-0">
+                          <a class="collapsed d-flex g-color-main g-text-underline--none--hover g-brd-around g-brd-gray-light-v4 g-rounded-5 g-pa-10-15" href="#accordion-12-body-02"
+                             data-toggle="collapse"
+                             data-parent="#accordion-12"
+                             aria-expanded="false"
+                             aria-controls="accordion-12-body-02">
+                            <span class="u-accordion__control-icon g-mr-10">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                            Strategy
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-12-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-12-heading-02"
+                           data-parent="#accordion-12">
+                        <div class="u-accordion__body g-color-gray-dark-v5">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card g-brd-none rounded-0 g-mb-15">
+                      <div id="accordion-12-heading-03" class="u-accordion__header g-pa-0" role="tab">
+                        <h5 class="mb-0">
+                          <a class="collapsed d-flex g-color-main g-text-underline--none--hover g-brd-around g-brd-gray-light-v4 g-rounded-5 g-pa-10-15" href="#accordion-12-body-03"
+                             data-toggle="collapse"
+                             data-parent="#accordion-12"
+                             aria-expanded="false"
+                             aria-controls="accordion-12-body-03">
+                            <span class="u-accordion__control-icon g-mr-10">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                            Design
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-12-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-12-heading-03"
+                           data-parent="#accordion-12">
+                        <div class="u-accordion__body g-color-gray-dark-v5">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+              </div>
+
+              {% set SCExtendedClasses = "text-center" %}
+              {% set contentTarget = "#shortcode12" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </section>
+            <!-- End Accordion v2 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Accordions -->
+      <section class="g-bg-secondary">
+        <div class="container g-pt-100 g-pb-40">
+          <div class="row">
+            <div class="col-md-6 g-mb-60">
+              <!-- Accordion v3 -->
+              <section class="g-py-30">
+                <div class="text-center g-mb-50">
+                  <h2 class="h4">Accordion
+                    <span class="g-color-primary g-ml-5">#03</span>
+                  </h2>
+                </div>
+
+                <div id="shortcode3">
+                  <div class="shortcode-html">
+                    <div id="accordion-03" class="u-accordion"
+                         role="tablist"
+                         aria-multiselectable="true">
+                      <!-- Card -->
+                      <div class="card rounded-0 g-mb-5">
+                        <div id="accordion-03-heading-01" class="u-accordion__header" role="tab">
+                          <h5 class="mb-0">
+                            <a class="d-flex u-link-v5 g-color-main g-color-primary--hover g-font-size-16 " href="#accordion-03-body-01"
+                               data-toggle="collapse"
+                               data-parent="#accordion-03"
+                               aria-expanded="true"
+                               aria-controls="accordion-03-body-01">Marketing
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-03-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-03-heading-01"
+                             data-parent="#accordion-03">
+                          <div class="u-accordion__body g-brd-top g-brd-gray-light-v4 g-color-gray-dark-v5">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card rounded-0 g-mb-5">
+                        <div id="accordion-03-heading-02" class="u-accordion__header" role="tab">
+                          <h5 class="mb-0">
+                            <a class="collapsed d-flex u-link-v5 g-color-main g-color-primary--hover g-font-size-16 " href="#accordion-03-body-02"
+                               data-toggle="collapse"
+                               data-parent="#accordion-03"
+                               aria-expanded="false"
+                               aria-controls="accordion-03-body-02">Strategy
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-03-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-03-heading-02"
+                             data-parent="#accordion-03">
+                          <div class="u-accordion__body g-brd-top g-brd-gray-light-v4 g-color-gray-dark-v5">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card rounded-0 g-mb-5">
+                        <div id="accordion-03-heading-03" class="u-accordion__header" role="tab">
+                          <h5 class="mb-0">
+                            <a class="collapsed d-flex u-link-v5 g-color-main g-color-primary--hover g-font-size-16 " href="#accordion-03-body-03"
+                               data-toggle="collapse"
+                               data-parent="#accordion-03"
+                               aria-expanded="false"
+                               aria-controls="accordion-03-body-03">Design
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-03-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-03-heading-03"
+                             data-parent="#accordion-03">
+                          <div class="u-accordion__body g-brd-top g-brd-gray-light-v4 g-color-gray-dark-v5">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+                    </div>
+                  </div>
+                </div>
+
+                {% set SCExtendedClasses = "text-center" %}
+                {% set contentTarget = "#shortcode3" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </section>
+              <!-- End Accordion v3 -->
+            </div>
+
+            <div class="col-md-6 g-mb-60">
+              <!-- Accordion v4 -->
+              <section class="g-py-30">
+                <div class="text-center g-mb-50">
+                  <h2 class="h4">Accordion
+                    <span class="g-color-primary g-ml-5">#04</span>
+                  </h2>
+                </div>
+
+                <div id="shortcode4">
+                  <div class="shortcode-html">
+                    <div id="accordion-04" class="u-accordion"
+                         role="tablist"
+                         aria-multiselectable="true">
+                      <!-- Card -->
+                      <div class="card rounded-0 g-mb-5">
+                        <div id="accordion-04-heading-01" class="u-accordion__header" role="tab">
+                          <h5 class="mb-0 g-font-weight-300">
+                            <a class="d-flex u-link-v5 g-color-main g-color-primary--hover g-font-size-16" href="#accordion-04-body-01"
+                               data-toggle="collapse"
+                               data-parent="#accordion-04"
+                               aria-expanded="true"
+                               aria-controls="accordion-04-body-01">
+                              <i class="et-icon-map g-font-size-default g-mr-10"></i>
+                              Marketing
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-04-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-04-heading-01"
+                             data-parent="#accordion-04">
+                          <div class="u-accordion__body g-brd-top g-brd-gray-light-v4 g-color-gray-dark-v5">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card rounded-0 g-mb-5">
+                        <div id="accordion-04-heading-02" class="u-accordion__header" role="tab">
+                          <h5 class="mb-0 g-font-weight-300">
+                            <a class="d-flex collapsed u-link-v5 g-color-main g-color-primary--hover g-font-size-16" href="#accordion-04-body-02"
+                               data-toggle="collapse"
+                               data-parent="#accordion-04"
+                               aria-expanded="false"
+                               aria-controls="accordion-04-body-02">
+                              <i class="et-icon-camera g-font-size-default g-mr-10"></i>
+                              Strategy
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-04-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-04-heading-02"
+                             data-parent="#accordion-04">
+                          <div class="u-accordion__body g-brd-top g-brd-gray-light-v4 g-color-gray-dark-v5">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card rounded-0 g-mb-5">
+                        <div id="accordion-04-heading-03" class="u-accordion__header" role="tab">
+                          <h5 class="mb-0 g-font-weight-300">
+                            <a class="d-flex collapsed u-link-v5 g-color-main g-color-primary--hover g-font-size-16" href="#accordion-04-body-03"
+                               data-toggle="collapse"
+                               data-parent="#accordion-04"
+                               aria-expanded="false"
+                               aria-controls="accordion-04-body-03">
+                              <i class="et-icon-bargraph g-font-size-default g-mr-10"></i>
+                              Design
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-04-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-04-heading-03"
+                             data-parent="#accordion-04">
+                          <div class="u-accordion__body g-brd-top g-brd-gray-light-v4 g-color-gray-dark-v5">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+                    </div>
+                  </div>
+                </div>
+
+                {% set SCExtendedClasses = "text-center" %}
+                {% set contentTarget = "#shortcode4" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </section>
+              <!-- End Accordion v4 -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Accordions -->
+
+      <!-- Accordions -->
+      <section class="container g-pt-100 g-pb-40">
+        <div class="row">
+          <div class="col-md-6 g-mb-60">
+            <!-- Accordion v5 -->
+            <section class="g-py-30">
+              <div class="text-center g-mb-50">
+                <h2 class="h4">Accordion
+                  <span class="g-color-primary g-ml-5">#05</span>
+                </h2>
+              </div>
+
+              <div id="shortcode5">
+                <div class="shortcode-html">
+                  <div id="accordion-05" class="u-accordion" role="tablist" aria-multiselectable="true">
+                    <!-- Card -->
+                    <div class="card rounded-0 g-bg-primary-dark-v2 g-color-white g-brd-none">
+                      <div id="accordion-05-heading-01" class="u-accordion__header g-pa-20" role="tab">
+                        <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                          <a class="d-flex g-color-white g-text-underline--none--hover" href="#accordion-05-body-01"
+                             data-toggle="collapse"
+                             data-parent="#accordion-05"
+                             aria-expanded="true"
+                             aria-controls="accordion-05-body-01">
+                            <span class="u-accordion__control-icon g-mr-10">
+                              <i class="fa fa-plus"></i>
+                              <i class="fa fa-minus"></i>
+                            </span>
+                            Marketing
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-05-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-05-heading-01"
+                           data-parent="#accordion-05">
+                        <div class="u-accordion__body g-color-white-opacity-0_8 g-pa-0-20-20">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card rounded-0 g-bg-primary g-color-white g-brd-none">
+                      <div id="accordion-05-heading-02" class="u-accordion__header g-pa-20" role="tab">
+                        <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                          <a class="d-flex collapsed g-color-white g-text-underline--none--hover" href="#accordion-05-body-02"
+                             data-toggle="collapse"
+                             data-parent="#accordion-05"
+                             aria-expanded="false"
+                             aria-controls="accordion-05-body-02">
+                            <span class="u-accordion__control-icon g-mr-10">
+                              <i class="fa fa-plus"></i>
+                              <i class="fa fa-minus"></i>
+                            </span>
+                            Strategy
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-05-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-05-heading-02"
+                           data-parent="#accordion-05">
+                        <div class="u-accordion__body g-color-white-opacity-0_8 g-pa-0-20-20">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card rounded-0 g-bg-primary-dark-v2 g-color-white g-brd-none">
+                      <div id="accordion-05-heading-03" class="u-accordion__header g-pa-20" role="tab">
+                        <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                          <a class="d-flex collapsed g-color-white g-text-underline--none--hover" href="#accordion-05-body-03"
+                             data-toggle="collapse"
+                             data-parent="#accordion-05"
+                             aria-expanded="false"
+                             aria-controls="accordion-05-body-03">
+                            <span class="u-accordion__control-icon g-mr-10">
+                              <i class="fa fa-plus"></i>
+                              <i class="fa fa-minus"></i>
+                            </span>
+                            Design
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-05-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-05-heading-03"
+                           data-parent="#accordion-05">
+                        <div class="u-accordion__body g-color-white-opacity-0_8 g-pa-0-20-20">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+
+                  <!-- Card -->
+                  <div class="card rounded-0 g-bg-primary g-color-white g-brd-none">
+                    <div id="accordion-05-heading-04" class="u-accordion__header g-pa-20" role="tab">
+                      <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                        <a class="d-flex collapsed g-color-white g-text-underline--none--hover" href="#accordion-05-body-04"
+                           data-toggle="collapse"
+                           data-parent="#accordion-05"
+                           aria-expanded="false"
+                           aria-controls="accordion-05-body-04">
+                          <span class="u-accordion__control-icon g-mr-10">
+                            <i class="fa fa-plus"></i>
+                            <i class="fa fa-minus"></i>
+                          </span>
+                          Release
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="accordion-05-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-05-heading-04"
+                         data-parent="#accordion-05">
+                      <div class="u-accordion__body g-color-white-opacity-0_8 g-pa-0-20-20">
+                        This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Card -->
+                </div>
+              </div>
+
+              {% set SCExtendedClasses = "text-center" %}
+              {% set contentTarget = "#shortcode5" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </section>
+            <!-- End Accordion v5 -->
+          </div>
+
+          <div class="col-md-6 g-mb-60">
+            <!-- Accordion v6 -->
+            <section class="g-py-30">
+              <div class="text-center g-mb-50">
+                <h2 class="h4">Accordion
+                  <span class="g-color-primary g-ml-5">#06</span>
+                </h2>
+              </div>
+
+              <div id="shortcode6">
+                <div class="shortcode-html">
+                  <div id="accordion-06" class="u-accordion" role="tablist" aria-multiselectable="true">
+                    <!-- Card -->
+                    <div class="card rounded-0 g-bg-gray-light-v4 g-brd-none">
+                      <div id="accordion-06-heading-01" class="u-accordion__header g-pa-20" role="tab">
+                        <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                          <a class="d-flex justify-content-between g-color-main g-text-underline--none--hover" href="#accordion-06-body-01"
+                             data-toggle="collapse"
+                             data-parent="#accordion-06"
+                             aria-expanded="true"
+                             aria-controls="accordion-06-body-01">
+                            Marketing
+                            <span class="u-accordion__control-icon g-ml-10">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-06-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-06-heading-01"
+                           data-parent="#accordion-06">
+                        <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card rounded-0 g-bg-gray-light-v3 g-brd-none">
+                      <div id="accordion-06-heading-02" class="u-accordion__header g-pa-20" role="tab">
+                        <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                          <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover" href="#accordion-06-body-02"
+                             data-toggle="collapse"
+                             data-parent="#accordion-06"
+                             aria-expanded="false"
+                             aria-controls="accordion-06-body-02">
+                            Strategy
+                            <span class="u-accordion__control-icon g-ml-10">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-06-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-02"
+                           data-parent="#accordion-06">
+                        <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card rounded-0 g-bg-gray-light-v4 g-brd-none">
+                      <div id="accordion-06-heading-03" class="u-accordion__header g-pa-20" role="tab">
+                        <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                          <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover" href="#accordion-06-body-03"
+                             data-toggle="collapse"
+                             data-parent="#accordion-06"
+                             aria-expanded="false"
+                             aria-controls="accordion-06-body-03">
+                            Design
+                            <span class="u-accordion__control-icon g-ml-10">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-06-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-03"
+                           data-parent="#accordion-06">
+                        <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="card rounded-0 g-bg-gray-light-v3 g-brd-none">
+                    <div id="accordion-06-heading-04" class="u-accordion__header g-pa-20" role="tab">
+                      <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700">
+                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover" href="#accordion-06-body-04"
+                           data-toggle="collapse"
+                           data-parent="#accordion-06"
+                           aria-expanded="false"
+                           aria-controls="accordion-06-body-04">
+                          Release
+                          <span class="u-accordion__control-icon g-ml-10">
+                            <i class="fa fa-angle-down"></i>
+                            <i class="fa fa-angle-up"></i>
+                          </span>
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="accordion-06-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-06-heading-04"
+                         data-parent="#accordion-06">
+                      <div class="u-accordion__body g-color-gray-dark-v5 g-pa-0-20-20">
+                        This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Card -->
+                </div>
+              </div>
+
+              {% set SCExtendedClasses = "text-center" %}
+              {% set contentTarget = "#shortcode6" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </section>
+            <!-- End Accordion v6 -->
+          </div>
+        </div>
+      </section>
+      <!-- End Accordions -->
+
+      <!-- Accordions -->
+      <section class="g-bg-secondary">
+        <div class="container g-pt-100 g-pb-40">
+          <div class="row">
+            <div class="col-md-6 g-mb-60">
+              <!-- Accordion v7 -->
+              <section class="g-py-30">
+                <div class="text-center g-mb-50">
+                  <h2 class="h4">Accordion
+                    <span class="g-color-primary g-ml-5">#07</span>
+                  </h2>
+                </div>
+
+                <div id="shortcode7">
+                  <div class="shortcode-html">
+                    <div id="accordion-07" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
+                      <!-- Card -->
+                      <div class="card rounded-0 g-brd-none">
+                        <div id="accordion-07-heading-01" class="u-accordion__header g-pa-0" role="tab">
+                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+                            <a class="d-flex g-color-main g-text-underline--none--hover" href="#accordion-07-body-01"
+                               data-toggle="collapse"
+                               data-parent="#accordion-07"
+                               aria-expanded="true"
+                               aria-controls="accordion-07-body-01">
+                              <span class="u-accordion__control-icon g-brd-right g-brd-gray-light-v4 g-color-primary text-center g-pa-20">
+                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-minus"></i>
+                              </span>
+                              <span class="g-pa-20">
+                                Marketing
+                              </span>
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-07-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-07-heading-01"
+                             data-parent="#accordion-07">
+                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card rounded-0 g-brd-none">
+                        <div id="accordion-07-heading-02" class="u-accordion__header g-pa-0" role="tab">
+                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-07-body-02"
+                               data-toggle="collapse"
+                               data-parent="#accordion-07"
+                               aria-expanded="false"
+                               aria-controls="accordion-07-body-02">
+                              <span class="u-accordion__control-icon g-brd-right g-brd-gray-light-v4 g-color-primary text-center g-pa-20">
+                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-minus"></i>
+                              </span>
+                              <span class="g-pa-20">
+                                Strategy
+                              </span>
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-07-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-07-heading-02"
+                             data-parent="#accordion-07">
+                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card rounded-0 g-brd-none">
+                        <div id="accordion-07-heading-03" class="u-accordion__header g-pa-0" role="tab">
+                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-07-body-03"
+                               data-toggle="collapse"
+                               data-parent="#accordion-07"
+                               aria-expanded="false"
+                               aria-controls="accordion-07-body-03">
+                              <span class="u-accordion__control-icon g-brd-right g-brd-gray-light-v4 g-color-primary text-center g-pa-20">
+                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-minus"></i>
+                              </span>
+                              <span class="g-pa-20">
+                                Design
+                              </span>
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-07-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-07-heading-03"
+                             data-parent="#accordion-07">
+                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+                    </div>
+                  </div>
+                </div>
+
+                {% set SCExtendedClasses = "text-center" %}
+                {% set contentTarget = "#shortcode7" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </section>
+              <!-- End Accordion v7 -->
+            </div>
+
+            <div class="col-md-6 g-mb-60">
+              <!-- Accordion v8 -->
+              <section class="g-py-30">
+                <div class="text-center g-mb-50">
+                  <h2 class="h4">Accordion
+                    <span class="g-color-primary g-ml-5">#08</span>
+                  </h2>
+                </div>
+
+                <div id="shortcode8">
+                  <div class="shortcode-html">
+                    <div id="accordion-08" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
+                      <!-- Card -->
+                      <div class="card g-rounded-50 g-overflow-hidden g-brd-none mb-2">
+                        <div id="accordion-08-heading-01" class="u-accordion__header g-pa-0" role="tab">
+                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+                            <a class="d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-01"
+                               data-toggle="collapse"
+                               data-parent="#accordion-08"
+                               aria-expanded="true"
+                               aria-controls="accordion-08-body-01">
+                              <span class="u-accordion__control-icon g-brd-right g-brd-gray-light-v4 g-color-primary text-center g-pa-20">
+                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-minus"></i>
+                              </span>
+                              <span class="g-pa-20">
+                                Marketing
+                              </span>
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-08-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-08-heading-01"
+                             data-parent="#accordion-08">
+                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card g-rounded-50 g-overflow-hidden g-brd-none mb-2">
+                        <div id="accordion-08-heading-02" class="u-accordion__header g-pa-0" role="tab">
+                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-02"
+                               data-toggle="collapse"
+                               data-parent="#accordion-08"
+                               aria-expanded="false"
+                               aria-controls="accordion-08-body-02">
+                              <span class="u-accordion__control-icon g-brd-right g-brd-gray-light-v4 g-color-primary text-center g-pa-20">
+                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-minus"></i>
+                              </span>
+                              <span class="g-pa-20">
+                                Strategy
+                              </span>
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-08-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-02"
+                             data-parent="#accordion-08">
+                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card g-rounded-50 g-overflow-hidden g-brd-none mb-2">
+                        <div id="accordion-08-heading-03" class="u-accordion__header g-pa-0" role="tab">
+                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-03"
+                               data-toggle="collapse"
+                               data-parent="#accordion-08"
+                               aria-expanded="false"
+                               aria-controls="accordion-08-body-03">
+                              <span class="u-accordion__control-icon g-brd-right g-brd-gray-light-v4 g-color-primary text-center g-pa-20">
+                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-minus"></i>
+                              </span>
+                              <span class="g-pa-20">
+                                Design
+                              </span>
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="accordion-08-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-03"
+                             data-parent="#accordion-08">
+                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+                            This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+                    </div>
+                  </div>
+                </div>
+
+                {% set SCExtendedClasses = "text-center" %}
+                {% set contentTarget = "#shortcode8" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </section>
+              <!-- End Accordion v8 -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Accordions -->
+
+      <!-- Accordions -->
+      <section class="container g-pt-100 g-pb-40">
+        <div class="row">
+          <div class="col-md-6 g-mb-60">
+            <!-- Accordion v9 -->
+            <section class="g-py-30">
+              <div class="text-center g-mb-50">
+                <h2 class="h4">Accordion
+                  <span class="g-color-primary g-ml-5">#09</span>
+                </h2>
+              </div>
+
+              <div id="shortcode9">
+                <div class="shortcode-html">
+                  <div id="accordion-09" class="u-accordion" role="tablist" aria-multiselectable="true">
+                    <!-- Card -->
+                    <div class="card rounded-0 g-brd-none">
+                      <div id="accordion-09-heading-01" class="u-accordion__header g-px-0 g-py-5" role="tab">
+                        <h5 class="g-font-weight-600 g-font-size-16 mb-0">
+                          <a class="u-link-v5 g-color-main g-color-primary--hover" href="#accordion-09-body-01"
+                             data-toggle="collapse"
+                             data-parent="#accordion-09"
+                             aria-expanded="true"
+                             aria-controls="accordion-09-body-01"> Marketing
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-09-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-09-heading-01"
+                           data-parent="#accordion-09">
+                        <div class="u-accordion__body g-color-gray-dark-v5 g-px-0 g-py-5">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card rounded-0 g-brd-none">
+                      <div id="accordion-09-heading-02" class="u-accordion__header g-px-0 g-py-5" role="tab">
+                        <h5 class="g-font-weight-600 g-font-size-16 mb-0">
+                          <a class="collapsed u-link-v5 g-color-main g-color-primary--hover" href="#accordion-09-body-02"
+                             data-toggle="collapse"
+                             data-parent="#accordion-09"
+                             aria-expanded="false"
+                             aria-controls="accordion-09-body-02"> Strategy
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-09-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-09-heading-02"
+                           data-parent="#accordion-09">
+                        <div class="u-accordion__body g-color-gray-dark-v5 g-px-0 g-py-5">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card rounded-0 g-brd-none">
+                      <div id="accordion-09-heading-03" class="u-accordion__header g-px-0 g-py-5" role="tab">
+                        <h5 class="g-font-weight-600 g-font-size-16 mb-0">
+                          <a class="collapsed u-link-v5 g-color-main g-color-primary--hover" href="#accordion-09-body-03"
+                             data-toggle="collapse"
+                             data-parent="#accordion-09"
+                             aria-expanded="false"
+                             aria-controls="accordion-09-body-03"> Design
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-09-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-09-heading-03"
+                           data-parent="#accordion-09">
+                        <div class="u-accordion__body g-color-gray-dark-v5 g-px-0 g-py-5">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+              </div>
+
+              {% set SCExtendedClasses = "text-center" %}
+              {% set contentTarget = "#shortcode9" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </section>
+            <!-- End Accordion v9 -->
+          </div>
+
+          <div class="col-md-6 g-mb-60">
+            <!-- Accordion v10 -->
+            <section class="g-py-30">
+              <div class="text-center g-mb-50">
+                <h2 class="h4">Accordion
+                  <span class="g-color-primary g-ml-5">#10</span>
+                </h2>
+              </div>
+
+              <div id="shortcode10">
+                <div class="shortcode-html">
+                  <div id="accordion-10" class="u-accordion u-accordion-color-primary u-accordion-brd-primary" role="tablist" aria-multiselectable="true">
+                    <!-- Card -->
+                    <div class="card rounded-0 g-brd-none">
+                      <div id="accordion-10-heading-01" class="u-accordion__header g-pa-0" role="tab">
+                        <h5 class="mb-0 g-font-weight-600 g-font-size-default">
+                          <a class="d-flex justify-content-between g-color-main g-text-underline--none--hover g-brd-bottom g-brd-gray-light-v4 g-pa-15-0" href="#accordion-10-body-01"
+                             data-toggle="collapse"
+                             data-parent="#accordion-10"
+                             aria-expanded="true"
+                             aria-controls="accordion-10-body-01">
+                            <span class="d-flex">
+                              <i class="icon-finance-260 u-line-icon-pro g-font-size-18 mr-3"></i>
+                              Marketing
+                            </span>
+                            <span class="u-accordion__control-icon g-ml-10">
+                              <i class="fa fa-angle-right"></i>
+                              <i class="fa fa-angle-down"></i>
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-10-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-10-heading-01"
+                           data-parent="#accordion-10">
+                        <div class="u-accordion__body g-color-gray-dark-v5 g-pa-15-0">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card rounded-0 g-brd-none">
+                      <div id="accordion-10-heading-02" class="u-accordion__header g-pa-0" role="tab">
+                        <h5 class="mb-0 g-font-weight-600 g-font-size-default">
+                          <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover g-brd-bottom g-brd-gray-light-v4 g-pa-15-0" href="#accordion-10-body-02"
+                             data-toggle="collapse"
+                             data-parent="#accordion-10"
+                             aria-expanded="false"
+                             aria-controls="accordion-10-body-02">
+                            <span class="d-flex">
+                              <i class="icon-finance-168 u-line-icon-pro g-font-size-18 mr-3"></i>
+                              Strategy
+                            </span>
+                            <span class="u-accordion__control-icon g-ml-10">
+                              <i class="fa fa-angle-right"></i>
+                              <i class="fa fa-angle-down"></i>
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-10-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-10-heading-02"
+                           data-parent="#accordion-10">
+                        <div class="u-accordion__body g-color-gray-dark-v5 g-pa-15-0">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card rounded-0 g-brd-none">
+                      <div id="accordion-10-heading-03" class="u-accordion__header g-pa-0" role="tab">
+                        <h5 class="mb-0 g-font-weight-600 g-font-size-default">
+                          <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover g-brd-bottom g-brd-gray-light-v4 g-pa-15-0" href="#accordion-10-body-03"
+                             data-toggle="collapse"
+                             data-parent="#accordion-10"
+                             aria-expanded="false"
+                             aria-controls="accordion-10-body-03">
+                            <span class="d-flex">
+                              <i class="icon-finance-189 u-line-icon-pro g-font-size-18 mr-3"></i>
+                              Design
+                            </span>
+                            <span class="u-accordion__control-icon g-ml-10">
+                              <i class="fa fa-angle-right"></i>
+                              <i class="fa fa-angle-down"></i>
+                            </span>
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-10-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-10-heading-03"
+                           data-parent="#accordion-10">
+                        <div class="u-accordion__body g-color-gray-dark-v5 g-pa-15-0">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+              </div>
+
+              {% set SCExtendedClasses = "text-center" %}
+              {% set contentTarget = "#shortcode10" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </section>
+            <!-- End Accordion v10 -->
+          </div>
+        </div>
+      </section>
+      <!-- End Accordions -->
+
+      <!-- Accordion -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="text-center g-mb-50">
+          <h2 class="h4">Accordion
+            <span class="g-color-primary g-ml-5">#11</span>
+          </h2>
+        </div>
+
+        <div class="container">
+          <div id="shortcode13">
+            <div class="shortcode-html">
+              <div id="accordion-13" class="text-uppercase u-accordion" role="tablist" aria-multiselectable="true">
+                <!-- Card -->
+                <div class="card g-brd-none rounded-0 g-mb-1">
+                  <div id="accordion-13-heading-01" class="u-accordion__header g-pa-0" role="tab">
+                    <div class="w-100 d-md-table g-color-gray-dark-v5"
+                         role="button"
+                         data-target="#accordion-13-body-01"
+                         data-toggle="collapse"
+                         data-parent="#accordion-13"
+                         aria-expanded="true"
+                         aria-controls="accordion-13-body-01">
+                      <div class="clearfix d-md-table-cell g-valign-middle g-pa-20">
+                        <!-- Track Num -->
+                        <div class="d-inline-block g-mr-20">1.</div>
+                        <!-- End Track Num -->
+
+                        <!-- Track Avatar -->
+                        <img class="d-inline-block g-width-40 g-height-40 g-mr-25" src="{{ root }}assets/img-temp/100x100/img12.jpg" alt="Image Description">
+                        <!-- End Track Avatar -->
+
+                        <!-- Track Title -->
+                        <h6 class="d-inline-block g-font-size-13 g-font-weight-700 g-color-black mb-0">Happy Rock</h6>
+                        <!-- End Article Title -->
+                      </div>
+                      <div class="d-md-table-cell g-hidden-sm-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">
+                        2015
+                      </div>
+                      <div class="d-md-table-cell g-hidden-md-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">
+                        4:13
+                      </div>
+
+                      <!-- Track Price -->
+                      <div class="d-md-table-cell g-hidden-sm-down g-valign-middle g-width-140 g-px-20 g-py-5">
+                        Only <strong class="g-color-black">$0.99</strong>
+                      </div>
+                      <!-- End Track Price -->
+
+                      <!-- Buy Track -->
+                      <div class="text-md-right d-md-table-cell g-valign-middle g-width-140--md g-pa-20">
+                        <a href="#!" class="btn btn-xl rounded-0 w-100 u-btn-primary g-font-weight-700 g-font-size-12">Buy Now
+                          <strong class="g-hidden-md-up">– $0.99</strong></a>
+                      </div>
+                      <!-- End Buy Track -->
+                    </div>
+                  </div>
+                  <div id="accordion-13-body-01" class="collapse show g-bg-gray-dark-v1 g-color-white" role="tabpanel" aria-labelledby="accordion-13-heading-01"
+                       data-parent="#accordion-13">
+                    <div class="u-accordion__body g-color-white-opacity-0_8">
+                      All right Reserved.
+                    </div>
+                  </div>
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div class="card g-brd-none rounded-0 g-mb-1">
+                  <div id="accordion-13-heading-02" class="u-accordion__header g-pa-0" role="tab">
+                    <div class="collapsed w-100 d-md-table g-color-gray-dark-v5"
+                         role="button"
+                         data-target="#accordion-13-body-02"
+                         data-toggle="collapse"
+                         data-parent="#accordion-13"
+                         aria-expanded="false"
+                         aria-controls="accordion-13-body-02">
+                      <div class="clearfix d-md-table-cell g-valign-middle g-pa-20">
+                        <!-- Track Num -->
+                        <div class="d-inline-block g-mr-20">2.</div>
+                        <!-- End Track Num -->
+
+                        <!-- Track Avatar -->
+                        <img class="d-inline-block g-width-40 g-height-40 g-mr-25" src="{{ root }}assets/img-temp/100x100/img8.jpg" alt="Image Description">
+                        <!-- End Track Avatar -->
+
+                        <!-- Track Title -->
+                        <h6 class="d-inline-block g-font-size-13 g-font-weight-700 g-color-black mb-0">Rumble</h6>
+                        <!-- End Article Title -->
+                      </div>
+                      <div class="d-md-table-cell g-hidden-sm-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">
+                        2013
+                      </div>
+                      <div class="d-md-table-cell g-hidden-md-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">
+                        2:05
+                      </div>
+
+                      <!-- Track Price -->
+                      <div class="d-md-table-cell g-hidden-sm-down g-valign-middle g-width-140 g-px-20 g-py-5">
+                        Only <strong class="g-color-black">$1.49</strong>
+                      </div>
+                      <!-- End Track Price -->
+
+                      <!-- Buy Track -->
+                      <div class="text-md-right d-md-table-cell g-valign-middle g-width-140--md g-pa-20">
+                        <a href="#!" class="btn btn-xl rounded-0 w-100 u-btn-primary g-font-weight-700 g-font-size-12">Buy Now
+                          <strong class="g-hidden-md-up">– $1.49</strong></a>
+                      </div>
+                      <!-- End Buy Track -->
+                    </div>
+                  </div>
+                  <div id="accordion-13-body-02" class="collapse g-bg-gray-dark-v1 g-color-white" role="tabpanel" aria-labelledby="accordion-13-heading-02"
+                       data-parent="#accordion-13">
+                    <div class="u-accordion__body g-color-white-opacity-0_8">
+                      All right Reserved.
+                    </div>
+                  </div>
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div class="card g-brd-none rounded-0 g-mb-1">
+                  <div id="accordion-13-heading-03" class="u-accordion__header g-pa-0" role="tab">
+                    <div class="collapsed w-100 d-md-table g-color-gray-dark-v5"
+                         role="button"
+                         data-target="#accordion-13-body-03"
+                         data-toggle="collapse"
+                         data-parent="#accordion-13"
+                         aria-expanded="false"
+                         aria-controls="accordion-13-body-03">
+                      <div class="clearfix d-md-table-cell g-valign-middle g-pa-20">
+                        <!-- Track Num -->
+                        <div class="d-inline-block g-mr-20">3.</div>
+                        <!-- End Track Num -->
+
+                        <!-- Track Avatar -->
+                        <img class="d-inline-block g-width-40 g-height-40 g-mr-25" src="{{ root }}assets/img-temp/100x100/img9.jpg" alt="Image Description">
+                        <!-- End Track Avatar -->
+
+                        <!-- Track Title -->
+                        <h6 class="d-inline-block g-font-size-13 g-font-weight-700 g-color-black mb-0">A New Beginning</h6>
+                        <!-- End Article Title -->
+                      </div>
+                      <div class="d-md-table-cell g-hidden-sm-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">
+                        2017
+                      </div>
+                      <div class="d-md-table-cell g-hidden-md-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">
+                        3:22
+                      </div>
+
+                      <!-- Track Price -->
+                      <div class="d-md-table-cell g-hidden-sm-down g-valign-middle g-width-140 g-px-20 g-py-5">
+                        Only <strong class="g-color-black">$2.00</strong>
+                      </div>
+                      <!-- End Track Price -->
+
+                      <!-- Buy Track -->
+                      <div class="text-md-right d-md-table-cell g-valign-middle g-width-140--md g-pa-20">
+                        <a href="#!" class="btn btn-xl rounded-0 w-100 u-btn-primary g-font-weight-700 g-font-size-12">Buy Now
+                          <strong class="g-hidden-md-up">– $2.00</strong></a>
+                      </div>
+                      <!-- End Buy Track -->
+                    </div>
+                  </div>
+                  <div id="accordion-13-body-03" class="collapse g-bg-gray-dark-v1 g-color-white" role="tabpanel" aria-labelledby="accordion-13-heading-03"
+                       data-parent="#accordion-13">
+                    <div class="u-accordion__body g-color-white-opacity-0_8">
+                      All right Reserved.
+                    </div>
+                  </div>
+                </div>
+                <!-- End Card -->
+              </div>
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $('#accordion-13 a').on('click', function(e) {
+                  e.stopPropagation();
+                });
+              </script>
+
+              <script type="text/plain" src="//maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap" async defer></script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set contentTarget = "#shortcode13" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Accordion -->
+
+      <!-- Accordions -->
+      <section class="container g-pt-100">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Accordion v12 -->
+            <section class="g-py-30">
+              <div class="text-center g-mb-50">
+                <h2 class="h4">Accordion
+                  <span class="g-color-primary g-ml-5">#12</span>
+                  (Bootstrap)
+                </h2>
+              </div>
+
+              <div id="shortcode1">
+                <div class="shortcode-html">
+                  <div id="accordion-01" role="tablist" aria-multiselectable="true">
+                    <!-- Card -->
+                    <div class="card g-mb-5">
+                      <div id="accordion-01-heading-01" class="card-header" role="tab">
+                        <h5 class="mb-0">
+                          <a class="d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-01-body-01"
+                             data-toggle="collapse"
+                             data-parent="#accordion-01"
+                             aria-expanded="true"
+                             aria-controls="accordion-01-body-01">Marketing
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-01-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-01-heading-01"
+                           data-parent="#accordion-01">
+                        <div class="card-block">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card g-mb-5">
+                      <div id="accordion-01-heading-02" class="card-header" role="tab">
+                        <h5 class="mb-0">
+                          <a class="collapsed d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-01-body-02"
+                             data-toggle="collapse"
+                             data-parent="#accordion-01"
+                             aria-expanded="false"
+                             aria-controls="accordion-01-body-02">Strategy
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-01-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-01-heading-02"
+                           data-parent="#accordion-01">
+                        <div class="card-block">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card g-mb-5">
+                      <div id="accordion-01-heading-03" class="card-header" role="tab">
+                        <h5 class="mb-0">
+                          <a class="collapsed d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-01-body-03"
+                             data-toggle="collapse"
+                             data-parent="#accordion-01"
+                             aria-expanded="false"
+                             aria-controls="accordion-01-body-03">Design
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-01-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-01-heading-03"
+                           data-parent="#accordion-01">
+                        <div class="card-block">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+              </div>
+
+              {% set SCExtendedClasses = "text-center" %}
+              {% set contentTarget = "#shortcode1" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </section>
+            <!-- End Accordion v12 -->
+          </div>
+
+          <div class="col-md-6">
+            <!-- Accordion v13 -->
+            <section class="g-py-30">
+              <div class="text-center g-mb-50">
+                <h2 class="h4">Accordion
+                  <span class="g-color-primary g-ml-5">#13</span>
+                  (Bootstrap)
+                </h2>
+                <p>Multiple Open</p>
+              </div>
+
+              <div id="shortcode2">
+                <div class="shortcode-html">
+                  <div role="tablist"
+                       aria-multiselectable="true">
+                    <!-- Card -->
+                    <div class="card g-brd-0 g-mb-5">
+                      <div id="accordion-02-heading-01" class="card-header g-pa-0" role="tab">
+                        <h5 class="g-bg-white g-px-0 g-py-10 mb-0">
+                          <a class="d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-02-body-01"
+                             data-toggle="collapse"
+                             aria-expanded="true"
+                             aria-controls="accordion-02-body-01">Marketing
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-02-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-02-heading-01"
+                           data-parent="#shortcode2">
+                        <div class="card-block g-px-0">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card g-brd-0 g-mb-5">
+                      <div id="accordion-02-heading-02" class="card-header g-pa-0" role="tab">
+                        <h5 class="g-bg-white g-px-0 g-py-10 mb-0">
+                          <a class="collapsed d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-02-body-02"
+                             data-toggle="collapse"
+                             aria-expanded="false"
+                             aria-controls="accordion-02-body-02">Strategy
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-02-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-02-heading-02"
+                           data-parent="#shortcode2">
+                        <div class="card-block g-px-0">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Card -->
+                    <div class="card g-brd-0 g-mb-5">
+                      <div id="accordion-02-heading-03" class="card-header g-pa-0" role="tab">
+                        <h5 class="g-bg-white g-px-0 g-py-10 mb-0">
+                          <a class="collapsed d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-02-body-03"
+                             data-toggle="collapse"
+                             aria-expanded="false"
+                             aria-controls="accordion-02-body-03">Design
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="accordion-02-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-02-heading-03"
+                           data-parent="#shortcode2">
+                        <div class="card-block g-px-0">
+                          This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+              </div>
+
+              {% set SCExtendedClasses = "text-center" %}
+              {% set contentTarget = "#shortcode2" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </section>
+            <!-- End Accordion v13 -->
+          </div>
+        </div>
+      </section>
+      <!-- End Accordions -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/helpers/hs.hover-blocks.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      $('#accordion-13 a').on('click', function(e) {
+        e.stopPropagation();
+      });
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

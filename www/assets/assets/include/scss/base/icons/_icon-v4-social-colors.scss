@@ -1,0 +1,179 @@
+/*------------------------------------
+  Icon-v4 Social BG colors
+------------------------------------*/
+.u-icon-v4 {
+  // Facebook
+  &-bg-facebook {
+    border-color: $g-color-facebook;
+
+    .u-icon-v4-inner {
+      background-color: $g-color-facebook;
+    }
+  }
+
+  // Twitter
+  &-bg-twitter {
+    border-color: $g-color-twitter;
+
+    .u-icon-v4-inner {
+      background-color: $g-color-twitter;
+    }
+  }
+
+  // Google plus
+  &-bg-google-plus {
+    border-color: $g-color-google-plus;
+
+    .u-icon-v4-inner {
+      background-color: $g-color-google-plus;
+    }
+  }
+
+  // VK
+  &-bg-vk {
+    border-color: $g-color-vk;
+
+    .u-icon-v4-inner {
+      background-color: $g-color-vk;
+    }
+  }
+
+  // Linkedin
+  &-bg-linkedin {
+    border-color: $g-color-linkedin;
+
+    .u-icon-v4-inner {
+      background-color: $g-color-linkedin;
+    }
+  }
+
+  // Instagram
+  &-bg-instagram {
+    border-color: $g-color-instagram;
+
+    .u-icon-v4-inner {
+      background-color: $g-color-instagram;
+    }
+  }
+
+  // Pinterest
+  &-bg-pinterest {
+    border-color: $g-color-pinterest;
+
+    .u-icon-v4-inner {
+      background-color: $g-color-pinterest;
+    }
+  }
+
+  // Vine
+  &-bg-vine {
+    border-color: $g-color-vine;
+
+    .u-icon-v4-inner {
+      background-color: $g-color-vine;
+    }
+  }
+
+  // Youtube
+  &-bg-youtube {
+    border-color: $g-color-youtube;
+
+    .u-icon-v4-inner {
+      background-color: $g-color-youtube;
+    }
+  }
+
+  // Skype
+  &-bg-skype {
+    border-color: $g-color-skype;
+
+    .u-icon-v4-inner {
+      background-color: $g-color-skype;
+    }
+  }
+
+  // Dribbble
+  &-bg-dribbble {
+    border-color: $g-color-dribbble;
+
+    .u-icon-v4-inner {
+      background-color: $g-color-dribbble;
+    }
+  }
+
+
+
+  //
+  // Hover Effects
+  //
+
+  // Facebook
+  &-bg-facebook--hover:hover,
+  .u-icon-block--hover:hover &-bg-facebook--hover {
+    border-color: $g-color-facebook;
+
+    & .u-icon-v4-inner {
+      background: $g-color-facebook;
+    }
+  }
+
+  // Twitter
+  &-bg-twitter--hover:hover,
+  .u-icon-block--hover:hover &-bg-twitter--hover {
+    border-color: $g-color-twitter;
+
+    & .u-icon-v4-inner {
+      background: $g-color-twitter;
+    }
+  }
+
+  // Google plus
+  &-bg-google-plus--hover:hover,
+  .u-icon-block--hover:hover &-bg-google-plus--hover {
+    border-color: $g-color-google-plus;
+
+    & .u-icon-v4-inner {
+      background: $g-color-google-plus;
+    }
+  }
+
+  // VK
+  &-bg-vk--hover:hover,
+  .u-icon-block--hover:hover &-bg-vk--hover {
+    border-color: $g-color-vk;
+
+    & .u-icon-v4-inner {
+      background: $g-color-vk;
+    }
+  }
+
+  // Linkedin
+  &-bg-linkedin--hover:hover,
+  .u-icon-block--hover:hover &-bg-linkedin--hover {
+    border-color: $g-color-linkedin;
+
+    & .u-icon-v4-inner {
+      background: $g-color-linkedin;
+    }
+  }
+
+  // Instagram
+  &-bg-instagram--hover:hover,
+  .u-icon-block--hover:hover &-bg-instagram--hover {
+    border-color: $g-color-instagram;
+
+    & .u-icon-v4-inner {
+      background: $g-color-instagram;
+    }
+  }
+
+  // Pinterest
+  &-bg-pinterest--hover:hover,
+  .u-icon-block--hover:hover &-bg-pinterest--hover {
+    border-color: $g-color-pinterest;
+
+    & .u-icon-v4-inner {
+      background: $g-color-pinterest;
+    }
+  }
+}

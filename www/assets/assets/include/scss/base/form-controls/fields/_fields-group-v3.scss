@@ -1,0 +1,25 @@
+/*------------------------------------
+  Fields Group v3
+------------------------------------*/
+
+.u-input-group-v3 {
+  input:not([type="checkbox"], [type="radio"]),
+  textarea,
+  [class*="u-select"] {
+    margin-top: -5px;
+    border: {
+      color: rgba($g-color-gray-light-v2, .5);
+      style: solid;
+      width: 0 0 1px;
+    }
+    transition: all .3s ease 0s;
+
+    &:focus {
+      border-color: rgba($g-color-primary, .5);
+      box-shadow: 0 1px 0 0 $g-color-primary;
+    }
+  }
+  label {
+    margin-bottom: 0;
+  }
+}

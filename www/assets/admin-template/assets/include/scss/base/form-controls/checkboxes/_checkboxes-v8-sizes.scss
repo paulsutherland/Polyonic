@@ -1,0 +1,39 @@
+/*------------------------------------
+  Checkboxes v8 Sizes
+------------------------------------*/
+.u-check {
+  .u-check-icon--md {
+    width: 46px;
+    height: 26px;
+    border-radius: 13px;
+
+    i {
+      &::before {
+        height: 26px;
+        line-height: 22px;
+      }
+
+      &::after {
+        left: 4px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    &:checked {
+      & +,
+      & + * {
+        .u-check-icon--md {
+          i {
+            &::after {
+              left: calc(100% - 23px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

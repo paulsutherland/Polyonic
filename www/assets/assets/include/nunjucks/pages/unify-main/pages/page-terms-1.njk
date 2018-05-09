@@ -1,0 +1,172 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-others" %}
+{% set mainNavActive_3 = "page-terms-1" %}
+{% set title = "Terms Page | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Promo Block -->
+      <section class="container g-py-150">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
+            <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">Terms &amp; Conditions</h2>
+            <p class="mb-0">This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.</p>
+          </div>
+        </div>
+      </section>
+      <!-- End Promo Block -->
+
+      <!-- Content -->
+      <section class="g-bg-gray-light-v5">
+        <div class="container g-py-100">
+          <div class="row">
+            <div id="stickyblock-start" class="col-md-4 g-mb-30">
+              <div class="js-sticky-block g-sticky-block--lg"
+                   data-type="responsive"
+                   data-start-point="#stickyblock-start"
+                   data-end-point="#stickyblock-end">
+                <ul class="list-unstyled mb-0">
+                  <li class="g-bg-gray-dark-v2 g-rounded-top-5 g-px-20 g-pt-30">
+                    <a class="js-go-to d-block g-color-white g-bg-primary--hover g-font-weight-600 g-font-size-12 text-uppercase g-text-underline--none--hover rounded g-px-20 g-py-15" href="#!" data-target="#license">License</a>
+                  </li>
+                  <li class="g-bg-gray-dark-v2 g-px-20">
+                    <a class="js-go-to d-block g-color-white g-bg-primary--hover g-font-weight-600 g-font-size-12 text-uppercase g-text-underline--none--hover rounded g-px-20 g-py-15" href="#!" data-target="#ownership">Ownership</a>
+                  </li>
+                  <li class="g-bg-gray-dark-v2 g-px-20">
+                    <a class="js-go-to d-block g-color-white g-bg-primary--hover g-font-weight-600 g-font-size-12 text-uppercase g-text-underline--none--hover rounded g-px-20 g-py-15" href="#!" data-target="#usage">Usage</a>
+                  </li>
+                  <li class="g-bg-gray-dark-v2 g-rounded-bottom-5 g-px-20 g-pb-30">
+                    <a class="js-go-to d-block g-color-white g-bg-primary--hover g-font-weight-600 g-font-size-12 text-uppercase g-text-underline--none--hover rounded g-px-20 g-py-15" href="#!" data-target="#refunds">Refunds</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <!-- License -->
+              <div id="license" class="u-shadow-v19 g-bg-white rounded g-pa-40 g-mb-50">
+                <h2 class="h3 g-color-black mb-3">License</h2>
+                <div class="d-inline-block g-width-50 g-height-2 g-bg-black mb-3"></div>
+                <p>This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.</p>
+                <p>Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs. Now that your brand is all dressed up and ready to party, it's time to release it to the world. By the way, let's celebrate already. We get it, you're busy and it's important that someone keeps up with marketing and driving people to your brand. We've got you covered.</p>
+              </div>
+              <!-- End License -->
+
+              <!-- Ownership -->
+              <div id="ownership" class="u-shadow-v19 g-bg-white rounded g-pa-40 g-mb-50">
+                <h3 class="g-color-black mb-3">Ownership</h3>
+                <div class="d-inline-block g-width-50 g-height-2 g-bg-black mb-3"></div>
+                <p>This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.</p>
+                <p>Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs. Now that your brand is all dressed up and ready to party, it's time to release it to the world. By the way, let's celebrate already. We get it, you're busy and it's important that someone keeps up with marketing and driving people to your brand. We've got you covered.</p>
+              </div>
+              <!-- End Ownership -->
+
+              <!-- Usage -->
+              <div id="usage" class="u-shadow-v19 g-bg-white rounded g-pa-40 g-mb-50">
+                <h3 class="g-color-black mb-3">Usage</h3>
+                <div class="d-inline-block g-width-50 g-height-2 g-bg-black mb-3"></div>
+                <p>This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.</p>
+                <p>Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs. Now that your brand is all dressed up and ready to party, it's time to release it to the world. By the way, let's celebrate already. We get it, you're busy and it's important that someone keeps up with marketing and driving people to your brand. We've got you covered.</p>
+              </div>
+              <!-- End Usage -->
+
+              <!-- Refunds -->
+              <div id="refunds" class="u-shadow-v19 g-bg-white rounded g-pa-40">
+                <h3 class="g-color-black mb-3">Refunds</h3>
+                <div class="d-inline-block g-width-50 g-height-2 g-bg-black mb-3"></div>
+                <p>This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.</p>
+                <p>Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs. Now that your brand is all dressed up and ready to party, it's time to release it to the world. By the way, let's celebrate already. We get it, you're busy and it's important that someone keeps up with marketing and driving people to your brand. We've got you covered.</p>
+              </div>
+              <!-- End Refunds -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Content -->
+
+      <div id="stickyblock-end"></div>
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.sticky-block.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+
+        // initialization of sticky blocks
+        $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

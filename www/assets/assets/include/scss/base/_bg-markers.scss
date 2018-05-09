@@ -1,0 +1,39 @@
+/*------------------------------------
+  Marker-bg
+------------------------------------*/
+
+.u-marker-bg {
+  &-primary,
+  &-green,
+  &-black,
+  &-white,
+  &-red,
+  &-yellow {
+    display: inline-block;
+    background: {
+      repeat: no-repeat;
+      position: 0 50%;
+      size: 100% 70%;
+    }
+    white-space: nowrap;
+  }
+
+  &-primary {
+    background-image: url(../img/bg/marker/marker-bg-primary.png);
+  }
+  &-green {
+    background-image: url(../img/bg/marker/marker-bg-green.png);
+  }
+  &-black {
+    background-image: url(../img/bg/marker/marker-bg-black.png);
+  }
+  &-white {
+    background-image: url(../img/bg/marker/marker-bg-white.png);
+  }
+  &-red {
+    background-image: url(../img/bg/marker/marker-bg-red.png);
+  }
+  &-yellow {
+    background-image: url(../img/bg/marker/marker-bg-yellow.png);
+  }
+}

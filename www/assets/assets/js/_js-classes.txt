@@ -1,0 +1,4 @@
+js-carousel_single-item //Single Item Carousels/Sliders
+js-carousel-next //Carousels/Sliders arrow left
+js-carousel-prev //Carousels/Sliders arrow right
+js-parallax //Parallax effect

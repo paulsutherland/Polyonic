@@ -1,0 +1,161 @@
+/*------------------------------------
+  Nonstandard Background v7
+------------------------------------*/
+
+[class*="u-ns-bg-v7"] {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border: {
+      style: solid;
+      color: transparent;
+    }
+  }
+}
+
+.u-ns-bg-v7 {
+  &-top,
+  &-bottom {
+    &::before {
+      left: 50%;
+      margin-left: -5px;
+    }
+  }
+
+  &-left,
+  &-right {
+    &::before {
+      top: 50%;
+      margin-top: -5px;
+    }
+  }
+
+  &-top {
+    &::before {
+      top: -5px;
+      border-width: 0 5px 5px 5px;
+    }
+
+    &.g-bg-primary {
+      &::before {
+        border-bottom-color: $g-color-primary;
+      }
+    }
+
+    &.g-bg-white {
+      &::before {
+        border-bottom-color: $g-color-white;
+      }
+    }
+
+    &.g-bg-gray-light-v2 {
+      &::before {
+        border-bottom-color: $g-color-gray-light-v2;
+      }
+    }
+
+    &.g-bg-black {
+      &::before {
+        border-bottom-color: $g-color-black;
+      }
+    }
+  }
+
+  &-bottom {
+    &::before {
+      bottom: -5px;
+      border-width: 5px 5px 0 5px;
+    }
+
+    &.g-bg-primary {
+      &::before {
+        border-top-color: $g-color-primary;
+      }
+    }
+
+    &.g-bg-white {
+      &::before {
+        border-top-color: $g-color-white;
+      }
+    }
+
+    &.g-bg-gray-light-v2 {
+      &::before {
+        border-top-color: $g-color-gray-light-v2;
+      }
+    }
+
+    &.g-bg-black {
+      &::before {
+        border-top-color: $g-color-black;
+      }
+    }
+  }
+
+  &-left {
+    &::before {
+      left: -5px;
+      border-width: 5px 5px 5px 0;
+    }
+
+    &.g-bg-primary {
+      &::before {
+        border-right-color: $g-color-primary;
+      }
+    }
+
+    &.g-bg-white {
+      &::before {
+        border-right-color: $g-color-white;
+      }
+    }
+
+    &.g-bg-gray-light-v2 {
+      &::before {
+        border-right-color: $g-color-gray-light-v2;
+      }
+    }
+
+    &.g-bg-black {
+      &::before {
+        border-right-color: $g-color-black;
+      }
+    }
+  }
+
+  &-right {
+    &::before {
+      right: -5px;
+      border-width: 5px 0 5px 5px;
+    }
+
+    &.g-bg-primary {
+      &::before {
+        border-left-color: $g-color-primary;
+      }
+    }
+
+    &.g-bg-white {
+      &::before {
+        border-left-color: $g-color-white;
+      }
+    }
+
+    &.g-bg-gray-light-v2 {
+      &::before {
+        border-left-color: $g-color-gray-light-v2;
+      }
+    }
+
+    &.g-bg-black {
+      &::before {
+        border-left-color: $g-color-black;
+      }
+    }
+  }
+}

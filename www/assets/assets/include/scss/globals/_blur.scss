@@ -1,0 +1,19 @@
+/*------------------------------------
+  Blur
+------------------------------------*/
+
+.g-blur {
+  &-30 {
+    filter: blur(30px);
+
+    &--hover:hover {
+      filter: blur(30px);
+    }
+
+    &--parent-hover {
+      .g-parent:hover & {
+        filter: blur(30px);
+      }
+    }
+  }
+}

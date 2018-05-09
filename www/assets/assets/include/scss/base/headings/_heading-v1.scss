@@ -1,0 +1,60 @@
+/*------------------------------------
+  Heading-v1
+------------------------------------*/
+[class*="u-heading-v1-"] {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    width: 100%;
+    height: 0;
+    border-top-width: 1px;
+    border-color: inherit;
+  }
+  &.text-center::before,
+  &.text-center::after {
+    left: 0;
+    right: 0;
+  }
+  &.text-right::before,
+  &.text-right::after {
+    left: 0;
+    right: auto;
+  }
+}
+
+.u-heading-v1__title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  @include px-to-rem(padding-right, 15px);
+  background-color: inherit;
+  z-index: 2;
+
+  .text-right & {
+    @include px-to-rem(padding-left, 15px);
+    padding-right: 0;
+  }
+  .text-center & {
+    @include px-to-rem(padding-left, 15px);
+    @include px-to-rem(padding-right, 15px);
+  }
+}
+
+
+
+//
+// Imports
+//
+
+@import "heading-v1-1";
+@import "heading-v1-2";
+@import "heading-v1-3";
+@import "heading-v1-4";
+@import "heading-v1-5";
+@import "heading-v1-6";
+@import "heading-v1-7";

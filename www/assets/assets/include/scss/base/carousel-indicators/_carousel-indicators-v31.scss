@@ -1,0 +1,39 @@
+/*------------------------------------
+  Carousel indicators v31
+------------------------------------*/
+
+.u-carousel-indicators-v31,
+.u-carousel-indicators-v31--white {
+  display: flex !important;
+
+  li {
+    margin: 0 5px;
+
+    &.slick-active {
+      span {
+        position: relative;
+        top: 1px;
+        width: 13px;
+        height: 13px;
+        background-color: $g-color-primary;
+        transition-property: all;
+        transition-timing-function: ease;
+        transition-duration: .4s;
+      }
+    }
+  }
+
+  span {
+    position: relative;
+    top: 2px;
+    width: 11px;
+    height: 11px;
+    border: 2px solid $g-color-white;
+    border-radius: 50%;
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: .4s;
+    background-color: $g-color-gray-light-v3;
+  }
+}

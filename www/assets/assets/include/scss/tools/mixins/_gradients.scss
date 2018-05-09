@@ -1,0 +1,122 @@
+//
+// Gradients X
+//
+
+// Gradients from left to right
+@mixin gradient-x-right($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+
+// Gradients from right to left
+@mixin gradient-x-left($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to left, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+
+
+
+//
+// Gradients Y
+//
+
+// Gradients from top to bottom
+@mixin gradient-y-bottom($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+
+// Gradients from bottom to top
+@mixin gradient-y-top($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to top, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+
+
+
+//
+// Gradients directional
+//
+
+@mixin gradient-directional($start-color: #555, $end-color: #333, $deg: 45deg) {
+  background-repeat: repeat-x;
+  background-image: linear-gradient($deg, $start-color, $end-color);
+}
+
+
+
+//
+// Gradients X three colors
+//
+
+@mixin gradient-x-three-colors($x-derection: right, $y-direction: null, $start-color: #00b3ee, $start-color-stop: 10%, $mid-color: #7a43b6, $mid-color-stop: 40%, $end-color: #c3325f, $end-color-stop: 90%) {
+  background-image: linear-gradient(to $x-derection $y-direction, $start-color $start-color-stop, $mid-color $mid-color-stop, $end-color $end-color-stop);
+  background-repeat: no-repeat;
+}
+
+
+
+//
+// Gradients Y three colors
+//
+
+@mixin gradient-y-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) {
+  background-image: linear-gradient(to bottom, $start-color, $mid-color $color-stop, $end-color);
+  background-repeat: no-repeat;
+}
+
+
+
+//
+// Gradients Striped
+//
+
+@mixin gradient-striped($color: rgba(255,255,255,.15), $angle: 45deg) {
+  background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+}
+
+
+
+//
+// Gradients Circle
+//
+
+@mixin gradient-radial-circle($inner-color: #555, $outer-color: #333, $pos-x: 50%, $pos-y: 50%, $gradient-size: farthest-corner) {
+  background-image: radial-gradient(circle $gradient-size at $pos-x $pos-y, $inner-color, $outer-color);
+  background-repeat: no-repeat;
+}
+
+
+
+//
+// Gradients Ellipse
+//
+
+@mixin gradient-radial-ellipse($inner-color: #555, $outer-color: #333, $pos-x: 50%, $pos-y: 50%, $gradient-size: farthest-corner) {
+  background-image: radial-gradient(ellipse $gradient-size at $pos-x $pos-y, $inner-color, $outer-color);
+  background-repeat: no-repeat;
+}
+
+
+
+//
+// Gradients Text
+//
+
+@mixin gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+//
+// Border Gradients
+//
+
+@mixin gradient-brd($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%, $deg: 45deg) {
+  border-image: linear-gradient($deg, $start-color $start-percent, $end-color $end-percent);
+  border-image-slice: 1;
+}

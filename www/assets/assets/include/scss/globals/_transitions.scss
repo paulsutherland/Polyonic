@@ -1,0 +1,179 @@
+/*------------------------------------
+  Transitions
+------------------------------------*/
+/*.g-transition {
+  &-0_2 {
+    transition: .2s ease-out;
+  }
+  &-0_3 {
+    transition: .3s ease-out;
+  }
+  &-0_6 {
+    transition: .6s ease-out;
+    &-ease {
+      transition: .6s ease;
+    }
+  }
+}
+
+[class*="g-color-"][class*="--hover"] {
+  transition: color .2s ease-out;
+}
+[class*="g-bg-"][class*="--hover"] {
+  transition: background-color .3s ease-out;
+}
+[class*="g-color-"][class*="--hover"][class*="g-bg-"][class*="--hover"] {
+  transition: .3s ease-out;
+}*/
+
+[class*="g-transition"] {
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+}
+
+.g-transition-0 {
+  transition-duration: 0s;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-duration: 0s;
+  }
+}
+
+.g-transition-0_2 {
+  transition-duration: .2s;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-duration: .2s;
+  }
+}
+
+.g-transition-0_3 {
+  transition-duration: .3s;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-duration: .3s;
+  }
+}
+
+.g-transition-0_5 {
+  transition-duration: .5s;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-duration: .5s;
+  }
+}
+
+.g-transition-0_6 {
+  transition-duration: .6s;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-duration: .6s;
+  }
+}
+
+.g-transition-delay-0_11 {
+  transition-delay: .11s;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-delay: .11s;
+  }
+}
+
+.g-transition-delay-0_2 {
+  transition-delay: .2s;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-delay: .2s;
+  }
+}
+
+.g-transition-delay-0_45 {
+  transition-delay: .45s;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-delay: .45s;
+  }
+}
+
+//
+// Transition Timing Function
+// .g-transition--ease {
+//   transition-timing-function: ease;
+// }
+.g-transition--ease-out {
+  transition-timing-function: ease-out;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-timing-function: ease-out;
+  }
+}
+
+.g-transition--ease-in {
+  transition-timing-function: ease-in;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-timing-function: ease-in;
+  }
+}
+
+.g-transition--ease-in-out {
+  transition-timing-function: ease-in-out;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.g-transition--linear {
+  transition-timing-function: linear;
+
+  &::before,
+  &::after,
+  path,
+  polygon {
+    transition-timing-function: linear;
+  }
+}

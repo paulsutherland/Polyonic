@@ -1,0 +1,21 @@
+/*------------------------------------
+  Info Block v1-3
+------------------------------------*/
+.u-info-v1-3__item {
+	position: relative;
+	z-index: 1;
+
+	@include px-to-rem(padding-bottom,13px);
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+
+		@include px-to-rem(width,30px);
+		height: 1px;
+		@include px-to-rem(margin-left,-15px);
+		background: $g-color-gray-dark-v4;
+	}
+}

@@ -1,0 +1,93 @@
+/*------------------------------------
+  Checkboxes v7
+------------------------------------*/
+
+.u-check {
+  &-icon {
+    &-checkbox,
+    &-radio {
+      // v7
+      &-v7 {
+        cursor: pointer;
+        display: block;
+        width: 43px;
+        height: 22px;
+        font: {
+          style: normal;
+          weight: 700;
+          size: 9px;
+        }
+        color: $g-color-gray-light-v3;
+        border: solid 1px $g-color-gray-light-v3;
+        border-radius: 12px;
+
+        i {
+          &::before,
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+          }
+
+          &::before {
+            content: attr(data-uncheck-icon);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 22px;
+            line-height: 18px;
+            text-transform: uppercase;
+            text-align: right;
+            padding: 2px 7px;
+          }
+
+          &::after {
+            top: 50%;
+            left: 4px;
+            width: 16px;
+            height: 16px;
+            background-color: $g-color-gray-light-v3;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            transition: {
+              property: left;
+              duration: .1s;
+              timing-function: ease-in;
+            }
+          }
+        }
+      }
+      // End v7
+    }
+  }
+
+  // Control
+  input[type="checkbox"],
+  input[type="radio"] {
+    &:checked {
+      & +,
+      & + * {
+        // v7
+        .u-check-icon-checkbox-v7,
+        .u-check-icon-radio-v7 {
+          color: $g-color-white;
+          background-color: $g-color-primary;
+          border-color: $g-color-primary;
+
+          i {
+            &:before {
+              content: attr(data-check-icon);
+              text-align: left;
+            }
+
+            &::after {
+              left: calc(100% - 19px);
+              background-color: $g-color-white;
+            }
+          }
+        }
+        // End v7
+      }
+    }
+  }
+}

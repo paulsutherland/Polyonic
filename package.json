@@ -1,69 +1,97 @@
 {
   "name": "polyonic",
   "productName": "Polyonic App",
-  "description": "A Polyonic Electron Ionic 2 starter application",
-  "version": "1.0.0",
-  "author": "Author",
-  "copyright": "© 2016, Author",
-  "main": "src/app.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/paulsutherland/Polyonic"
+  "description": "ionic2: An Ionic project",
+  "version": "1.2.0",
+  "author": {
+    "name": "Your Name",
+    "email": "email@your-email.com",
+    "url": "http://yourwebsite.com"
   },
+  "repository": "https://github.com/paulsutherland/polyonic",
+  "copyright": "© 2017, Your Name",
+  "main": "main.js",
   "license": "MIT",
-  "devDependencies": {
-    "asar": "0.14.2",
-    "body-parser": "1.18.2",
-    "chai": "4.1.2",
-    "cookie-parser": "1.4.3",
-    "del": "3.0.0",
-    "electron": "1.7.11",
-    "electron-connect": "0.6.3",
-    "electron-mocha": "5.0.0",
-    "electron-builder": "20.0.7",
-    "express": "4.16.2",
-    "fs-jetpack": "1.3.0",
-    "gulp": "3.9.1",
-    "gulp-batch": "1.0.5",
-    "gulp-env": "0.4.0",
-    "gulp-plumber": "1.2.0",
-    "gulp-util": "3.0.8",
-    "gulp-watch": "5.0.0",
-    "morgan": "1.9.0",
-    "q": "1.5.1",
-    "rollup": "0.42.0",
-    "run-sequence": "2.2.1",
-    "snazzy": "7.0.0",
-    "standard": "11.0.0",
-    "tslint": "5.9.1",
-    "tslint-stylish": "2.1.0",
-    "typescript": "2.7.2",
-    "yargs": "11.0.0"
-  },
-  "optionalDependencies": {
-    "appdmg": "0.5.2",
-    "rcedit": "1.0.0"
-  },
+  "private": true,
   "scripts": {
-    "build": "gulp build",
-    "dev": "cd src && gulp dev",
-    "ionic:build": "cd src && npm run build",
-    "install-native": "node ./tasks/install_native_module",
-    "lint": "standard './*.js' 'tasks/**/*.js' 'src/*.js' --verbose | snazzy && cd src; tslint 'src/**/*.ts' -t stylish || true",
-    "postinstall": "cd src && npm install && npm run build",
-    "prestart": "cd src && ionic cordova build browser",
-    "pretest": "gulp build --env=test",
-    "release": "gulp release --env=production",
-    "start": "gulp start",
-    "test": "electron-mocha build",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "debug-main": "electron --inspect-brk=5858 .",
+    "build": "ionic-app-scripts build",
+    "clean": "ionic-app-scripts clean",
+    "dev": "gulp dev",
+    "lint": "ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve",
+    "ionic:watch": "ionic-app-scripts watch",
+    "start": "npm run build && electron .",
+    "release": "electron-builder --dir --config ./electron-build.json",
+    "dist": "electron-builder --config ./electron-build.json"
   },
-  "build": {
-    "appId": "YOUR.APPID.GOES.HERE",
-    "directories": {
-      "app": "build"
+  "osx": {
+    "build": "1",
+    "identifier": "com.polyonic",
+    "LSApplicationCategoryType": "public.app-category.productivity",
+    "//codeSignIdentitiy": {
+      "dmg": "Developer ID Application: Company Name (APPIDENTITY)",
+      "MAS": "3rd Party Mac Developer Application: Company Name (APPIDENTITY)",
+      "MASInstaller": "3rd Party Mac Developer Installer: Company Name (APPIDENTITY)"
     }
   },
-  "dependencies": {}
+  "keywords": [
+    "Electron",
+    "Ionic",
+    "Polyonic",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "devDependencies": {
+    "@ionic/app-scripts": "3.1.8",
+    "electron": "~2.0.0",
+    "electron-builder": "^20.3.1",
+    "electron-connect": "^0.6.3",
+    "typescript": "2.7.2",
+    "gulp": "^3.9.1",
+    "gulp-env": "^0.4.0"
+  },
+  "dependencies": {
+    "@angular/common": "5.2.7",
+    "@angular/compiler": "5.2.7",
+    "@angular/compiler-cli": "5.2.7",
+    "@angular/core": "5.2.7",
+    "@angular/forms": "5.2.7",
+    "@angular/http": "5.2.7",
+    "@angular/platform-browser": "5.2.7",
+    "@angular/platform-browser-dynamic": "5.2.7",
+    "@ionic-native/core": "4.5.3",
+    "@ionic-native/splash-screen": "4.5.3",
+    "@ionic-native/status-bar": "^4.4.0",
+    "@ionic/storage": "2.1.3",
+    "cordova-ios": "4.5.4",
+    "cordova-plugin-device": "^2.0.1",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.1",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "ionic-angular": "3.9.2",
+    "ionicons": "3.0.0",
+    "ngx-electron": "^1.0.4",
+    "rxjs": "5.5.6",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.20"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-statusbar": {}
+    },
+    "platforms": [
+      "ios"
+    ]
+  }
 }

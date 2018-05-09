@@ -1,0 +1,30 @@
+/*--------------------------------------------------
+  Info Block v10-1
+----------------------------------------------------*/
+
+.u-info-v10-1 {
+  position: relative;
+  display: inline-block;
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 1000px;
+    height: 1px;
+    background: $g-color-gray-light-v5;
+    content: " ";
+    margin-top: 0.5px;
+  }
+
+  &::before {
+    right: 100%;
+    margin-right: 25px;
+  }
+
+  &::after {
+    left: 100%;
+    margin-left: 25px;
+  }
+}

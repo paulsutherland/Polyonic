@@ -1,0 +1,26 @@
+/*------------------------------------
+  Bootstrap Tagsinput
+------------------------------------*/
+
+.tt-menu {
+  background-color: $g-color-white;
+  border: 1px solid $g-color-gray-light-v6;
+  @include px-to-rem(border-radius, 4px);
+}
+
+.tt-suggestion {
+  @include px-to-rem(padding, 3px 8px);
+
+  &.tt-cursor {
+    background-color: $g-color-lightblue-v3;
+    color: $g-color-white;
+  }
+
+  & + .tt-suggestion {
+    border-bottom: 1px solid $g-color-gray-light-v6;
+
+    &.tt-cursor {
+      border-bottom: $g-color-lightblue-v3;
+    }
+  }
+}

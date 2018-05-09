@@ -1,0 +1,784 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "home" %}
+{% set mainNavActive_2 = "home-page-5" %}
+{% set title = "Home Page 5 | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    {% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-bg-video/hs-bg-video.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Promo Block -->
+      <section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3--after" style="background-image: url({{ root }}assets/img-temp/1920x800/img1.jpg);">
+        <div class="container u-bg-overlay__inner text-center g-pt-150 g-pb-70">
+          <div class="g-mb-100">
+            <span class="d-block g-color-white g-font-size-20 text-uppercase g-letter-spacing-5 mb-4">The Exhibition of</span>
+            <h1 class="g-color-white g-font-weight-700 g-font-size-20 g-font-size-50--md text-uppercase g-line-height-1_2 g-letter-spacing-10 mb-4">Creative Portfolios</h1>
+            <span class="d-block lead g-color-white g-letter-spacing-2">Examples of Our Branding Projects</span>
+          </div>
+
+          <div class="g-pos-abs g-left-0 g-right-0 g-z-index-2 g-bottom-30">
+            <a class="js-go-to btn u-btn-outline-white g-color-white g-bg-white-opacity-0_1 g-color-black--hover g-bg-white--hover g-font-weight-600 text-uppercase g-rounded-50 g-px-30 g-py-11" href="#!"
+               data-target="#content">
+              <i class="fa fa-angle-down"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Promo Block -->
+
+      <!-- Testimonials -->
+      <section id="content" class="g-bg-secondary">
+        <div class="container g-py-100">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="text-center">
+                <span class="g-color-gray-dark-v2 g-font-size-90 g-pos-abs g-top-minus-40">
+                  &#8220;
+                </span>
+              </div>
+
+              <div class="js-carousel text-center g-pt-60"
+                   data-infinite="true"
+                   data-autoplay="true"
+                   data-fade="true"
+                   data-speed="5000">
+                <div class="js-slide">
+                  <blockquote class="lead g-color-black g-font-size-22 g-line-height-2 mb-4">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+                  <span class="d-block g-color-black g-font-size-17 mb-4">Katarina Ramirez, Designer</span>
+                  <img class="d-inline-block g-width-60 g-height-60 g-brd-around g-brd-3 g-brd-white rounded-circle" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                </div>
+
+                <div class="js-slide">
+                  <blockquote class="lead g-color-black g-font-size-22 g-line-height-2 mb-4">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+                  <span class="d-block g-color-black g-font-size-17 mb-4">Sara Anderson, Developer</span>
+                  <img class="d-inline-block g-width-60 g-height-60 g-brd-around g-brd-3 g-brd-white rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials -->
+
+      <!-- Cube Portfolio Blocks -->
+      <div class="dzsparallaxer auto-init height-is-based-on-content g-bg-white" data-options='{direction: "reverse", animation_duration: "200"}'>
+        <div class="dzsparallaxer--target" style="width: 100%; height: 130%;">
+        </div>
+
+        <div class="container g-py-100">
+          <div class="cbp"
+               data-animation="quicksand"
+               data-x-gap="30"
+               data-y-gap="30"
+               data-media-queries='[
+                 {"width": 1500, "cols": 2},
+                 {"width": 1100, "cols": 2},
+                 {"width": 800, "cols": 2},
+                 {"width": 480, "cols": 2},
+                 {"width": 300, "cols": 1}
+               ]'>
+            <!-- Cube Portfolio Blocks - Item -->
+            <div class="cbp-item" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}px,0)", initial:"-100", mid:"0", final:"100"}]'>
+              <div class="u-block-hover g-parent">
+                <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/600x450/img2.jpg" alt="Image description">
+                <div class="d-flex w-100 u-block-hover__additional--fade u-block-hover__additional--fade-in h-100 g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                  <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                    <li class="list-inline-item">
+                      <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                        <i class="icon-communication-095 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/600x450/img2.jpg">
+                        <i class="icon-communication-017 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center g-pa-25">
+                <h3 class="h4 g-color-black mb-1">Branding work</h3>
+                <p class="g-color-gray-dark-v4 mb-0">Identity, Design</p>
+              </div>
+            </div>
+            <!-- End Cube Portfolio Blocks - Item -->
+
+            <!-- Cube Portfolio Blocks - Item -->
+            <div class="cbp-item" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}px,0)", initial:"80", mid:"0", final:"-40"}]'>
+              <div class="u-block-hover g-parent">
+                <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/600x450/img3.jpg" alt="Image description">
+                <div class="d-flex w-100 u-block-hover__additional--fade u-block-hover__additional--fade-in h-100 g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                  <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                    <li class="list-inline-item">
+                      <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                        <i class="icon-communication-095 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/600x450/img3.jpg">
+                        <i class="icon-communication-017 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center g-pa-25">
+                <h3 class="h4 g-color-black mb-1">Development</h3>
+                <p class="g-color-gray-dark-v4 mb-0">Design</p>
+              </div>
+            </div>
+            <!-- End Cube Portfolio Blocks - Item -->
+
+            <!-- Cube Portfolio Blocks - Item -->
+            <div class="cbp-item" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}px,0)", initial:"-100", mid:"0", final:"100"}]'>
+              <div class="u-block-hover g-parent">
+                <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/600x450/img4.jpg" alt="Image description">
+                <div class="d-flex w-100 u-block-hover__additional--fade u-block-hover__additional--fade-in h-100 g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                  <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                    <li class="list-inline-item">
+                      <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                        <i class="icon-communication-095 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/600x450/img4.jpg">
+                        <i class="icon-communication-017 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center g-pa-25">
+                <h3 class="h4 g-color-black mb-1">Project planner</h3>
+                <p class="g-color-gray-dark-v4 mb-0">Graphic, Identity</p>
+              </div>
+            </div>
+            <!-- End Cube Portfolio Blocks - Item -->
+
+            <!-- Cube Portfolio Blocks - Item -->
+            <div class="cbp-item" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}px,0)", initial:"80", mid:"0", final:"-40"}]'>
+              <div class="u-block-hover g-parent">
+                <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/600x650/img1.jpg" alt="Image description">
+                <div class="d-flex w-100 u-block-hover__additional--fade u-block-hover__additional--fade-in h-100 g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                  <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                    <li class="list-inline-item">
+                      <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                        <i class="icon-communication-095 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/600x650/img1.jpg">
+                        <i class="icon-communication-017 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center g-pa-25">
+                <h3 class="h4 g-color-black mb-1">Design</h3>
+                <p class="g-color-gray-dark-v4 mb-0">Graphic</p>
+              </div>
+            </div>
+            <!-- End Cube Portfolio Blocks - Item -->
+
+            <!-- Cube Portfolio Blocks - Item -->
+            <div class="cbp-item" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}px,0)", initial:"-100", mid:"0", final:"100"}]'>
+              <div class="u-block-hover g-parent">
+                <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/600x450/img5.jpg" alt="Image description">
+                <div class="d-flex w-100 u-block-hover__additional--fade u-block-hover__additional--fade-in h-100 g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                  <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                    <li class="list-inline-item">
+                      <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                        <i class="icon-communication-095 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/600x450/img5.jpg">
+                        <i class="icon-communication-017 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center g-pa-25">
+                <h3 class="h4 g-color-black mb-1">Creative agency</h3>
+                <p class="g-color-gray-dark-v4 mb-0">Identity</p>
+              </div>
+            </div>
+            <!-- End Cube Portfolio Blocks - Item -->
+
+            <!-- Cube Portfolio Blocks - Item -->
+            <div class="cbp-item" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}px,0)", initial:"80", mid:"0", final:"-40"}]'>
+              <div class="u-block-hover g-parent">
+                <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/600x300/img1.jpg" alt="Image description">
+                <div class="d-flex w-100 u-block-hover__additional--fade u-block-hover__additional--fade-in h-100 g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                  <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                    <li class="list-inline-item">
+                      <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                        <i class="icon-communication-095 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/600x300/img1.jpg">
+                        <i class="icon-communication-017 u-line-icon-pro"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center g-pa-25">
+                <h3 class="h4 g-color-black mb-1">Production</h3>
+                <p class="g-color-gray-dark-v4 mb-0">Graphic</p>
+              </div>
+            </div>
+            <!-- End Cube Portfolio Blocks - Item -->
+          </div>
+        </div>
+      </div>
+      <!-- End Cube Portfolio Blocks -->
+
+      <!-- Video Block -->
+      <section class="container-fluid px-0">
+        <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-bg-cover g-bg-black-opacity-0_6--after" data-options='{direction: "fromtop", animation_duration: 25, direction: "reverse"}'>
+          <!-- Promo Block - Parallax Video -->
+          <div class="dzsparallaxer--target" style="width: 100%; height: 200%;" data-forcewidth_ratio="1.77">
+            <div class="js-bg-video g-pos-abs w-100 h-100" data-hs-bgv-type="vimeo" data-hs-bgv-id="167434033" data-hs-bgv-loop="1"></div>
+          </div>
+          <!-- End Promo Block - Parallax Video -->
+
+          <div class="text-center g-pos-rel g-z-index-1 g-px-50 g-py-200">
+            <a class="js-fancybox d-block mb-5" href="javascript:;"
+               data-src="//www.youtube.com/embed/BNpiwOkKIJ8?autoplay=1"
+               data-speed="350"
+               data-caption="Single Image">
+              <span class="u-icon-v3 u-icon-size--lg g-bg-white g-color-black g-color-primary--hover g-font-size-20 g-rounded-50x g-cursor-pointer">
+                <i class="g-pos-rel g-left-2 fa fa-play"></i>
+              </span>
+            </a>
+            <span class="d-block g-color-white g-font-size-20 text-uppercase g-letter-spacing-5">Watch Unify Intro</span>
+          </div>
+        </div>
+      </section>
+      <!-- End Video Block -->
+
+      <!-- Cube Portfolio Blocks -->
+      <section class="container g-py-100">
+        <div class="g-mb-50">
+          <div class="d-flex justify-content-start g-brd-bottom g-brd-gray-light-v4 pb-5">
+            <div class="d-block">
+              <h2 class="h1 g-color-black">Work in progress</h2>
+              <span class="d-block g-font-weight-300 g-font-size-22 mr-4 g-mb-6">See our latest News &amp; Works on</span>
+            </div>
+
+            <!-- Social Icons -->
+            <ul class="list-inline align-self-end mb-0">
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-red g-bg-red-opacity-0_1 g-color-red--hover rounded-circle" href="#!">
+                  <i class="g-font-size-15 g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
+                  <i class="g-font-size-15 g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-teal g-bg-teal-opacity-0_1 g-color-teal--hover rounded-circle" href="#!">
+                  <i class="g-font-size-15 g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+                  <i class="g-font-size-15 g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-cyan g-bg-cyan-opacity-0_1 g-color-cyan--hover rounded-circle" href="#!">
+                  <i class="g-font-size-15 g-line-height-1 u-icon__elem-regular fa fa-google-plus"></i>
+                  <i class="g-font-size-15 g-line-height-0_8 u-icon__elem-hover fa fa-google-plus"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-purple g-bg-purple-opacity-0_1 g-color-purple--hover rounded-circle" href="#!">
+                  <i class="g-font-size-15 g-line-height-1 u-icon__elem-regular fa fa-linkedin"></i>
+                  <i class="g-font-size-15 g-line-height-0_8 u-icon__elem-hover fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- End Social Icons -->
+          </div>
+        </div>
+
+        <!-- Cube Portfolio Blocks - Filter -->
+        <ul id="filterControls1" class="d-block list-inline g-mb-50">
+          <li class="list-inline-item cbp-filter-item g-color-black g-color-gray-dark-v5--active g-font-weight-600 g-font-size-13 text-uppercase pr-2 mb-2" role="button" data-filter="*">
+            Show All
+          </li>
+          <li class="list-inline-item cbp-filter-item g-color-black g-color-primary--hover g-color-gray-dark-v5--active g-font-weight-600 g-font-size-13 text-uppercase px-2 mb-2" role="button" data-filter=".identity">
+            Identity
+          </li>
+          <li class="list-inline-item cbp-filter-item g-color-black g-color-primary--hover g-color-gray-dark-v5--active g-font-weight-600 g-font-size-13 text-uppercase px-2 mb-2" role="button" data-filter=".design">
+            Design
+          </li>
+          <li class="list-inline-item cbp-filter-item g-color-black g-color-primary--hover g-color-gray-dark-v5--active g-font-weight-600 g-font-size-13 text-uppercase px-2 mb-2" role="button" data-filter=".graphic">
+            Graphic
+          </li>
+          <li class="list-inline-item cbp-filter-item g-color-black g-color-primary--hover g-color-gray-dark-v5--active g-font-weight-600 g-font-size-13 text-uppercase g-letter-spacing-0_5 px-2 mb-2" role="button" data-filter=".graphic, .identity">
+            Design &amp; Identity
+          </li>
+        </ul>
+        <!-- End Cube Portfolio Blocks - Filter -->
+
+        <!-- Cube Portfolio Blocks - Content -->
+        <div class="cbp"
+             data-controls="#filterControls1"
+             data-animation="quicksand"
+             data-x-gap="30"
+             data-y-gap="30"
+             data-media-queries='[{"width": 1500, "cols": 3}, {"width": 1100, "cols": 3}, {"width": 800, "cols": 3}, {"width": 480, "cols": 2}, {"width": 300, "cols": 1}]'>
+          <!-- Cube Portfolio Blocks - Item -->
+          <div id="shortcode" class="cbp-item identity design">
+            <div class="u-block-hover g-parent">
+              <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/400x270/img8.jpg" alt="Image description">
+              <div class="d-flex w-100 h-100 u-block-hover__additional--fade u-block-hover__additional--fade-in g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                      <i class="icon-communication-095 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/400x270/img8.jpg">
+                      <i class="icon-communication-017 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-center g-pa-25">
+              <h3 class="h5 g-color-black mb-1">Branding work</h3>
+              <p class="g-color-gray-dark-v4 mb-0">Identity, Design</p>
+            </div>
+          </div>
+          <!-- End Cube Portfolio Blocks - Item -->
+
+          <!-- Cube Portfolio Blocks - Item -->
+          <div class="cbp-item design">
+            <div class="u-block-hover g-parent">
+              <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/400x270/img9.jpg" alt="Image description">
+              <div class="d-flex w-100 h-100 u-block-hover__additional--fade u-block-hover__additional--fade-in g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                      <i class="icon-communication-095 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/400x270/img9.jpg">
+                      <i class="icon-communication-017 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-center g-pa-25">
+              <h3 class="h5 g-color-black mb-1">Development</h3>
+              <p class="g-color-gray-dark-v4 mb-0">Design</p>
+            </div>
+          </div>
+          <!-- End Cube Portfolio Blocks - Item -->
+
+          <!-- Cube Portfolio Blocks - Item -->
+          <div class="cbp-item graphic identity">
+            <div class="u-block-hover g-parent">
+              <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/400x270/img2.jpg" alt="Image description">
+              <div class="d-flex w-100 h-100 u-block-hover__additional--fade u-block-hover__additional--fade-in g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                      <i class="icon-communication-095 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/400x270/img2.jpg">
+                      <i class="icon-communication-017 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-center g-pa-25">
+              <h3 class="h5 g-color-black mb-1">Project planner</h3>
+              <p class="g-color-gray-dark-v4 mb-0">Graphic, Identity</p>
+            </div>
+          </div>
+          <!-- End Cube Portfolio Blocks - Item -->
+
+          <!-- Cube Portfolio Blocks - Item -->
+          <div class="cbp-item graphic">
+            <div class="u-block-hover g-parent">
+              <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/400x270/img11.jpg" alt="Image description">
+              <div class="d-flex w-100 h-100 u-block-hover__additional--fade u-block-hover__additional--fade-in g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                      <i class="icon-communication-095 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/400x270/img11.jpg">
+                      <i class="icon-communication-017 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-center g-pa-25">
+              <h3 class="h5 g-color-black mb-1">Design</h3>
+              <p class="g-color-gray-dark-v4 mb-0">Graphic</p>
+            </div>
+          </div>
+          <!-- End Cube Portfolio Blocks - Item -->
+
+          <!-- Cube Portfolio Blocks - Item -->
+          <div class="cbp-item identity">
+            <div class="u-block-hover g-parent">
+              <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/400x270/img12.jpg" alt="Image description">
+              <div class="d-flex w-100 h-100 u-block-hover__additional--fade u-block-hover__additional--fade-in g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                      <i class="icon-communication-095 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/400x270/img12.jpg">
+                      <i class="icon-communication-017 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-center g-pa-25">
+              <h3 class="h5 g-color-black mb-1">Creative agency</h3>
+              <p class="g-color-gray-dark-v4 mb-0">Identity</p>
+            </div>
+          </div>
+          <!-- End Cube Portfolio Blocks - Item -->
+
+          <!-- Cube Portfolio Blocks - Item -->
+          <div class="cbp-item graphic">
+            <div class="u-block-hover g-parent">
+              <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{ root }}assets/img-temp/400x270/img10.jpg" alt="Image description">
+              <div class="d-flex w-100 h-100 u-block-hover__additional--fade u-block-hover__additional--fade-in g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
+                <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
+                      <i class="icon-communication-095 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="cbp-lightbox u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="{{ root }}assets/img-temp/400x270/img10.jpg">
+                      <i class="icon-communication-017 u-line-icon-pro"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-center g-pa-25">
+              <h3 class="h5 g-color-black mb-1">Production</h3>
+              <p class="g-color-gray-dark-v4 mb-0">Graphic</p>
+            </div>
+          </div>
+          <!-- End Cube Portfolio Blocks - Item -->
+        </div>
+        <!-- End Cube Portfolio Blocks - Content -->
+      </section>
+      <!-- End Cube Portfolio Blocks -->
+
+      <!-- Partners -->
+      <section class="g-bg-secondary">
+        <div class="container g-py-100">
+          <div class="g-mb-50">
+            <h2 class="h1 g-color-black">Our Clients</h2>
+            <span class="d-block g-font-weight-300 g-font-size-22 mr-4 g-mb-6">Our delighted clients we work with</span>
+          </div>
+
+          <div class="row no-gutters">
+            <div class="col-sm-6 col-lg-3">
+              <!-- Partners -->
+              <div class="g-brd-around g-brd-gray-light-v5 g-bg-white text-center">
+                <a class="d-block u-block-hover g-opacity-0_3 g-opacity-1--hover g-color-black g-transition-0_3 g-px-30 g-py-70" href="#!">
+                  <img class="u-block-hover__main--zoom-v1 u-block-hover__main--grayscale g-width-100" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+                  <span class="d-block u-block-hover__additional--partially-slide-up py-2">
+                    <span class="d-block h5 g-color-gray-dark-v5 mb-4">Hubspot</span>
+                  </span>
+                </a>
+              </div>
+              <!-- End Partners -->
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <!-- Partners -->
+              <div class="g-brd-around g-brd-gray-light-v5 g-bg-white text-center">
+                <a class="d-block u-block-hover g-opacity-0_3 g-opacity-1--hover g-color-black g-transition-0_3 g-px-30 g-py-70" href="#!">
+                  <img class="u-block-hover__main--zoom-v1 u-block-hover__main--grayscale g-width-100" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+                  <span class="d-block u-block-hover__additional--partially-slide-up py-2">
+                    <span class="d-block h5 g-color-gray-dark-v5 mb-4">Circle CI</span>
+                  </span>
+                </a>
+              </div>
+              <!-- End Partners -->
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <!-- Partners -->
+              <div class="g-brd-around g-brd-gray-light-v5 g-bg-white text-center">
+                <a class="d-block u-block-hover g-opacity-0_3 g-opacity-1--hover g-color-black g-transition-0_3 g-px-30 g-py-70" href="#!">
+                  <img class="u-block-hover__main--zoom-v1 u-block-hover__main--grayscale g-width-100" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+                  <span class="d-block u-block-hover__additional--partially-slide-up py-2">
+                    <span class="d-block h5 g-color-gray-dark-v5 mb-4">Twilio</span>
+                  </span>
+                </a>
+              </div>
+              <!-- End Partners -->
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <!-- Partners -->
+              <div class="g-brd-around g-brd-gray-light-v5 g-bg-white text-center">
+                <a class="d-block u-block-hover g-opacity-0_3 g-opacity-1--hover g-color-black g-transition-0_3 g-px-30 g-py-70" href="#!">
+                  <img class="u-block-hover__main--zoom-v1 u-block-hover__main--grayscale g-width-100" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+                  <span class="d-block u-block-hover__additional--partially-slide-up py-2">
+                    <span class="d-block h5 g-color-gray-dark-v5 mb-4">Fit Bit</span>
+                  </span>
+                </a>
+              </div>
+              <!-- End Partners -->
+            </div>
+          </div>
+
+          <div class="row no-gutters">
+            <div class="col-sm-6 col-lg-3">
+              <!-- Partners -->
+              <div class="g-brd-around g-brd-gray-light-v5 g-bg-white text-center">
+                <a class="d-block u-block-hover g-opacity-0_3 g-opacity-1--hover g-color-black g-transition-0_3 g-px-30 g-py-70" href="#!">
+                  <img class="u-block-hover__main--zoom-v1 u-block-hover__main--grayscale g-width-100" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+                  <span class="d-block u-block-hover__additional--partially-slide-up py-2">
+                    <span class="d-block h5 g-color-gray-dark-v5 mb-4">Atalssian</span>
+                  </span>
+                </a>
+              </div>
+              <!-- End Partners -->
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <!-- Partners -->
+              <div class="g-brd-around g-brd-gray-light-v5 g-bg-white text-center">
+                <a class="d-block u-block-hover g-opacity-0_3 g-opacity-1--hover g-color-black g-transition-0_3 g-px-30 g-py-70" href="#!">
+                  <img class="u-block-hover__main--zoom-v1 u-block-hover__main--grayscale g-width-100" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+                  <span class="d-block u-block-hover__additional--partially-slide-up py-2">
+                    <span class="d-block h5 g-color-gray-dark-v5 mb-4">Airbnb</span>
+                  </span>
+                </a>
+              </div>
+              <!-- End Partners -->
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <!-- Partners -->
+              <div class="g-brd-around g-brd-gray-light-v5 g-bg-white text-center">
+                <a class="d-block u-block-hover g-opacity-0_3 g-opacity-1--hover g-color-black g-transition-0_3 g-px-30 g-py-70" href="#!">
+                  <img class="u-block-hover__main--zoom-v1 u-block-hover__main--grayscale g-width-100" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image Description">
+                  <span class="d-block u-block-hover__additional--partially-slide-up py-2">
+                    <span class="d-block h5 g-color-gray-dark-v5 mb-4">Spotify</span>
+                  </span>
+                </a>
+              </div>
+              <!-- End Partners -->
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <!-- Partners -->
+              <div class="g-brd-around g-brd-gray-light-v5 g-bg-white text-center">
+                <a class="d-block u-block-hover g-opacity-0_3 g-opacity-1--hover g-color-black g-transition-0_3 g-px-30 g-py-70" href="#!">
+                  <img class="u-block-hover__main--zoom-v1 u-block-hover__main--grayscale g-width-100" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+                  <span class="d-block u-block-hover__additional--partially-slide-up py-2">
+                    <span class="d-block h5 g-color-gray-dark-v5 mb-4">Invision</span>
+                  </span>
+                </a>
+              </div>
+              <!-- End Partners -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Partners -->
+
+      <!-- Footer -->
+      <footer class="container g-pt-100 g-pb-20">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 g-mb-30">
+            <a class="d-inline-block mb-4" href="#!">
+              <img class="g-width-100 g-height-auto" src="{{ root }}assets/img/logo/logo-1.png" alt="Image Description">
+            </a>
+
+            <p class="g-color-gray-dark-v4 g-font-size-13">2018 &copy; All Rights Reserved.</p>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 g-mb-30">
+            <h3 class="h6 g-color-black g-font-weight-600 text-uppercase mb-4">About</h3>
+
+            <!-- Links -->
+            <ul class="list-unstyled g-color-gray-dark-v4 g-font-size-13">
+              <li class="my-3"><i class="mr-2 fa fa-angle-right"></i>
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">About</a></li>
+              <li class="my-3"><i class="mr-2 fa fa-angle-right"></i>
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Services</a></li>
+              <li class="my-3"><i class="mr-2 fa fa-angle-right"></i>
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Privacy &amp; Policy</a></li>
+              <li class="my-3"><i class="mr-2 fa fa-angle-right"></i>
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+            <!-- End Links -->
+          </div>
+
+          <div class="col-sm-6 col-lg-3 g-mb-30">
+            <h3 class="h6 g-color-black g-font-weight-600 text-uppercase mb-4">Contacts</h3>
+
+            <!-- Links -->
+            <ul class="list-unstyled g-color-gray-dark-v4 g-font-size-13">
+              <li class="media mb-4">
+                <i class="d-flex mt-1 mr-3 icon-hotel-restaurant-235 u-line-icon-pro"></i>
+                <div class="media-body">
+                  Unit 25 Suite 3, 925 Prospect<br>PI New York Avenue
+                </div>
+              </li>
+              <li class="media mb-4">
+                <i class="d-flex mt-1 mr-3 icon-communication-062 u-line-icon-pro"></i>
+                <div class="media-body">
+                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">htmlstream@support.com</a>
+                </div>
+              </li>
+              <li class="media mb-4">
+                <i class="d-flex mt-1 mr-3 icon-communication-033 u-line-icon-pro"></i>
+                <div class="media-body">
+                  +32 333 444 555
+                </div>
+              </li>
+            </ul>
+            <!-- End Links -->
+          </div>
+
+          <div class="col-sm-6 col-lg-3 g-mb-30">
+            <h3 class="h6 g-color-black g-font-weight-600 text-uppercase mb-4">Follow Us</h3>
+
+            <!-- Links -->
+            <ul class="list-unstyled g-color-gray-dark-v4 g-font-size-13">
+              <li class="my-3"><i class="mr-2 fa fa-angle-right"></i>
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Facebook</a></li>
+              <li class="my-3"><i class="mr-2 fa fa-angle-right"></i>
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Twitter</a></li>
+              <li class="my-3"><i class="mr-2 fa fa-angle-right"></i>
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Dribbble</a></li>
+              <li class="my-3"><i class="mr-2 fa fa-angle-right"></i>
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Linkedin</a></li>
+            </ul>
+            <!-- End Links -->
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+    <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+    <script src="{{ root }}assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script src="{{ root }}assets/vendor/hs-bg-video/hs-bg-video.js"></script>
+    <script src="{{ root }}assets/vendor/hs-bg-video/vendor/player.min.js"></script>
+    <script src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+    <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+    <script src="{{ root }}assets/js/components/hs.cubeportfolio.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.bg-video.js"></script>
+    <script src="{{ root }}assets/js/components/hs.popup.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of carousel
+        $.HSCore.components.HSCarousel.init('.js-carousel');
+
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+
+        // initialization of video on background
+        $.HSCore.helpers.HSBgVideo.init('.js-bg-video');
+
+        // initialization of popups
+        $.HSCore.components.HSPopup.init('.js-fancybox');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+
+        // initialization of cubeportfolio
+        $.HSCore.components.HSCubeportfolio.init('.cbp');
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

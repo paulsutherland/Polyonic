@@ -1,0 +1,311 @@
+/*------------------------------------
+  Typography Font Size
+------------------------------------*/
+.g-font-size-default {
+  font-size: 1rem !important;
+}
+
+$i: 70;
+@while $i < 96 {
+  .g-font-size-#{$i}x {
+    font-size: $i*1% !important;
+  }
+  $i: $i + 5;
+}
+
+.g-font-size-0 {
+  font-size: 0;
+}
+.g-font-size-5 {
+  @include px-to-rem(font-size, 5px !important);
+}
+.g-font-size-8 {
+  @include px-to-rem(font-size, 8px !important);
+}
+.g-font-size-9 {
+  @include px-to-rem(font-size, 9px !important);
+}
+.g-font-size-10 {
+  @include px-to-rem(font-size, 10px !important);
+}
+.g-font-size-11 {
+  @include px-to-rem(font-size, 11px !important);
+}
+.g-font-size-12 {
+  @include px-to-rem(font-size, 12px !important);
+}
+.g-font-size-13 {
+  @include px-to-rem(font-size, 13px !important);
+}
+.g-font-size-14 {
+  @include px-to-rem(font-size, 14px !important);
+}
+.g-font-size-15 {
+  @include px-to-rem(font-size, 15px !important);
+}
+.g-font-size-16 {
+  @include px-to-rem(font-size, 16px !important);
+}
+.g-font-size-17 {
+  @include px-to-rem(font-size, 17px !important);
+}
+.g-font-size-18 {
+  @include px-to-rem(font-size, 18px !important);
+}
+.g-font-size-20 {
+  @include px-to-rem(font-size, 20px !important);
+}
+.g-font-size-22 {
+  @include px-to-rem(font-size, 22px !important);
+}
+.g-font-size-23 {
+  @include px-to-rem(font-size, 23px !important);
+}
+.g-font-size-24 {
+  @include px-to-rem(font-size, 24px !important);
+}
+.g-font-size-25 {
+  @include px-to-rem(font-size, 25px !important);
+}
+.g-font-size-26 {
+  @include px-to-rem(font-size, 26px !important);
+}
+.g-font-size-27 {
+  @include px-to-rem(font-size, 27px !important);
+}
+.g-font-size-28 {
+  @include px-to-rem(font-size, 28px !important);
+}
+.g-font-size-30 {
+  @include px-to-rem(font-size, 30px !important);
+}
+.g-font-size-32 {
+  @include px-to-rem(font-size, 32px !important);
+}
+.g-font-size-33 {
+  @include px-to-rem(font-size, 33px !important);
+}
+.g-font-size-35 {
+  @include px-to-rem(font-size, 35px !important);
+}
+.g-font-size-36 {
+  @include px-to-rem(font-size, 36px !important);
+}
+.g-font-size-38 {
+  @include px-to-rem(font-size, 38px !important);
+}
+.g-font-size-40 {
+  @include px-to-rem(font-size, 40px !important);
+}
+.g-font-size-42 {
+  @include px-to-rem(font-size, 42px !important);
+}
+.g-font-size-45 {
+  @include px-to-rem(font-size, 45px !important);
+}
+.g-font-size-46 {
+  @include px-to-rem(font-size, 46px !important);
+}
+.g-font-size-48 {
+  @include px-to-rem(font-size, 48px !important);
+}
+.g-font-size-50 {
+  @include px-to-rem(font-size, 50px !important);
+}
+.g-font-size-55 {
+  @include px-to-rem(font-size, 55px !important);
+}
+.g-font-size-56 {
+  @include px-to-rem(font-size, 56px !important);
+}
+.g-font-size-60 {
+  @include px-to-rem(font-size, 60px !important);
+}
+.g-font-size-65 {
+  @include px-to-rem(font-size, 65px !important);
+}
+.g-font-size-70 {
+  line-height: 70px;
+  @include px-to-rem(font-size, 70px !important);
+}
+.g-font-size-75 {
+  @include px-to-rem(font-size, 75px !important);
+}
+.g-font-size-76 {
+  @include px-to-rem(font-size, 76px !important);
+}
+.g-font-size-80 {
+  @include px-to-rem(font-size, 80px !important);
+}
+.g-font-size-86 {
+  @include px-to-rem(font-size, 86px !important);
+}
+.g-font-size-90 {
+  @include px-to-rem(font-size, 90px !important);
+}
+.g-font-size-120 {
+  @include px-to-rem(font-size, 120px !important);
+}
+.g-font-size-200 {
+  line-height: 210px;
+  @include px-to-rem(font-size, 200px !important);
+}
+.g-font-size-180 {
+  @include px-to-rem(font-size, 180px !important);
+}
+
+@media (min-width: $g-sm) {
+  .g-font-size-20--sm {
+    @include px-to-rem(font-size, 20px !important);
+  }
+  .g-font-size-25--sm {
+    @include px-to-rem(font-size, 25px !important);
+  }
+  .g-font-size-40--sm {
+    @include px-to-rem(font-size, 40px !important);
+  }
+  .g-font-size-50--sm {
+    @include px-to-rem(font-size, 50px !important);
+  }
+  .g-font-size-240--sm {
+    @include px-to-rem(font-size, 240px !important);
+  }
+}
+
+@media (min-width: $g-md) {
+  .g-font-size-default--md {
+    font-size: 1rem !important;
+  }
+  .g-font-size-12--md {
+    @include px-to-rem(font-size, 12px !important);
+  }
+  .g-font-size-16--md {
+    @include px-to-rem(font-size, 16px !important);
+  }
+  .g-font-size-18--md {
+    @include px-to-rem(font-size, 18px !important);
+  }
+  .g-font-size-20--md {
+    @include px-to-rem(font-size, 20px !important);
+  }
+  .g-font-size-24--md {
+    @include px-to-rem(font-size, 24px !important);
+  }
+  .g-font-size-25--md {
+    @include px-to-rem(font-size, 25px !important);
+  }
+  .g-font-size-26--md {
+    @include px-to-rem(font-size, 26px !important);
+  }
+  .g-font-size-27--md {
+    @include px-to-rem(font-size, 27px !important);
+  }
+  .g-font-size-28--md {
+    @include px-to-rem(font-size, 28px !important);
+  }
+  .g-font-size-30--md {
+    @include px-to-rem(font-size, 30px !important);
+  }
+  .g-font-size-32--md {
+    @include px-to-rem(font-size, 32px !important);
+  }
+  .g-font-size-35--md {
+    @include px-to-rem(font-size, 35px !important);
+  }
+  .g-font-size-36--md {
+    @include px-to-rem(font-size, 36px !important);
+  }
+  .g-font-size-40--md {
+    @include px-to-rem(font-size, 40px !important);
+  }
+  .g-font-size-45--md {
+    @include px-to-rem(font-size, 45px !important);
+  }
+  .g-font-size-46--md {
+    @include px-to-rem(font-size, 46px !important);
+  }
+  .g-font-size-48--md {
+    @include px-to-rem(font-size, 48px !important);
+  }
+  .g-font-size-50--md {
+    @include px-to-rem(font-size, 50px !important);
+  }
+  .g-font-size-55--md {
+    @include px-to-rem(font-size, 55px !important);
+  }
+  .g-font-size-56--md {
+    @include px-to-rem(font-size, 56px !important);
+  }
+  .g-font-size-60--md {
+    @include px-to-rem(font-size, 60px !important);
+  }
+  .g-font-size-65--md {
+    @include px-to-rem(font-size, 65px !important);
+  }
+  .g-font-size-70--md {
+    @include px-to-rem(font-size, 70px !important);
+  }
+  .g-font-size-75--md {
+    @include px-to-rem(font-size, 75px !important);
+  }
+  .g-font-size-76--md {
+    @include px-to-rem(font-size, 76px !important);
+  }
+  .g-font-size-90--md {
+    @include px-to-rem(font-size, 90px !important);
+  }
+  .g-font-size-130--md {
+    @include px-to-rem(font-size, 130px !important);
+  }
+}
+
+@media (min-width: $g-lg) {
+  .g-font-size-default--lg {
+    font-size: 1rem !important;
+  }
+  .g-font-size-16--lg {
+    @include px-to-rem(font-size, 16px !important);
+  }
+  .g-font-size-18--lg {
+    @include px-to-rem(font-size, 18px !important);
+  }
+  .g-font-size-26--lg {
+    @include px-to-rem(font-size, 26px !important);
+  }
+  .g-font-size-32--lg {
+    @include px-to-rem(font-size, 32px !important);
+  }
+  .g-font-size-35--lg {
+    @include px-to-rem(font-size, 35px !important);
+  }
+  .g-font-size-36--lg {
+    @include px-to-rem(font-size, 36px !important);
+  }
+  .g-font-size-42--lg {
+    @include px-to-rem(font-size, 42px !important);
+  }
+  .g-font-size-60--lg {
+    @include px-to-rem(font-size, 60px !important);
+  }
+  .g-font-size-75--lg {
+    @include px-to-rem(font-size, 75px !important);
+  }
+  .g-font-size-76--lg {
+    @include px-to-rem(font-size, 76px !important);
+  }
+  .g-font-size-420--lg {
+    @include px-to-rem(font-size, 420px !important);
+  }
+}
+
+@media (min-width: $g-xl) {
+  .g-font-size-17--xl {
+    @include px-to-rem(font-size, 17px !important);
+  }
+}
+
+@media (max-width: #{$g-sm}-1) {
+  .g-font-size-25 {
+    @include px-to-rem(font-size, 25px !important);
+  }
+}

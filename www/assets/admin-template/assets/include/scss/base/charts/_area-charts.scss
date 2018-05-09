@@ -1,0 +1,17 @@
+/*------------------------------------
+  Area Charts
+------------------------------------*/
+
+.u-area-chart {
+  &--v1 {
+    .ct-point {
+      @include px-to-rem(stroke-width, 12px);
+      opacity: 0;
+      transition: opacity .2s ease-in;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

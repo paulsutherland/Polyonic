@@ -1,0 +1,241 @@
+/*------------------------------------
+  Datepickers v1
+------------------------------------*/
+
+.u-datepicker-v1 {
+  // padding: 10px 12px;
+  border: {
+    width: 1px;
+    style: solid;
+    radius: 0;
+  }
+  z-index: 2 !important;
+
+  &.ui-datepicker-inline {
+    width: 100%;
+  }
+
+  &.ui-datepicker {
+    width: initial;
+    padding: initial;
+  }
+
+  // UI Datepicker
+  .ui-datepicker {
+    width: 100%;
+    padding: 0;
+    border: none;
+
+    // Header
+    &-header {
+      background-color: transparent;
+      border: none;
+      border: {
+        radius: 0;
+        bottom: {
+          width: 1px;
+          style: solid;
+          color: $g-color-gray-light-v2;
+        }
+      }
+      padding: 0;
+    }
+
+    // Title
+    &-title {
+      height: 45px;
+      line-height: 45px;
+      font-size: 16px;
+      font-weight: 400;
+      color: $g-color-main;
+      margin: {
+        left: 45px;
+        right: 45px;
+      }
+    }
+
+    // Prev & Next Arrows
+    &-prev,
+    &-next {
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      top: 0;
+      text-align: center;
+      border-radius: 0;
+      cursor: pointer;
+
+      > span {
+        position: static;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        color: $g-color-main;
+        background-image: none;
+        text-indent: 0;
+        margin: {
+          top: 0;
+          left: 0;
+        }
+      }
+
+      &-hover {
+        top: 0;
+        background-color: transparent;
+      }
+
+      &.ui-state-hover {
+        border: none;
+      }
+    }
+
+    // Prev Arrow
+    &-prev {
+      left: 0;
+      border-right: {
+        width: 1px;
+        style: solid;
+        color: $g-color-gray-light-v2;
+      }
+
+      &-hover {
+        left: 0;
+      }
+
+      &.ui-state-hover {
+        border-right: {
+          width: 1px;
+          style: solid;
+          color: $g-color-gray-light-v2;
+        }
+      }
+    }
+
+    // Next Arrow
+    &-next {
+      right: 0;
+      border-left: {
+        width: 1px;
+        style: solid;
+        color: $g-color-gray-light-v2;
+      }
+
+      &-hover {
+        right: 0;
+      }
+
+      &.ui-state-hover {
+        border-left: {
+          width: 1px;
+          style: solid;
+          color: $g-color-gray-light-v2;
+        }
+      }
+    }
+
+    // Calendar Content
+    &-calendar {
+      margin-bottom: 0;
+
+      th,
+      td {
+        text-align: center;
+        padding: 3px;
+
+        span,
+        a {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+          color: $g-color-gray-dark-v3;
+          background-color: transparent;
+          border: {
+            width: 1px;
+            style: solid;
+            color: transparent;
+          }
+          padding: 0;
+        }
+
+        a {
+          border-radius: 50%;
+          transition: all .2s;
+
+          &:hover,
+          &.ui-state-active {
+            color: $g-color-white;
+            background-color: $g-color-primary;
+            border-color: $g-color-primary;
+            transition: all .2s;
+          }
+        }
+      }
+
+      th {
+        span,
+        a {
+          font-size: 12px;
+          font-weight: 400;
+          color: $g-color-gray-light-v1;
+          text-transform: uppercase;
+        }
+      }
+
+      td {
+        span,
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .u-datepicker-v1 {
+    // UI Datepicker
+    .ui-datepicker {
+      // Title
+      &-title {
+        height: 50px;
+        line-height: 50px;
+        margin: {
+          left: 50px;
+          right: 50px;
+        }
+      }
+
+      // Prev & Next Arrows
+      &-prev,
+      &-next {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+      }
+
+      // Calendar Content
+      &-calendar {
+        border-collapse: separate;
+        border-spacing: 4px;
+
+        th,
+        td {
+          padding: 5px;
+        }
+
+        th,
+        td {
+          span,
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

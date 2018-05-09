@@ -1,0 +1,14 @@
+/*------------------------------------
+  Info Block v3-4
+------------------------------------*/
+.info-v3-4 {
+	position: relative;
+
+	&::before {
+		content: "";
+		@include absolute(top 10px right 10px bottom 10px left 10px);
+		display: block;
+		border: 1px solid rgba($g-color-white, .4);
+		z-index: 1;
+	}
+}

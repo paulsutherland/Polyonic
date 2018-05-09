@@ -1,0 +1,210 @@
+/*------------------------------------
+  Datepicker v2
+------------------------------------*/
+
+.u-datepicker {
+  &--v2 {
+    z-index: 2 !important;
+    border-width: 0;
+    border-radius: 0;
+
+    &.ui-datepicker-inline {
+      width: 100%;
+    }
+
+    &.ui-datepicker {
+      width: initial;
+      padding: initial;
+    }
+
+    .ui-datepicker {
+      width: 100%;
+      padding: 0;
+      border: none;
+    }
+
+    .ui-datepicker-header {
+      display: none;
+    }
+
+    .ui-datepicker-title {
+      @include px-to-rem(height, 30px);
+      @include px-to-rem(line-height, 30px);
+      @include px-to-rem(font-size, 14px);
+      font-weight: 400;
+      color: $g-color-gray-dark-v3;
+      @include px-to-rem(margin-left, 30px);
+      @include px-to-rem(margin-right, 30px);
+    }
+
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+      @include px-to-rem(width, 30px);
+      @include px-to-rem(height, 30px);
+      @include px-to-rem(line-height, 30px);
+      top: 0;
+      text-align: center;
+      border-radius: 0;
+      cursor: pointer;
+
+      > span {
+        position: static;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        @include px-to-rem(font-size, 16px);
+        color: $g-color-gray-dark-v3;
+        background-image: none;
+        text-indent: 0;
+        margin-top: 0;
+        margin-left: 0;
+      }
+
+      &.ui-state-hover {
+        border: none;
+      }
+    }
+
+    .ui-datepicker-prev {
+      left: 0;
+      border-right-width: 0;
+
+      &.ui-state-hover {
+        border-right-width: 0;
+      }
+    }
+
+    .ui-datepicker-next {
+      right: 0;
+      border-left-width: 0;
+
+      &.ui-state-hover {
+        border-left-width: 0;
+      }
+    }
+
+    .ui-datepicker-prev-hover,
+    .ui-datepicker-next-hover {
+      top: 0;
+      background-color: transparent;
+    }
+
+    .ui-datepicker-prev-hover {
+      left: 0;
+    }
+
+    .ui-datepicker-next-hover {
+      right: 0;
+    }
+
+    .ui-datepicker-calendar {
+      margin-bottom: 0;
+      width: 100%;
+
+      th,
+      td {
+        text-align: center;
+        @include px-to-rem(padding, 3px);
+
+        span,
+        a {
+          display: inline-block;
+          @include px-to-rem(width, 26px);
+          @include px-to-rem(height, 26px);
+          @include px-to-rem(line-height, 24px);
+          text-align: center;
+          text-decoration: none;
+          color: $g-color-gray-dark-v3;
+          background-color: transparent;
+          border-width: 1px;
+          border-style: solid;
+          border-color: transparent;
+          padding: 0;
+        }
+
+        a {
+          border-radius: 50%;
+          transition: all .2s;
+
+          &.ui-state-active {
+            position: relative;
+            background-color: transparent;
+            border-color: $g-color-lightred-v2;
+            transition: all .2s;
+          }
+        }
+      }
+
+      th {
+        a,
+        span {
+          @include px-to-rem(font-size, 12px);
+          font-weight: 400;
+          color: $g-color-black;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+
+      td {
+        a,
+        span {
+          @include px-to-rem(font-size, 14px);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $g-md) {
+  .u-datepicker {
+    &--v2 {
+      .ui-datepicker-title {
+        @include px-to-rem(height, 45px);
+        @include px-to-rem(line-height, 45px);
+        @include px-to-rem(font-size, 16px);
+        @include px-to-rem(margin-left, 45px);
+        @include px-to-rem(margin-right, 45px);
+      }
+
+      .ui-datepicker-prev,
+      .ui-datepicker-next {
+        @include px-to-rem(width, 45px);
+        @include px-to-rem(height, 45px);
+        @include px-to-rem(line-height, 45px);
+
+        > span {
+          @include px-to-rem(font-size, 18px);
+        }
+      }
+
+      .ui-datepicker-calendar {
+        th,
+        td {
+          span,
+          a {
+            @include px-to-rem(width, 36px);
+            @include px-to-rem(height, 36px);
+            @include px-to-rem(line-height, 34px);
+          }
+        }
+
+        th {
+          a,
+          span {
+            @include px-to-rem(font-size, 14px);
+          }
+        }
+
+        td {
+          a,
+          span {
+            @include px-to-rem(font-size, 16px);
+          }
+        }
+      }
+    }
+  }
+}

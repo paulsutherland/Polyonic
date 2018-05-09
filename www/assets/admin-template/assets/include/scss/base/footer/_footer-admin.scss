@@ -1,0 +1,44 @@
+/*------------------------------------
+  Footer Admin
+------------------------------------*/
+@media (min-width: $g-md) {
+  .u-footer--bottom {
+    &-fixed {
+      position: fixed;
+    }
+
+    &-sticky {
+      position: absolute;
+    }
+
+    &-fixed,
+    &-sticky {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: margin-left .3s ease-in;
+    }
+  }
+
+  .u-side-nav-hidden .u-footer--bottom-fixed {
+    margin-left: 0;
+  }
+
+  .u-side-nav-mini .u-footer--bottom-fixed {
+    @include px-to-rem(margin-left, 45px);
+  }
+}
+
+@media (min-width: $g-lg) {
+  .u-footer--bottom-fixed {
+    @include px-to-rem(margin-left, 250px);
+  }
+
+  .u-side-nav-hidden .u-footer--bottom-fixed {
+    margin-left: 0;
+  }
+
+  .u-side-nav-mini .u-footer--bottom-fixed {
+    @include px-to-rem(margin-left, 45px);
+  }
+}

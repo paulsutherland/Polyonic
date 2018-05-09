@@ -1,0 +1,809 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-labels" %}
+{% set title = "Labels" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section>
+      <div class="g-py-100">
+        <div class="container">
+          <!-- Labels -->
+          <section>
+            <!-- Heading -->
+            <header class="g-mb-80">
+              <div class="u-heading-v6-2  text-uppercase">
+                <h2 class="h4 u-heading-v6__title g-font-weight-300">Labels</h2>
+              </div>
+              <div class="g-line-height-2 g-pl-90">
+                <p>Add a class
+                  <code>u-label u-label-default</code> to make basic label. The margin spacing might be any but for the all labels examples the following margin spacing classes are used
+                  <code>g-mr-10</code> and <code>g-mb-10</code>.</p>
+              </div>
+            </header>
+            <!-- End Heading -->
+
+            <!-- Default Labels -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Default Labels</h3>
+              </div>
+
+              <div class="col-md-9">
+                <div id="shortcode1">
+                  <div class="shortcode-html">
+                    <span class="u-label u-label-default g-mr-10 g-mb-15">Default</span>
+                    <span class="u-label u-label-success g-mr-10 g-mb-15">Success</span>
+                    <span class="u-label u-label-info g-mr-10 g-mb-15">Info</span>
+                    <span class="u-label u-label-warning g-mr-10 g-mb-15">Warning</span>
+                    <span class="u-label u-label-danger g-mr-10 g-mb-15">Danger</span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode1" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Default Labels -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- Colored Labels -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Colored Labels</h3>
+              </div>
+
+              <div class="col-md-9">
+                <div id="shortcode2">
+                  <div class="shortcode-html">
+                    <span class="u-label g-bg-primary g-mr-10 g-mb-15">Primary</span>
+                    <span class="u-label g-bg-lightred g-mr-10 g-mb-15">Lightred</span>
+                    <span class="u-label g-bg-darkred g-mr-10 g-mb-15">Darkred</span>
+                    <span class="u-label g-bg-blue g-mr-10 g-mb-15">Blue</span>
+                    <span class="u-label g-bg-indigo g-mr-10 g-mb-15">Indigo</span>
+                    <span class="u-label g-bg-purple g-mr-10 g-mb-15">Purple</span>
+                    <span class="u-label g-bg-darkpurple g-mr-10 g-mb-15">Darkpurple</span>
+                    <span class="u-label g-bg-pink g-mr-10 g-mb-15">Pink</span>
+                    <span class="u-label g-bg-orange g-mr-10 g-mb-15">Orange</span>
+                    <span class="u-label g-bg-deeporange g-mr-10 g-mb-15">Deeporange</span>
+                    <span class="u-label g-bg-aqua g-mr-10 g-mb-15">Aqua</span>
+                    <span class="u-label g-bg-yellow g-color-main g-mr-10 g-mb-15">Yellow</span>
+                    <span class="u-label g-bg-cyan g-mr-10 g-mb-15">Cyan</span>
+                    <span class="u-label g-bg-teal g-mr-10 g-mb-15">Teal</span>
+                    <span class="u-label g-bg-brown g-mr-10 g-mb-15">Brown</span>
+                    <span class="u-label g-bg-bluegray g-mr-10 g-mb-15">Bluegray</span>
+                    <span class="u-label g-bg-black g-mr-10 g-mb-15">Black</span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode2" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Colored Labels -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- Rounded Labels -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Rounded Labels</h3>
+              </div>
+
+              <div class="col-md-9 g-mb-60">
+                <div id="shortcode3">
+                  <div class="shortcode-html">
+                    <span class="u-label g-bg-primary g-rounded-3 g-mr-10 g-mb-15">Primary</span>
+                    <span class="u-label g-bg-lightred g-rounded-3 g-mr-10 g-mb-15">Lightred</span>
+                    <span class="u-label g-bg-darkred g-rounded-3 g-mr-10 g-mb-15">Darkred</span>
+                    <span class="u-label g-bg-blue g-rounded-3 g-mr-10 g-mb-15">Blue</span>
+                    <span class="u-label g-bg-indigo g-rounded-3 g-mr-10 g-mb-15">Indigo</span>
+                    <span class="u-label g-bg-purple g-rounded-3 g-mr-10 g-mb-15">Purple</span>
+                    <span class="u-label g-bg-darkpurple g-rounded-3 g-mr-10 g-mb-15">Darkpurple</span>
+                    <span class="u-label g-bg-pink g-rounded-3 g-mr-10 g-mb-15">Pink</span>
+                    <span class="u-label g-bg-orange g-rounded-3 g-mr-10 g-mb-15">Orange</span>
+                    <span class="u-label g-bg-deeporange g-rounded-3 g-mr-10 g-mb-15">Deeporange</span>
+                    <span class="u-label g-bg-aqua g-rounded-3 g-mr-10 g-mb-15">Aqua</span>
+                    <span class="u-label g-bg-yellow g-color-main g-rounded-3 g-mr-10 g-mb-15">Yellow</span>
+                    <span class="u-label g-bg-cyan g-rounded-3 g-mr-10 g-mb-15">Cyan</span>
+                    <span class="u-label g-bg-teal g-rounded-3 g-mr-10 g-mb-15">Teal</span>
+                    <span class="u-label g-bg-brown g-rounded-3 g-mr-10 g-mb-15">Brown</span>
+                    <span class="u-label g-bg-bluegray g-rounded-3 g-mr-10 g-mb-15">Bluegray</span>
+                    <span class="u-label g-bg-black g-rounded-3 g-mr-10 g-mb-15">Black</span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode3" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+
+              <div class="col-md-9 ml-md-auto">
+                <div id="shortcode4">
+                  <div class="shortcode-html">
+                    <span class="u-label g-bg-primary g-rounded-20 g-px-15 g-mr-10 g-mb-15">Primary</span>
+                    <span class="u-label g-bg-lightred g-rounded-20 g-px-15 g-mr-10 g-mb-15">Lightred</span>
+                    <span class="u-label g-bg-darkred g-rounded-20 g-px-15 g-mr-10 g-mb-15">Darkred</span>
+                    <span class="u-label g-bg-blue g-rounded-20 g-px-15 g-mr-10 g-mb-15">Blue</span>
+                    <span class="u-label g-bg-indigo g-rounded-20 g-px-15 g-mr-10 g-mb-15">Indigo</span>
+                    <span class="u-label g-bg-purple g-rounded-20 g-px-15 g-mr-10 g-mb-15">Purple</span>
+                    <span class="u-label g-bg-darkpurple g-rounded-20 g-px-15 g-mr-10 g-mb-15">Darkpurple</span>
+                    <span class="u-label g-bg-pink g-rounded-20 g-px-15 g-mr-10 g-mb-15">Pink</span>
+                    <span class="u-label g-bg-orange g-rounded-20 g-px-15 g-mr-10 g-mb-15">Orange</span>
+                    <span class="u-label g-bg-deeporange g-rounded-20 g-px-15 g-mr-10 g-mb-15">Deeporange</span>
+                    <span class="u-label g-bg-aqua g-rounded-20 g-px-15 g-mr-10 g-mb-15">Aqua</span>
+                    <span class="u-label g-bg-yellow g-color-main g-rounded-20 g-px-15 g-mr-10 g-mb-15">Yellow</span>
+                    <span class="u-label g-bg-cyan g-rounded-20 g-px-15 g-mr-10 g-mb-15">Cyan</span>
+                    <span class="u-label g-bg-teal g-rounded-20 g-px-15 g-mr-10 g-mb-15">Teal</span>
+                    <span class="u-label g-bg-brown g-rounded-20 g-px-15 g-mr-10 g-mb-15">Brown</span>
+                    <span class="u-label g-bg-bluegray g-rounded-20 g-px-15 g-mr-10 g-mb-15">Bluegray</span>
+                    <span class="u-label g-bg-black g-rounded-20 g-px-15 g-mr-10 g-mb-15">Black</span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode4" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Rounded Labels -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- Label Sizes -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Label Sizes</h3>
+              </div>
+              <div class="col-md-9 g-mb-60">
+                <div id="shortcode5">
+                  <div class="shortcode-html">
+                    <span class="u-label g-bg-primary u-label--sm g-mr-10 g-mb-15">Primary</span>
+                    <span class="u-label g-bg-lightred u-label--sm g-mr-10 g-mb-15">Lightred</span>
+                    <span class="u-label g-bg-darkred u-label--sm g-mr-10 g-mb-15">Darkred</span>
+                    <span class="u-label g-bg-blue u-label--sm g-mr-10 g-mb-15">Blue</span>
+                    <span class="u-label g-bg-indigo u-label--sm g-mr-10 g-mb-15">Indigo</span>
+                    <span class="u-label g-bg-purple u-label--sm g-mr-10 g-mb-15">Purple</span>
+                    <span class="u-label g-bg-darkpurple u-label--sm g-mr-10 g-mb-15">Darkpurple</span>
+                    <span class="u-label g-bg-pink u-label--sm g-mr-10 g-mb-15">Pink</span>
+                    <span class="u-label g-bg-orange u-label--sm g-mr-10 g-mb-15">Orange</span>
+                    <span class="u-label g-bg-deeporange u-label--sm g-mr-10 g-mb-15">Deeporange</span>
+                    <span class="u-label g-bg-aqua u-label--sm g-mr-10 g-mb-15">Aqua</span>
+                    <span class="u-label g-bg-yellow g-color-main u-label--sm g-mr-10 g-mb-15">Yellow</span>
+                    <span class="u-label g-bg-cyan u-label--sm g-mr-10 g-mb-15">Cyan</span>
+                    <span class="u-label g-bg-teal u-label--sm g-mr-10 g-mb-15">Teal</span>
+                    <span class="u-label g-bg-brown u-label--sm g-mr-10 g-mb-15">Brown</span>
+                    <span class="u-label g-bg-bluegray u-label--sm g-mr-10 g-mb-15">Bluegray</span>
+                    <span class="u-label g-bg-black u-label--sm g-mr-10 g-mb-15">Black</span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode5" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+
+              <div class="col-md-9 ml-md-auto">
+                <div id="shortcode6">
+                  <div class="shortcode-html">
+                    <span class="u-label g-bg-primary u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Primary</span>
+                    <span class="u-label g-bg-lightred u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Lightred</span>
+                    <span class="u-label g-bg-darkred u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Darkred</span>
+                    <span class="u-label g-bg-blue u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Blue</span>
+                    <span class="u-label g-bg-indigo u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Indigo</span>
+                    <span class="u-label g-bg-purple u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Purple</span>
+                    <span class="u-label g-bg-darkpurple u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Darkpurple</span>
+                    <span class="u-label g-bg-pink u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Pink</span>
+                    <span class="u-label g-bg-orange u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Orange</span>
+                    <span class="u-label g-bg-deeporange u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Deeporange</span>
+                    <span class="u-label g-bg-aqua u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Aqua</span>
+                    <span class="u-label g-bg-yellow g-color-main u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Yellow</span>
+                    <span class="u-label g-bg-cyan u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Cyan</span>
+                    <span class="u-label g-bg-teal u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Teal</span>
+                    <span class="u-label g-bg-brown u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Brown</span>
+                    <span class="u-label g-bg-bluegray u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Bluegray</span>
+                    <span class="u-label g-bg-black u-label--lg g-px-15 g-py-8 g-mr-10 g-mb-15">Black</span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode6" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Label Sizes -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- Numeric Labels -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Numeric Labels</h3>
+              </div>
+              <div class="col-md-9 g-mb-60">
+                <div id="shortcode7">
+                  <div class="shortcode-html">
+                    <span class="u-label g-bg-primary g-mr-10 g-mb-15">1</span>
+                    <span class="u-label g-bg-red g-mr-10 g-mb-15">2</span>
+                    <span class="u-label g-bg-lightred g-mr-10 g-mb-15">3</span>
+                    <span class="u-label g-bg-darkred g-mr-10 g-mb-15">4</span>
+                    <span class="u-label g-bg-blue g-mr-10 g-mb-15">5</span>
+                    <span class="u-label g-bg-indigo g-mr-10 g-mb-15">6</span>
+                    <span class="u-label g-bg-purple g-mr-10 g-mb-15">7</span>
+                    <span class="u-label g-bg-darkpurple g-mr-10 g-mb-15">8</span>
+                    <span class="u-label g-bg-pink g-mr-10 g-mb-15">9</span>
+                    <span class="u-label g-bg-orange g-mr-10 g-mb-15">10</span>
+                    <span class="u-label g-bg-deeporange g-mr-10 g-mb-15">11</span>
+                    <span class="u-label g-bg-aqua g-mr-10 g-mb-15">12</span>
+                    <span class="u-label g-bg-yellow g-mr-10 g-mb-15">13</span>
+                    <span class="u-label g-bg-cyan g-mr-10 g-mb-15">14</span>
+                    <span class="u-label g-bg-teal g-mr-10 g-mb-15">15</span>
+                    <span class="u-label g-bg-brown g-mr-10 g-mb-15">16</span>
+                    <span class="u-label g-bg-bluegray g-mr-10 g-mb-15">17</span>
+                    <span class="u-label g-bg-black g-mr-10 g-mb-15">18</span>
+                    <span class="u-label g-bg-primary g-mr-10 g-mb-15">19</span>
+                    <span class="u-label g-bg-red g-mr-10 g-mb-15">20</span>
+
+                    <span class="u-label g-bg-primary g-mr-10 g-mb-15">101</span>
+                    <span class="u-label g-bg-red g-mr-10 g-mb-15">102</span>
+                    <span class="u-label g-bg-lightred g-mr-10 g-mb-15">103</span>
+                    <span class="u-label g-bg-darkred g-mr-10 g-mb-15">104</span>
+                    <span class="u-label g-bg-blue g-mr-10 g-mb-15">105</span>
+                    <span class="u-label g-bg-indigo g-mr-10 g-mb-15">106</span>
+                    <span class="u-label g-bg-purple g-mr-10 g-mb-15">107</span>
+                    <span class="u-label g-bg-darkpurple g-mr-10 g-mb-15">108</span>
+                    <span class="u-label g-bg-pink g-mr-10 g-mb-15">109</span>
+                    <span class="u-label g-bg-orange g-mr-10 g-mb-15">111</span>
+                    <span class="u-label g-bg-deeporange g-mr-10 g-mb-15">111</span>
+                    <span class="u-label g-bg-aqua g-mr-10 g-mb-15">112</span>
+                    <span class="u-label g-bg-yellow g-mr-10 g-mb-15">113</span>
+                    <span class="u-label g-bg-cyan g-mr-10 g-mb-15">114</span>
+                    <span class="u-label g-bg-teal g-mr-10 g-mb-15">115</span>
+                    <span class="u-label g-bg-brown g-mr-10 g-mb-15">116</span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode7" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+
+              <div class="col-md-9 ml-md-auto g-mb-60">
+                <div id="shortcode8">
+                  <div class="shortcode-html">
+                    <span class="u-label g-rounded-3 g-bg-primary g-mr-10 g-mb-15">1</span>
+                    <span class="u-label g-rounded-3 g-bg-red g-mr-10 g-mb-15">2</span>
+                    <span class="u-label g-rounded-3 g-bg-lightred g-mr-10 g-mb-15">3</span>
+                    <span class="u-label g-rounded-3 g-bg-darkred g-mr-10 g-mb-15">4</span>
+                    <span class="u-label g-rounded-3 g-bg-blue g-mr-10 g-mb-15">5</span>
+                    <span class="u-label g-rounded-3 g-bg-indigo g-mr-10 g-mb-15">6</span>
+                    <span class="u-label g-rounded-3 g-bg-purple g-mr-10 g-mb-15">7</span>
+                    <span class="u-label g-rounded-3 g-bg-darkpurple g-mr-10 g-mb-15">8</span>
+                    <span class="u-label g-rounded-3 g-bg-pink g-mr-10 g-mb-15">9</span>
+                    <span class="u-label g-rounded-3 g-bg-orange g-mr-10 g-mb-15">10</span>
+                    <span class="u-label g-rounded-3 g-bg-deeporange g-mr-10 g-mb-15">11</span>
+                    <span class="u-label g-rounded-3 g-bg-aqua g-mr-10 g-mb-15">12</span>
+                    <span class="u-label g-rounded-3 g-bg-yellow g-mr-10 g-mb-15">13</span>
+                    <span class="u-label g-rounded-3 g-bg-cyan g-mr-10 g-mb-15">14</span>
+                    <span class="u-label g-rounded-3 g-bg-teal g-mr-10 g-mb-15">15</span>
+                    <span class="u-label g-rounded-3 g-bg-brown g-mr-10 g-mb-15">16</span>
+                    <span class="u-label g-rounded-3 g-bg-bluegray g-mr-10 g-mb-15">17</span>
+                    <span class="u-label g-rounded-3 g-bg-black g-mr-10 g-mb-15">18</span>
+                    <span class="u-label g-rounded-3 g-bg-primary g-mr-10 g-mb-15">19</span>
+                    <span class="u-label g-rounded-3 g-bg-red g-mr-10 g-mb-15">20</span>
+
+                    <span class="u-label g-rounded-3 g-bg-primary g-mr-10 g-mb-15">101</span>
+                    <span class="u-label g-rounded-3 g-bg-red g-mr-10 g-mb-15">102</span>
+                    <span class="u-label g-rounded-3 g-bg-lightred g-mr-10 g-mb-15">103</span>
+                    <span class="u-label g-rounded-3 g-bg-darkred g-mr-10 g-mb-15">104</span>
+                    <span class="u-label g-rounded-3 g-bg-blue g-mr-10 g-mb-15">105</span>
+                    <span class="u-label g-rounded-3 g-bg-indigo g-mr-10 g-mb-15">106</span>
+                    <span class="u-label g-rounded-3 g-bg-purple g-mr-10 g-mb-15">107</span>
+                    <span class="u-label g-rounded-3 g-bg-darkpurple g-mr-10 g-mb-15">108</span>
+                    <span class="u-label g-rounded-3 g-bg-pink g-mr-10 g-mb-15">109</span>
+                    <span class="u-label g-rounded-3 g-bg-orange g-mr-10 g-mb-15">111</span>
+                    <span class="u-label g-rounded-3 g-bg-deeporange g-mr-10 g-mb-15">111</span>
+                    <span class="u-label g-rounded-3 g-bg-aqua g-mr-10 g-mb-15">112</span>
+                    <span class="u-label g-rounded-3 g-bg-yellow g-mr-10 g-mb-15">113</span>
+                    <span class="u-label g-rounded-3 g-bg-cyan g-mr-10 g-mb-15">114</span>
+                    <span class="u-label g-rounded-3 g-bg-teal g-mr-10 g-mb-15">115</span>
+                    <span class="u-label g-rounded-3 g-bg-brown g-mr-10 g-mb-15">116</span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode8" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+
+              <div class="col-md-9 ml-md-auto">
+                <div id="shortcode9">
+                  <div class="shortcode-html">
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-primary g-mr-10 g-mb-15">1</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-red g-mr-10 g-mb-15">2</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-lightred g-mr-10 g-mb-15">3</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-darkred g-mr-10 g-mb-15">4</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-blue g-mr-10 g-mb-15">5</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-indigo g-mr-10 g-mb-15">6</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-purple g-mr-10 g-mb-15">7</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-darkpurple g-mr-10 g-mb-15">8</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-pink g-mr-10 g-mb-15">9</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-orange g-mr-10 g-mb-15">10</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-deeporange g-mr-10 g-mb-15">11</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-aqua g-mr-10 g-mb-15">12</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-yellow g-mr-10 g-mb-15">13</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-cyan g-mr-10 g-mb-15">14</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-teal g-mr-10 g-mb-15">15</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-brown g-mr-10 g-mb-15">16</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-bluegray g-mr-10 g-mb-15">17</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-black g-mr-10 g-mb-15">18</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-primary g-mr-10 g-mb-15">19</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-red g-mr-10 g-mb-15">20</span>
+
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-primary g-mr-10 g-mb-15">101</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-red g-mr-10 g-mb-15">102</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-lightred g-mr-10 g-mb-15">103</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-darkred g-mr-10 g-mb-15">104</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-blue g-mr-10 g-mb-15">105</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-indigo g-mr-10 g-mb-15">106</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-purple g-mr-10 g-mb-15">107</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-darkpurple g-mr-10 g-mb-15">108</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-pink g-mr-10 g-mb-15">109</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-orange g-mr-10 g-mb-15">111</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-deeporange g-mr-10 g-mb-15">111</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-aqua g-mr-10 g-mb-15">112</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-yellow g-mr-10 g-mb-15">113</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-cyan g-mr-10 g-mb-15">114</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-teal g-mr-10 g-mb-15">115</span>
+                    <span class="u-label g-rounded-20 g-px-15 g-bg-brown g-mr-10 g-mb-15">116</span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode9" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Numeric Labels -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- Labels with Icons -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Labels with Icons</h3>
+              </div>
+
+              <div class="col-md-9 g-mb-60">
+                <div id="shortcode10">
+                  <div class="shortcode-html">
+                    <span class="u-label g-bg-primary g-mr-10 g-mb-15">
+                      <i class="fa fa-bookmark g-mr-3"></i>
+                      At vero eos et sunt
+                    </span>
+                    <span class="u-label g-bg-red g-mr-10 g-mb-15">
+                      <i class="fa fa-asterisk g-mr-3"></i>
+                      Similique atin culpa
+                    </span>
+                    <span class="u-label g-bg-lightred g-mr-10 g-mb-15">
+                      <i class="fa fa-flag g-mr-3"></i>
+                      Voluptatum deleniti
+                    </span>
+                    <span class="u-label g-bg-darkred g-mr-10 g-mb-15">
+                      <i class="fa fa-fire g-mr-3"></i>
+                      Eleniti boluptatun
+                    </span>
+                    <span class="u-label g-bg-blue g-mr-10 g-mb-15">
+                      <i class="fa fa-bookmark g-mr-3"></i>
+                      Sunt at vero et eos
+                    </span>
+                    <span class="u-label g-bg-indigo g-mr-10 g-mb-15">
+                      <i class="fa fa-thumbs-up g-mr-3"></i>
+                      Nulla ipsum
+                    </span>
+                    <span class="u-label g-bg-purple g-mr-10 g-mb-15">
+                      <i class="fa fa-telegram g-mr-3"></i>
+                      Dolor sit
+                    </span>
+                    <span class="u-label g-bg-darkpurple g-mr-10 g-mb-15">
+                      <i class="fa fa-heart g-mr-3"></i>
+                      Amet vero
+                    </span>
+                    <span class="u-label g-bg-pink g-mr-10 g-mb-15">
+                      <i class="fa fa-camera-retro g-mr-3"></i>
+                      Consectetur
+                    </span>
+                    <span class="u-label g-bg-orange g-mr-10 g-mb-15">
+                      <i class="fa fa-coffee g-mr-3"></i>
+                      Adipiscing
+                    </span>
+                    <span class="u-label g-bg-deeporange g-mr-10 g-mb-15">
+                      <i class="fa fa-vcard g-mr-3"></i>
+                      Elitut eleifend
+                    </span>
+                    <span class="u-label g-bg-aqua g-mr-10 g-mb-15">
+                      <i class="fa fa-binoculars g-mr-3"></i>
+                      Fend nisl
+                    </span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode10" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+
+              <div class="col-md-9 ml-md-auto g-mb-60">
+                <div id="shortcode11">
+                  <div class="shortcode-html">
+                    <span class="u-label g-rounded-3 g-bg-primary g-mr-10 g-mb-15">
+                      <i class="fa fa-bookmark g-mr-3"></i>
+                      At vero eos et sunt
+                    </span>
+                    <span class="u-label g-rounded-3 g-bg-red g-mr-10 g-mb-15">
+                      <i class="fa fa-asterisk g-mr-3"></i>
+                      Similique atin culpa
+                    </span>
+                    <span class="u-label g-rounded-3 g-bg-lightred g-mr-10 g-mb-15">
+                      <i class="fa fa-flag g-mr-3"></i>
+                      Voluptatum deleniti
+                    </span>
+                    <span class="u-label g-rounded-3 g-bg-darkred g-mr-10 g-mb-15">
+                      <i class="fa fa-fire g-mr-3"></i>
+                      Eleniti boluptatun
+                    </span>
+                    <span class="u-label g-rounded-3 g-bg-blue g-mr-10 g-mb-15">
+                      <i class="fa fa-bookmark g-mr-3"></i>
+                      Sunt at vero et eos
+                    </span>
+                    <span class="u-label g-rounded-3 g-bg-indigo g-mr-10 g-mb-15">
+                      <i class="fa fa-thumbs-up g-mr-3"></i>
+                      Nulla ipsum
+                    </span>
+                    <span class="u-label g-rounded-3 g-bg-purple g-mr-10 g-mb-15">
+                      <i class="fa fa-telegram g-mr-3"></i>
+                      Dolor sit
+                    </span>
+                    <span class="u-label g-rounded-3 g-bg-darkpurple g-mr-10 g-mb-15">
+                      <i class="fa fa-heart g-mr-3"></i>
+                      Amet vero
+                    </span>
+                    <span class="u-label g-rounded-3 g-bg-pink g-mr-10 g-mb-15">
+                      <i class="fa fa-camera-retro g-mr-3"></i>
+                      Consectetur
+                    </span>
+                    <span class="u-label g-rounded-3 g-bg-orange g-mr-10 g-mb-15">
+                      <i class="fa fa-coffee g-mr-3"></i>
+                      Adipiscing
+                    </span>
+                    <span class="u-label g-rounded-3 g-bg-deeporange g-mr-10 g-mb-15">
+                      <i class="fa fa-vcard g-mr-3"></i>
+                      Elitut eleifend
+                    </span>
+                    <span class="u-label g-rounded-3 g-bg-aqua g-mr-10 g-mb-15">
+                      <i class="fa fa-binoculars g-mr-3"></i>
+                      Fend nisl
+                    </span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode11" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+
+              <div class="col-md-9 ml-md-auto">
+                <div id="shortcode12">
+                  <div class="shortcode-html">
+                    <span class="u-label g-rounded-20 g-bg-primary g-px-15 g-mr-10 g-mb-15">
+                      <i class="fa fa-bookmark g-mr-3"></i>
+                      At vero eos et sunt
+                    </span>
+                    <span class="u-label g-rounded-20 g-bg-red g-px-15 g-mr-10 g-mb-15">
+                      <i class="fa fa-asterisk g-mr-3"></i>
+                      Similique atin culpa
+                    </span>
+                    <span class="u-label g-rounded-20 g-bg-lightred g-px-15 g-mr-10 g-mb-15">
+                      <i class="fa fa-flag g-mr-3"></i>
+                      Voluptatum deleniti
+                    </span>
+                    <span class="u-label g-rounded-20 g-bg-darkred g-px-15 g-mr-10 g-mb-15">
+                      <i class="fa fa-fire g-mr-3"></i>
+                      Eleniti boluptatun
+                    </span>
+                    <span class="u-label g-rounded-20 g-bg-blue g-px-15 g-mr-10 g-mb-15">
+                      <i class="fa fa-bookmark g-mr-3"></i>
+                      Sunt at vero et eos
+                    </span>
+                    <span class="u-label g-rounded-20 g-bg-indigo g-px-15 g-mr-10 g-mb-15">
+                      <i class="fa fa-thumbs-up g-mr-3"></i>
+                      Nulla ipsum
+                    </span>
+                    <span class="u-label g-rounded-20 g-bg-purple g-px-15 g-mr-10 g-mb-15">
+                      <i class="fa fa-telegram g-mr-3"></i>
+                      Dolor sit
+                    </span>
+                    <span class="u-label g-rounded-20 g-bg-darkpurple g-px-15 g-mr-10 g-mb-15">
+                      <i class="fa fa-heart g-mr-3"></i>
+                      Amet vero
+                    </span>
+                    <span class="u-label g-rounded-20 g-bg-pink g-px-15 g-mr-10 g-mb-15">
+                      <i class="fa fa-camera-retro g-mr-3"></i>
+                      Consectetur
+                    </span>
+                    <span class="u-label g-rounded-20 g-bg-orange g-px-15 g-mr-10 g-mb-15">
+                      <i class="fa fa-coffee g-mr-3"></i>
+                      Adipiscing
+                    </span>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode12" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Labels with Icons -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- Different Usages -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">Different Usages</h3>
+              </div>
+
+              <div class="col-md-9 g-mb-60">
+                <div id="shortcode13">
+                  <div class="shortcode-html">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th class="hidden-sm">Last Name</th>
+                            <th>Username</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td class="hidden-sm">Otto</td>
+                            <td>@mdo</td>
+                            <td>
+                              <span class="u-label u-label-warning g-color-white">Expiring</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td class="hidden-sm">Thornton</td>
+                            <td>@fat</td>
+                            <td>
+                              <span class="u-label u-label-success g-color-white">Success</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td class="hidden-sm">the Bird</td>
+                            <td>@twitter</td>
+                            <td>
+                              <span class="u-label u-label-danger g-color-white">Error!</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>htmlstream</td>
+                            <td class="hidden-sm">Web Design</td>
+                            <td>@htmlstream</td>
+                            <td>
+                              <span class="u-label u-label-info g-color-white">Pending</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode13" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+
+              <div class="col-md-9 ml-md-auto g-mb-60">
+                <div id="shortcode14">
+                  <div class="shortcode-html">
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#!">Active
+                          <span class="u-label u-label-num g-bg-white g-color-main g-rounded-15 g-ml-5">4</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link g-pt-10" href="#!">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled g-pt-10" href="#!">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode14" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+
+              <div class="col-md-9 ml-md-auto g-mb-60">
+                <div id="shortcode15">
+                  <div class="shortcode-html">
+                    <ul class="nav nav-pills nav-stacked">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#!">
+                          <span class="float-right u-label u-label-num u-label--sm g-bg-white g-color-main g-rounded-15 g-ml-5">4</span>
+                          Active
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#!">
+                          <span class="float-right u-label u-label-num u-label--sm u-label-default g-color-white g-rounded-15 g-ml-5">4</span>
+                          Link
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#!">
+                          <span class="float-right u-label u-label-num u-label--sm u-label-default g-color-white g-rounded-15 g-ml-5">4</span>
+                          Another link
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#!">
+                          <span class="float-right u-label u-label-num u-label--sm u-label-default g-color-white g-rounded-15 g-ml-5">4</span>
+                          Disabled
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode15" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+
+              <div class="col-md-9 ml-md-auto">
+                <div id="shortcode16">
+                  <div class="shortcode-html">
+                    <h1 class="g-mb-20">Heading 1
+                      <span class="u-label g-bg-primary">New</span>
+                    </h1>
+                    <h2 class="g-mb-20">Heading 2
+                      <span class="u-label g-bg-red">New</span>
+                    </h2>
+                    <h3 class="g-mb-20">Heading 3
+                      <span class="u-label g-bg-blue">New</span>
+                    </h3>
+                    <h4 class="g-mb-20">Heading 4
+                      <span class="u-label g-bg-indigo">New</span>
+                    </h4>
+                    <h5 class="g-mb-20">Heading 5
+                      <span class="u-label g-bg-purple">New</span>
+                    </h5>
+                    <h6 class="g-mb-20">Heading 6
+                      <span class="u-label g-bg-pink">New</span>
+                    </h6>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode16" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End Different Usages -->
+          </section>
+          <!-- End Labels -->
+        </div>
+      </div>
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

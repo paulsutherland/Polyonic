@@ -1,0 +1,509 @@
+/*------------------------------------
+  Margin Spaces
+------------------------------------*/
+//
+// .m-0, .mt-0, .mr-0, .mb-0, .ml-0, .mx-0, .my-0
+// .m-auto, .mt-auto, .mt-auto, .mb-auto, .ml-auto, .mx-auto, .my-auto
+//
+
+/* Margin Spaces (xs)
+------------------------------------*/
+@include margin-spaces(xs);
+
+
+/* Margin Spaces (sm)
+------------------------------------*/
+@include margin-spaces(sm);
+
+
+/* Margin Spaces (md)
+------------------------------------*/
+@include margin-spaces(md);
+
+/* Margin Spaces (lg)
+------------------------------------*/
+@include margin-spaces(lg);
+
+/* Margin Spaces (xl)
+------------------------------------*/
+@include margin-spaces(xl);
+
+
+/* Margins Around
+------------------------------------*/
+.g-ma-1 {
+  @include px-to-rem(margin, 1px !important);
+}
+.g-ma-3 {
+  @include px-to-rem(margin, 3px !important);
+}
+.g-ma-5 {
+  @include px-to-rem(margin, 5px !important);
+}
+.g-ma-10 {
+  @include px-to-rem(margin, 10px !important);
+}
+.g-ma-20 {
+  @include px-to-rem(margin, 20px !important);
+}
+.g-ma-minus-1 {
+  @include px-to-rem(margin, -1px !important);
+}
+
+
+/* Minus Margins
+------------------------------------*/
+/* Minus Margin Top */
+.g-mt-minus-1 {
+  @include px-to-rem(margin-top, -1px);
+}
+.g-mt-minus-20 {
+  @include px-to-rem(margin-top, -20px);
+}
+.g-mt-minus-25 {
+  @include px-to-rem(margin-top, -25px);
+}
+.g-mt-minus-30 {
+  @include px-to-rem(margin-top, -30px);
+}
+.g-mt-minus-40 {
+  @include px-to-rem(margin-top, -40px);
+}
+.g-mt-minus-70 {
+  @include px-to-rem(margin-top, -70px);
+}
+.g-mt-minus-73 {
+  @include px-to-rem(margin-top, -72px !important);
+}
+.g-mt-minus-120 {
+  @include px-to-rem(margin-top, -120px);
+}
+.g-mt-minus-200 {
+  @include px-to-rem(margin-top, -200px);
+}
+.g-mt-minus-300 {
+  @include px-to-rem(margin-top, -300px);
+}
+
+/* Minus Margin Bottom */
+.g-mb-minus-70 {
+  @include px-to-rem(margin-bottom, -70px);
+}
+
+/* Minus Margin Left */
+.g-ml-minus-20 {
+  @include px-to-rem(margin-left, -20px);
+}
+.g-ml-minus-23 {
+  @include px-to-rem(margin-left, -23px);
+}
+.g-ml-minus-35 {
+  @include px-to-rem(margin-left, -35px);
+}
+.g-ml-minus-55 {
+  @include px-to-rem(margin-left, -55px);
+}
+.g-ml-minus-25 {
+  @include px-to-rem(margin-left, -25px);
+}
+.g-ml-minus-82 {
+  @include px-to-rem(margin-left, -82px);
+}
+.g-ml-minus-90 {
+  @include px-to-rem(margin-left, -90px);
+}
+.g-ml-minus-100 {
+  @include px-to-rem(margin-left, -100px);
+}
+.g-ml-minus-118 {
+  @include px-to-rem(margin-left, -118px);
+}
+.g-ml-minus-142 {
+  @include px-to-rem(margin-left, -142px);
+}
+
+/* Minus Margin Right */
+.g-mr-minus-50 {
+  @include px-to-rem(margin-right, -50px);
+}
+.g-mr-minus-100 {
+  @include px-to-rem(margin-right, -100px);
+}
+
+/* Margin Left and Right */
+.g-mx-minus-1 {
+  @include px-to-rem(margin-left, -1px);
+  @include px-to-rem(margin-right, -1px);
+}
+.g-mx-minus-2 {
+  @include px-to-rem(margin-left, -2px);
+  @include px-to-rem(margin-right, -2px);
+}
+.g-mx-minus-4 {
+  @include px-to-rem(margin-left, -4px);
+  @include px-to-rem(margin-right, -4px);
+}
+.g-mx-minus-5 {
+  @include px-to-rem(margin-left, -5px);
+  @include px-to-rem(margin-right, -5px);
+}
+.g-mx-minus-15 {
+  @include px-to-rem(margin-left, -15px);
+  @include px-to-rem(margin-right, -15px);
+}
+.g-mx-minus-25 {
+  @include px-to-rem(margin-left, -25px);
+  @include px-to-rem(margin-right, -25px);
+}
+.g-mx-minus-30 {
+  @include px-to-rem(margin-left, -30px);
+  @include px-to-rem(margin-right, -30px);
+}
+
+
+/* Custon Spaces
+------------------------------------*/
+
+/* Margin Top */
+.g-mt-10x {
+  margin-top: 10%; /* O */
+}
+.g-mt-21 {
+  @include px-to-rem(margin-top, 21px);
+}
+.g-mt-22 {
+  @include px-to-rem(margin-top, 22px);
+}
+.g-mt-28 {
+  @include px-to-rem(margin-top, 28px !important);
+}
+.g-mt-32 {
+  @include px-to-rem(margin-top, 32px !important); // Z
+}
+.g-mt-57 {
+  @include px-to-rem(margin-top, 57px !important); // Z
+}
+.g-mt-500 {
+  @include px-to-rem(margin-top, 500px);
+}
+
+/* Margin Bottom */
+.g-mb-23 {
+  @include px-to-rem(margin-bottom, 23px);
+}
+.g-mb-28 {
+  @include px-to-rem(margin-bottom, 28px);
+}
+.g-mb-500 {
+  @include px-to-rem(margin-bottom, 500px);
+}
+
+/* Margin Left */
+.g-ml-10x {
+  margin-left: 10%; /* O */
+}
+.g-ml-12 {
+  @include px-to-rem(margin-left, 12px);
+}
+.g-ml-13 {
+  @include px-to-rem(margin-left, 13px);
+}
+.g-ml-20 {
+  @include px-to-rem(margin-left, 20px);
+}
+.g-ml-25 {
+  @include px-to-rem(margin-left, 25px);
+}
+.g-ml-35 {
+  @include px-to-rem(margin-left, 35px);
+}
+.g-ml-43 {
+  @include px-to-rem(margin-left, 43px);
+}
+.g-ml-50 {
+  @include px-to-rem(margin-left, 50px);
+}
+.g-ml-60 {
+  @include px-to-rem(margin-left, 60px);
+}
+.g-ml-75 {
+  @include px-to-rem(margin-left, 75px);
+}
+.g-ml-82 {
+  @include px-to-rem(margin-left, 82px);
+}
+.g-ml-85 {
+  @include px-to-rem(margin-left, 85px);
+}
+.g-ml-105 {
+  @include px-to-rem(margin-left, 105px);
+}
+.g-ml-118 {
+  @include px-to-rem(margin-left, 118px);
+}
+.g-ml-142 {
+  @include px-to-rem(margin-left, 142px);
+}
+
+/* Margin Right */
+.g-mr-12 {
+  @include px-to-rem(margin-right, 12px);
+}
+.g-mr-60 {
+  @include px-to-rem(margin-right, 60px);
+}
+.g-mr-63 {
+  @include px-to-rem(margin-right, 63px);
+}
+.g-mr-75 {
+  @include px-to-rem(margin-right, 75px);
+}
+.g-mr-85 {
+  @include px-to-rem(margin-right, 85px !important);
+}
+.g-mr-minus-10 {
+  @include px-to-rem(margin-right, -10px);
+}
+.g-mr-minus-13 {
+  @include px-to-rem(margin-right, -13px);
+}
+.g-mr-minus-15 {
+  @include px-to-rem(margin-right, -15px);
+}
+.g-mr-minus-23 {
+  @include px-to-rem(margin-right, -23px);
+}
+.g-mr-minus-30 {
+  @include px-to-rem(margin-right, -30px);
+}
+
+/* Margin Left and Right */
+.g-mx-minus-10 {
+  @include px-to-rem(margin-left, -10px);
+  @include px-to-rem(margin-right, -10px);
+}
+.g-mx-minus-15 {
+  @include px-to-rem(margin-left, -15px);
+  @include px-to-rem(margin-right, -15px);
+}
+.g-mx-minus-20 {
+  @include px-to-rem(margin-left, -20px);
+  @include px-to-rem(margin-right, -20px);
+}
+.g-mx-minus-25 {
+  @include px-to-rem(margin-left, -25px);
+  @include px-to-rem(margin-right, -25px);
+}
+.g-mx-minus-30 {
+  @include px-to-rem(margin-left, -30px);
+  @include px-to-rem(margin-right, -30px);
+}
+
+/* Margin Top and Bottom */
+.g-my-minus-1 {
+  @include px-to-rem(margin-top, -1px);
+  @include px-to-rem(margin-bottom, -1px);
+}
+.g-my-minus-2 {
+  @include px-to-rem(margin-top, -2px);
+  @include px-to-rem(margin-bottom, -2px);
+}
+.g-my-minus-10 {
+  @include px-to-rem(margin-top, -10px);
+  @include px-to-rem(margin-bottom, -10px);
+}
+
+// @media (min-width: $g-sm) {
+//   .g-x-40--sm {
+//     @include px-to-rem(margin-right, 40px);
+//     @include px-to-rem(margin-left, 40px);
+//   }
+// }
+
+.g-m-reset {
+  margin: 0 !important;
+}
+
+@media (min-width: $g-sm) {
+  .g-mb-0--sm {
+    margin-bottom: 0 !important;
+  }
+
+  .g-mx-minus-10--sm {
+    @include px-to-rem(margin-left, -10px);
+    @include px-to-rem(margin-right, -10px);
+  }
+
+  .g-my-minus-5--sm {
+    @include px-to-rem(margin-top, -5px);
+    @include px-to-rem(margin-bottom, -5px);
+  }
+
+  .g-my-minus-10--sm {
+    @include px-to-rem(margin-top, -10px);
+    @include px-to-rem(margin-bottom, -10px);
+  }
+
+  .g-mx-minus-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .g-my-minus-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .g-mr-12--sm {
+    @include px-to-rem(margin-right, 12px);
+  }
+}
+
+@media (min-width: $g-md) {
+  .g-mx-12--md {
+    @include px-to-rem(margin-left, 12px !important);
+    @include px-to-rem(margin-right, 12px !important);
+  }
+  .g-ml-12--md {
+    @include px-to-rem(margin-left, 12px !important);
+  }
+  .g-mr-12--md {
+    @include px-to-rem(margin-right, 12px !important);
+  }
+  .g-mb-0--md {
+    margin-bottom: 0 !important;
+  }
+  .g-ml-minus-1--md {
+    @include px-to-rem(margin-left, -1px);
+  }
+  .g-ml-minus-9--md {
+    @include px-to-rem(margin-left, -9px !important);
+  }
+  .g-ml-minus-15--md {
+    @include px-to-rem(margin-left, -15px !important);
+  }
+  .g-ml-minus-23--md {
+    @include px-to-rem(margin-left, -23px !important);
+  }
+  .g-ml-minus-25--md {
+    @include px-to-rem(margin-left, -25px !important);
+  }
+  .g-mr-minus-1--md {
+    @include px-to-rem(margin-right, -1px);
+  }
+  .g-mr-minus-9--md {
+    @include px-to-rem(margin-right, -9px !important);
+  }
+  .g-mr-minus-13--md {
+    @include px-to-rem(margin-right, -13px);
+  }
+  .g-mr-minus-23--md {
+    @include px-to-rem(margin-right, -23px);
+  }
+  .g-ml-minus-82--md {
+    @include px-to-rem(margin-left, -82px !important);
+  }
+  .g-mr-60--md {
+    @include px-to-rem(margin-right, 60px !important);
+  }
+  .g-mr-63--md {
+    @include px-to-rem(margin-right, 63px !important);
+  }
+  .g-ml-85--md {
+    @include px-to-rem(margin-left, 85px !important);
+  }
+  .g-ml-250--md {
+    @include px-to-rem(margin-left, 250px !important);
+  }
+  .g-ml-minus-90--md {
+    @include px-to-rem(margin-left, -90px !important);
+  }
+  .g-m-reset--md {
+    margin: 0 !important;
+  }
+  .g-mt-130--md {
+    @include px-to-rem(margin-top, 130px !important);
+  }
+  .g-mt-minus-76--md {
+    @include px-to-rem(margin-top, -76px !important);
+  }
+  .g-my-30--md {
+    @include px-to-rem(margin-top, 30px !important);
+    @include px-to-rem(margin-bpttpm, 30px !important);
+  }
+}
+
+@media (min-width: $g-lg) {
+  .g-mx-12--lg {
+    @include px-to-rem(margin-left, 12px !important);
+    @include px-to-rem(margin-right, 12px !important);
+  }
+
+  .g-mb-60--lg {
+    @include px-to-rem(margin-bottom, 60px !important);
+  }
+
+  .g-ml-12--lg {
+    @include px-to-rem(margin-left, 12px !important);
+  }
+  .g-mr-12--lg {
+    @include px-to-rem(margin-right, 12px !important);
+  }
+  .g-mr-minus-1--lg {
+    @include px-to-rem(margin-right, -1px);
+  }
+  .g-mr-minus-50--lg {
+    @include px-to-rem(margin-right, -50px);
+  }
+  .g-mr-minus-100--lg {
+    @include px-to-rem(margin-right, -100px);
+  }
+  .g-ml-minus-100--lg {
+    @include px-to-rem(margin-left, -100px);
+  }
+  .g-ml-minus-100 {
+    @include px-to-rem(margin-left, -100px);
+  }
+  .g-mx-minus-5--lg {
+    @include px-to-rem(margin-left, -5px);
+    @include px-to-rem(margin-right, -5px);
+  }
+  .g-mx-minus-10--lg {
+    @include px-to-rem(margin-left, -10px);
+    @include px-to-rem(margin-right, -10px);
+  }
+  .g-mx-minus-15--lg {
+    @include px-to-rem(margin-left, -15px);
+    @include px-to-rem(margin-right, -15px);
+  }
+  .g-ml-minus-50--lg {
+    @include px-to-rem(margin-left, -50px);
+  }
+
+  .g-m-reset--lg {
+    margin: 0 !important;
+  }
+
+  .g-ml-100--lg {
+    @include px-to-rem(margin-left, 100px);
+  }
+}
+
+@media (min-width: $g-xl) {
+  .g-mx-minus-10--xl {
+    @include px-to-rem(margin-left, -10px);
+    @include px-to-rem(margin-right, -10px);
+  }
+  .g-mx-minus-15--xl {
+    @include px-to-rem(margin-left, -15px);
+    @include px-to-rem(margin-right, -15px);
+  }
+
+  .g-m-reset--xl {
+    margin: 0 !important;
+  }
+
+  .g-mr-0--xl {
+    @include px-to-rem(margin-right, 0px !important);
+  }
+}

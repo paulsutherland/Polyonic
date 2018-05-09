@@ -1,0 +1,7 @@
+/*------------------------------------
+  Heading-v8-1
+------------------------------------*/
+.u-heading-v8-1 .u-heading-v8__title strong {
+  @extend %u-heading-v8__title;
+  @include px-to-rem(padding, 1px 7px);
+}

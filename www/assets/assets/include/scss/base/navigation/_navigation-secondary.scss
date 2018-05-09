@@ -1,0 +1,11 @@
+/*------------------------------------
+  Secondary Navigation
+------------------------------------*/
+
+.u-secondary-navigation {
+	z-index: 3;
+
+	.active a {
+		color: $g-color-primary;
+	}
+}

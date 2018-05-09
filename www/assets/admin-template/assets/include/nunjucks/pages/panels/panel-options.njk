@@ -1,0 +1,902 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Panel's Options" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu6 = "unCollapsed" %}
+{% set activeMenuItem = "panel-options" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: "Panels",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/flatpickr/dist/css/flatpickr.min.css">
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+  <section class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel">
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+        <div class="g-pa-20">
+          <h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-40">{{ title }}</h1>
+
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-px-15 g-px-30--sm g-pt-15 g-pt-25--sm pb-0">
+                  <div class="media">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown1Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown1"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown1"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown1Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-px-15 g-px-30--sm g-py-10 g-py-15--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Marketers/advertisers usually focus their efforts on the people responsible for making the purchase. In many cases, this is an effective approach but in other cases it can make for a totally
+                    useless marketing campaign. Virgin Mobile took a more effective approach in marketing their cell phone service by focusing not on the people that would be making the actual purchase, but instead focusing on the influencers of the people making the
+                    purchase. To make this campaign work, Virgin developed a viral website called Parental Enlightenment Kit which offers many tips (often fairy funny ones) to convince their parents to purchase a Virgin Mobile phone for them. By enlisting the teenagers
+                    Virgin has multiplied the effectiveness of their marketing campaign.</p>
+                </div>
+
+                <footer class="card-footer d-flex g-bg-transparent g-brd-top-none g-pa-15 g-pa-30--sm g-pt-25--sm">
+                  <div class="media w-100">
+                    <div class="d-flex align-self-center">
+                      <div class="media">
+                        <a class="d-flex align-self-center g-mr-20" href="#!">
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                        </a>
+
+                        <div class="media-body align-self-center">
+                          <h3 class="g-font-weight-300 g-font-size-16 g-color-black g-mb-5">B<span class="g-hidden-md-up">.</span><span class="g-hidden-md-down">lanche&nbsp;</span>Collier</h3>
+                          <em class="d-block g-font-style-normal g-font-weight-300 g-color-gray-dark-v6">Employees</em>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-end">
+                      <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-heart g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                        <span class="g-hidden-md-down g-ml-5">Like</span>
+                      </a>
+                      <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-30--sm" href="#!">
+                        <i class="hs-admin-share g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                        <span class="g-hidden-md-down g-ml-5">Share</span>
+                      </a>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-15 g-pa-30--sm pb-0">
+                  <div class="media">
+                    <div class="d-flex align-self-center">
+                      <div class="media">
+                        <a class="d-flex align-self-center g-mr-10 g-mr-15--md" href="#!">
+                          <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                        </a>
+
+                        <div class="media-body align-self-center">
+                          <h3 class="g-font-weight-300 g-font-size-default g-font-size-16--md g-color-black mb-0">V<span class="g-hidden-md-up">.</span><span class="g-hidden-md-down">ernon&nbsp;</span>Douglas</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-end">
+                      <div id="datepickerWrapper" class="u-datepicker-right u-datepicker--v3">
+                        <input id="datepicker" class="g-font-size-12 g-font-size-default--md" type="text" data-rp-wrapper="#datepickerWrapper" data-rp-date-format="d M Y" data-rp-default-date='["02 Oct 2017"]'>
+                      </div>
+
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown2Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown2"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown2"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown2" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown2Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-px-30--sm g-py-20--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Marketers/advertisers usually focus their efforts on the people responsible for making the purchase. In many cases, this is an effective approach but in other cases it can make for a totally
+                    useless marketing campaign. Virgin Mobile took a more effective approach in marketing their cell phone service by focusing not on the people that would be making the actual purchase, but instead focusing on the influencers of the people making the
+                    purchase. To make this campaign work, Virgin developed a viral website called Parental Enlightenment Kit which offers many tips (often fairy funny ones) to convince their parents to purchase a Virgin Mobile phone for them. By enlisting the teenagers
+                    Virgin has multiplied the effectiveness of their marketing campaign.</p>
+                </div>
+
+                <footer class="card-footer d-flex g-bg-transparent g-brd-top-none g-pa-15 g-pa-30--sm pt-0">
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">
+                    <i class="hs-admin-heart g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Like</span>
+                  </a>
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-30--sm" href="#!">
+                    <i class="hs-admin-share g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Share</span>
+                  </a>
+                </footer>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-15 g-pa-30--sm pb-0">
+                  <div class="media">
+                    <div class="d-flex align-self-center">
+                      <div class="media">
+                        <a class="d-flex align-self-center g-mr-20" href="#!">
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                        </a>
+
+                        <div class="media-body align-self-center">
+                          <h3 class="g-font-weight-300 g-font-size-16 g-color-black g-mb-5">B<span class="g-hidden-md-up">.</span><span class="g-hidden-md-down">lanche&nbsp;</span>Collier</h3>
+                          <em class="d-block g-font-style-normal g-font-weight-300 g-color-gray-dark-v6">Uploaded New Files to <a class="u-link-v5 g-color-lightblue-v3 g-color-lightblue-v3--hover" href="#!">Project Dropbox</a></em>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-end">
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown3Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown3"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown3"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown3" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown3Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-px-30--sm g-py-20--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Marketers/advertisers usually focus their efforts on the people responsible for making the purchase. In many cases, this is an effective approach but in other cases it can make for a totally
+                    useless marketing campaign. Virgin Mobile took a more effective approach in marketing their cell phone service by focusing not on the people that would be making the actual purchase, but instead focusing on the influencers of the people making the
+                    purchase. To make this campaign work, Virgin developed a viral website called Parental Enlightenment Kit which offers many tips (often fairy funny ones) to convince their parents to purchase a Virgin Mobile phone for them. By enlisting the teenagers
+                    Virgin has multiplied the effectiveness of their marketing campaign.</p>
+                </div>
+
+                <footer class="card-footer d-flex g-bg-transparent g-brd-top-none g-pa-15 g-pa-30--sm g-pt-10 g-pt-15--sm">
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">
+                    <i class="hs-admin-heart g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Like</span>
+                  </a>
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-30--sm" href="#!">
+                    <i class="hs-admin-share g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Share</span>
+                  </a>
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-30--sm" href="#!">
+                    <i class="hs-admin-comments g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Comment</span>
+                  </a>
+                </footer>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-px-15 g-px-30--sm g-pt-15 g-pt-20--sm pb-0">
+                  <div class="media">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown4Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown4"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown4"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown4" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown4Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-px-30--sm g-py-20--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic with Background</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                </div>
+
+                <footer class="card-footer d-flex g-bg-gray-light-v8 g-brd-top-none g-pa-15 g-pa-30--sm">
+                  <div class="media w-100">
+                    <div class="d-flex align-self-center">
+                      <div class="media">
+                        <a class="d-flex align-self-center g-mr-20" href="#!">
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                        </a>
+
+                        <div class="media-body align-self-center">
+                          <h3 class="g-font-weight-300 g-font-size-16 g-color-black g-mb-5">B<span class="g-hidden-md-up">.</span><span class="g-hidden-md-down">lanche&nbsp;</span>Collier</h3>
+                          <em class="d-block g-font-style-normal g-font-weight-300 g-color-gray-dark-v6">Employees</em>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-end">
+                      <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-heart g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                        <span class="g-hidden-md-down g-ml-5">Like</span>
+                      </a>
+                      <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-30--sm" href="#!">
+                        <i class="hs-admin-share g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                        <span class="g-hidden-md-down g-ml-5">Share</span>
+                      </a>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-md-6">
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-px-15 g-px-30--sm g-pt-15 g-pt-25--sm pb-0">
+                  <div class="media">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown5Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown5"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown5"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown5" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown5Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-pa-30--sm g-pt-10 g-pt-15--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Separator</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                </div>
+
+                <hr class="d-flex g-brd-gray-light-v7 g-mx-15 g-mx-30--sm my-0">
+
+                <footer class="card-footer d-flex g-bg-transparent g-brd-top-none g-pa-15 g-pa-30--sm g-pt-25--sm">
+                  <div class="media w-100">
+                    <div class="d-flex align-self-center">
+                      <div class="media">
+                        <a class="d-flex align-self-center g-mr-20" href="#!">
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                        </a>
+
+                        <div class="media-body align-self-center">
+                          <h3 class="g-font-weight-300 g-font-size-16 g-color-black g-mb-5">B<span class="g-hidden-md-up">.</span><span class="g-hidden-md-down">lanche&nbsp;</span>Collier</h3>
+                          <em class="d-block g-font-style-normal g-font-weight-300 g-color-gray-dark-v6">Employees</em>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-end">
+                      <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-heart g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                        <span class="g-hidden-md-down g-ml-5">Like</span>
+                      </a>
+                      <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-30--sm" href="#!">
+                        <i class="hs-admin-share g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                        <span class="g-hidden-md-down g-ml-5">Share</span>
+                      </a>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-15 g-pa-30--sm">
+                  <div class="media">
+                    <div class="d-flex align-self-center">
+                      <div class="media">
+                        <a class="d-flex align-self-center g-mr-10 g-mr-15--md" href="#!">
+                          <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                        </a>
+
+                        <div class="media-body align-self-center">
+                          <h3 class="g-font-weight-300 g-font-size-default g-font-size-16--md g-color-black mb-0">V<span class="g-hidden-md-up">.</span><span class="g-hidden-md-down">ernon&nbsp;</span>Douglas</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-end">
+                      <div id="datepickerWrapper2" class="u-datepicker-right u-datepicker--v3">
+                        <input id="datepicker2" class="g-font-size-12 g-font-size-default--md" type="text" data-rp-wrapper="#datepickerWrapper2" data-rp-date-format="d M Y" data-rp-default-date='["02 Oct 2017"]'>
+                      </div>
+
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown6Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown6"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown6"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown6" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown6Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <hr class="d-flex g-brd-gray-light-v7 g-mx-15 g-mx-30--sm my-0">
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Marketers/advertisers usually focus their efforts on the people responsible for making the purchase. In many cases, this is an effective approach but in other cases it can make for a totally
+                    useless marketing campaign. Virgin Mobile took a more effective approach in marketing their cell phone service by focusing not on the people that would be making the actual purchase, but instead focusing on the influencers of the people making the
+                    purchase. To make this campaign work, Virgin developed a viral website called Parental Enlightenment Kit which offers many tips (often fairy funny ones) to convince their parents to purchase a Virgin Mobile phone for them. By enlisting the teenagers
+                    Virgin has multiplied the effectiveness of their marketing campaign.</p>
+                </div>
+
+                <footer class="card-footer d-flex g-bg-transparent g-brd-top-none g-pa-15 g-pa-30--sm pt-0">
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">
+                    <i class="hs-admin-heart g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Like</span>
+                  </a>
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-30--sm" href="#!">
+                    <i class="hs-admin-share g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Share</span>
+                  </a>
+                </footer>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-15 g-pa-30--sm">
+                  <div class="media">
+                    <div class="d-flex align-self-center">
+                      <div class="media">
+                        <a class="d-flex align-self-center g-mr-20" href="#!">
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                        </a>
+
+                        <div class="media-body align-self-center">
+                          <h3 class="g-font-weight-300 g-font-size-16 g-color-black g-mb-5">B<span class="g-hidden-md-up">.</span><span class="g-hidden-md-down">lanche&nbsp;</span>Collier</h3>
+                          <em class="d-block g-font-style-normal g-font-weight-300 g-color-gray-dark-v6">Uploaded New Files to <a class="u-link-v5 g-color-lightblue-v3 g-color-lightblue-v3--hover" href="#!">Project Dropbox</a></em>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-end">
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown7Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown7"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown7"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown7" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown7Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <hr class="d-flex g-brd-gray-light-v7 g-mx-15 g-mx-30--sm my-0">
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Marketers/advertisers usually focus their efforts on the people responsible for making the purchase. In many cases, this is an effective approach but in other cases it can make for a totally
+                    useless marketing campaign. Virgin Mobile took a more effective approach in marketing their cell phone service by focusing not on the people that would be making the actual purchase, but instead focusing on the influencers of the people making the
+                    purchase. To make this campaign work, Virgin developed a viral website called Parental Enlightenment Kit which offers many tips (often fairy funny ones) to convince their parents to purchase a Virgin Mobile phone for them. By enlisting the teenagers
+                    Virgin has multiplied the effectiveness of their marketing campaign.</p>
+                </div>
+
+                <footer class="card-footer d-flex g-bg-transparent g-brd-top-none g-pa-15 g-pa-30--sm pt-0">
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">
+                    <i class="hs-admin-heart g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Like</span>
+                  </a>
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-30--sm" href="#!">
+                    <i class="hs-admin-share g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Share</span>
+                  </a>
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-30--sm" href="#!">
+                    <i class="hs-admin-comments g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Comment</span>
+                  </a>
+                </footer>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-gray-light-v8 g-brd-bottom-none g-pa-15 g-pa-30--sm">
+                  <div class="media">
+                    <div class="d-flex align-self-center">
+                      <div class="media">
+                        <a class="d-flex align-self-center g-mr-20" href="#!">
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                        </a>
+
+                        <div class="media-body align-self-center">
+                          <h3 class="g-font-weight-300 g-font-size-16 g-color-black g-mb-5">B<span class="g-hidden-md-up">.</span><span class="g-hidden-md-down">lanche&nbsp;</span>Collier</h3>
+                          <em class="d-block g-font-style-normal g-font-weight-300 g-color-gray-dark-v6">Uploaded New Files to <a class="u-link-v5 g-color-lightblue-v3 g-color-lightblue-v3--hover" href="#!">Project Dropbox</a></em>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-end">
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown8Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown8"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown8"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown8" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown8Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Marketers/advertisers usually focus their efforts on the people responsible for making the purchase. In many cases, this is an effective approach but in other cases it can make for a totally
+                    useless marketing campaign. Virgin Mobile took a more effective approach in marketing their cell phone service by focusing not on the people that would be making the actual purchase, but instead focusing on the influencers of the people making the
+                    purchase. To make this campaign work, Virgin developed a viral website called Parental Enlightenment Kit which offers many tips (often fairy funny ones) to convince their parents to purchase a Virgin Mobile phone for them. By enlisting the teenagers
+                    Virgin has multiplied the effectiveness of their marketing campaign.</p>
+                </div>
+
+                <footer class="card-footer d-flex g-bg-transparent g-brd-top-none g-pa-15 g-pa-30--sm pt-0">
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">
+                    <i class="hs-admin-heart g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Like</span>
+                  </a>
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-30--sm" href="#!">
+                    <i class="hs-admin-share g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Share</span>
+                  </a>
+                  <a class="d-flex align-items-center u-link-v5 g-parent g-color-gray-dark-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-30--sm" href="#!">
+                    <i class="hs-admin-comments g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v4--parent-hover"></i>
+                    <span class="g-hidden-md-down g-ml-5">Comment</span>
+                  </a>
+                </footer>
+              </div>
+              <!-- End Panel -->
+            </div>
+          </div>
+        </div>
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script src="{{ adminRoot }}assets/vendor/flatpickr/dist/js/flatpickr.min.js"></script>
+
+<script src="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+
+<script src="{{ adminRoot }}assets/js/components/hs.range-datepicker.js"></script>
+
+<script src="{{ adminRoot }}assets/js/components/hs.bar-chart.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of range datepicker
+    $.HSCore.components.HSRangeDatepicker.init('#datepicker, #datepicker2');
+
+    // initialization of charts
+    $.HSCore.components.HSBarChart.init('.js-bar-chart');
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav', {
+      afterOpen: function() {
+        setTimeout(function() {
+          $.HSCore.components.HSBarChart.init('.js-bar-chart');
+        }, 400);
+      },
+      afterClose: function() {
+        setTimeout(function() {
+          $.HSCore.components.HSBarChart.init('.js-bar-chart');
+        }, 400);
+      }
+    });
+  });
+</script>
+</body>
+</html>

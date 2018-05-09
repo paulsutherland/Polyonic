@@ -1,0 +1,23 @@
+//
+// Block Centered
+//
+
+@mixin block-centered($position: 0, $horizontal: true, $vertical: true) {
+  @if ($position == absolute) {
+    position: absolute !important
+  } @else {
+    position: relative
+  }
+  @if ($horizontal and $vertical) {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50% !important;
+    transform: translateX(-50%);
+  } @else if ($vertical) {
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+  -webkit-backface-visibility: hidden; // Improvement for Chrome browser
+}

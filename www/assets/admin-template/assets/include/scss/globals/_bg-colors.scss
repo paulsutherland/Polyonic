@@ -1,0 +1,238 @@
+/*------------------------------------
+  Background Colors
+------------------------------------*/
+
+.g-bg {
+  /* Gray Background Colors */
+  &-gray {
+    // Gray Light
+    &-light {
+      &-v6 {
+        background-color: $g-color-gray-light-v6 !important;
+      }
+
+      &-v7 {
+        background-color: $g-color-gray-light-v7 !important;
+
+        &--parent-sibling-checked {
+          input:checked + .g-parent & {
+            background-color: $g-color-gray-light-v7 !important;
+          }
+        }
+      }
+
+      &-v8 {
+        background-color: $g-color-gray-light-v8 !important;
+
+        &--hover:hover {
+          background-color: $g-color-gray-light-v8 !important;
+        }
+
+        &--active.active {
+          background-color: $g-color-gray-light-v8 !important;
+        }
+
+        &--disabled:disabled {
+          background-color: $g-color-gray-light-v8 !important;
+        }
+
+        &--sibling-checked {
+          input:checked + & {
+            background-color: $g-color-gray-light-v8 !important;
+          }
+        }
+      }
+
+      &-v8--opacity-0_2 {
+        background-color: rgba($g-color-gray-light-v8, .2) !important;
+      }
+
+      &-v8--opacity-0_4 {
+        background-color: rgba($g-color-gray-light-v8, .4) !important;
+
+        &--checked.checked {
+          background-color: rgba($g-color-gray-light-v8, .4) !important;
+        }
+      }
+
+      &-v9 {
+        background-color: $g-color-gray-light-v9 !important;
+      }
+
+      &-v12 {
+        background-color: $g-color-gray-light-v12 !important;
+      }
+    }
+
+    // Gray Dark
+    &-dark {
+      &-v6 {
+        background-color: $g-color-gray-dark-v6 !important;
+      }
+
+      &-v7 {
+        background-color: $g-color-gray-dark-v7 !important;
+      }
+
+      &-v8 {
+        background-color: $g-color-gray-dark-v8 !important;
+      }
+
+      &-v9 {
+        background-color: $g-color-gray-dark-v9 !important;
+      }
+
+      &-v10 {
+        background-color: $g-color-gray-dark-v10 !important;
+      }
+    }
+  }
+
+  /* Lightblue Background Colors */
+  &-lightblue {
+    &-v2 {
+      background-color: $g-color-lightblue-v2 !important;
+    }
+
+    &-v3 {
+      background-color: $g-color-lightblue-v3 !important;
+
+      &--hover:hover {
+        background-color: $g-color-lightblue-v3 !important;
+      }
+
+      &--active.active {
+        background-color: $g-color-lightblue-v3 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + & {
+          background-color: $g-color-lightblue-v3 !important;
+        }
+
+        i {
+          input[type="checkbox"]:checked + &,
+          input[type="radio"]:checked + & {
+            background-color: $g-color-lightblue-v3 !important;
+          }
+        }
+      }
+
+      &--parent-checked {
+        input[type="checkbox"]:checked + * &,
+        input[type="radio"]:checked + * & {
+          background-color: $g-color-lightblue-v3 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          background-color: $g-color-lightblue-v3 !important;
+        }
+      }
+    }
+
+    &-v4 {
+      background-color: $g-color-lightblue-v4 !important;
+
+      &--parent-hover {
+        .g-parent:hover & {
+          background-color: $g-color-lightblue-v4 !important;
+        }
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + & {
+          background-color: $g-color-lightblue-v3 !important;
+        }
+      }
+    }
+
+    &-v5 {
+      background-color: $g-color-lightblue-v5 !important;
+    }
+
+    &-v6 {
+      background-color: $g-color-lightblue-v6 !important;
+    }
+
+    &-v10 {
+      background-color: $g-color-lightblue-v10 !important;
+
+      &-opacity-0_5 {
+        background-color: rgba($g-color-lightblue-v10, .5) !important;
+      }
+    }
+  }
+
+  /* Darkblue Background Colors */
+  &-darkblue {
+    &-v2 {
+      background-color: $g-color-darkblue-v2 !important;
+    }
+
+    &-v3 {
+      background-color: $g-color-darkblue-v3 !important;
+
+      &--hover:hover {
+        background-color: $g-color-darkblue-v3 !important;
+      }
+    }
+
+    &-v4 {
+      background-color: $g-color-darkblue-v4 !important;
+    }
+
+    &-v5 {
+      background-color: $g-color-darkblue-v5 !important;
+    }
+
+    &-v6 {
+      background-color: $g-color-darkblue-v6 !important;
+    }
+
+    &-v7 {
+      background-color: $g-color-darkblue-v7 !important;
+    }
+  }
+
+  /* Teal Background Colors */
+  &-teal {
+    &-v2 {
+      background-color: $g-color-teal-v2 !important;
+    }
+  }
+
+  /* Lightred Background Colors */
+  &-lightred {
+    &-v2 {
+      background-color: $g-color-lightred-v2 !important;
+    }
+
+    &-v3 {
+      background-color: $g-color-lightred-v3 !important;
+    }
+  }
+
+  /* Pink Background Colors */
+  &-pink-v2 {
+    background-color: $g-color-pink-v2 !important;
+  }
+
+  /* Lightbrown Background Colors */
+  &-lightbrown {
+    background-color: $g-color-lightbrown !important;
+  }
+
+  /* Lightyellow Background Colors */
+  &-lightyellow {
+    background-color: $g-color-lightyellow !important;
+  }
+
+  /* Dropbox Background Colors */
+  &-dropbox {
+    background-color: $g-color-dropbox !important;
+  }
+}

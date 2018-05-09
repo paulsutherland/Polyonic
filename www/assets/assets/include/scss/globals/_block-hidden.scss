@@ -1,0 +1,58 @@
+/*------------------------------------
+  Block Hidden
+------------------------------------*/
+.g-hidden-xs-up {
+  display: none !important;
+}
+
+@media (max-width: 575px) {
+  .g-hidden-xs-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .g-hidden-sm-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .g-hidden-sm-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .g-hidden-md-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .g-hidden-md-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .g-hidden-lg-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .g-hidden-lg-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .g-hidden-xl-up {
+    display: none !important;
+  }
+}
+
+.g-hidden-xl-down {
+  display: none !important;
+}

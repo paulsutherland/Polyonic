@@ -1,0 +1,222 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-portfolios" %}
+{% set mainNavActive_3 = "page-portfolio-case-study-1" %}
+{% set title = "Portfolio Case Study 1 | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    {% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Page Title -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 g-bg-size-cover" style="height: 130%; background-image: url({{ root }}assets/img-temp/1920x1080/img46.jpg);"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container text-centers g-z-index-1 g-py-200">
+          <h1 class="g-color-white g-font-weight-700 g-font-size-80 g-mb-25">Tivoli Radio</h1>
+        </div>
+      </section>
+      <!-- End Page Title -->
+
+      <!-- Portfolio Case Study -->
+      <section class="container g-pt-100 g-pb-70">
+        <div class="row">
+          <div class="col-md-8 g-mb-30">
+            <span class="d-block g-font-weight-600 g-font-size-20 mb-2">Radio of the year</span>
+            <h2 class="h1 g-color-black g-font-weight-700 mb-4">More than a look,<br>design is functional</h2>
+            <p class="lead">This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key.</p>
+            <p class="lead">Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs. Now that your brand is all dressed up and ready to party, it's time to release it to the world. By the way, let's celebrate already.</p>
+          </div>
+
+          <div class="col-md-4 g-mb-30">
+            <div class="mb-5">
+              <h3 class="h5 g-color-black g-font-weight-600 mb-3">Client:</h3>
+              <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
+                <img class="g-width-25 g-height-25 rounded-circle mb-1 mr-2" src="{{ root }}assets/img-temp/100x100/img1.jpg" alt="Image Description">
+                Htmlstream
+              </a>
+            </div>
+
+            <div class="mb-5">
+              <h3 class="h5 g-color-black g-font-weight-600 mb-3">Designers:</h3>
+              <ul class="list-unstyled">
+                <li class="my-3">
+                  <img class="g-width-25 g-height-25 rounded-circle mb-1 mr-2" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                  <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">Alex Teseira</a>
+                </li>
+                <li class="my-3">
+                  <img class="g-width-25 g-height-25 rounded-circle mb-1 mr-2" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                  <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">Mila Taylor</a>
+                </li>
+                <li class="my-3">
+                  <img class="g-width-25 g-height-25 rounded-circle mb-1 mr-2" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                  <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">Lulu Falsah</a>
+                </li>
+              </ul>
+            </div>
+
+            <h3 class="h5 g-color-black g-font-weight-600 mb-3">Date:</h3>
+            <span class="d-block">
+              <i class="align-middle g-color-gray-dark-v5 g-font-size-24 g-pos-rel g-top-1 mr-2 icon-finance-078 u-line-icon-pro"></i>
+              27 May 2017
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Case Study -->
+
+      <!-- Images -->
+      <div class="clearfix">
+        <img class="img-fluid" src="{{ root }}assets/img-temp/1920x700/img1.jpg" alt="Image Designers">
+
+        <div class="row no-gutters">
+          <div class="col-md-6">
+            <img class="img-fluid w-100" src="{{ root }}assets/img-temp/1200x900/img1.jpg" alt="Image Designers">
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid w-100" src="{{ root }}assets/img-temp/1200x900/img2.jpg" alt="Image Designers">
+          </div>
+        </div>
+      </div>
+      <!-- End Images -->
+
+      <!-- Testimonials -->
+      <section class="container g-py-100">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 text-center">
+            <blockquote class="u-blockquote-v4 g-color-black g-color-primary--before g-color-primary--after g-font-weight-600 g-font-size-35 g-line-height-1_8 g-mb-50">If you can design one thing
+              <span class="g-brd-bottom--dotted g-brd-2 g-brd-primary g-color-primary g-pb-5">you can</span> design everything. Just
+              <span class="g-brd-bottom--dotted g-brd-2 g-brd-primary g-color-primary g-pb-5">believe</span> it.
+            </blockquote>
+            <h4 class="h6 g-font-weight-700 text-uppercase g-mb-0">
+              <span class="d-inline-block g-width-40 g-height-2 g-bg-primary g-pos-rel g-top-minus-3 mr-2"></span>
+              Kathy Reyes
+            </h4>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials -->
+
+      <!-- Video Block -->
+      <div class="g-bg-secondary">
+        <div class="container g-pt-100 g-pb-70">
+          <div class="row">
+            <div class="col-md-6 g-mb-30">
+              <p class="lead">The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels. We get it, you're busy and it's important that someone keeps up with marketing and driving people to your brand. We've got you covered. Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs. Now that your brand is all dressed up and ready to party.</p>
+            </div>
+
+            <div class="col-md-6 g-mb-30">
+              <p class="lead">Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion. We get it, you're busy and it's important that someone keeps up with marketing and driving people to your brand. We've got you covered. This is where we sit down, grab a cup of coffee and dial in the details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Video Block -->
+
+      <!-- Pagination -->
+      <div class="container g-py-100">
+        <nav class="text-center" aria-label="Page Navigation">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item float-sm-left">
+              <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="#!" aria-label="Previous">
+              <span aria-hidden="true">
+                <i class="fa fa-angle-left"></i>
+                Previous
+              </span>
+              </a>
+            </li>
+            <li class="list-inline-item mr-0">
+              <a class="u-pagination-v1__item g-color-gray-dark-v4 g-font-size-20 g-py-2 g-px-10" href="#!" data-toggle="tooltip" data-placement="top" title="View All">
+                <i class="icon-grid"></i>
+              </a>
+            </li>
+            <li class="list-inline-item float-sm-right">
+              <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="#!" aria-label="Next">
+              <span aria-hidden="true">
+                Next
+                <i class="fa fa-angle-right"></i>
+              </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- End Pagination -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

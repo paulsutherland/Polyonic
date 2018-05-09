@@ -1,0 +1,335 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Profile - Transactions" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu4 = "unCollapsed" %}
+{% set isSubMenu4Profiles = "unCollapsed" %}
+{% set activeMenuItem = "app-profiles-transactions" %}
+{% set activeProfileMenuItem = "profile-transactions" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: "App Views",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/flatpickr/dist/css/flatpickr.min.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+  <section class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+        <div class="g-pa-20">
+          <div class="row">
+            <div class="col-md-3 g-mb-30 g-mb-0--md">
+              {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-profile.njk" %}
+            </div>
+
+            <div class="col-md-9">
+              <div class="g-pos-rel h-100 g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-30--md">
+                <header>
+                  <h2 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black mb-0">Transactions</h2>
+                </header>
+
+                <hr class="d-flex g-brd-gray-light-v7 g-my-15 g-my-25--md">
+
+                <form>
+                  <div class="row">
+                    <div class="col-md-6 g-mb-20">
+                      <label class="g-mb-10" for="#dateFrom">From</label>
+
+                      <div class="form-group mb-0">
+                        <div class="form-group mb-0">
+                          <div id="dateFromWrapper" class="u-datepicker-right u-datepicker--v3 g-pos-rel w-100 g-cursor-pointer g-brd-around g-brd-gray-light-v7 g-rounded-4">
+                            <input id="dateFrom" class="form-control form-control-md g-bg-white g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-4 g-px-20 g-py-10" type="text"
+                              data-rp-wrapper="#dateFromWrapper"
+                              data-rp-date-format="d M Y"
+                              data-rp-default-date='["01 Jul 2017"]'>
+                            <span class="g-pos-abs g-top-0 g-right-0 g-z-index-2 g-width-40 h-100 g-font-size-18 g-color-gray-light-v6 rounded-0">
+                              <i class="hs-admin-calendar g-absolute-centered"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 g-mb-20">
+                      <label class="g-mb-10" for="#dateTo">To</label>
+
+                      <div class="form-group mb-0">
+                        <div id="dateToWrapper" class="u-datepicker-right u-datepicker--v3 w-100 g-pos-rel g-cursor-pointer g-brd-around g-brd-gray-light-v7 g-rounded-4">
+                          <input id="dateTo" class="form-control form-control-md g-bg-white g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-4 g-px-20 g-py-10" type="text"
+                            data-rp-wrapper="#dateToWrapper"
+                            data-rp-date-format="d M Y"
+                            data-rp-default-date='["10 Nov 2017"]'>
+                          <span class="g-pos-abs g-top-0 g-right-0 g-z-index-2 g-width-40 h-100 g-font-size-18 g-color-gray-light-v6 rounded-0">
+                            <i class="hs-admin-calendar g-absolute-centered"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <header class="d-flex align-items-center">
+                    <h2 class="text-uppercase g-font-weight-400 g-font-size-12 g-font-size-default--md g-color-black mb-0">July 2017</h2>
+
+                    <div class="ml-auto">
+                      <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-gray-light-v8 g-bg-gray-light-v8 g-font-size-12 g-font-size-default--md g-color-gray-dark-v11 g-rounded-50 g-py-4 g-px-15">4 Transactions</span>
+                    </div>
+                  </header>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-my-15 g-my-25--md">
+
+                  <div class="g-py-20">
+                    <div class="media g-mb-15">
+                      <div class="media-body align-self-start">
+                        <h3 class="text-uppercase g-font-size-12 g-font-size-16--md g-font-weight-300 g-line-height-1">Taxi.unify.com</h3>
+                        <p class="g-font-size-12 g-font-size-default--md g-color-gray-dark-v12 mb-0 g-mt-5">Credit Card **** 4390</p>
+                      </div>
+
+                      <div class="d-flex flex-column text-right g-color-lightblue-v2 ml-auto">
+                        <p class="g-font-weight-300 g-font-size-12 g-font-size-16--md g-color-gray-dark-v6 mb-0">-$12.00</p>
+                        <em class="g-font-style-normal g-font-size-12 g-font-size-16--md g-color-gray-dark-v12">Transport</em>
+                      </div>
+
+                      <div class="d-flex g-mt-5 g-ml-12">
+                        <i class="hs-admin-check g-font-size-default g-font-size-16--md g-color-lightblue-v4"></i>
+                      </div>
+                    </div>
+
+                    <div class="media g-mb-15">
+                      <div class="media-body align-self-start">
+                        <h3 class="text-uppercase g-font-size-12 g-font-size-16--md g-font-weight-300 g-line-height-1">Taxi.unify.com</h3>
+                        <p class="g-font-size-12 g-font-size-default--md g-color-gray-dark-v12 mb-0 g-mt-5">
+                          <a class="u-link-v5 g-color-lightblue-v9 g-mr-12" href="#!">2 Transactions</a>
+                          Credit Card **** 4390
+                        </p>
+                      </div>
+
+                      <div class="d-flex flex-column text-right g-color-lightblue-v2 ml-auto">
+                        <p class="g-font-weight-300 g-font-size-12 g-font-size-16--md g-color-gray-dark-v6 mb-0">-$36.20</p>
+                        <em class="g-font-style-normal g-font-size-12 g-font-size-16--md g-color-gray-dark-v12">Transport</em>
+                      </div>
+
+                      <div class="d-flex g-mt-5 g-ml-12">
+                        <i class="hs-admin-check g-font-size-default g-font-size-16--md g-color-lightblue-v4"></i>
+                      </div>
+                    </div>
+
+                    <div class="g-bg-gray-light-v8 g-px-15 g-px-30--md g-py-15 g-mx-minus-15 g-mx-minus-30--md g-mb-25">
+                      <div class="media align-items-center g-mb-5">
+                        <div class="d-flex g-font-size-12 g-font-size-default--md g-color-gray-dark-v11">05:42PM</div>
+
+                        <div class="d-flex g-font-size-12 g-font-size-default--md g-color-gray-dark-v12 g-ml-10 g-ml-50--md">Transaction #1</div>
+
+                        <div class="d-flex ml-auto g-mr-30">
+                          <p class="g-font-weight-300 g-font-size-12 g-font-size-16--md g-color-gray-dark-v6 mb-0">-$16.00</p>
+                        </div>
+                      </div>
+
+                      <div class="media align-items-center">
+                        <div class="d-flex g-font-size-12 g-font-size-default--md g-color-gray-dark-v11">05:52PM</div>
+
+                        <div class="d-flex g-font-size-12 g-font-size-default--md g-color-gray-dark-v12 g-ml-10 g-ml-50--md">Transaction #2</div>
+
+                        <div class="d-flex ml-auto g-mr-30">
+                          <p class="g-font-weight-300 g-font-size-12 g-font-size-16--md g-color-gray-dark-v6 mb-0">-$10.20</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="media g-mb-35">
+                      <div class="media-body align-self-start">
+                        <h3 class="text-uppercase g-font-size-12 g-font-size-16--md g-font-weight-300 g-line-height-1">Order.unify.com</h3>
+                        <p class="g-font-size-12 g-font-size-default--md g-color-gray-dark-v12 mb-0 g-mt-5">Paypal</p>
+                      </div>
+
+                      <div class="d-flex flex-column text-right g-color-lightblue-v2 ml-auto">
+                        <p class="g-font-weight-300 g-font-size-12 g-font-size-16--md g-color-gray-dark-v6 mb-0">-$800.00</p>
+                        <em class="g-font-style-normal g-font-size-12 g-font-size-16--md g-color-gray-dark-v12">Services</em>
+                      </div>
+
+                      <div class="d-flex g-mt-5 g-ml-12">
+                        <i class="hs-admin-time g-font-size-default g-font-size-18--md g-color-gray-light-v6"></i>
+                      </div>
+                    </div>
+
+                    <header class="d-flex align-items-center">
+                      <h2 class="text-uppercase g-font-weight-400 g-font-size-12 g-font-size-default--md g-color-black mb-0">August 2017</h2>
+
+                      <div class="ml-auto">
+                        <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-gray-light-v8 g-bg-gray-light-v8 g-font-size-12 g-font-size-default--md g-color-gray-dark-v11 g-rounded-50 g-py-4 g-px-15">5 Transactions</span>
+                      </div>
+                    </header>
+
+                    <hr class="d-flex g-brd-gray-light-v7 g-my-15 g-my-25--md">
+
+                    <div class="media g-mb-15">
+                      <div class="media-body align-self-start">
+                        <h3 class="text-uppercase g-font-size-12 g-font-size-16--md g-font-weight-300 g-line-height-1">Taxi.unify.com</h3>
+                        <p class="g-font-size-12 g-font-size-default--md g-color-gray-dark-v12 mb-0 g-mt-5">Credit Card **** 4390</p>
+                      </div>
+
+                      <div class="d-flex flex-column text-right g-color-lightblue-v2 ml-auto">
+                        <p class="g-font-weight-300 g-font-size-12 g-font-size-16--md g-color-gray-dark-v6 mb-0">-$48.20</p>
+                        <em class="g-font-style-normal g-font-size-12 g-font-size-16--md g-color-gray-dark-v12">Transport</em>
+                      </div>
+
+                      <div class="d-flex g-mt-5 g-ml-12">
+                        <i class="hs-admin-check g-font-size-default g-font-size-16--md g-color-lightblue-v4"></i>
+                      </div>
+                    </div>
+
+                    <div class="media g-mb-15">
+                      <div class="media-body align-self-start">
+                        <h3 class="text-uppercase g-font-size-12 g-font-size-16--md g-font-weight-300 g-line-height-1">Taxi.unify.com</h3>
+                        <p class="g-font-size-12 g-font-size-default--md g-color-gray-dark-v12 mb-0 g-mt-5">Credit Card **** 4390</p>
+                      </div>
+
+                      <div class="d-flex flex-column text-right g-color-lightblue-v2 ml-auto">
+                        <p class="g-font-weight-300 g-font-size-12 g-font-size-16--md g-color-gray-dark-v6 mb-0">-$136.50</p>
+                        <em class="g-font-style-normal g-font-size-12 g-font-size-16--md g-color-gray-dark-v12">Transport</em>
+                      </div>
+
+                      <div class="d-flex g-mt-5 g-ml-12">
+                        <i class="hs-admin-time g-font-size-default g-font-size-18--md g-color-gray-light-v6"></i>
+                      </div>
+                    </div>
+
+                    <div class="media g-mb-15">
+                      <div class="media-body align-self-start">
+                        <h3 class="text-uppercase g-font-size-12 g-font-size-16--md g-font-weight-300 g-line-height-1">Order.unify.com</h3>
+                        <p class="g-font-size-12 g-font-size-default--md g-color-gray-dark-v12 mb-0 g-mt-5">Paypal</p>
+                      </div>
+
+                      <div class="d-flex flex-column text-right g-color-lightblue-v2 ml-auto">
+                        <p class="g-font-weight-300 g-font-size-12 g-font-size-16--md g-color-gray-dark-v6 mb-0">-$12.800.00</p>
+                        <em class="g-font-style-normal g-font-size-12 g-font-size-16--md g-color-gray-dark-v12">Services</em>
+                      </div>
+
+                      <div class="d-flex g-mt-5 g-ml-12">
+                        <i class="hs-admin-time g-font-size-default g-font-size-18--md g-color-gray-light-v6"></i>
+                      </div>
+                    </div>
+
+                    <div class="media g-mb-15">
+                      <div class="media-body align-self-start">
+                        <h3 class="text-uppercase g-font-size-12 g-font-size-16--md g-font-weight-300 g-line-height-1">Taxi.unify.com</h3>
+                        <p class="g-font-size-12 g-font-size-default--md g-color-gray-dark-v12 mb-0 g-mt-5">Debit Card Card **** 4450</p>
+                      </div>
+
+                      <div class="d-flex flex-column text-right g-color-lightblue-v2 ml-auto">
+                        <p class="g-font-weight-300 g-font-size-12 g-font-size-16--md g-color-gray-dark-v6 mb-0">-$56.00</p>
+                        <em class="g-font-style-normal g-font-size-12 g-font-size-16--md g-color-gray-dark-v12">Transport</em>
+                      </div>
+
+                      <div class="d-flex g-mt-5 g-ml-12">
+                        <i class="hs-admin-check g-font-size-default g-font-size-16--md g-color-lightblue-v4"></i>
+                      </div>
+                    </div>
+
+                    <div class="media g-mb-45">
+                      <div class="media-body align-self-start">
+                        <h3 class="text-uppercase g-font-size-12 g-font-size-16--md g-font-weight-300 g-line-height-1">Order.unify.com</h3>
+                        <p class="g-font-size-12 g-font-size-default--md g-color-gray-dark-v12 mb-0 g-mt-5">Payoneer</p>
+                      </div>
+
+                      <div class="d-flex flex-column text-right g-color-lightblue-v2 ml-auto">
+                        <p class="g-font-weight-300 g-font-size-12 g-font-size-16--md g-color-gray-dark-v6 mb-0">-$456.20</p>
+                        <em class="g-font-style-normal g-font-size-12 g-font-size-16--md g-color-gray-dark-v12">Services</em>
+                      </div>
+
+                      <div class="d-flex g-mt-5 g-ml-12">
+                        <i class="hs-admin-check g-font-size-default g-font-size-16--md g-color-lightblue-v4"></i>
+                      </div>
+                    </div>
+
+                    <a class="d-flex align-items-center u-link-v5 g-font-style-normal g-color-lightblue-v3" href="#!">
+                      <i class="hs-admin-reload g-font-size-20"></i>
+                      <span class="g-font-size-12 g-font-size-default--md g-ml-12">Load more</span>
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/flatpickr/dist/js/flatpickr.min.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+
+<script src="{{ adminRoot }}assets/js/components/hs.range-datepicker.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of range datepicker
+    $.HSCore.components.HSRangeDatepicker.init('#dateFrom, #dateTo');
+  });
+</script>
+</body>
+</html>

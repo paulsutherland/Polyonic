@@ -1,0 +1,106 @@
+/*------------------------------------
+  Header Admin (Search)
+------------------------------------*/
+.u-header--search {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  // width: calc(100% - 10px);
+  width: 100%;
+  background-color: $g-color-darkblue-v3;
+  @include px-to-rem(padding, 15px !important);
+  margin-top: 0;
+}
+
+.form-control {
+  .u-header__section--admin-dark & {
+    background-color: transparent;
+    color: $g-color-white;
+    border-color: $g-color-darkblue-v6;
+    transition: border-color .3s ease !important;
+  }
+
+  .u-header__section--admin-light & {
+    background-color: transparent;
+    color: $g-color-gray-light-v6;
+    border-color: $g-color-gray-light-v6;
+  }
+
+  &:focus {
+    .u-header__section--admin-dark & {
+      background-color: transparent;
+      color: rgba(255,255,255, .9);
+      border-color: rgba(255,255,255, .7);
+    }
+
+    .u-header__section--admin-light & {
+      background-color: transparent;
+      color: $g-color-gray-dark-v6;
+      border-color: $g-color-gray-dark-v6;
+    }
+  }
+
+  &::-webkit-input-placeholder {
+    opacity: 1;
+
+    .u-header__section--admin-dark & {
+      color: rgba(255,255,255, .9);
+    }
+
+    .u-header__section--admin-light & {
+      color: $g-color-gray-dark-v6;
+    }
+  }
+
+  &::-moz-placeholder {
+    opacity: 1;
+
+    .u-header__section--admin-dark & {
+      color: rgba(255,255,255, .9);
+    }
+
+    .u-header__section--admin-light & {
+      color: $g-color-gray-dark-v6;
+    }
+  }
+}
+
+@media (min-width: $g-sm) {
+  .u-header--search {
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    padding: 0 !important;
+    margin-top: 0;
+    animation: unset;
+
+    &.col-sm {
+      .u-header__section--admin-dark &,
+      .u-header__section--admin-light & {
+        background-color: transparent;
+        visibility: visible;
+        opacity: 1;
+        box-shadow: none;
+      }
+    }
+  }
+
+  [data-dropdown-target] {
+    &.active {
+      i {
+        .u-header__section--admin-dark & {
+          color: $g-color-gray-dark-v8;
+        }
+      }
+    }
+  }
+
+  .u-header-icon-v1 {
+    &.active {
+      .u-header__section--admin-dark & {
+        background-color: $g-color-darkblue-v4;
+      }
+    }
+  }
+}

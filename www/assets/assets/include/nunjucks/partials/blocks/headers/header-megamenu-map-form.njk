@@ -1,0 +1,162 @@
+<!-- Header -->
+<header id="js-header" class="u-header u-header--static--lg u-header--show-hide--lg u-header--change-appearance--lg"
+        data-header-fix-moment="500"
+        data-header-fix-effect="slide">
+  <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10"
+       data-header-fix-moment-exclude="g-bg-white g-py-10"
+       data-header-fix-moment-classes="g-bg-white-opacity-0_7 u-shadow-v18 g-py-0">
+    <nav class="js-mega-menu navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Responsive Toggle Button -->
+        <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar"
+                data-toggle="collapse"
+                data-target="#navBar">
+          <span class="hamburger hamburger--slider">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </span>
+        </button>
+        <!-- End Responsive Toggle Button -->
+
+        <!-- Logo -->
+        <a href="{{ root }}index.html" class="navbar-brand">
+          <img src="{{ root }}assets/img/logo/logo-1.png" alt="Image Description">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+          <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
+            <li class="nav-item g-mx-20--lg{% if mainNavActive_1 == 'home' %} active{% endif %}">
+              <a href="#!" class="nav-link px-0">Home
+                {% if mainNavActive_1 == 'home' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li><li class="nav-item g-mx-20--lg{% if mainNavActive_1 == 'features' %} active{% endif %}">
+              <a href="#!" class="nav-link px-0">Features
+                {% if mainNavActive_1 == 'features' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+            <li class="nav-item g-mx-20--lg{% if mainNavActive_1 == 'pages' %} active{% endif %}">
+              <a href="#!" class="nav-link px-0">Pages
+                {% if mainNavActive_1 == 'pages' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+            <li class="nav-item g-mx-20--lg{% if mainNavActive_1 == 'demos' %} active{% endif %}">
+              <a href="#!" class="nav-link px-0">Demos
+                {% if mainNavActive_1 == 'demos' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+            <!-- Mega Menu Item -->
+            <li class="hs-has-mega-menu nav-item g-mx-20--lg"
+                data-animation-in="fadeIn"
+                data-animation-out="fadeOut"
+                data-position="right">
+              <a id="mega-menu-label-1" class="nav-link g-px-0" href="#!" aria-haspopup="true" aria-expanded="false">Contacts
+                <i class="hs-icon hs-icon-arrow-bottom g-font-size-11 g-ml-7"></i>
+              </a>
+
+              <!-- Mega Menu -->
+              <div class="w-100 hs-mega-menu u-shadow-v11 g-font-weight-400 g-brd-top g-brd-primary g-brd-top-2 g-mt-17 g-mt-7--lg--scrolling" aria-labelledby="mega-menu-label-1">
+                <div class="row no-gutters">
+                  <div class="col-lg-4 g-min-height-400">
+                    <div id="gMap1" class="js-g-map h-100"
+                         data-type="custom"
+                         data-lat="40.674"
+                         data-lng="-73.946"
+                         data-zoom="12"
+                         data-title="Travel"
+                         data-styles='[
+                           ["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]],
+                           ["", "labels", [{"visibility":"on"}]],
+                           ["water", "", [{"color":"#bac6cb"}]]
+                         ]'
+                         data-pin="true"
+                         data-pin-icon="{{ root }}assets/img/icons/pin/green.png">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 d-flex g-bg-gray-light-v5 g-pa-30">
+                    <div class="align-self-center">
+                      <div class="g-text-transform-none g-mb-30">
+                        <p>Aliquam dapibus quis sapien id pharetra. Vivamus iaculis est vitae libero tempus, in sollicitudin est consectetur porttitor iaculis pretium</p>
+                      </div>
+
+                      <address class="g-line-height-2 g-mb-30">
+                        <p>Email: <strong>
+                            <a class="g-color-main" href="mailto:marketing@unify.com">info@htmlstream.com</a>
+                          </strong></p>
+                        <p>Phone number: <strong>+48 555 2566 112</strong></p>
+                        <p>Address: <strong>In sed lectus tincidunt</strong></p>
+                      </address>
+
+                      <ul class="list-inline mb-0">
+                        <li class="list-inline-item g-mx-5">
+                          <a class="u-icon-v3 u-icon-size--sm g-font-size-default g-color-primary g-bg-white g-color-white--hover g-bg-primary--hover" href="#!">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mx-5">
+                          <a class="u-icon-v3 u-icon-size--sm g-font-size-default g-color-primary g-bg-white g-color-white--hover g-bg-primary--hover" href="#!">
+                            <i class="fa fa-instagram"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mx-5">
+                          <a class="u-icon-v3 u-icon-size--sm g-font-size-default g-color-primary g-bg-white g-color-white--hover g-bg-primary--hover" href="#!">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mx-5">
+                          <a class="u-icon-v3 u-icon-size--sm g-font-size-default g-color-primary g-bg-white g-color-white--hover g-bg-primary--hover" href="#!">
+                            <i class="fa fa-youtube"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 d-flex g-pa-30">
+                    <div class="align-self-center w-100">
+                      <h4 class="g-font-weight-700 g-mb-25">Have a
+                        <span class="g-color-primary">Question?</span>
+                      </h4>
+
+                      <form>
+                        <div class="form-group g-mb-10">
+                          <input class="form-control g-bg-gray-light-v5 g-bg-gray-light-v5--focus g-brd-gray-light-v5 g-rounded-1 g-pa-10" type="text" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group g-mb-10">
+                          <input class="form-control g-bg-gray-light-v5 g-bg-gray-light-v5--focus g-brd-gray-light-v5 g-rounded-1 g-pa-10" type="tel" placeholder="Your phone">
+                        </div>
+
+                        <div class="form-group g-mb-10">
+                          <input class="form-control g-bg-gray-light-v5 g-bg-gray-light-v5--focus g-brd-gray-light-v5 g-rounded-1 g-pa-10" type="text" placeholder="Subject">
+                        </div>
+
+                        <div class="form-group g-mb-30">
+                          <textarea class="form-control g-bg-gray-light-v5 g-bg-gray-light-v5--focus g-brd-gray-light-v5 g-rounded-1 g-pa-10" rows="5" placeholder="Message"></textarea>
+                        </div>
+
+                        <button class="btn u-btn-primary btn-lg g-line-height-1 g-font-weight-700 g-font-size-default rounded-0 g-px-25 g-py-10 mb-0" type="submit" role="button">Send message</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Mega Menu -->
+            </li>
+            <!-- End Mega Menu Item -->
+            <li class="nav-item g-ml-20--lg g-mr-0--lg{% if mainNavActive_1 == 'whats-new' %} active{% endif %}">
+              <a href="#!" class="nav-link px-0">What's New
+                {% if mainNavActive_1 == 'whats-new' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End Navigation -->
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- End Header -->

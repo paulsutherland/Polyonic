@@ -1,0 +1,39 @@
+/*------------------------------------
+  Background Size
+------------------------------------*/
+.g-bg-size-cover {
+  background-size: cover !important;
+}
+
+.g-bg-size-100x {
+  background-size: 100% !important;
+
+  &--hover:hover {
+    background-size: 100% !important;
+  }
+
+  &--parent-hover {
+    .g-parent:hover & {
+      background-size: 100% !important;
+    }
+  }
+}
+
+.g-bg-size-120x {
+  background-size: 120% !important;
+
+  &--hover {
+    background-size: 120% !important;
+  }
+
+  &--parent-hover {
+    .g-parent:hover & {
+      background-size: 120% !important;
+    }
+  }
+}
+
+.g-bg-repeat {
+  background-repeat: repeat !important; /* P */
+  background-size: auto !important;
+}

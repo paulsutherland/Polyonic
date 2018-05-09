@@ -1,0 +1,9 @@
+/*------------------------------------
+  Visibilities
+------------------------------------*/
+
+@media (min-width: $g-sm) {
+  .g-visible--sm {
+    visibility: visible !important;
+  }
+}

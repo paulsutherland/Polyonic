@@ -1,0 +1,199 @@
+/*------------------------------------
+  Border Radius (Rounded Styles)
+------------------------------------*/
+//
+// .rounded, .rounded-top, .rounded-right, .rounded-bottom, .rounded-left
+// .rounded-circle
+// .rounded-0
+//
+
+/* Rounded Around */
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+.g-rounded-50x {
+  border-radius: 50%;
+}
+
+@for $i from 1 through 7 {
+  .g-rounded-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+}
+.g-rounded-10 {
+  border-radius: 10px !important;
+}
+.g-rounded-15 {
+  border-radius: 15px !important;
+}
+.g-rounded-20 {
+  border-radius: 20px !important;
+}
+.g-rounded-25 {
+  border-radius: 25px !important;
+}
+.g-rounded-30 {
+  border-radius: 30px !important;
+}
+.g-rounded-50 {
+  border-radius: 50px !important;
+}
+.g-rounded-100 {
+  border-radius: 100px !important;
+
+  &--after::after {
+    border-radius: 100px !important;
+  }
+}
+
+/* Rounded Top */
+.g-rounded-top-5 {
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
+
+/* Rounded Right */
+.g-rounded-right-0 {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.g-rounded-right-3 {
+  border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
+
+.g-rounded-right-4 {
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+.g-rounded-right-5 {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.g-rounded-right-10 {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.g-rounded-right-20 {
+  border-bottom-right-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.g-rounded-right-25 {
+  border-bottom-right-radius: 25px !important;
+  border-top-right-radius: 25px !important;
+}
+
+.g-rounded-right-30 {
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+}
+
+.g-rounded-right-50 {
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+}
+
+/* Rounded Bottom */
+.g-rounded-bottom-0 {
+ border-bottom-right-radius: 0 !important;
+ border-bottom-left-radius: 0 !important;
+}
+.g-rounded-bottom-3 {
+  border-bottom-left-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
+.g-rounded-bottom-4 {
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+.g-rounded-bottom-5 {
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+/* Rounded Left */
+.g-rounded-left-0 {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.g-rounded-left-3 {
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+}
+
+.g-rounded-left-4 {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+.g-rounded-left-5 {
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+.g-rounded-left-10 {
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+
+.g-rounded-left-20 {
+  border-bottom-left-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+
+.g-rounded-left-25 {
+  border-bottom-left-radius: 25px !important;
+  border-top-left-radius: 25px !important;
+}
+
+.g-rounded-left-30 {
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+}
+
+.g-rounded-left-50 {
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+}
+
+.g-rounded-circle--before::before {
+  border-radius: 50% !important;
+}
+.g-rounded-circle--after::after {
+  border-radius: 50% !important;
+}
+
+@media (min-width: $g-md) {
+  .g-rounded-0--md {
+    border-radius: 0 !important;
+  }
+
+  .g-rounded-left-0--md {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+
+  .g-rounded-right-0--md {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
+
+@media (min-width: $g-lg) {
+  .g-rounded-left-5--lg-up {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+  }
+
+  .g-rounded-right-5--lg-up {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+  }
+}

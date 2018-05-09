@@ -1,0 +1,909 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-pricing-table" %}
+{% set title = "Pricing Tables" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-block.njk" %}
+
+    <section>
+      <div class="g-py-100">
+        <div class="container">
+          <!-- Pricing Table #01 -->
+          <section>
+            <div class="text-center g-mb-50">
+              <h2 class="h4">Pricing Table
+                <span class="g-color-primary g-ml-5">#01</span>
+              </h2>
+            </div>
+
+            <div id="shortcode1">
+              <div class="shortcode-html">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="g-hidden-md-down g-brd-none g-py-50">&nbsp;</th>
+                        <th class="text-center g-brd-bottom-none g-bg-gray-light-v5 g-valign-middle g-font-weight-400 g-py-50">
+                          <h3 class="g-font-weight-300 mb-15">Small</h3>
+                          <em class="d-block g-color-gray-dark-v5 g-font-style-normal">Ullamcorper ultricies nisi</em>
+                        </th>
+                        <th class="text-center g-brd-bottom-none g-bg-gray-light-v5 g-valign-middle g-font-weight-400 g-py-50">
+                          <h3 class="g-font-weight-300 mb-15">Standard</h3>
+                          <em class="d-block g-color-gray-dark-v5 g-font-style-normal">Ullamcorper ultricies nisi</em>
+                        </th>
+                        <th class="text-center g-brd-bottom-none g-bg-gray-light-v5 g-valign-middle g-font-weight-400 g-py-50">
+                          <h3 class="g-font-weight-300 mb-15">Maximum</h3>
+                          <em class="d-block g-color-gray-dark-v5 g-font-style-normal">Ullamcorper ultricies nisi</em>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="g-font-size-20">
+                        <td class="g-hidden-md-down g-py-30">Pay Monthly</td>
+                        <td class="text-center g-py-30">$9.99
+                          <span class="d-block g-hidden-lg-up g-font-size-16 g-color-gray-light-v1">per month</span>
+                        </td>
+                        <td class="text-center g-py-30">$19.99
+                          <span class="d-block g-hidden-lg-up g-font-size-16 g-color-gray-light-v1">per month</span>
+                        </td>
+                        <td class="text-center g-py-30">$29.99
+                          <span class="d-block g-hidden-lg-up g-font-size-16 g-color-gray-light-v1">per month</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">Advance Payment</td>
+                        <td class="text-center">
+                          <i class="icon-close"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Credit Card Requirement</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-close"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Credit Card Requirement</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Credit Card Requirement</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">Diskspace</td>
+                        <td class="text-center">5 GB
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Diskspace</span>
+                        </td>
+                        <td class="text-center">15 GB
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Diskspace</span>
+                        </td>
+                        <td class="text-center">50 GB
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Diskspace</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">Subdomains</td>
+                        <td class="text-center">10
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Subdomains</span>
+                        </td>
+                        <td class="text-center">50
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Subdomains</span>
+                        </td>
+                        <td class="text-center">100
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Subdomains</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">Email Addresses</td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Email Addresses</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Email Addresses</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Email Addresses</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">MySQL Databases</td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">MySQL Databases</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">MySQL Databases</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">MySQL Databases</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">Google Adwords Voucher</td>
+                        <td class="text-center">$25
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Google Adwords Voucher</span>
+                        </td>
+                        <td class="text-center">$75
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Google Adwords Voucher</span>
+                        </td>
+                        <td class="text-center">$250
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Google Adwords Voucher</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">SSL Certificate</td>
+                        <td class="text-center">
+                          <i class="icon-close"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">SSL Certificate</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-close"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">SSL Certificate</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">SSL Certificate</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">Worldwide Phone Support</td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Worldwide Phone Support</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Worldwide Phone Support</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Worldwide Phone Support</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">&nbsp;</td>
+                        <td class="text-center">
+                          <a href="#!" class="btn rounded-0 u-btn-outline-primary g-px-20 g-py-10">Purchase</a>
+                        </td>
+                        <td class="text-center">
+                          <a href="#!" class="btn rounded-0 u-btn-outline-primary g-px-20 g-py-10">Purchase</a>
+                        </td>
+                        <td class="text-center">
+                          <a href="#!" class="btn rounded-0 u-btn-outline-primary g-px-20 g-py-10">Purchase</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode1" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </section>
+          <!-- End Pricing Table #01 -->
+
+          <hr class="g-brd-gray-light-v4 g-my-60">
+
+          <!-- Pricing Table #02 -->
+          <section>
+            <div class="text-center g-mb-50">
+              <h2 class="h4">Pricing Table
+                <span class="g-color-primary g-ml-5">#02</span>
+              </h2>
+            </div>
+
+            <div id="shortcode2">
+              <div class="shortcode-html">
+                <div class="row no-gutters text-center">
+                  <div class="col-lg-3 col-md-6 g-mb-30">
+                    <!-- Article -->
+                    <article>
+                      <!-- Article Header -->
+                      <header class="g-bg-gray-light-v5 g-color-black g-py-40">
+                        <!-- Article Header -->
+                        <h3 class="h4 text-uppercase g-font-weight-700 g-brd-bottom g-brd-3 g-brd-black g-px-20 g-pb-20 g-mb-25">Bronse</h3>
+                        <!-- End Article Header -->
+
+                        <div class="g-font-size-36 g-font-weight-600 g-line-height-1_2">
+                          $9.99
+                          <em class="d-block g-font-style-normal g-font-size-default g-font-weight-300 g-mt-15">per month</em>
+                        </div>
+                      </header>
+                      <!-- End Article Header -->
+
+                      <!-- Article Content -->
+                      <div class="g-bg-white g-color-gray-dark-v4 g-py-30">
+                        <ul class="list-unstyled g-mb-30">
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Etiam mollis iaculis</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Fusce fringilla ipsum</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed eget justo est</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed pellentesque velit ante</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Fusce fringilla ipsum nec</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Nullam vel turpis</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">&mdash;</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">&mdash;</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">&mdash;</li>
+                        </ul>
+                        <a class="btn text-uppercase u-btn-outline-black g-brd-2 rounded-0 g-font-weight-700 g-font-size-12 g-letter-spacing-1 g-pa-15-30" href="#!">Order Now</a>
+                      </div>
+                      <!-- End Article Content -->
+                    </article>
+                    <!-- End Article -->
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 g-mb-30 g-ml-minus-1">
+                    <!-- Article -->
+                    <article>
+                      <!-- Article Header -->
+                      <header class="g-bg-gray-light-v5 g-color-black g-py-40">
+                        <!-- Article Header -->
+                        <h3 class="h4 text-uppercase g-font-weight-700 g-brd-bottom g-brd-3 g-brd-black g-px-20 g-pb-20 g-mb-25">Silver</h3>
+                        <!-- End Article Header -->
+
+                        <div class="g-font-size-36 g-font-weight-600 g-line-height-1_2">
+                          $19.99
+                          <em class="d-block g-font-style-normal g-font-size-default g-font-weight-300 g-mt-15">per month</em>
+                        </div>
+                      </header>
+                      <!-- End Article Header -->
+
+                      <!-- Article Content -->
+                      <div class="g-bg-white g-color-gray-dark-v4 g-py-30">
+                        <ul class="list-unstyled g-mb-30">
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Etiam mollis iaculis</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Fusce fringilla ipsum</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed eget justo est</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed pellentesque velit ante</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Fusce fringilla ipsum nec</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Nullam vel turpis</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Fusce fringilla ipsum</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">&mdash;</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">&mdash;</li>
+                        </ul>
+                        <a class="btn text-uppercase u-btn-outline-black g-brd-2 rounded-0 g-font-weight-700 g-font-size-12 g-letter-spacing-1 g-pa-15-30" href="#!">Order Now</a>
+                      </div>
+                      <!-- End Article Content -->
+                    </article>
+                    <!-- End Article -->
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 g-mb-30 g-ml-minus-1">
+                    <!-- Article -->
+                    <article>
+                      <!-- Article Header -->
+                      <header class="g-bg-gray-light-v5 g-color-black g-py-40">
+                        <!-- Article Header -->
+                        <h3 class="h4 text-uppercase g-font-weight-700 g-brd-bottom g-brd-3 g-brd-black g-px-20 g-pb-20 g-mb-25">Gold</h3>
+                        <!-- End Article Header -->
+
+                        <div class="g-font-size-36 g-font-weight-600 g-line-height-1_2">
+                          $29.99
+                          <em class="d-block g-font-style-normal g-font-size-default g-font-weight-300 g-mt-15">per month</em>
+                        </div>
+                      </header>
+                      <!-- End Article Header -->
+
+                      <!-- Article Content -->
+                      <div class="g-bg-white g-color-gray-dark-v4 g-py-30">
+                        <ul class="list-unstyled g-mb-30">
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Etiam mollis iaculis</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Fusce fringilla ipsum</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed eget justo est</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed pellentesque velit ante</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Fusce fringilla ipsum nec</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Fusce fringilla ipsum</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed eget justo est</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed pellentesque velit ante</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">&mdash;</li>
+                        </ul>
+                        <a class="btn text-uppercase u-btn-outline-black g-brd-2 rounded-0 g-font-weight-700 g-font-size-12 g-letter-spacing-1 g-pa-15-30" href="#!">Order Now</a>
+                      </div>
+                      <!-- End Article Content -->
+                    </article>
+                    <!-- End Article -->
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 g-mb-30 g-ml-minus-1">
+                    <!-- Article -->
+                    <article>
+                      <!-- Article Header -->
+                      <header class="g-bg-gray-light-v5 g-color-black g-py-40">
+                        <!-- Article Header -->
+                        <h3 class="h4 text-uppercase g-font-weight-700 g-brd-bottom g-brd-3 g-brd-black g-px-20 g-pb-20 g-mb-25">Platinum</h3>
+                        <!-- End Article Header -->
+
+                        <div class="g-font-size-36 g-font-weight-600 g-line-height-1_2">
+                          $39.99
+                          <em class="d-block g-font-style-normal g-font-size-default g-font-weight-300 g-mt-15">per month</em>
+                        </div>
+                      </header>
+                      <!-- End Article Header -->
+
+                      <!-- Article Content -->
+                      <div class="g-bg-white g-color-gray-dark-v4 g-py-30">
+                        <ul class="list-unstyled g-mb-30">
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Etiam mollis iaculis</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Fusce fringilla ipsum</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed eget justo est</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed pellentesque velit ante</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Fusce fringilla ipsum nec</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Fusce fringilla ipsum</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed eget justo est</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Sed pellentesque velit ante</li>
+                          <li class="g-brd-bottom g-brd-gray-light-v4 g-px-25 g-py-15">Nullam vel turpis</li>
+                        </ul>
+                        <a class="btn text-uppercase u-btn-outline-black g-brd-2 rounded-0 g-font-weight-700 g-font-size-12 g-letter-spacing-1 g-pa-15-30" href="#!">Order Now</a>
+                      </div>
+                      <!-- End Article Content -->
+                    </article>
+                    <!-- End Article -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode2" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </section>
+          <!-- End Pricing Table #02 -->
+
+          <hr class="g-brd-gray-light-v4 g-my-60">
+
+          <!-- Pricing Table #03 -->
+          <section>
+            <div class="text-center g-mb-50">
+              <h2 class="h4">Pricing Table
+                <span class="g-color-primary g-ml-5">#03</span>
+              </h2>
+            </div>
+
+            <div id="shortcode3">
+              <div class="shortcode-html">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="g-hidden-md-down">&nbsp;</th>
+                        <th class="text-center">Small</th>
+                        <th class="text-center">Standard</th>
+                        <th class="text-center">Maximum</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="g-hidden-md-down">Advance Payment</td>
+                        <td class="text-center">
+                          <i class="icon-close"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Credit Card Requirement</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-close"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Credit Card Requirement</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Credit Card Requirement</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">Diskspace</td>
+                        <td class="text-center">5 GB
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Diskspace</span>
+                        </td>
+                        <td class="text-center">15 GB
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Diskspace</span>
+                        </td>
+                        <td class="text-center">50 GB
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Diskspace</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">Subdomains</td>
+                        <td class="text-center">10
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Subdomains</span>
+                        </td>
+                        <td class="text-center">50
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Subdomains</span>
+                        </td>
+                        <td class="text-center">100
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Subdomains</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">Email Addresses</td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Email Addresses</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Email Addresses</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Email Addresses</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">MySQL Databases</td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">MySQL Databases</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">MySQL Databases</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">MySQL Databases</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">Google Adwords Voucher</td>
+                        <td class="text-center">$25
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Google Adwords Voucher</span>
+                        </td>
+                        <td class="text-center">$75
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Google Adwords Voucher</span>
+                        </td>
+                        <td class="text-center">$250
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Google Adwords Voucher</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">SSL Certificate</td>
+                        <td class="text-center">
+                          <i class="icon-close"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">SSL Certificate</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-close"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">SSL Certificate</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">SSL Certificate</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">Worldwide Phone Support</td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Worldwide Phone Support</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Worldwide Phone Support</span>
+                        </td>
+                        <td class="text-center">
+                          <i class="icon-check"></i>
+                          <span class="d-block g-hidden-lg-up g-color-gray-light-v1">Worldwide Phone Support</span>
+                        </td>
+                      </tr>
+                      <tr class="g-font-weight-600">
+                        <td class="g-hidden-md-down">Pay Monthly</td>
+                        <td class="text-center">$9.99
+                          <span class="d-block g-hidden-lg-up g-font-size-16 g-color-gray-light-v1">per month</span>
+                        </td>
+                        <td class="text-center">$19.99
+                          <span class="d-block g-hidden-lg-up g-font-size-16 g-color-gray-light-v1">per month</span>
+                        </td>
+                        <td class="text-center">$29.99
+                          <span class="d-block g-hidden-lg-up g-font-size-16 g-color-gray-light-v1">per month</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="g-hidden-md-down">&nbsp;</td>
+                        <td class="text-center">
+                          <a href="#!" class="btn rounded-0 u-btn-outline-primary g-px-20 g-py-10">Purchase</a>
+                        </td>
+                        <td class="text-center">
+                          <a href="#!" class="btn rounded-0 u-btn-outline-primary g-px-20 g-py-10">Purchase</a>
+                        </td>
+                        <td class="text-center">
+                          <a href="#!" class="btn rounded-0 u-btn-outline-primary g-px-20 g-py-10">Purchase</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode3" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </section>
+          <!-- End Pricing Table #03 -->
+
+          <hr class="g-brd-gray-light-v4 g-my-60">
+
+          <!-- Pricing Table #04 -->
+          <section>
+            <div class="text-center g-mb-50">
+              <h2 class="h4">Pricing Table
+                <span class="g-color-primary g-ml-5">#04</span>
+              </h2>
+            </div>
+
+            <div id="shortcode4">
+              <div class="shortcode-html">
+                <div class="row no-gutters text-center">
+                  <div class="col-lg-3 col-md-6 g-brd-around g-brd-gray-light-v4 g-mb-30">
+                    <!-- Article -->
+                    <article>
+                      <!-- Article Header -->
+                      <header class="g-bg-gray-light-v5 g-color-black g-pa-40">
+                        <!-- Article Title -->
+                        <h3 class="g-font-weight-300 g-mb-5">Bronse</h3>
+                        <!-- End Article Title -->
+
+                        <div class="g-font-size-36 g-font-weight-600 g-line-height-1_2">
+                          $9.99
+                          <em class="d-block g-font-style-normal g-font-size-default g-font-weight-300 g-mt-15">per month</em>
+                        </div>
+                      </header>
+                      <!-- End Article Header -->
+
+                      <!-- Article Content -->
+                      <div class="g-color-gray-dark-v4 g-px-35 g-py-40">
+                        <ul class="list-unstyled g-mb-30">
+                          <li class="g-mb-20">Etiam mollis iaculis</li>
+                          <li class="g-mb-20">Fusce fringilla ipsum</li>
+                          <li class="g-mb-20">Sed eget justo est</li>
+                          <li class="g-mb-20">Sed pellentesque velit ante</li>
+                          <li class="g-mb-20">Fusce fringilla ipsum nec</li>
+                          <li class="g-mb-20">Nullam vel turpis</li>
+                          <li class="g-mb-20">&mdash;</li>
+                          <li class="g-mb-20">&mdash;</li>
+                          <li class="g-mb-20">&mdash;</li>
+                        </ul>
+                        <a class="btn u-btn-primary rounded-0 g-font-weight-600 g-pa-15-30" href="#!">Order Now</a>
+                      </div>
+                      <!-- End Article Content -->
+                    </article>
+                    <!-- End Article -->
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 g-brd-around g-brd-gray-light-v4 g-mb-30 g-ml-minus-1">
+                    <!-- Article -->
+                    <article>
+                      <!-- Article Header -->
+                      <header class="g-bg-gray-light-v5 g-color-black g-pa-40">
+                        <!-- Article Title -->
+                        <h3 class="g-font-weight-300 g-mb-5">Silver</h3>
+                        <!-- End Article Title -->
+
+                        <div class="g-font-size-36 g-font-weight-600 g-line-height-1_2">
+                          $19.99
+                          <em class="d-block g-font-style-normal g-font-size-default g-font-weight-300 g-mt-15">per month</em>
+                        </div>
+                      </header>
+                      <!-- End Article Header -->
+
+                      <!-- Article Content -->
+                      <div class="g-color-gray-dark-v4 g-px-35 g-py-40">
+                        <ul class="list-unstyled g-mb-30">
+                          <li class="g-mb-20">Etiam mollis iaculis</li>
+                          <li class="g-mb-20">Fusce fringilla ipsum</li>
+                          <li class="g-mb-20">Sed eget justo est</li>
+                          <li class="g-mb-20">Sed pellentesque velit ante</li>
+                          <li class="g-mb-20">Fusce fringilla ipsum nec</li>
+                          <li class="g-mb-20">Nullam vel turpis</li>
+                          <li class="g-mb-20">Fusce fringilla ipsum</li>
+                          <li class="g-mb-20">&mdash;</li>
+                          <li class="g-mb-20">&mdash;</li>
+                        </ul>
+                        <a class="btn u-btn-primary rounded-0 g-font-weight-600 g-pa-15-30" href="#!">Order Now</a>
+                      </div>
+                      <!-- End Article Content -->
+                    </article>
+                    <!-- End Article -->
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 g-brd-around g-brd-gray-light-v4 g-mb-30 g-ml-minus-1">
+                    <!-- Article -->
+                    <article>
+                      <!-- Article Header -->
+                      <header class="g-bg-primary g-color-white g-pa-40">
+                        <!-- Article Title -->
+                        <h3 class="g-font-weight-300 g-mb-5">Gold</h3>
+                        <!-- End Article Title -->
+
+                        <div class="g-font-size-36 g-font-weight-600 g-line-height-1_2">
+                          $29.99
+                          <em class="d-block g-font-style-normal g-font-size-default g-font-weight-300 g-mt-15">per month</em>
+                        </div>
+                      </header>
+                      <!-- End Article Header -->
+
+                      <!-- Article Content -->
+                      <div class="g-color-gray-dark-v4 g-px-35 g-py-40">
+                        <ul class="list-unstyled g-mb-30">
+                          <li class="g-mb-20">Etiam mollis iaculis</li>
+                          <li class="g-mb-20">Fusce fringilla ipsum</li>
+                          <li class="g-mb-20">Sed eget justo est</li>
+                          <li class="g-mb-20">Sed pellentesque velit ante</li>
+                          <li class="g-mb-20">Fusce fringilla ipsum nec</li>
+                          <li class="g-mb-20">Fusce fringilla ipsum</li>
+                          <li class="g-mb-20">Sed eget justo est</li>
+                          <li class="g-mb-20">Sed pellentesque velit ante</li>
+                          <li class="g-mb-20">&mdash;</li>
+                        </ul>
+                        <a class="btn u-btn-primary rounded-0 g-font-weight-600 g-pa-15-30" href="#!">Order Now</a>
+                      </div>
+                      <!-- End Article Content -->
+                    </article>
+                    <!-- End Article -->
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 g-brd-around g-brd-gray-light-v4 g-mb-30 g-ml-minus-1">
+                    <!-- Article -->
+                    <article>
+                      <!-- Article Header -->
+                      <header class="g-bg-gray-light-v5 g-color-black g-pa-40">
+                        <!-- Article Title -->
+                        <h3 class="g-font-weight-300 g-mb-5">Platinum</h3>
+                        <!-- End Article Title -->
+
+                        <div class="g-font-size-36 g-font-weight-600 g-line-height-1_2">
+                          $39.99
+                          <em class="d-block g-font-style-normal g-font-size-default g-font-weight-300 g-mt-15">per month</em>
+                        </div>
+                      </header>
+                      <!-- End Article Header -->
+
+                      <!-- Article Content -->
+                      <div class="g-color-gray-dark-v4 g-px-35 g-py-40">
+                        <ul class="list-unstyled g-mb-30">
+                          <li class="g-mb-20">Etiam mollis iaculis</li>
+                          <li class="g-mb-20">Fusce fringilla ipsum</li>
+                          <li class="g-mb-20">Sed eget justo est</li>
+                          <li class="g-mb-20">Sed pellentesque velit ante</li>
+                          <li class="g-mb-20">Fusce fringilla ipsum nec</li>
+                          <li class="g-mb-20">Fusce fringilla ipsum</li>
+                          <li class="g-mb-20">Sed eget justo est</li>
+                          <li class="g-mb-20">Sed pellentesque velit ante</li>
+                          <li class="g-mb-20">Nullam vel turpis</li>
+                        </ul>
+                        <a class="btn u-btn-primary rounded-0 g-font-weight-600 g-pa-15-30" href="#!">Order Now</a>
+                      </div>
+                      <!-- End Article Content -->
+                    </article>
+                    <!-- End Article -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode4" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </section>
+          <!-- End Pricing Table #04 -->
+
+          <hr class="g-brd-gray-light-v4 g-my-60">
+
+          <!-- Pricing Table #05 -->
+          <section>
+            <div class="text-center g-mb-50">
+              <h2 class="h4">Pricing Table
+                <span class="g-color-primary g-ml-5">#05</span>
+              </h2>
+            </div>
+
+            <div id="shortcode5">
+              <div class="shortcode-html">
+                <div class="table-responsive">
+                  <!-- Table Bordered -->
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th class="g-brd-bottom-none g-pa-20"></th>
+                        <th class="g-brd-bottom-none g-brd-white-opacity-0_2 g-color-primary g-bg-black g-pa-20">Basic</th>
+                        <th class="g-brd-bottom-none g-brd-white-opacity-0_2 g-color-primary g-bg-black g-pa-20">Starter</th>
+                        <th class="g-brd-bottom-none g-brd-white-opacity-0_2 g-color-primary g-bg-black g-pa-20">Business</th>
+                        <th class="g-brd-bottom-none g-brd-white-opacity-0_2 g-color-primary g-bg-black g-pa-20">Unify <span class="align-top g-color-lightred g-font-size-10 ml-2">* Popular</span></th>
+                        <th class="g-brd-bottom-none g-brd-white-opacity-0_2 g-color-primary g-bg-black g-pa-20">Extreme</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="g-font-weight-500 g-pa-20">Domains</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">1</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">2</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">5</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">9</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">15</td>
+                      </tr>
+                      <tr>
+                        <td class="g-font-weight-500 g-pa-20">WordPress</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">No</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">No</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">No</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">Yes</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">Yes</td>
+                      </tr>
+                      <tr>
+                        <td class="g-font-weight-500 g-pa-20">Page Builder</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">No</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">No</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">No</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">No</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">Yes</td>
+                      </tr>
+                      <tr>
+                        <td class="g-font-weight-500 g-pa-20">Pages</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">200</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">225</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">275</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">300</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">400+</td>
+                      </tr>
+                      <tr>
+                        <td class="g-font-weight-500 g-pa-20">Elements</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">200</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">350</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">500</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">900</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">1600+</td>
+                      </tr>
+                      <tr>
+                        <td class="g-font-weight-500 g-pa-20">Support</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">1 month</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">4 months</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">8 months</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">1 Year</td>
+                        <td class="g-color-gray-dark-v5 g-pa-20">Unlimited</td>
+                      </tr>
+                      <tr>
+                        <td class="g-font-weight-500 g-pa-20">Price</td>
+                        <td class="g-color-gray-dark-v5 g-font-weight-500 g-font-size-18 g-pa-20">$19.00</td>
+                        <td class="g-color-gray-dark-v5 g-font-weight-500 g-font-size-18 g-pa-20">$29.00</td>
+                        <td class="g-color-gray-dark-v5 g-font-weight-500 g-font-size-18 g-pa-20">$39.00</td>
+                        <td class="g-color-gray-dark-v5 g-font-weight-500 g-font-size-18 g-pa-20">$49.00</td>
+                        <td class="g-color-gray-dark-v5 g-font-weight-500 g-font-size-18 g-pa-20">$99.00</td>
+                      </tr>
+                      <tr>
+                        <td class="g-pa-20"></td>
+                        <td class="g-pa-20">
+                          <a class="btn btn-block u-btn-black g-brd-primary--hover g-color-primary g-color-white--hover g-bg-primary--hover g-font-weight-600 g-font-size-12 text-uppercase g-py-10" href="#">
+                            Purchase
+                            <i class="g-pos-rel g-top-minus-1 ml-2 fa fa-angle-right"></i>
+                          </a>
+                        </td>
+                        <td class="g-pa-20">
+                          <a class="btn btn-block u-btn-black g-brd-primary--hover g-color-primary g-color-white--hover g-bg-primary--hover g-font-weight-600 g-font-size-12 text-uppercase g-py-10" href="#">
+                            Purchase
+                            <i class="g-pos-rel g-top-minus-1 ml-2 fa fa-angle-right"></i>
+                          </a>
+                        </td>
+                        <td class="g-pa-20">
+                          <a class="btn btn-block u-btn-black g-brd-primary--hover g-color-primary g-color-white--hover g-bg-primary--hover g-font-weight-600 g-font-size-12 text-uppercase g-py-10" href="#">
+                            Purchase
+                            <i class="g-pos-rel g-top-minus-1 ml-2 fa fa-angle-right"></i>
+                          </a>
+                        </td>
+                        <td class="g-pa-20">
+                          <a class="btn btn-block u-btn-black g-brd-primary--hover g-color-primary g-color-white--hover g-bg-primary--hover g-font-weight-600 g-font-size-12 text-uppercase g-py-10" href="#">
+                            Purchase
+                            <i class="g-pos-rel g-top-minus-1 ml-2 fa fa-angle-right"></i>
+                          </a>
+                        </td>
+                        <td class="g-pa-20">
+                          <a class="btn btn-block u-btn-black g-brd-primary--hover g-color-primary g-color-white--hover g-bg-primary--hover g-font-weight-600 g-font-size-12 text-uppercase g-py-10" href="#">
+                            Purchase
+                            <i class="g-pos-rel g-top-minus-1 ml-2 fa fa-angle-right"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- End Table Bordered -->
+                </div>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode5" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </section>
+          <!-- End Pricing Table #05 -->
+        </div>
+      </div>
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

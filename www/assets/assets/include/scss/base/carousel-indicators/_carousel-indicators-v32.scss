@@ -1,0 +1,29 @@
+/*------------------------------------
+  Carousel Indicators v32
+------------------------------------*/
+.u-carousel-indicators-v32 {
+  .slick {
+    &-slide {
+      align-items: center !important;
+      transition-property: all;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+      transition-duration: .5s;
+
+      .u-carousel-indicators-v32-img {
+        box-shadow: 0 5px 25px 0 rgba(#000, 0);
+      }
+    }
+
+    &-center {
+      width: 70px;
+      height: 70px;
+      -webkit-transform: scale(1.35);
+
+      .u-carousel-indicators-v32-img {
+        box-shadow: 0 5px 25px 0 rgba(#000, .1);
+        border-color: $g-color-white;
+      }
+    }
+  }
+}

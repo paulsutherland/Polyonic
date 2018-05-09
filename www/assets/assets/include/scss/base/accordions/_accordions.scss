@@ -1,0 +1,62 @@
+/*------------------------------------
+  Accordions
+------------------------------------*/
+.u-accordion {
+  &__header {
+    @include px-to-rem(padding, 10px 15px);
+  }
+  &__body {
+    @include px-to-rem(padding, 15px);
+  }
+
+  &__control-icon {
+    & i:nth-child(1) {
+      display: none;
+
+      .collapsed & {
+        display: inline;
+      }
+    }
+
+    & i:nth-child(2) {
+      display: inline;
+
+      .collapsed & {
+        display: none;
+      }
+    }
+  }
+
+  // Accordions with Icon
+  [class*="et-icon-"],
+  &-line-icon-pro {
+    position: relative;
+    top: 3px;
+  }
+
+  // Colors
+  &-color-primary &__header [aria-expanded="true"] {
+    color: $g-color-primary !important;
+  }
+  &-color-white &__header [aria-expanded="true"] {
+    color: $g-color-white !important;
+  }
+
+  // BGs
+  &-bg-primary &__header [aria-expanded="true"] {
+    background-color: $g-color-primary !important;
+    border-color: $g-color-primary !important;
+  }
+  &-bg-white &__header [aria-expanded="true"] {
+    background-color: $g-color-white !important;
+    border-color: $g-color-white !important;
+  }
+
+  // Borders
+  &-brd-primary &__header [aria-expanded="true"] {
+    border-color: $g-color-primary !important;
+  }
+  &-brd-white &__header [aria-expanded="true"] {
+    border-color: $g-color-white !important;
+  }
+}

@@ -1,0 +1,9 @@
+/* Gradient Style v1 */
+.u-btn-gradient-v1 {
+  @include u-button-gradient (#4776E6, #8E54E9);
+}
+
+/* Gradient Style v2 */
+.u-btn-gradient-v2 {
+  @include u-button-gradient (#E040FB, #00BCD4);
+}

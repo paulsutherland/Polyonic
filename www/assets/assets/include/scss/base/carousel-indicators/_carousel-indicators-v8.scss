@@ -1,0 +1,31 @@
+/*------------------------------------
+  Carousel indicators v8
+------------------------------------*/
+
+.u-carousel-indicators-v8 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: auto;
+  display: block;
+  width: 7px;
+  transform: translateY(-50%);
+
+  span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $g-color-white;
+  }
+
+  li {
+    display: block;
+    margin: 15px 0;
+
+    &.slick-active {
+      span {
+        background-color: $g-color-primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+/*------------------------------------
+  Carousel indicators v2
+------------------------------------*/
+
+.u-carousel-indicators-v2 {
+  li {
+    margin: 0 5px;
+    &.slick-active {
+      span {
+        opacity: 1;
+      }
+    }
+  }
+
+  span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $g-color-white;
+    opacity: .3;
+  }
+}

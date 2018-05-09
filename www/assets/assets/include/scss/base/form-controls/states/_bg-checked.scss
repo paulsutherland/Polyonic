@@ -1,0 +1,278 @@
+/*------------------------------------
+  Checked state background
+------------------------------------*/
+
+/* Primary Colors */
+.g-bg-primary {
+  &--checked {
+    input[type="checkbox"]:checked + &,
+    input[type="radio"]:checked + &,
+    input[type="checkbox"]:checked + * &,
+    input[type="radio"]:checked + * & {
+      background-color: $g-color-primary !important;
+    }
+
+    &.g-checked,
+    .g-checked & {
+      background-color: $g-color-primary !important;
+    }
+  }
+}
+
+/* Black Colors */
+.g-bg-black {
+  &--checked {
+    input[type="checkbox"]:checked + &,
+    input[type="radio"]:checked + &,
+    input[type="checkbox"]:checked + * &,
+    input[type="radio"]:checked + * & {
+      background-color: $g-color-black !important;
+    }
+
+    &.g-checked,
+    .g-checked & {
+      background-color: $g-color-black !important;
+    }
+  }
+}
+
+/* White Colors */
+.g-bg-white {
+  &--checked {
+    input[type="checkbox"]:checked + &,
+    input[type="radio"]:checked + &,
+    input[type="checkbox"]:checked + * &,
+    input[type="radio"]:checked + * & {
+      background-color: $g-color-white !important;
+    }
+
+    &.g-checked,
+    .g-checked & {
+      background-color: $g-color-white !important;
+    }
+  }
+}
+
+/* Gray Colors */
+.g-bg-dark {
+  // Dark Gray
+  &-dark {
+    &-v1 {
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + &,
+        input[type="checkbox"]:checked + * &,
+        input[type="radio"]:checked + * & {
+          background-color: $g-color-gray-dark-v1 !important;
+        }
+
+        &.g-checked,
+        .g-checked & {
+          background-color: $g-color-gray-dark-v1 !important;
+        }
+      }
+    }
+
+    &-v2 {
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + &,
+        input[type="checkbox"]:checked + * &,
+        input[type="radio"]:checked + * & {
+          background-color: $g-color-gray-dark-v2 !important;
+        }
+
+        &.g-checked,
+        .g-checked & {
+          background-color: $g-color-gray-dark-v2 !important;
+        }
+      }
+    }
+
+    &-v3 {
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + &,
+        input[type="checkbox"]:checked + * &,
+        input[type="radio"]:checked + * & {
+          background-color: $g-color-gray-dark-v3 !important;
+        }
+
+        &.g-checked,
+        .g-checked & {
+          background-color: $g-color-gray-dark-v3 !important;
+        }
+      }
+    }
+
+    &-v4 {
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + &,
+        input[type="checkbox"]:checked + * &,
+        input[type="radio"]:checked + * & {
+          background-color: $g-color-gray-dark-v4 !important;
+        }
+
+        &.g-checked,
+        .g-checked & {
+          background-color: $g-color-gray-dark-v4 !important;
+        }
+      }
+    }
+
+    &-v5 {
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + &,
+        input[type="checkbox"]:checked + * &,
+        input[type="radio"]:checked + * & {
+          background-color: $g-color-gray-dark-v5 !important;
+        }
+
+        &.g-checked,
+        .g-checked & {
+          background-color: $g-color-gray-dark-v5 !important;
+        }
+      }
+    }
+  }
+
+  // Light Gray
+  &-light {
+    &-v1 {
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + &,
+        input[type="checkbox"]:checked + * &,
+        input[type="radio"]:checked + * & {
+          background-color: $g-color-gray-light-v1 !important;
+        }
+
+        &.g-checked,
+        .g-checked & {
+          background-color: $g-color-gray-light-v1 !important;
+        }
+      }
+    }
+
+    &-v2 {
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + &,
+        input[type="checkbox"]:checked + * &,
+        input[type="radio"]:checked + * & {
+          background-color: $g-color-gray-light-v2 !important;
+        }
+
+        &.g-checked,
+        .g-checked & {
+          background-color: $g-color-gray-light-v2 !important;
+        }
+      }
+    }
+
+    &-v3 {
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + &,
+        input[type="checkbox"]:checked + * &,
+        input[type="radio"]:checked + * & {
+          background-color: $g-color-gray-light-v3 !important;
+        }
+
+        &.g-checked,
+        .g-checked & {
+          background-color: $g-color-gray-light-v3 !important;
+        }
+      }
+    }
+
+    &-v4 {
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + &,
+        input[type="checkbox"]:checked + * &,
+        input[type="radio"]:checked + * & {
+          background-color: $g-color-gray-light-v4 !important;
+        }
+
+        &.g-checked,
+        .g-checked & {
+          background-color: $g-color-gray-light-v4 !important;
+        }
+      }
+    }
+
+    &-v5 {
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + &,
+        input[type="checkbox"]:checked + * &,
+        input[type="radio"]:checked + * & {
+          background-color: $g-color-gray-light-v5 !important;
+        }
+
+        &.g-checked,
+        .g-checked & {
+          background-color: $g-color-gray-light-v5 !important;
+        }
+      }
+    }
+  }
+}
+
+/* Transparent */
+.g-bg-transparent {
+  &--checked {
+    input[type="checkbox"]:checked + &,
+    input[type="radio"]:checked + &,
+    input[type="checkbox"]:checked + * &,
+    input[type="radio"]:checked + * & {
+      background-color: transparent !important;
+    }
+
+    &.g-checked,
+    .g-checked & {
+      background-color: transparent !important;
+    }
+  }
+}
+
+/* Color Red */
+.g-bg-red {
+  &--checked {
+    input[type="checkbox"]:checked + &,
+    input[type="radio"]:checked + &,
+    input[type="checkbox"]:checked + * &,
+    input[type="radio"]:checked + * & {
+      background-color: $g-color-red !important;
+    }
+
+    &.g-checked,
+    .g-checked & {
+      background-color: $g-color-red !important;
+    }
+  }
+}
+
+/*------------------------------------
+  Checked state Colors
+------------------------------------*/
+
+/* Primary Colors */
+.g-color-primary {
+  &--checked {
+    input[type="checkbox"]:checked + &,
+    input[type="radio"]:checked + &,
+    input[type="checkbox"]:checked + * &,
+    input[type="radio"]:checked + * & {
+      color: $g-color-primary !important;
+    }
+
+    &.g-checked,
+    .g-checked & {
+      color: $g-color-primary !important;
+    }
+  }
+}

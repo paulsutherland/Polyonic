@@ -1,0 +1,39 @@
+/*------------------------------------
+  Info Block v5-3
+------------------------------------*/
+.info-v5-3__info-price {
+	opacity: 0;
+}
+
+.info-v5-3__info-title {
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	width: 100%;
+	@include px-to-rem(margin-bottom, 65px);
+	transform: translate3d(0,70px,0);
+}
+
+.info-v5-3:hover {
+	.info-v5-3__info {
+		color: rgba($g-color-white,.8);
+		background-color: rgba($g-color-primary,.9);
+	}
+
+	.info-v5-3__info-price {
+		opacity: 1;
+	}
+
+	.info-v5-3__info-list {
+		color: $g-color-white;
+
+		.fa {
+			color: $g-color-white;
+		}
+	}
+
+	.info-v5-3__info-title {
+		transform: translate3d(0,0,0);
+		@include px-to-rem(margin-bottom, 45px);
+	}
+}

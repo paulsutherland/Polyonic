@@ -1,0 +1,1402 @@
+/*------------------------------------
+  Colors
+------------------------------------*/
+
+.g-color {
+  /* Gray Colors */
+  &-gray {
+    // Gray Light
+    &-light {
+      &-v6 {
+        color: $g-color-gray-light-v6 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-light-v6 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-light-v6 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-light-v6 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-light-v6 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-light-v6 !important;
+          }
+        }
+      }
+
+      &-v7 {
+        color: $g-color-gray-light-v7 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-light-v7 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-light-v7 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-light-v7 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-light-v7 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-light-v7 !important;
+          }
+        }
+      }
+
+      &-v8 {
+        color: $g-color-gray-light-v8 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-light-v8 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-light-v8 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-light-v8 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-light-v8 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-light-v8 !important;
+          }
+        }
+      }
+
+      &-v9 {
+        color: $g-color-gray-light-v9 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-light-v9 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-light-v9 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-light-v9 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-light-v9 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-light-v9 !important;
+          }
+        }
+      }
+
+      &-v11 {
+        color: $g-color-gray-light-v11 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-light-v11 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-light-v11 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-light-v11 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-light-v11 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-light-v11 !important;
+          }
+        }
+      }
+    }
+
+    // Gray Dark
+    &-dark {
+      &-v6 {
+        color: $g-color-gray-dark-v6 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-dark-v6 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-dark-v6 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-dark-v6 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-dark-v6 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-dark-v6 !important;
+          }
+        }
+      }
+
+      &-v7 {
+        color: $g-color-gray-dark-v7 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-dark-v7 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-dark-v7 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-dark-v7 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-dark-v7 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-dark-v7 !important;
+          }
+        }
+      }
+
+      &-v8 {
+        color: $g-color-gray-dark-v8 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-dark-v8 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-dark-v8 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-dark-v8 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-dark-v8 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-dark-v8 !important;
+          }
+        }
+      }
+
+      &-v9 {
+        color: $g-color-gray-dark-v9 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-dark-v9 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-dark-v9 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-dark-v9 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-dark-v9 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-dark-v9 !important;
+          }
+        }
+      }
+
+      &-v10 {
+        color: $g-color-gray-dark-v10 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-dark-v10 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-dark-v10 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-dark-v10 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-dark-v10 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-dark-v10 !important;
+          }
+        }
+      }
+
+      &-v11 {
+        color: $g-color-gray-dark-v11 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-dark-v11 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-dark-v11 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-dark-v11 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-dark-v11 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-dark-v11 !important;
+          }
+        }
+      }
+
+      &-v12 {
+        color: $g-color-gray-dark-v12 !important;
+
+        &--hover:hover,
+        &--focus:focus,
+        &--disabled:disabled,
+        &--active.active,
+        &--opened[aria-expanded="true"] {
+          color: $g-color-gray-dark-v12 !important;
+        }
+
+        &--checked {
+          input[type="checkbox"]:checked + &,
+          input[type="checkbox"]:checked + * + & {
+            color: $g-color-gray-dark-v12 !important;
+          }
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            color: $g-color-gray-dark-v12 !important;
+          }
+        }
+
+        &--parent-active {
+          .g-parent.active & {
+            color: $g-color-gray-dark-v12 !important;
+          }
+        }
+
+        &--sibling-opened {
+          .u-sibling.opened + & {
+            color: $g-color-gray-dark-v12 !important;
+          }
+        }
+      }
+    }
+  }
+
+  /* Lightblue Colors */
+  &-lightblue {
+    &-v2 {
+      color: $g-color-lightblue-v2 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-lightblue-v2 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-lightblue-v2 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-lightblue-v2 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-lightblue-v2 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-lightblue-v2 !important;
+        }
+      }
+    }
+
+    &-v3 {
+      color: $g-color-lightblue-v3 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-lightblue-v3 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-lightblue-v3 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-lightblue-v3 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-lightblue-v3 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-lightblue-v3 !important;
+        }
+      }
+    }
+
+    &-v4 {
+      color: $g-color-lightblue-v4 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-lightblue-v4 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-lightblue-v4 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-lightblue-v4 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-lightblue-v4 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-lightblue-v4 !important;
+        }
+      }
+    }
+
+    &-v5 {
+      color: $g-color-lightblue-v5 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-lightblue-v5 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-lightblue-v5 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-lightblue-v5 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-lightblue-v5 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-lightblue-v5 !important;
+        }
+      }
+    }
+
+    &-v6 {
+      color: $g-color-lightblue-v6 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-lightblue-v6 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-lightblue-v6 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-lightblue-v6 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-lightblue-v6 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-lightblue-v6 !important;
+        }
+      }
+    }
+
+    &-v9 {
+      color: $g-color-lightblue-v9 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-lightblue-v9 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-lightblue-v9 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-lightblue-v9 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-lightblue-v9 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-lightblue-v9 !important;
+        }
+      }
+    }
+  }
+
+  /* Darkblue Colors */
+  &-darkblue {
+    &-v2 {
+      color: $g-color-darkblue-v2 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-darkblue-v2 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-darkblue-v2 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-darkblue-v2 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-darkblue-v2 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-darkblue-v2 !important;
+        }
+      }
+    }
+
+    &-v3 {
+      color: $g-color-darkblue-v3 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-darkblue-v3 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-darkblue-v3 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-darkblue-v3 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-darkblue-v3 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-darkblue-v3 !important;
+        }
+      }
+    }
+
+    &-v4 {
+      color: $g-color-darkblue-v4 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-darkblue-v4 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-darkblue-v4 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-darkblue-v4 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-darkblue-v4 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-darkblue-v4 !important;
+        }
+      }
+    }
+
+    &-v5 {
+      color: $g-color-darkblue-v5 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-darkblue-v5 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-darkblue-v5 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-darkblue-v5 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-darkblue-v5 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-darkblue-v5 !important;
+        }
+      }
+    }
+
+    &-v6 {
+      color: $g-color-darkblue-v6 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-darkblue-v6 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-darkblue-v6 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-darkblue-v6 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-darkblue-v6 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-darkblue-v6 !important;
+        }
+      }
+    }
+
+    &-v7 {
+      color: $g-color-darkblue-v7 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-darkblue-v7 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-darkblue-v7 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-darkblue-v7 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-darkblue-v7 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-darkblue-v7 !important;
+        }
+      }
+    }
+
+    &-v8 {
+      color: $g-color-darkblue-v8 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-darkblue-v8 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-darkblue-v8 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-darkblue-v8 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-darkblue-v8 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-darkblue-v8 !important;
+        }
+      }
+    }
+
+    &-v9 {
+      color: $g-color-darkblue-v9 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-darkblue-v9 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-darkblue-v9 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-darkblue-v9 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-darkblue-v9 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-darkblue-v9 !important;
+        }
+      }
+    }
+  }
+
+  /* Teal Colors */
+  &-teal {
+    &-v2 {
+      color: $g-color-teal-v2 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-teal-v2 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-teal-v2 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-teal-v2 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-teal-v2 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-teal-v2 !important;
+        }
+      }
+    }
+
+    &-v3 {
+      color: $g-color-teal-v3 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-teal-v3 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-teal-v3 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-teal-v3 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-teal-v3 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-teal-v3 !important;
+        }
+      }
+    }
+  }
+
+  /* Green Colors */
+  &-green {
+    &-v2 {
+      color: $g-color-green-v2 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-green-v2 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-green-v2 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-green-v2 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-green-v2 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-green-v2 !important;
+        }
+      }
+    }
+  }
+
+  /* Lightred Colors */
+  &-lightred {
+    &-v2 {
+      color: $g-color-lightred-v2 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-lightred-v2 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-lightred-v2 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-lightred-v2 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-lightred-v2 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-lightred-v2 !important;
+        }
+      }
+    }
+
+    &-v3 {
+      color: $g-color-lightred-v3 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-lightred-v3 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-lightred-v3 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-lightred-v3 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-lightred-v3 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-lightred-v3 !important;
+        }
+      }
+    }
+
+    &-v4 {
+      color: $g-color-lightred-v4 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-lightred-v4 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-lightred-v4 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-lightred-v4 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-lightred-v4 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-lightred-v4 !important;
+        }
+      }
+    }
+
+    &-v5 {
+      color: $g-color-lightred-v5 !important;
+
+      &--hover:hover,
+      &--focus:focus,
+      &--disabled:disabled,
+      &--active.active,
+      &--opened[aria-expanded="true"] {
+        color: $g-color-lightred-v5 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="checkbox"]:checked + * + & {
+          color: $g-color-lightred-v5 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          color: $g-color-lightred-v5 !important;
+        }
+      }
+
+      &--parent-active {
+        .g-parent.active & {
+          color: $g-color-lightred-v5 !important;
+        }
+      }
+
+      &--sibling-opened {
+        .u-sibling.opened + & {
+          color: $g-color-lightred-v5 !important;
+        }
+      }
+    }
+  }
+
+  /* Pink Colors */
+  &-pink-v2 {
+    color: $g-color-pink-v2 !important;
+
+    &--hover:hover,
+    &--focus:focus,
+    &--disabled:disabled,
+    &--active.active,
+    &--opened[aria-expanded="true"] {
+      color: $g-color-pink-v2 !important;
+    }
+
+    &--checked {
+      input[type="checkbox"]:checked + &,
+      input[type="checkbox"]:checked + * + & {
+        color: $g-color-pink-v2 !important;
+      }
+    }
+
+    &--parent-hover {
+      .g-parent:hover & {
+        color: $g-color-pink-v2 !important;
+      }
+    }
+
+    &--parent-active {
+      .g-parent.active & {
+        color: $g-color-pink-v2 !important;
+      }
+    }
+
+    &--sibling-opened {
+      .u-sibling.opened + & {
+        color: $g-color-pink-v2 !important;
+      }
+    }
+  }
+
+  /* Lightbrown Colors */
+  &-lightbrown {
+    color: $g-color-lightbrown !important;
+
+    &--hover:hover,
+    &--focus:focus,
+    &--disabled:disabled,
+    &--active.active,
+    &--opened[aria-expanded="true"] {
+      color: $g-color-lightbrown !important;
+    }
+
+    &--checked {
+      input[type="checkbox"]:checked + &,
+      input[type="checkbox"]:checked + * + & {
+        color: $g-color-lightbrown !important;
+      }
+    }
+
+    &--parent-hover {
+      .g-parent:hover & {
+        color: $g-color-lightbrown !important;
+      }
+    }
+
+    &--parent-active {
+      .g-parent.active & {
+        color: $g-color-lightbrown !important;
+      }
+    }
+
+    &--sibling-opened {
+      .u-sibling.opened + & {
+        color: $g-color-lightbrown !important;
+      }
+    }
+  }
+
+  /* Lightyellow Colors */
+  &-lightyellow {
+    color: $g-color-lightyellow !important;
+
+    &--hover:hover,
+    &--focus:focus,
+    &--disabled:disabled,
+    &--active.active,
+    &--opened[aria-expanded="true"] {
+      color: $g-color-lightyellow !important;
+    }
+
+    &--checked {
+      input[type="checkbox"]:checked + &,
+      input[type="checkbox"]:checked + * + & {
+        color: $g-color-lightyellow !important;
+      }
+    }
+
+    &--parent-hover {
+      .g-parent:hover & {
+        color: $g-color-lightyellow !important;
+      }
+    }
+
+    &--parent-active {
+      .g-parent.active & {
+        color: $g-color-lightyellow !important;
+      }
+    }
+
+    &--sibling-opened {
+      .u-sibling.opened + & {
+        color: $g-color-lightyellow !important;
+      }
+    }
+  }
+
+  /* Dropbox Colors */
+  &-dropbox {
+    color: $g-color-dropbox !important;
+
+    &--hover:hover,
+    &--focus:focus,
+    &--disabled:disabled,
+    &--active.active,
+    &--opened[aria-expanded="true"] {
+      color: $g-color-dropbox !important;
+    }
+
+    &--checked {
+      input[type="checkbox"]:checked + &,
+      input[type="checkbox"]:checked + * + & {
+        color: $g-color-dropbox !important;
+      }
+    }
+
+    &--parent-hover {
+      .g-parent:hover & {
+        color: $g-color-dropbox !important;
+      }
+    }
+
+    &--parent-active {
+      .g-parent.active & {
+        color: $g-color-dropbox !important;
+      }
+    }
+
+    &--sibling-opened {
+      .u-sibling.opened + & {
+        color: $g-color-dropbox !important;
+      }
+    }
+  }
+}

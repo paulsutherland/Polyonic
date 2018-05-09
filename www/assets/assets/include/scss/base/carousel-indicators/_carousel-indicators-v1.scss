@@ -1,0 +1,41 @@
+/*------------------------------------
+  Carousel indicators v1
+------------------------------------*/
+
+.u-carousel-indicators-v1,
+.u-carousel-indicators-v1--white {
+  display: flex !important;
+
+  li {
+    margin: 0 5px;
+    &.slick-active {
+      span {
+        background-color: $g-color-primary;
+      }
+    }
+  }
+
+  span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $g-color-gray-dark-v4;
+    opacity: 1;
+  }
+}
+
+.u-carousel-indicators-v1 {
+  span {
+    background-color: $g-color-gray-dark-v4;
+  }
+}
+
+.u-carousel-indicators-v1--white {
+  li {
+    &.slick-active {
+      span {
+        background-color: $g-color-white;
+      }
+    }
+  }
+}

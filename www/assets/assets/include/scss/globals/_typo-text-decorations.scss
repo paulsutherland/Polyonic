@@ -1,0 +1,17 @@
+/*------------------------------------
+  Typography Text Decoration
+------------------------------------*/
+.g-text-underline {
+  text-decoration: underline;
+
+  &--none--hover {
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.g-text-strike {
+  text-decoration: line-through;
+}

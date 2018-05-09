@@ -1,0 +1,62 @@
+/*------------------------------------
+  Buttons
+------------------------------------*/
+
+@media (min-width: $g-md) {
+  .btn-xl--md {
+    @include u-button-size (13px, 26px, 18px);
+  }
+}
+
+@import "default/button-default";
+@import "outline/button-outline";
+
+.u-input-btn--v1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 0;
+  padding: 0;
+}
+
+.u-input-btn--v1--left {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 0;
+  padding: 0;
+}
+
+.u-input-btn--v2 {
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  height: calc(100% - 2px);
+  border-radius: 0;
+  padding: 0;
+}
+
+.u-input-btn--v3 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 0;
+  padding: 0;
+  transform: translateY(-50%);
+}
+
+.u-input-btn--v3--left {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 0;
+  padding: 0;
+  transform: translateY(-50%);
+}

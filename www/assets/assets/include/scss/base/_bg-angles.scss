@@ -1,0 +1,119 @@
+/*------------------------------------
+  BG Angles
+------------------------------------*/
+
+@mixin angle-bg($angle-type, $angle-position, $angle-bg) {
+  content: "";
+  position: absolute;
+
+  @if $angle-position == top-left {
+    top: -10px;
+    left: -100px;
+    transform: rotate(-55deg);
+  } @else if $angle-position == top-right {
+    top: -10px;
+    right: -100px;
+    transform: rotate(55deg);
+  } @else if $angle-position == bottom-left {
+    bottom: -10px;
+    left: -100px;
+    transform: rotate(55deg);
+  } @else if $angle-position == bottom-right {
+    bottom: -10px;
+    right: -100px;
+    transform: rotate(-55deg);
+  }
+
+  width: 250px;
+  height: 120px;
+
+  @if $angle-bg == light {
+    background-color: rgba(255,255,255,.1);
+  } @else if $angle-bg == dark {
+    background-color: rgba(0,0,0,.1);
+  }
+
+  @if $angle-type == v2 {
+    border-radius: 50%;
+  }
+}
+
+.u-angle-v1--top-left--bg-light,
+.u-angle-v1--top-right--bg-light,
+.u-angle-v1--bottom-left--bg-light,
+.u-angle-v1--bottom-right--bg-light,
+.u-angle-v1--top-left--bg-dark,
+.u-angle-v1--top-right--bg-dark,
+.u-angle-v1--bottom-left--bg-dark,
+.u-angle-v1--bottom-right--bg-dark,
+.u-angle-v2--top-left--bg-light,
+.u-angle-v2--top-right--bg-light,
+.u-angle-v2--bottom-left--bg-light,
+.u-angle-v2--bottom-right--bg-light,
+.u-angle-v2--top-left--bg-dark,
+.u-angle-v2--top-right--bg-dark,
+.u-angle-v2--bottom-left--bg-dark,
+.u-angle-v2--bottom-right--bg-dark {
+  position: relative;
+  overflow: hidden;
+}
+
+/* V-1
+------------------------------------*/
+/* Light */
+.u-angle-v1--top-left--bg-light::after {
+  @include angle-bg(v1, top-left, light);
+}
+.u-angle-v1--top-right--bg-light::after {
+  @include angle-bg(v1, top-right, light);
+}
+.u-angle-v1--bottom-left--bg-light::after {
+  @include angle-bg(v1, bottom-left, light);
+}
+.u-angle-v1--bottom-right--bg-light::after {
+  @include angle-bg(v1, bottom-right, light);
+}
+
+/* Dark */
+.u-angle-v1--top-left--bg-dark::after {
+  @include angle-bg(v1, top-left, dark);
+}
+.u-angle-v1--top-right--bg-dark::after {
+  @include angle-bg(v1, top-right, dark);
+}
+.u-angle-v1--bottom-left--bg-dark::after {
+  @include angle-bg(v1, bottom-left, dark);
+}
+.u-angle-v1--bottom-right--bg-dark::after {
+  @include angle-bg(v1, bottom-right, dark);
+}
+
+/* V-2
+------------------------------------*/
+/* Light */
+.u-angle-v2--top-left--bg-light::after {
+  @include angle-bg(v2, top-left, light);
+}
+.u-angle-v2--top-right--bg-light::after {
+  @include angle-bg(v2, top-right, light);
+}
+.u-angle-v2--bottom-left--bg-light::after {
+  @include angle-bg(v2, bottom-left, light);
+}
+.u-angle-v2--bottom-right--bg-light::after {
+  @include angle-bg(v2, bottom-right, light);
+}
+
+/* Dark */
+.u-angle-v2--top-left--bg-dark::after {
+  @include angle-bg(v2, top-left, dark);
+}
+.u-angle-v2--top-right--bg-dark::after {
+  @include angle-bg(v2, top-right, dark);
+}
+.u-angle-v2--bottom-left--bg-dark::after {
+  @include angle-bg(v2, bottom-left, dark);
+}
+.u-angle-v2--bottom-right--bg-dark::after {
+  @include angle-bg(v2, bottom-right, dark);
+}

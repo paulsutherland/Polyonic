@@ -1,0 +1,1918 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-forms-bootstrap" %}
+{% set title = "Bootstrap Forms" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section class="container">
+      <!-- Form Controls -->
+      <section class="g-py-100">
+        <div>
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Form Controls</h2>
+            </div>
+
+            <div class="g-pl-90">
+              <p>Bootstrap’s form controls expand on
+                <a href="#!">our Rebooted form styles</a>
+                with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices. The example form below demonstrates common HTML form elements that receive updated styles from Bootstrap with additional classes.
+              </p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- General Controls -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">General Controls</h3>
+              <p>Remember, since Bootstrap utilizes the HTML5 doctype, <strong>all inputs must have a
+                  <code>type</code> attribute</strong>.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode1">
+                <div class="shortcode-html">
+                  <!-- General Controls -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <div class="form-group g-mb-25">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control rounded-0 form-control-md" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+
+                    <div class="form-group g-mb-25">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control rounded-0 form-control-md" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+
+                    <div class="form-group g-mb-25">
+                      <label for="exampleSelect1">Example select</label>
+                      <select class="form-control rounded-0" id="exampleSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group g-mb-25">
+                      <label for="exampleSelect2">Example multiple select</label>
+                      <select multiple class="form-control rounded-0" id="exampleSelect2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group g-mb-25">
+                      <label for="exampleTextarea">Example textarea</label>
+                      <textarea class="form-control rounded-0 form-control-md" id="exampleTextarea" rows="6"></textarea>
+                    </div>
+
+                    <div class="form-group g-mb-25">
+                      <label for="exampleInputFile">File input</label>
+                      <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                      <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                    </div>
+
+                    <fieldset class="form-group g-mb-25">
+                      <legend class="g-font-size-default">Radio buttons</legend>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                          Option one is this and that&mdash;be sure to include why it's great
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2">
+                          Option two can be something else and selecting it will deselect option one
+                        </label>
+                      </div>
+                      <div class="form-check disabled">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                          Option three is disabled
+                        </label>
+                      </div>
+                    </fieldset>
+
+                    <div class="form-check">
+                      <label class="form-check-label g-mb-20">
+                        <input type="checkbox" class="form-check-input mr-1">
+                        Check me out
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-md u-btn-primary rounded-0">Submit</button>
+                  </form>
+                  <!-- End General Controls -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode1" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End General Controls -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Textual Inputs -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Textual Inputs</h3>
+              <p>Here are examples of <code>.form-control</code> applied to each textual HTML5
+                <code>&lt;input&gt;</code> <code>type</code>.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode2">
+                <div class="shortcode-html">
+                  <!-- Textual Inputs -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <div class="form-group row g-mb-25">
+                      <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="text" value="Artisanal kale" id="example-text-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-search-input" class="col-2 col-form-label">Search</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="search" value="How do I shoot web" id="example-search-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-email-input" class="col-2 col-form-label">Email</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="email" value="bootstrap@example.com" id="example-email-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-url-input" class="col-2 col-form-label">URL</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="url" value="https://getbootstrap.com" id="example-url-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-password-input" class="col-2 col-form-label">Password</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="password" value="hunter2" id="example-password-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-number-input" class="col-2 col-form-label">Number</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="number" value="42" id="example-number-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-datetime-local-input" class="col-2 col-form-label">Date and time</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-date-input" class="col-2 col-form-label">Date</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="date" value="2011-08-19" id="example-date-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-month-input" class="col-2 col-form-label">Month</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="month" value="2011-08" id="example-month-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-week-input" class="col-2 col-form-label">Week</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="week" value="2011-W33" id="example-week-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0 form-control-md" type="time" value="13:45:00" id="example-time-input">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="example-color-input" class="col-2 col-form-label">Color</label>
+                      <div class="col-10">
+                        <input class="form-control rounded-0" type="color" value="#563d7c" id="example-color-input">
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End Textual Inputs -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode2" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Textual Inputs -->
+        </div>
+      </section>
+      <!-- End Form Controls -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Form Layouts -->
+      <section class="g-py-100">
+        <div>
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Form Layouts</h2>
+            </div>
+            <div class="g-pl-90">
+              <p>Since Bootstrap applies <code>display: block</code> and
+                <code>width: 100%</code> to almost all our form controls, forms will by default stack vertically. Additional classes can be used to vary this layout on a per-form basis.
+              </p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Form Groups -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Form Groups</h3>
+              <p>The
+                <code>.form-group</code> class is the easiest way to add some structure to forms. Its only purpose is to provide
+                <code>margin-bottom</code> around a label and control pairing.</p>
+              <p>As a bonus, since it’s a class you can use it with <code>&lt;fieldset&gt;</code> s,
+                <code>&lt;div&gt;</code>s, or nearly any other element.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode3">
+                <div class="shortcode-html">
+                  <!-- Form Groups -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <div class="form-group g-mb-25">
+                      <label for="formGroupExampleInput">Example label</label>
+                      <input type="text" class="form-control rounded-0 form-control-md" id="formGroupExampleInput" placeholder="Example input">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Another label</label>
+                      <input type="text" class="form-control rounded-0 form-control-md" id="formGroupExampleInput2" placeholder="Another input">
+                    </div>
+
+                    <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                    <label for="inputPassword5">Password</label>
+                    <input type="password" id="inputPassword5" class="form-control rounded-0 form-control-md g-mb-10" aria-describedby="passwordHelpBlock">
+                    <p id="passwordHelpBlock" class="form-text text-muted">
+                      Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                    </p>
+                  </form>
+                  <!-- End Form Groups -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode3" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Form Groups -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Inline Forms -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Inline Forms</h3>
+              <p>Use the
+                <code>.form-inline</code> class to display a series of labels, form controls, and buttons on a single horizontal row.
+              </p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode4">
+                <div class="shortcode-html">
+                  <!-- Inline Forms -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <div class="form-inline">
+                      <label class="sr-only" for="inlineFormInputName2">Name</label>
+                      <input type="text" class="form-control rounded-0 form-control-md mr-sm-3 mb-3 mb-lg-0" id="inlineFormInputName2" placeholder="Jane Doe">
+
+                      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                      <div class="input-group mr-sm-3 mb-3 mb-lg-0">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text g-bg-white">@</div>
+                        </div>
+                        <input type="text" class="form-control rounded-0 form-control-md" id="inlineFormInputGroupUsername2" placeholder="Username">
+                      </div>
+
+                      <div class="form-check mr-sm-3 mb-3 mb-sm-0">
+                        <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                        <label class="form-check-label" for="inlineFormCheck">
+                          Remember me
+                        </label>
+                      </div>
+
+                      <button type="submit" class="btn btn-md u-btn-primary rounded-0">Submit</button>
+                    </div>
+
+                    <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                    <div class="form-inline">
+                      <div class="form-group">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" id="inputPassword4" class="form-control rounded-0 form-control-md mx-sm-3" aria-describedby="passwordHelpInline">
+                        <small id="passwordHelpInline" class="text-muted">Must be 8-20 characters long.</small>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End Inline Forms -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode4" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Inline Forms -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Inline Forms (custom form controls) -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Inline Forms
+                <small class="d-block text-muted">custom form controls</small>
+              </h3>
+              <p>Custom form controls and selects are also supported.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode5">
+                <div class="shortcode-html">
+                  <!-- Inline Forms (custom form controls) -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <div class="form-inline">
+                      <label class="mr-sm-3 mb-3 mb-lg-0" for="inlineFormCustomSelectPref">Preference</label>
+                      <select class="custom-select mb-3" id="inlineFormCustomSelectPref">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+
+                      <div class="custom-control custom-checkbox mr-sm-3 mb-3 mb-sm-0">
+                        <input type="checkbox" class="custom-control-input" id="customControlInline">
+                        <label class="custom-control-label" for="customControlInline">Remember my preference</label>
+                      </div>
+
+                      <button type="submit" class="btn btn-md u-btn-primary rounded-0">Submit</button>
+                    </div>
+                  </form>
+                  <!-- End Inline Forms (custom form controls) -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode5" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Inline Forms (custom form controls) -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Horizontal Forms (using the grid) -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Horizontal Forms
+                <small class="d-block text-muted">using the grid</small>
+              </h3>
+              <p>Add the <code>.row</code> class to form groups and use the
+                <code>.col-*-*</code> classes to specify the width of your labels and controls.</p>
+              <p>Be sure to add <code>.col-form-label</code> to your
+                <code>&lt;label&gt;</code>s as well so they’re vertically centered with their associated form controls.
+              </p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode6">
+                <div class="shortcode-html">
+                  <!-- Horizontal Forms (using the grid) -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <div class="form-group row g-mb-25">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control rounded-0 form-control-md" id="inputEmail3" placeholder="Email">
+                      </div>
+                    </div>
+
+                    <div class="form-group row g-mb-25">
+                      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control rounded-0 form-control-md" id="inputPassword3" placeholder="Password">
+                      </div>
+                    </div>
+
+                    <fieldset class="form-group row g-mb-25">
+                      <legend class="col-form-legend col-sm-2">Radios</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input mr-1" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            Option one is this and that&mdash;be sure to include why it's great
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input mr-1" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            Option two can be something else and selecting it will deselect option one
+                          </label>
+                        </div>
+                        <div class="form-check disabled">
+                          <label class="form-check-label">
+                            <input class="form-check-input mr-1" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                            Option three is disabled
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <div class="form-group row g-mb-10">
+                      <label class="col-sm-2">Checkbox</label>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input mr-1" type="checkbox">
+                            Check me out
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="ml-sm-auto col-sm-10">
+                        <button type="submit" class="btn btn-md u-btn-primary rounded-0">Sign in</button>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End Horizontal Forms (using the grid) -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode6" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Horizontal Forms (using the grid) -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Horizontal (form sizes) -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Horizontal
+                <small class="d-block text-muted">form sizes</small>
+              </h3>
+              <p>Grid-based form layouts also support large and small inputs.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode7">
+                <div class="shortcode-html">
+                  <!-- Horizontal (form sizes) -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <div class="form-group row g-mb-25">
+                      <label for="lgFormGroupInput1" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-lg rounded-0" id="lgFormGroupInput1" placeholder="you@example.com">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="lgFormGroupInput2" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control rounded-0 form-control-md" id="lgFormGroupInput2" placeholder="you@example.com">
+                      </div>
+                    </div>
+                    <div class="form-group row g-mb-25">
+                      <label for="lgFormGroupInput3" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control rounded-0 form-control-md" id="lgFormGroupInput3" placeholder="you@example.com">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="smFormGroupInput" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-sm rounded-0 form-control-md" id="smFormGroupInput" placeholder="you@example.com">
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End Horizontal (form sizes) -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode7" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Inline Forms (form sizes) -->
+        </div>
+      </section>
+      <!-- End Form Layouts -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Checkboxes and Radios -->
+      <section class="g-py-100">
+        <div>
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Checkboxes and Radios</h2>
+            </div>
+            <div class="g-pl-90">
+              <p>Default checkboxes and radios are improved upon with the help of <code>.form-check</code>,
+                <strong>a single class for both input types that improves the layout and behavior of their HTML elements</strong>. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.
+              </p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Default (stacked) -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Default (stacked)</h3>
+              <p>By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with
+                <code>.form-check</code>.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode8">
+                <div class="shortcode-html">
+                  <!-- Default (stacked) -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <!-- Checkboxes -->
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input mr-1" type="checkbox" value="">
+                        Option one is this and that&mdash;be sure to include why it's great
+                      </label>
+                    </div>
+                    <div class="form-check disabled">
+                      <label class="form-check-label">
+                        <input class="form-check-input mr-1" type="checkbox" value="" disabled>
+                        Option two is disabled
+                      </label>
+                    </div>
+                    <!-- End Checkboxes -->
+
+                    <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                    <!-- Radios -->
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input mr-1" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        Option one is this and that&mdash;be sure to include why it's great
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input mr-1" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        Option two can be something else and selecting it will deselect option one
+                      </label>
+                    </div>
+                    <div class="form-check disabled">
+                      <label class="form-check-label">
+                        <input class="form-check-input mr-1" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                        Option three is disabled
+                      </label>
+                    </div>
+                    <!-- End Radios -->
+                  </form>
+                  <!-- End Default (stacked) -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode8" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Default (stacked) -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Inline -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Inline</h3>
+              <p>Group checkboxes or radios on the same horizontal row by adding
+                <code>.form-check-inline</code> to any <code>.form-check</code>.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode9">
+                <div class="shortcode-html">
+                  <!-- Inline -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <!-- Inline Checkboxes -->
+                    <div class="form-check form-check-inline mb-0">
+                      <label class="form-check-label mr-2">
+                        <input class="form-check-input mr-1" type="checkbox" id="inlineCheckbox1" value="option1">
+                        1
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0">
+                      <label class="form-check-label mr-2">
+                        <input class="form-check-input mr-1" type="checkbox" id="inlineCheckbox2" value="option2">
+                        2
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0 disabled">
+                      <label class="form-check-label mr-2">
+                        <input class="form-check-input mr-1" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                        3
+                      </label>
+                    </div>
+                    <!-- End Inline Checkboxes -->
+
+                    <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                    <!-- Inline Radios -->
+                    <div class="form-check form-check-inline mb-0">
+                      <label class="form-check-label mr-2">
+                        <input class="form-check-input mr-1" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        1
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0">
+                      <label class="form-check-label mr-2">
+                        <input class="form-check-input mr-1" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        2
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0 disabled">
+                      <label class="form-check-label mr-2">
+                        <input class="form-check-input mr-1" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                        3
+                      </label>
+                    </div>
+                    <!-- End Inline Radios -->
+                  </form>
+                  <!-- End Inline -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode9" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Inline -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Without Labels -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Without Labels</h3>
+              <p>Should you have no text within the
+                <code>&lt;label&gt;</code>, the input is positioned as you’d expect. Currently only works on non-inline checkboxes and radios.
+              </p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode10">
+                <div class="shortcode-html">
+                  <!-- Without Labels -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <!-- Checkboxe -->
+                    <div class="form-check mb-0">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                      </label>
+                    </div>
+                    <!-- End Checkboxe -->
+
+                    <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                    <!-- Radio -->
+                    <div class="form-check mb-0">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                      </label>
+                    </div>
+                    <!-- End Radio -->
+                  </form>
+                  <!-- End Without Labels -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode10" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Without Labels -->
+        </div>
+      </section>
+      <!-- End Checkboxes and Radios -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Static Controls -->
+      <section class="g-py-100">
+        <div>
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Static Controls</h2>
+            </div>
+            <div class="g-pl-90">
+              <p>When you need to place plain text next to a form label within a form, use the
+                <code>.form-control-static</code> class on an element of your choice.</p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Inline Forms -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Inline Forms</h3>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode11">
+                <div class="shortcode-html">
+                  <!-- Inline Forms -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <div class="form-group row g-mb-25">
+                      <label class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">email@example.com</p>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control rounded-0 form-control-md" id="inputPassword" placeholder="Password">
+                      </div>
+                    </div>
+
+                    <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                    <div class="form-inline">
+                      <div class="form-group g-pt-10">
+                        <label class="sr-only">Email</label>
+                        <p class="form-control-static">email@example.com</p>
+                      </div>
+                      <div class="form-group mx-sm-4">
+                        <label for="inputPassword2" class="sr-only">Password</label>
+                        <input type="password" class="form-control rounded-0 form-control-md" id="inputPassword2" placeholder="Password">
+                      </div>
+                      <button type="submit" class="btn btn-md u-btn-primary rounded-0">Confirm identity</button>
+                    </div>
+                  </form>
+                  <!-- End Inline Forms -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode11" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Inline Forms -->
+        </div>
+      </section>
+      <!-- End Static Controls -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Disabled and Readonly States -->
+      <section class="g-py-100">
+        <div>
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Disabled and Readonly States</h2>
+            </div>
+            <div class="g-pl-90">
+              <p>Add the
+                <code>disabled</code> boolean attribute on an input to prevent user interactions. Disabled inputs appear lighter and add a
+                <code>not-allowed</code> cursor. Also, read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
+              </p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Disabled -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Disabled</h3>
+              <p>Add the <code>disabled</code> attribute to a
+                <code>&lt;fieldset&gt;</code> to disable all the controls within.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode12">
+                <div class="shortcode-html">
+                  <!-- Disabled States -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <fieldset disabled>
+                      <div class="form-group g-mb-25">
+                        <label for="disabledTextInput">Disabled input</label>
+                        <input type="text" id="disabledTextInput" class="form-control rounded-0 form-control-md" placeholder="Disabled input">
+                      </div>
+                      <div class="form-group g-mb-25">
+                        <label for="disabledSelect">Disabled select menu</label>
+                        <select id="disabledSelect" class="form-control rounded-0 form-control-md">
+                          <option>Disabled select</option>
+                        </select>
+                      </div>
+                      <div class="checkbox g-mb-10">
+                        <label>
+                          <input class="mr-1" type="checkbox">
+                          Can't check this
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-md u-btn-primary rounded-0">Submit</button>
+                    </fieldset>
+                  </form>
+                  <!-- End Disabled States -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode12" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Disabled -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Readonly Inputs -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Readonly Inputs</h3>
+              <p>Add the
+                <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value
+              </p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode13">
+                <div class="shortcode-html">
+                  <!-- Readonly Inputs -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <input class="form-control rounded-0 form-control-md" type="text" placeholder="Readonly input here…" readonly>
+                  </form>
+                  <!-- End Readonly Inputs -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode13" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Readonly Inputs -->
+        </div>
+      </section>
+      <!-- End Disabled and Readonly States -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Control Sizing -->
+      <section class="g-py-100">
+        <div>
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Control and Column Sizing</h2>
+            </div>
+            <div class="g-pl-90">
+              <p>Bootstrap comes with three control form sizes: small, default and large. For column sizing, just wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Inputs -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Inputs</h3>
+              <p>Set heights using classes like
+                <code>.form-control-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.
+              </p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode14">
+                <div class="shortcode-html">
+                  <!-- Inputs -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <input class="form-control form-control-md form-control-lg rounded-0 g-mb-25" type="text" placeholder=".form-control-lg">
+                    <input class="form-control form-control-md rounded-0 g-mb-25" type="text" placeholder="Default input">
+                    <input class="form-control form-control-md form-control-sm rounded-0" type="text" placeholder=".form-control-sm">
+                  </form>
+                  <!-- Inputs -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode14" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Inputs -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Selects -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Selects</h3>
+              <p>Also <code>.form-control-lg</code> class is used for selects.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode15">
+                <div class="shortcode-html">
+                  <!-- Selects -->
+                  <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                    <select class="form-control form-control-md form-control-lg rounded-0 g-mb-25">
+                      <option>Large select</option>
+                      <option value="1">Value One</option>
+                      <option value="3">Value Two</option>
+                      <option value="3">Value Three</option>
+                    </select>
+                    <select class="form-control form-control-md rounded-0 g-mb-25">
+                      <option>Default select</option>
+                      <option value="1">Value One</option>
+                      <option value="3">Value Two</option>
+                      <option value="3">Value Three</option>
+                    </select>
+                    <select class="form-control form-control-md form-control-sm rounded-0">
+                      <option>Small select</option>
+                      <option value="1">Value One</option>
+                      <option value="3">Value Two</option>
+                      <option value="3">Value Three</option>
+                    </select>
+                  </form>
+                  <!-- Selects -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode15" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Selects -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Column Sizing -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Column Sizing</h3>
+              <p>Wrap inputs in grid columns, or any custom parent element.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode16">
+                <div class="shortcode-html">
+                  <!-- Column Sizing -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-40 g-mb-30" action="#">
+                    <div class="form-group row g-mb-25">
+                      <div class="col-md-3">
+                        <input id="inputGroup9_1" class="form-control rounded-0 form-control-md" type="text" placeholder=".col-md-3">
+                      </div>
+
+                      <div class="col-md-3">
+                        <input id="inputGroup9_2" class="form-control rounded-0 form-control-md" type="text" placeholder=".col-md-3">
+                      </div>
+
+                      <div class="col-md-3">
+                        <input id="inputGroup9_3" class="form-control rounded-0 form-control-md" type="text" placeholder=".col-md-3">
+                      </div>
+
+                      <div class="col-md-3">
+                        <input id="inputGroup9_4" class="form-control rounded-0 form-control-md" type="text" placeholder=".col-md-3">
+                      </div>
+                    </div>
+
+                    <div class="form-group row g-mb-25">
+                      <div class="col-md-4">
+                        <input id="inputGroup10_1" class="form-control rounded-0 form-control-md" type="text" placeholder=".col-md-4">
+                      </div>
+
+                      <div class="col-md-4">
+                        <input id="inputGroup10_2" class="form-control rounded-0 form-control-md" type="text" placeholder=".col-md-4">
+                      </div>
+
+                      <div class="col-md-4">
+                        <input id="inputGroup10_3" class="form-control rounded-0 form-control-md" type="text" placeholder=".col-md-4">
+                      </div>
+                    </div>
+
+                    <div class="form-group row mb-0">
+                      <div class="col-md-6">
+                        <input id="inputGroup11_1" class="form-control rounded-0 form-control-md" type="text" placeholder=".col-md-6">
+                      </div>
+
+                      <div class="col-md-6">
+                        <input id="inputGroup11_2" class="form-control rounded-0 form-control-md" type="text" placeholder=".col-md-6">
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End Column Sizing -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode16" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Column Sizing -->
+        </div>
+      </section>
+      <!-- End Control Sizing -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Validation -->
+      <section class="g-py-100">
+        <div>
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Validation</h2>
+            </div>
+            <div class="g-pl-90">
+              <p>Bootstrap includes validation styles for danger, warning, and success states on most form controls. Generally speaking, you’ll want to use a particular state for specific types of feedback: danger, warning and success states.</p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Form Groups -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Form Groups</h3>
+              <p>Here are some examples of the aforementioned classes in action.</p>
+              <p>First up is your standard left-aligned fields with labels, help text, and validation messaging.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode17">
+                <div class="shortcode-html">
+                  <!-- Form Groups -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <div class="form-group has-success g-mb-25">
+                      <label class="form-control-label" for="inputSuccess1">Input with success</label>
+                      <input type="text" class="form-control form-control-success rounded-0 form-control-md" id="inputSuccess1">
+                      <div class="form-control-feedback">Success! You've done it.</div>
+                      <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                    </div>
+                    <div class="form-group has-warning g-mb-25">
+                      <label class="form-control-label" for="inputWarning1">Input with warning</label>
+                      <input type="text" class="form-control form-control-warning rounded-0 form-control-md" id="inputWarning1">
+                      <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
+                      <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                    </div>
+                    <div class="form-group has-danger mb-0">
+                      <label class="form-control-label" for="inputDanger1">Input with danger</label>
+                      <input type="text" class="form-control form-control-danger rounded-0 form-control-md" id="inputDanger1">
+                      <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+                      <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                    </div>
+                  </form>
+                  <!-- End Form Groups -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode17" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Form Groups -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Inline Forms -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Inline Forms</h3>
+              <p>Those same states can also be used with horizontal forms.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode18">
+                <div class="shortcode-html">
+                  <!-- Inline Forms -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <div class="form-group row has-success g-mb-25">
+                      <label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-success rounded-0" id="inputHorizontalSuccess" placeholder="name@example.com">
+                        <div class="form-control-feedback">Success! You've done it.</div>
+                        <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                      </div>
+                    </div>
+                    <div class="form-group row has-warning g-mb-25">
+                      <label for="inputHorizontalWarning" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-warning rounded-0" id="inputHorizontalWarning" placeholder="name@example.com">
+                        <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
+                        <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                      </div>
+                    </div>
+                    <div class="form-group row has-danger mb-0">
+                      <label for="inputHorizontalDnger" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-danger rounded-0" id="inputHorizontalDnger" placeholder="name@example.com">
+                        <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+                        <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End Inline Forms -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode18" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Inline Forms -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Checkboxes and Radios -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Checkboxes and Radios</h3>
+              <p>Checkboxes and radios are also supported.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode19">
+                <div class="shortcode-html">
+                  <!-- Checkboxes and Radios -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <!-- Checkboxes -->
+                    <div class="form-check has-success g-mb-10">
+                      <label class="form-check-label">
+                        <input class="form-check-input mr-1" type="checkbox" id="checkboxSuccess" value="option1">
+                        Checkbox with success
+                      </label>
+                    </div>
+                    <div class="form-check has-warning g-mb-10">
+                      <label class="form-check-label">
+                        <input class="form-check-input mr-1" type="checkbox" id="checkboxWarning" value="option1">
+                        Checkbox with warning
+                      </label>
+                    </div>
+                    <div class="form-check has-danger mb-0">
+                      <label class="form-check-label">
+                        <input class="form-check-input mr-1" type="checkbox" id="checkboxDanger1" value="option1">
+                        Checkbox with danger
+                      </label>
+                    </div>
+                    <!-- End Checkboxes -->
+
+                    <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                    <!-- Radios -->
+                    <div class="form-check has-success g-mb-10">
+                      <label class="form-check-label">
+                        <input class="form-check-input mr-1" type="radio" name="exampleRadios" id="radioSuccess">
+                        Radio with success
+                      </label>
+                    </div>
+                    <div class="form-check has-warning g-mb-10">
+                      <label class="form-check-label">
+                        <input class="form-check-input mr-1" type="radio" name="exampleRadios" id="radioWarning">
+                        Radio with warning
+                      </label>
+                    </div>
+                    <div class="form-check has-danger mb-0">
+                      <label class="form-check-label">
+                        <input class="form-check-input mr-1" type="radio" name="exampleRadios" id="checkboxDanger2">
+                        Radio with danger
+                      </label>
+                    </div>
+                    <!-- End Radios -->
+                  </form>
+                  <!-- End Checkboxes and Radios -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode19" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Checkboxes and Radios -->
+        </div>
+      </section>
+      <!-- End Validation -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Custom Forms -->
+      <section class="g-py-100">
+        <div>
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Custom Forms</h2>
+            </div>
+            <div class="g-pl-90">
+              <p>For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They’re built on top of semantic and accessible markup, so they’re solid replacements for any default form control.</p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Checkboxes and Radios -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Checkboxes and Radios</h3>
+              <p>Here are some custom checkboxes and radios examples.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode20">
+                <div class="shortcode-html">
+                  <!-- Checkboxes and Radios -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <!-- Checkbox -->
+                    <label class="custom-control custom-checkbox mb-0">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label">Check this custom checkbox</span>
+                    </label>
+                    <!-- End Checkbox -->
+
+                    <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                    <!-- Radio -->
+                    <label class="custom-control custom-radio custom-control-inline g-mb-10 g-mb-0--lg">
+                      <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                      <span class="custom-control-label">Toggle this other custom radio</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline g-mb-10 g-mb-0--lg">
+                      <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                      <span class="custom-control-label">Or toggle this other custom radio</span>
+                    </label>
+                    <!-- End Radio -->
+
+                    <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                    <!-- Disabled -->
+                    <label class="custom-control custom-checkbox custom-control-inline g-mb-10 g-mb-0--lg">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label">Check this custom checkbox</span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox custom-control-inline g-mb-10 g-mb-0--lg">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label">Check this custom checkbox</span>
+                    </label>
+                    <!-- End Disabled -->
+
+                    <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                    <!-- Validation States -->
+                    <div class="form-group has-success">
+                      <label class="custom-control custom-checkbox mb-0">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-label">Check this custom checkbox</span>
+                      </label>
+                    </div>
+                    <div class="form-group has-warning">
+                      <label class="custom-control custom-checkbox mb-0">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-label">Check this custom checkbox</span>
+                      </label>
+                    </div>
+                    <div class="form-group has-danger mb-0">
+                      <label class="custom-control custom-checkbox mb-0">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-label">Check this custom checkbox</span>
+                      </label>
+                    </div>
+                    <!-- End Validation States -->
+
+                    <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                    <!-- Stacked -->
+                    <div class="custom-controls-stacked mb-0">
+                      <label class="custom-control custom-radio g-mb-10">
+                        <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input">
+                        <span class="custom-control-label">Toggle this custom radio</span>
+                      </label>
+                      <label class="custom-control custom-radio mb-0">
+                        <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input">
+                        <span class="custom-control-label">Or toggle this other custom radio</span>
+                      </label>
+                    </div>
+                    <!-- End Stacked -->
+                  </form>
+                  <!-- End Checkboxes and Radios -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode20" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Checkboxes and Radios -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Select Menu -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Select Menu</h3>
+              <p>Custom <code>&lt;select&gt;</code> menus need only a custom class,
+                <code>.custom-select</code> to trigger the custom styles.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode21">
+                <div class="shortcode-html">
+                  <!-- Select Menu -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <select class="custom-select rounded-0">
+                      <option selected>Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </form>
+                  <!-- End Select Menu -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode21" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Select Menu -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- File Browser -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">File Browser</h3>
+              <p>The file input is the most gnarly of the bunch and require additional JavaScript if you’d like to hook them up with functional
+                <i>Choose file…</i>
+                and selected file name text.
+              </p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode22">
+                <div class="shortcode-html">
+                  <!-- File Browser -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <label class="custom-file">
+                      <input type="file" id="file" class="custom-file-input">
+                      <span class="custom-file-label rounded-0"></span>
+                    </label>
+                  </form>
+                  <!-- End File Browser -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode22" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End File Browser -->
+        </div>
+      </section>
+      <!-- End Custom Forms -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Input Group -->
+      <section class="g-py-100">
+        <div>
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Input Group</h2>
+            </div>
+            <div class="g-pl-90">
+              <p>Easily extend form controls by adding text, buttons, or button groups on either side of textual
+                <code>&lt;input&gt;</code>s.</p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Basic Example -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Basic Example</h3>
+              <p>Place one add-on or button on either side of an input. You may also place one on both sides of an input.</p>
+              <p><strong>Bootstrap does not support multiple form-controls in a single input group.</strong></p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode23">
+                <div class="shortcode-html">
+                  <!-- Basic Example -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <div class="input-group g-mb-25">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text g-bg-white" for="inputGroupSelect01">@</label>
+                      </div>
+                      <input type="text" class="form-control form-control-md" placeholder="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group g-mb-25">
+                      <input type="text" class="form-control form-control-md" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <label class="input-group-text g-bg-white" for="basic-addon2">@example.com</label>
+                      </div>
+                    </div>
+
+                    <label for="basic-url">Your vanity URL</label>
+                    <div class="input-group g-mb-25">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="basic-addon3">https://example.com/users/</label>
+                      </div>
+                      <input type="text" class="form-control rounded-0 form-control-md" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+
+                    <div class="input-group g-mb-25">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text g-bg-white">$</label>
+                      </div>
+                      <input type="text" class="form-control rounded-0 form-control-md" aria-label="Amount (to the nearest dollar)">
+                      <div class="input-group-append">
+                        <label class="input-group-text g-bg-white">.00</label>
+                      </div>
+                    </div>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                        <span class="input-group-text">0.00</span>
+                      </div>
+                      <input type="text" class="form-control form-control-md" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                  </form>
+                  <!-- End Basic Example -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode23" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Basic Example -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Sizing -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Sizing</h3>
+              <p>Add the relative form sizing classes to the
+                <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
+              </p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode24">
+                <div class="shortcode-html">
+                  <!-- Sizing -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <div class="input-group input-group-lg g-mb-5">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text g-bg-white" for="sizing-addon1">@</label>
+                      </div>
+                      <input type="text" class="form-control rounded-0 form-control-md" placeholder="Username" aria-describedby="sizing-addon1">
+                    </div>
+                    <br>
+                    <div class="input-group g-mb-5">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text g-bg-white" for="sizing-addon2">@</label>
+                      </div>
+                      <input type="text" class="form-control rounded-0 form-control-md" placeholder="Username" aria-describedby="sizing-addon2">
+                    </div>
+                    <br>
+                    <div class="input-group input-group-sm">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text g-bg-white" for="sizing-addon3">@</label>
+                      </div>
+                      <input type="text" class="form-control rounded-0 form-control-md" placeholder="Username" aria-describedby="sizing-addon3">
+                    </div>
+                  </form>
+                  <!-- End Sizing -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode24" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Sizing -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Checkboxes and Radio Addons -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Checkboxes and Radio Addons</h3>
+              <p>Place any checkbox or radio option within an input group’s addon instead of text.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode25">
+                <div class="shortcode-html">
+                  <!-- Checkboxes and Radio Addons -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text"><input type="checkbox" aria-label="Checkbox for following text input"></label>
+                          </div>
+                          <input type="text" class="form-control rounded-0 form-control-md" aria-label="Text input with checkbox">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text"><input type="radio" aria-label="Radio button for following text input"></label>
+                          </div>
+                          <input type="text" class="form-control rounded-0 form-control-md" aria-label="Text input with radio button">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End Checkboxes and Radio Addons -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode25" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Checkboxes and Radio Addons -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Multiple Addons -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Multiple Addons</h3>
+              <p>Multiple add-ons are supported and can be mixed with checkbox and radio input versions.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode26">
+                <div class="shortcode-html">
+                  <!-- Multiple Addons -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><input type="checkbox" aria-label="Checkbox for following text input"></span>
+                            <span class="input-group-text g-bg-white">$</span>
+                          </div>
+                          <input type="text" class="form-control rounded-0 form-control-md" aria-label="Text input with checkbox">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><input type="checkbox" aria-label="Checkbox for following text input"></span>
+                            <span class="input-group-text g-bg-white">$</span>
+                          </div>
+                          <input type="text" class="form-control rounded-0 form-control-md" aria-label="Text input with radio button">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End Multiple Addons -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode26" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Multiple Addons -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Button Addons -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Button Addons</h3>
+              <p>Buttons in input groups must wrapped in a
+                <code>.input-group-btn</code> for proper alignment and sizing. This is required due to default browser styles that cannot be overridden.
+              </p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode27">
+                <div class="shortcode-html">
+                  <!-- Button Addons -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <div class="row g-mb-5">
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-md u-btn-primary rounded-0" type="button">Go!</button>
+                          </div>
+                          <input type="text" class="form-control rounded-0 form-control-md" placeholder="Search for...">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <input type="text" class="form-control rounded-0 form-control-md" placeholder="Search for...">
+                          <div class="input-group-append">
+                            <button class="btn btn-md u-btn-cyan rounded-0" type="button">Go!</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-md u-btn-lightred rounded-0" type="button">Hate it!</button>
+                          </div>
+                          <input type="text" class="form-control rounded-0 form-control-md" placeholder="Product name">
+                          <div class="input-group-append">
+                            <button class="btn btn-md u-btn-primary rounded-0" type="button">Love it!</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End Button Addons -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode27" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Button Addons -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Buttons with Dropdowns -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Buttons with Dropdowns</h3>
+              <p>Dropdowns buttons in input groups also must be wrapped in a <code>.input-group-btn</code>.</p>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode28">
+                <div class="shortcode-html">
+                  <!-- Buttons with Dropdowns -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <button type="button" class="btn btn-md u-btn-primary dropdown-toggle rounded-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Action
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#!">Action</a>
+                              <a class="dropdown-item" href="#!">Another action</a>
+                              <a class="dropdown-item" href="#!">Something else here</a>
+                              <div role="separator" class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#!">Separated link</a>
+                            </div>
+                          </div>
+                          <input type="text" class="form-control rounded-0 form-control-md" aria-label="Text input with dropdown button">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <input type="text" class="form-control rounded-0 form-control-md" aria-label="Text input with dropdown button">
+                          <div class="input-group-append">
+                            <button type="button" class="btn btn-md u-btn-cyan dropdown-toggle rounded-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Action
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#!">Action</a>
+                              <a class="dropdown-item" href="#!">Another action</a>
+                              <a class="dropdown-item" href="#!">Something else here</a>
+                              <div role="separator" class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#!">Separated link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End Buttons with Dropdowns -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode28" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Buttons with Dropdowns -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Segmented Buttons -->
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="h4 g-font-weight-300">Segmented Buttons</h3>
+            </div>
+
+            <div class="col-md-10">
+              <div id="shortcode29">
+                <div class="shortcode-html">
+                  <!-- Segmented Buttons -->
+                  <form class="g-bg-white g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="#">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <button type="button" class="btn btn-md btn-secondary dropdown-toggle dropdown-toggle-split rounded-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Action
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#!">Action</a>
+                              <a class="dropdown-item" href="#!">Another action</a>
+                              <a class="dropdown-item" href="#!">Something else here</a>
+                              <div role="separator" class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#!">Separated link</a>
+                            </div>
+                          </div>
+                          <input type="text" class="form-control rounded-0 form-control-md" aria-label="Text input with segmented button dropdown">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <input type="text" class="form-control rounded-0 form-control-md" aria-label="Text input with segmented button dropdown">
+                          <div class="input-group-append">
+                            <button type="button" class="btn btn-md u-btn-primary dropdown-toggle dropdown-toggle-split rounded-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Action
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#!">Action</a>
+                              <a class="dropdown-item" href="#!">Another action</a>
+                              <a class="dropdown-item" href="#!">Something else here</a>
+                              <div role="separator" class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#!">Separated link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End Segmented Buttons -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode29" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Segmented Buttons -->
+        </div>
+      </section>
+      <!-- End Input Group -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

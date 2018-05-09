@@ -1,0 +1,2602 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-testimonials-advanced" %}
+{% set title = "Testimonials - Advanced" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-block.njk" %}
+
+    <section>
+      <!-- Testimonials v1 -->
+      <section class="g-py-100">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Testimonials
+            <span class="g-color-primary g-ml-5">#01</span>
+          </h2>
+        </div>
+
+        <div id="shortcode1">
+          <div class="shortcode-html">
+            <div class="dzsparallaxer auto-init height-is-based-on-content use-loading g-bg-cover g-bg-black-opacity-0_7--after">
+              <div class="divimage dzsparallaxer--target w-100" style="height: 140%; background-image: url({{ root }}assets/img-temp/1920x800/img8.jpg);"></div>
+
+              <div class="container g-bg-cover__inner g-py-120">
+                <div class="js-carousel g-pb-80"
+                     data-infinite="true"
+                     data-arrows-classes="u-arrow-v1 g-width-40 g-height-40 g-brd-1 g-brd-style-solid g-brd-white-opacity-0_6 g-brd-primary--hover g-color-white-opacity-0_5 g-bg-primary--hover g-color-white--hover g-absolute-centered--x g-bottom-0"
+                     data-arrow-left-classes="fa fa-angle-left g-ml-minus-25"
+                     data-arrow-right-classes="fa fa-angle-right g-ml-25">
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <div class="text-center g-px-100--lg">
+                      <i class="d-block g-color-primary g-font-size-60 g-line-height-0_7 g-pos-rel g-top-20">&#8220;</i>
+                      <blockquote class="g-color-white g-font-size-25 g-py-40">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+                      <h4 class="h6 g-color-white-opacity-0_7 text-uppercase g-mb-0">
+                        Bastian, <em class="g-font-style-normal g-color-primary">Client</em>
+                      </h4>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <div class="text-center g-px-100--lg">
+                      <i class="d-block g-color-primary g-font-size-60 g-line-height-0_7 g-pos-rel g-top-20">&#8220;</i>
+                      <blockquote class="g-color-white g-font-size-25 g-py-40">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+                      <h4 class="h6 g-color-white-opacity-0_7 text-uppercase g-mb-0">
+                        Bastian, <em class="g-font-style-normal g-color-primary">Client</em>
+                      </h4>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+            <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+            <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode1" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Testimonials v1 -->
+
+      <!-- Testimonials Advanced v2 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4 g-mb-0">Testimonials
+              <span class="g-color-primary g-ml-5">#02</span>
+            </h2>
+          </div>
+
+          <div id="shortcode2">
+            <div class="shortcode-html">
+              <div class="js-carousel g-pb-70"
+                   data-infinite="true"
+                   data-arrows-classes="u-arrow-v1 g-width-40 g-height-40 g-color-gray-dark-v5 g-bg-white g-color-white--hover g-bg-primary--hover rounded g-absolute-centered--x g-bottom-0"
+                   data-arrow-left-classes="fa fa-angle-left g-ml-minus-25"
+                   data-arrow-right-classes="fa fa-angle-right g-ml-25">
+                <div class="js-slide">
+                  <!-- Testimonials Advanced -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                      <div class="text-center">
+                        <img class="d-inline-block g-width-120 g-height-120 g-brd-around g-brd-5 g-brd-white rounded-circle" src="{{ root }}assets/img-temp/125x125/img4.jpg" alt="Image Description">
+
+                        <div class="g-py-25">
+                          <h4 class="h5 g-color-black text-uppercase g-mb-0">Mary Brown</h4>
+                          <em class="g-color-primary">Designer</em>
+                        </div>
+
+                        <blockquote class="lead g-line-height-1_8 g-mb-25">" Thanks a lot. You have no idea how much I appreciate all your help. You are not just a great designer but an amazing human being, because so many people won't give a rat ass about what happen to their clients AFTER THE SALE, and you are not. Again, thanks a lot. "</blockquote>
+
+                        <div class="js-rating align-self-center g-color-yellow" data-rating="5" data-spacing="5" data-backward-icons-classes="fa fa-star"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Testimonials Advanced -->
+                </div>
+
+                <div class="js-slide">
+                  <!-- Testimonials Advanced -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                      <div class="text-center">
+                        <img class="d-inline-block g-width-120 g-height-120 g-brd-around g-brd-5 g-brd-white rounded-circle" src="{{ root }}assets/img-temp/125x125/img5.jpg" alt="Image Description">
+
+                        <div class="g-py-25">
+                          <h4 class="h5 g-color-black text-uppercase g-mb-0">Alex Moura</h4>
+                          <em class="g-color-primary">Developer</em>
+                        </div>
+
+                        <blockquote class="lead g-line-height-1_8 g-mb-25">" Your customer support is the best I have experienced with any theme I have purchased. You have a theme that far exceeds all others. Thanks for providing such a fantastic theme, all your efforts are greatly appreciated on our end. "</blockquote>
+
+                        <div class="js-rating align-self-center g-color-yellow" data-rating="5" data-spacing="5" data-backward-icons-classes="fa fa-star"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Testimonials Advanced -->
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).ready(function () {
+                  // initialization of carousel
+                  $.HSCore.components.HSCarousel.init('.js-carousel');
+                });
+              </script>
+            </div>
+          </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode2" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+        </div>
+      </section>
+      <!-- End Testimonials Advanced v2 -->
+
+      <!-- Testimonials Advanced v3 -->
+      <section class="container g-py-100">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Testimonials
+            <span class="g-color-primary g-ml-5">#03</span>
+          </h2>
+        </div>
+
+        <div id="shortcode3">
+          <div class="shortcode-html">
+            <div id="carousel5" class="js-carousel js-carousel_single-item-thumbs5__thumbs text-center mx-auto g-max-width-645 g-mb-35"
+                 data-infinite="true"
+                 data-slides-show="5"
+                 data-center-mode="true"
+                 data-nav-for="#carousel6"
+                 data-responsive='[{
+                   "breakpoint": 768,
+                   "settings": {
+                     "slidesToShow": 3
+                   }
+                 }, {
+                   "breakpoint": 576,
+                   "settings": {
+                     "slidesToShow": 1
+                   }
+                 }]'>
+              <div class="js-thumb g-px-15--sm">
+                <img class="rounded-circle" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb g-px-15--sm">
+                <img class="rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb g-px-15--sm">
+                <img class="rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb g-px-15--sm">
+                <img class="rounded-circle" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb g-px-15--sm">
+                <img class="rounded-circle" src="{{ root }}assets/img-temp/100x100/img16.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb g-px-15--sm">
+                <img class="rounded-circle" src="{{ root }}assets/img-temp/100x100/img12.jpg" alt="Image Description">
+              </div>
+            </div>
+
+            <div id="carousel6" class="js-carousel js-carousel_single-item-thumbs5__slides text-center mx-auto g-max-width-645 g-pb-50"
+                 data-infinite="true"
+                 data-fade="true"
+                 data-animation="linear"
+                 data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x g-bottom-0"
+                 data-nav-for="#carousel5">
+              <div class="js-slide">
+                <h4 class="h4 text-uppercase g-font-weight-600er g-mb-15">
+                  Mary Brown, <em class="g-font-style-normal g-color-primary">CTO Jiope</em>
+                </h4>
+                <blockquote class="lead g-mb-0">Your customer support is the best I have experienced with any theme I have purchased. You have a theme that far exceeds all others. Thanks for providing such a fantastic theme, all your efforts are greatly appreciated on our end.</blockquote>
+              </div>
+
+              <div class="js-slide">
+                <h4 class="h4 text-uppercase g-font-weight-600er g-mb-15">
+                  Bob Cristopher, <em class="g-font-style-normal g-color-primary">CEO Unifex</em>
+                </h4>
+                <blockquote class="lead g-mb-0">Thanks a lot. You have no idea how much I appreciate all your help. You are not just a great designer but an amazing human being, because so many people won't give a rat ass about what happen to their clients AFTER THE SALE, and you are not. Again, thanks a lot.</blockquote>
+              </div>
+
+              <div class="js-slide">
+                <h4 class="h4 text-uppercase g-font-weight-600er g-mb-15">
+                  Helena Jordany, <em class="g-font-style-normal g-color-primary">SMM AquaWater</em>
+                </h4>
+                <blockquote class="lead g-mb-0">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+              </div>
+
+              <div class="js-slide">
+                <h4 class="h4 text-uppercase g-font-weight-600er g-mb-15">
+                  Rebecca Kenton, <em class="g-font-style-normal g-color-primary">Molestie ullamcorper</em>
+                </h4>
+                <blockquote class="lead g-mb-0">Thanks for this great update!!! However it's somewhat always a bit frustrating when I spent a lot of time trying to add features that were missing by myself and seeing updates including it in a way which is 300% nicer. Great job guys! Keep up with the good work!</blockquote>
+              </div>
+
+              <div class="js-slide">
+                <h4 class="h4 text-uppercase g-font-weight-600er g-mb-15">
+                  Melani Shnaider, <em class="g-font-style-normal g-color-primary">Account manager Undex</em>
+                </h4>
+                <blockquote class="lead g-mb-0">Your customer support is the best I have experienced with any theme I have purchased. You have a theme that far exceeds all others. Thanks for providing such a fantastic theme, all your efforts are greatly appreciated on our end.</blockquote>
+              </div>
+
+              <div class="js-slide">
+                <h4 class="h4 text-uppercase g-font-weight-600er g-mb-15">
+                  John Armstrong, <em class="g-font-style-normal g-color-primary">Manager Moogle</em>
+                </h4>
+                <blockquote class="lead g-mb-0">Thanks a lot. You have no idea how much I appreciate all your help. You are not just a great designer but an amazing human being, because so many people won't give a rat ass about what happen to their clients AFTER THE SALE, and you are not. Again, thanks a lot.</blockquote>
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // custom functions
+                $('#carousel5').on('click', '.js-thumb', function (e) {
+                  e.stopPropagation();
+
+                  var i = $(this).data('slick-index');
+
+                  if ($('#carousel5').slick('slickCurrentSlide') !== i) {
+                    $('#carousel5').slick('slickGoTo', i);
+                  }
+                });
+
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode3" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Testimonials Advanced v3 -->
+
+      <!-- Testimonials Advanced v4 -->
+      <div class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4 g-mb-0">Testimonials
+              <span class="g-color-primary g-ml-5">#04</span>
+            </h2>
+          </div>
+
+          <div id="shortcode4">
+            <div class="shortcode-html">
+              <!-- Testimonials Advanced -->
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="js-carousel"
+                       data-infinite="true"
+                       data-arrows-classes="hidden-down u-arrow-v1 g-width-40 g-height-40 g-color-gray-dark-v5 g-bg-white g-color-white--hover g-bg-primary--hover rounded g-pos-abs g-right-0 g-top-0 g-mt-15"
+                       data-arrow-left-classes="fa fa-angle-left g-mr-50"
+                       data-arrow-right-classes="fa fa-angle-right">
+                    <div class="js-slide">
+                      <!-- Testimonial Advanced -->
+                      <div class="media g-mb-25">
+                        <img class="d-flex align-self-center g-brd-around g-brd-4 g-brd-white rounded-circle mr-4" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+
+                        <div class="media-body align-self-center">
+                          <h4 class="h5 g-font-weight-700 text-uppercase g-mb-3">Alisa Brown</h4>
+                          <em class="d-block g-color-gray-dark-v5 g-font-style-normal g-font-size-13">Gray Consultion Corp.</em>
+
+                          <div class="js-rating align-self-center g-color-yellow" data-rating="5" data-spacing="3" data-backward-icons-classes="fa fa-star"></div>
+                        </div>
+                      </div>
+                      <blockquote class="lead g-mb-0">Thanks for this great update!!! However it's somewhat always a bit frustrating when I spent a lot of time trying to add features that were missing by myself and seeing updates including it in a way which is 300% nicer. Great job guys! Keep up with the good work!</blockquote>
+                      <!-- End Testimonial Advanced -->
+                    </div>
+
+                    <div class="js-slide">
+                      <!-- Testimonial Advanced -->
+                      <div class="media g-mb-25">
+                        <img class="d-flex align-self-center g-brd-around g-brd-4 g-brd-white rounded-circle mr-4" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+
+                        <div class="media-body align-self-center">
+                          <h4 class="h5 g-font-weight-700 text-uppercase g-mb-3">Joe Armstrong</h4>
+                          <em class="d-block g-color-gray-dark-v5 g-font-style-normal g-font-size-13">Blue Yellow Sky Corp.</em>
+
+                          <div class="js-rating align-self-center g-color-yellow" data-rating="5" data-spacing="3" data-backward-icons-classes="fa fa-star"></div>
+                        </div>
+                      </div>
+
+                      <blockquote class="lead g-mb-0">Your customer support is the best I have experienced with any theme I have purchased. You have a theme that far exceeds all others. Thanks for providing such a fantastic theme, all your efforts are greatly appreciated on our end.</blockquote>
+                      <!-- End Testimonial Advanced -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Testimonials Advanced -->
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).ready(function () {
+                  // initialization of carousel
+                  $.HSCore.components.HSCarousel.init('.js-carousel');
+                });
+              </script>
+            </div>
+          </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode4" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+        </div>
+      </div>
+      <!-- End Testimonials Advanced v4 -->
+
+      <!-- Testimonials Advanced v5 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4 g-mb-0">Testimonials
+              <span class="g-color-primary g-ml-5">#05</span>
+            </h2>
+          </div>
+
+          <div id="shortcode5">
+            <div class="shortcode-html">
+              <!-- Testimonials Advanced -->
+              <div class="js-carousel"
+                   data-infinite="true"
+                   data-arrows-classes="u-arrow-v1 g-width-40 g-height-40 g-brd-1 g-brd-style-solid g-brd-gray-light-v1 g-brd-primary--hover g-color-gray-dark-v5 g-bg-primary--hover g-color-white--hover g-absolute-centered--y rounded-circle g-mt-minus-25"
+                   data-arrow-left-classes="fa fa-angle-left g-left-0"
+                   data-arrow-right-classes="fa fa-angle-right g-right-0">
+                <div class="js-slide">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                      <!-- Testimonial Advanced -->
+                      <div class="g-pos-rel g-pt-40">
+                        <em class="g-color-gray-light-v5 g-font-size-120 g-pos-abs g-top-minus-15 g-left-minus-15 g-z-index-minus-1"> &#8220; </em>
+                        <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+
+                        <div class="media">
+                          <img class="d-flex align-self-center g-width-50 g-height-50 rounded-circle mr-3" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+
+                          <div class="media-body align-self-center">
+                            <h4 class="h5 g-font-weight-700 g-mb-0">Daniel Ramirez</h4>
+                            <span class="d-block g-color-gray-dark-v4">Designer</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Testimonial Advanced -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="js-slide">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                      <!-- Testimonial Advanced -->
+                      <div class="g-pos-rel g-pt-40">
+                        <em class="g-color-gray-light-v5 g-font-size-120 g-pos-abs g-top-minus-15 g-left-minus-15 g-z-index-minus-1"> &#8220; </em>
+                        <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+
+                        <div class="media">
+                          <img class="d-flex align-self-center g-width-50 g-height-50 rounded-circle mr-3" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+
+                          <div class="media-body align-self-center">
+                            <h4 class="h5 g-font-weight-700 g-mb-0">Sara Anderson</h4>
+                            <span class="d-block g-color-gray-dark-v4">Designer</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Testimonial Advanced -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Testimonials Advanced -->
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).ready(function () {
+                  // initialization of carousel
+                  $.HSCore.components.HSCarousel.init('.js-carousel');
+                });
+              </script>
+            </div>
+          </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode5" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+        </div>
+      </section>
+      <!-- End Testimonials Advanced v5 -->
+
+      <!-- Testimonials Advanced v6 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4 g-mb-0">Testimonials
+              <span class="g-color-primary g-ml-5">#06</span>
+            </h2>
+          </div>
+
+          <div id="shortcode6">
+            <div class="shortcode-html">
+              <!-- Testimonials Advanced -->
+              <div id="carousel7" class="js-carousel g-pb-60"
+                   data-slides-show="3"
+                   data-slides-scroll="3"
+                   data-arrows-classes="u-arrow-v1 g-width-45 g-height-45 g-font-size-default g-color-gray-dark-v5 g-bg-white g-color-white--hover g-bg-primary--hover rounded g-pos-abs g-bottom-0"
+                   data-arrow-left-classes="fa fa-angle-left g-left-35x--lg g-left-15"
+                   data-arrow-right-classes="fa fa-angle-right g-right-35x--lg g-right-15"
+                   data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x g-bottom-20 text-center"
+                   data-responsive='[{
+                     "breakpoint": 992,
+                     "settings": {
+                       "slidesToShow": 2
+                     }
+                   }, {
+                     "breakpoint": 576,
+                     "settings": {
+                       "slidesToShow": 1
+                     }
+                   }]'>
+                <div class="js-slide g-px-15 g-mb-5">
+                  <!-- Testimonials Advanced -->
+                  <div class="u-shadow-v19 g-bg-white text-center rounded g-pb-40 g-px-30 g-mt-50">
+                    <img class="d-inline-block g-brd-7 g-brd-style-solid g-brd-white g-width-100 g-height-100 rounded-circle g-pull-50x-up" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+
+                    <div class="g-mt-minus-20">
+                      <h4 class="h6 g-color-primary g-font-weight-600 text-uppercase g-mb-5">Carla Harris</h4>
+                      <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-13 g-mb-20">Happy customer</em>
+                      <i class="d-block g-color-primary g-font-size-50 g-line-height-0_7 g-pos-rel g-top-15 g-mb-20">&#8220;</i>
+                      <blockquote class="g-color-black g-font-style-italic g-font-size-20 g-line-height-1_4">Great theme maker. I wish they would create more themes.</blockquote>
+                    </div>
+                  </div>
+                  <!-- End Testimonials Advanced -->
+                </div>
+
+                <div class="js-slide g-px-15 g-mb-5">
+                  <!-- Testimonials Advanced -->
+                  <div class="u-shadow-v19 g-bg-white text-center rounded g-pb-40 g-px-30 g-mt-50">
+                    <img class="d-inline-block g-brd-7 g-brd-style-solid g-brd-white g-width-100 g-height-100 rounded-circle g-pull-50x-up" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+
+                    <div class="g-mt-minus-20">
+                      <h4 class="h6 g-color-primary g-font-weight-600 text-uppercase g-mb-5">Simone Gomez</h4>
+                      <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-13 g-mb-20">Happy customer</em>
+                      <i class="d-block g-color-primary g-font-size-50 g-line-height-0_7 g-pos-rel g-top-15 g-mb-20">&#8220;</i>
+                      <blockquote class="g-color-black g-font-style-italic g-font-size-20 g-line-height-1_4">I'm very impressed with the theme and customer support! Thanks</blockquote>
+                    </div>
+                  </div>
+                  <!-- End Testimonials Advanced -->
+                </div>
+
+                <div class="js-slide g-px-15 g-mb-5">
+                  <!-- Testimonials Advanced -->
+                  <div class="u-shadow-v19 g-bg-white text-center rounded g-pb-40 g-px-30 g-mt-50">
+                    <img class="d-inline-block g-brd-7 g-brd-style-solid g-brd-white g-width-100 g-height-100 rounded-circle g-pull-50x-up" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+
+                    <div class="g-mt-minus-20">
+                      <h4 class="h6 g-color-primary g-font-weight-600 text-uppercase g-mb-5">Dianna Kimwealth</h4>
+                      <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-13 g-mb-20">Happy customer</em>
+                      <i class="d-block g-color-primary g-font-size-50 g-line-height-0_7 g-pos-rel g-top-15 g-mb-20">&#8220;</i>
+                      <blockquote class="g-color-black g-font-style-italic g-font-size-20 g-line-height-1_4">Unify - The best template i have ever found in the last 10 years! Great!</blockquote>
+                    </div>
+                  </div>
+                  <!-- End Testimonials Advanced -->
+                </div>
+
+                <div class="js-slide g-px-15 g-mb-5">
+                  <!-- Testimonials Advanced -->
+                  <div class="u-shadow-v19 g-bg-white text-center rounded g-pb-40 g-px-30 g-mt-50">
+                    <img class="d-inline-block g-brd-7 g-brd-style-solid g-brd-white g-width-100 g-height-100 rounded-circle g-pull-50x-up" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+
+                    <div class="g-mt-minus-20">
+                      <h4 class="h6 g-color-primary g-font-weight-600 text-uppercase g-mb-5">Carla Harris</h4>
+                      <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-13 g-mb-20">Happy customer</em>
+                      <i class="d-block g-color-primary g-font-size-50 g-line-height-0_7 g-pos-rel g-top-15 g-mb-20">&#8220;</i>
+                      <blockquote class="g-color-black g-font-style-italic g-font-size-20 g-line-height-1_4">Great theme maker. I wish they would create more themes.</blockquote>
+                    </div>
+                  </div>
+                  <!-- End Testimonials Advanced -->
+                </div>
+              </div>
+              <!-- End Testimonials Advanced -->
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).ready(function () {
+                  // initialization of carousel
+                  $.HSCore.components.HSCarousel.init('.js-carousel');
+                });
+              </script>
+            </div>
+          </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode6" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+        </div>
+      </section>
+      <!-- End Testimonials Advanced v6 -->
+
+      <!-- Testimonials Advanced v7 -->
+      <section class="container g-py-100">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Testimonials
+            <span class="g-color-primary g-ml-5">#07</span>
+          </h2>
+        </div>
+
+        <div id="shortcode7">
+          <div class="shortcode-html">
+            <div id="carousel3" class="js-carousel js-carousel_single-item-thumbs5--v2__thumbs u-carousel-v1 g-max-width-645 mx-auto g-mb-50"
+                 data-infinite="true"
+                 data-center-mode="true"
+                 data-variable-width="true"
+                 data-slides-show="5"
+                 data-arrows-classes="u-arrow-v1 g-absolute-centered g-width-35 g-height-40 g-font-size-26 g-color-gray g-bg-white"
+                 data-arrow-left-classes="fa fa-angle-left g-ml-minus-82"
+                 data-arrow-right-classes="fa fa-angle-right g-ml-82"
+                 data-nav-for="#carousel4">
+              <div class="js-thumb">
+                <img class="g-width-130 g-height-130" src="{{ root }}assets/img-temp/125x125/img7.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb">
+                <img class="g-width-130 g-height-130" src="{{ root }}assets/img-temp/125x125/img2.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb">
+                <img class="g-width-130 g-height-130" src="{{ root }}assets/img-temp/125x125/img3.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb">
+                <img class="g-width-130 g-height-130" src="{{ root }}assets/img-temp/125x125/img9.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb">
+                <img class="g-width-130 g-height-130" src="{{ root }}assets/img-temp/125x125/img8.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb">
+                <img class="g-width-130 g-height-130" src="{{ root }}assets/img-temp/125x125/img7.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb">
+                <img class="g-width-130 g-height-130" src="{{ root }}assets/img-temp/125x125/img2.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb">
+                <img class="g-width-130 g-height-130" src="{{ root }}assets/img-temp/125x125/img3.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb">
+                <img class="g-width-130 g-height-130" src="{{ root }}assets/img-temp/125x125/img9.jpg" alt="Image Description">
+              </div>
+
+              <div class="js-thumb">
+                <img class="g-width-130 g-height-130" src="{{ root }}assets/img-temp/125x125/img8.jpg" alt="Image Description">
+              </div>
+            </div>
+
+            <div class="row">
+              <div id="carousel4" class="js-carousel js-carousel_single-item-thumbs5--v2__slides g-max-width-645 text-center mx-auto"
+                   data-infinite="true"
+                   data-fade="true"
+                   data-animation="linear"
+                   data-nav-for="#carousel3">
+                <div class="js-slide">
+                  <h4 class="text-uppercase g-font-weight-600 g-font-size-16 g-mb-0">Julia B. Mcraflane</h4>
+                  <em class="d-block g-font-size-12 text-uppercase g-mb-20">Spencet Group</em>
+                  <blockquote class="lead g-font-style-italic">Thanks for this great update!!! However it's somewhat always a bit frustrating when I spent a lot of time trying to add features that were missing by myself and seeing updates including it in a way which is 300% nicer. Great job guys! Keep up with the good work!</blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <h4 class="text-uppercase g-font-weight-600 g-font-size-16 g-mb-0">Amy Clayton</h4>
+                  <em class="d-block g-font-size-12 text-uppercase g-mb-20">Abibas</em>
+                  <blockquote class="lead g-font-style-italic">Your customer support is the best I have experienced with any theme I have purchased. You have a theme that far exceeds all others. Thanks for providing such a fantastic theme, all your efforts are greatly appreciated on our end.</blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <h4 class="text-uppercase g-font-weight-600 g-font-size-16 g-mb-0">Fred Penner</h4>
+                  <em class="d-block g-font-size-12 text-uppercase g-mb-20">Ruma</em>
+                  <blockquote class="lead g-font-style-italic">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <h4 class="text-uppercase g-font-weight-600 g-font-size-16 g-mb-0">Martina Saiz</h4>
+                  <em class="d-block g-font-size-12 text-uppercase g-mb-20">Jonda</em>
+                  <blockquote class="lead g-font-style-italic">Thanks for this great update!!! However it's somewhat always a bit frustrating when I spent a lot of time trying to add features that were missing by myself and seeing updates including it in a way which is 300% nicer. Great job guys! Keep up with the good work!</blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <h4 class="text-uppercase g-font-weight-600 g-font-size-16 g-mb-0">Joseph B. Seward</h4>
+                  <em class="d-block g-font-size-12 text-uppercase g-mb-20">Aodi</em>
+                  <blockquote class="lead g-font-style-italic">Great theme maker. I wish they would create more themes.</blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <h4 class="text-uppercase g-font-weight-600 g-font-size-16 g-mb-0">Julia B. Mcraflane</h4>
+                  <em class="d-block g-font-size-12 text-uppercase g-mb-20">Spencet Group</em>
+                  <blockquote class="lead g-font-style-italic">I'm very impressed with the theme and customer support! Thanks</blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <h4 class="text-uppercase g-font-weight-600 g-font-size-16 g-mb-0">Amy Clayton</h4>
+                  <em class="d-block g-font-size-12 text-uppercase g-mb-20">Abibas</em>
+                  <blockquote class="lead g-font-style-italic">Unify - The best template i have ever found in the last 10 years! Great!</blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode7" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Testimonials Advanced v7 -->
+
+      <!-- Testimonials v8 -->
+      <section class="g-py-50">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Testimonials
+            <span class="g-color-primary g-ml-5">#08</span>
+          </h2>
+        </div>
+
+        <div id="shortcode8">
+          <div class="shortcode-html">
+            <div class="g-bg-cover g-bg-size-cover g-bg-pos-center g-bg-black-opacity-0_7--after" style="background-image: url({{ root }}assets/img-temp/1200x900/img1.jpg);">
+              <div class="container g-bg-cover__inner g-py-120">
+                <div class="js-carousel g-pb-80"
+                     data-infinite="true"
+                     data-arrows-classes="u-arrow-v1 g-width-40 g-height-40 g-brd-1 g-brd-style-solid g-brd-white-opacity-0_6 g-brd-primary--hover g-color-white-opacity-0_5 g-bg-primary--hover g-color-white--hover g-absolute-centered--x g-bottom-0 rounded-circle"
+                     data-arrow-left-classes="fa fa-angle-left g-ml-minus-25"
+                     data-arrow-right-classes="fa fa-angle-right g-ml-25">
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <div class="row justify-content-center">
+                      <div class="col-lg-8">
+                        <div class="d-flex justify-content-between">
+                          <img class="align-self-center g-brd-around g-brd-4 g-brd-primary g-width-100 g-height-100 rounded-circle mr-5" src="{{ root }}assets/img-temp/125x125/img2.jpg" alt="Image Description">
+
+                          <div class="align-self-center g-color-white text-sm-left">
+                            <blockquote class="media lead">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+                            <h4 class="h5 g-color-primary g-mb-0">Daniella Ramirez</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <div class="row justify-content-center">
+                      <div class="col-lg-8">
+                        <div class="d-flex justify-content-between">
+                          <img class="align-self-center g-brd-around g-brd-4 g-brd-primary g-width-100 g-height-100 rounded-circle mr-5" src="{{ root }}assets/img-temp/125x125/img3.jpg" alt="Image Description">
+
+                          <div class="align-self-center g-color-white text-sm-left">
+                            <blockquote class="media lead">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+                            <h4 class="h5 g-color-primary g-mb-0">Alisa Moura</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode8" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Testimonials v8 -->
+
+      <!-- Testimonials Advanced v9 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4 g-mb-0">Testimonials
+              <span class="g-color-primary g-ml-5">#09</span>
+            </h2>
+          </div>
+
+          <div id="shortcode9">
+            <div class="shortcode-html">
+              <div id="carousel1" class="js-carousel js-carousel_single-item-thumbs5--v3__thumbs u-carousel-v1 g-mx-minus-15 g-mb-50"
+                   data-infinite="true"
+                   data-center-mode="true"
+                   data-variable-width="true"
+                   data-slides-show="5"
+                   data-arrows-classes="u-arrow-v1 g-absolute-centered g-width-35 g-height-40 g-font-size-26 g-color-gray g-bg-white"
+                   data-arrow-left-classes="fa fa-angle-left g-ml-minus-118"
+                   data-arrow-right-classes="fa fa-angle-right g-ml-118"
+                   data-nav-for="#carousel2"
+                   data-responsive='[{
+                     "breakpoint": 1200,
+                     "settings": {
+                       "slidesToShow": 3
+                     }
+                   }, {
+                     "breakpoint": 992,
+                     "settings": {
+                       "slidesToShow": 2
+                     }
+                   }, {
+                     "breakpoint": 768,
+                     "settings": {
+                       "slidesToShow": 2
+                     }
+                   }, {
+                     "breakpoint": 576,
+                     "settings": {
+                       "slidesToShow": 1
+                     }
+                   }]'>
+                <div class="js-thumb">
+                  <img class="g-width-200 g-height-200" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                </div>
+
+                <div class="js-thumb">
+                  <img class="g-width-200 g-height-200" src="{{ root }}assets/img-temp/200x200/img3.jpg" alt="Image Description">
+                </div>
+
+                <div class="js-thumb">
+                  <img class="g-width-200 g-height-200" src="{{ root }}assets/img-temp/200x200/img1.jpg" alt="Image Description">
+                </div>
+
+                <div class="js-thumb">
+                  <img class="g-width-200 g-height-200" src="{{ root }}assets/img-temp/200x200/img6.jpg" alt="Image Description">
+                </div>
+
+                <div class="js-thumb">
+                  <img class="g-width-200 g-height-200" src="{{ root }}assets/img-temp/200x200/img4.jpg" alt="Image Description">
+                </div>
+
+                <div class="js-thumb">
+                  <img class="g-width-200 g-height-200" src="{{ root }}assets/img-temp/200x200/img6.jpg" alt="Image Description">
+                </div>
+
+                <div class="js-thumb">
+                  <img class="g-width-200 g-height-200" src="{{ root }}assets/img-temp/200x200/img5.jpg" alt="Image Description">
+                </div>
+
+                <div class="js-thumb">
+                  <img class="g-width-200 g-height-200" src="{{ root }}assets/img-temp/200x200/img7.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <div id="carousel2" class="js-carousel g-max-width-645 text-center mx-auto"
+                   data-infinite="true"
+                   data-fade="true"
+                   data-animation="linear"
+                   data-nav-for="#carousel1">
+                <div class="js-slide">
+                  <h4 class="h5 text-uppercase g-font-weight-600">Amy Clayton</h4>
+                  <em class="text-uppercase d-block g-font-style-normal g-font-size-default g-color-primary g-mb-15">Programmer</em>
+                  <blockquote class="lead g-font-style-italic">Your customer support is the best I have experienced with any theme I have purchased. You have a theme that far exceeds all others. Thanks for providing such a fantastic theme, all your efforts are greatly appreciated on our end.</blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <h4 class="h5 text-uppercase g-font-weight-600">Fred Penner</h4>
+                  <em class="text-uppercase d-block g-font-style-normal g-font-size-default g-color-primary g-mb-15">Web Developer</em>
+                  <blockquote class="lead g-font-style-italic">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <h4 class="h5 text-uppercase g-font-weight-600">Martina Saiz</h4>
+                  <em class="text-uppercase d-block g-font-style-normal g-font-size-default g-color-primary g-mb-15">UI Designer</em>
+                  <blockquote class="lead g-font-style-italic">Thanks for this great update!!! However it's somewhat always a bit frustrating when I spent a lot of time trying to add features that were missing by myself and seeing updates including it in a way which is 300% nicer. Great job guys! Keep up with the good work!</blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <h4 class="h5 text-uppercase g-font-weight-600">Joseph B. Seward</h4>
+                  <em class="text-uppercase d-block g-font-style-normal g-font-size-default g-color-primary g-mb-15">Developer</em>
+                  <blockquote class="lead g-font-style-italic">Great theme maker. I wish they would create more themes.</blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <h4 class="h5 text-uppercase g-font-weight-600">Jane Lopex</h4>
+                  <em class="text-uppercase d-block g-font-style-normal g-font-size-default g-color-primary g-mb-15">Company CEO</em>
+                  <blockquote class="lead g-font-style-italic">I'm very impressed with the theme and customer support! Thanks</blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <h4 class="h5 text-uppercase g-font-weight-600">James Ridgway</h4>
+                  <em class="text-uppercase d-block g-font-style-normal g-font-size-default g-color-primary g-mb-15">IT Manager</em>
+                  <blockquote class="lead g-font-style-italic">Unify - The best template i have ever found in the last 10 years! Great!</blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).ready(function () {
+                  // initialization of carousel
+                  $.HSCore.components.HSCarousel.init('.js-carousel');
+                });
+              </script>
+            </div>
+          </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode9" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+        </div>
+      </section>
+      <!-- End Testimonials Advanced v9 -->
+
+      <!-- Testimonials v10 -->
+      <section class="g-py-50">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Testimonials
+            <span class="g-color-primary g-ml-5">#10</span>
+          </h2>
+        </div>
+
+        <div id="shortcode10">
+          <div class="shortcode-html">
+            <div class="dzsparallaxer auto-init height-is-based-on-content use-loading g-bg-cover g-bg-black-opacity-0_7--after">
+              <div class="divimage dzsparallaxer--target w-100" style="height: 140%; background-image: url({{ root }}assets/img-temp/1500x1000/img1.jpg);"></div>
+              <div class="container g-z-index-1 g-py-120">
+                <div class="js-carousel"
+                     data-infinite="true"
+                     data-slides-show="3"
+                     data-slides-scroll="3"
+                     data-arrows-classes="u-arrow-v1 g-width-40 g-height-40 g-brd-1 g-brd-style-solid g-brd-white g-brd-primary--hover g-bg-white g-color-black g-bg-primary--hover g-color-white--hover g-absolute-centered--y g-bottom-0 rounded"
+                     data-arrow-left-classes="fa fa-angle-left g-left-0"
+                     data-arrow-right-classes="fa fa-angle-right g-right-0">
+                  <div class="js-slide g-px-15">
+                    <!-- Testimonials Advanced -->
+                    <article class="g-bg-cyan-gradient-opacity-v1 g-pa-5">
+                      <div class="g-pa-30">
+                        <header class="g-mb-20">
+                          <h3 class="h4 g-color-white g-mb-0">Alex Peterson</h3>
+                          <em class="d-block g-color-white-opacity-0_7 g-font-style-normal g-font-size-12 text-uppercase">Google Inc.</em>
+                        </header>
+
+                        <blockquote class="lead g-color-white g-mb-25">Your customer support is the best I have experienced with any theme I have purchased. You have a theme that far exceeds all others.</blockquote>
+                        <em class="d-block g-color-white-opacity-0_7 g-font-style-normal g-font-size-12 text-uppercase">Support</em>
+
+                        <div class="js-rating align-self-center g-color-white" data-rating="5" data-spacing="2" data-backward-icons-classes="fa fa-star"></div>
+                      </div>
+                    </article>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide g-px-15">
+                    <!-- Testimonials Advanced -->
+                    <article class="g-bg-cyan-gradient-opacity-v1 g-pa-5">
+                      <div class="g-pa-30">
+                        <header class="g-mb-20">
+                          <h3 class="h4 g-color-white g-mb-0">Emma Watson</h3>
+                          <em class="d-block g-color-white-opacity-0_7 g-font-style-normal g-font-size-12 text-uppercase">Apple Inc.</em>
+                        </header>
+
+                        <blockquote class="lead g-color-white g-mb-25">Dear Htmlstream Inc., I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+                        <em class="d-block g-color-white-opacity-0_7 g-font-style-normal g-font-size-12 text-uppercase">Design</em>
+
+                        <div class="js-rating align-self-center g-color-white" data-rating="5" data-spacing="2" data-backward-icons-classes="fa fa-star"></div>
+                      </div>
+                    </article>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide g-px-15">
+                    <!-- Testimonials Advanced -->
+                    <article class="g-bg-cyan-gradient-opacity-v1 g-pa-5">
+                      <div class="g-pa-30">
+                        <header class="g-mb-20">
+                          <h3 class="h4 g-color-white g-mb-0">Leyla Mour</h3>
+                          <em class="d-block g-color-white-opacity-0_7 g-font-style-normal g-font-size-12 text-uppercase">Microsoft Inc.</em>
+                        </header>
+
+                        <blockquote class="lead g-color-white g-mb-25">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help.</blockquote>
+                        <em class="d-block g-color-white-opacity-0_7 g-font-style-normal g-font-size-12 text-uppercase">Code</em>
+
+                        <div class="js-rating align-self-center g-color-white" data-rating="5" data-spacing="2" data-backward-icons-classes="fa fa-star"></div>
+                      </div>
+                    </article>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide g-px-15">
+                    <!-- Testimonials Advanced -->
+                    <article class="g-bg-cyan-gradient-opacity-v1 g-pa-5">
+                      <div class="g-pa-30">
+                        <header class="g-mb-20">
+                          <h3 class="h4 g-color-white g-mb-0">Alex Peterson</h3>
+                          <em class="d-block g-color-white-opacity-0_7 g-font-style-normal g-font-size-12 text-uppercase">Google Inc.</em>
+                        </header>
+
+                        <blockquote class="lead g-color-white g-mb-25">Your customer support is the best I have experienced with any theme I have purchased. You have a theme that far exceeds all others.</blockquote>
+                        <em class="d-block g-color-white-opacity-0_7 g-font-style-normal g-font-size-12 text-uppercase">Support</em>
+
+                        <div class="js-rating align-self-center g-color-white" data-rating="5" data-spacing="2" data-backward-icons-classes="fa fa-star"></div>
+                      </div>
+                    </article>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+            <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+            <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode10" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Testimonials v10 -->
+
+      <hr class="g-brd-gray-light-v4 g-my-0">
+
+      <!-- Testimonials v11 -->
+      <section class="g-py-50">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Testimonials
+            <span class="g-color-primary g-ml-5">#11</span>
+          </h2>
+        </div>
+
+        <div id="shortcode11">
+          <div class="shortcode-html">
+            <!-- Testimonials Advanced -->
+            <div class="dzsparallaxer auto-init height-is-based-on-content use-loading g-bg-cover g-bg-black-opacity-0_7--after">
+              <div class="divimage dzsparallaxer--target w-100" style="height: 140%; background-image: url({{ root }}assets/img-temp/1500x1000/img1.jpg);"></div>
+
+              <div class="container g-z-index-1 g-py-120">
+                <div class="js-carousel"
+                     data-infinite="true"
+                     data-arrows-classes="u-arrow-v1 g-width-40 g-height-40 g-brd-1 g-brd-style-solid g-brd-white g-brd-primary--hover g-bg-white g-color-black g-bg-primary--hover g-color-white--hover g-absolute-centered--y g-bottom-0 rounded"
+                     data-arrow-left-classes="fa fa-angle-left g-left-0"
+                     data-arrow-right-classes="fa fa-angle-right g-right-0">
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <div class="row justify-content-center">
+                      <div class="col-md-5">
+                        <div class="text-center">
+                          <i class="d-block g-color-white-opacity-0_5 g-font-size-50 g-line-height-0_7 g-pos-rel g-top-15 g-mb-20">&#8220;</i>
+                          <blockquote class="g-color-white g-font-style-italic g-font-weight-600 g-font-size-20 g-mb-30">Unify - The best template i have ever found in the last 10 years! Great!</blockquote>
+                          <h4 class="h6 g-color-gray-dark-v5 g-font-weight-600 g-mb-30">Twitter / 7 hours ago</h4>
+                          <i class="d-block g-color-twitter g-font-size-30 fa fa-twitter"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <div class="row justify-content-center">
+                      <div class="col-md-5">
+                        <div class="text-center">
+                          <i class="d-block g-color-white-opacity-0_5 g-font-size-50 g-line-height-0_7 g-pos-rel g-top-15 g-mb-20">&#8220;</i>
+                          <blockquote class="g-color-white g-font-style-italic g-font-weight-600 g-font-size-20 g-mb-30">Great theme maker. I wish they would create more themes.</blockquote>
+                          <h4 class="h6 g-color-gray-dark-v5 g-font-weight-600 g-mb-30">Twitter / 2 days ago</h4>
+                          <i class="d-block g-color-twitter g-font-size-30 fa fa-twitter"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Testimonials Advanced -->
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+            <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+            <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode11" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Testimonials v11 -->
+
+      <!-- Testimonials v12 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Testimonials
+            <span class="g-color-primary g-ml-5">#12</span>
+          </h2>
+        </div>
+
+        <div id="shortcode12">
+          <div class="shortcode-html">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="text-center">
+                    <span class="g-color-gray-dark-v2 g-font-size-90 g-pos-abs g-top-minus-40">
+                      &#8220;
+                    </span>
+                  </div>
+
+                  <div class="js-carousel text-center g-pt-60"
+                       data-infinite="true"
+                       data-autoplay="true"
+                       data-speed="5000"
+                       data-fade="true">
+                    <div class="js-slide">
+                      <blockquote class="lead g-color-black g-font-size-22 g-line-height-2 mb-4">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+                      <span class="d-block g-color-black g-font-size-17 mb-4">Daniel Ramirez, Designer</span>
+                      <img class="d-inline-block g-width-60 g-height-60 g-brd-around g-brd-3 g-brd-white rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                    </div>
+
+                    <div class="js-slide">
+                      <blockquote class="lead g-color-black g-font-size-22 g-line-height-2 mb-4">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+                      <span class="d-block g-color-black g-font-size-17 mb-4">Sara Anderson, Developer</span>
+                      <img class="d-inline-block g-width-60 g-height-60 g-brd-around g-brd-3 g-brd-white rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode12" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Testimonials v12 -->
+
+      <!-- Testimonials Advanced v13 -->
+      <section class="container g-py-100">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Testimonials
+            <span class="g-color-primary g-ml-5">#13</span>
+          </h2>
+        </div>
+
+        <div id="shortcode13">
+          <div class="shortcode-html">
+            <!-- Testimonials Advanced -->
+            <div class="js-carousel g-mb-50"
+                 data-infinite="true"
+                 data-arrows-classes="u-arrow-v1 g-width-35 g-height-35 g-brd-around g-brd-gray-light-v1 g-color-gray-dark-v5 g-brd-black--hover g-color-white--hover g-bg-black--hover rounded g-pos-abs g-right-0 g-bottom-0 g-mb-25"
+                 data-arrow-left-classes="fa fa-angle-left g-mr-40"
+                 data-arrow-right-classes="fa fa-angle-right">
+              <div class="js-slide">
+                <!-- Testimonials Advanced -->
+                <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-black g-font-weight-300 g-font-size-16 g-pa-40 g-mb-30">Thanks a lot. You have no idea how much I appreciate all your help. You are not just a great designer but an amazing human being, because so many people won't give a rat ass about what happen to their clients AFTER THE SALE, and you are not. Again, thanks a lot</blockquote>
+
+                <div class="media">
+                  <img class="d-flex align-self-center g-width-55 g-height-55 rounded-circle mx-3" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+
+                  <div class="media-body align-self-center">
+                    <h4 class="h5 g-color-black g-mb-0">Alex Moura</h4>
+                    <em class="g-color-gray-dark-v4 g-font-size-13">Web Developer</em>
+                  </div>
+                </div>
+                <!-- End Testimonials Advanced -->
+              </div>
+
+              <div class="js-slide">
+                <!-- Testimonials Advanced -->
+                <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-primary g-font-weight-300 g-font-size-16 g-pa-25 g-mb-20">Thanks for this great update!!! However it's somewhat always a bit frustrating when I spent a lot of time trying to add features that were missing by myself and seeing updates including it in a way which is 300% nicer. Great job guys! Keep up with the good work!</blockquote>
+
+                <div class="media">
+                  <img class="d-flex align-self-center g-width-55 g-height-55 rounded-circle mx-3" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+
+                  <div class="media-body align-self-center">
+                    <h4 class="h5 g-color-black g-mb-0">Nastia Valchova</h4>
+                    <em class="g-color-gray-dark-v4 g-font-size-13">Customer</em>
+                  </div>
+                </div>
+                <!-- End Testimonials Advanced -->
+              </div>
+            </div>
+            <!-- End Testimonials Advanced -->
+
+            <!-- Testimonials Advanced -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="js-carousel g-mb-50"
+                     data-infinite="true"
+                     data-arrows-classes="u-arrow-v1 g-width-30 g-height-30 g-brd-around g-brd-gray-light-v1 g-color-gray-dark-v5 g-brd-lightred--hover g-color-white--hover g-bg-lightred--hover g-pos-abs g-right-0 g-bottom-0 g-mb-25"
+                     data-arrow-left-classes="fa fa-angle-left g-mr-35"
+                     data-arrow-right-classes="fa fa-angle-right">
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-lightred g-font-weight-300 g-font-size-16 g-pa-25 g-mb-20">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+
+                    <div class="media">
+                      <img class="d-flex align-self-center g-width-55 g-height-55 mx-3" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+
+                      <div class="media-body align-self-center">
+                        <h4 class="h5 g-color-black g-mb-0">Alex Moura</h4>
+                        <em class="g-color-gray-dark-v4 g-font-size-13">Web Developer</em>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-lightred g-font-weight-300 g-font-size-16 g-pa-25 g-mb-20">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+
+                    <div class="media">
+                      <img class="d-flex align-self-center g-width-55 g-height-55 mx-3" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+
+                      <div class="media-body align-self-center">
+                        <h4 class="h5 g-color-black g-mb-0">Nastia Valchova</h4>
+                        <em class="g-color-gray-dark-v4 g-font-size-13">Customer</em>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="js-carousel g-mb-50"
+                     data-infinite="true"
+                     data-arrows-classes="u-arrow-v1 g-width-30 g-height-30 g-brd-around g-brd-gray-light-v1 g-color-gray-dark-v5 g-brd-blue--hover g-color-white--hover g-bg-blue--hover g-pos-abs g-right-0 g-bottom-0 g-mb-25"
+                     data-arrow-left-classes="fa fa-angle-left g-mr-35"
+                     data-arrow-right-classes="fa fa-angle-right">
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-blue g-font-weight-300 g-font-size-16 g-pa-25 g-mb-20">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+
+                    <div class="media">
+                      <img class="d-flex align-self-center g-width-55 g-height-55 rounded-circle mx-3" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+
+                      <div class="media-body align-self-center">
+                        <h4 class="h5 g-color-black g-mb-0">Nastia Valchova</h4>
+                        <em class="g-color-gray-dark-v4 g-font-size-13">Customer</em>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-blue g-font-weight-300 g-font-size-16 g-pa-25 g-mb-20">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+
+                    <div class="media">
+                      <img class="d-flex align-self-center g-width-55 g-height-55 rounded-circle mx-3" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+
+                      <div class="media-body align-self-center">
+                        <h4 class="h5 g-color-black g-mb-0">Alex Moura</h4>
+                        <em class="g-color-gray-dark-v4 g-font-size-13">Web Developer</em>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Testimonials Advanced -->
+
+            <!-- Testimonials Advanced -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="js-carousel g-mb-50"
+                     data-infinite="true"
+                     data-arrows-classes="u-arrow-v1 g-width-30 g-height-30 g-brd-around g-brd-gray-light-v1 g-color-gray-dark-v5 g-brd-purple--hover g-color-white--hover g-bg-purple--hover rounded-circle g-pos-abs g-right-0 g-bottom-0 g-mb-25"
+                     data-arrow-left-classes="fa fa-angle-left g-mr-35"
+                     data-arrow-right-classes="fa fa-angle-right">
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-purple g-font-weight-300 g-font-size-16 rounded g-pa-25 g-mb-20">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+
+                    <div class="media">
+                      <img class="d-flex align-self-center g-width-55 g-height-55 mx-3" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+
+                      <div class="media-body align-self-center">
+                        <h4 class="h5 g-color-black g-mb-0">Alex Moura</h4>
+                        <em class="g-color-gray-dark-v4 g-font-size-13">Web Developer</em>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-purple g-font-weight-300 g-font-size-16 rounded g-pa-25 g-mb-20">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+
+                    <div class="media">
+                      <img class="d-flex align-self-center g-width-55 g-height-55 mx-3" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+
+                      <div class="media-body align-self-center">
+                        <h4 class="h5 g-color-black g-mb-0">Nastia Valchova</h4>
+                        <em class="g-color-gray-dark-v4 g-font-size-13">Customer</em>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="js-carousel g-mb-50"
+                     data-infinite="true"
+                     data-arrows-classes="u-arrow-v1 g-width-30 g-height-30 g-brd-around g-brd-gray-light-v1 g-color-gray-dark-v5 g-brd-cyan--hover g-color-white--hover g-bg-cyan--hover rounded g-pos-abs g-right-0 g-bottom-0 g-mb-25"
+                     data-arrow-left-classes="fa fa-angle-left g-mr-35"
+                     data-arrow-right-classes="fa fa-angle-right">
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-cyan g-font-weight-300 g-font-size-16 g-rounded-10 g-pa-25 g-mb-20">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+
+                    <div class="media">
+                      <img class="d-flex align-self-center g-width-55 g-height-55 g-rounded-5 mx-3" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+
+                      <div class="media-body align-self-center">
+                        <h4 class="h5 g-color-black g-mb-0">Nastia Valchova</h4>
+                        <em class="g-color-gray-dark-v4 g-font-size-13">Customer</em>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-cyan g-font-weight-300 g-font-size-16 g-rounded-10 g-pa-25 g-mb-20">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+
+                    <div class="media">
+                      <img class="d-flex align-self-center g-width-55 g-height-55 g-rounded-5 mx-3" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+
+                      <div class="media-body align-self-center">
+                        <h4 class="h5 g-color-black g-mb-0">Alex Moura</h4>
+                        <em class="g-color-gray-dark-v4 g-font-size-13">Web Developer</em>
+                      </div>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Testimonials Advanced -->
+
+            <!-- Testimonials Advanced -->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="js-carousel g-mb-50"
+                     data-autoplay="true"
+                     data-infinite="true">
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-teal g-font-weight-300 g-font-size-16 g-pa-25 g-mb-20">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+
+                    <div class="ml-4">
+                      <h4 class="h5 g-color-black g-mb-0">Alex Moura</h4>
+                      <em class="g-color-gray-dark-v4 g-font-size-13">Web Developer</em>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-teal g-font-weight-300 g-font-size-16 g-pa-25 g-mb-20">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+
+                    <div class="ml-4">
+                      <h4 class="h5 g-color-black g-mb-0">Nastia Valchova</h4>
+                      <em class="g-color-gray-dark-v4 g-font-size-13">Customer</em>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-8">
+                <div class="js-carousel g-mb-50"
+                     data-autoplay="true"
+                     data-infinite="true"
+                     data-arrows-classes="u-arrow-v1 g-width-30 g-height-30 g-brd-around g-brd-gray-light-v1 g-color-gray-dark-v5 g-brd-pink--hover g-color-white--hover g-bg-pink--hover g-pos-abs g-right-0 g-bottom-0 g-mb-25"
+                     data-arrow-left-classes="fa fa-angle-left g-mr-35"
+                     data-arrow-right-classes="fa fa-angle-right">
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-pink g-font-weight-300 g-font-size-16 g-pa-25 g-mb-20">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+
+                    <div class="ml-4">
+                      <h4 class="h5 g-color-black g-mb-0">Nastia Valchova</h4>
+                      <em class="g-color-gray-dark-v4 g-font-size-13">Customer</em>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-pink g-font-weight-300 g-font-size-16 g-pa-25 g-mb-20">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+
+                    <div class="ml-4">
+                      <h4 class="h5 g-color-black g-mb-0">Alex Moura</h4>
+                      <em class="g-color-gray-dark-v4 g-font-size-13">Web Developer</em>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Testimonials Advanced -->
+
+            <!-- Testimonials Advanced -->
+            <div class="row">
+              <div class="col-md-8">
+                <div class="js-carousel g-mb-50"
+                     data-autoplay="true"
+                     data-infinite="true"
+                     data-arrows-classes="u-arrow-v1 g-width-30 g-height-30 g-brd-around g-brd-gray-light-v1 g-color-gray-dark-v5 g-brd-red--hover g-color-white--hover g-bg-red--hover g-pos-abs g-right-0 g-bottom-0 g-mb-25"
+                     data-arrow-left-classes="fa fa-angle-left g-mr-35"
+                     data-arrow-right-classes="fa fa-angle-right">
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-red g-font-weight-300 g-font-size-16 g-rounded-15 g-pa-25 g-mb-20">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+
+                    <div class="ml-4">
+                      <h4 class="h5 g-color-black g-mb-0">Alex Moura</h4>
+                      <em class="g-color-gray-dark-v4 g-font-size-13">Web Developer</em>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-red g-font-weight-300 g-font-size-16 g-rounded-15 g-pa-25 g-mb-20">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+
+                    <div class="ml-4">
+                      <h4 class="h5 g-color-black g-mb-0">Nastia Valchova</h4>
+                      <em class="g-color-gray-dark-v4 g-font-size-13">Customer</em>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="js-carousel g-mb-50"
+                     data-autoplay="true"
+                     data-infinite="true">
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-primary g-font-weight-300 g-font-size-16 g-rounded-15 g-pa-25 g-mb-20">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+
+                    <div class="ml-4">
+                      <h4 class="h5 g-color-black g-mb-0">Nastia Valchova</h4>
+                      <em class="g-color-gray-dark-v4 g-font-size-13">Customer</em>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+
+                  <div class="js-slide">
+                    <!-- Testimonials Advanced -->
+                    <blockquote class="u-ns-bg-v3-bottom g-font-style-italic g-color-white g-bg-primary g-font-weight-300 g-font-size-16 g-rounded-15 g-pa-25 g-mb-20">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+
+                    <div class="ml-4">
+                      <h4 class="h5 g-color-black g-mb-0">Alex Moura</h4>
+                      <em class="g-color-gray-dark-v4 g-font-size-13">Web Developer</em>
+                    </div>
+                    <!-- End Testimonials Advanced -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Testimonials Advanced -->
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode13" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Testimonials Advanced v13 -->
+
+      <!-- Testimonials Advanced v14 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Testimonials
+            <span class="g-color-primary g-ml-5">#14</span>
+          </h2>
+        </div>
+
+        <div id="shortcode14">
+          <div class="shortcode-html">
+            <!-- Testimonials -->
+            <div id="carouselCus1" class="js-carousel g-pb-60"
+                 data-infinite="true"
+                 data-autoplay="true"
+                 data-speed="7000"
+                 data-lazy-load="progressive"
+                 data-slides-show="3"
+                 data-pagi-classes="u-carousel-indicators-v31 g-absolute-centered--x g-bottom-0 text-center"
+                 data-responsive='[{
+                   "breakpoint": 1200,
+                   "settings": {
+                     "slidesToShow": 3
+                   }
+                 }, {
+                   "breakpoint": 992,
+                   "settings": {
+                     "slidesToShow": 2
+                   }
+                 }, {
+                   "breakpoint": 768,
+                   "settings": {
+                     "slidesToShow": 2
+                   }
+                 }, {
+                   "breakpoint": 576,
+                   "settings": {
+                     "slidesToShow": 1
+                   }
+                 }]'>
+              <div class="js-slide g-px-15 mb-1">
+                <!-- Testimonials -->
+                <blockquote class="u-blockquote-v8 g-font-weight-300 g-font-size-15 rounded g-pa-25 g-mb-25">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+                <div class="media">
+                  <img class="d-flex align-self-center rounded-circle u-shadow-v19 g-brd-around g-brd-3 g-brd-white g-width-50 mr-3" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                  <div class="media-body align-self-center">
+                    <h4 class="g-color-black g-font-weight-600 g-font-size-15 g-mb-0">Alex Pottorf</h4>
+                    <span class="d-block g-color-gray-dark-v4 g-font-size-13">Reason: Template Quality</span>
+                  </div>
+                </div>
+                <!-- End Testimonials -->
+              </div>
+
+              <div class="js-slide g-px-15 mb-1">
+                <!-- Testimonials -->
+                <blockquote class="u-blockquote-v8 g-font-weight-300 g-font-size-15 rounded g-pa-25 g-mb-25">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+                <div class="media">
+                  <img class="d-flex align-self-center rounded-circle u-shadow-v19 g-brd-around g-brd-3 g-brd-white g-width-50 mr-3" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                  <div class="media-body align-self-center">
+                    <h4 class="g-color-black g-font-weight-600 g-font-size-15 g-mb-0">Bastien Rojanawisut</h4>
+                    <span class="d-block g-color-gray-dark-v4 g-font-size-13">Reason: Template Quality</span>
+                  </div>
+                </div>
+                <!-- End Testimonials -->
+              </div>
+
+              <div class="js-slide g-px-15 mb-1">
+                <!-- Testimonials -->
+                <blockquote class="u-blockquote-v8 g-font-weight-300 g-font-size-15 rounded g-pa-25 g-mb-25">The Unify package made my life easier. I will advice programmers to buy it even it cost 140$ - because it shorten hunderds of hours in front of your pc designing your layout.</blockquote>
+                <div class="media">
+                  <img class="d-flex align-self-center rounded-circle u-shadow-v19 g-brd-around g-brd-3 g-brd-white g-width-50 mr-3" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                  <div class="media-body align-self-center">
+                    <h4 class="g-color-black g-font-weight-600 g-font-size-15 g-mb-0">Massalha Shady</h4>
+                    <span class="d-block g-color-gray-dark-v4 g-font-size-13">Reason: Code Quality</span>
+                  </div>
+                </div>
+                <!-- End Testimonials -->
+              </div>
+
+              <div class="js-slide g-px-15 mb-1">
+                <!-- Testimonials -->
+                <blockquote class="u-blockquote-v8 g-font-weight-300 g-font-size-15 rounded g-pa-25 g-mb-25">New Unify template looks great!. Love the multiple layout examples for Shortcodes and the new Show code Copy code snippet feature is brilliant</blockquote>
+                <div class="media">
+                  <img class="d-flex align-self-center rounded-circle u-shadow-v19 g-brd-around g-brd-3 g-brd-white g-width-50 mr-3" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                  <div class="media-body align-self-center">
+                    <h4 class="g-color-black g-font-weight-600 g-font-size-15 g-mb-0">Mark Mcmanus</h4>
+                    <span class="d-block g-color-gray-dark-v4 g-font-size-13">Reason: Code Quality</span>
+                  </div>
+                </div>
+                <!-- End Testimonials -->
+              </div>
+
+              <div class="js-slide g-px-15 mb-1">
+                <!-- Testimonials -->
+                <blockquote class="u-blockquote-v8 g-font-weight-300 g-font-size-15 rounded g-pa-25 g-mb-25">Great templates, I'm currently using Unify 2.0 for work. It's beautiful and the coding is done quickly and seamlessly. Thank you!</blockquote>
+                <div class="media">
+                  <img class="d-flex align-self-center rounded-circle u-shadow-v19 g-brd-around g-brd-3 g-brd-white g-width-50 mr-3" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                  <div class="media-body align-self-center">
+                    <h4 class="g-color-black g-font-weight-600 g-font-size-15 g-mb-0">Zuza Muszyńska</h4>
+                    <span class="d-block g-color-gray-dark-v4 g-font-size-13">Reason: Unify Quality</span>
+                  </div>
+                </div>
+                <!-- End Testimonials -->
+              </div>
+            </div>
+            <!-- End Testimonials -->
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode14" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Testimonials Advanced v14 -->
+
+      <!-- Testimonials Advanced v15 -->
+      <section class="g-py-100">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Testimonials
+            <span class="g-color-primary g-ml-5">#15</span>
+          </h2>
+        </div>
+
+        <div id="shortcode15">
+          <div class="shortcode-html">
+            <!-- Testimonials -->
+            <div class="container">
+              <div id="carouselCus2" class="js-carousel u-carousel-indicators-v32 g-pos-stc g-width-200 text-center mx-auto g-mb-20"
+                   data-infinite="true"
+                   data-center-mode="true"
+                   data-slides-show="3"
+                   data-is-thumbs="true"
+                   data-nav-for="#carouselCus1-1">
+                <div class="js-slide d-flex text-center g-opacity-1 g-cursor-pointer g-px-13 g-py-50">
+                  <img class="u-shadow-v22 u-carousel-indicators-v32-img g-width-40 g-height-40 g-brd-around g-brd-2 g-brd-transparent rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                </div>
+
+                <div class="js-slide d-flex text-center g-opacity-1 g-cursor-pointer g-px-13 g-py-50">
+                  <img class="u-shadow-v22 u-carousel-indicators-v32-img g-width-40 g-height-40 g-brd-around g-brd-2 g-brd-transparent rounded-circle" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                </div>
+
+                <div class="js-slide d-flex text-center g-opacity-1 g-cursor-pointer g-px-13 g-py-50">
+                  <img class="u-shadow-v22 u-carousel-indicators-v32-img g-width-40 g-height-40 g-brd-around g-brd-2 g-brd-transparent rounded-circle" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                </div>
+
+                <div class="js-slide d-flex text-center g-opacity-1 g-cursor-pointer g-px-13 g-py-50">
+                  <img class="u-shadow-v22 u-carousel-indicators-v32-img g-width-40 g-height-40 g-brd-around g-brd-2 g-brd-transparent rounded-circle" src="{{ root }}assets/img-temp/100x100/img12.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <div id="carouselCus1-1" class="js-carousel g-px-50 g-px-200--lg"
+                   data-infinite="true"
+                   data-arrows-classes="u-arrow-v1 g-absolute-centered--y g-width-45 g-height-45 g-font-size-30 g-color-main-light-v1 g-color-primary--hover"
+                   data-arrow-left-classes="fa fa-angle-left g-left-0 g-left-40--lg g-mt-minus-50"
+                   data-arrow-right-classes="fa fa-angle-right g-right-0 g-right-40--lg g-mt-minus-50"
+                   data-nav-for="#carouselCus2">
+                <div class="js-slide text-center">
+                  <blockquote class="g-font-size-default g-font-size-18--md g-mb-60">Your customer support is the best I have experienced with any theme I have purchased. You have a theme that far exceeds all others. Thanks for providing such a fantastic theme, all your efforts are greatly appreciated on our end.</blockquote>
+                  <h4 class="g-font-weight-700 g-font-size-15 g-mb-1">Dick Pottorf</h4>
+                  <span class="d-block g-font-size-13">Reason: Unify Support</span>
+                </div>
+
+                <div class="js-slide text-center">
+                  <blockquote class="g-font-size-default g-font-size-18--md g-mb-60">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+                  <h4 class="g-font-weight-700 g-font-size-15 g-mb-1">Bastien Rojanawisut</h4>
+                  <span class="d-block g-font-size-13">Reason: Template Quality</span>
+                </div>
+
+                <div class="js-slide text-center">
+                  <blockquote class="g-font-size-default g-font-size-18--md g-mb-60">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+                  <h4 class="g-font-weight-700 g-font-size-15 g-mb-1">Alex Pottorf</h4>
+                  <span class="d-block g-font-size-13">Reason: Template Quality</span>
+                </div>
+
+                <div class="js-slide text-center">
+                  <blockquote class="g-font-size-default g-font-size-18--md g-mb-60">New Unify template looks great!. Love the multiple layout examples for Shortcodes and the new Show code Copy code snippet feature is brilliant.</blockquote>
+                  <h4 class="g-font-weight-700 g-font-size-15 g-mb-1">Mark Mcmanus</h4>
+                  <span class="d-block g-font-size-13">Reason: Code Quality</span>
+                </div>
+              </div>
+              <!-- End Carousel -->
+            </div>
+            <!-- End Testimonials -->
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode15" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Testimonials Advanced v15 -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Testimonials Advanced v16 -->
+      <section class="g-py-100">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Testimonials
+            <span class="g-color-primary g-ml-5">#16</span>
+          </h2>
+        </div>
+
+        <div id="shortcode16">
+          <div class="shortcode-html">
+            <!-- Testimonials -->
+            <div class="g-bg-primary g-pos-rel">
+              <div class="container">
+                <div class="row justify-content-end align-items-center g-min-height-70vh">
+                  <div class="col-lg-5 order-lg-2 align-self-center g-py-70 g-py-0--lg">
+                    <!-- Carousel - Text -->
+                    <div id="carouselCus16" class="js-carousel"
+                         data-infinite="true"
+                         data-fade="true"
+                         data-auto-height="auto"
+                         data-nav-for="#carouselCus16-nav">
+                      <div class="js-slide">
+                        <blockquote class="g-color-white g-font-weight-600 g-font-size-26 mb-0">
+                          <div class="mb-5">
+                            <span class="g-color-white-opacity-0_6 g-font-size-26">"</span>
+                              We have worked with Diane &amp; Jen both buying and selling 3 times over the years and cannot say enough about their dedication, industry savvy and the great team they have supporting them.
+                            <span class="g-color-white-opacity-0_6 g-font-size-26">"</span>
+                          </div>
+                          <h4 class="g-color-white g-font-weight-600 mb-0">Shane &amp; Rob, <span class="g-color-white-opacity-0_6 g-font-size-16">Customer</span></h4>
+                        </blockquote>
+                      </div>
+
+                      <div class="js-slide">
+                        <blockquote class="g-color-white g-font-weight-600 g-font-size-26 mb-0">
+                          <div class="mb-5">
+                            <span class="g-color-white-opacity-0_6 g-font-size-26">"</span>
+                              You had a great sense of what the market would be willing to pay, and of what we needed to do to present the house well. You can be sure that you’ll be hearing from us when we’re on our way back to Ottawa.
+                            <span class="g-color-white-opacity-0_6 g-font-size-26">"</span>
+                          </div>
+                          <h4 class="g-color-white g-font-weight-600 mb-0">Ian, <span class="g-color-white-opacity-0_6 g-font-size-16">Customer</span></h4>
+                        </blockquote>
+                      </div>
+
+                      <div class="js-slide">
+                        <blockquote class="g-color-white g-font-weight-600 g-font-size-26 mb-0">
+                          <div class="mb-5">
+                            <span class="g-color-white-opacity-0_6 g-font-size-26">"</span>
+                              Their enthusiasm, knowledge of the neighbourhood and marketing strategy were instrumental in getting a great price (over asking) in less than a week.
+                            <span class="g-color-white-opacity-0_6 g-font-size-26">"</span>
+                          </div>
+                          <h4 class="g-color-white g-font-weight-600 mb-0">Joan, <span class="g-color-white-opacity-0_6 g-font-size-16">Customer</span></h4>
+                        </blockquote>
+                      </div>
+                    </div>
+                    <!-- End Carousel - Text -->
+                  </div>
+
+                  <div class="col-lg-6 order-lg-1 align-self-center g-pos-abs--lg g-top-0 g-left-0 g-pl-0">
+                    <!-- Carousel - Image -->
+                    <div id="carouselCus16-nav" class="js-carousel"
+                         data-infinite="true"
+                         data-is-thumbs="true"
+                         data-nav-for="#carouselCus16"
+                         data-arrows-classes="u-arrow-v1 g-pos-abs g-top-0 g-width-40 g-height-40 g-color-white g-color-primary--hover g-bg-primary-dark-v1 g-bg-black--hover"
+                         data-arrow-left-classes="fa fa-angle-left g-right-40 g-brd-right g-brd-white-opacity-0_1"
+                         data-arrow-right-classes="fa fa-angle-right g-right-0">
+                      <div class="js-slide g-min-height-70vh g-bg-size-cover g-bg-pos-top-center" data-bg-img-src="{{ root }}assets/img-temp/900x900/img8.jpg"></div>
+                      <div class="js-slide g-min-height-70vh g-bg-size-cover g-bg-pos-top-center" data-bg-img-src="{{ root }}assets/img-temp/900x900/img9.jpg"></div>
+                      <div class="js-slide g-min-height-70vh g-bg-size-cover g-bg-pos-top-center" data-bg-img-src="{{ root }}assets/img-temp/900x900/img10.jpg"></div>
+                    </div>
+                    <!-- End Carousel - Image -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Testimonials -->
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode16" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Testimonials Advanced v16 -->
+
+      <!-- Testimonials v17 -->
+      <section class="g-bg-secondary g-py-50">
+        <div class="container g-mb-50">
+          <h2 class="h4 text-center">Clients
+            <span class="g-color-primary g-ml-5">#17</span>
+          </h2>
+        </div>
+
+        <div id="shortcode17" class="g-mb-40">
+          <div class="shortcode-html">
+            <div class="g-bg-gray-dark-v2">
+              <div class="container g-pt-70 g-pb-20">
+                <div class="js-carousel"
+                     data-pagi-classes="u-carousel-indicators-v35--white g-pos-rel text-center">
+                  <!-- Testimonials -->
+                  <div class="js-slide">
+                    <div class="row justify-content-lg-center g-mb-20">
+                      <div class="col-md-3 col-lg-2 g-mb-20">
+                        <img class="img-fluid u-shadow-v36 rounded-circle mx-auto" src="{{ root }}assets/img-temp/200x200/img3.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="col-md-9 col-lg-8 g-mb-20">
+                        <!-- Testimonials - Content -->
+                        <div class="media mb-3">
+                          <div class="d-flex mr-3">
+                            <span class="g-color-white-opacity-0_8 g-font-secondary g-font-size-40 g-opacity-0_3 g-pos-rel g-top-minus-10">&#8220;</span>
+                          </div>
+                          <div class="media-body">
+                            <blockquote class="g-brd-left-none g-color-white g-font-style-italic g-font-size-20 g-pl-0">The program offers both a strong theoretical and practical component providing the solid foundation needed for student teachers to venture out into the realm of teaching.
+                              <span class="align-self-end g-color-white-opacity-0_8 g-font-secondary g-font-size-40 g-opacity-0_3 g-line-height-0 align-bottom g-pos-rel g-top-minus-10">&#8221;</span>
+                            </blockquote>
+                          </div>
+                        </div>
+
+                        <div class="g-pl-30">
+                          <h3 class="h4 g-color-white-opacity-0_9 mb-0">Karolina Wellyan</h3>
+                          <span class="d-block g-font-size-18 g-color-white-opacity-0_5 g-pl-20">&#8212; Bachelor Student</span>
+                        </div>
+                        <!-- End Testimonials - Content -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Testimonials -->
+
+                  <!-- Testimonials -->
+                  <div class="js-slide">
+                    <div class="row justify-content-lg-center g-mb-20">
+                      <div class="col-md-3 col-lg-2 g-mb-20">
+                        <img class="img-fluid u-shadow-v36 rounded-circle mx-auto" src="{{ root }}assets/img-temp/200x200/img1.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="col-md-9 col-lg-8 g-mb-20">
+                        <!-- Testimonials - Content -->
+                        <div class="media mb-3">
+                          <div class="d-flex mr-3">
+                            <span class="g-color-white-opacity-0_8 g-font-secondary g-font-size-40 g-opacity-0_3 g-pos-rel g-top-minus-10">&#8220;</span>
+                          </div>
+                          <div class="media-body">
+                            <blockquote class="g-brd-left-none g-color-white g-font-style-italic g-font-size-20 g-pl-0">Unify's TESL program was a personally enriching and professionally beneficial experience that opened the door to a rewarding second career in ESL.
+                              <span class="align-self-end g-color-white-opacity-0_8 g-font-secondary g-font-size-40 g-opacity-0_3 g-line-height-0 align-bottom g-pos-rel g-top-minus-10">&#8221;</span>
+                            </blockquote>
+                          </div>
+                        </div>
+
+                        <div class="g-pl-30">
+                          <h3 class="h4 g-color-white-opacity-0_9 mb-0">Alex Watson</h3>
+                          <span class="d-block g-font-size-18 g-color-white-opacity-0_5 g-pl-20">&#8212; 2015 Grad</span>
+                        </div>
+                        <!-- End Testimonials - Content -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Testimonials -->
+
+                  <!-- Testimonials -->
+                  <div class="js-slide">
+                    <div class="row justify-content-lg-center g-mb-20">
+                      <div class="col-md-3 col-lg-2 g-mb-20">
+                        <img class="img-fluid u-shadow-v36 rounded-circle mx-auto" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="col-md-9 col-lg-8 g-mb-20">
+                        <!-- Testimonials - Content -->
+                        <div class="media mb-3">
+                          <div class="d-flex mr-3">
+                            <span class="g-color-white-opacity-0_8 g-font-secondary g-font-size-40 g-opacity-0_3 g-pos-rel g-top-minus-10">&#8220;</span>
+                          </div>
+                          <div class="media-body">
+                            <blockquote class="g-brd-left-none g-color-white g-font-style-italic g-font-size-20 g-pl-0">I would highly recommend the Unify TESL program – it gave me the training, tools and network to get ESL teaching opportunities in Toronto. Unify's program provided a good balance of both the practical and theoretical knowledge.
+                              <span class="align-self-end g-color-white-opacity-0_8 g-font-secondary g-font-size-40 g-opacity-0_3 g-line-height-0 align-bottom g-pos-rel g-top-minus-10">&#8221;</span>
+                            </blockquote>
+                          </div>
+                        </div>
+
+                        <div class="g-pl-30">
+                          <h3 class="h4 g-color-white-opacity-0_9 mb-0">Maria Olsson</h3>
+                          <span class="d-block g-font-size-18 g-color-white-opacity-0_5 g-pl-20">&#8212; 2017 Grad</span>
+                        </div>
+                        <!-- End Testimonials - Content -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Testimonials -->
+
+                  <!-- Testimonials -->
+                  <div class="js-slide">
+                    <div class="row justify-content-lg-center g-mb-20">
+                      <div class="col-md-3 col-lg-2 g-mb-20">
+                        <img class="img-fluid u-shadow-v36 rounded-circle mx-auto" src="{{ root }}assets/img-temp/200x200/img4.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="col-md-9 col-lg-8 g-mb-20">
+                        <!-- Testimonials - Content -->
+                        <div class="media mb-3">
+                          <div class="d-flex mr-3">
+                            <span class="g-color-white-opacity-0_8 g-font-secondary g-font-size-40 g-opacity-0_3 g-pos-rel g-top-minus-10">&#8220;</span>
+                          </div>
+                          <div class="media-body">
+                            <blockquote class="g-brd-left-none g-color-white g-font-style-italic g-font-size-20 g-pl-0">The TESL training at Unify includes an extremely useful practicum portion where students get the chance to hone their skills at the front of the class and receive feedback from mentors.
+                              <span class="align-self-end g-color-white-opacity-0_8 g-font-secondary g-font-size-40 g-opacity-0_3 g-line-height-0 align-bottom g-pos-rel g-top-minus-10">&#8221;</span>
+                            </blockquote>
+                          </div>
+                        </div>
+
+                        <div class="g-pl-30">
+                          <h3 class="h4 g-color-white-opacity-0_9 mb-0">Brown Draxler</h3>
+                          <span class="d-block g-font-size-18 g-color-white-opacity-0_5 g-pl-20">&#8212; Jeff Brown, M.A., Ph.D.</span>
+                        </div>
+                        <!-- End Testimonials - Content -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Testimonials -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <script type="text/plain">
+              $(document).on('ready', function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+
+          <div class="container">
+            {% set contentTarget = "#shortcode17" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+      </section
+      <!-- End Testimonials v17 -->
+
+      <!-- Clients #18 -->
+      <section class="g-py-100">
+        <div class="container g-mb-50">
+          <h2 class="h4 text-center">Clients
+            <span class="g-color-primary g-ml-5">#18</span>
+          </h2>
+        </div>
+
+        <div id="shortcode18" class="g-mb-40">
+          <div class="shortcode-html">
+            <div class="container">
+              <!-- Clients -->
+              <div id="carouselCus18" class="js-carousel g-max-width-645 mx-auto g-pt-50 g-pb-35"
+                   data-infinite="true"
+                   data-fade="true"
+                   data-items="1"
+                   data-autoplay="true"
+                   data-speed="10000"
+                   data-nav-for="#carouselCus18-nav">
+                <div class="js-slide">
+                  <blockquote class="g-color-black g-font-weight-500 g-font-size-22 text-center">
+                    <span class="g-color-primary g-font-size-26">"</span>
+                    The complete package for me. Plenty to choose from and thanks for the unlimited updates.
+                    <span class="g-color-primary g-font-size-26">"</span>
+                  </blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <blockquote class="g-color-black g-font-weight-500 g-font-size-22 text-center">
+                    <span class="g-color-primary g-font-size-26">"</span>
+                    Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.
+                    <span class="g-color-primary g-font-size-26">"</span>
+                  </blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <blockquote class="g-color-black g-font-weight-500 g-font-size-22 text-center">
+                    <span class="g-color-primary g-font-size-26">"</span>
+                    Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.
+                    <span class="g-color-primary g-font-size-26">"</span>
+                  </blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <blockquote class="g-color-black g-font-weight-500 g-font-size-22 text-center">
+                    <span class="g-color-primary g-font-size-26">"</span>
+                    A great template, with great examples and good documentation. An easy 5 stars.
+                    <span class="g-color-primary g-font-size-26">"</span>
+                  </blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <blockquote class="g-color-black g-font-weight-500 g-font-size-22 text-center">
+                    <span class="g-color-primary g-font-size-26">"</span>
+                    I'm very impressed with the theme and customer support! Thanks <span class="g-color-primary g-font-size-26">"</span>
+                  </blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <blockquote class="g-color-black g-font-weight-500 g-font-size-22 text-center">
+                    <span class="g-color-primary g-font-size-26">"</span>
+                    Great theme maker. I wish they would create more themes.
+                    <span class="g-color-primary g-font-size-26">"</span>
+                  </blockquote>
+                </div>
+
+                <div class="js-slide">
+                  <blockquote class="g-color-black g-font-weight-500 g-font-size-22 text-center">
+                    <span class="g-color-primary g-font-size-26">"</span>
+                    New Unify template looks great!. Love the multiple layout examples for Shortcodes and the new Show code Copy code snippet feature is brilliant.
+                    <span class="g-color-primary g-font-size-26">"</span>
+                  </blockquote>
+                </div>
+              </div>
+
+              <div id="carouselCus18-nav" class="js-carousel u-carousel-v12"
+                   data-infinite="true"
+                   data-is-thumbs="true"
+                   data-autoplay="true"
+                   data-speed="10000"
+                   data-center-mode="true"
+                   data-slides-show="5"
+                   data-nav-for="#carouselCus18"
+                   data-responsive='[{
+                     "breakpoint": 1200,
+                     "settings": {
+                       "slidesToShow": 5
+                     }
+                   }, {
+                     "breakpoint": 992,
+                     "settings": {
+                       "slidesToShow": 4
+                     }
+                   }, {
+                     "breakpoint": 768,
+                     "settings": {
+                       "slidesToShow": 3
+                     }
+                   }, {
+                     "breakpoint": 576,
+                     "settings": {
+                       "slidesToShow": 3
+                     }
+                   }, {
+                     "breakpoint": 446,
+                     "settings": {
+                       "slidesToShow": 2
+                     }
+                   }]'>
+                <div class="js-slide u-block-hover">
+                  <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_5 g-opacity-1--hover g-opacity-1--active g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                  <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_5 g-opacity-1--hover g-opacity-1--active g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                  <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_5 g-opacity-1--hover g-opacity-1--active g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                  <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_5 g-opacity-1--hover g-opacity-1--active g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                  <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_5 g-opacity-1--hover g-opacity-1--active g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                  <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_5 g-opacity-1--hover g-opacity-1--active g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                  <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_5 g-opacity-1--hover g-opacity-1--active g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image description">
+                </div>
+              </div>
+              <!-- End Clients -->
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <script type="text/plain">
+              $(document).on('ready', function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode18" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Clients #18 -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Clients #19 -->
+      <section class="g-py-100">
+        <div class="container g-mb-50">
+          <h2 class="h4 text-center">Clients
+            <span class="g-color-primary g-ml-5">#19</span>
+          </h2>
+        </div>
+
+        <div id="shortcode19" class="g-mb-40">
+          <div class="shortcode-html">
+            <div class="container g-pos-rel g-pt-100">
+              <div class="row justify-content-end align-items-center">
+                <div class="col-sm-6 order-sm-2 g-mb-30">
+                  <!-- Testimonials - Carousel -->
+                  <div id="carouselCus19-1" class="js-carousel"
+                       data-infinite="true"
+                       data-autoplay="true"
+                       data-speed="10000"
+                       data-nav-for="#carouselCus19-2"
+                       data-in-effect="slideInRight"
+                       data-out-effect="slideInRight">
+                    <div class="js-slide g-pl-50--lg">
+                      <!-- Testimonials - Content -->
+                      <div class="media mb-3">
+                        <div class="d-flex mr-3">
+                          <span class="g-font-secondary g-font-size-40 g-opacity-0_3 g-pos-rel g-top-minus-10">&#8220;</span>
+                        </div>
+                        <div class="media-body">
+                          <blockquote class="g-brd-left-none g-font-style-italic g-font-size-20 g-pl-0">The program offers both a strong theoretical and practical component providing the solid foundation needed for student teachers to venture out into the realm of teaching.
+                            <span class="align-self-end g-font-secondary g-font-size-40 g-opacity-0_3 g-line-height-0 align-bottom g-pos-rel g-top-minus-10">&#8221;</span>
+                          </blockquote>
+                        </div>
+                      </div>
+
+                      <div class="g-pl-30">
+                        <h3 class="h4 mb-0">Karolina Wellyan</h3>
+                        <span class="d-block g-font-size-18 g-pl-20">&#8212; Bachelor Student</span>
+                      </div>
+                      <!-- End Testimonials - Content -->
+                    </div>
+
+                    <div class="js-slide g-pl-50--lg">
+                      <!-- Testimonials - Content -->
+                      <div class="media mb-3">
+                        <div class="d-flex mr-3">
+                          <span class="g-font-secondary g-font-size-40 g-opacity-0_3 g-pos-rel g-top-minus-10">&#8220;</span>
+                        </div>
+                        <div class="media-body">
+                          <blockquote class="g-brd-left-none g-font-style-italic g-font-size-20 g-pl-0">Unify's TESL program was a personally enriching and professionally beneficial experience that opened the door to a rewarding second career in ESL.
+                            <span class="align-self-end g-font-secondary g-font-size-40 g-opacity-0_3 g-line-height-0 align-bottom g-pos-rel g-top-minus-10">&#8221;</span>
+                          </blockquote>
+                        </div>
+                      </div>
+
+                      <div class="g-pl-30">
+                        <h3 class="h4 mb-0">Alex Watson</h3>
+                        <span class="d-block g-font-size-18 g-pl-20">&#8212; 2015 Grad</span>
+                      </div>
+                      <!-- End Testimonials - Content -->
+                    </div>
+
+                    <div class="js-slide g-pl-50--lg">
+                      <!-- Testimonials - Content -->
+                      <div class="media mb-3">
+                        <div class="d-flex mr-3">
+                          <span class="g-font-secondary g-font-size-40 g-opacity-0_3 g-pos-rel g-top-minus-10">&#8220;</span>
+                        </div>
+                        <div class="media-body">
+                          <blockquote class="g-brd-left-none g-font-style-italic g-font-size-20 g-pl-0">I would highly recommend the Unify TESL program – it gave me the training, tools and network to get ESL teaching opportunities in Toronto. Unify's program provided a good balance of both the practical and theoretical knowledge.
+                            <span class="align-self-end g-font-secondary g-font-size-40 g-opacity-0_3 g-line-height-0 align-bottom g-pos-rel g-top-minus-10">&#8221;</span>
+                          </blockquote>
+                        </div>
+                      </div>
+
+                      <div class="g-pl-30">
+                        <h3 class="h4 mb-0">Maria Olsson</h3>
+                        <span class="d-block g-font-size-18 g-pl-20">&#8212; 2017 Grad</span>
+                      </div>
+                      <!-- End Testimonials - Content -->
+                    </div>
+                  </div>
+                  <!-- End Testimonials - Carousel -->
+                </div>
+
+                <div class="col-sm-6 order-sm-1 g-pos-stc g-mb-30">
+                  <!-- Carousel - Image -->
+                  <div id="carouselCus19-2" class="js-carousel g-pos-stc"
+                       data-infinite="true"
+                       data-nav-for="#carouselCus19-1"
+                       data-arrows-classes="u-icon-v3 u-icon-size--sm g-absolute-centered--y g-color-primary g-color-white--hover g-bg-primary-opacity-0_1 g-bg-primary--hover rounded-circle g-pa-11"
+                       data-arrow-left-classes="fa fa-angle-left g-left-0"
+                       data-arrow-right-classes="fa fa-angle-right g-right-0">
+                    <div class="js-slide g-min-height-50vh g-bg-size-cover g-bg-pos-top-center" data-bg-img-src="{{ root }}assets/img-temp/600x350/img1.jpg"></div>
+                    <div class="js-slide g-min-height-50vh g-bg-size-cover g-bg-pos-top-center" data-bg-img-src="{{ root }}assets/img-temp/600x350/img2.jpg"></div>
+                    <div class="js-slide g-min-height-50vh g-bg-size-cover g-bg-pos-top-center" data-bg-img-src="{{ root }}assets/img-temp/600x350/img3.jpg"></div>
+                  </div>
+                  <!-- End Carousel - Image -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <script type="text/plain">
+              $(document).on('ready', function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="container">
+          {% set contentTarget = "#shortcode19" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Clients #19 -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+  <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+  <script src="{{ root }}assets/js/components/hs.rating.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // custom functions
+      $('#carousel5').on('click', '.js-thumb', function (e) {
+        e.stopPropagation();
+        //Variables
+        var i;
+
+        //Variables values
+        i = $(this).data('slick-index');
+
+        if ($('#carousel5').slick('slickCurrentSlide') !== i) {
+          $('#carousel5').slick('slickGoTo', i);
+        }
+      });
+
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('[class*="js-carousel"]');
+
+      // initialization of rating
+      $.HSCore.components.HSRating.init($('.js-rating'), {
+        spacing: 4
+      });
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

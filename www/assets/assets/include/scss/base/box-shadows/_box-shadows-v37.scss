@@ -1,0 +1,11 @@
+/*------------------------------------
+  Box-shadows-v37
+------------------------------------*/
+.u-shadow-v37 {
+  box-shadow: 0 13px 25px 0 rgba(#ebedf2, .7);
+
+  &--hover:hover {
+  	box-shadow: 0 13px 25px 0 rgba(#ebedf2, .7);
+  	transition-duration: .2s;
+  }
+}

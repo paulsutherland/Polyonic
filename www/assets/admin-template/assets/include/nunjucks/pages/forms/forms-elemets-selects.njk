@@ -1,0 +1,513 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Selects" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu7 = "unCollapsed" %}
+{% set isSubMenu7Elements = "unCollapsed" %}
+{% set activeMenuItem = "forms-elemets-selects" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: " Forms",
+    href: "#!"
+  }, {
+    breadcrumb: " Elements",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+	{% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+	<section class="container-fluid px-0 g-pt-65">
+		<div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+			{% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+			<div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+				{% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+				<div class="g-pa-20">
+					<h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-28">{{ title }}</h1>
+
+					<div class="row">
+						<div class="col-md-6">
+							<!-- Basic Selects -->
+							<div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+								<h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Basic Selects</h3>
+
+                <!-- Default Select -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Default Select</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 g-rounded-4 mb-0">
+                    <select class="js-select u-select--v3-select u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-rocket g-font-size-18 g-mr-15"></i><span>Select List Item 1</span></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-headphone-alt g-font-size-18 g-mr-15"></i><span>Select List Item 2</span></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-shift-right g-font-size-18 g-mr-15"></i><span>Select List Item 3</span></span>'>Select List Item 3
+                      </option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-import g-font-size-18 g-mr-15"></i><span>Additional List Item 4</span></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+              	<!-- End Default Select -->
+
+                <!-- Select with Text -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Select with Text</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 g-rounded-4 mb-0">
+                    <select class="js-select u-select--v3-select u-select-dropdown--blue-theme u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 1</span><i class="hs-admin-rocket g-font-size-18 ml-auto"></i></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 2</span><i class="hs-admin-headphone-alt g-font-size-18 ml-auto"></i></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 3</span><i class="hs-admin-shift-right g-font-size-18 ml-auto"></i></span>'>Select List Item 3
+                      </option>
+                      <option data-divider="true"></option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><span>Additional List Item 4</span><i class="hs-admin-import g-font-size-18 ml-auto"></i></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <span class="g-mr-10">Action</span>
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Select with Text -->
+
+                <!-- Select with Icon -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Select with Icon</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 g-rounded-4 mb-0">
+                    <select class="js-select u-select--v3-select u-select-dropdown--blue-theme u-select-dropdown--width-auto u-select-dropdown--right u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1">Select List Item 1</option>
+                      <option value="selectListItem2">Select List Item 2</option>
+                      <option value="selectListItem3">Select List Item 3</option>
+                      <option data-divider="true"></option>
+                      <option value="selectListItem4">Additional List Item 4</option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <i class="hs-admin-calendar g-font-size-18 g-mr-10"></i>
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Select with Icon -->
+
+                <!-- Additional Option -->
+                <div>
+                  <label class="g-mb-10">Additional Option</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 g-rounded-4 mb-0">
+                    <select class="js-select u-select--v3-select u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-rocket g-font-size-18 g-mr-15"></i><span>Select List Item 1</span></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-headphone-alt g-font-size-18 g-mr-15"></i><span>Select List Item 2</span></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-shift-right g-font-size-18 g-mr-15"></i><span>Select List Item 3</span></span>'>Select List Item 3
+                      </option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-import g-font-size-18 g-mr-15"></i><span>Additional List Item 4</span></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center justify-content-center g-absolute-centered--y g-right-0 h-100 g-width-40 g-bg-gray-light-v8 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-rounded-right-4">
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Additional Option -->
+							</div>
+							<!-- End Basic Selects -->
+						</div>
+
+            <div class="col-md-6">
+              <!-- Rounded Selects -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Rounded Selects</h3>
+
+                <!-- Default Select -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Default Select</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 g-rounded-25 mb-0">
+                    <select class="js-select u-select--v3-select u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-rocket g-font-size-18 g-mr-15"></i><span>Select List Item 1</span></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-headphone-alt g-font-size-18 g-mr-15"></i><span>Select List Item 2</span></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-shift-right g-font-size-18 g-mr-15"></i><span>Select List Item 3</span></span>'>Select List Item 3
+                      </option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-import g-font-size-18 g-mr-15"></i><span>Additional List Item 4</span></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Default Select -->
+
+                <!-- Select with Text -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Select with Text</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 g-rounded-25 mb-0">
+                    <select class="js-select u-select--v3-select u-select-dropdown--blue-theme u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 1</span><i class="hs-admin-rocket g-font-size-18 ml-auto"></i></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 2</span><i class="hs-admin-headphone-alt g-font-size-18 ml-auto"></i></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 3</span><i class="hs-admin-shift-right g-font-size-18 ml-auto"></i></span>'>Select List Item 3
+                      </option>
+                      <option data-divider="true"></option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><span>Additional List Item 4</span><i class="hs-admin-import g-font-size-18 ml-auto"></i></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <span class="g-mr-10">Action</span>
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Select with Text -->
+
+                <!-- Select with Icon -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Select with Icon</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 g-rounded-25 mb-0">
+                    <select class="js-select u-select--v3-select u-select-dropdown--blue-theme u-select-dropdown--width-auto u-select-dropdown--right u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1">Select List Item 1</option>
+                      <option value="selectListItem2">Select List Item 2</option>
+                      <option value="selectListItem3">Select List Item 3</option>
+                      <option data-divider="true"></option>
+                      <option value="selectListItem4">Additional List Item 4</option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <i class="hs-admin-calendar g-font-size-18 g-mr-10"></i>
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Select with Icon -->
+
+                <!-- Additional Option -->
+                <div>
+                  <label class="g-mb-10">Additional Option</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 g-rounded-25 mb-0">
+                    <select class="js-select u-select--v3-select u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-rocket g-font-size-18 g-mr-15"></i><span>Select List Item 1</span></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-headphone-alt g-font-size-18 g-mr-15"></i><span>Select List Item 2</span></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-shift-right g-font-size-18 g-mr-15"></i><span>Select List Item 3</span></span>'>Select List Item 3
+                      </option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-import g-font-size-18 g-mr-15"></i><span>Additional List Item 4</span></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center justify-content-center g-absolute-centered--y g-right-0 h-100 g-width-40 g-bg-gray-light-v8 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-rounded-right-25">
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Additional Option -->
+              </div>
+              <!-- End Rounded Selects -->
+            </div>
+					</div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Square Selects -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Square Selects</h3>
+
+                <!-- Default Select -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Default Select</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 rounded-0 mb-0">
+                    <select class="js-select u-select--v3-select u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-rocket g-font-size-18 g-mr-15"></i><span>Select List Item 1</span></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-headphone-alt g-font-size-18 g-mr-15"></i><span>Select List Item 2</span></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-shift-right g-font-size-18 g-mr-15"></i><span>Select List Item 3</span></span>'>Select List Item 3
+                      </option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-import g-font-size-18 g-mr-15"></i><span>Additional List Item 4</span></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Default Select -->
+
+                <!-- Select with Text -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Select with Text</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 rounded-0 mb-0">
+                    <select class="js-select u-select--v3-select u-select-dropdown--blue-theme u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 1</span><i class="hs-admin-rocket g-font-size-18 ml-auto"></i></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 2</span><i class="hs-admin-headphone-alt g-font-size-18 ml-auto"></i></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 3</span><i class="hs-admin-shift-right g-font-size-18 ml-auto"></i></span>'>Select List Item 3
+                      </option>
+                      <option data-divider="true"></option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><span>Additional List Item 4</span><i class="hs-admin-import g-font-size-18 ml-auto"></i></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <span class="g-mr-10">Action</span>
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Select with Text -->
+
+                <!-- Select with Icon -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Select with Icon</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 rounded-0 mb-0">
+                    <select class="js-select u-select--v3-select u-select-dropdown--blue-theme u-select-dropdown--width-auto u-select-dropdown--right u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1">Select List Item 1</option>
+                      <option value="selectListItem2">Select List Item 2</option>
+                      <option value="selectListItem3">Select List Item 3</option>
+                      <option data-divider="true"></option>
+                      <option value="selectListItem4">Additional List Item 4</option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <i class="hs-admin-calendar g-font-size-18 g-mr-10"></i>
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Select with Icon -->
+
+                <!-- Additional Option -->
+                <div>
+                  <label class="g-mb-10">Additional Option</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-gray-light-v7 round-0 mb-0">
+                    <select class="js-select u-select--v3-select u-sibling w-100" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-rocket g-font-size-18 g-mr-15"></i><span>Select List Item 1</span></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-headphone-alt g-font-size-18 g-mr-15"></i><span>Select List Item 2</span></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-shift-right g-font-size-18 g-mr-15"></i><span>Select List Item 3</span></span>'>Select List Item 3
+                      </option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-import g-font-size-18 g-mr-15"></i><span>Additional List Item 4</span></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center justify-content-center g-absolute-centered--y g-right-0 h-100 g-width-40 g-bg-gray-light-v8 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-rounded-right-4">
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Additional Option -->
+              </div>
+              <!-- End Square Selects -->
+            </div>
+
+            <div class="col-md-6">
+              <!-- Line Selects -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Line Selects</h3>
+
+                <!-- Default Select -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Default Select</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-none g-brd-bottom g-brd-gray-light-v7 rounded-0 mb-0">
+                    <select class="js-select u-select--v3-select u-sibling w-100 g-pl-0--child" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-rocket g-font-size-18 g-mr-15"></i><span>Select List Item 1</span></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-headphone-alt g-font-size-18 g-mr-15"></i><span>Select List Item 2</span></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-shift-right g-font-size-18 g-mr-15"></i><span>Select List Item 3</span></span>'>Select List Item 3
+                      </option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-import g-font-size-18 g-mr-15"></i><span>Additional List Item 4</span></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Default Select -->
+
+                <!-- Select with Text -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Select with Text</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-none g-brd-bottom g-brd-gray-light-v7 rounded-0 mb-0">
+                    <select class="js-select u-select--v3-select u-select-dropdown--blue-theme u-sibling w-100 g-pl-0--child" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 1</span><i class="hs-admin-rocket g-font-size-18 ml-auto"></i></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 2</span><i class="hs-admin-headphone-alt g-font-size-18 ml-auto"></i></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><span>Select List Item 3</span><i class="hs-admin-shift-right g-font-size-18 ml-auto"></i></span>'>Select List Item 3
+                      </option>
+                      <option data-divider="true"></option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><span>Additional List Item 4</span><i class="hs-admin-import g-font-size-18 ml-auto"></i></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <span class="g-mr-10">Action</span>
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Select with Text -->
+
+                <!-- Select with Icon -->
+                <div class="g-mb-30">
+                  <label class="g-mb-10">Select with Icon</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-none g-brd-bottom g-brd-gray-light-v7 rounded-0 mb-0">
+                    <select class="js-select u-select--v3-select u-select-dropdown--blue-theme u-select-dropdown--width-auto u-select-dropdown--right u-sibling w-100 g-pl-0--child" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1">Select List Item 1</option>
+                      <option value="selectListItem2">Select List Item 2</option>
+                      <option value="selectListItem3">Select List Item 3</option>
+                      <option data-divider="true"></option>
+                      <option value="selectListItem4">Additional List Item 4</option>
+                    </select>
+
+                    <div class="d-flex align-items-center g-absolute-centered--y g-right-0 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-mr-15">
+                      <i class="hs-admin-calendar g-font-size-18 g-mr-10"></i>
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Select with Icon -->
+
+                <!-- Additional Option -->
+                <div>
+                  <label class="g-mb-10">Additional Option</label>
+
+                  <div class="form-group u-select--v3 g-pos-rel g-brd-none g-brd-bottom g-brd-gray-light-v7 rounded-0 mb-0">
+                    <select class="js-select u-select--v3-select u-sibling w-100 g-pl-0--child" required="required" title="Placeholder" style="display: none;">
+                      <option value="selectListItem1" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-rocket g-font-size-18 g-mr-15"></i><span>Select List Item 1</span></span>'>Select List Item 1
+                      </option>
+                      <option value="selectListItem2" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-headphone-alt g-font-size-18 g-mr-15"></i><span>Select List Item 2</span></span>'>Select List Item 2
+                      </option>
+                      <option value="selectListItem3" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-shift-right g-font-size-18 g-mr-15"></i><span>Select List Item 3</span></span>'>Select List Item 3
+                      </option>
+                      <option value="selectListItem4" data-content='<span class="d-flex align-items-center w-100"><i class="hs-admin-import g-font-size-18 g-mr-15"></i><span>Additional List Item 4</span></span>'>Additional List Item 4
+                      </option>
+                    </select>
+
+                    <div class="d-flex align-items-center justify-content-center g-absolute-centered--y g-right-0 h-100 g-width-40 g-bg-gray-light-v8 g-color-gray-light-v6 g-color-lightblue-v9--sibling-opened g-rounded-right-4">
+                      <i class="hs-admin-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Additional Option -->
+              </div>
+              <!-- End Line Selects -->
+            </div>
+          </div>
+				</div>
+
+				{% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+			</div>
+		</div>
+	</section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/blocks/modals/project-form.njk" %}
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Plugins Init. -->
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/bloodhound.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/typeahead.jquery.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ root }}assets/js/components/hs.count-qty.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+      dropdownHideOnScroll: false
+    });
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of forms
+    $.HSCore.components.HSCountQty.init('.js-quantity');
+  });
+</script>
+</body>
+</html>

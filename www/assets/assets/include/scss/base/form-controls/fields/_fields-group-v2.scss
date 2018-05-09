@@ -1,0 +1,45 @@
+/*------------------------------------
+  Fields Group v2
+------------------------------------*/
+
+.u-input-group-v2 {
+  position: relative;
+
+  input:not([type="checkbox"], [type="radio"]),
+  textarea,
+  [class*="u-select"] {
+    line-height: 1.75rem;
+    padding: 10px 15px;
+
+    &:focus,
+    &[value],
+    &[placeholder],
+    &.g-state-not-empty {
+      & + label {
+        top: 0;
+        font-size: 90%;
+      }
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    background-color: $g-color-white;
+    padding: 0 5px;
+    margin-bottom: 0;
+    transition: {
+      property: top, font-size;
+      duration: .2s;
+      timing-function: ease;
+    }
+    transform: translateY(-50%);
+  }
+
+  textarea {
+    & + label {
+      top: 20px;
+    }
+  }
+}

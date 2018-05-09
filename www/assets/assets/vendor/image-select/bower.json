@@ -1,0 +1,19 @@
+{
+  "name": "Image Select",
+  "version": "1.8",
+  "homepage": "https://github.com/websemantics/Image-Select",
+  "authors": [
+    "Web Semantics, Inc. <hi@websemantics.ca>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "semantic": "*",
+    "chosen": "*"
+  },
+  "devDependencies": {
+    "codemirror": "*"
+  }
+}

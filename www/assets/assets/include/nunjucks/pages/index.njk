@@ -1,0 +1,593 @@
+{# Settings #}
+{% set root = "" %}
+{% set mainNavActive_1 = "intro" %}
+{% set headerPositionType = "u-header--sticky-top" %}
+{% set headerTheme = "u-header__section--dark" %}
+{% set headerBgColor = "g-bg-gray-dark-v1" %}
+{% set title = "Meet Unify – the simplest and fastest way to build sites" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main-mini.njk" %}
+
+  <!-- Promo Block -->
+  <div class="g-bg-img-hero g-bg-pos-bottom-center g-mb-10">
+    <div class="container g-py-100 g-mt-60">
+      <!-- Info -->
+      <div class="text-center mx-auto g-width-60x--md g-mb-60">
+        <span class="d-inline-block g-color-primary g-font-size-70 g-line-height-1 mb-3"><span class="g-font-size-45">v</span>2.5</span>
+        <h1 class="g-color-gray-dark-v1 g-font-size-50 g-font-weight-600">Unify Template</h1>
+        <p class="g-color-black g-font-size-20 g-line-height-2">Start a new project with easy to use <a href="{{ root }}unify-main/shortcodes/index.html" class="u-link-v5 g-brd-bottom g-brd-2 g-brd-primary g-font-weight-600 g-pb-5" target="_blank">1750+ Reusable</a> UI Components. Build websites faster with ready to use solutions!</p>
+      </div>
+      <!-- End Info -->
+
+      <!-- Social Networks -->
+      <div class="row justify-content-center text-center">
+        <div class="col-5 col-sm-4 col-md-3 g-brd-right g-brd-gray-light-v3">
+          <h3 class="h6">Like us on Facebook</h3>
+          <div class="fb-like"
+               data-href="http://facebook.com/htmlstream"
+               data-layout="button_count"
+               data-action="like"
+               data-show-faces="false"
+               data-share="false"></div>
+        </div>
+        <div class="col-5 col-sm-4 col-md-3">
+          <h4 class="h6">Follow us on Twitter</h4>
+          <a href="https://twitter.com/htmlstream" class="twitter-follow-button"
+             data-show-count="false">@htmlstream</a>
+        </div>
+      </div>
+      <!-- End Social Networks -->
+    </div>
+  </div>
+  <!-- End Promo Block -->
+
+  <!-- Unify Main -->
+  <div class="g-pos-rel g-mb-10" style="background-color: #f9fdf9;">
+    <div class="container g-pt-50">
+      <div class="g-max-width-600 text-center mx-auto g-mb-30">
+        <h2 class="g-color-black g-font-weight-600 g-font-size-40 mb-1">Unify Main</h2>
+        <p class="g-color-gray-dark-v2 g-font-size-20">Everything you need, now in one place.</p>
+      </div>
+
+      <div class="g-max-width-870 text-center mx-auto">
+        <img class="img-fluid" src="{{ root }}assets/img-temp/1150x650/img1.png">
+      </div>
+    </div>
+    <a class="u-link-v2" href="{{ root }}all-demos.html#cbpf=.unify-main"></a>
+  </div>
+  <!-- End Unify Main -->
+
+  <!-- Admin Dashboard -->
+  <div class="g-pos-rel g-mb-10" style="background-color: #f7faff;">
+    <div class="container g-pt-50">
+      <div class="g-max-width-600 text-center mx-auto g-mb-30">
+        <h2 class="g-color-black g-font-weight-600 g-font-size-40 mb-1">Admin Dashboard</h2>
+        <p class="g-color-gray-dark-v2 g-font-size-20">Experience Frontend design within Dashboard.</p>
+      </div>
+
+      <div class="g-max-width-870 text-center mx-auto">
+        <img class="img-fluid" src="{{ root }}assets/img-temp/1150x650/img2.png">
+      </div>
+    </div>
+    <a class="u-link-v2" href="{{ root }}all-demos.html#cbpf=.admin-dashboard"></a>
+  </div>
+  <!-- End Admin Dashboard -->
+
+  <!-- E-Commerce -->
+  <div class="g-pos-rel g-mb-10" style="background-color: #f3fdfa;">
+    <div class="container g-pt-50">
+      <div class="g-max-width-600 text-center mx-auto g-mb-30">
+        <h2 class="g-color-gray-dark-v1 g-font-size-40 g-font-weight-600 mb-1">E-Commerce Package</h2>
+        <p class="g-color-gray-dark-v2 g-font-size-20">Comes with over 40 ready to use shop pages.</p>
+      </div>
+
+      <div class="g-max-width-840 text-center mx-auto">
+        <img class="img-fluid" src="{{ root }}assets/img-temp/1150x650/img3.png">
+      </div>
+    </div>
+    <a class="u-link-v2" href="{{ root }}all-demos.html#cbpf=.e-commerce"></a>
+  </div>
+  <!-- End E-Commerce -->
+
+  <!-- Multi Pages Packages -->
+  <div class="g-pos-rel g-mb-10" style="background-color: #fbf9ff;">
+    <div class="container g-pt-50">
+      <div class="g-max-width-600 text-center mx-auto g-mb-30">
+        <h2 class="g-color-gray-dark-v1 g-font-size-40 g-font-weight-600 mb-1">Multi Pages Package</h2>
+        <p class="g-color-gray-dark-v2 g-font-size-20">Each demo includes its inner pages.</p>
+      </div>
+
+      <div class="g-max-width-870 text-center mx-auto">
+        <img class="img-fluid" src="{{ root }}assets/img-temp/1150x650/img4.png">
+      </div>
+    </div>
+    <a class="u-link-v2" href="{{ root }}all-demos.html#cbpf=.multi-pages"></a>
+    <!-- End Multi Pages Packages -->
+  </div>
+  <!-- End Multi Page Demos -->
+
+  <!-- One Pages Package -->
+  <div class="g-pos-rel g-mb-10" style="background-color: #f6f9ff;">
+    <div class="container g-pt-50">
+      <div class="g-max-width-600 text-center mx-auto g-mb-30">
+        <h2 class="g-color-gray-dark-v1 g-font-size-40 g-font-weight-600 mb-1">One Pages Package</h2>
+        <p class="g-color-gray-dark-v2 g-font-size-20">All-purpose designed 20+ One Page demos.</p>
+      </div>
+
+      <div class="g-max-width-870 text-center mx-auto">
+        <img class="img-fluid" src="{{ root }}assets/img-temp/1150x650/img5.png">
+      </div>
+    </div>
+    <a class="u-link-v2" href="{{ root }}all-demos.html#cbpf=.one-pages"></a>
+  </div>
+  <!-- End One Pages Package -->
+
+  <!-- Testimonials -->
+  <div class="clearfix g-px-15 g-py-100 g-bg-img-hero g-bg-pos-top-center" style="background-image: url({{ root }}assets/include/svg/svg-bg2-j.svg);">
+    <!-- Heading -->
+    <div class="g-max-width-600 text-center mx-auto g-mb-60">
+      <h2 class="g-color-gray-dark-v1 g-font-weight-600 g-font-size-30 mb-4">Unify is <span class="g-color-primary g-font-size-35">Turested</span> by <span class="g-color-primary g-font-size-35">33k+</span> Customers</h2>
+      <p class="g-color-gray-dark-v3 g-font-size-18">Join over 33k+ users around the world who have built their unique and professional websites with Unify Template.</p>
+    </div>
+    <!-- End Heading -->
+
+    <div class="js-carousel u-carousel-v5 g-mb-60"
+         data-slides-show="3"
+         data-slides-scroll="3"
+         data-pagi-classes="u-carousel-indicators-v35--main g-pos-rel text-center g-mt-30"
+         data-responsive='[{
+           "breakpoint": 1200,
+           "settings": {
+             "slidesToShow": 3,
+             "slidesToScroll": 3
+           }
+         }, {
+           "breakpoint": 992,
+           "settings": {
+             "slidesToShow": 2,
+             "slidesToScroll": 2
+           }
+         }, {
+           "breakpoint": 768,
+           "settings": {
+             "slidesToShow": 2,
+             "slidesToScroll": 2
+           }
+         }, {
+           "breakpoint": 620,
+           "settings": {
+             "slidesToShow": 1,
+             "slidesToScroll": 1
+           }
+         }, {
+           "breakpoint": 446,
+           "settings": {
+             "slidesToShow": 1,
+             "slidesToScroll": 1
+           }
+         }]'>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">Your customer support is the best I have experienced with any theme I have purchased. You have a theme that far exceeds all others. Thanks for providing such a fantastic theme, all your efforts are greatly appreciated on our end.</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase mb-1">Dick Pottorf</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Unify Support</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">I am one of the first thousand buyers 5 (or more) years ago. Today, 2017, I am still using the templates. I recommend UNIFY to the new buyers. That set of templates has change the way I write my code. As a back end developer the UNIFY set gave me almost unlimited possibilities to achieve a beautiful web solution. The client support is VERY GOOD!</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase mb-1">Igor Lemos Alves</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Template Quality</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">Thanks for this great update!!! However it's somewhat always a bit frustrating when I spent a lot of time trying to add features that were missing by myself and seeing updates including it in a way which is 300% nicer. Great job guys! Keep
+            up with the good work!</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase mb-1">Bastien Rojanawisut</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Unify Updates</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">Thanks a lot. You have no idea how much I appreciate all your help. You are not just a great designer but an amazing human being, because so many people won't give a rat ass about what happen to their clients AFTER THE SALE, and you are not.
+            Again, thanks a lot</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase mb-1">Daniel Ramirez</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Unify Support</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">First of all, thank you very much for making this theme! It is beautiful both when looked at in the browser and especially also when looking at the HTML, CSS etc. source code. Close too Bootstrap, great technical quality and documentation:
+            your theme is clearly the best! And I've really looked at and compared *lots* of them! :-)</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase g-mb-1">Carsten Fuchs</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Template Quality</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">New Unify template looks great!. Love the multiple layout examples for Shortcodes and the new Show code Copy code snippet feature is brilliant.</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase mb-1">Mark Mcmanus</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Code Quality</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">The Unify package made my life easier. I will advice programmers to buy it even it cost 140$ - because it shorten hunderds of hours in front of your pc designing your layout.</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase mb-1">Massalha Shady</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Code Quality</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">Great templates, I'm currently using Unify 2.0 for work. It's beautiful and the coding is done quickly and seamlessly. Thank you!</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase mb-1">Zuza Muszyńska</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Unify Quality</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">Best HTML Template there is! Regular updates and fast response service!</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase mb-1">Bares Si</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Unify Support</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">Great theme maker. I wish they would create more themes.</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase mb-1">David Lawrence</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Template Quality</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">I'm very impressed with the theme and customer support! Thanks</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase mb-1">Glyn</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Unify Support</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">A great template, with great examples and good documentation. An easy 5 stars.</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase mb-1">Christo Fogelberg</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Unify Quality</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">Dear Htmlstream team, I just bought the Unify template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase g-mb-1">Bastian</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Unify Features</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great help with some fiddly setup issues.</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase g-mb-1">Mark</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Unify Support</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide text-center g-px-15 g-mb-10">
+        <!-- Testimonials -->
+        <div class="g-brd-around g-brd-gray-light-v5 g-bg-white rounded g-pa-40">
+          <span class="u-icon-v1 g-width-70 g-height-70 g-color-white g-bg-primary-opacity-0_1 rounded-circle mb-4">
+            <i class="icon-bubbles g-color-primary"></i>
+          </span>
+          <blockquote class="g-color-gray-dark-v4 g-font-size-16--md g-line-height-1_8 g-mb-30">The complete package for me. Plenty to choose from and thanks for the unlimited updates.</blockquote>
+          <h4 class="h6 g-color-gray-dark-v1 g-font-weight-600 text-uppercase g-mb-1">Farlando Diengdoh</h4>
+          <span class="d-block g-color-gray-dark-v4 g-font-size-13"><span class="g-font-weight-600">Reason:</span> Unify Updates</span>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+    </div>
+
+    <!-- Purchase Button -->
+    <div class="text-center">
+      <a class="btn u-btn-primary u-shadow-v24 text-uppercase g-py-17 g-px-40" target="_blank" href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697?ref=htmlstream">Download Unify for $30</a>
+    </div>
+    <!-- End Purchase Button -->
+  </div>
+  <!-- End Testimonials -->
+
+  <!-- Footer -->
+  <footer class="container g-pt-100 g-pb-60">
+    <div class="row justify-content-between">
+      <div class="col-lg-3 g-mb-30">
+        <a class="d-inline-block mb-4" href="unify-main/home/home-page-1.html">
+          <svg width="78px" height="29px" viewBox="0 0 86 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-78.000000, -19.000000)">
+                <g transform="translate(78.000000, 19.000000)">
+                  <path class="g-fill-primary" d="M0,0 L19.2941176,0 L19.2941176,0 C23.7123956,-8.11624501e-16 27.2941176,3.581722 27.2941176,8 L27.2941176,27.2941176 L8,27.2941176 L8,27.2941176 C3.581722,27.2941176 5.41083001e-16,23.7123956 0,19.2941176 L0,0 Z"></path>
+                  <path class="g-fill-white" d="M21.036662,24.8752523 L20.5338647,22.6659916 L20.3510293,22.6659916 C19.8533083,23.4481246 19.1448284,24.0626484 18.2255681,24.5095816 C17.3063079,24.9565147 16.2575544,25.1799779 15.0792761,25.1799779 C13.0376043,25.1799779 11.5139914,24.672107 10.5083918,23.6563498 C9.50279224,22.6405927 9,21.1017437 9,19.0397567 L9,8.02392554 L12.6109986,8.02392554 L12.6109986,18.4150692 C12.6109986,19.7050808 12.8750915,20.6725749 13.4032852,21.3175807 C13.9314789,21.9625865 14.7593086,22.2850846 15.886799,22.2850846 C17.3901196,22.2850846 18.4947389,21.8356188 19.2006901,20.9366737 C19.9066413,20.0377286 20.2596117,18.5318912 20.2596117,16.4191164 L20.2596117,8.02392554 L23.855374,8.02392554 L23.855374,24.8752523 L21.036662,24.8752523 Z"></path>
+                  <path class="g-fill-main" style="opacity: .9;" d="M44.4764678,24.4705882 L40.8807055,24.4705882 L40.8807055,14.1099172 C40.8807055,12.809748 40.6191519,11.8397145 40.096037,11.1997875 C39.5729221,10.5598605 38.7425531,10.2399018 37.6049051,10.2399018 C36.0914269,10.2399018 34.9842682,10.6868282 34.2833958,11.5806945 C33.5825234,12.4745608 33.2320924,13.9727801 33.2320924,16.0753974 L33.2320924,24.4705882 L29.6515664,24.4705882 L29.6515664,7.61926145 L32.4550421,7.61926145 L32.9578394,9.8285222 L33.1406747,9.8285222 C33.6485533,9.02607405 34.3697301,8.40647149 35.3042266,7.96969592 C36.2387232,7.53292034 37.27478,7.31453583 38.412428,7.31453583 C42.4551414,7.31453583 44.4764678,9.3714132 44.4764678,13.4852296 L44.4764678,24.4705882 Z M53.7357283,24.4705882 L50.1552023,24.4705882 L50.1552023,7.61926145 L53.7357283,7.61926145 L53.7357283,24.4705882 Z M49.9418944,3.15503112 C49.9418944,2.51510412 50.1171098,2.0224693 50.467546,1.67711187 C50.8179823,1.33175444 51.3182351,1.15907831 51.9683197,1.15907831 C52.5980892,1.15907831 53.0881846,1.33175444 53.4386208,1.67711187 C53.7890571,2.0224693 53.9642725,2.51510412 53.9642725,3.15503112 C53.9642725,3.76448541 53.7890571,4.24442346 53.4386208,4.59485968 C53.0881846,4.94529589 52.5980892,5.12051137 51.9683197,5.12051137 C51.3182351,5.12051137 50.8179823,4.94529589 50.467546,4.59485968 C50.1171098,4.24442346 49.9418944,3.76448541 49.9418944,3.15503112 Z M68.0077253,10.3313195 L63.8939294,10.3313195 L63.8939294,24.4705882 L60.2981671,24.4705882 L60.2981671,10.3313195 L57.525164,10.3313195 L57.525164,8.65532856 L60.2981671,7.55831633 L60.2981671,6.4613041 C60.2981671,4.47042009 60.7654084,2.99505497 61.699905,2.03516447 C62.6344015,1.07527397 64.0615189,0.595335915 65.9812999,0.595335915 C67.2408388,0.595335915 68.4800439,0.803563007 69.6989525,1.22002344 L68.7543031,3.93208145 C67.8705943,3.64766945 67.0275286,3.50546559 66.2250804,3.50546559 C65.4124747,3.50546559 64.820805,3.75686171 64.4500537,4.25966149 C64.0793023,4.76246128 63.8939294,5.51664965 63.8939294,6.52224922 L63.8939294,7.61926145 L68.0077253,7.61926145 L68.0077253,10.3313195 Z M69.0089215,7.61926145 L72.9094094,7.61926145 L76.3375727,17.1724096 C76.8556088,18.5335242 77.2009611,19.813359 77.3736398,21.0119524 L77.49553,21.0119524 C77.5869482,20.453286 77.7545456,19.7752783 77.9983273,18.9779089 C78.242109,18.1805396 79.5321012,14.3943616 81.8683427,7.61926145 L85.738358,7.61926145 L78.5315971,26.7103215 C77.2212704,30.2146837 75.0374253,31.9668385 71.9799963,31.9668385 C71.1877057,31.9668385 70.4157419,31.8805004 69.6640816,31.7078217 L69.6640816,28.8738734 C70.2024329,28.9957643 70.8169567,29.0567088 71.5076716,29.0567088 C73.2344587,29.0567088 74.4482703,28.056203 75.1491427,26.0551615 L75.7738303,24.4705882 L69.0089215,7.61926145 Z"></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+
+        <p class="g-color-gray-dark-v4 g-font-size-13 mb-0">Htmlstream 2018. &copy; All Rights Reserved.</p>
+      </div>
+
+      <div class="col-sm-6 col-lg-2 ml-auto g-mb-30">
+        <!-- Links -->
+        <ul class="list-unstyled g-color-gray-dark-v4 g-font-size-13 mb-0">
+          <li class="my-2"><i class="mr-2 fa fa-angle-right"></i>
+            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="https://wrapbootstrap.com/user/htmlstream">Support &amp; FAQ</a>
+          </li>
+          <li class="my-2"><i class="mr-2 fa fa-angle-right"></i>
+            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="http://support.wrapbootstrap.com/knowledge_base/topics/usage-licenses">License</a>
+          </li>
+        </ul>
+        <!-- End Links -->
+      </div>
+
+      <div class="col-sm-6 col-lg-3 g-mb-30">
+        <h3 class="h6 g-color-black g-font-weight-600 text-uppercase mb-4">Follow Us</h3>
+
+        <!-- Social Icons -->
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item g-mx-2">
+            <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-blue g-bg-blue-opacity-0_1 g-color-blue--hover rounded-circle" href="https://www.facebook.com/htmlstream">
+              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
+              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item g-mx-2">
+            <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-cyan g-bg-cyan-opacity-0_1 g-color-cyan--hover rounded-circle" href="https://twitter.com/htmlstream">
+              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item g-mx-2">
+            <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-bluegray g-bg-bluegray-opacity-0_1 g-color-bluegray--hover rounded-circle" href="https://github.com/htmlstream">
+              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-github"></i>
+              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-github"></i>
+            </a>
+          </li>
+          <li class="list-inline-item g-mx-2">
+            <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-red g-bg-red-opacity-0_1 g-color-red--hover rounded-circle" href="https://dribbble.com/htmlstream">
+              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-dribbble"></i>
+              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-dribbble"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- End Social Icons -->
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+</main>
+
+{% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Implementing Plugins -->
+<script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+{% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+<script src="{{ root }}assets/vendor/chosen/chosen.jquery.js"></script>
+<script src="{{ root }}assets/vendor/image-select/src/ImageSelect.jquery.js"></script>
+<script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+<script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.js"></script>
+<script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ root }}assets/js/components/hs.header.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.scroll-nav.js"></script>
+<script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+<script src="{{ root }}assets/js/components/hs.sticky-block.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.height-calc.js"></script>
+<script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of carousel
+    $.HSCore.components.HSCarousel.init('.js-carousel');
+
+    // Header
+    $.HSCore.components.HSHeader.init($('#js-header'));
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of HSMegaMenu plugin
+    $('.js-mega-menu').HSMegaMenu({
+      event: 'hover',
+      pageContainer: $('.container'),
+      breakpoint: 991
+    });
+
+    // initialization of go to
+    $.HSCore.components.HSGoTo.init('.js-go-to');
+
+    $.HSCore.helpers.HSHeightCalc.init();
+  });
+
+  $(window).on('load', function () {
+    // initialization of HSScrollNav
+    $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
+      duration: 700,
+      over: $('.u-secondary-navigation')
+    });
+
+    // initialization of masonry.js
+    $('.masonry-grid').imagesLoaded().then(function () {
+      $('.masonry-grid').masonry({
+        // options
+        columnWidth: '.masonry-grid-sizer',
+        itemSelector: '.masonry-grid-item',
+        percentPosition: true
+      });
+    });
+
+    // initialization of sticky blocks
+    $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+  });
+</script>
+
+<script>
+  // Facebook Like
+  window.fbAsyncInit = function () {
+    // init the FB JS SDK
+    FB.init({
+      appId: '1972702999621713',
+      status: true,
+      xfbml: true,
+      version: 'v2.3'
+    });
+    if (typeof gaSocialTracking != 'undefined') gaSocialTracking.trackFacebook();
+    setTimeout(function () {
+      if (typeof window.fbCallback == 'function') {
+        window.fbCallback();
+      }
+    }, 3000); // to make sure FB was loaded
+  };
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  // Facebook Like
+
+  // Twitter Follow
+  window.twttr = (function (d, s, id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = {
+      _e: [], ready: function (f) {
+        t._e.push(f)
+      }
+    });
+  }(document, "script", "twitter-wjs"));
+  twttr.ready(function (twttr) {
+    twttr.events.bind('tweet', function (event) {
+      if (typeof gaSocialTracking != 'undefined') gaSocialTracking.trackTwitter();
+    });
+  });
+  // Twitter Follow
+</script>
+
+{% set SSCookiePrefix = "unify" %}
+{% set SSDefaultCustomColor = "#72c02c" %}
+{% set SSDefaultOuterSpaces = "0px" %}
+{% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+{% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+{% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+</body>
+</html>

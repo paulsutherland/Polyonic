@@ -1,0 +1,113 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-promo" %}
+{% set title = "Promo Blocks 15" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    <!-- Promo Block -->
+    <section class="g-pos-rel">
+      <!-- Promo Block - Carousel -->
+      <div class="js-carousel"
+           data-autoplay="true"
+           data-infinite="true"
+           data-fade="true"
+           data-speed="5000">
+        <div class="js-slide g-flex-centered g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-bluegray-opacity-0_5--after" style="background-image: url({{ root }}assets/img-temp/1920x1080/img18.jpg);" data-calc-target="#js-header"></div>
+        <div class="js-slide g-flex-centered g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-bluegray-opacity-0_5--after" style="background-image: url({{ root }}assets/img-temp/1920x1080/img19.jpg);" data-calc-target="#js-header"></div>
+      </div>
+      <!-- End Promo Block - Carousel -->
+
+      <!-- Promo Block Content -->
+      <div class="g-absolute-centered--y g-left-0 g-right-0 g-z-index-1">
+        <div class="container text-center">
+          <h2 class="h2 g-color-white g-font-weight-600 g-font-size-40 g-font-size-70--md g-line-height-1 mb-5">Plan your move.</h2>
+          <p class="g-color-white g-font-weight-300 g-font-size-20 g-font-size-24--md mb-5">Just select where you want to move, we take care of everything.<br>Enjoy your move...
+          </p>
+          <a class="btn u-btn-outline-white g-color-white g-bg-white-opacity-0_2 g-color-black--hover g-bg-white--hover g-font-weight-600 g-font-size-12 text-uppercase g-rounded-50 g-px-25 g-py-15" href="#!">Start your move
+            <i class="ml-2 icon-real-estate-048 u-line-icon-pro"></i></a>
+        </div>
+      </div>
+      <!-- End Promo Block Content -->
+    </section>
+    <!-- End Promo Block -->
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/content-demo-1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/appear.js"></script>
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.height-calc.js"></script>
+  <script src="{{ root }}assets/js/components/hs.onscroll-animation.js"></script>
+  <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).ready(function () {
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of scroll animation
+      $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+      // initialization of header's height equal offset
+      $.HSCore.helpers.HSHeightCalc.init();
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

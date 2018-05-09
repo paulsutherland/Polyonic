@@ -1,0 +1,2621 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Icons" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu5 = "unCollapsed" %}
+{% set activeMenuItem = "ui-icons" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: "UI Components",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+  <section class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+        <div class="g-pa-20">
+          <h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-30">{{ title }}</h1>
+
+          <div class="row text-center u-icons-demo g-mx-0">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-agenda"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-alarm-clock"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-alert"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-align-center"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-align-justify"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-align-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-align-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-anchor"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-android"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-angle-double-down"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-angle-double-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-angle-double-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-angle-double-up"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-angle-down"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-angle-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-angle-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-angle-up"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-announcement"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-apple"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-archive"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrow-circle-down"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrow-circle-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrow-circle-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrow-circle-up"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrow-down"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrow-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrow-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrow-top-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrow-top-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrow-up"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrow"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrows-corner"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrows-horizontal"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-arrows-vertical"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-back-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-back-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-bag"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-bar-chart-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-bar-chart"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-basketball"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-bell"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-blackboard"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-bolt-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-bolt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-book"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-bookmark-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-bookmark"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-briefcase"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-brush-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-brush"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-calendar"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-camera"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-car"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-check-box"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-check"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-clip"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-clipboard"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-close"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-cloud-down"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-cloud-up"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-cloud"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-comment-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-comment"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-comments-smiley"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-comments"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-control-backward"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-control-eject"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-control-forward"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-control-pause"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-control-play"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-control-record"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-control-shuffle"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-control-skip-backward"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-control-skip-forward"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-control-stop"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-credit-card"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-crown"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-css-3"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-cup"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-cut"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-dashboard"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-desktop"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-direction-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-direction"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-download"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-dribbble"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-dropbox-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-dropbox"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-drupal"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-email"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-envelope"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-eraser"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-exchange-vertical"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-export"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-eye"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-face-sad"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-face-smile"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-facebook"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-file"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-files"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-filter"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-flag-alt-2"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-flag-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-flag"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-flickr-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-flickr"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-folder"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-fullscreen"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-gallery"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-game"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-gift"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-github"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-google"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-hand-drag"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-hand-open"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-hand-point-down"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-hand-point-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-hand-point-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-hand-point-up"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-hand-stop"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-harddrive"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-harddrives"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-headphone-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-headphone"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-heart-broken"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-heart"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-help-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-help"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-home"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-html-5"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-hummer"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-id-badge"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-image"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-import"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-infinite"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-info-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-info"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-ink-pen"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-instagram"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-italic"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-joomla"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-jsfiddle"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-key"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layers-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layers"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-accordion-list"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-accordion-merged"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-accordion-separated"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-column-2-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-column-2"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-column-3-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-column-3"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-column-4-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-column-4"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-cta-btn-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-cta-btn-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-cta-center"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-cta-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-cta-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-grid-2-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-grid-2"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-grid-3-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-grid-3"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-grid-4-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-grid-4"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-line-solid"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-list-large-image"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-list-post"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-list-thumb-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-list-thumb"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-media-center-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-media-center"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-media-left-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-media-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-media-overlay-alt-2"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-media-overlay-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-media-overlay"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-media-right-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-media-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-menu-full"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-menu-separated"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-menu-v"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-menu"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-placeholder"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-sidebar-2"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-sidebar-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-sidebar-none"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-sidebar-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-slider-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-slider"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-tab-min"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-tab-v"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-tab-window"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-tab"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-width-default-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-width-default"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout-width-full"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-layout"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-light-bulb"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-line-dashed"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-line-dotted"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-line-double"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-link"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-linkedin"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-linux"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-list-ol"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-list"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-location-arrow"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-location-pin"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-lock"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-loop"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-magnet"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-map-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-map"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-marker-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-marker"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-medall-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-medall"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-menu-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-menu"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-microphone-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-microphone"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-microsoft-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-microsoft"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-minus"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-mobile"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-money"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-more-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-more"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-mouse-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-mouse"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-music-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-music"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-na"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-new-window"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-notepad"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-package"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-paint-bucket"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-paint-roller"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-palette"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-panel"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-paragraph"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-pencil-alt-2"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-pencil-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-pencil"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-pie-chart"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-pin-2"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-pin-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-pin"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-pinterest-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-pinterest"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-plug"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-plus"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-power-off"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-printer"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-pulse"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-quote-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-quote-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-receipt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-reddit"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-reload"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-rocket"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-rss-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-rss"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-ruler-alt-2"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-ruler-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-ruler-pencil"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-ruler"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-save-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-save"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-search"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-server"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-settings"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-share-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-share"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-sharethis-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-sharethis"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-shield"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-shift-left-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-shift-left"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-shift-right-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-shift-right"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-shine"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-shopping-cart-full"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-shopping-cart"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-shortcode"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-signal"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-skype"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-slice"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-smallcap"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-soundcloud"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-split-h"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-split-v-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-split-v"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-spray"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-stack-overflow"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-stamp"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-star"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-stats-down"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-stats-up"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-support"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-tablet"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-tag"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-target"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-text"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-themify-favhs-admin-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-themify-favicon"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-themify-logo"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-thought"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-thumb-down"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-ticket"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-time"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-timer"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-trash"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-trello"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-truck"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-tumblr-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-tumblr"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-twitter-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-twitter"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-underline"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-unlink"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-unlock"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-upload"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-uppercase"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-user"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-vector"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-video-camera"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-video-clapper"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-view-grid"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-view-list-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-view-list"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-vimeo-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-vimeo"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-volume"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-wallet"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-wand"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-wheelchair"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-widget-alt"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-widget"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-widgetized"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-window"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-wordpress"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-world"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-write"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-yahoo"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-youtube"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-zip"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-zoom-in"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+              <span class="u-icon-v1 g-mb-10">
+                <i class="hs-admin-zoom-out"></i>
+              </span>
+              <input class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value" type="text" readonly="readonly">
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="g-color-gray-dark-v6 g-brd-top g-brd-gray-light-v7 g-pa-20">
+          <div class="row no-gutters">
+            <div class="col-md-4 d-lg-flex align-self-center g-mb-10 g-mb-0--md">
+              <ul class="d-flex justify-content-between text-center text-md-left w-100 u-list-inline">
+                <li class="list-inline-item">
+                  <a class="g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">Home</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">About us</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">Tools</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">Help</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="#!">Support</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 align-self-center g-mb-10 g-mb-0--md">
+              <ul class="list-inline g-font-size-16 text-center mb-0">
+                <li class="list-inline-item g-mx-10">
+                  <a href="#!" class="g-color-facebook g-color-lightblue-v3--hover">
+                    <i class="fa fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10">
+                  <a href="#!" class="g-color-pinterest g-color-lightblue-v3--hover">
+                    <i class="fa fa-pinterest"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10">
+                  <a href="#!" class="g-color-twitter g-color-lightblue-v3--hover">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10">
+                  <a href="#!" class="g-color-linkedin g-color-lightblue-v3--hover">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10">
+                  <a href="#!" class="g-color-google-plus g-color-lightblue-v3--hover">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 align-self-center text-center text-md-right">
+              <small class="d-block g-font-size-default">All Rights Reserved 2017</small>
+            </div>
+          </div>
+        </footer>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Plugins Init. -->
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.bar-chart.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.selecter.js"></script>
+<script src="{{ root }}assets/js/demo/hs.demo.icons.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of charts
+    $.HSCore.components.HSBarChart.init('.js-bar-chart');
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav', {
+      afterOpen: function() {
+        setTimeout(function() {
+          $.HSCore.components.HSBarChart.init('.js-bar-chart');
+        }, 400);
+      },
+      afterClose: function() {
+        setTimeout(function() {
+          $.HSCore.components.HSBarChart.init('.js-bar-chart');
+        }, 400);
+      }
+    });
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+  });
+</script>
+</body>
+</html>

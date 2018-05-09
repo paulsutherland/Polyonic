@@ -1,0 +1,354 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-media-images" %}
+{% set title = "Media Images" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section>
+      <!-- Simple Images #01 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Simple Images
+              <span class="g-color-primary g-ml-5">#01</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-6">
+              <div id="shortcode1">
+                <div class="shortcode-html">
+                  <img class="img-fluid" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode1" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6">
+              <div id="shortcode2">
+                <div class="shortcode-html">
+                  <img class="img-fluid g-rounded-3" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode2" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6">
+              <div id="shortcode3">
+                <div class="shortcode-html">
+                  <img class="img-fluid g-rounded-10" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode3" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6 text-center">
+              <div id="shortcode4">
+                <div class="shortcode-html">
+                  <img class="img-fluid rounded-circle" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode4" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Simple Images #01 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- Image Thumbnails #02 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Image Thumbnails
+              <span class="g-color-primary g-ml-5">#02</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-6">
+              <div id="shortcode5">
+                <div class="shortcode-html">
+                  <img class="img-fluid img-thumbnail" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode5" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6">
+              <div id="shortcode6">
+                <div class="shortcode-html">
+                  <img class="img-fluid img-thumbnail g-rounded-3" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode6" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6">
+              <div id="shortcode7">
+                <div class="shortcode-html">
+                  <img class="img-fluid img-thumbnail g-rounded-10" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode7" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6 text-center">
+              <div id="shortcode8">
+                <div class="shortcode-html">
+                  <img class="img-fluid img-thumbnail rounded-circle" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode8" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Image Thumbnails #02 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- Image Bordered #03 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Image Bordered
+              <span class="g-color-primary g-ml-5">#03</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-6">
+              <div id="shortcode9">
+                <div class="shortcode-html">
+                  <img class="img-fluid g-brd-around g-brd-gray-light-v2" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode9" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6">
+              <div id="shortcode10">
+                <div class="shortcode-html">
+                  <img class="img-fluid g-brd-around g-brd-gray-light-v2 g-rounded-3" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode10" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6">
+              <div id="shortcode11">
+                <div class="shortcode-html">
+                  <img class="img-fluid g-brd-around g-brd-gray-light-v2 g-rounded-10" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode11" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6 text-center">
+              <div id="shortcode12">
+                <div class="shortcode-html">
+                  <img class="img-fluid g-brd-around g-brd-gray-light-v2 rounded-circle" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode12" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Image Bordered #03 -->
+
+      <hr class="g-brd-gray-light-v4 m-0">
+
+      <!-- Image Box Shadows #04 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Image Box Shadows
+              <span class="g-color-primary g-ml-5">#04</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-6">
+              <div id="shortcode13">
+                <div class="shortcode-html">
+                  <img class="img-fluid u-shadow-v2" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode13" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6">
+              <div id="shortcode14">
+                <div class="shortcode-html">
+                  <img class="img-fluid u-shadow-v2 g-rounded-3" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode14" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6">
+              <div id="shortcode15">
+                <div class="shortcode-html">
+                  <img class="img-fluid u-shadow-v2 g-rounded-10" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode15" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+
+            <div class="col-sm-3 col-6 text-center">
+              <div id="shortcode16">
+                <div class="shortcode-html">
+                  <img class="img-fluid u-shadow-v2 rounded-circle" src="{{ root }}assets/img-temp/demo-square.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode16" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Image Box Shadows #04 -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

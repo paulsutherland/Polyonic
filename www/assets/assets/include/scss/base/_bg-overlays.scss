@@ -1,0 +1,33 @@
+/*------------------------------------
+  Covers
+------------------------------------*/
+.u-bg-overlay {
+  position: relative;
+
+  // Overlay Default
+  &::before,
+  &::after {
+    content: "";
+    @include absolute(top 0 right 0 bottom 0 left 0);
+  }
+
+  // Overlay v1
+  &--v1::after {
+    @include absolute(top 5px right 5px bottom 5px left 5px);
+  }
+
+  // Uses for inner content
+  &__inner {
+    z-index: 3;
+    position: relative;
+  }
+
+  &--reverse {
+    &::before {
+      z-index: 2;
+    }
+    &::after {
+      z-index: 1;
+    }
+  }
+}

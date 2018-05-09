@@ -1,0 +1,20 @@
+/*------------------------------------
+  Quantity v2
+------------------------------------*/
+
+.u-quantity--v2 {
+  overflow: hidden;
+  border: 1px solid;
+
+  .input-group-addon {
+    min-width: auto;
+    text-align: center;
+    border: none;
+  }
+
+  input:not([type="checkbox"], [type="radio"]) {
+    background-color: $g-color-white;
+    text-align: center;
+    border: none;
+  }
+}

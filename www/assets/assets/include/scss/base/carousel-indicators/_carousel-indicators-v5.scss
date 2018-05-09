@@ -1,0 +1,31 @@
+/*------------------------------------
+  Carousel indicators v5
+------------------------------------*/
+
+.u-carousel-indicators-v5 {
+  bottom: auto;
+  left: auto;
+  right: 15px;
+  top: 15px;
+  width: auto;
+
+  li {
+    margin: 0 3px;
+    &.slick-active {
+      span {
+        width: 9px;
+        height: 9px;
+        background-color: $g-color-white;
+      }
+    }
+  }
+
+  span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid $g-color-white;
+    opacity: 1;
+    position: relative;
+  }
+}

@@ -1,0 +1,21 @@
+/*------------------------------------
+  Covers
+------------------------------------*/
+.g-bg-cover {
+  position: relative;
+
+  // Overlay (After) Cover
+  &::after {
+    content: "";
+    @include absolute(top 0 right 0 bottom 0 left 0);
+  }
+  &-v1::after {
+    @include absolute(top 5px right 5px bottom 5px left 5px);
+  }
+
+  // Uses for inner content
+  &__inner {
+    z-index: 1;
+    position: relative;
+  }
+}

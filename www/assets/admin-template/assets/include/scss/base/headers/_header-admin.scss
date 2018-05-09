@@ -1,0 +1,299 @@
+/*------------------------------------
+  Header Admin
+------------------------------------*/
+.u-header-logo-toggler {
+  height: 65px;
+  @include px-to-rem(padding-left, 15px !important);
+  @include px-to-rem(padding-right, 15px !important);
+  overflow: hidden;
+
+    .u-header__section--admin-dark & {
+      background-color: $g-color-darkblue-v4;
+    }
+
+    .u-header__section--admin-light & {
+      background-color: $g-color-white;
+    }
+}
+@media (min-width: $g-sm) {
+  .u-header-logo-toggler {
+    width: 250px;
+    transition: all .3s ease-in;
+
+    & .navbar-brand {
+      opacity: 1;
+      animation: brandFadeIn .3s ease-in-out;
+    }
+
+    .u-side-nav-mini & {
+      width: 50px;
+      @include px-to-rem(padding-left, 5px !important);
+      @include px-to-rem(padding-right, 5px !important);
+
+      & .u-header__nav-toggler {
+        margin-right: 10px;
+      }
+
+      & .navbar-brand {
+        display: none !important;
+        opacity: 0;
+        animation: brandFadeOut 1s ease-in-out;
+      }
+    }
+  }
+
+  @keyframes brandFadeIn {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    50% {
+      display: block;
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes brandFadeOut {
+    0% {
+      display: block;
+      opacity: 1;
+    }
+    50% {
+      display: block;
+      opacity: 0;
+    }
+    100% {
+      display:none;
+      opacity: 0;
+    }
+  }
+}
+
+// Dark
+.u-header__section--admin-dark {
+  background-color: $g-color-darkblue-v3;
+  color: $g-color-white;
+}
+
+// Light
+.u-header__section--admin-light {
+  background-color: $g-color-white;
+  color: $g-color-gray-dark-v6;
+}
+
+a {
+  .u-header__section--admin-dark & {
+    color: $g-color-darkblue-v5;
+  }
+
+  .u-header__section--admin-light & {
+    color: $g-color-gray-light-v6;
+  }
+
+  &:hover {
+    .u-header__section--admin-dark &,
+    .u-header__section--admin-light & {
+      text-decoration: none;
+      color: $g-color-lightred-v2;
+    }
+  }
+}
+
+[data-dropdown-target] {
+  .u-header__section--admin-dark & {
+    color: $g-color-white;
+  }
+
+  .u-header__section--admin-light & {
+    color: $g-color-gray-dark-v6;
+  }
+
+  i {
+    .u-header__section--admin-dark & {
+      color: $g-color-gray-dark-v8;
+    }
+
+    .u-header__section--admin-light & {
+      color: $g-color-gray-light-v6;
+    }
+  }
+
+  &:hover {
+    .u-header__section--admin-dark & {
+      color: $g-color-white;
+    }
+
+    .u-header__section--admin-light & {
+      color: $g-color-gray-dark-v6;
+    }
+  }
+
+  &.active {
+    i {
+      .u-header__section--admin-dark & {
+        color: $g-color-white;
+      }
+    }
+  }
+}
+
+[aria-labelledby] {
+  list-style: none;
+  padding-left: 0;
+
+  .u-header__section--admin-dark & {
+    background-color: $g-color-darkblue-v4;
+    color: $g-color-gray-light-v9;
+  }
+
+  .u-header__section--admin-light & {
+    background-color: $g-color-white;
+    color: $g-color-gray-dark-v6;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .1);
+  }
+
+  a {
+    .u-header__section--admin-dark & {
+      color: $g-color-gray-light-v9;
+    }
+
+    .u-header__section--admin-light & {
+      color: $g-color-gray-dark-v6;
+    }
+
+    &:hover {
+      .u-header__section--admin-light & {
+        color: $g-color-lightred-v2;
+      }
+
+      i {
+        .u-header__section--admin-light & {
+          color: $g-color-lightred-v2;
+        }
+      }
+    }
+  }
+
+  i {
+    .u-header__section--admin-dark & {
+      color: $g-color-lightblue-v2;
+    }
+
+    .u-header__section--admin-light & {
+      color: $g-color-gray-light-v6;
+    }
+  }
+
+  .u-header-dropdown-icon-v1 {
+    i {
+      .u-header__section--admin-dark & {
+        color: $g-color-lightblue-v3;
+      }
+    }
+  }
+}
+
+.u-header-icon-v1 {
+  background-color: transparent;
+  transition: background-color .2s ease-in;
+
+  &.active {
+    .u-header__section--admin-light & {
+      background-color: $g-color-gray-light-v7;
+    }
+  }
+}
+
+.u-header-dropdown-bordered-v1 {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+
+  .u-header__section--admin-dark & {
+    border-bottom-color: $g-color-darkblue-v6;
+  }
+
+  .u-header__section--admin-light & {
+    border-bottom-color: $g-color-gray-light-v7;
+  }
+}
+
+.u-header-dropdown-bordered-v2 {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+  .u-header__section--admin-dark & {
+    border-bottom-color: $g-color-darkblue-v6;
+  }
+
+  .u-header__section--admin-light & {
+    border-bottom-color: $g-color-gray-light-v7;
+  }
+}
+
+.u-header-dropdown-item-v1 {
+  background-color: transparent;
+  transition: background-color .2s ease-in;
+
+  &:hover {
+    .u-header__section--admin-dark & {
+      background-color: $g-color-darkblue-v3;
+    }
+
+    .u-header__section--admin-light & {
+      background-color: $g-color-gray-light-v8;
+    }
+
+    .u-header-dropdown-icon-v1 {
+      transition: background-color .2s ease-in;
+
+      .u-header__section--admin-dark & {
+        background-color: $g-color-darkblue-v4;
+      }
+
+      .u-header__section--admin-light & {
+        background-color: $g-color-white;
+      }
+    }
+  }
+}
+
+.u-header-dropdown-icon-v1 {
+  transition: background-color .2s ease-in;
+
+  .u-header__section--admin-dark & {
+    background-color: $g-color-darkblue-v3;
+  }
+
+  .u-header__section--admin-light & {
+    background-color: $g-color-gray-light-v8;
+  }
+}
+
+.u-header-dark-text {
+  .u-header__section--admin-light & {
+    color: $g-color-black;
+  }
+}
+
+.u-header-logo {
+  width: 86px;
+  height: 32px;
+}
+
+@media (max-width: #{$g-sm}-1) {
+  .u-header-logo {
+    width: 30px;
+  }
+}
+
+// Header Sidebar
+@import "header-admin-sidebar";
+
+// Header Search
+@import "header-admin-search";
+
+// Header Hamburger
+@import "header-nav-toggler";

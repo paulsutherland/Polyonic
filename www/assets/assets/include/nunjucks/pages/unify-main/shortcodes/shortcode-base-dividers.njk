@@ -1,0 +1,352 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-dividers" %}
+{% set title = "Dividers" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section>
+      <!-- Divider Styles #01 -->
+      <section class="g-py-50">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Divider Styles
+              <span class="g-color-primary g-ml-5">#01</span>
+            </h2>
+          </div>
+
+          <div id="shortcode1">
+            <div class="shortcode-html">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <hr class="g-my-50">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <hr class="u-divider-dotted g-brd-gray-light-v2 g-my-50">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <hr class="u-divider-dashed g-brd-gray-light-v2 g-my-50">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <hr class="u-divider-db-solid g-brd-gray-light-v3 g-my-50">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <hr class="u-divider-db-dotted g-brd-gray-light-v2 g-my-50">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <hr class="u-divider-db-dashed g-brd-gray-light-v2 g-my-50">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-50">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode1" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Divider Styles #01 -->
+
+      <!-- Dividers Width #02 -->
+      <section class="g-py-50">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Dividers Width
+              <span class="g-color-primary g-ml-5">#02</span>
+            </h2>
+          </div>
+
+          <div id="shortcode2">
+            <div class="shortcode-html">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <hr class="w-25 g-my-50">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <hr class="w-50 g-my-50">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <hr class="w-75 g-my-50">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode2" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Dividers Width #02 -->
+
+      <!-- Icon Dividers #03 -->
+      <section class="g-py-50">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Icon Dividers
+              <span class="g-color-primary g-ml-5">#03</span>
+            </h2>
+          </div>
+
+          <div id="shortcode3">
+            <div class="shortcode-html">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-80">
+                <i class="fa fa-circle u-divider__icon g-bg-white g-color-gray-light-v3"></i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-80">
+                <i class="fa fa-star-o u-divider__icon g-bg-gray-light-v4 g-color-gray-light-v1"></i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-80">
+                <i class="fa fa-angle-down u-divider__icon g-bg-gray-light-v4 g-color-gray-light-v1 rounded-circle"></i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-80">
+                <i class="fa fa-user-o u-divider__icon u-divider__icon--indented g-bg-gray-light-v4 g-color-gray-light-v1 rounded-circle"></i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-80">
+                <img class="u-divider__icon u-divider__icon--indented rounded-circle" src="../../assets/img-temp/100x100/img3.jpg" alt="Image Description">
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode3" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Icon Dividers #03 -->
+
+      <!-- Icon Dividers Positions #04 -->
+      <section class="g-py-50">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Icon Dividers Positions
+              <span class="g-color-primary g-ml-5">#04</span>
+            </h2>
+          </div>
+
+          <div id="shortcode4">
+            <div class="shortcode-html">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid g-brd-gray-light-v3 g-my-80">
+                <i class="fa fa-circle u-divider__icon g-bg-white g-color-gray-light-v3"></i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-center g-brd-gray-light-v3 g-my-80">
+                <i class="fa fa-circle u-divider__icon g-bg-white g-color-gray-light-v3"></i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-right g-brd-gray-light-v3 g-my-80">
+                <i class="fa fa-circle u-divider__icon g-bg-white g-color-gray-light-v3"></i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode4" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Icon Dividers Positions #04 -->
+
+      <!-- Dividers Mixed Examples #05 -->
+      <section class="g-pt-50 g-pb-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Dividers Mixed Examples
+              <span class="g-color-primary g-ml-5">#05</span>
+            </h2>
+          </div>
+
+          <div id="shortcode5">
+            <div class="shortcode-html">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-center u-divider-linear-gradient u-divider-linear-gradient--gray-light-v3 w-50 mx-auto g-my-80">
+                <i class="fa fa-circle u-divider__icon g-bg-white g-color-primary"></i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-db-solid u-divider-center g-brd-primary w-50 mx-auto g-my-80">
+                <i class="fa fa-user-o u-divider__icon u-divider__icon--indented g-bg-primary g-color-white rounded-circle"></i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-center g-brd-gray-dark-v2 w-75 mx-auto g-my-80">
+                <i class="fa fa-angle-down u-divider__icon g-bg-gray-dark-v2 g-color-white rounded-circle"></i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-db-dashed u-divider-center g-brd-gray-light-v2 g-my-80">
+                <i class="fa fa-flash u-divider__icon u-divider__icon--indented g-bg-gray-light-v4 g-color-gray-light-v1 rounded-circle"></i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-db-dotted u-divider-center g-brd-gray-dark-v5 w-75 mx-auto g-my-80">
+                <img class="u-divider__icon u-divider__icon--indented rounded-circle" src="../../assets/img-temp/100x100/img1.jpg" alt="Image Description">
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-center g-brd-gray-dark-v2 w-25 mx-auto g-my-80">
+                <i class="u-divider__icon g-bg-gray-dark-v2 g-color-white rounded-circle">1</i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-center g-brd-primary w-50 mx-auto g-my-80">
+                <i class="u-divider__icon g-bg-primary g-color-white rounded-circle">2</i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-center g-brd-pink w-75 mx-auto g-my-80">
+                <i class="u-divider__icon g-bg-pink g-color-white rounded-circle">3</i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+
+              <div class="u-divider u-divider-solid u-divider-center g-brd-cyan g-my-80">
+                <i class="u-divider__icon g-bg-cyan g-color-white rounded-circle">5</i>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem voluptatibus iste nesciunt sunt quam!</p>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode5" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Dividers Mixed Examples #05 -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/*------------------------------------
+  Fields
+------------------------------------*/
+
+[data-capitalize] {
+  text-transform: uppercase;
+}
+
+label {
+  &.error {
+    color: $g-color-danger;
+    margin: {
+      top: .25rem;
+      bottom: 0;
+    }
+  }
+}
+
+input:not([type="checkbox"], [type="radio"]),
+textarea,
+select {
+  &.error {
+    border-color: $g-color-danger !important;
+  }
+}
+
+.js-autocomplete {
+  &--ajax {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+// .input-group {
+//   input:not([type="checkbox"], [type="radio"]),
+//   textarea,
+//   select {
+//     &:first-child {
+//       border: {
+//         top-left-radius: inherit;
+//         top-right-radius: 0;
+//         bottom-right-radius: 0;
+//         bottom-left-radius: inherit;
+//       }
+//     }
+
+//     &:last-child {
+//       border: {
+//         top-left-radius: 0;
+//         top-right-radius: inherit;
+//         bottom-right-radius: inherit;
+//         bottom-left-radius: 0;
+//       }
+//     }
+
+//     &:not(:first-child, :last-child) {
+//       border: {
+//         top-left-radius: 0;
+//         top-right-radius: inherit;
+//         bottom-right-radius: inherit;
+//         bottom-left-radius: 0;
+//       }
+//     }
+//   }
+
+//   &-addon {
+//     &:first-child {
+//       border: {
+//         top-left-radius: inherit;
+//         top-right-radius: 0;
+//         bottom-right-radius: 0;
+//         bottom-left-radius: inherit;
+//       }
+//     }
+
+//     &:last-child {
+//       border: {
+//         top-left-radius: 0;
+//         top-right-radius: inherit;
+//         bottom-right-radius: inherit;
+//         bottom-left-radius: 0;
+//       }
+//     }
+//   }
+// }
+
+@import "fields-group-v1";
+@import "fields-group-v2";
+@import "fields-group-v3";
+@import "fields-group-v4";

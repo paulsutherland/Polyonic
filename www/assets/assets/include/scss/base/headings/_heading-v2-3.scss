@@ -1,0 +1,19 @@
+/*------------------------------------
+  Heading-v2-3
+------------------------------------*/
+%u-heading-v2-3 {
+  @include px-to-rem(width, 70px);
+  border-top-width: 1px;
+}
+.u-heading-v2-3 {
+  &--bottom::after {
+    @extend %u-heading-v2;
+    @extend %u-heading-v2-3;
+    @include px-to-rem(margin-top, 15px);
+  }
+  &--top::before {
+    @extend %u-heading-v2;
+    @extend %u-heading-v2-3;
+    @include px-to-rem(margin-bottom, 15px);
+  }
+}

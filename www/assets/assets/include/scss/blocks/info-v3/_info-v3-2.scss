@@ -1,0 +1,19 @@
+/*------------------------------------
+  Info Block v3-2
+------------------------------------*/
+.info-v3-2 {
+	position: relative;
+	background-position: center;
+
+	&::before {
+		content: "";
+		@include absolute(top 20px right 20px bottom 20px left 20px);
+		display: block;
+		border: 1px solid rgba($g-color-white, .2);
+		z-index: 1;
+	}
+
+	&:hover {
+		background-position: center 0;
+	}
+}

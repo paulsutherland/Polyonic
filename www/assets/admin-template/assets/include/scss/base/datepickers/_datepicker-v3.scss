@@ -1,0 +1,215 @@
+/*------------------------------------
+  Datepicker v3
+------------------------------------*/
+
+.u-datepicker {
+  &--v3 {
+    position: relative;
+    display: inline-block;
+
+    input {
+      width: 100% !important;
+      color: $g-color-gray-dark-v6;
+      border: none;
+    }
+
+    .flatpickr-calendar {
+      width: auto;
+      box-shadow: 0 10px 15px 0 rgba($g-color-black, .1);
+      padding: 20px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+
+      &.arrowTop {
+        top: 100% !important;
+        margin-top: 10px;
+      }
+
+      &.arrowBottom {
+        top: auto !important;
+        bottom: 100% !important;
+        margin-bottom: 10px;
+      }
+    }
+
+    .flatpickr-month {
+      height: 22px;
+      fill: $g-color-gray-dark-v10;
+      margin-bottom: 24px;
+    }
+
+    .flatpickr-weekdays {
+      height: 22px;
+      margin-bottom: 20px;
+    }
+
+    .flatpickr-current-month {
+      top: 0;
+      @include px-to-rem(font-size, 14px);
+      line-height: 1.6;
+      padding: 0;
+
+      span.cur-month {
+        font-weight: 400;
+        @include px-to-rem(font-size, 14px);
+        color: $g-color-gray-dark-v6;
+        margin-left: 0;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      input.cur-year {
+        font-weight: 400;
+      }
+    }
+
+    .flatpickr-prev-month,
+    .flatpickr-next-month {
+      top: 50%;
+      height: auto;
+      line-height: 0;
+      padding: 0;
+      transform: translateY(-50%);
+
+      &:hover {
+        svg {
+          fill: $g-color-lightblue-v3;
+        }
+      }
+    }
+
+    .numInputWrapper {
+      span.arrowUp,
+      span.arrowDown {
+        display: none;
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    span.flatpickr-weekday {
+      font-weight: 400;
+      @include px-to-rem(font-size, 14px);
+      color: $g-color-black;
+      text-transform: uppercase;
+    }
+
+    .flatpickr-day {
+      font-weight: 400;
+      @include px-to-rem(font-size, 14px);
+      color: $g-color-black;
+      margin: 1px 0;
+
+      &.disabled,
+      &.disabled:hover,
+      &.prevMonthDay,
+      &.nextMonthDay,
+      &.notAllowed,
+      &.notAllowed.prevMonthDay,
+      &.notAllowed.nextMonthDay {
+        color: $g-color-gray-dark-v7;
+      }
+
+      &.inRange,
+      &.prevMonthDay.inRange,
+      &.nextMonthDay.inRange,
+      &.today.inRange,
+      &.prevMonthDay.today.inRange,
+      &.nextMonthDay.today.inRange,
+      &:hover,
+      &.prevMonthDay:hover,
+      &.nextMonthDay:hover,
+      &:focus,
+      &.prevMonthDay:focus,
+      &.nextMonthDay:focus {
+        background-color: $g-color-gray-light-v8;
+        border-color: $g-color-gray-light-v8;
+      }
+
+      &.inRange {
+        box-shadow: -5px 0 0 $g-color-gray-light-v8, 5px 0 0 $g-color-gray-light-v8;
+        // box-shadow: none;
+      }
+
+      &.selected,
+      &.startRange,
+      &.endRange,
+      &.selected.inRange,
+      &.startRange.inRange,
+      &.endRange.inRange,
+      &.selected:focus,
+      &.startRange:focus,
+      &.endRange:focus,
+      &.selected:hover,
+      &.startRange:hover,
+      &.endRange:hover,
+      &.selected.prevMonthDay,
+      &.startRange.prevMonthDay,
+      &.endRange.prevMonthDay,
+      &.selected.nextMonthDay,
+      &.startRange.nextMonthDay,
+      &.endRange.nextMonthDay {
+        background-color: $g-color-white;
+        color: $g-color-black;
+        border-color: $g-color-lightred-v2;
+        border-radius: 50%;
+        box-shadow: none;
+      }
+
+      &.inRange:first-child,
+      &.inRange:nth-child(8),
+      &.inRange:nth-child(15),
+      &.inRange:nth-child(22),
+      &.inRange:nth-child(29),
+      &.inRange:nth-child(36) {
+        border-radius: 50% 0 0 50%;
+        box-shadow: none;
+      }
+
+      &.inRange:nth-child(7n) {
+        border-radius: 0 50% 50% 0;
+        box-shadow: none;
+      }
+
+      &.startRange::after,
+      &.endRange::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        z-index: -1;
+        display: block;
+        width: calc(50% + 2px);
+        height: calc(100% + 1px);
+        background-color: $g-color-gray-light-v8;
+      }
+
+      &.startRange::after {
+        right: -1px;
+      }
+
+      &.endRange::before {
+        left: -1px;
+      }
+    }
+  }
+
+  &-right {
+    .flatpickr-calendar {
+      left: auto !important;
+      right: 0 !important;
+    }
+  }
+
+  &-left {
+    .flatpickr-calendar {
+      left: 0 !important;
+    }
+  }
+}

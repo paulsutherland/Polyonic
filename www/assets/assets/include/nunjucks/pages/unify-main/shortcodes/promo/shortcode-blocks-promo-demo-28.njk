@@ -1,0 +1,158 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-promo" %}
+{% set title = "Promo Blocks 28" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    <!-- Promo Block -->
+    <section class="js-carousel"
+             data-infinite="true"
+             data-fade="true"
+             data-speed="5000"
+             data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x g-bottom-30">
+      <div class="js-slide g-min-height-600 g-flex-centered g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-black-opacity-0_3--after" style="background-image: url({{ root }}assets/img-temp/1920x1080/img35.jpg);">
+        <!-- Promo Block Content -->
+        <div class="g-flex-centered-item g-py-100" data-calc-target="#js-header">
+          <div class="container g-bg-cover__inner">
+            <h2 class="h2 g-color-white g-font-weight-600 g-font-size-40 g-font-size-65--md text-uppercase g-line-height-1_2 g-letter-spacing-1 g-mb-40">We are Unify,
+              <br> <span class="g-font-weight-700">a creative agency</span></h2>
+
+            <!-- Promo Block - Label -->
+            <div class="g-mb-45">
+              <div class="d-inline-flex g-font-weight-600 g-font-size-11 text-uppercase g-mr-10 g-mb-10 g-mb-0--md">
+                <span class="u-label u-triangle-v1-2 u-triangle-right g-bg-black g-px-20 g-py-14">Themes</span>
+                <span class="u-label g-color-gray-dark-v1 g-bg-primary g-px-20 g-py-14">25 000</span>
+              </div>
+              <div class="d-inline-flex g-font-weight-600 g-font-size-11 text-uppercase g-mb-10 g-mb-0--md">
+                <span class="u-label u-triangle-v1-2 u-triangle-right g-bg-black g-px-20 g-py-14">Clients</span>
+                <span class="u-label g-color-gray-dark-v1 g-bg-primary g-px-20 g-py-14">36 000</span>
+              </div>
+            </div>
+            <!-- End Promo Block - Label -->
+
+            <p class="g-max-width-700 g-color-white g-font-size-18 g-mb-45">Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.</p>
+
+            <a class="btn btn-lg u-btn-primary g-color-black g-font-weight-600 g-font-size-13 text-uppercase rounded-0 g-px-25 g-py-15 mr-2 mb-3" href="#!">
+              <i class="g-font-size-15 g-pos-rel g-top-2 mr-2 icon-finance-260 u-line-icon-pro"></i>
+              Purchase now
+            </a>
+            <a class="btn btn-lg u-btn-primary g-color-black g-font-weight-600 g-font-size-13 text-uppercase rounded-0 g-px-25 g-py-15 ml-2 mb-3" href="#!">Learn more</a>
+          </div>
+        </div>
+        <!-- End Promo Block Content -->
+      </div>
+
+      <div class="js-slide g-min-height-600 g-flex-centered g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-black-opacity-0_3--after" style="background-image: url({{ root }}assets/img-temp/1920x1080/img2.jpg);">
+        <!-- Promo Block Content -->
+        <div class="g-flex-centered g-py-100" data-calc-target="#js-header">
+          <div class="container g-bg-cover__inner">
+            <h2 class="h2 g-color-white g-font-weight-600 g-font-size-40 g-font-size-65--md text-uppercase g-line-height-1_2 g-letter-spacing-1 g-mb-40">Hire Unify.
+              <br> <span class="g-font-weight-700">Hire best people!</span></h2>
+
+            <!-- Promo Block - Label -->
+            <div class="g-mb-45">
+              <div class="d-inline-flex g-font-weight-600 g-font-size-11 text-uppercase g-mr-10 g-mb-10 g-mb-0--md">
+                <span class="u-label u-triangle-v1-2 u-triangle-right g-bg-black g-px-20 g-py-14">Projects</span>
+                <span class="u-label g-color-gray-dark-v1 g-bg-primary g-px-20 g-py-14">12 999</span>
+              </div>
+              <div class="d-inline-flex g-font-weight-600 g-font-size-11 text-uppercase g-mb-10 g-mb-0--md">
+                <span class="u-label u-triangle-v1-2 u-triangle-right g-bg-black g-px-20 g-py-14">Designs</span>
+                <span class="u-label g-color-gray-dark-v1 g-bg-primary g-px-20 g-py-14">27 555</span>
+              </div>
+            </div>
+            <!-- End Promo Block - Label -->
+
+            <p class="g-max-width-700 g-color-white-opacity-0_8 g-font-size-18 g-mb-45">The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+
+            <a class="btn btn-lg u-btn-primary g-color-black g-font-weight-600 g-font-size-13 text-uppercase rounded-0 g-px-25 g-py-15 mx-2 mb-3" href="#!">
+              <i class="g-font-size-15 g-pos-rel g-top-2 mr-2 icon-finance-053 u-line-icon-pro"></i>
+              Hire Unify
+            </a>
+            <a class="btn btn-lg u-btn-primary g-color-black g-font-weight-600 g-font-size-13 text-uppercase rounded-0 g-px-25 g-py-15 mx-2 mb-3" href="#!">Learn more</a>
+          </div>
+        </div>
+        <!-- End Promo Block Content -->
+      </div>
+    </section>
+    <!-- End Promo Block -->
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/content-demo-1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/appear.js"></script>
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.onscroll-animation.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.height-calc.js"></script>
+  <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).ready(function () {
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of scroll animation
+      $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+      // initialization of header's height equal offset
+      $.HSCore.helpers.HSHeightCalc.init();
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

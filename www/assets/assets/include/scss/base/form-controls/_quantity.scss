@@ -1,0 +1,16 @@
+/*------------------------------------
+  Quantity
+------------------------------------*/
+
+.u-quantity {
+  &-v1 {
+    input:not([type="checkbox"], [type="radio"]) {
+      background-color: $g-color-white;
+    }
+  }
+}
+
+.js-plus,
+.js-minus {
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+/*------------------------------------
+  Navigation Dropdown Style Inline
+------------------------------------*/
+
+@include nav-dropdown-inline(xs);
+
+@media all and (min-width: $g-xl) {
+	@include nav-dropdown-inline(xl);
+}
+
+@media all and (min-width: $g-lg) {
+	@include nav-dropdown-inline(lg);
+}
+
+@media all and (min-width: $g-md) {
+	@include nav-dropdown-inline(md);
+}
+
+@media all and (min-width: $g-sm) {
+	@include nav-dropdown-inline(sm);
+}

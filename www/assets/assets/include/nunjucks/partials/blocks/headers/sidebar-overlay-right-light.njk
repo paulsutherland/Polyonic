@@ -1,0 +1,230 @@
+<!-- Header Toggle Button -->
+<button class="btn u-btn-white u-header-toggler u-header-toggler--top-left g-pa-0" id="header-toggler"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="js-header"
+        aria-label="Toggle Header"
+        data-target="#js-header">
+  <span class="hamburger hamburger--collapse">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </span>
+</button>
+<!-- End Header Toggle Button -->
+
+<!-- Sidebar Navigation -->
+<div id="js-header" class="u-header u-header--side"
+     aria-labelledby="header-toggler"
+     data-header-behavior="overlay"
+     data-header-position="right"
+     data-header-breakpoint="lg"
+     data-header-classes="g-transition-0_5"
+     data-header-overlay-classes="g-bg-black-opacity-0_8 g-transition-0_5">
+  <div class="u-header__sections-container g-bg-white g-brd-right--lg g-brd-gray-light-v5 g-py-10 g-py-40--lg g-px-14--lg">
+    <div class="u-header__section u-header__section--light">
+      <nav class="navbar navbar-expand-lg">
+        <div class="js-mega-menu container">
+          <!-- Responsive Toggle Button -->
+          <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-right-0" type="button"
+                  aria-label="Toggle navigation"
+                  aria-expanded="false"
+                  aria-controls="navBar"
+                  data-toggle="collapse"
+                  data-target="#navBar">
+            <span class="hamburger hamburger--slider">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+          <!-- Logo -->
+          <a href="{{ root }}index.html" class="navbar-brand g-mb-40--lg">
+            <img src="{{ root }}assets/img/logo/logo-1.png" alt="Image Description">
+          </a>
+          <!-- End Logo -->
+
+          <!-- Navigation -->
+          <div class="collapse navbar-collapse align-items-center flex-sm-row w-100 g-mt-20 g-mt-0--lg g-mb-40" id="navBar">
+            <ul class="navbar-nav ml-auto text-uppercase g-font-weight-600 u-sub-menu-v1">
+              <li class="nav-item hs-has-sub-menu g-my-5{% if mainNavActive_1 == 'home' %} active{% endif %}">
+                <a href="#!" class="nav-link" id="nav-link-1" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-1">Home
+                  {% if mainNavActive_1 == 'home' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+                <!-- Submenu -->
+                <ul class="hs-sub-menu list-unstyled" id="nav-submenu-1"
+                    aria-labelledby="nav-link-1">
+                  <li>
+                    <a href="#!">Option 1</a>
+                  </li>
+                  <li class="hs-has-sub-menu active">
+                    <a href="#!" id="nav-link-2"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-controls="nav-submenu-2">Option 2
+                    </a>
+                    <!-- Submenu (level 2) -->
+                    <ul class="hs-sub-menu list-unstyled" id="nav-submenu-2"
+                        aria-labelledby="nav-link-2">
+                      <li class="dropdown-item active">
+                        <a href="#!">– Sub Option 2.1</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="#!">– Sub Option 2.2</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="#!">– Sub Option 2.3</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="#!">– Sub Option 2.4</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="#!">– Sub Option 2.5</a>
+                      </li>
+                    </ul>
+                    <!-- End Submenu (level 2) -->
+                  </li>
+                  <li>
+                    <a href="#!">Option 3</a>
+                  </li>
+                  <li>
+                    <a href="#!">Option 4</a>
+                  </li>
+                  <li>
+                    <a href="#!">Option 5</a>
+                  </li>
+                  <li>
+                    <a href="#!">Option 6</a>
+                  </li>
+                  <li>
+                    <a href="#!">Option 7</a>
+                  </li>
+                </ul>
+                <!-- End Submenu -->
+              </li>
+              <li class="nav-item g-my-5{% if mainNavActive_1 == 'features' %} active{% endif %}">
+                <a href="#!" class="nav-link">Features
+                  {% if mainNavActive_1 == 'features' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              </li>
+              <li class="nav-item hs-has-mega-menu g-my-5{% if mainNavActive_1 == 'shortcodes' %} active{% endif %}">
+                <a href="#!" class="nav-link" id="nav-link-408" aria-haspopup="true" aria-expanded="false" aria-controls="nav-megamenu-408">Shortcodes
+                  {% if mainNavActive_1 == 'shortcodes' %}<span class="sr-only">(current)</span>{% endif %}
+                  <i class="hs-icon hs-icon-arrow-bottom g-font-size-10 g-ml-7"></i>
+                </a>
+                <!-- Mega Menu -->
+                <div class="hs-mega-menu g-font-size-13" id="nav-megamenu-408"
+                     aria-labelledby="nav-link-408">
+                  <div class="h-100 row align-items-stretch">
+                    <div class="col-lg-3 g-brd-right g-brd-gray-light-v4">
+                      <ul class="list-unstyled h-100 g-py-10">
+                        <li>
+                          <a href="#!" class="d-block g-color-gray-dark-v4 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20">Option 1</a>
+                        </li>
+                        <li>
+                          <a href="#!" class="d-block g-color-gray-dark-v4 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20">Option 2</a>
+                        </li>
+                        <li class="nav-item hs-has-sub-menu">
+                          <a href="#!" class="d-block g-color-gray-dark-v4 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20">Option 3</a>
+                          <!-- Submenu (level 2) -->
+                          <ul class="list-unstyled hs-sub-menu">
+                            <li>
+                              <a href="#!" class="d-block g-color-gray-dark-v4 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20">– Sub Option 2.1</a>
+                            </li>
+                            <li>
+                              <a href="#!" class="d-block g-color-gray-dark-v4 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20">– Sub Option 2.2</a>
+                            </li>
+                            <li>
+                              <a href="#!" class="d-block g-color-gray-dark-v4 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20">– Sub Option 2.3</a>
+                            </li>
+                          </ul>
+                          <!-- End Submenu -->
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <ul class="list-unstyled h-100 g-py-10">
+                        <li>
+                          <a href="#!" class="d-block g-color-gray-dark-v4 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20">Option 4</a>
+                        </li>
+                        <li>
+                          <a href="#!" class="d-block g-color-gray-dark-v4 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20">Option 5</a>
+                        </li>
+                        <li>
+                          <a href="#!" class="d-block g-color-gray-dark-v4 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20">Option 6</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div id="gMap4" class="js-g-map h-100"
+                           data-type="custom"
+                           data-lat="40.674"
+                           data-lng="-73.946"
+                           data-zoom="12"
+                           data-title="Travel"
+                           data-styles='[
+                             ["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]],
+                             ["", "labels", [{"visibility":"on"}]],
+                             ["water", "", [{"color":"#bac6cb"}]]
+                           ]'
+                           data-pin="true"
+                           data-pin-icon="{{ root }}assets/img/icons/pin/green.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Mega Menu -->
+              </li>
+              <li class="nav-item g-my-5{% if mainNavActive_1 == 'pages' %} active{% endif %}">
+                <a href="#!" class="nav-link">Pages
+                  {% if mainNavActive_1 == 'pages' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              </li>
+              <li class="nav-item g-my-5{% if mainNavActive_1 == 'whats-new' %} active{% endif %}">
+                <a href="#!" class="nav-link">What's New
+                  {% if mainNavActive_1 == 'whats-new' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              </li>
+              <li class="nav-item g-my-5{% if mainNavActive_1 == 'features' %} active{% endif %}">
+                <a href="#!" class="nav-link">Features
+                  {% if mainNavActive_1 == 'features' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              </li>
+              <li class="nav-item g-my-5{% if mainNavActive_1 == 'demos' %} active{% endif %}">
+                <a href="#!" class="nav-link">Demos
+                  {% if mainNavActive_1 == 'demos' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Navigation -->
+
+          <div class="text-center g-hidden-lg-down">
+            <ul class="list-inline g-mb-10">
+              <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                <a href="#!" class="g-color-main g-color-primary--hover">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+                <a href="#!" class="g-color-main g-color-primary--hover">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                <a href="#!" class="g-color-main g-color-primary--hover">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="mb-0">2018 &copy; All Rights Reserved.</p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- End Sidebar Navigation -->

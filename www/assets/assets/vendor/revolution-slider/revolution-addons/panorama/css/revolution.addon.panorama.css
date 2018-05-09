@@ -1,0 +1,83 @@
+.rsaddon-panorama {
+	
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 9999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+}
+
+.rsaddon-panorama.rsaddon-panorama-drag {
+	
+	cursor: url('//www.google.com/intl/en_ALL/mapfiles/openhand.cur'), all-scroll;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: -o-grab;
+	cursor: -ms-grab;
+	cursor: grab;
+	
+}
+
+.rsaddon-panorama.rsaddon-panorama-dragging {
+	
+	cursor: url('//www.google.com/intl/en_ALL/mapfiles/closedhand.cur'), all-scroll;
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+	cursor: -o-grabbing;
+	cursor: -ms-grabbing;
+	cursor: grabbing;
+	
+}
+
+.tp-revslider-slidesli.rsaddon-panorama-click {cursor: pointer}
+
+.rsaddon-pano .rsaddon-panorama {
+	
+	/*transition: opacity 0.5s ease-in-out;*/
+	opacity: 1;
+	
+}
+
+.rev_slider:not(.pano-no-webgl) li[data-panorama] .slotholder *:not(.rsaddon-panorama) {
+	
+	visibility: hidden !important;
+	
+}
+
+.rsaddon-pano .tp-carousel-wrapper li[data-panorama] .slotholder *:not(.rsaddon-panorama) {
+	
+	visibility: visible !important;
+	pointer-events: none;
+	
+}
+
+.rsaddon-pano .tp-carousel-wrapper .active-revslide[data-panorama] .slotholder *:not(.rsaddon-panorama) {
+	
+	/*transition: opacity 0.3s ease-out;*/
+	opacity: 0 !important;
+	
+}
+
+.rsaddon-pano .tp-carousel-wrapper li[data-panorama] .rsaddon-panorama {
+	
+	/*transition: opacity 0.3s ease-out;*/
+	opacity: 0;
+	
+}
+
+.rsaddon-pano .tp-carousel-wrapper .active-revslide[data-panorama] .rsaddon-panorama {
+	
+	opacity: 1;
+	
+}
+
+
+

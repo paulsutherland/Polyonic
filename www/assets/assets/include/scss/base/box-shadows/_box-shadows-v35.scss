@@ -1,0 +1,23 @@
+/*------------------------------------
+  Box-shadows-v35
+------------------------------------*/
+.u-shadow-v35 {
+  box-shadow: 0 4px 7px 0 rgba($g-color-black, .045);
+
+  &--active.active {
+  	box-shadow: 0 4px 7px 0 rgba($g-color-black, .045);
+  	transition-duration: .2s;
+  }
+
+  &.g-bg-teal-opacity-0_1 {
+  	box-shadow: 0 4px 7px 0 rgba($g-color-teal, .175);
+  }
+
+  &.g-bg-purple-opacity-0_1 {
+  	box-shadow: 0 4px 7px 0 rgba($g-color-purple, .175);
+  }
+
+  &.g-bg-blue-opacity-0_1 {
+  	box-shadow: 0 4px 7px 0 rgba($g-color-blue, .175);
+  }
+}

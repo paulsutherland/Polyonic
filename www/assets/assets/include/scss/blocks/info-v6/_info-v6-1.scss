@@ -1,0 +1,25 @@
+/*--------------------------------------------------
+  Info Block v6-1
+----------------------------------------------------*/
+
+.u-info-v6-1__item {
+	position: relative;
+	z-index: 1;
+  @include px-to-rem(padding-bottom, 11px);
+
+  &::after {
+	  content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display: block;
+		width: 40px;
+		height: 1px;
+		@include gradient-x-right($start-color: $g-color-primary, $end-color: transparent);
+		transition: all 0.4s ease-in-out;
+  }
+}
+.u-info-v6-1:hover .u-info-v6-1__item::after {
+	width: 100%;
+	@include gradient-x-right($start-color: $g-color-primary, $end-color: transparent);
+}

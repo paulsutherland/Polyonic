@@ -1,0 +1,39 @@
+/*------------------------------------
+  Heading-v5
+------------------------------------*/
+.u-heading-v5__title {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    @include px-to-rem(width, 12px);
+    @include px-to-rem(height, 12px);
+    background: $g-color-main;
+  }
+  .u-heading-v5-color-primary &::before {
+    background: $g-color-primary;
+  }
+  .u-heading-v5-color-gray-light-v2 &::before {
+    background: $g-color-gray-light-v2;
+  }
+  .u-heading-v5-color-white &::before {
+    background: $g-color-white;
+  }
+  .u-heading-v5-rounded-50x &::before {
+    border-radius: 50%;
+  }
+}
+
+
+
+//
+// Imports
+//
+
+@import "heading-v5-1";
+@import "heading-v5-2";
+@import "heading-v5-3";

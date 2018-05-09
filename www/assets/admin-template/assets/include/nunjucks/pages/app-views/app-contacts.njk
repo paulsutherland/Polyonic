@@ -1,0 +1,1798 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "User Contacts" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu4 = "unCollapsed" %}
+{% set activeMenuItem = "app-contacts" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: "App Views",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/fancybox/jquery.fancybox.min.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+  <section class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+        <div class="g-pa-20">
+          <div class="media">
+            <div class="d-flex align-self-center">
+              <h1 class="g-font-weight-300 g-font-size-28 g-color-black mb-0">{{ title }}</h1>
+            </div>
+
+            <div class="media-body align-self-center text-right">
+              <a class="js-fancybox btn btn-xl u-btn-lightblue-v3 g-width-160--md g-font-size-default g-ml-10" href="javascript:;" data-src="#add-contact-form" data-speed="350">Add Contact
+              </a>
+            </div>
+          </div>
+
+          <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+          <div class="media flex-wrap g-mb-30">
+            <div class="d-flex align-self-center align-items-center">
+              <span class="g-hidden-sm-down g-color-gray-dark-v6 g-mr-12">Type:</span>
+
+              <div class="u-select--v1 g-pr-20">
+                <select class="js-select u-select--v1-select w-100" style="display: none;">
+                  <option
+                    data-content='<span class="d-flex align-items-center"><span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8--sm"></span><span class="g-hidden-sm-down g-line-height-1_2 g-color-black">Friends</span></span>'>Friends</option>
+                  <option data-content='<span class="d-flex align-items-center"><span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-teal-v2 g-mr-8--sm"></span><span class="g-hidden-sm-down g-line-height-1_2 g-color-black">Colleagues</span></span>'>Colleagues</option>
+                </select>
+                <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v6 ml-auto"></i>
+              </div>
+            </div>
+
+            <div class="d-flex align-self-center align-items-center g-ml-10 g-ml-20--md g-ml-40--lg">
+              <span class="g-hidden-sm-down g-color-gray-dark-v6 g-mr-12">Position:</span>
+
+              <div class="u-select--v1 g-pr-20">
+                <select class="js-select u-select--v1-select w-100" style="display: none;">
+                  <option data-content='<span class="d-flex align-items-center"><span class="g-line-height-1_2 g-color-black">All Positions</span></span>'>All Positions</option>
+                  <option data-content='<span class="d-flex align-items-center"><span class="g-line-height-1_2 g-color-black">Manager</span></span>'>Manager</option>
+                  <option data-content='<span class="d-flex align-items-center"><span class="g-line-height-1_2 g-color-black">Designer</span></span>'>Designer</option>
+                  <option data-content='<span class="d-flex align-items-center"><span class="g-line-height-1_2 g-color-black">Developer</span></span>'>Developer</option>
+                </select>
+                <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v6 ml-auto"></i>
+              </div>
+            </div>
+
+            <div class="d-flex g-hidden-md-up w-100"></div>
+
+            <div class="media-body align-self-center g-mt-10 g-mt-0--md">
+              <div class="input-group g-pos-rel g-max-width-380 float-right">
+                <input class="form-control g-font-size-default g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-20 g-pl-20 g-pr-50 g-py-10" type="text" placeholder="Search for name, position">
+                <button class="btn g-pos-abs g-top-0 g-right-0 g-z-index-2 g-width-60 h-100 g-bg-transparent g-font-size-16 g-color-lightred-v2 g-color-lightblue-v3--hover rounded-0" type="submit">
+                  <i class="hs-admin-search g-absolute-centered"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <table class="table w-100 g-mb-25">
+            <thead class="g-hidden-sm-down g-color-gray-dark-v6">
+              <tr>
+                <th class="g-bg-gray-light-v8 g-font-weight-400 g-valign-middle g-brd-bottom-none g-py-15 g-pl-25">
+                  <div class="d-flex align-items-center justify-content-between">
+                    No.
+<!--                     <a class="u-link-v5 g-line-height-1 g-color-gray-dark-v7 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-arrows-vertical g-font-size-15"></i>
+                    </a> -->
+                  </div>
+                </th>
+                <th class="g-bg-gray-light-v8 g-font-weight-400 g-valign-middle g-brd-bottom-none g-py-15">
+                  <div class="d-flex align-items-center justify-content-between">
+                    Name
+<!--                     <a class="u-link-v5 g-line-height-1 g-color-gray-dark-v7 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-arrows-vertical g-font-size-15"></i>
+                    </a> -->
+                  </div>
+                </th>
+                <th class="g-bg-gray-light-v8 g-font-weight-400 g-valign-middle g-brd-bottom-none g-py-15">
+                  <div class="d-flex align-items-center justify-content-between">
+                    Company
+<!--                     <a class="u-link-v5 g-line-height-1 g-color-gray-dark-v7 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-arrows-vertical g-font-size-15"></i>
+                    </a> -->
+                  </div>
+                </th>
+                <th class="g-bg-gray-light-v8 g-font-weight-400 g-valign-middle g-brd-bottom-none g-py-15">
+                  <div class="d-flex align-items-center justify-content-between">
+                    Email
+<!--                     <a class="u-link-v5 g-line-height-1 g-color-gray-dark-v7 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-arrows-vertical g-font-size-15"></i>
+                    </a> -->
+                  </div>
+                </th>
+                <th class="g-bg-gray-light-v8 g-font-weight-400 g-valign-middle g-brd-bottom-none g-py-15">
+                  <div class="d-flex align-items-center justify-content-between">
+                    Phone
+<!--                     <a class="u-link-v5 g-line-height-1 g-color-gray-dark-v7 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-arrows-vertical g-font-size-15"></i>
+                    </a> -->
+                  </div>
+                </th>
+                <th class="g-bg-gray-light-v8 g-font-weight-400 g-valign-middle g-brd-bottom-none g-py-15">
+                  <div class="d-flex align-items-center justify-content-between">
+                    Position
+<!--                     <a class="u-link-v5 g-line-height-1 g-color-gray-dark-v7 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-arrows-vertical g-font-size-15"></i>
+                    </a> -->
+                  </div>
+                </th>
+                <th class="g-bg-gray-light-v8 g-font-weight-400 g-valign-middle g-brd-bottom-none g-py-15">
+                  <div class="d-flex align-items-center justify-content-between">
+                    Type
+<!--                     <a class="u-link-v5 g-line-height-1 g-color-gray-dark-v7 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-arrows-vertical g-font-size-15"></i>
+                    </a> -->
+                  </div>
+                </th>
+                <th class="g-bg-gray-light-v8 g-font-weight-400 g-valign-middle g-brd-bottom-none g-py-15 g-pr-25"></th>
+              </tr>
+            </thead>
+
+            <tbody class="g-font-size-default g-color-black" id="accordion-09" role="tablist" aria-multiselectable="true">
+              <tr id="contact-1-header" role="tab">
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-pl-25--sm">1</td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="d-flex align-items-center u-link-v5 g-color-black g-color-lightblue-v3--hover g-color-lightblue-v3--opened" href="#contact-1" aria-expanded="false" aria-controls="contact-1" data-toggle="collapse" data-parent="#contacts">
+                    <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md g-brd-around g-brd-2 g-brd-transparent g-brd-lightblue-v3--parent-opened rounded-circle g-mr-20--sm" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                    <span class="g-hidden-sm-down">Carlos Castillo</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">Dropbox Inc.</td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-text-break-word g-color-black g-color-lightblue-v4--hover" href="mailto:devin.newman@gmail.com">
+                    <span class="g-hidden-sm-down">devin.newman@gmail.com</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-color-black g-color-lightblue-v4--hover" href="tel:849-896-9666">
+                    <span class="g-hidden-sm-down">849-896-9666</span>
+                  </a>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">
+                  <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-lightblue-v3 g-bg-lightblue-v3 g-font-size-12 g-font-size-default--md g-color-white g-rounded-50 g-py-4 g-px-15">Developer</span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <span class="d-flex align-items-center justify-content-center u-tags-v1 g-hidden-sm-down text-center g-width-150--sm g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                    <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                    Friends
+                  </span>
+                  <span class="g-hidden-sm-up u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3"></span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm g-pr-25">
+                  <div class="d-flex align-items-center g-line-height-1">
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover g-mr-15" href="#!">
+                      <i class="hs-admin-pencil g-font-size-18"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-trash g-font-size-18"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="g-bg-gray-light-v8 g-brd-top-none p-0" colspan="8">
+                  <div id="contact-1" class="g-font-weight-400 g-font-size-default g-brd-bottom g-brd-gray-light-v7 g-px-20 g-px-40--md g-py-20 collapse" role="tabpanel" aria-labelledby="contact-1-header">
+                    <div class="row">
+                      <div class="col-md-3 text-center g-mb-30 g-mb-0--md">
+                        <img class="img-fluid rounded-circle g-width-125 g-height-125 g-mb-20" src="{{ root }}assets/img-temp/200x200/img1.jpg" alt="Image description">
+                        <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-12">Carlos Castillo</h3>
+                        <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-default g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+
+                        <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+                        <footer class="d-flex align-items-center justify-content-around g-px-10">
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-comments"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-email"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-mobile"></i>
+                          </a>
+                        </footer>
+                      </div>
+
+                      <div class="col-md-5 g-mb-30 g-mb-0--md">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-12">About me</h4>
+
+                        <div class="g-font-weight-300 g-color-gray-dark-v6 g-mb-14">
+                          <span class="g-font-size-40 g-color-black">9.8</span>
+                          <span class="g-font-size-18 g-mr-6">/ 10.0</span>
+                          <span class="g-hidden-md-down">Overall Rating</span>
+                        </div>
+
+                        <p class="g-color-gray-dark-v6 g-mb-20">As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software
+                          development. How then, do you balance the risks and rewards and come out on top</p>
+
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-18">Skills</h4>
+
+                        <ul class="u-list-inline mb-0">
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">developer</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">html</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">bootstrap</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">webdesign</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">template</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">management</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">projects</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-15">Latest tasks</h4>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">How To Boost Your Traffic Of Your Blog And Destroy The Competition</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Search Engine Optimization And Advertising</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Planning Helps Make A Party Perfect Keep Dinner Simple Heat Frozen</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Enhance Your Brand Potential With Giant Advertising Blimps</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Simple Scratch Cooking For Healthier Families Homemade Meals</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr id="contact-2-header" role="tab">
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-pl-25">2</td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="d-flex align-items-center u-link-v5 g-color-black g-color-lightblue-v3--hover g-color-lightblue-v3--opened" href="#contact-2" aria-expanded="false" aria-controls="contact-2" data-toggle="collapse" data-parent="#contacts">
+                    <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md g-brd-around g-brd-2 g-brd-transparent g-brd-lightblue-v3--parent-opened rounded-circle g-mr-20--sm" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                    <span class="g-hidden-sm-down">Samuel Fleming</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">Apple Inc.</td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-text-break-word g-color-black g-color-lightblue-v4--hover" href="mailto:era_kerluke@gmail.com">
+                    <span class="g-hidden-sm-down">era_kerluke@gmail.com</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-color-black g-color-lightblue-v4--hover" href="tel:825-635-5736">
+                    <span class="g-hidden-sm-down">825-635-5736</span>
+                  </a>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">
+                  <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-12 g-font-size-default--md g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <span class="d-flex align-items-center justify-content-center u-tags-v1 g-hidden-sm-down text-center g-width-150--sm g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                    <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                    Friends
+                  </span>
+                  <span class="g-hidden-sm-up u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3"></span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm g-pr-25--sm">
+                  <div class="d-flex align-items-center g-line-height-1">
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover g-mr-15" href="#!">
+                      <i class="hs-admin-pencil g-font-size-18"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-trash g-font-size-18"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="g-bg-gray-light-v8 g-brd-top-none p-0" colspan="8">
+                  <div id="contact-2" class="g-font-weight-400 g-font-size-default g-brd-bottom g-brd-gray-light-v7 g-px-20 g-px-40--md g-py-20 collapse" role="tabpanel" aria-labelledby="contact-2-header">
+                    <div class="row">
+                      <div class="col-md-3 text-center g-mb-30 g-mb-0--md">
+                        <img class="img-fluid rounded-circle g-width-125 g-height-125 g-mb-20" src="{{ root }}assets/img-temp/200x200/img7.jpg" alt="Image description">
+                        <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-12">Samuel Fleming</h3>
+                        <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-default g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+
+                        <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+                        <footer class="d-flex align-items-center justify-content-around g-px-10">
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-comments"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-email"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-mobile"></i>
+                          </a>
+                        </footer>
+                      </div>
+
+                      <div class="col-md-5 g-mb-30 g-mb-0--md">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-12">About me</h4>
+
+                        <div class="g-font-weight-300 g-color-gray-dark-v6 g-mb-14">
+                          <span class="g-font-size-40 g-color-black">9.8</span>
+                          <span class="g-font-size-18 g-mr-6">/ 10.0</span>
+                          <span class="g-hidden-md-down">Overall Rating</span>
+                        </div>
+
+                        <p class="g-color-gray-dark-v6 g-mb-20">As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software
+                          development. How then, do you balance the risks and rewards and come out on top</p>
+
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-18">Skills</h4>
+
+                        <ul class="u-list-inline mb-0">
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">developer</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">html</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">bootstrap</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">webdesign</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">template</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">management</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">projects</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-15">Latest tasks</h4>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">How To Boost Your Traffic Of Your Blog And Destroy The Competition</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Search Engine Optimization And Advertising</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Planning Helps Make A Party Perfect Keep Dinner Simple Heat Frozen</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Enhance Your Brand Potential With Giant Advertising Blimps</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Simple Scratch Cooking For Healthier Families Homemade Meals</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr id="contact-3-header" role="tab">
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-pl-25">3</td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="d-flex align-items-center u-link-v5 g-color-black g-color-lightblue-v3--hover g-color-lightblue-v3--opened" href="#contact-3" aria-expanded="false" aria-controls="contact-3" data-toggle="collapse" data-parent="#contacts">
+                    <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md g-brd-around g-brd-2 g-brd-transparent g-brd-lightblue-v3--parent-opened rounded-circle g-mr-20--sm" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                    <span class="g-hidden-sm-down">Dora Clayton</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">Apple Inc.</td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-text-break-word g-color-black g-color-lightblue-v4--hover" href="mailto:michale.hansen@gmail.com">
+                    <span class="g-hidden-sm-down">michale.hansen@gmail.com</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-color-black g-color-lightblue-v4--hover" href="tel:079-907-0038">
+                    <span class="g-hidden-sm-down">079-907-0038</span>
+                  </a>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">
+                  <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-darkblue-v2 g-bg-darkblue-v2 g-font-size-12 g-font-size-default--md g-color-white g-rounded-50 g-py-4 g-px-15">Designer</span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <span class="d-flex align-items-center justify-content-center u-tags-v1 g-hidden-sm-down text-center g-width-150--sm g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                    <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                    Friends
+                  </span>
+                  <span class="g-hidden-sm-up u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3"></span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm g-pr-25--sm">
+                  <div class="d-flex align-items-center g-line-height-1">
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover g-mr-15" href="#!">
+                      <i class="hs-admin-pencil g-font-size-18"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-trash g-font-size-18"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="g-bg-gray-light-v8 g-brd-top-none p-0" colspan="8">
+                  <div id="contact-3" class="g-font-weight-400 g-font-size-default g-brd-bottom g-brd-gray-light-v7 g-px-20 g-px-40--md g-py-20 collapse" role="tabpanel" aria-labelledby="contact-3-header">
+                    <div class="row">
+                      <div class="col-md-3 text-center g-mb-30 g-mb-0--md">
+                        <img class="img-fluid rounded-circle g-width-125 g-height-125 g-mb-20" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image description">
+                        <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-12">Dora Clayton</h3>
+                        <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-default g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+
+                        <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+                        <footer class="d-flex align-items-center justify-content-around g-px-10">
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-comments"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-email"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-mobile"></i>
+                          </a>
+                        </footer>
+                      </div>
+
+                      <div class="col-md-5 g-mb-30 g-mb-0--md">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-12">About me</h4>
+
+                        <div class="g-font-weight-300 g-color-gray-dark-v6 g-mb-14">
+                          <span class="g-font-size-40 g-color-black">9.8</span>
+                          <span class="g-font-size-18 g-mr-6">/ 10.0</span>
+                          <span class="g-hidden-md-down">Overall Rating</span>
+                        </div>
+
+                        <p class="g-color-gray-dark-v6 g-mb-20">As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software
+                          development. How then, do you balance the risks and rewards and come out on top</p>
+
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-18">Skills</h4>
+
+                        <ul class="u-list-inline mb-0">
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">developer</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">html</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">bootstrap</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">webdesign</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">template</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">management</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">projects</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-15">Latest tasks</h4>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">How To Boost Your Traffic Of Your Blog And Destroy The Competition</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Search Engine Optimization And Advertising</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Planning Helps Make A Party Perfect Keep Dinner Simple Heat Frozen</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Enhance Your Brand Potential With Giant Advertising Blimps</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Simple Scratch Cooking For Healthier Families Homemade Meals</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr id="contact-4-header" role="tab">
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-pl-25">4</td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="d-flex align-items-center u-link-v5 g-color-black g-color-lightblue-v3--hover g-color-lightblue-v3--opened" href="#contact-4" aria-expanded="false" aria-controls="contact-4" data-toggle="collapse" data-parent="#contacts">
+                    <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md g-brd-around g-brd-2 g-brd-transparent g-brd-lightblue-v3--parent-opened rounded-circle g-mr-20--sm" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                    <span class="g-hidden-sm-down">Cynthia Griffin</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">Dropbox Inc.</td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-text-break-word g-color-black g-color-lightblue-v4--hover" href="mailto:morton.koelpin@gmail.com">
+                    <span class="g-hidden-sm-down">morton.koelpin@gmail.com</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-color-black g-color-lightblue-v4--hover" href="tel:660-625-8700">
+                    <span class="g-hidden-sm-down">660-625-8700</span>
+                  </a>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">
+                  <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-darkblue-v2 g-bg-darkblue-v2 g-font-size-12 g-font-size-default--md g-color-white g-rounded-50 g-py-4 g-px-15">Designer</span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <span class="d-flex align-items-center justify-content-center u-tags-v1 g-hidden-sm-down text-center g-width-150--sm g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                    <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                    Friends
+                  </span>
+                  <span class="g-hidden-sm-up u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3"></span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm g-pr-25--sm">
+                  <div class="d-flex align-items-center g-line-height-1">
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover g-mr-15" href="#!">
+                      <i class="hs-admin-pencil g-font-size-18"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-trash g-font-size-18"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="g-bg-gray-light-v8 g-brd-top-none p-0" colspan="8">
+                  <div id="contact-4" class="g-font-weight-400 g-font-size-default g-brd-bottom g-brd-gray-light-v7 g-px-20 g-px-40--md g-py-20 collapse" role="tabpanel" aria-labelledby="contact-4-header">
+                    <div class="row">
+                      <div class="col-md-3 text-center g-mb-30 g-mb-0--md">
+                        <img class="img-fluid rounded-circle g-width-125 g-height-125 g-mb-20" src="{{ root }}assets/img-temp/200x200/img3.jpg" alt="Image description">
+                        <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-12">Cynthia Griffin</h3>
+                        <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-default g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+
+                        <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+                        <footer class="d-flex align-items-center justify-content-around g-px-10">
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-comments"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-email"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-mobile"></i>
+                          </a>
+                        </footer>
+                      </div>
+
+                      <div class="col-md-5 g-mb-30 g-mb-0--md">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-12">About me</h4>
+
+                        <div class="g-font-weight-300 g-color-gray-dark-v6 g-mb-14">
+                          <span class="g-font-size-40 g-color-black">9.8</span>
+                          <span class="g-font-size-18 g-mr-6">/ 10.0</span>
+                          <span class="g-hidden-md-down">Overall Rating</span>
+                        </div>
+
+                        <p class="g-color-gray-dark-v6 g-mb-20">As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software
+                          development. How then, do you balance the risks and rewards and come out on top</p>
+
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-18">Skills</h4>
+
+                        <ul class="u-list-inline mb-0">
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">developer</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">html</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">bootstrap</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">webdesign</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">template</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">management</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">projects</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-15">Latest tasks</h4>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">How To Boost Your Traffic Of Your Blog And Destroy The Competition</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Search Engine Optimization And Advertising</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Planning Helps Make A Party Perfect Keep Dinner Simple Heat Frozen</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Enhance Your Brand Potential With Giant Advertising Blimps</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Simple Scratch Cooking For Healthier Families Homemade Meals</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr id="contact-5-header" role="tab">
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-pl-25">5</td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="d-flex align-items-center u-link-v5 g-color-black g-color-lightblue-v3--hover g-color-lightblue-v3--opened" href="#contact-5" aria-expanded="false" aria-controls="contact-5" data-toggle="collapse" data-parent="#contacts">
+                    <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md g-brd-around g-brd-2 g-brd-transparent g-brd-lightblue-v3--parent-opened rounded-circle g-mr-20--sm" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                    <span class="g-hidden-sm-down">Devin Newman</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">Apple Inc.</td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-text-break-word g-color-black g-color-lightblue-v4--hover" href="mailto:jolie.reichert@gmail.com">
+                    <span class="g-hidden-sm-down">jolie.reichert@gmail.com</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-color-black g-color-lightblue-v4--hover" href="tel:509-451-0247">
+                    <span class="g-hidden-sm-down">509-451-0247</span>
+                  </a>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">
+                  <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-lightblue-v3 g-bg-lightblue-v3 g-font-size-12 g-font-size-default--md g-color-white g-rounded-50 g-py-4 g-px-15">Developer</span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <span class="d-flex align-items-center justify-content-center u-tags-v1 g-hidden-sm-down text-center g-width-150--sm g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                    <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                    Friends
+                  </span>
+                  <span class="g-hidden-sm-up u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3"></span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm g-pr-25--sm">
+                  <div class="d-flex align-items-center g-line-height-1">
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover g-mr-15" href="#!">
+                      <i class="hs-admin-pencil g-font-size-18"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-trash g-font-size-18"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="g-bg-gray-light-v8 g-brd-top-none p-0" colspan="8">
+                  <div id="contact-5" class="g-font-weight-400 g-font-size-default g-brd-bottom g-brd-gray-light-v7 g-px-20 g-px-40--md g-py-20 collapse" role="tabpanel" aria-labelledby="contact-5-header">
+                    <div class="row">
+                      <div class="col-md-3 text-center g-mb-30 g-mb-0--md">
+                        <img class="img-fluid rounded-circle g-width-125 g-height-125 g-mb-20" src="{{ root }}assets/img-temp/200x200/img6.jpg" alt="Image description">
+                        <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-12">Devin Newman</h3>
+                        <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-default g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+
+                        <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+                        <footer class="d-flex align-items-center justify-content-around g-px-10">
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-comments"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-email"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-mobile"></i>
+                          </a>
+                        </footer>
+                      </div>
+
+                      <div class="col-md-5 g-mb-30 g-mb-0--md">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-12">About me</h4>
+
+                        <div class="g-font-weight-300 g-color-gray-dark-v6 g-mb-14">
+                          <span class="g-font-size-40 g-color-black">9.8</span>
+                          <span class="g-font-size-18 g-mr-6">/ 10.0</span>
+                          <span class="g-hidden-md-down">Overall Rating</span>
+                        </div>
+
+                        <p class="g-color-gray-dark-v6 g-mb-20">As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software
+                          development. How then, do you balance the risks and rewards and come out on top</p>
+
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-18">Skills</h4>
+
+                        <ul class="u-list-inline mb-0">
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">developer</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">html</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">bootstrap</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">webdesign</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">template</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">management</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">projects</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-15">Latest tasks</h4>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">How To Boost Your Traffic Of Your Blog And Destroy The Competition</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Search Engine Optimization And Advertising</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Planning Helps Make A Party Perfect Keep Dinner Simple Heat Frozen</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Enhance Your Brand Potential With Giant Advertising Blimps</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Simple Scratch Cooking For Healthier Families Homemade Meals</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr id="contact-6-header" role="tab">
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-pl-25">6</td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="d-flex align-items-center u-link-v5 g-color-black g-color-lightblue-v3--hover g-color-lightblue-v3--opened" href="#contact-6" aria-expanded="false" aria-controls="contact-6" data-toggle="collapse" data-parent="#contacts">
+                    <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md g-brd-around g-brd-2 g-brd-transparent g-brd-lightblue-v3--parent-opened rounded-circle g-mr-20--sm" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                    <span class="g-hidden-sm-down">William Hardy</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">Apple Inc.</td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-text-break-word g-color-black g-color-lightblue-v4--hover" href="mailto:hudson.bria@gmail.com">
+                    <span class="g-hidden-sm-down">hudson.bria@gmail.com</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-color-black g-color-lightblue-v4--hover" href="tel:201-815-4407">
+                    <span class="g-hidden-sm-down">201-815-4407</span>
+                  </a>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">
+                  <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-12 g-font-size-default--md g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <span class="d-flex align-items-center justify-content-center u-tags-v1 g-hidden-sm-down text-center g-width-150--sm g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                    <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                    Friends
+                  </span>
+                  <span class="g-hidden-sm-up u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3"></span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm g-pr-25--sm">
+                  <div class="d-flex align-items-center g-line-height-1">
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover g-mr-15" href="#!">
+                      <i class="hs-admin-pencil g-font-size-18"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-trash g-font-size-18"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="g-bg-gray-light-v8 g-brd-top-none p-0" colspan="8">
+                  <div id="contact-6" class="g-font-weight-400 g-font-size-default g-brd-bottom g-brd-gray-light-v7 g-px-20 g-px-40--md g-py-20 collapse" role="tabpanel" aria-labelledby="contact-6-header">
+                    <div class="row">
+                      <div class="col-md-3 text-center g-mb-30 g-mb-0--md">
+                        <img class="img-fluid rounded-circle g-width-125 g-height-125 g-mb-20" src="{{ root }}assets/img-temp/200x200/img1.jpg" alt="Image description">
+                        <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-12">William Hardy</h3>
+                        <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-default g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+
+                        <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+                        <footer class="d-flex align-items-center justify-content-around g-px-10">
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-comments"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-email"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-mobile"></i>
+                          </a>
+                        </footer>
+                      </div>
+
+                      <div class="col-md-5 g-mb-30 g-mb-0--md">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-12">About me</h4>
+
+                        <div class="g-font-weight-300 g-color-gray-dark-v6 g-mb-14">
+                          <span class="g-font-size-40 g-color-black">9.8</span>
+                          <span class="g-font-size-18 g-mr-6">/ 10.0</span>
+                          <span class="g-hidden-md-down">Overall Rating</span>
+                        </div>
+
+                        <p class="g-color-gray-dark-v6 g-mb-20">As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software
+                          development. How then, do you balance the risks and rewards and come out on top</p>
+
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-18">Skills</h4>
+
+                        <ul class="u-list-inline mb-0">
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">developer</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">html</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">bootstrap</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">webdesign</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">template</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">management</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">projects</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-15">Latest tasks</h4>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">How To Boost Your Traffic Of Your Blog And Destroy The Competition</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Search Engine Optimization And Advertising</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Planning Helps Make A Party Perfect Keep Dinner Simple Heat Frozen</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Enhance Your Brand Potential With Giant Advertising Blimps</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Simple Scratch Cooking For Healthier Families Homemade Meals</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr id="contact-7-header" role="tab">
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-pl-25">7</td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="d-flex align-items-center u-link-v5 g-color-black g-color-lightblue-v3--hover g-color-lightblue-v3--opened" href="#contact-7" aria-expanded="false" aria-controls="contact-7" data-toggle="collapse" data-parent="#contacts">
+                    <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md g-brd-around g-brd-2 g-brd-transparent g-brd-lightblue-v3--parent-opened rounded-circle g-mr-20--sm" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                    <span class="g-hidden-sm-down">Clyde Stone</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">Dropbox Inc.</td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-text-break-word g-color-black g-color-lightblue-v4--hover" href="mailto:brandi_kiehn@hane.com">
+                    <span class="g-hidden-sm-down">brandi_kiehn@hane.com</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-color-black g-color-lightblue-v4--hover" href="tel:030-282-3065">
+                    <span class="g-hidden-sm-down">030-282-3065</span>
+                  </a>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">
+                  <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-12 g-font-size-default--md g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <span class="d-flex align-items-center justify-content-center u-tags-v1 g-hidden-sm-down text-center g-width-150--sm g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                    <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                    Friends
+                  </span>
+                  <span class="g-hidden-sm-up u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3"></span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm g-pr-25--sm">
+                  <div class="d-flex align-items-center g-line-height-1">
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover g-mr-15" href="#!">
+                      <i class="hs-admin-pencil g-font-size-18"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-trash g-font-size-18"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="g-bg-gray-light-v8 g-brd-top-none p-0" colspan="8">
+                  <div id="contact-7" class="g-font-weight-400 g-font-size-default g-brd-bottom g-brd-gray-light-v7 g-px-20 g-px-40--md g-py-20 collapse" role="tabpanel" aria-labelledby="contact-7-header">
+                    <div class="row">
+                      <div class="col-md-3 text-center g-mb-30 g-mb-0--md">
+                        <img class="img-fluid rounded-circle g-width-125 g-height-125 g-mb-20" src="{{ root }}assets/img-temp/200x200/img7.jpg" alt="Image description">
+                        <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-12">Clyde Stone</h3>
+                        <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-default g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+
+                        <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+                        <footer class="d-flex align-items-center justify-content-around g-px-10">
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-comments"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-email"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-mobile"></i>
+                          </a>
+                        </footer>
+                      </div>
+
+                      <div class="col-md-5 g-mb-30 g-mb-0--md">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-12">About me</h4>
+
+                        <div class="g-font-weight-300 g-color-gray-dark-v6 g-mb-14">
+                          <span class="g-font-size-40 g-color-black">9.8</span>
+                          <span class="g-font-size-18 g-mr-6">/ 10.0</span>
+                          <span class="g-hidden-md-down">Overall Rating</span>
+                        </div>
+
+                        <p class="g-color-gray-dark-v6 g-mb-20">As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software
+                          development. How then, do you balance the risks and rewards and come out on top</p>
+
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-18">Skills</h4>
+
+                        <ul class="u-list-inline mb-0">
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">developer</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">html</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">bootstrap</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">webdesign</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">template</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">management</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">projects</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-15">Latest tasks</h4>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">How To Boost Your Traffic Of Your Blog And Destroy The Competition</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Search Engine Optimization And Advertising</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Planning Helps Make A Party Perfect Keep Dinner Simple Heat Frozen</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Enhance Your Brand Potential With Giant Advertising Blimps</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Simple Scratch Cooking For Healthier Families Homemade Meals</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr id="contact-8-header" role="tab">
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-pl-25">8</td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="d-flex align-items-center u-link-v5 g-color-black g-color-lightblue-v3--hover g-color-lightblue-v3--opened" href="#contact-8" aria-expanded="false" aria-controls="contact-8" data-toggle="collapse" data-parent="#contacts">
+                    <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md g-brd-around g-brd-2 g-brd-transparent g-brd-lightblue-v3--parent-opened rounded-circle g-mr-20--sm" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                    <span class="g-hidden-sm-down">Lewis Spencer</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">Apple Inc.</td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-text-break-word g-color-black g-color-lightblue-v4--hover" href="mailto:torrey_huels@terry.ca">
+                    <span class="g-hidden-sm-down">torrey_huels@terry.ca</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-color-black g-color-lightblue-v4--hover" href="tel:074-418-3788">
+                    <span class="g-hidden-sm-down">074-418-3788</span>
+                  </a>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">
+                  <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-lightblue-v3 g-bg-lightblue-v3 g-font-size-12 g-font-size-default--md g-color-white g-rounded-50 g-py-4 g-px-15">Developer</span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <span class="d-flex align-items-center justify-content-center u-tags-v1 g-hidden-sm-down text-center g-width-150--sm g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                    <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                    Friends
+                  </span>
+                  <span class="g-hidden-sm-up u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3"></span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm g-pr-25--sm">
+                  <div class="d-flex align-items-center g-line-height-1">
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover g-mr-15" href="#!">
+                      <i class="hs-admin-pencil g-font-size-18"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-trash g-font-size-18"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="g-bg-gray-light-v8 g-brd-top-none p-0" colspan="8">
+                  <div id="contact-8" class="g-font-weight-400 g-font-size-default g-brd-bottom g-brd-gray-light-v7 g-px-20 g-px-40--md g-py-20 collapse" role="tabpanel" aria-labelledby="contact-8-header">
+                    <div class="row">
+                      <div class="col-md-3 text-center g-mb-30 g-mb-0--md">
+                        <img class="img-fluid rounded-circle g-width-125 g-height-125 g-mb-20" src="{{ root }}assets/img-temp/200x200/img1.jpg" alt="Image description">
+                        <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-12">Lewis Spencer</h3>
+                        <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-default g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+
+                        <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+                        <footer class="d-flex align-items-center justify-content-around g-px-10">
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-comments"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-email"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-mobile"></i>
+                          </a>
+                        </footer>
+                      </div>
+
+                      <div class="col-md-5 g-mb-30 g-mb-0--md">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-12">About me</h4>
+
+                        <div class="g-font-weight-300 g-color-gray-dark-v6 g-mb-14">
+                          <span class="g-font-size-40 g-color-black">9.8</span>
+                          <span class="g-font-size-18 g-mr-6">/ 10.0</span>
+                          <span class="g-hidden-md-down">Overall Rating</span>
+                        </div>
+
+                        <p class="g-color-gray-dark-v6 g-mb-20">As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software
+                          development. How then, do you balance the risks and rewards and come out on top</p>
+
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-18">Skills</h4>
+
+                        <ul class="u-list-inline mb-0">
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">developer</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">html</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">bootstrap</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">webdesign</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">template</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">management</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">projects</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-15">Latest tasks</h4>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">How To Boost Your Traffic Of Your Blog And Destroy The Competition</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Search Engine Optimization And Advertising</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Planning Helps Make A Party Perfect Keep Dinner Simple Heat Frozen</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Enhance Your Brand Potential With Giant Advertising Blimps</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Simple Scratch Cooking For Healthier Families Homemade Meals</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr id="contact-9-header" role="tab">
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-pl-25">9</td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="d-flex align-items-center u-link-v5 g-color-black g-color-lightblue-v3--hover g-color-lightblue-v3--opened" href="#contact-9" aria-expanded="false" aria-controls="contact-9" data-toggle="collapse" data-parent="#contacts">
+                    <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md g-brd-around g-brd-2 g-brd-transparent g-brd-lightblue-v3--parent-opened rounded-circle g-mr-20--sm" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                    <span class="g-hidden-sm-down">Raymond Wood</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">Dropbox Inc.</td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-text-break-word g-color-black g-color-lightblue-v4--hover" href="mailto:kemmer.louisa@goldner.com">
+                    <span class="g-hidden-sm-down">kemmer.louisa@goldner.com</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-color-black g-color-lightblue-v4--hover" href="tel:286-176-8193">
+                    <span class="g-hidden-sm-down">286-176-8193</span>
+                  </a>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">
+                  <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-12 g-font-size-default--md g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <span class="d-flex align-items-center justify-content-center u-tags-v1 g-hidden-sm-down text-center g-width-150--sm g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                    <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                    Friends
+                  </span>
+                  <span class="g-hidden-sm-up u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3"></span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm g-pr-25--sm">
+                  <div class="d-flex align-items-center g-line-height-1">
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover g-mr-15" href="#!">
+                      <i class="hs-admin-pencil g-font-size-18"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-trash g-font-size-18"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="g-bg-gray-light-v8 g-brd-top-none p-0" colspan="8">
+                  <div id="contact-9" class="g-font-weight-400 g-font-size-default g-brd-bottom g-brd-gray-light-v7 g-px-20 g-px-40--md g-py-20 collapse" role="tabpanel" aria-labelledby="contact-9-header">
+                    <div class="row">
+                      <div class="col-md-3 text-center g-mb-30 g-mb-0--md">
+                        <img class="img-fluid rounded-circle g-width-125 g-height-125 g-mb-20" src="{{ root }}assets/img-temp/200x200/img7.jpg" alt="Image description">
+                        <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-12">Raymond Wood</h3>
+                        <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-default g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+
+                        <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+                        <footer class="d-flex align-items-center justify-content-around g-px-10">
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-comments"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-email"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-mobile"></i>
+                          </a>
+                        </footer>
+                      </div>
+
+                      <div class="col-md-5 g-mb-30 g-mb-0--md">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-12">About me</h4>
+
+                        <div class="g-font-weight-300 g-color-gray-dark-v6 g-mb-14">
+                          <span class="g-font-size-40 g-color-black">9.8</span>
+                          <span class="g-font-size-18 g-mr-6">/ 10.0</span>
+                          <span class="g-hidden-md-down">Overall Rating</span>
+                        </div>
+
+                        <p class="g-color-gray-dark-v6 g-mb-20">As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software
+                          development. How then, do you balance the risks and rewards and come out on top</p>
+
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-18">Skills</h4>
+
+                        <ul class="u-list-inline mb-0">
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">developer</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">html</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">bootstrap</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">webdesign</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">template</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">management</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">projects</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-15">Latest tasks</h4>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">How To Boost Your Traffic Of Your Blog And Destroy The Competition</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Search Engine Optimization And Advertising</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Planning Helps Make A Party Perfect Keep Dinner Simple Heat Frozen</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Enhance Your Brand Potential With Giant Advertising Blimps</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Simple Scratch Cooking For Healthier Families Homemade Meals</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr id="contact-10-header" role="tab">
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-pl-25">10</td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="d-flex align-items-center u-link-v5 g-color-black g-color-lightblue-v3--hover g-color-lightblue-v3--opened" href="#contact-10" aria-expanded="false" aria-controls="contact-10" data-toggle="collapse" data-parent="#contacts">
+                    <img class="g-width-40 g-width-50--md g-height-40 g-height-50--md g-brd-around g-brd-2 g-brd-transparent g-brd-lightblue-v3--parent-opened rounded-circle g-mr-20--sm" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                    <span class="g-hidden-sm-down">Nathaniel Hunter</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">Dropbox Inc.</td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-text-break-word g-color-black g-color-lightblue-v4--hover" href="mailto:jess.wisoky@jammie.info">
+                    <span class="g-hidden-sm-down">jess.wisoky@jammie.info</span>
+                  </a>
+                </td>
+                <td class="g-hidden-sm-down g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <a class="u-link-v5 g-color-black g-color-lightblue-v4--hover" href="tel:244-835-0786">
+                    <span class="g-hidden-sm-down">244-835-0786</span>
+                  </a>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md">
+                  <span class="u-tags-v1 text-center g-width-150--md g-brd-around g-brd-lightblue-v3 g-bg-lightblue-v3 g-font-size-12 g-font-size-default--md g-color-white g-rounded-50 g-py-4 g-px-15">Developer</span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm">
+                  <span class="d-flex align-items-center justify-content-center u-tags-v1 g-hidden-sm-down text-center g-width-150--sm g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                    <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                    Friends
+                  </span>
+                  <span class="g-hidden-sm-up u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3"></span>
+                </td>
+                <td class="g-valign-middle g-brd-top-none g-brd-bottom g-brd-gray-light-v7 g-py-15 g-py-30--md g-px-5 g-px-10--sm g-pr-25--sm">
+                  <div class="d-flex align-items-center g-line-height-1">
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover g-mr-15" href="#!">
+                      <i class="hs-admin-pencil g-font-size-18"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                      <i class="hs-admin-trash g-font-size-18"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="g-bg-gray-light-v8 g-brd-top-none p-0" colspan="8">
+                  <div id="contact-10" class="g-font-weight-400 g-font-size-default g-brd-bottom g-brd-gray-light-v7 g-px-20 g-px-40--md g-py-20 collapse" role="tabpanel" aria-labelledby="contact-10-header">
+                    <div class="row">
+                      <div class="col-md-3 text-center g-mb-30 g-mb-0--md">
+                        <img class="img-fluid rounded-circle g-width-125 g-height-125 g-mb-20" src="{{ root }}assets/img-temp/200x200/img1.jpg" alt="Image description">
+                        <h3 class="g-font-weight-300 g-font-size-20 g-color-black g-mb-12">Nathaniel Hunter</h3>
+                        <span class="u-tags-v1 text-center g-width-130 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-size-default g-color-white g-rounded-50 g-py-4 g-px-15">Manager</span>
+
+                        <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+                        <footer class="d-flex align-items-center justify-content-around g-px-10">
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-comments"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-email"></i>
+                          </a>
+                          <span class="g-height-22 g-brd-left g-brd-2 g-brd-gray-light-v7"></span>
+                          <a class="u-link-v5 g-line-height-1 g-font-size-22 g-color-gray-light-v6 g-color-lightblue-v4--hover" href="#!">
+                            <i class="hs-admin-mobile"></i>
+                          </a>
+                        </footer>
+                      </div>
+
+                      <div class="col-md-5 g-mb-30 g-mb-0--md">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-12">About me</h4>
+
+                        <div class="g-font-weight-300 g-color-gray-dark-v6 g-mb-14">
+                          <span class="g-font-size-40 g-color-black">9.8</span>
+                          <span class="g-font-size-18 g-mr-6">/ 10.0</span>
+                          <span class="g-hidden-md-down">Overall Rating</span>
+                        </div>
+
+                        <p class="g-color-gray-dark-v6 g-mb-20">As a business owner or manager, the decision to opt for offshore software development can be difficult. As anyone who has experience knows, there are advantages and disadvantages to outsourcing software
+                          development. How then, do you balance the risks and rewards and come out on top</p>
+
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-18">Skills</h4>
+
+                        <ul class="u-list-inline mb-0">
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">developer</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">html</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">bootstrap</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">webdesign</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">template</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">management</a>
+                          </li>
+                          <li class="list-inline-item g-mb-6 g-mr-2">
+                            <a class="u-tags-v1 g-bg-lightblue-v3--hover g-color-gray-dark-v6 g-color-white--hover g-brd-around g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-50 g-px-10 g-px-20--md g-py-2" href="#!">projects</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h4 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-15">Latest tasks</h4>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">How To Boost Your Traffic Of Your Blog And Destroy The Competition</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Search Engine Optimization And Advertising</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Planning Helps Make A Party Perfect Keep Dinner Simple Heat Frozen</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-lightred-v2 g-rounded-50 g-py-4 g-px-15">In Progress</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Enhance Your Brand Potential With Giant Advertising Blimps</div>
+                        </div>
+
+                        <div class="media flex-wrap g-brd-bottom g-brd-gray-light-v7 g-py-10">
+                          <div class="d-flex align-self-center g-order-2 g-order-1--md w-100 g-width-auto--md g-mr-15">
+                            <span class="u-tags-v1 text-center g-width-110 g-bg-white g-font-size-default g-color-teal-v2 g-rounded-50 g-py-4 g-px-15">Done</span>
+                          </div>
+
+                          <div class="media-body g-order-1 g-order-2--md g-color-gray-dark-v6 g-mb-10 g-mb-0--md">Simple Scratch Cooking For Healthier Families Homemade Meals</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <nav aria-label="Page Navigation">
+            <ul class="list-inline d-flex align-items-center justify-content-center g-my-60">
+              <li class="list-inline-item g-mr-10">
+                <a
+                  class="u-pagination-v1__item u-pagination-v1-2 g-bg-lightblue-v3--active g-color-gray-dark-v6 g-color-black--hover g-color-white--active g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-brd-lightblue-v3--active g-px-18 g-py-12 g-rounded-4"
+                  href="#!"
+                  aria-label="Previous">
+                  <span aria-hidden="true">
+                    <i class="hs-admin-angle-left"></i>
+                  </span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="list-inline-item g-hidden-sm-down g-mr-10">
+                <a
+                  class="u-pagination-v1__item u-pagination-v1-2 g-bg-lightblue-v3--active g-color-gray-dark-v6 g-color-black--hover g-color-white--active g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-brd-lightblue-v3--active g-px-18 g-py-12 g-rounded-4"
+                  href="#!">1</a>
+              </li>
+              <li class="list-inline-item g-hidden-sm-down g-mr-10">
+                <span
+                  class="u-pagination-v1__item u-pagination-v1-2 g-bg-lightblue-v3--active g-color-gray-dark-v6 g-color-black--hover g-color-white--active g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-brd-lightblue-v3--active g-px-18 g-py-12 g-rounded-4 active">2</span>
+              </li>
+              <li class="list-inline-item g-hidden-sm-down g-mr-10">
+                <a
+                  class="u-pagination-v1__item u-pagination-v1-2 g-bg-lightblue-v3--active g-color-gray-dark-v6 g-color-black--hover g-color-white--active g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-brd-lightblue-v3--active g-px-18 g-py-12 g-rounded-4"
+                  href="#!">3</a>
+              </li>
+              <li class="list-inline-item g-hidden-sm-down g-mr-10">
+                <a
+                  class="u-pagination-v1__item u-pagination-v1-2 g-bg-lightblue-v3--active g-color-gray-dark-v6 g-color-black--hover g-color-white--active g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-brd-lightblue-v3--active g-px-18 g-py-12 g-rounded-4"
+                  href="#!">4</a>
+              </li>
+              <li class="list-inline-item g-hidden-sm-down g-mr-10">
+                <a
+                  class="u-pagination-v1__item u-pagination-v1-2 g-bg-lightblue-v3--active g-color-gray-dark-v6 g-color-black--hover g-color-white--active g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-brd-lightblue-v3--active g-px-18 g-py-12 g-rounded-4"
+                  href="#!">5</a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="u-pagination-v1__item u-pagination-v1-2 g-bg-lightblue-v3--active g-color-gray-dark-v6 g-color-black--hover g-color-white--active g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-brd-lightblue-v3--active g-px-18 g-py-12 g-rounded-4"
+                  href="#!"
+                  aria-label="Next">
+                  <span aria-hidden="true">
+                    <i class="hs-admin-angle-right"></i>
+                  </span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Plugins Init. -->
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.bar-chart.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.popup.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of charts
+    $.HSCore.components.HSBarChart.init('.js-bar-chart');
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of popups
+    $.HSCore.components.HSPopup.init('.js-fancybox', {
+      btnTpl: {
+        smallBtn: '<button data-fancybox-close class="btn g-pos-abs g-top-25 g-right-30 g-line-height-1 g-bg-transparent g-font-size-16 g-color-gray-light-v6 g-brd-none p-0" title="{{ CLOSE }}"><i class="hs-admin-close"></i></button>'
+      }
+    });
+  });
+</script>
+</body>
+</html>

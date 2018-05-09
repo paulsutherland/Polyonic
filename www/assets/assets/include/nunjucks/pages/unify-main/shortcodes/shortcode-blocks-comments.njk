@@ -1,0 +1,652 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-comments" %}
+{% set title = "Comments" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-block.njk" %}
+
+    <section>
+      <!-- Comments #01 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Comments
+              <span class="g-color-primary g-ml-5">#01</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode1">
+                <div class="shortcode-html">
+                  <div class="media g-mb-30">
+                    <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-20" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                    <div class="media-body g-brd-around g-brd-gray-light-v4 g-pa-30">
+                      <div class="g-mb-15">
+                        <h5 class="d-flex justify-content-between align-items-center h5 g-color-gray-dark-v1 mb-0">
+                          <span class="d-block g-mr-10">James Coolman</span>
+                          <a class="u-tags-v1 g-font-size-12 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!">Author</a>
+                        </h5>
+                        <span class="g-color-gray-dark-v4 g-font-size-12">2 days ago</span>
+                      </div>
+
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+
+                      <ul class="list-inline d-sm-flex my-0">
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-like g-pos-rel g-top-1 g-mr-3"></i>
+                            214
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-dislike g-pos-rel g-top-1 g-mr-3"></i>
+                            35
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-note g-pos-rel g-top-1 g-mr-3"></i>
+                            Reply
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="media g-ml-40 g-mb-30">
+                    <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                    <div class="media-body g-brd-around g-brd-gray-light-v4 g-pa-30">
+                      <div class="g-mb-15">
+                        <h5 class="h5 g-color-gray-dark-v1 mb-0">Alberta Watson</h5>
+                        <span class="g-color-gray-dark-v4 g-font-size-12">7 hours ago</span>
+                      </div>
+
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+
+                      <ul class="list-inline d-sm-flex my-0">
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-like g-pos-rel g-top-1 g-mr-3"></i>
+                            534
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-dislike g-pos-rel g-top-1 g-mr-3"></i>
+                            94
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-note g-pos-rel g-top-1 g-mr-3"></i>
+                            Reply
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="media g-mb-30">
+                    <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                    <div class="media-body g-brd-around g-brd-gray-light-v4 g-pa-30">
+                      <div class="g-mb-15">
+                        <h5 class="h5 g-color-gray-dark-v1 mb-0">David Lee</h5>
+                        <span class="g-color-gray-dark-v4 g-font-size-12">2 days ago</span>
+                      </div>
+
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+
+                      <ul class="list-inline d-sm-flex my-0">
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-like g-pos-rel g-top-1 g-mr-3"></i>
+                            178
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-dislike g-pos-rel g-top-1 g-mr-3"></i>
+                            19
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-note g-pos-rel g-top-1 g-mr-3"></i>
+                            Reply
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode1" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+          </div>
+        </div>
+      </section>
+      <!-- End Comments #01 -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Comments #02 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Comments
+              <span class="g-color-primary g-ml-5">#02</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode2">
+                <div class="shortcode-html">
+                  <div class="media g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-20">
+                    <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                    <div class="media-body">
+                      <div class="g-mb-15">
+                        <h5 class="d-flex justify-content-between align-items-center h5 g-color-gray-dark-v1 mb-0">
+                          <span class="d-block g-mr-10">James Coolman</span>
+                          <a class="u-tags-v1 g-font-size-12 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!">Author</a>
+                        </h5>
+                        <span class="g-color-gray-dark-v4 g-font-size-12">2 days ago</span>
+                      </div>
+
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+
+                      <ul class="list-inline d-sm-flex my-0">
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-like g-pos-rel g-top-1 g-mr-3"></i>
+                            214
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-dislike g-pos-rel g-top-1 g-mr-3"></i>
+                            35
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-note g-pos-rel g-top-1 g-mr-3"></i>
+                            Reply
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="media g-brd-around g-brd-gray-light-v4 g-pa-30 g-ml-40 g-mb-20">
+                    <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                    <div class="media-body">
+                      <div class="g-mb-15">
+                        <h5 class="h5 g-color-gray-dark-v1 mb-0">Alberta Watson</h5>
+                        <span class="g-color-gray-dark-v4 g-font-size-12">7 hours ago</span>
+                      </div>
+
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+
+                      <ul class="list-inline d-sm-flex my-0">
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-like g-pos-rel g-top-1 g-mr-3"></i>
+                            632
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-dislike g-pos-rel g-top-1 g-mr-3"></i>
+                            98
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-note g-pos-rel g-top-1 g-mr-3"></i>
+                            Reply
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="media g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-20">
+                    <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                    <div class="media-body">
+                      <div class="g-mb-15">
+                        <h5 class="h5 g-color-gray-dark-v1 mb-0">David Lee</h5>
+                        <span class="g-color-gray-dark-v4 g-font-size-12">5 days ago</span>
+                      </div>
+
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+
+                      <ul class="list-inline d-sm-flex my-0">
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-like g-pos-rel g-top-1 g-mr-3"></i>
+                            178
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-dislike g-pos-rel g-top-1 g-mr-3"></i>
+                            14
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-note g-pos-rel g-top-1 g-mr-3"></i>
+                            Reply
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode2" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+          </div>
+        </div>
+      </section>
+      <!-- End Comments #02 -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Comments #03 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Comments
+              <span class="g-color-primary g-ml-5">#03</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode3">
+                <div class="shortcode-html">
+                  <div class="media g-mb-30">
+                    <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-20" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                    <div class="media-body u-shadow-v22 g-bg-secondary g-pa-30">
+                      <div class="g-mb-15">
+                        <h5 class="d-flex justify-content-between align-items-center h5 g-color-gray-dark-v1 mb-0">
+                          <span class="d-block g-mr-10">James Coolman</span>
+                          <a class="u-tags-v1 g-font-size-12 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!">Author</a>
+                        </h5>
+                        <span class="g-color-gray-dark-v4 g-font-size-12">2 days ago</span>
+                      </div>
+
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+
+                      <ul class="list-inline d-sm-flex my-0">
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-like g-pos-rel g-top-1 g-mr-3"></i>
+                            214
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-dislike g-pos-rel g-top-1 g-mr-3"></i>
+                            18
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-note g-pos-rel g-top-1 g-mr-3"></i>
+                            Reply
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="media g-ml-40 g-mb-30">
+                    <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                    <div class="media-body u-shadow-v22 g-bg-secondary g-pa-30">
+                      <div class="g-mb-15">
+                        <h5 class="h5 g-color-gray-dark-v1 mb-0">Alberta Watson</h5>
+                        <span class="g-color-gray-dark-v4 g-font-size-12">6 hours ago</span>
+                      </div>
+
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+
+                      <ul class="list-inline d-sm-flex my-0">
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-like g-pos-rel g-top-1 g-mr-3"></i>
+                            637
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-dislike g-pos-rel g-top-1 g-mr-3"></i>
+                            49
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-note g-pos-rel g-top-1 g-mr-3"></i>
+                            Reply
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="media g-mb-30">
+                    <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                    <div class="media-body u-shadow-v22 g-bg-secondary g-pa-30">
+                      <div class="g-mb-15">
+                        <h5 class="h5 g-color-gray-dark-v1 mb-0">David Lee</h5>
+                        <span class="g-color-gray-dark-v4 g-font-size-12">5 days ago</span>
+                      </div>
+
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+
+                      <ul class="list-inline d-sm-flex my-0">
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-like g-pos-rel g-top-1 g-mr-3"></i>
+                            178
+                          </a>
+                        </li>
+                        <li class="list-inline-item g-mr-20">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-dislike g-pos-rel g-top-1 g-mr-3"></i>
+                            34
+                          </a>
+                        </li>
+                        <li class="list-inline-item ml-auto">
+                          <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                            <i class="icon-note g-pos-rel g-top-1 g-mr-3"></i>
+                            Reply
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode3" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+          </div>
+        </div>
+      </section>
+      <!-- End Comments #03 -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Comments #04 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Comments
+              <span class="g-color-primary g-ml-5">#04</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode4">
+                <div class="shortcode-html">
+                  <div class="js-scrollbar g-height-350 g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mb-30">
+                    <!-- Comments -->
+                    <div class="media g-mb-30">
+                      <img class="d-flex g-width-60 g-height-60 rounded-circle g-mt-3 g-mr-20" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      <div class="media-body">
+                        <div class="d-flex align-items-start g-mb-15 g-mb-10--sm">
+                          <div class="d-block">
+                            <h5 class="h6">James Coolman</h5>
+                            <span class="d-block g-color-gray-dark-v5 g-font-size-11">June 7, 2017</span>
+                          </div>
+                          <div class="ml-auto">
+                            <a class="u-link-v5 g-color-primary--hover g-font-weight-600 g-font-size-12 text-uppercase" href="#">Reply</a>
+                          </div>
+                        </div>
+
+                        <p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels. Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs.</p>
+
+                        <ul class="list-inline my-0">
+                          <li class="list-inline-item g-mr-20">
+                            <a class="g-color-gray-dark-v5 g-color-primary--hover g-text-underline--none--hover" href="#">
+                              <i class="icon-medical-022 u-line-icon-pro g-pos-rel g-top-1 g-mr-3"></i> 5
+                            </a>
+                          </li>
+                          <li class="list-inline-item g-mr-20">
+                            <a class="g-color-gray-dark-v5 g-color-primary--hover g-text-underline--none--hover" href="#">
+                              <i class="icon-finance-206 u-line-icon-pro g-pos-rel g-top-1 g-mr-3"></i> 1
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="media g-brd-top g-brd-gray-light-v4 g-pt-30 g-ml-40 g-mb-30">
+                      <img class="d-flex g-width-60 g-height-60 rounded-circle g-mt-3 g-mr-15" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                      <div class="media-body">
+                        <div class="d-flex align-items-start g-mb-15 g-mb-10--sm">
+                          <div class="d-block">
+                            <h5 class="h6">Alberta Watson</h5>
+                            <span class="d-block g-color-gray-dark-v5 g-font-size-11">June 7, 2017</span>
+                          </div>
+                          <div class="ml-auto">
+                            <a class="u-link-v5 g-color-primary--hover g-font-weight-600 g-font-size-12 text-uppercase" href="#">Reply</a>
+                          </div>
+                        </div>
+
+                        <p>Now that your brand is all dressed up and ready to party, it's time to release it to the world. By the way, let's celebrate already.</p>
+
+                        <ul class="list-inline my-0">
+                          <li class="list-inline-item g-mr-20">
+                            <a class="g-color-gray-dark-v5 g-color-primary--hover g-text-underline--none--hover" href="#">
+                              <i class="icon-medical-022 u-line-icon-pro g-pos-rel g-top-1 g-mr-3"></i> 2
+                            </a>
+                          </li>
+                          <li class="list-inline-item g-mr-20">
+                            <a class="g-color-gray-dark-v5 g-color-primary--hover g-text-underline--none--hover" href="#">
+                              <i class="icon-finance-206 u-line-icon-pro g-pos-rel g-top-1 g-mr-3"></i> 0
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="media g-brd-top g-brd-gray-light-v4 g-pt-30 g-mb-30">
+                      <img class="d-flex g-width-60 g-height-60 rounded-circle g-mt-3 g-mr-15" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      <div class="media-body">
+                        <div class="d-flex align-items-start g-mb-15 g-mb-10--sm">
+                          <div class="d-block">
+                            <h5 class="h6">David Lee</h5>
+                            <span class="d-block g-color-gray-dark-v5 g-font-size-11">June 7, 2017</span>
+                          </div>
+                          <div class="ml-auto">
+                            <a class="u-link-v5 g-color-primary--hover g-font-weight-600 g-font-size-12 text-uppercase" href="#">Reply</a>
+                          </div>
+                        </div>
+
+                        <p>We get it, you're busy and it's important that someone keeps up with marketing and driving people to your brand. We've got you covered.</p>
+
+                        <ul class="list-inline my-0">
+                          <li class="list-inline-item g-mr-20">
+                            <a class="g-color-gray-dark-v5 g-color-primary--hover g-text-underline--none--hover" href="#">
+                              <i class="icon-medical-022 u-line-icon-pro g-pos-rel g-top-1 g-mr-3"></i> 0
+                            </a>
+                          </li>
+                          <li class="list-inline-item g-mr-20">
+                            <a class="g-color-gray-dark-v5 g-color-primary--hover g-text-underline--none--hover" href="#">
+                              <i class="icon-finance-206 u-line-icon-pro g-pos-rel g-top-1 g-mr-3"></i> 0
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- End Comments -->
+                  </div>
+
+                  <!-- Comments Form -->
+                  <form>
+                    <div class="g-mb-30">
+                      <textarea class="form-control g-bg-secondary g-brd-gray-light-v4 g-brd-primary--focus g-resize-none rounded-3 g-py-13 g-px-15" rows="5" placeholder="Your message..." disabled></textarea>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                      <button class="btn u-btn-primary g-font-weight-600 g-font-size-12 text-uppercase g-py-12 g-px-25 mr-4" type="submit" role="button">Signin</button>
+                      <p class="g-font-size-13 mb-0">Sign in to write a comment</p>
+                    </div>
+                  </form>
+                  <!-- End Comments Form -->
+                </div>
+
+                <div class="shortcode-styles">
+                  <!-- CSS Implementing Plugins -->
+                  <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+                </div>
+
+                <div class="shortcode-scripts">
+                  <!-- JS Implementing Plugins -->
+                  <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+                  <!-- JS Unify -->
+                  <script type="text/plain" src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+
+                  <!-- JS Plugins Init. -->
+                  <script type="text/plain">
+                    $(document).ready(function () {
+                      // initialization of HSScrollBar component
+                      $.HSCore.components.HSScrollBar.init( $('.js-scrollbar') );
+                    });
+                  </script>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode4" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+          </div>
+        </div>
+      </section>
+      <!-- End Comments #04 -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  <script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of HSScrollBar component
+      $.HSCore.components.HSScrollBar.init( $('.js-scrollbar') );
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

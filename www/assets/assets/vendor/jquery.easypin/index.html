@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laravel</title>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="dist/jquery.easypin.js"></script>
+
+        <style>
+            html, body {
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: table;
+                font-weight: 100;
+                font-family: 'Lato';
+            }
+
+            .container {
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .content {
+                text-align: center;
+                display: inline-block;
+            }
+
+            .title {
+                font-size: 96px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="xx"></div>
+    <div class="xx"></div>
+    <div class="xx"></div>
+    <div class="xx"></div>
+    <div class="xx"></div>
+    <div class="xx"></div>
+
+
+
+    <div style="width:400px;"><img src="http://www.intrawallpaper.com/static/images/colourful-dice-cubes.jpg" class="pin" style="width:100%;" easypin-id="1TNz0G7H_7" /></div>
+
+
+        <div style="position:relative;left:50px;">
+            <br />
+       <div style="width:1px;height:80px;">&nbsp;</div>
+
+        <br />
+
+        <img src="http://allwallpapersnew.com/wp-content/gallery/natural-green-wallpaper/green-natural-329594.jpg" class="pin" width="1200" easypin-id="hdhgddhgd" />
+
+        <img src="https://i.ytimg.com/vi/48fKIXlxaXk/maxresdefault.jpg" class="pin" easypin-id="E0MzZeBVhY" />
+        </div>
+
+        <br />
+        <br />
+        <div class="container">
+            <div class="content">
+                <div class="title">Laravel 5</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="easy-modal" style="display:none;" modal-position="free">
+        <form>
+            <input name="firstname" type="text">
+            <br />
+            <br>
+            <input name="surname" type="text">
+            <br />
+            <br />
+            <input type="checkbox" name="check1" value="music"> Music
+            <input type="checkbox" name="check2" value="cinema"> Cinema
+            <br />
+            <br />
+            <select name="city">
+                <option value="istanbul">Istanbul</option>
+                <option value="ankara">Ankara</option>
+                <option value="izmir">İzmir</option>
+                <option value="bursa">Bursa</option>
+            </select>
+            <br />
+            <br />
+            <label>
+                <input type="radio" name="gender" value="male" /> Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="female" /> Female
+            </label>
+            <br />
+            <br />
+            <textarea name="description"></textarea>
+            <br />
+            <br />
+            <a class="easy-submit" href="javascript:;">Tamam</a>
+        </form>
+    </div>
+
+    <div style="display:none;" width="400" shadow="true" popover>
+        <span>{[firstname]} {[surname]}</span>
+        <span>{[city]}</span>
+        <span>{[gender]}</span>
+        <span>{[check1]}</span>
+        <span>{[check2]}</span>
+        <br />
+        <span>{[description]}</span>
+    </div>
+
+
+    <br />
+    <input class="test" type="button" value="Click" />
+    </body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+            var $easyInstance = $('.pin').easypin({
+                init: '{"Vegyr8foSu":{"0":{"firstname":"ahmet","surname":"atay","check2":"cinema","city":"bursa","gender":"male","description":"açıklama","coords":{"lat":"1048","long":"357"}},"1":{"firstname":"arife","surname":"koç","check1":"music","city":"ankara","gender":"female","description":"açıklamaa","coords":{"lat":"787","long":"548"}},"2":{"firstname":"veli","surname":"küçükf","check1":"music","check2":"cinema","city":"istanbul","gender":"male","description":"veliiii","coords":{"lat":"1617","long":"661"}},"3":{"firstname":"test 1","surname":"testtt 1","check2":"cinema","city":"istanbul","gender":"male","description":"test 1 açıklama","coords":{"lat":"481","long":"243"}},"4":{"firstname":"test 2","surname":"testttt 2","check1":"music","check2":"cinema","city":"izmir","gender":"male","description":"test 2 açıklama","coords":{"lat":"486","long":"627"}},"5":{"firstname":"test 3","surname":"testtttt 3","check1":"music","city":"ankara","gender":"female","description":"test 3 açıklama","coords":{"lat":"440","long":"462"}},"6":{"coords":{"lat":"829","long":"-5"}},"canvas":{"src":"11495.jpg","width":"1920","height":"710"}},"hdhgddhgd":{"0":{"firstname":"hello","surname":"","city":"istanbul","description":"","coords":{"lat":"577","long":"215"}},"canvas":{"src":"http://allwallpapersnew.com/wp-content/gallery/natural-green-wallpaper/green-natural-329594.jpg","width":"1200","height":"750"}},"E0MzZeBVhY":{"0":{"firstname":"captan america","surname":"","city":"istanbul","gender":"male","description":"","coords":{"lat":"1029","long":"335"}},"1":{"firstname":"hulk","surname":"","city":"istanbul","gender":"male","description":"angry man","coords":{"lat":"72","long":"294"}},"2":{"firstname":"thor","surname":"","city":"istanbul","gender":"male","description":"adama kor","coords":{"lat":"1685","long":"243"}},"3":{"firstname":"","surname":"","city":"istanbul","description":"","coords":{"lat":"552","long":"367"}},"canvas":{"src":"https://i.ytimg.com/vi/48fKIXlxaXk/maxresdefault.jpg","width":"1920","height":"1080"}},"1TNz0G7H_7":{"0":{"firstname":"zarrrr","surname":"","city":"istanbul","description":"","coords":{"lat":"197","long":"76"}},"canvas":{"src":"http://www.intrawallpaper.com/static/images/colourful-dice-cubes.jpg","width":"400","height":"250"}}}',
+                popover: {
+                    firstname: function(value) {
+                        return value;
+                    },
+                    city: function(value) {
+                        return value;
+                    },
+                    gender: function(value) {
+                        return value == 'male' ? 'Bay' : 'Bayan';
+                    }
+                },
+                popoverStyle: {
+                    'background-color': 'orange',
+                    'color': 'black'
+                },
+                limit: 0,
+                exceeded: function(type) {
+                    console.log(type);
+                },
+                drop: function(x, y, element) {
+                    //console.log(x,y, element);
+                },
+                drag: function(x, y, element) {
+                    //console.log(x, y, element);
+                },
+                done: function(element) {
+
+                    console.log(element);
+                    return true;
+                }
+            });
+
+            $easyInstance.easypin.event( "get.coordinates", function($instance, data, params ) {
+
+//                $instance.clear();
+
+                console.log( data, params);
+
+            });
+
+            $( ".test" ).click(function( event ) {
+                $easyInstance.easypin.fire( "get.coordinates", {t:1, r:2, y:3}, function(data) {
+                    return JSON.stringify(data);
+                });
+            });
+
+
+    });
+</script>

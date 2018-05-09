@@ -1,0 +1,49 @@
+/*------------------------------------
+  Tabs v3
+------------------------------------*/
+
+@media(min-width: $g-md) {
+  [class*="u-nav-v3"] {
+    & .nav-link {
+      border: {
+        style: solid;
+        width: 1px 0;
+        color: $g-color-gray-light-v4;
+      }
+    }
+
+    &.flex-column .nav-link {
+      margin: -1px 0 0;
+    }
+    &.flex-column .nav-item:first-child .nav-link {
+      margin-top: 0;
+    }
+
+    & .nav-link.active {
+      color: $g-color-primary;
+    }
+
+    &.u-nav-light {
+      & .nav-link {
+        color: $g-color-white;
+        border-color: $g-color-white;
+      }
+
+      & .nav-link.active {
+        color: $g-color-primary;
+        border-color: $g-color-white !important;
+      }
+    }
+  }
+  .u-nav-v3-2 {
+    & .nav-link {
+      z-index: 1;
+    }
+
+    & .nav-link.active {
+      border-color: $g-color-primary;
+      z-index: 2;
+      position: relative;
+    }
+  }
+}

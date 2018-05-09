@@ -1,0 +1,127 @@
+/*------------------------------------
+  Steps v1
+------------------------------------*/
+
+.u-steps-v1 {
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: $g-color-gray-light-v4;
+  border-radius: .25rem;
+
+  &::after {
+    content: "";
+    display: table;
+    width: 100%;
+  }
+
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__item {
+    float: left;
+    margin-right: 15px;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $g-md) {
+  .u-steps-v1 {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-radius: 0;
+
+    &__item {
+      list-style: none;
+      margin-right: 40px;
+
+      a,
+      span {
+        position: relative;
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: {
+          property: background-color;
+          duration: .2s;
+          timing-function: ease-in;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          display: block;
+          width: 70px;
+          height: 4px;
+          transform: translateY(-50%);
+        }
+      }
+
+      a {
+        color: $g-color-white;
+        background-color: $g-color-primary;
+
+        &::before {
+          background-color: $g-color-primary;
+        }
+
+        &:hover {
+          background-color: $g-color-gray-dark-v2;
+        }
+      }
+
+      span {
+        background-color: $g-color-gray-light-v4;
+
+        &::before {
+          background-color: $g-color-gray-light-v4;
+        }
+      }
+
+      > i {
+        font-size: 10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        a,
+        span {
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      & + .u-breadcrumb-v1__item {
+        &::before {
+          display: none;
+        }
+      }
+
+      &.active {
+        a,
+        span {
+          color: $g-color-white;
+          background-color: $g-color-primary;
+        }
+      }
+    }
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

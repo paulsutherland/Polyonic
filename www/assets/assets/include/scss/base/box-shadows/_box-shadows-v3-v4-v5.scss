@@ -1,0 +1,37 @@
+/*------------------------------------
+  Box-shadows-v3-v4-v5
+------------------------------------*/
+%box-shadow {
+  position: relative;
+}
+%box-shadow--after-before {
+  content: "";
+  position: absolute;
+  top: 80%;
+  @include px-to-rem(left, 5px);
+  @include px-to-rem(bottom, 15px);
+  width: 50%;
+  @include px-to-rem(max-width, 300px);
+  background: rgba($g-color-black, .2);
+  z-index: -1;
+}
+.u-shadow-v3,
+.u-shadow-v4,
+.u-shadow-v5 {
+  @extend %box-shadow;
+}
+.u-shadow-v3::after,
+.u-shadow-v3::before,
+.u-shadow-v4::before,
+.u-shadow-v5::after {
+  @extend %box-shadow--after-before;
+  box-shadow: 0 15px 10px rgba($g-color-black, .2);
+  transform: rotate(-3deg);
+}
+.u-shadow-v3::after,
+.u-shadow-v5::after {
+  @extend %box-shadow--after-before;
+  left: auto;
+  @include px-to-rem(right, 5px);
+  transform: rotate(3deg);
+}

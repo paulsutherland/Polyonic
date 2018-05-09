@@ -1,0 +1,828 @@
+/*------------------------------------
+  Arrows
+------------------------------------*/
+
+.u-arrow {
+  &-v1 {
+    &::before {
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      vertical-align: top;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    &[class*="abs"] {
+      &::before {
+        position: absolute;
+      }
+    }
+  }
+
+  &-custom {
+    &-v1 {
+      .u-arrow-icon {
+        display: block;
+      }
+
+      .u-arrow-text {
+        position: absolute;
+        top: 50%;
+        transition: transform .3s;
+      }
+
+      &.js-prev {
+        .u-arrow-text {
+          transform: translateY(-50%) translateX(-100%);
+        }
+      }
+
+      &.js-next {
+        .u-arrow-text {
+          transform: translateY(-50%) translateX(100%);
+        }
+      }
+
+      &:hover {
+        .u-arrow-text {
+          transform: translateY(-50%) translateX(0);
+        }
+      }
+    }
+
+    &-v2 {
+      overflow: hidden;
+      transition: background-color 0.3s;
+
+      .u-arrow-icon {
+        transition: transform 0.3s;
+      }
+
+      .u-arrow-img {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+      }
+
+      &.js-prev {
+        .u-arrow-icon {
+          transform: translateY(-50%) translateX(10px);
+        }
+
+        .u-arrow-img {
+          transform: translateX(100%);
+        }
+      }
+
+      &.js-next {
+        .u-arrow-icon {
+          transform: translateY(-50%) translateX(-10px);
+        }
+
+        .u-arrow-img {
+          transform: translateX(-100%);
+        }
+      }
+
+      &:hover {
+        .u-arrow-icon {
+          transform: translateY(-50%) translateX(0);
+        }
+
+        .u-arrow-img {
+          opacity: .6;
+          transform: translateX(0);
+        }
+      }
+    }
+
+    &-v3 {
+      .u-arrow-helper {
+        content: "";
+        opacity: 0;
+        transition: transform 0.3s, opacity 0.3s;
+        transform: scale(0.9);
+      }
+
+      .u-arrow-icon {
+        display: block;
+
+        &-before,
+        &-after {
+          position: absolute;
+          left: 25%;
+          transition: transform 0.3s, background-color 0.3s;
+          backface-visibility: hidden;
+        }
+
+        &-before {
+          transform: translateX(-50%) rotate(30deg);
+          transform-origin: 0 100%;
+        }
+
+        &-after {
+          top: 50%;
+          transform: translateX(-50%) rotate(-30deg);
+          transform-origin: 0 0;
+        }
+      }
+
+      &.js-next {
+        .u-arrow-icon {
+          transform: rotate(180deg);
+        }
+      }
+
+      &:hover {
+        .u-arrow-helper {
+          background-color: $g-color-white;
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        .u-arrow-icon {
+          &-before,
+          &-after {
+            background-color: $g-color-primary;
+          }
+
+          &-before {
+            transform: translateX(-50%) rotate(45deg);
+          }
+
+          &-after {
+            transform: translateX(-50%) rotate(-45deg);
+          }
+        }
+      }
+    }
+
+    &-v4 {
+      width: 62px;
+      height: 62px;
+      transition: width 0.3s, background-color 0.3s;
+
+      h4 {
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+      }
+
+      &.js-prev {
+        h4 {
+          transform: translateX(100%);
+        }
+      }
+
+      &.js-next {
+        h4 {
+          transform: translateX(-100%);
+        }
+      }
+
+      &:hover {
+        width: 200px;
+
+        .u-arrow-icon {
+          color: $g-color-primary;
+        }
+
+        h4 {
+          opacity: 1;
+          transition-delay: 0.1s;
+          transform: translateX(0);
+        }
+      }
+    }
+
+    &-v5 {
+      .u-arrow-icon {
+        &::before {
+          transition: transform .3s .3s;
+        }
+      }
+
+      .u-arrow-text {
+        transition: transform .3s .3s;
+        perspective: 1000px;
+      }
+
+      .u-arrow-title {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 30%;
+        transition: transform 0.3s;
+        backface-visibility: hidden;
+        transform-origin: 50% 0;
+        transform: rotateX(-90deg);
+        margin: 0;
+      }
+
+      .u-arrow-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      &.js-prev {
+        .u-arrow-text {
+          transform: translateX(-100%);
+        }
+      }
+
+      &.js-next {
+        .u-arrow-text {
+          transform: translateX(100%);
+        }
+      }
+
+      &:hover {
+        .u-arrow-text {
+          transform: translateX(0);
+        }
+
+        .u-arrow-title {
+          transition-delay: .6s;
+          transform: rotateX(0deg);
+        }
+
+        .u-arrow-icon {
+          &::before {
+            transition-delay: 0s;
+          }
+        }
+
+        &.js-prev {
+          .u-arrow-icon {
+            &::before {
+              transform: translateX(-100%);
+            }
+          }
+        }
+
+        &.js-next {
+          .u-arrow-icon {
+            &::before {
+              transform: translateX(100%);
+            }
+          }
+        }
+      }
+    }
+
+    &-v6 {
+      overflow: hidden;
+      width: 40px;
+      transition: width .4s, background-color .4s, z-index .4s;
+      transition-timing-function: cubic-bezier(.7, 0, .3, 1);
+
+      .u-arrow-text {
+        width: 400px;
+      }
+
+      &:hover {
+        width: 400px;
+        z-index: 11;
+      }
+    }
+
+    &-v7 {
+      perspective: 1000px;
+
+      .u-arrow-icon {
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+      }
+
+      .u-arrow-img {
+        backface-visibility: hidden;
+        transition: transform 0.3s;
+      }
+
+      &.js-prev {
+        perspective-origin: 100% 50%;
+
+        .u-arrow-img {
+          transform-origin: 0 50%;
+          transform: rotateY(90deg);
+        }
+      }
+
+      &.js-next {
+        perspective-origin: 0 50%;
+
+        .u-arrow-img {
+          transform-origin: 100% 50%;
+          transform: rotateY(-90deg);
+        }
+      }
+
+      &:hover {
+        .u-arrow-icon {
+          color: $g-color-primary;
+        }
+
+        .u-arrow-img {
+          transform: rotateY(0deg);
+        }
+      }
+    }
+
+    &-v8 {
+      perspective: 1000px;
+
+      .u-arrow-icon {
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+      }
+
+      .u-arrow-title,
+      .u-arrow-img {
+        backface-visibility: hidden;
+      }
+
+      .u-arrow-title {
+        transition: transform 0.3s;
+      }
+
+      .u-arrow-text {
+        transition: transform 0.3s 0.3s;
+        transform-style: preserve-3d;
+      }
+
+      &.js-prev {
+        perspective-origin: 100% 50%;
+
+        .u-arrow-text,
+        .u-arrow-title {
+          transform-origin: 0 50%;
+          transform: rotateY(90deg);
+        }
+      }
+
+      &.js-next {
+        perspective-origin: 0 50%;
+
+        .u-arrow-text,
+        .u-arrow-title {
+          transform-origin: 100% 50%;
+          transform: rotateY(-90deg);
+        }
+      }
+
+      &:hover {
+        .u-arrow-icon {
+          color: $g-color-primary;
+          transition-delay: 0s;
+
+          &::before {
+            transition-delay: 0s;
+          }
+        }
+
+        .u-arrow-text,
+        .u-arrow-title {
+          transform: rotateY(0deg);
+        }
+
+        .u-arrow-text {
+          transition-delay: 0s;
+        }
+
+        .u-arrow-title {
+          transition-delay: .3s;
+        }
+      }
+    }
+
+    &-v9 {
+      width: 60px;
+
+      .u-arrow-icon {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          width: 20px;
+          height: 1px;
+          background: $g-color-white;
+          transition: width .3s .2s;
+          backface-visibility: hidden;
+        }
+      }
+
+      .u-arrow-text {
+        &::after {
+          content: attr(data-title);
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          color: $g-color-white;
+          text-transform: uppercase;
+          opacity: 0;
+          transition: transform 0.3s, opacity 0.3s;
+          margin: 20px 5px 0;
+        }
+      }
+
+      .u-arrow-img {
+        opacity: 0;
+        box-shadow: 0 1px 0 #fff, 0 -1px 0 #fff;
+        transition: transform .3s, opacity .3s;
+        transform: scale(.3);
+      }
+
+      &.js-prev {
+        .u-arrow-icon {
+          &::after {
+            left: calc(100% - 25px);
+          }
+        }
+      }
+
+      &.js-next {
+        .u-arrow-icon {
+          &::after {
+            right: calc(100% - 25px);
+          }
+        }
+
+        .u-arrow-text {
+          &::after {
+            text-align: right;
+          }
+        }
+      }
+
+      &:hover {
+        width: 200px;
+
+        .u-arrow-icon {
+          &::after {
+            width: 200px;
+            transition-delay: 0s;
+          }
+        }
+
+        .u-arrow-text {
+          pointer-events: auto;
+
+          &::after {
+            opacity: 1;
+            transition-delay: .2s;
+            transform: translateY(0);
+          }
+        }
+
+        .u-arrow-img {
+          opacity: 1;
+          transform: scale(1);
+
+          &:first-child {
+            transition-delay: 0.3s;
+          }
+
+          &:nth-child(2) {
+            transition-delay: 0.35s;
+          }
+
+          &:nth-child(3) {
+            transition-delay: 0.4s;
+          }
+        }
+      }
+    }
+
+    &-v10 {
+      .u-arrow-text {
+        opacity: 0;
+        overflow: hidden;
+        transform: scale(.7);
+        transition: transform .3s, opacity .3s, background-color .1s 0s;
+      }
+
+      .u-arrow-img {
+        transition: transform .3s;
+      }
+
+      &.js-prev {
+        .u-arrow-img {
+          transform: translateX(-100%);
+        }
+      }
+
+      &.js-next {
+        .u-arrow-img {
+          transform: translateX(100%);
+        }
+      }
+
+      &:hover {
+        .u-arrow-text {
+          opacity: 1;
+          background-color: transparent;
+          transform: scale(1);
+          transition: transform .3s, opacity .3s, background-color .1s .2s;
+        }
+
+        .u-arrow-img {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    &-v11 {
+      .u-arrow-icon {
+        border-width: 0;
+        transition: border-width .3s .15s;
+      }
+
+      .u-arrow-text {
+        opacity: 0;
+        transition: transform .3s, opacity .3s;
+      }
+
+      &.js-prev {
+        .u-arrow-text {
+          transform: translateY(-50%) translateX(-100%) scale(.75);
+        }
+      }
+
+      &.js-next {
+        .u-arrow-text {
+          transform: translateY(-50%) translateX(100%) scale(.75);
+        }
+      }
+
+      &:hover {
+        .u-arrow-icon {
+          border-top-width: 40px;
+          border-bottom-width: 40px;
+          transition-delay: 0s;
+        }
+
+        .u-arrow-text {
+          opacity: 1;
+          transition-delay: .3s;
+          transform: translateY(-50%) translateX(0) scale(1);
+        }
+      }
+    }
+
+    &-v12 {
+      .u-arrow-icon {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+      }
+
+      .u-arrow-text {
+        overflow: hidden;
+        transition: transform .3s;
+        backface-visibility: hidden;
+        transform: scale(.6);
+      }
+
+      .u-arrow-img {
+        opacity: 0;
+        backface-visibility: hidden;
+        transition: opacity .3s, transform .3s;
+      }
+
+      &:hover {
+        .u-arrow-img {
+          opacity: .8;
+        }
+      }
+
+      &.js-prev {
+        .u-arrow-img {
+          transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(2);
+        }
+
+        &:hover {
+          .u-arrow-text {
+            transform: scale(1) rotate(-45deg);
+          }
+
+          .u-arrow-img {
+            transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(1);
+          }
+        }
+      }
+
+      &.js-next {
+        .u-arrow-img {
+          transform: translateX(-50%) translateY(-50%) rotate(-45deg) scale(2);
+        }
+
+        &:hover {
+          .u-arrow-text {
+            transform: scale(1) rotate(45deg);
+          }
+
+          .u-arrow-img {
+            transform: translateX(-50%) translateY(-50%) rotate(-45deg) scale(1);
+          }
+        }
+      }
+    }
+
+    &-v13 {
+      .u-arrow-icon {
+        overflow: hidden;
+        backface-visibility: hidden;
+
+        &::before {
+          position: relative;
+          z-index: 2;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 110%;
+          background: $g-color-white;
+          backface-visibility: hidden;
+          transition: transform .3s .3s;
+        }
+      }
+
+      .u-arrow-text {
+        transition: transform .3s;
+      }
+
+      &.js-prev {
+        .u-arrow-icon {
+          &::after {
+            transform: translateX(-100%);
+          }
+        }
+
+        .u-arrow-text {
+          transform: translateX(-100%);
+        }
+      }
+
+      &.js-next {
+        .u-arrow-icon {
+          &::after {
+            transform: translateX(100%);
+          }
+        }
+
+        .u-arrow-text {
+          transform: translateX(100%);
+        }
+      }
+
+      &:hover {
+        .u-arrow-icon {
+          &::after {
+            transform: translateX(0);
+            transition-delay: 0s;
+          }
+        }
+
+        .u-arrow-text {
+          transition-delay: .3s;
+          transform: translateX(0);
+        }
+      }
+    }
+
+    &-v14 {
+      &::before,
+      &::after,
+      .u-arrow-icon::before,
+      .u-arrow-icon::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 3px;
+        height: 50%;
+        background: $g-color-primary;
+        transition: transform .3s;
+        backface-visibility: hidden;
+      }
+
+      &::before,
+      .u-arrow-icon::before {
+        top: 50%;
+        transform: translateX(-50%) rotate(-135deg);
+        transform-origin: 50% 0;
+      }
+
+      &::after,
+      .u-arrow-icon::after {
+        top: 50%;
+        transform: translateX(-50%) rotate(-45deg);
+        transform-origin: 0 0;
+      }
+
+      .u-arrow-icon {
+        &::before,
+        &::after {
+          z-index: 2;
+          height: 0;
+          background: $g-color-white;
+          transition: height .3s, transform .3s;
+        }
+      }
+
+      .u-arrow-title {
+        position: absolute;
+        top: 50%;
+        opacity: 0;
+        transition: transform .3s, opacity .3s;
+        margin: 0;
+      }
+
+      &.js-prev {
+        .u-arrow-title {
+          left: 100%;
+          transform: translateY(-50%) translateX(-50%);
+        }
+      }
+
+      &.js-next {
+        &::before,
+        .u-arrow-icon::before {
+          transform: translateX(-50%) rotate(135deg);
+          transform-origin: 50% 0;
+        }
+
+        &::after,
+        .u-arrow-icon::after {
+          transform: translateX(-50%) rotate(45deg);
+          transform-origin: 100% 0;
+        }
+
+        .u-arrow-title {
+          right: 100%;
+          text-align: right;
+          transform: translateY(-50%) translateX(50%);
+        }
+      }
+
+      &:hover {
+        &::before,
+        .u-arrow-icon::before {
+          transform: translateX(-50%) rotate(-125deg);
+        }
+
+        &::after,
+        .u-arrow-icon::after {
+          transform: translateX(-50%) rotate(-55deg);
+        }
+
+        .u-arrow-icon {
+          &::before,
+          &::after {
+            height: 50%;
+          }
+        }
+
+        .u-arrow-title {
+          opacity: 1;
+          transform: translateY(-50%) translateX(0);
+        }
+
+        &.js-next {
+          &::before,
+          .u-arrow-icon::before {
+            transform: translateX(-50%) rotate(125deg);
+          }
+
+          &::after,
+          .u-arrow-icon::after {
+            transform: translateX(-50%) rotate(55deg);
+          }
+        }
+      }
+    }
+  }
+}

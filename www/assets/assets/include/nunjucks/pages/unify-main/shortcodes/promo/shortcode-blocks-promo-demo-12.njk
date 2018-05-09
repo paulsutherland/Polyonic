@@ -1,0 +1,137 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-promo" %}
+{% set title = "Promo Blocks 12" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    <!-- Promo Block -->
+    <section class="g-flex-centered g-bg-pos-center g-bg-img-hero g-pos-rel g-z-index-1 g-overflow-hidden" style="background-image: url({{ root }}assets/img-temp/1920x1080/img14.jpg);" data-calc-target="#js-header">
+      <div class="g-pos-abs g-top-0 g-left-0"
+           data-animation="fadeInDown"
+           data-animation-delay="100"
+           data-animation-duration="1500">
+        <img class="img-fluid" src="{{ root }}assets/img-temp/1920x1080/img15.png" alt="Image Description">
+      </div>
+      <div class="g-pos-abs g-bottom-0 g-right-0"
+           data-animation="fadeInUp"
+           data-animation-delay="1800"
+           data-animation-duration="1500">
+        <img class="img-fluid" src="{{ root }}assets/img-temp/1920x1080/img16.png" alt="Image Description">
+      </div>
+
+      <div class="container text-center g-z-index-1">
+        <div class="mb-4">
+          <h1 class="h2 d-inline-block g-color-black g-font-weight-700 g-font-size-40 g-font-size-75--md text-uppercase g-line-height-1"
+              data-animation="fadeInDown"
+              data-animation-delay="1000"
+              data-animation-duration="1500">The</h1>
+          <h2 class="h2 d-inline-block g-color-black g-font-weight-700 g-font-size-40 g-font-size-75--md text-uppercase g-line-height-1"
+              data-animation="fadeInDown"
+              data-animation-delay="1200"
+              data-animation-duration="1500">Green</h2>
+          <h2 class="h2 d-inline-block g-color-primary g-font-weight-700 g-font-size-40 g-font-size-75--md text-uppercase g-line-height-1"
+              data-animation="fadeInDown"
+              data-animation-delay="1400"
+              data-animation-duration="1500">Unify</h2>
+        </div>
+
+        <div class="mx-auto g-max-width-600 g-overflow-hidden">
+          <p class="g-color-black g-font-size-18 g-font-size-24--md g-mb-40"
+             data-animation="fadeInDown"
+             data-animation-delay="1600"
+             data-animation-duration="1500">
+            Unify is creative technology company providing key digital services on web and mobile. We minimize the gap between technology and its audience.
+          </p>
+        </div>
+
+        <div
+            data-animation="fadeInDown"
+            data-animation-delay="2000"
+            data-animation-duration="1500">
+          <a class="btn btn-lg u-btn-outline-black g-font-weight-600 g-font-size-13 text-uppercase g-rounded-50 mx-2 g-px-25 g-py-15" href="#!">Discover More</a>
+          <a class="btn btn-lg u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase g-rounded-50 mx-2 g-px-25 g-py-15" href="#!">Purchase Now</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Promo Block -->
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/content-demo-1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="{{ root }}assets/vendor/appear.js"></script>
+  <script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.onscroll-animation.js"></script>
+  <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.height-calc.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).ready(function () {
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of scroll animation
+      $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+      // initialization of header's height equal offset
+      $.HSCore.helpers.HSHeightCalc.init();
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

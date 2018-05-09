@@ -1,0 +1,1640 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Tables - Basic" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu8 = "unCollapsed" %}
+{% set activeMenuItem = "tables-basic" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: "Tables",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+  <section class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+        <div class="g-pa-20">
+          <h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-30">{{ title }}</h1>
+
+          <header class="g-mb-20">
+            <h2 class="g-font-weight-400 g-font-size-16 g-color-black mb-0">Basic Table</h2>
+          </header>
+
+          <div class="table-responsive g-mb-40">
+            <table class="table u-table--v3 g-color-black">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Company</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Lola Sutton</td>
+                  <td>Apple Inc.</td>
+                  <td>Product Manager</td>
+                  <td>
+                    <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">Online</span>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown1Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown1"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown1">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown1Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Stella Chandler</td>
+                  <td>Dropbox Inc.</td>
+                  <td>Sales Manager</td>
+                  <td>
+                    <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-lightbrown g-bg-lightbrown g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">Away</span>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown2Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown2"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown2">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown2" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown2Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Vernon Yates</td>
+                  <td>Microsoft Inc.</td>
+                  <td>Developer</td>
+                  <td>
+                    <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-primary g-bg-primary g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">Offline</span>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown3Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown3"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown3">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown3" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown3Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Cornelia Morton</td>
+                  <td>Google Inc.</td>
+                  <td>Designer</td>
+                  <td>
+                    <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-teal-v2 g-bg-teal-v2 g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">Online</span>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown4Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown4"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown4">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown4" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown4Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Addie Ray</td>
+                  <td>Dell Corp.</td>
+                  <td>Product Manager</td>
+                  <td>
+                    <span class="u-tags-v1 text-center g-width-110 g-brd-around g-brd-lightbrown g-bg-lightbrown g-font-weight-400 g-color-white g-rounded-50 g-py-4 g-px-15">Away</span>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown5Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown5"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown5">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown5" class="u-shadow-v31 g-pos-abs g-bottom-100x g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown5Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <header class="g-mb-20">
+            <h2 class="g-font-weight-400 g-font-size-16 g-color-black mb-0">Basic Table with Image &amp; Sorting</h2>
+          </header>
+
+          <div class="table-responsive g-mb-40">
+            <table class="table u-table--v3 g-color-black">
+              <thead>
+                <tr>
+                  <th class="g-px-30">
+                    <div class="media">
+                      <div class="d-flex align-self-center">Name</div>
+
+                      <div class="d-flex align-self-center ml-auto">
+                        <span class="d-inline-block g-width-10 g-line-height-1 g-font-size-10">
+                          <a class="g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover" href="#!">
+                            <i class="hs-admin-angle-up"></i>
+                          </a>
+                          <a class="g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover" href="#!">
+                            <i class="hs-admin-angle-down"></i>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </th>
+                  <th class="g-px-30">
+                    <div class="media">
+                      <div class="d-flex align-self-center">Role</div>
+
+                      <div class="d-flex align-self-center ml-auto">
+                        <span class="d-inline-block g-width-10 g-line-height-1 g-font-size-10">
+                          <a class="g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover" href="#!">
+                            <i class="hs-admin-angle-up"></i>
+                          </a>
+                          <a class="g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover" href="#!">
+                            <i class="hs-admin-angle-down"></i>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </th>
+                  <th class="g-px-30">
+                    <div class="media">
+                      <div class="d-flex align-self-center">Activity</div>
+
+                      <div class="d-flex align-self-center ml-auto">
+                        <span class="d-inline-block g-width-10 g-line-height-1 g-font-size-10">
+                          <a class="g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover" href="#!">
+                            <i class="hs-admin-angle-up"></i>
+                          </a>
+                          <a class="g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover" href="#!">
+                            <i class="hs-admin-angle-down"></i>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </th>
+                  <th class="g-px-30">
+                    <div class="media">
+                      <div class="d-flex align-self-center">Category</div>
+
+                      <div class="d-flex align-self-center ml-auto">
+                        <span class="d-inline-block g-width-10 g-line-height-1 g-font-size-10">
+                          <a class="g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover" href="#!">
+                            <i class="hs-admin-angle-up"></i>
+                          </a>
+                          <a class="g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover" href="#!">
+                            <i class="hs-admin-angle-down"></i>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </th>
+                  <th class="g-px-30"></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="g-px-30">
+                    <div class="media">
+                      <div class="d-flex align-self-center">
+                        <img class="g-width-36 g-height-36 rounded-circle g-mr-15" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image description">
+                      </div>
+
+                      <div class="media-body align-self-center text-left">Terry Ward</div>
+                    </div>
+                  </td>
+                  <td class="g-px-30">Product Manager</td>
+                  <td class="g-px-30">27 Aug 2017</td>
+                  <td class="g-px-30">
+                    <div class="d-inline-block">
+                      <span class="d-flex align-items-center justify-content-center u-tags-v1 g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                        <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                        Employees
+                      </span>
+                    </div>
+                  </td>
+                  <td class="g-px-30">
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown6Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown6"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown6">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown6" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown6Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="g-px-30">
+                    <div class="media">
+                      <div class="d-flex align-self-center">
+                        <div class="g-pos-rel g-width-36 g-height-36 g-bg-lightblue-v3 rounded-circle g-mr-15">
+                          <span class="text-uppercase g-absolute-centered g-font-size-default g-color-white">SF</span>
+                        </div>
+                      </div>
+
+                      <div class="media-body align-self-center text-left">Samuel Freeman</div>
+                    </div>
+                  </td>
+                  <td class="g-px-30">Product Manager</td>
+                  <td class="g-px-30">07 Sep 2017</td>
+                  <td class="g-px-30">
+                    <div class="d-inline-block">
+                      <span class="d-flex align-items-center justify-content-center u-tags-v1 g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                        <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                        Employees
+                      </span>
+                    </div>
+                  </td>
+                  <td class="g-px-30">
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown7Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown7"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown7">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown7" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown7Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="g-px-30">
+                    <div class="media">
+                      <div class="d-flex align-self-center">
+                        <img class="g-width-36 g-height-36 rounded-circle g-mr-15" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image description">
+                      </div>
+
+                      <div class="media-body align-self-center text-left">Susie Glover</div>
+                    </div>
+                  </td>
+                  <td class="g-px-30">Product Manager</td>
+                  <td class="g-px-30">29 Feb 2017</td>
+                  <td class="g-px-30">
+                    <div class="d-inline-block">
+                      <span class="d-flex align-items-center justify-content-center u-tags-v1 g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                        <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-primary g-mr-8"></span>
+                        Family
+                      </span>
+                    </div>
+                  </td>
+                  <td class="g-px-30">
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown8Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown8"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown8">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown8" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown8Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="g-px-30">
+                    <div class="media">
+                      <div class="d-flex align-self-center">
+                        <div class="g-pos-rel g-width-36 g-height-36 g-bg-lightblue-v3 rounded-circle g-mr-15">
+                          <span class="text-uppercase g-absolute-centered g-font-size-default g-color-white">LO</span>
+                        </div>
+                      </div>
+
+                      <div class="media-body align-self-center text-left">Lee Olson</div>
+                    </div>
+                  </td>
+                  <td class="g-px-30">Product Manager</td>
+                  <td class="g-px-30">27 Aug 2017</td>
+                  <td class="g-px-30">
+                    <div class="d-inline-block">
+                      <span class="d-flex align-items-center justify-content-center u-tags-v1 g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                        <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-primary g-mr-8"></span>
+                        Family
+                      </span>
+                    </div>
+                  </td>
+                  <td class="g-px-30">
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown9Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown9"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown9">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown9" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown9Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="g-px-30">
+                    <div class="media">
+                      <div class="d-flex align-self-center">
+                        <img class="g-width-36 g-height-36 rounded-circle g-mr-15" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image description">
+                      </div>
+
+                      <div class="media-body align-self-center text-left">Elizabeth Rice</div>
+                    </div>
+                  </td>
+                  <td class="g-px-30">Product Manager</td>
+                  <td class="g-px-30">23 Jan 2017</td>
+                  <td class="g-px-30">
+                    <div class="d-inline-block">
+                      <span class="d-flex align-items-center justify-content-center u-tags-v1 g-brd-around g-bg-gray-light-v8 g-bg-gray-light-v8 g-font-size-default g-color-gray-dark-v6 g-rounded-50 g-py-4 g-px-15">
+                        <span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8"></span>
+                        Employees
+                      </span>
+                    </div>
+                  </td>
+                  <td class="g-px-30">
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown10Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown10"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown10">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown10" class="u-shadow-v31 g-pos-abs g-bottom-100x g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown10Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <header class="g-mb-20">
+            <h2 class="g-font-weight-400 g-font-size-16 g-color-black mb-0">Bordered Table</h2>
+          </header>
+
+          <div class="table-responsive g-mb-40">
+            <table class="table u-table--v3--bordered g-color-black">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Company</th>
+                  <th>Role</th>
+                  <th>Tasks Done</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Emma Mann</td>
+                  <td>Dropbox Inc.</td>
+                  <td>Product Manager</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-lightblue-v3 g-rounded-3" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown11Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown11"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown11">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown11" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown11Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Rebecca Schmidt</td>
+                  <td>Microsoft Corp.</td>
+                  <td>Sales Manager</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-primary g-rounded-3" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown12Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown12"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown12">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown12" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown12Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Lydia Osborne</td>
+                  <td>Airbnb</td>
+                  <td>Developer</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-lightbrown g-rounded-3" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown13Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown13"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown13">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown13" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown13Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Eddie Yates</td>
+                  <td>Uber</td>
+                  <td>Designer</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-lightblue-v3 g-rounded-3" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown14Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown14"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown14">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown14" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown14Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Arthur Rodgers</td>
+                  <td>Apple Inc.</td>
+                  <td>Product Manager</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-lightbrown g-rounded-3" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown15Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown15"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown15">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown15" class="u-shadow-v31 g-pos-abs g-bottom-100x g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown15Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <header class="g-mb-20">
+            <h2 class="g-font-weight-400 g-font-size-16 g-color-black mb-0">Bordered Table</h2>
+          </header>
+
+          <div class="table-responsive g-mb-40">
+            <table class="table u-table--v3--bordered g-color-black">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Company</th>
+                  <th>Role</th>
+                  <th>Tasks Done</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="g-valign-top" rowspan="2">1</td>
+                  <td class="g-valign-top" rowspan="2">Web Site</td>
+                  <td>Matthew Padilla</td>
+                  <td>Product Manager</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-lightblue-v3 g-rounded-3" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown16Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown16"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown16">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown16" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown16Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-left">Frances Wilson</td>
+                  <td>Sales Manager</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-primary g-rounded-3" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown17Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown17"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown17">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown17" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown17Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="g-valign-top" rowspan="2">2</td>
+                  <td class="g-valign-top" rowspan="2">Mobile App</td>
+                  <td>Barry Ray</td>
+                  <td>Developer</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-lightbrown g-rounded-3" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown18Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown18"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown18">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown18" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown18Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-left">Sarah Hayes</td>
+                  <td>Designer</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-lightblue-v3 g-rounded-3" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown19Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown19"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown19">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown19" class="u-shadow-v31 g-pos-abs g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown19Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Arthur Rodgers</td>
+                  <td>Eddie Munoz</td>
+                  <td>Product Manager</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-lightbrown g-rounded-3" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="g-pos-rel g-top-3 d-inline-block">
+                      <a
+                        id="dropDown20Invoker"
+                        class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                        href="#!"
+                        aria-controls="dropDown20"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        data-dropdown-target="#dropDown20">
+                        <i class="hs-admin-more-alt"></i>
+                      </a>
+
+                      <div id="dropDown20" class="u-shadow-v31 g-pos-abs g-bottom-100x g-right-0 g-z-index-2 g-bg-white" aria-labelledby="dropDown20Invoker">
+                        <ul class="list-unstyled g-nowrap mb-0">
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Edit
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Archive
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Mark as Done
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              New Task
+                            </a>
+                          </li>
+                          <li>
+                            <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                              <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <header class="g-mb-20">
+            <h2 class="g-font-weight-400 g-font-size-16 g-color-black mb-0">Editable Table</h2>
+          </header>
+
+          <div class="table-responsive">
+            <table class="js-editable-table table u-table--v3 u-editable-table--v1 g-color-black">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Project</th>
+                  <th>Assignee</th>
+                  <th>Latest Activity</th>
+                  <th>Tasks Done</th>
+                  <th></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td data-field="project">Wed Development</td>
+                  <td data-field="name">Abbie Hart</td>
+                  <td>14 Dec 2017</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-lightblue-v3 g-rounded-3" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <a class="js-edit u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                      <i class="hs-admin-pencil"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover g-ml-12" href="#!">
+                      <i class="hs-admin-trash"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td data-field="project">Seo Optimization</td>
+                  <td data-field="name">John Doe</td>
+                  <td>14 Jul 2017</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-primary g-rounded-3" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <a class="js-edit u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                      <i class="hs-admin-pencil"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover g-ml-12" href="#!">
+                      <i class="hs-admin-trash"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td data-field="project">Website Design</td>
+                  <td data-field="name">Kyle Campbell</td>
+                  <td>10 Jan 2017</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-lightbrown g-rounded-3" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <a class="js-edit u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                      <i class="hs-admin-pencil"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover g-ml-12" href="#!">
+                      <i class="hs-admin-trash"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td data-field="project">Wed Development</td>
+                  <td data-field="name">Ann Cooper</td>
+                  <td>24 Sep 2017</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-primary g-rounded-3" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <a class="js-edit u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                      <i class="hs-admin-pencil"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover g-ml-12" href="#!">
+                      <i class="hs-admin-trash"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td data-field="project">Admin Panel Design</td>
+                  <td data-field="name">Douglas Park</td>
+                  <td>30 Jun 2017</td>
+                  <td>
+                    <div class="progress g-height-6 g-rounded-3">
+                      <div class="progress-bar g-bg-lightblue-v3 g-rounded-3" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <a class="js-edit u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                      <i class="hs-admin-pencil"></i>
+                    </a>
+                    <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover g-text-underline--none--hover g-ml-12" href="#!">
+                      <i class="hs-admin-trash"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/blocks/modals/project-form.njk" %}
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Plugins Init. -->
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/table-edits/build/table-edits.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+      dropdownHideOnScroll: false,
+      dropdownType: 'css-animation',
+      dropdownAnimationIn: 'fadeIn',
+      dropdownAnimationOut: 'fadeOut'
+    });
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of editable table
+    $('.js-editable-table tr').editable({
+      keyboard: true,
+      dblclick: true,
+      button: true,
+      buttonSelector: '.js-edit',
+      maintainWidth: true,
+      edit: function (values) {
+        $('.js-edit i', this).removeClass('hs-admin-pencil').addClass('hs-admin-check g-color-lightblue-v3');
+      },
+      save: function (values) {
+        $('.js-edit i', this).removeClass('hs-admin-check g-color-lightblue-v3').addClass('hs-admin-pencil');
+      }
+    });
+  });
+</script>
+</body>
+</html>

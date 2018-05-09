@@ -1,0 +1,40 @@
+/*------------------------------------
+  Margins Extended
+------------------------------------*/
+
+//
+// Headers
+
+@mixin dropdown-margin($media-type) {
+  $media-value: 0;
+
+  @if $media-type == xs {
+    $media-value: 0;
+    $media-type: '';
+  } @else if $media-type == sm {
+    $media-value: $g-sm;
+    $media-type: --sm;
+  } @else if $media-type == md {
+    $media-value: $g-md;
+    $media-type: --md;
+  } @else if $media-type == lg {
+    $media-value: $g-lg;
+    $media-type: --lg;
+  }  @else {
+    $media-value: $g-xl;
+    $media-type: --xl;
+  }
+
+  @media (min-width: #{$media-value}) {
+    /* Margin Top */
+    $i: 1;
+    @while $i < 26 {
+      .js-header-change-moment .g-mt-#{$i}#{$media-type}--scrolling {
+        @include px-to-rem(margin-top, $i*1px !important);
+      }
+      $i: $i + 1;
+    }
+  }
+}
+
+@include dropdown-margin(lg);

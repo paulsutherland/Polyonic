@@ -1,0 +1,10 @@
+/*------------------------------------
+  Box-shadows-v19
+------------------------------------*/
+.u-shadow-v19 {
+  box-shadow: 0 5px 10px -6px rgba($g-color-black, .1);
+
+  &--lightblue {
+	  box-shadow: 0 5px 10px -6px rgba($g-color-blue, .15);
+	}
+}

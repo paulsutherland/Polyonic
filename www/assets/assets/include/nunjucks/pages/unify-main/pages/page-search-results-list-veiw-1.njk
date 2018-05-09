@@ -1,0 +1,390 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-search-results" %}
+{% set mainNavActive_3 = "page-search-results-list-veiw-1" %}
+{% set title = "Unify Search Results | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    {% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Page Title -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 g-bg-cover g-bg-white-gradient-opacity-v3--after" style="height: 140%; background-image: url({{ root }}assets/img-temp/1920x800/img10.jpg);"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container text-center g-py-100--md g-py-80">
+          <h2 class="h1 text-uppercase g-font-weight-300 g-mb-30">Search Results</h2>
+
+          <!-- Search Form -->
+          <form class="g-width-60x--md mx-auto">
+            <div class="form-group g-mb-20">
+              <div class="input-group u-shadow-v21 rounded g-mb-15">
+                <input class="form-control form-control-md g-brd-white g-font-size-16 border-right-0 pr-0 g-py-15" type="text" placeholder="Where can I download some freebies?">
+                <div class="input-group-addon d-flex align-items-center g-bg-white g-brd-white g-color-gray-light-v1 g-pa-2">
+                  <button class="btn u-btn-primary g-font-size-16 g-py-15 g-px-20" type="submit">
+                    <i class="icon-magnifier g-pos-rel g-top-1"></i>
+                  </button>
+                </div>
+              </div>
+              <small class="form-text g-opacity-0_8 g-font-size-default">Search any words, questions and so on here.</small>
+            </div>
+          </form>
+          <!-- End Search Form -->
+        </div>
+      </section>
+      <!-- Page Title -->
+
+      <section class="g-pt-50 g-pb-90">
+        <div class="container">
+          <!-- Search Info -->
+          <div class="d-md-flex justify-content-between g-mb-30">
+            <h3 class="h6 text-uppercase g-mb-10 g-mb--lg">About <span class="g-color-gray-dark-v1">384,907</span> results</h3>
+            <ul class="list-inline">
+              <li class="list-inline-item g-mr-30">
+                <a class="u-link-v5 g-color-gray-dark-v5 g-color-gray-dark-v5--hover" href="#!">
+                  <i class="icon-list g-pos-rel g-top-1 g-mr-5"></i> List View
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">
+                  <i class="icon-grid g-pos-rel g-top-1 g-mr-5"></i> Grid View
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Search Info -->
+
+          <!-- Search Result -->
+          <article>
+            <header class="g-mb-15">
+              <h2 class="h4 g-mb-5">
+                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Unify - Responsive Website Template</a>
+              </h2>
+              <span class="g-color-primary">https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697?ref=htmlstream</span>
+            </header>
+
+            <p class="g-mb-15">Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at, sed viverra cursus nibh. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+
+            <div class="d-lg-flex justify-content-between align-items-center">
+              <!-- Search Info -->
+              <ul class="list-inline g-mb-10 g-mb-0--lg">
+                <li class="list-inline-item g-mr-30">
+                  <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">John Doe</a>
+                </li>
+                <li class="list-inline-item g-mr-30">
+                  <i class="icon-calendar g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 2 weeks ago
+                </li>
+                <li class="list-inline-item g-mr-30">
+                  <i class="icon-eye g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 722,538
+                </li>
+              </ul>
+              <!-- End Search Info -->
+
+              <!-- Search Rating -->
+              <div>
+                <span class="js-rating g-color-primary mr-2" data-rating="5"></span>
+                <span class="g-color-gray-dark-v5">Relevance 5.0 out of 4902 votes</span>
+              </div>
+              <!-- End Search Rating -->
+            </div>
+          </article>
+          <!-- End Search Result -->
+
+          <hr class="g-brd-gray-light-v4 g-my-40">
+
+          <!-- Search Result -->
+          <article>
+            <header class="g-mb-15">
+              <h2 class="h4 g-mb-5">
+                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Stream - Bootstrap 4 UI Kit Freebie</a>
+              </h2>
+              <span class="g-color-primary">https://htmlstream.com/freebies/Stream-Bootstrap-4-UI-Kit</span>
+            </header>
+
+            <p class="g-mb-15">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores. Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at, sed viverra cursus nibh.</p>
+
+            <div class="d-lg-flex justify-content-between align-items-center">
+              <ul class="list-inline g-mb-10 g-mb-0--lg">
+                <li class="list-inline-item g-mr-30">
+                  <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="{{ root }}assets/img-temp/100x100/img1.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Htmlstream</a>
+                </li>
+                <li class="list-inline-item g-mr-30">
+                  <i class="icon-calendar g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 3 weeks ago
+                </li>
+                <li class="list-inline-item">
+                  <i class="icon-eye g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 178,273
+                </li>
+              </ul>
+
+              <!-- Search Rating -->
+              <div>
+                <span class="js-rating g-color-primary mr-2" data-rating="4"></span>
+                <span class="g-color-gray-dark-v5">Relevance 4.0 out of 2029 votes</span>
+              </div>
+              <!-- End Search Rating -->
+            </div>
+          </article>
+          <!-- End Search Result -->
+
+          <hr class="g-brd-gray-light-v4 g-my-40">
+
+          <!-- Search Result -->
+          <article>
+            <header class="g-mb-15">
+              <h2 class="h4 g-mb-5">
+                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Admin UI Kit - Free PSD &amp; Sketch</a>
+              </h2>
+              <span class="g-color-primary">https://htmlstream.com/freebies/Admin-UI-Kit</span>
+            </header>
+
+            <p class="g-mb-15">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores. Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at, sed viverra cursus nibh.</p>
+
+            <div class="d-lg-flex justify-content-between align-items-center">
+              <ul class="list-inline g-mb-10 g-mb-0--lg">
+                <li class="list-inline-item g-mr-30">
+                  <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Sally Manning</a>
+                </li>
+                <li class="list-inline-item g-mr-30">
+                  <i class="icon-calendar g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 4 weeks ago
+                </li>
+                <li class="list-inline-item">
+                  <i class="icon-eye g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 132,849
+                </li>
+              </ul>
+
+              <!-- Search Rating -->
+              <div>
+                <span class="js-rating g-color-primary mr-2" data-rating="4.5"></span>
+                <span class="g-color-gray-dark-v5">Relevance 4.5 out of 1029 votes</span>
+              </div>
+              <!-- End Search Rating -->
+            </div>
+          </article>
+          <!-- End Search Result -->
+
+          <hr class="g-brd-gray-light-v4 g-my-40">
+
+          <!-- Search Result -->
+          <article>
+            <header class="g-mb-15">
+              <h2 class="h4 g-mb-5">
+                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Dribbble Mockups - PSD Freebies For Themes</a>
+              </h2>
+              <span class="g-color-primary">https://example.com/freebies/Dribbble-UI-Kit</span>
+            </header>
+
+            <p class="g-mb-15">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores. Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at, sed viverra cursus nibh.</p>
+
+            <div class="d-lg-flex justify-content-between align-items-center">
+              <ul class="list-inline g-mb-10 g-mb-0--lg">
+                <li class="list-inline-item g-mr-30">
+                  <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">David Miller</a>
+                </li>
+                <li class="list-inline-item g-mr-30">
+                  <i class="icon-calendar g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 1 month ago
+                </li>
+                <li class="list-inline-item">
+                  <i class="icon-eye g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 201,032
+                </li>
+              </ul>
+
+              <!-- Search Rating -->
+              <div>
+                <span class="js-rating g-color-gray-light-v2 mr-2" data-rating="0"></span>
+                <span class="g-color-gray-dark-v5">Unknown rating</span>
+              </div>
+              <!-- End Search Rating -->
+            </div>
+          </article>
+          <!-- End Search Result -->
+
+          <hr class="g-brd-gray-light-v4 g-my-40">
+
+          <!-- Search Result -->
+          <article>
+            <header class="g-mb-15">
+              <h2 class="h4 g-mb-5">
+                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Pixel UI Kit - Over 300 Sketch Layouts</a>
+              </h2>
+              <span class="g-color-primary">https://pixeel.c.ukm/freebies/Pixel-UI-Kit</span>
+            </header>
+
+            <p class="g-mb-15">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores. Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at, sed viverra cursus nibh.</p>
+
+            <div class="d-lg-flex justify-content-between align-items-center">
+              <ul class="list-inline g-mb-10 g-mb-0--lg">
+                <li class="list-inline-item g-mr-30">
+                  <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="{{ root }}assets/img-temp/100x100/img3.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Pixeel</a>
+                </li>
+                <li class="list-inline-item g-mr-30">
+                  <i class="icon-calendar g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 2 months ago
+                </li>
+                <li class="list-inline-item">
+                  <i class="icon-eye g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 442,371
+                </li>
+              </ul>
+
+              <!-- Search Rating -->
+              <div>
+                <span class="js-rating g-color-primary mr-2" data-rating="5"></span>
+                <span class="g-color-gray-dark-v5">Relevance 5.0 out of 3849 votes</span>
+              </div>
+              <!-- End Search Rating -->
+            </div>
+          </article>
+          <!-- End Search Result -->
+
+          <hr class="g-brd-gray-light-v4 g-my-40">
+
+          <!-- Pagination -->
+          <nav class="g-mb-50" aria-label="Page Navigation">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a class="u-pagination-v1__item u-pagination-v1-5 rounded g-pa-4-13" href="#!" aria-label="Previous">
+                <span aria-hidden="true">
+                  <i class="fa fa-angle-left"></i>
+                </span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="list-inline-item g-hidden-sm-down">
+                <a class="u-pagination-v1__item u-pagination-v1-5 u-pagination-v1-5--active rounded g-pa-4-11" href="#!">1</a>
+              </li>
+              <li class="list-inline-item g-hidden-sm-down">
+                <a class="u-pagination-v1__item u-pagination-v1-5 rounded g-pa-4-11" href="#!">2</a>
+              </li>
+              <li class="list-inline-item g-hidden-sm-down">
+                <a class="u-pagination-v1__item u-pagination-v1-5 rounded g-pa-4-11" href="#!">3</a>
+              </li>
+              <li class="list-inline-item g-hidden-sm-down">
+                <span class="g-pa-4-11">...</span>
+              </li>
+              <li class="list-inline-item g-hidden-sm-down">
+                <a class="u-pagination-v1__item u-pagination-v1-5 rounded g-pa-4-11" href="#!">80</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="u-pagination-v1__item u-pagination-v1-5 rounded g-pa-4-13" href="#!" aria-label="Next">
+                <span aria-hidden="true">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+              <li class="list-inline-item float-right">
+                <span class="u-pagination-v1__item-info g-pa-4-11">Page 1 of 80</span>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Pagination -->
+
+          <h3 class="h5 g-color-gray-dark-v1 g-mb-20">Searches Related to Unify Template</h3>
+
+          <!-- Tags -->
+          <ul class="u-list-inline g-width-60x--md mb-0">
+            <li class="list-inline-item g-mb-10">
+              <a class="u-tags-v1 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-4 g-px-10" href="#!">Wrapbootstrap</a>
+            </li>
+            <li class="list-inline-item g-mb-10">
+              <a class="u-tags-v1 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-4 g-px-10" href="#!">Web Design</a>
+            </li>
+            <li class="list-inline-item g-mb-10">
+              <a class="u-tags-v1 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-4 g-px-10" href="#!">Best Responsive Bootstrap Template</a>
+            </li>
+            <li class="list-inline-item g-mb-10">
+              <a class="u-tags-v1 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-4 g-px-10" href="#!">Thematic Pages</a>
+            </li>
+            <li class="list-inline-item g-mb-10">
+              <a class="u-tags-v1 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-4 g-px-10" href="#!">Corporate &amp; Business Template</a>
+            </li>
+            <li class="list-inline-item g-mb-10">
+              <a class="u-tags-v1 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-4 g-px-10" href="#!">SASS</a>
+            </li>
+          </ul>
+          <!-- End Tags -->
+        </div>
+      </section>
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/appear.js"></script>
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.rating.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of rating
+        $.HSCore.components.HSRating.init($('.js-rating'), {
+          spacing: 2
+        });
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

@@ -1,0 +1,22 @@
+/*------------------------------------
+  Heading-v10
+------------------------------------*/
+.u-heading-v10 {
+  position: relative;
+  text-align: center;
+
+  &__downer {
+    font-size: 115px;
+    line-height: 1;
+    opacity: .04;
+  }
+
+  &__upper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+    color: $g-color-primary;
+  }
+}

@@ -1,0 +1,20 @@
+<!-- Show / Copy Code -->
+<script src="{{ root }}assets/vendor/clipboard/dist/clipboard.min.js"></script>
+<script src="{{ root }}assets/vendor/prism/prism.core.min.js"></script>
+
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ root }}assets/vendor/custombox/custombox.min.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ root }}assets/js/components/hs.modal-window.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.modal-markup.js"></script>
+<script src="{{ root }}assets/js/components/hs.markup-copy.js"></script>
+<script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+
+<script>
+  $(document).on('ready', function () {
+    $.HSCore.helpers.HSModalMarkup.init('.js-modal-markup');
+
+    $.HSCore.components.HSMarkupCopy.init('.js-copy');
+  });
+</script>

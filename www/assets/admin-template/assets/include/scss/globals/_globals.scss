@@ -1,0 +1,23 @@
+[aria-labelledby] {
+  opacity: 0;
+
+  &[role="tabpanel"],
+  &.u-dropdown--css-animation,
+  &.u-dropdown--jquery-slide {
+    opacity: 1;
+  }
+}
+
+tbody[role="tablist"] {
+  &:not([data-tabs-mobile-type="slide-up-down"]) {
+    &:not([data-tabs-mobile-type="accordion"]) {
+      &:not([data-scroll]) {
+        display: table-row-group;
+      }
+    }
+  }
+}
+
+.responsive-table {
+  overflow-x: hidden;
+}

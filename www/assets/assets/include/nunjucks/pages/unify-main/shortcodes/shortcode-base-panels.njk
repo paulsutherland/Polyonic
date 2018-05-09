@@ -1,0 +1,1157 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-panels" %}
+{% set title = "Card Panels" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section>
+      <!-- Bootstrap Inverse Card Panels -->
+      <section class="g-py-100">
+        <div class="container">
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Bootstrap Inverse Card Panels</h2>
+            </div>
+            <div class="g-line-height-2 g-pl-90">
+              <p>If you’re familiar with Bootstrap 3, cards replace old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards. All default card panels includes a class
+                <code>.card-inverse</code>. You may also use Unify predefined colors with global classes or create your own colors.
+              </p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Primary Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Primary panel</h3>
+              <p>Use a class <code>.bg-primary</code> for default Bootstrap primary color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode1">
+                <div class="shortcode-html">
+                  <!-- Primary Panel -->
+                  <div class="card card-inverse bg-primary text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Primary panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Primary Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode1" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Primary Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Info Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Info panel</h3>
+              <p>Use a class <code>.bg-info</code> for default Bootstrap info color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode2">
+                <div class="shortcode-html">
+                  <!-- Info Panel -->
+                  <div class="card card-inverse bg-info text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Info Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Info Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode2" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Info Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Success Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Success panel</h3>
+              <p>Use a class <code>.bg-success</code> for default Bootstrap success color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode3">
+                <div class="shortcode-html">
+                  <!-- Success Panel -->
+                  <div class="card card-inverse bg-success text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Success Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Success Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode3" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Success Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Warning Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Warning panel</h3>
+              <p>Use a class <code>.bg-warning</code> for default Bootstrap warning color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode4">
+                <div class="shortcode-html">
+                  <!-- Warning Panel -->
+                  <div class="card card-inverse bg-warning text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Warning Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Warning Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode4" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Warning Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Danger Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Danger panel</h3>
+              <p>Use a class <code>.bg-danger</code> for default Bootstrap danger color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode5">
+                <div class="shortcode-html">
+                  <!-- Danger Panel -->
+                  <div class="card card-inverse bg-danger text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Danger Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Danger Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode5" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Danger Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Primary Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify primary panel</h3>
+              <p>Use a class <code>.g-bg-primary</code> and
+                <code class="text-nowrap">g-brd-primary</code> for default Unify primary color color.</p>
+              <p><em>"You may use any availabe Unify predefined colors or create your own style."</em></p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode6">
+                <div class="shortcode-html">
+                  <!-- Unify Primary Panel -->
+                  <div class="card card-inverse g-bg-primary g-brd-primary text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Primary Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Primary Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode6" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Primary Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Blue Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify blue panel</h3>
+              <p>Use a class <code>.g-bg-blue</code> and
+                <code class="text-nowrap">g-brd-blue</code> for default Unify blue color color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode7">
+                <div class="shortcode-html">
+                  <!-- Unify Blue Panel -->
+                  <div class="card card-inverse g-bg-blue g-brd-blue text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Blue Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Blue Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode7" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Blue Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Light Red Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify light red panel</h3>
+              <p>Use a class <code>.g-bg-lightred</code> and
+                <code class="text-nowrap">g-brd-lightred</code> for default Unify lightred color color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode8">
+                <div class="shortcode-html">
+                  <!-- Unify Light Red Panel -->
+                  <div class="card card-inverse g-bg-lightred g-brd-lightred text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Light Red Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Light Red Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode8" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Light Red Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Black Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify black panel</h3>
+              <p>Use a class <code>.g-bg-black</code> and
+                <code class="text-nowrap">g-brd-black</code> for default Unify black color color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode9">
+                <div class="shortcode-html">
+                  <!-- Unify Black Panel -->
+                  <div class="card card-inverse g-bg-black g-brd-black text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Black Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Black Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode9" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Black Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Teal Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify teal panel</h3>
+              <p>Use a class <code>.g-bg-teal</code> and
+                <code class="text-nowrap">g-brd-teal</code> for default Unify teal color color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode10">
+                <div class="shortcode-html">
+                  <!-- Unify Teal Panel -->
+                  <div class="card card-inverse g-bg-teal g-brd-teal text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Teal Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Teal Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode10" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Teal Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Purple Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify purple panel</h3>
+              <p>Use a class <code>.g-bg-purple</code> and
+                <code class="text-nowrap">g-brd-purple</code> for default Unify purple color color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode11">
+                <div class="shortcode-html">
+                  <!-- Unify Purple Panel -->
+                  <div class="card card-inverse g-bg-purple g-brd-purple text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Purple Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Purple Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode11" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Purple Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Cyan Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify cyan panel</h3>
+              <p>Use a class <code>.g-bg-cyan</code> and
+                <code class="text-nowrap">g-brd-cyan</code> for default Unify cyan color color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode12">
+                <div class="shortcode-html">
+                  <!-- Unify Cyan Panel -->
+                  <div class="card card-inverse g-bg-cyan g-brd-cyan text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Cyan Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Cyan Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode12" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Cyan Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Dark Blue Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify dark blue panel</h3>
+              <p>Use a class <code>.g-bg-darkblue</code> and
+                <code class="text-nowrap">g-brd-darkblue</code> for default Unify darkblue color color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode13">
+                <div class="shortcode-html">
+                  <!-- Unify Dark Blue Panel -->
+                  <div class="card card-inverse g-bg-darkblue g-brd-darkblue text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Dark Blue Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Dark Blue Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode13" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Dark Blue Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Pink Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify pink panel</h3>
+              <p>Use a class <code>.g-bg-pink</code> and
+                <code class="text-nowrap">g-brd-pink</code> for default Unify pink color color.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode14">
+                <div class="shortcode-html">
+                  <!-- Unify Pink Panel -->
+                  <div class="card card-inverse g-bg-pink g-brd-pink text-white rounded-0">
+                    <h3 class="card-header h5">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Pink Panel
+                    </h3>
+
+                    <div class="card-block g-pa-15">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Pink Panel -->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode14" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Pink Panel -->
+        </div>
+      </section>
+      <!-- End Bootstrap Inverse Card Panels -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <section class="g-py-100">
+        <div class="container">
+          <!-- Heading -->
+          <header class="g-mb-80">
+            <div class="u-heading-v6-2 text-uppercase">
+              <h2 class="h4 u-heading-v6__title g-font-weight-300">Bootstrap Outline Card Panels</h2>
+            </div>
+            <div class="g-line-height-2 g-pl-90">
+              <p>If you’re familiar with Bootstrap 3, cards replace old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards. You may also use Unify predefined colors with global classes or create your own colors.</p>
+            </div>
+          </header>
+          <!-- End Heading -->
+
+          <!-- Default Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Default outline panel</h3>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode15">
+                <div class="shortcode-html">
+                  <!-- Default Outline Panel-->
+                  <div class="card rounded-0">
+                    <h3 class="card-header h5 rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Default Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Default Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode15" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Default Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Primary Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Primary outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode16">
+                <div class="shortcode-html">
+                  <!-- Primary Outline Panel-->
+                  <div class="card card-outline-primary rounded-0">
+                    <h3 class="card-header h5 text-white bg-primary g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Primary Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Primary Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode16" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Primary Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Info Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Info outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode17">
+                <div class="shortcode-html">
+                  <!-- Info Outline Panel-->
+                  <div class="card card-outline-info rounded-0">
+                    <h3 class="card-header h5 text-white bg-info g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Info Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Info Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode17" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Info Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Success Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Success outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode18">
+                <div class="shortcode-html">
+                  <!-- Success Outline Panel-->
+                  <div class="card card-outline-success rounded-0">
+                    <h3 class="card-header h5 text-white bg-success g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Success Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Success Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode18" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Success Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Warning Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Warning outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode19">
+                <div class="shortcode-html">
+                  <!-- Warning Outline Panel-->
+                  <div class="card card-outline-warning rounded-0">
+                    <h3 class="card-header h5 text-white bg-warning g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Warning Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Warning Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode19" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Warning Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Danger Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Danger outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode20">
+                <div class="shortcode-html">
+                  <!-- Danger Outline Panel-->
+                  <div class="card card-outline-danger rounded-0">
+                    <h3 class="card-header h5 text-white bg-danger g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Danger Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Danger Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode20" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Danger Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Primary Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify primary outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+              <p><em>"You may use any availabe Unify predefined colors or create your own style."</em></p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode21">
+                <div class="shortcode-html">
+                  <!-- Unify Primary Outline Panel-->
+                  <div class="card g-brd-primary rounded-0">
+                    <h3 class="card-header h5 text-white g-bg-primary g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Primary Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Primary Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode21" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Primary Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Blue Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify blue outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode22">
+                <div class="shortcode-html">
+                  <!-- Unify Blue Outline Panel-->
+                  <div class="card g-brd-blue rounded-0">
+                    <h3 class="card-header h5 text-white g-bg-blue g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Blue Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Blue Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode22" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Blue Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Light Red Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify light red outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode23">
+                <div class="shortcode-html">
+                  <!-- Unify Light Red Outline Panel-->
+                  <div class="card g-brd-lightred rounded-0">
+                    <h3 class="card-header h5 text-white g-bg-lightred g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Light Red Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Light Red Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode23" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Light Red Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Black Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify black outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode24">
+                <div class="shortcode-html">
+                  <!-- Unify Black Outline Panel-->
+                  <div class="card g-brd-black rounded-0">
+                    <h3 class="card-header h5 text-white g-bg-black g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Black Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Black Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode24" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Black Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Teal Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify teal outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode25">
+                <div class="shortcode-html">
+                  <!-- Unify Teal Outline Panel-->
+                  <div class="card g-brd-teal rounded-0">
+                    <h3 class="card-header h5 text-white g-bg-teal g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Teal Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Teal Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode25" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Teal Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Purple Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify purple outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode26">
+                <div class="shortcode-html">
+                  <!-- Unify Purple Outline Panel-->
+                  <div class="card g-brd-purple rounded-0">
+                    <h3 class="card-header h5 text-white g-bg-purple g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Purple Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Purple Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode26" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Purple Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Cyan Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify cyan outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode27">
+                <div class="shortcode-html">
+                  <!-- Unify Cyan Outline Panel-->
+                  <div class="card g-brd-cyan rounded-0">
+                    <h3 class="card-header h5 text-white g-bg-cyan g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Cyan Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Cyan Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode27" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Cyan Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Dark Blue Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify dark blue outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode28">
+                <div class="shortcode-html">
+                  <!-- Unify Dark Blue Outline Panel-->
+                  <div class="card g-brd-darkblue rounded-0">
+                    <h3 class="card-header h5 text-white g-bg-darkblue g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Dark Blue Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Dark Blue Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode28" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Dark Blue Outline Panel -->
+
+          <hr class="g-brd-gray-light-v4 g-my-50">
+
+          <!-- Unify Pink Outline Panel -->
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="h4 g-font-weight-300">Unify pink outline panel</h3>
+              <p>Use an addition utility class <code class="text-nowrap">.text-white</code> for card headers.</p>
+            </div>
+
+            <div class="col-md-9">
+              <div id="shortcode29">
+                <div class="shortcode-html">
+                  <!-- Unify Pink Outline Panel-->
+                  <div class="card g-brd-pink rounded-0">
+                    <h3 class="card-header h5 text-white g-bg-pink g-brd-transparent rounded-0">
+                      <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
+                      Unify Pink Outline Panel
+                    </h3>
+
+                    <div class="card-block">
+                      <h4 class="h5">Accusamus et iusto odio</h4>
+                      <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                  </div>
+                  <!-- End Unify Pink Outline Panel-->
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode29" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+          </div>
+          <!-- End Unify Pink Outline Panel -->
+        </div>
+      </section>
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

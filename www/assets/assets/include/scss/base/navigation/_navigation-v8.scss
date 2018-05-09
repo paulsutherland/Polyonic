@@ -1,0 +1,61 @@
+/*------------------------------------
+  Navigation Style v8
+------------------------------------*/
+
+.navbar .u-main-nav-v8 {
+	.nav-link {
+		@extend %u-main-nav-base-link;
+
+		color: $g-color-gray-dark-v2;
+
+		@include px-to-rem(padding, 11px 30px);
+	}
+
+	.nav-item {
+		&.hs-has-sub-menu,
+		&.hs-has-mega-menu,
+		&.dropdown {
+			@extend %u-main-nav-has-sub-menu;
+
+			> a {
+				@include px-to-rem(padding-right, 45px);
+
+				&::after {
+					@include px-to-rem(right, 25px);
+				}
+			}
+		}
+
+		&.active > .nav-link,
+		&:hover > .nav-link,
+		&:focus > .nav-link,
+		&.show > .nav-link,
+		&.hs-sub-menu-opened > .nav-link,
+		.nav-link:focus {
+			color: $g-color-white;
+			background-color: $g-color-primary;
+		}
+	}
+}
+
+@media all and (max-width: #{$g-xl}-1) {
+	.navbar .u-main-nav-v8 {
+		.nav-link {
+			@include px-to-rem(padding, 9px 20px);
+		}
+
+		.nav-item {
+			&.hs-has-sub-menu,
+			&.hs-has-mega-menu,
+			&.dropdown {
+				> a {
+					@include px-to-rem(padding-right, 30px);
+
+					&::after {
+						@include px-to-rem(right, 15px);
+					}
+				}
+			}
+		}
+	}
+}

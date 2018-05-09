@@ -1,0 +1,38 @@
+[
+  {
+    "label": "JavaScript",
+    "category": ""
+  },
+  {
+    "label": "Python",
+    "category": ""
+  },
+  {
+    "label": "PHP",
+    "category": ""
+  },
+  {
+    "label": "Autors",
+    "category": "Automotive"
+  },
+  {
+    "label": "Auto parts",
+    "category": "Automotive"
+  },
+  {
+    "label": "Automotive",
+    "category": "Automotive"
+  },
+  {
+    "label": "Audit",
+    "category": "Banking"
+  },
+  {
+    "label": "Tax & legaly",
+    "category": "Banking"
+  },
+  {
+    "label": "Advisory",
+    "category": "Banking"
+  }
+]

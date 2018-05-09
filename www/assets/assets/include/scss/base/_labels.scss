@@ -1,0 +1,116 @@
+/*------------------------------------
+  Background Colors
+------------------------------------*/
+.u-label {
+  display: inline-block;
+  padding: .35rem .58rem;
+  font-size: .9rem;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+
+  &:empty {
+    display: none;
+  }
+  .btn & {
+    position: relative;
+    top: -1px;
+  }
+
+  // Default color
+  &-default {
+    background-color: $g-color-gray-dark-v4;
+  }
+  &-default[href]:hover,
+  &-default[href]:focus {
+    background-color: $g-color-gray-dark-v3;
+  }
+
+  // Primary color
+  &-primary {
+    background-color: $g-color-success;
+  }
+  &-primary[href]:hover,
+  &-primary[href]:focus {
+    background-color: $g-color-success-dark-v1;
+  }
+
+  // Success color
+  &-success {
+    background-color: $g-color-success;
+  }
+  &-success[href]:hover,
+  &-success[href]:focus {
+    background-color: $g-color-success-dark-v1;
+  }
+
+  // Info color
+  &-info {
+    background-color: $g-color-info;
+  }
+  &-info[href]:hover,
+  &-info[href]:focus {
+    background-color: $g-color-info-dark-v1;
+  }
+
+  // Warning color
+  &-warning {
+    background-color: $g-color-warning;
+  }
+  &-warning[href]:hover,
+  &-warning[href]:focus {
+    background-color: $g-color-warning-dark-v1;
+  }
+
+  // Danger color
+  &-danger {
+    background-color: $g-color-danger;
+  }
+  &-danger[href]:hover,
+  &-danger[href]:focus {
+    background-color: $g-color-danger-dark-v1;
+  }
+
+  &.g-rounded-10 {
+    padding: .35rem .7rem;
+  }
+
+  /* Label Size
+  ------------------------------------*/
+  &--sm {
+    font-size: .8rem;
+  }
+  &--lg {
+    font-size: 1.1rem;
+  }
+
+  /* Label Styles
+  ------------------------------------*/
+  &.u-label-with-icon {
+    padding: .5rem .85rem;
+
+    & i {
+      margin-right: .5rem;
+    }
+  }
+
+  /* Label Num
+  ------------------------------------*/
+  &-num {
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 .35rem;
+    line-height: 2rem;
+  }
+  &-num.u-label--sm {
+    min-width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+  }
+  &-num.u-label--lg {
+    min-width: 2.2rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+  }
+}

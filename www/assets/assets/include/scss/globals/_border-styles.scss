@@ -1,0 +1,22 @@
+/*------------------------------------
+  Border Style
+------------------------------------*/
+.g-brd-style {
+  &-solid {
+    border: {
+      style: solid !important;
+    }
+  }
+
+  &-dashed {
+    border: {
+      style: dashed !important;
+    }
+  }
+
+  &-dotted {
+    border: {
+      style: dotted !important;
+    }
+  }
+}

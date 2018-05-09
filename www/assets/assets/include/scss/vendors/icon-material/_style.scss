@@ -1,0 +1,9 @@
+.material-icons {
+  position: relative;
+  @include px-to-rem(top, 2px);
+
+  .u-btn-floating &,
+  .u-chip & {
+    top: 0;
+  }
+}

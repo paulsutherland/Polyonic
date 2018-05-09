@@ -1,0 +1,204 @@
+/*------------------------------------
+  Border Colors
+------------------------------------*/
+
+
+.g-brd {
+  /* Gray Border */
+  &-gray {
+    // Gray Light
+    &-light {
+      &-v6 {
+        border-color: $g-color-gray-light-v6 !important;
+      }
+
+      &-v7 {
+        border-color: $g-color-gray-light-v7 !important;
+
+        &--before {
+          &::before {
+            border-color: $g-color-gray-light-v7 !important;
+          }
+        }
+      }
+
+      &-v8 {
+        border-color: $g-color-gray-light-v8 !important;
+      }
+
+      &-v9 {
+        border-color: $g-color-gray-light-v9 !important;
+      }
+    }
+
+    // Gray Dark
+    &-dark {
+      &-v6 {
+        border-color: $g-color-gray-dark-v6 !important;
+      }
+
+      &-v7 {
+        border-color: $g-color-gray-dark-v7 !important;
+      }
+
+      &-v8 {
+        border-color: $g-color-gray-dark-v8 !important;
+      }
+
+      &-v9 {
+        border-color: $g-color-gray-dark-v9 !important;
+      }
+
+      &-v10 {
+        border-color: $g-color-gray-dark-v10 !important;
+      }
+    }
+  }
+
+  /* Lightblue Border */
+  &-lightblue {
+    &-v2 {
+      border-color: $g-color-lightblue-v2 !important;
+    }
+
+    &-v3 {
+      border-color: $g-color-lightblue-v3 !important;
+
+      &--hover:hover {
+        border-color: $g-color-lightblue-v3 !important;
+      }
+
+      &--focus:focus {
+        border-color: $g-color-lightblue-v3 !important;
+      }
+
+      &--active:active,
+      &--active.active {
+        border-color: $g-color-lightblue-v3 !important;
+      }
+
+      &--checked {
+        input[type="checkbox"]:checked + &,
+        input[type="radio"]:checked + & {
+          border-color: $g-color-lightblue-v3 !important;
+        }
+
+        i {
+          input[type="checkbox"]:checked + &,
+          input[type="radio"]:checked + & {
+            border-color: $g-color-lightblue-v3 !important;
+          }
+        }
+      }
+
+      &--parent-checked {
+        input[type="checkbox"]:checked + * + &,
+        input[type="radio"]:checked + * + & {
+          border-color: $g-color-lightblue-v3 !important;
+        }
+      }
+
+      &--opened {
+        &[aria-expanded="true"],
+        [aria-expanded="true"] > & {
+          border-color: $g-color-lightblue-v3 !important;
+        }
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          border-color: $g-color-lightblue-v3 !important;
+        }
+      }
+    }
+
+    &-v4 {
+      border-color: $g-color-lightblue-v4 !important;
+    }
+
+    &-v5 {
+      border-color: $g-color-lightblue-v5 !important;
+    }
+
+    &-v6 {
+      border-color: $g-color-lightblue-v6 !important;
+    }
+  }
+
+  /* Darkblue Border */
+  &-darkblue {
+    &-v2 {
+      border-color: $g-color-darkblue-v2 !important;
+    }
+
+    &-v3 {
+      border-color: $g-color-darkblue-v3 !important;
+    }
+
+    &-v4 {
+      border-color: $g-color-darkblue-v4 !important;
+    }
+
+    &-v5 {
+      border-color: $g-color-darkblue-v5 !important;
+    }
+
+    &-v6 {
+      border-color: $g-color-darkblue-v6 !important;
+    }
+
+    &-v7 {
+      border-color: $g-color-darkblue-v7 !important;
+    }
+  }
+
+  /* Teal Border */
+  &-teal {
+    &-v2 {
+      border-color: $g-color-teal-v2 !important;
+    }
+  }
+
+  /* Lightred Border */
+  &-lightred {
+    &-v2 {
+      border-color: $g-color-lightred-v2 !important;
+
+      &--error {
+        .u-has-error-v3 & {
+          border-color: $g-color-lightred-v2 !important;
+        }
+      }
+    }
+
+    &-v3 {
+      border-color: $g-color-lightred-v3 !important;
+    }
+  }
+
+  /* Pink Border */
+  &-pink-v2 {
+    border-color: $g-color-pink-v2 !important;
+
+    &--error {
+      [class*="has-error"] & {
+        border-color: $g-color-pink-v2 !important;
+      }
+    }
+  }
+
+  /* Lightbrown Border */
+  &-lightbrown {
+    border-color: $g-color-lightbrown !important;
+  }
+
+  /* Lightyellow Border */
+  &-lightyellow {
+    border-color: $g-color-lightyellow !important;
+  }
+
+  /* Dropbox Border */
+  &-dropbox {
+    border-color: $g-color-dropbox !important;
+  }
+}

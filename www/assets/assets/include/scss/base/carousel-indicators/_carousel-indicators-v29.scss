@@ -1,0 +1,43 @@
+/*------------------------------------
+  Carousel indicators v29
+------------------------------------*/
+
+.u-carousel-indicators-v29 {
+  position: absolute;
+  white-space: nowrap;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    min-width: 30px;
+    cursor: pointer;
+    float: none;
+    border-top: 3px solid $g-color-white;
+    margin: -2px 20px 0;
+
+    &.slick-active {
+      color: $g-color-primary;
+      border-top-color: $g-color-primary;
+    }
+  }
+
+  .u-dot-title {
+    display: none;
+  }
+}
+
+@media (min-width: $g-sm) {
+  .u-carousel-indicators-v29 {
+    border-top: 1px solid;
+
+    li {
+      border-top: 3px solid transparent;
+      padding-top: 10px;
+      margin: -2px 20px 0;
+    }
+
+    .u-dot-title {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/*------------------------------------
+  Image Icons
+------------------------------------*/
+.u-image-icon-size-xs,
+.u-image-icon-size-sm,
+.u-image-icon-size-md,
+.u-image-icon-size-lg,
+.u-image-icon-size-xl {
+  height: auto;
+}
+.u-image-icon-size-xs {
+  @include px-to-rem(width, 30px);
+}
+.u-image-icon-size-sm {
+  @include px-to-rem(width, 40px);
+}
+.u-image-icon-size-md {
+  @include px-to-rem(width, 55px);
+}
+.u-image-icon-size-lg {
+  @include px-to-rem(width, 70px);
+}
+.u-image-icon-size-xl {
+  @include px-to-rem(width, 90px);
+}
+.u-image-icon-size-2xl {
+  @include px-to-rem(width, 100px);
+}

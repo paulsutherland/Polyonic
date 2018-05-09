@@ -1,0 +1,86 @@
+/*------------------------------------
+  Variables
+------------------------------------*/
+
+//
+// Colors
+//
+
+// Main Colors
+$g-color-main: #333;
+
+// Primary Color
+$g-color-primary: #e62154;
+
+// Secondary Color
+$g-color-secondary: #13b2ca;
+
+// Theme Colors
+$g-theme-color-white-opacity-0_3: rgba(255, 255, 255, .3);
+$g-theme-color-white-opacity-0_7: rgba(255, 255, 255, .7);
+$g-theme-color-white-opacity-0_9: rgba(255, 255, 255, .9);
+
+// Color Light Gray
+$g-color-gray-light-v6: #bac9c9 !default;
+$g-color-gray-light-v7: #e1eaea !default;
+$g-color-gray-light-v8: #f5f9f9 !default;
+$g-color-gray-light-v9: #d4dade !default;
+$g-color-gray-light-v10: #cad6d6 !default;
+$g-color-gray-light-v11: #acbdbd !default;
+$g-color-gray-light-v12: #f1f5f5 !default;
+
+// Color Dark Gray
+$g-color-gray-dark-v6: #53585e !default;
+$g-color-gray-dark-v7: #8c8f92 !default;
+$g-color-gray-dark-v8: #6d7c9f !default;
+$g-color-gray-dark-v9: #bfcece !default;
+$g-color-gray-dark-v10: #666b6e !default;
+$g-color-gray-dark-v11: #41464B !default;
+$g-color-gray-dark-v12: #797c80 !default;
+
+// Color Light Blue
+$g-color-lightblue-v2: #7484a8 !default;
+$g-color-lightblue-v3: #1cc9e4 !default;
+$g-color-lightblue-v4: #3dd1e8 !default;
+$g-color-lightblue-v5: #13b2ca !default;
+$g-color-lightblue-v6: #dbf4f4 !default;
+$g-color-lightblue-v7: #25cce6 !default;
+$g-color-lightblue-v8: #18b7d0 !default;
+$g-color-lightblue-v9: #22bfdd;
+$g-color-lightblue-v10: #dae4eb;
+
+// Color Dark Blue
+$g-color-darkblue-v2: #1d75e5 !default;
+$g-color-darkblue-v3: #222e44 !default;
+$g-color-darkblue-v4: #2e3c56 !default;
+$g-color-darkblue-v5: #8294b9 !default;
+$g-color-darkblue-v6: #4b5770 !default; // -> $g-theme-color-white-opacity-0_3
+$g-color-darkblue-v7: #1d9be5 !default;
+$g-color-darkblue-v8: #025bb3 !default;
+$g-color-darkblue-v9: #195cde !default;
+$g-color-darkblue-v10: #29364d !default;
+
+// Color Teal
+$g-color-teal-v2: #15d3b2 !default;
+$g-color-teal-v3: #20cca3 !default;
+
+// Color Green
+$g-color-green-v2: #5eb302 !default;
+
+// Color Light Red
+$g-color-lightred-v2: #e62154 !default;
+$g-color-lightred-v3: #e12254 !default;
+$g-color-lightred-v4: #ff4b00 !default;
+$g-color-lightred-v5: #e50000 !default;
+
+// Color Pink
+$g-color-pink-v2: #fdd3de !default;
+
+// Color Brown
+$g-color-lightbrown: #e6a821 !default;
+
+// Color Yellow
+$g-color-lightyellow: #e7d90f !default;
+
+// Color Dropbox
+$g-color-dropbox: #0f82e2 !default;

@@ -1,0 +1,476 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-static-process-blocks-1" %}
+{% set title = "Static Process Blocks" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section>
+      <!-- Static Process v1 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4 g-mb-0">Process
+              <span class="g-color-primary g-ml-5">#01</span>
+            </h2>
+          </div>
+
+          <div id="shortcode1">
+            <div class="shortcode-html">
+              <!-- Static Process -->
+              <div class="row">
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <i class="u-dot-line-v1-2 g-brd-transparent--before g-brd-gray-light-v2--after g-mb-20">
+                      <span class="u-dot-line-v1__inner g-bg-white g-bg-primary--before g-brd-gray-light-v2"></span>
+                    </i>
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Consult</h3>
+                    <p class="mb-0">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <i class="u-dot-line-v1-2 g-brd-gray-light-v2--before g-brd-gray-light-v2--after g-mb-20">
+                      <span class="u-dot-line-v1__inner g-bg-white g-bg-primary--before g-brd-gray-light-v2"></span>
+                    </i>
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Plan</h3>
+                    <p class="mb-0">Now that we've aligned the details, it's time to get things organized.</p>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <i class="u-dot-line-v1-2 g-brd-gray-light-v2--before g-brd-gray-light-v2--after g-mb-20">
+                      <span class="u-dot-line-v1__inner g-bg-white g-bg-primary--before g-brd-gray-light-v2"></span>
+                    </i>
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Create</h3>
+                    <p class="mb-0">We begin to visualize your sketches and make them into beautiful pixels.</p>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <i class="u-dot-line-v1-2 g-brd-gray-light-v2--before g-brd-transparent--after g-mb-20">
+                      <span class="u-dot-line-v1__inner g-bg-white g-bg-primary--before g-brd-gray-light-v2"></span>
+                    </i>
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Release</h3>
+                    <p class="mb-0">Your brand is all dressed up and ready to party, it's time to release.</p>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+              </div>
+              <!-- End Static Process -->
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode1" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Static Process v1 -->
+
+      <!-- Static Process v2 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4 g-mb-0">Process
+              <span class="g-color-primary g-ml-5">#02</span>
+            </h2>
+          </div>
+
+          <div id="shortcode2">
+            <div class="shortcode-html">
+              <!-- Static Process -->
+              <div class="row">
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Consult</h3>
+                    <p class="mb-0">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                    <i class="u-dot-line-v1-2 g-brd-transparent--before g-brd-gray-light-v2--after g-mt-20">
+                      <span class="u-dot-line-v1__inner g-bg-white g-bg-primary--before g-brd-gray-light-v2"></span>
+                    </i>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Plan</h3>
+                    <p class="mb-0">Now that we've aligned the details, it's time to get things organized.</p>
+                    <i class="u-dot-line-v1-2 g-brd-gray-light-v2--before g-brd-gray-light-v2--after g-mt-20">
+                      <span class="u-dot-line-v1__inner g-bg-white g-bg-primary--before g-brd-gray-light-v2"></span>
+                    </i>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Create</h3>
+                    <p class="mb-0">We begin to visualize your sketches and make them into beautiful pixels.</p>
+                    <i class="u-dot-line-v1-2 g-brd-gray-light-v2--before g-brd-gray-light-v2--after g-mt-20">
+                      <span class="u-dot-line-v1__inner g-bg-white g-bg-primary--before g-brd-gray-light-v2"></span>
+                    </i>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Release</h3>
+                    <p class="mb-0">Your brand is all dressed up and ready to party, it's time to release.</p>
+                    <i class="u-dot-line-v1-2 g-brd-gray-light-v2--before g-brd-transparent--after g-mt-20">
+                      <span class="u-dot-line-v1__inner g-bg-white g-bg-primary--before g-brd-gray-light-v2"></span>
+                    </i>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+              </div>
+              <!-- End Static Process -->
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode2" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Static Process v2 -->
+
+      <!-- Static Process v3 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4 g-mb-0">Process
+              <span class="g-color-primary g-ml-5">#03</span>
+            </h2>
+          </div>
+
+          <div id="shortcode3">
+            <div class="shortcode-html">
+              <!-- Static Process -->
+              <div class="row">
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <i class="u-dot-line-v2-2 g-brd-transparent--before g-brd-gray-light-v2--after g-mb-15">
+                      <span class="u-dot-line-v2__inner g-bg-white--before g-brd-gray-light-v2--before"></span>
+                    </i>
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Consult</h3>
+                    <p class="mb-0">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <i class="u-dot-line-v2-2 g-brd-gray-light-v2--before g-brd-gray-light-v2--after g-mb-15">
+                      <span class="u-dot-line-v2__inner g-bg-white--before g-brd-gray-light-v2--before"></span>
+                    </i>
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Plan</h3>
+                    <p class="mb-0">Now that we've aligned the details, it's time to get things filly organized.</p>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <i class="u-dot-line-v2-2 g-brd-gray-light-v2--before g-brd-gray-light-v2--after g-mb-15">
+                      <span class="u-dot-line-v2__inner g-bg-white--before g-brd-gray-light-v2--before"></span>
+                    </i>
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Create</h3>
+                    <p class="mb-0">We begin to visualize your sketches and make them into beautiful pixels.</p>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <i class="u-dot-line-v2-2 g-brd-gray-light-v2--before g-brd-transparent--after g-mb-15">
+                      <span class="u-dot-line-v2__inner g-bg-white--before g-brd-gray-light-v2--before"></span>
+                    </i>
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Release</h3>
+                    <p class="mb-0">Whether through commerce or just an experience to tell your brand's story.</p>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+              </div>
+              <!-- End Static Process -->
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode3" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Static Process v3 -->
+
+      <!-- Static Process v4 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4 g-mb-0">Process
+              <span class="g-color-primary g-ml-5">#04</span>
+            </h2>
+          </div>
+
+          <div id="shortcode4">
+            <div class="shortcode-html">
+              <!-- Static Process -->
+              <div class="row">
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Consult</h3>
+                    <p class="mb-0">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                    <i class="u-dot-line-v2-2 g-brd-transparent--before g-brd-gray-light-v2--after g-mt-15">
+                      <span class="u-dot-line-v2__inner g-bg-white--before g-brd-gray-light-v2--before"></span>
+                    </i>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Plan</h3>
+                    <p class="mb-0">Now that we've aligned the details, it's time to get things filly organized.</p>
+                    <i class="u-dot-line-v2-2 g-brd-gray-light-v2--before g-brd-gray-light-v2--after g-mt-15">
+                      <span class="u-dot-line-v2__inner g-bg-white--before g-brd-gray-light-v2--before"></span>
+                    </i>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Create</h3>
+                    <p class="mb-0">We begin to visualize your sketches and make them into beautiful pixels.</p>
+                    <i class="u-dot-line-v2-2 g-brd-gray-light-v2--before g-brd-gray-light-v2--after g-mt-15">
+                      <span class="u-dot-line-v2__inner g-bg-white--before g-brd-gray-light-v2--before"></span>
+                    </i>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-mb-60">
+                  <!-- Static Process -->
+                  <div class="text-center">
+                    <h3 class="h5 g-font-weight-600 g-mb-10">Release</h3>
+                    <p class="mb-0">Whether through commerce or just an experience to tell your brand's story.</p>
+                    <i class="u-dot-line-v2-2 g-brd-gray-light-v2--before g-brd-transparent--after g-mt-15">
+                      <span class="u-dot-line-v2__inner g-bg-white--before g-brd-gray-light-v2--before"></span>
+                    </i>
+                  </div>
+                  <!-- End Static Process -->
+                </div>
+              </div>
+              <!-- End Static Process -->
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode4" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Static Process v4 -->
+
+      <!-- Static Process v5 -->
+      <section class="container g-py-100">
+        <div class="text-center g-mb-50">
+          <h2 class="h4 g-mb-0">Process
+            <span class="g-color-primary g-ml-5">#05</span>
+          </h2>
+        </div>
+
+        <div id="shortcode5">
+          <div class="shortcode-html">
+            <!-- Icon Blocks -->
+            <ul class="row list-inline u-info-v9-1 mb-0">
+              <li class="col-md-4 list-inline-item g-mx-0 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-block-hover text-center g-px-40">
+                  <div class="g-mb-5">
+                    <span class="u-icon-v1 g-width-85 g-height-85 g-color-main g-font-size-50 rounded-circle">
+                      <i class="icon-education-024 u-line-icon-pro"></i>
+                    </span>
+                  </div>
+                  <div class="g-mb-25">
+                    <span class="u-icon-v2 u-shadow-v22 g-width-25 g-height-25 g-color-primary g-bg-white g-font-size-9 rounded-circle">
+                      <i class="fa fa-check"></i>
+                    </span>
+                  </div>
+                  <h3 class="g-color-primary g-font-weight-600 g-font-size-17 text-uppercase mb-3">
+                    <span class="g-color-main g-font-weight-700">01.</span>
+                    Consult
+                  </h3>
+                  <p>We aim high at being focused on building relationships with our clients and community.</p>
+                </div>
+                <!-- End Icon Blocks -->
+              </li>
+
+              <li class="col-md-4 list-inline-item g-mx-0 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-block-hover text-center g-px-40">
+                  <div class="g-mb-5">
+                    <span class="u-icon-v1 g-width-85 g-height-85 g-color-main g-font-size-50 rounded-circle">
+                      <i class="icon-education-073 u-line-icon-pro"></i>
+                    </span>
+                  </div>
+                  <div class="g-mb-25">
+                    <span class="u-icon-v2 u-shadow-v22 g-width-25 g-height-25 g-color-white g-bg-primary g-font-size-9 rounded-circle">
+                      <i class="fa fa-check"></i>
+                    </span>
+                  </div>
+                  <h3 class="g-color-primary g-font-weight-600 g-font-size-17 text-uppercase mb-3">
+                    <span class="g-color-main g-font-weight-700">02.</span>
+                    Create
+                  </h3>
+                  <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                </div>
+                <!-- End Icon Blocks -->
+              </li>
+
+              <li class="col-md-4 list-inline-item g-mx-0 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-block-hover text-center g-px-40">
+                  <div class="g-mb-5">
+                    <span class="u-icon-v1 g-width-85 g-height-85 g-color-main g-font-size-50 rounded-circle">
+                      <i class="icon-communication-180 u-line-icon-pro"></i>
+                    </span>
+                  </div>
+                  <div class="g-mb-25">
+                    <span class="u-icon-v2 u-shadow-v22 g-width-25 g-height-25 g-color-primary g-bg-white g-font-size-9 rounded-circle">
+                      <i class="fa fa-check"></i>
+                    </span>
+                  </div>
+                  <h3 class="g-color-primary g-font-weight-600 g-font-size-17 text-uppercase mb-3">
+                    <span class="g-color-main g-font-weight-700">03.</span>
+                    Release
+                  </h3>
+                  <p>At the end of the day, it's important to not let being busy distract us from having fun.</p>
+                </div>
+                <!-- End Icon Blocks -->
+              </li>
+            </ul>
+            <!-- End Icon Blocks -->
+          </div>
+        </div>
+
+        {% set contentTarget = "#shortcode5" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </section>
+      <!-- End Static Process v5 -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

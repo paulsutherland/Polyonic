@@ -1,0 +1,16 @@
+/*------------------------------------
+  Material: Flat
+------------------------------------*/
+.u-btn-flat {
+  color: $g-color-gray-dark-v3;
+  background-color: transparent;
+
+  &:hover {
+    background-color: rgba($g-color-gray-light-v3, .4);
+  }
+
+  &:hover,
+  &:focus {
+    color: $g-color-gray-dark-v3;
+  }
+}

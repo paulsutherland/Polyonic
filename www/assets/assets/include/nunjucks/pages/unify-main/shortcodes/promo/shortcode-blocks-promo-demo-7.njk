@@ -1,0 +1,130 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-promo" %}
+{% set title = "Promo Blocks 7" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    <!-- Promo Block - Parallax -->
+    <section class="g-pos-rel">
+      <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}' data-calc-target="#js-header">
+        <div class="divimage dzsparallaxer--target w-100 g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-bluegray-opacity-0_3--after" style="height: 130%; background-image: url({{ root }}assets/img-temp/1920x1080/img10.jpg);"></div>
+
+        <div class="container text-center g-z-index-1 g-py-150">
+          <div class="g-mb-50" data-animation="fadeInUp" data-animation-delay="200" data-animation-duration="1500">
+            <a class="js-fancybox-media u-icon-v2 u-icon-size--lg g-brd-white g-color-primary g-brd-white--hover g-color-black--hover g-bg-white g-font-size-20 rounded-circle g-text-underline--none--hover" href="javascript:;"
+               data-src="//vimeo.com/36031564"
+               data-animate-in="fadeIn"
+               data-animate-out="fadeOut"
+               data-speed="1000">
+              <i class="g-pos-rel g-left-2 hs-icon hs-icon-play"></i>
+            </a>
+          </div>
+          <div class="g-mb-25" data-animation="fadeInUp" data-animation-delay="500" data-animation-duration="1500">
+            <h2 class="h4 d-inline-block g-brd-bottom g-brd-2 g-brd-white g-color-white g-font-weight-600 text-uppercase g-pb-5">Unify bootstrap template</h2>
+          </div>
+          <h3 class="g-color-white g-font-weight-700 g-font-size-40 g-font-size-55--md text-uppercase g-mb-40" data-animation="fadeInUp" data-animation-delay="800" data-animation-duration="1500">
+            We are creative company
+          </h3>
+          <div data-animation="fadeInUp" data-animation-delay="1100" data-animation-duration="1500">
+            <a class="btn btn-lg u-btn-outline-white g-color-white g-bg-white-opacity-0_2 g-color-black--hover g-bg-white--hover g-font-weight-600 g-font-size-13 text-uppercase g-rounded-50 mx-2 g-px-25 g-py-15" href="#!">Discover More</a>
+            <a class="btn btn-lg u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase g-rounded-50 mx-2 g-px-25 g-py-15" href="#!">Purchase Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Promo Block -->
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/content-demo-1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="{{ root }}assets/vendor/appear.js"></script>
+  <script src="{{ root }}assets/vendor/fancybox/jquery.fancybox.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+  <script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.onscroll-animation.js"></script>
+  <script src="{{ root }}assets/js/components/hs.popup.js"></script>
+  <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).ready(function () {
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of scroll animation
+      $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+      // initialization of popups with media
+      $.HSCore.components.HSPopup.init('.js-fancybox-media', {
+        transitionEffect: false,
+        helpers: {
+          media: {},
+          overlay: {
+            css: {
+              'background': 'rgba(0, 0, 0, .8)'
+            }
+          }
+        }
+      });
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

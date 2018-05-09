@@ -1,0 +1,13 @@
+/*------------------------------------
+  Heading-v1-3
+------------------------------------*/
+.u-heading-v1-3 {
+  &::before {
+    top: 48%;
+    border-top-style: dotted;
+  }
+  &::after {
+    top: 58%;
+    border-top-style: dotted;
+  }
+}

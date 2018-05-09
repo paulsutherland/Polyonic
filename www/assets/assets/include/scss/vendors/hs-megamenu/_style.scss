@@ -1,0 +1,9 @@
+.hs-has-mega-menu:not(.hs-mega-menu-opened) *,
+.hs-has-sub-menu:not(.hs-sub-menu-opened) * {
+  transition: none !important;
+
+  &::before,
+  &::after {
+    transition: none !important;
+  }
+}

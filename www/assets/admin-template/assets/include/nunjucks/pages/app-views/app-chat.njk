@@ -1,0 +1,860 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Chat" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu4 = "unCollapsed" %}
+{% set activeMenuItem = "app-chat" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: "App Views",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+  <section class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+        <div class="g-pa-20">
+          <h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-30">{{ title }}</h1>
+
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-lg-5 w-100 g-brd-right--lg g-brd-gray-light-v7">
+                <header class="g-brd-bottom g-brd-gray-light-v4 g-px-15 g-px-25--lg">
+                  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/cards/communication/chat/search.njk" %}
+                </header>
+
+                <div class="js-custom-scroll-horizontal js-custom-scroll g-height-59_5vh--lg">
+                  <!-- Chat List -->
+                  <div class="d-flex d-lg-block g-brd-bottom g-brd-none--lg g-brd-gray-light-v4 g-overflow-x-auto">
+                    <!-- Chat List Item: typing -->
+                    <section class="media justify-content-center g-bg-gray-light-v8--active g-brd-bottom--lg g-brd-gray-light-v4 g-pa-15 g-pa-25--lg">
+                      <!-- Chat List Item: Avatar -->
+                      <div class="d-flex g-mr-20--lg">
+                        <span class="d-inline-block g-pos-rel">
+                          <span class="u-badge-v2--md u-badge--bottom-right g-bg-teal-v2 g-mb-8 g-mr-8"></span>
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                        </span>
+                      </div>
+                      <!-- End Chat List Item: Avatar -->
+
+                      <div class="media-body align-self-center g-hidden-md-down">
+                        <div class="media g-mb-10">
+                          <!-- Chat List Item: Name -->
+                          <h3 class="d-flex align-self-center g-font-size-16 g-font-weight-400 mb-0">O<span class="g-hidden-md-down">live&nbsp;</span><span class="g-hidden-md-up">.</span>Wise</h3>
+                          <!-- End Chat List Item: Name -->
+
+                          <!-- Chat List Item: Time -->
+                          <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 ml-auto">
+                            <i class="hs-admin-time icon-clock g-mr-5"></i>
+                            <small>11:49 PM</small>
+                          </em>
+                          <!-- End Chat List Item: Time -->
+                        </div>
+
+                        <div class="media">
+                          <div class="d-flex align-self-center g-mr-15">
+                            <img src="{{ adminRoot }}assets/img/typing.gif" alt="Typing">
+                          </div>
+                          <p class="media-body align-self-center mb-0">Typing…</p>
+
+                          <!-- Chat List Item: Unread Messages -->
+                          <div class="d-flex align-self-center justify-content-center g-min-width-35 g-bg-lightblue-v5 g-font-size-12 g-color-white g-rounded-15 g-px-8 g-py-1 ml-auto">5</div>
+                          <!-- End Chat List Item: Unread Messages -->
+                        </div>
+                      </div>
+                    </section>
+                    <!-- End Chat List Item: typing -->
+
+                    <!-- Chat List Item -->
+                    <section class="media justify-content-center g-bg-gray-light-v8--active g-brd-bottom--lg g-brd-gray-light-v4 g-pa-15 g-pa-25--lg">
+                      <!-- Chat List Item: Avatar -->
+                      <div class="d-flex g-mr-20--lg">
+                        <span class="d-inline-block g-pos-rel">
+                          <span class="u-badge-v2--md u-badge--bottom-right g-bg-lightyellow g-mb-8 g-mr-8"></span>
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                        </span>
+                      </div>
+                      <!-- End Chat List Item: Avatar -->
+
+                      <div class="media-body align-self-center g-hidden-md-down">
+                        <div class="media g-mb-10">
+                          <!-- Chat List Item: Name -->
+                          <h3 class="d-flex align-self-center g-font-size-16 g-font-weight-400 mb-0">E<span class="g-hidden-md-down">dith&nbsp;</span><span class="g-hidden-md-up">.</span>Garza</h3>
+                          <!-- End Chat List Item: Name -->
+
+                          <!-- Chat List Item: Time -->
+                          <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 ml-auto">
+                            <i class="hs-admin-time icon-clock g-mr-5"></i>
+                            <small>08:33 PM</small>
+                          </em>
+                          <!-- End Chat List Item: Time -->
+                        </div>
+
+                        <div class="media">
+                          <p class="media-body mb-0">Finding the perfect learning for Flash</p>
+
+                          <!-- Chat List Item: Unread Messages -->
+                          <div class="d-flex align-self-center justify-content-center g-min-width-35 g-bg-lightblue-v5 g-font-size-12 g-color-white g-rounded-15 g-px-8 g-py-1 ml-auto">1</div>
+                          <!-- End Chat List Item: Unread Messages -->
+                        </div>
+                      </div>
+                    </section>
+                    <!-- End Chat List Item -->
+
+                    <!-- Chat List Item -->
+                    <section class="active media justify-content-center g-bg-gray-light-v8--active g-brd-bottom--lg g-brd-gray-light-v4 g-pa-15 g-pa-25--lg">
+                      <!-- Chat List Item: Avatar -->
+                      <div class="d-flex g-mr-20--lg">
+                        <span class="d-inline-block g-pos-rel">
+                          <span class="u-badge-v2--md u-badge--bottom-right g-bg-lightyellow g-mb-8 g-mr-8"></span>
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/200x200/img1.jpg" alt="Image Description">
+                        </span>
+                      </div>
+                      <!-- End Chat List Item: Avatar -->
+
+                      <div class="media-body align-self-center g-hidden-md-down">
+                        <div class="media g-mb-10">
+                          <!-- Chat List Item: Name -->
+                          <h3 class="d-flex align-self-center g-font-size-16 g-font-weight-400 mb-0">I<span class="g-hidden-md-down">saac&nbsp;</span><span class="g-hidden-md-up">.</span>McDonald</h3>
+                          <!-- End Chat List Item: Name -->
+
+                          <!-- Chat List Item: Time -->
+                          <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 ml-auto">
+                            <i class="hs-admin-time icon-clock g-mr-5"></i>
+                            <small>07:12 PM</small>
+                          </em>
+                          <!-- End Chat List Item: Time -->
+                        </div>
+
+                        <div class="media">
+                          <p class="media-body mb-0">Computer users and programmers</p>
+
+                          <!-- Chat List Item: Unread Messages -->
+                          <div class="d-flex align-self-center justify-content-center g-min-width-35 g-bg-lightblue-v5 g-font-size-12 g-color-white g-rounded-15 g-px-8 g-py-1 ml-auto">4</div>
+                          <!-- End Chat List Item: Unread Messages -->
+                        </div>
+                      </div>
+                    </section>
+                    <!-- End Chat List Item -->
+
+                    <!-- Chat List Item -->
+                    <section class="media justify-content-center g-bg-gray-light-v8--active g-brd-bottom--lg g-brd-gray-light-v4 g-pa-15 g-pa-25--lg">
+                      <!-- Chat List Item: Avatar -->
+                      <div class="d-flex g-mr-20--lg">
+                        <span class="d-inline-block g-pos-rel">
+                          <span class="u-badge-v2--md u-badge--bottom-right g-bg-teal-v2 g-mb-8 g-mr-8"></span>
+
+                          <div class="rounded-circle g-pos-rel g-width-45 g-width-55--lg g-height-45 g-height-55--lg g-bg-gray-light-v7">
+                            <span class="text-uppercase g-absolute-centered g-font-weight-600 g-font-size-16 g-font-size-18--lg g-color-white">SA</span>
+                          </div>
+                        </span>
+                      </div>
+                      <!-- End Chat List Item: Avatar -->
+
+                      <div class="media-body align-self-center g-hidden-md-down">
+                        <div class="media g-mb-10">
+                          <!-- Chat List Item: Name -->
+                          <h3 class="d-flex align-self-center g-font-size-16 g-font-weight-400 mb-0">S<span class="g-hidden-md-down">hane&nbsp;</span><span class="g-hidden-md-up">.</span>Andrews</h3>
+                          <!-- End Chat List Item: Name -->
+
+                          <!-- Chat List Item: Time -->
+                          <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 ml-auto">
+                            <i class="hs-admin-time icon-clock g-mr-5"></i>
+                            <small>07:05 PM</small>
+                          </em>
+                          <!-- End Chat List Item: Time -->
+                        </div>
+
+                        <div class="media">
+                          <p class="media-body mb-0">Having a baby can be a nerve wracking</p>
+
+                          <!-- Chat List Item: Unread Messages -->
+                          <div class="d-flex align-self-center justify-content-center g-min-width-35 g-bg-lightblue-v5 g-font-size-12 g-color-white g-rounded-15 g-px-8 g-py-1 ml-auto">2</div>
+                          <!-- End Chat List Item: Unread Messages -->
+                        </div>
+                      </div>
+                    </section>
+                    <!-- End Chat List Item -->
+
+                    <!-- Chat List Item -->
+                    <section class="media justify-content-center g-bg-gray-light-v8--active g-brd-bottom--lg g-brd-gray-light-v4 g-pa-15 g-pa-25--lg">
+                      <!-- Chat List Item: Avatar -->
+                      <div class="d-flex g-mr-20--lg">
+                        <span class="d-inline-block g-pos-rel">
+                          <span class="u-badge-v2--md u-badge--bottom-right g-bg-lightyellow g-mb-8 g-mr-8"></span>
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/200x200/img5.jpg" alt="Image Description">
+                        </span>
+                      </div>
+                      <!-- End Chat List Item: Avatar -->
+
+                      <div class="media-body align-self-center g-hidden-md-down">
+                        <div class="media g-mb-10">
+                          <!-- Chat List Item: Name -->
+                          <h3 class="d-flex align-self-center g-font-size-16 g-font-weight-400 mb-0">G<span class="g-hidden-md-down">ene&nbsp;</span><span class="g-hidden-md-up">.</span>Lambert</h3>
+                          <!-- End Chat List Item: Name -->
+
+                          <!-- Chat List Item: Time -->
+                          <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 ml-auto">
+                            <i class="hs-admin-time icon-clock g-mr-5"></i>
+                            <small>Monday</small>
+                          </em>
+                          <!-- End Chat List Item: Time -->
+                        </div>
+
+                        <div class="media">
+                          <p class="media-body mb-0">Can you imagine what we will</p>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- End Chat List Item -->
+
+                    <!-- Chat List Item -->
+                    <section class="media justify-content-center g-bg-gray-light-v8--active g-brd-bottom--lg g-brd-gray-light-v4 g-pa-15 g-pa-25--lg">
+                      <!-- Chat List Item: Avatar -->
+                      <div class="d-flex g-mr-20--lg">
+                        <span class="d-inline-block g-pos-rel">
+                          <span class="u-badge-v2--md u-badge--bottom-right g-bg-lightyellow g-mb-8 g-mr-8"></span>
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                        </span>
+                      </div>
+                      <!-- End Chat List Item: Avatar -->
+
+                      <div class="media-body align-self-center g-hidden-md-down">
+                        <div class="media g-mb-10">
+                          <!-- Chat List Item: Name -->
+                          <h3 class="d-flex align-self-center g-font-size-16 g-font-weight-400 mb-0">S<span class="g-hidden-md-down">ally&nbsp;</span><span class="g-hidden-md-up">.</span>Flowers</h3>
+                          <!-- End Chat List Item: Name -->
+
+                          <!-- Chat List Item: Time -->
+                          <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 ml-auto">
+                            <i class="hs-admin-time icon-clock g-mr-5"></i>
+                            <small>Sunday</small>
+                          </em>
+                          <!-- End Chat List Item: Time -->
+                        </div>
+
+                        <div class="media">
+                          <p class="media-body mb-0">HDMI, or high definition multimedia</p>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- End Chat List Item -->
+
+                    <!-- Chat List Item -->
+                    <section class="media justify-content-center g-bg-gray-light-v8--active g-brd-bottom--lg g-brd-gray-light-v4 g-pa-15 g-pa-25--lg">
+                      <!-- Chat List Item: Avatar -->
+                      <div class="d-flex g-mr-20--lg">
+                        <span class="d-inline-block g-pos-rel">
+                          <span class="u-badge-v2--md u-badge--bottom-right g-bg-lightyellow g-mb-8 g-mr-8"></span>
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/200x200/img3.jpg" alt="Image Description">
+                        </span>
+                      </div>
+                      <!-- End Chat List Item: Avatar -->
+
+                      <div class="media-body align-self-center g-hidden-md-down">
+                        <div class="media g-mb-10">
+                          <!-- Chat List Item: Name -->
+                          <h3 class="d-flex align-self-center g-font-size-16 g-font-weight-400 mb-0">I<span class="g-hidden-md-down">sabella&nbsp;</span><span class="g-hidden-md-up">.</span>Wilkins</h3>
+                          <!-- End Chat List Item: Name -->
+
+                          <!-- Chat List Item: Time -->
+                          <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 ml-auto">
+                            <i class="hs-admin-time icon-clock g-mr-5"></i>
+                            <small>Saturday</small>
+                          </em>
+                          <!-- End Chat List Item: Time -->
+                        </div>
+
+                        <div class="media">
+                          <p class="media-body mb-0">Are you one of the thousands of Iphone</p>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- End Chat List Item -->
+
+                    <!-- Chat List Item -->
+                    <section class="media justify-content-center g-bg-gray-light-v8--active g-brd-bottom--lg g-brd-gray-light-v4 g-pa-15 g-pa-25--lg">
+                      <!-- Chat List Item: Avatar -->
+                      <div class="d-flex g-mr-20--lg">
+                        <span class="d-inline-block g-pos-rel">
+                          <span class="u-badge-v2--md u-badge--bottom-right g-bg-lightyellow g-mb-8 g-mr-8"></span>
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                        </span>
+                      </div>
+                      <!-- End Chat List Item: Avatar -->
+
+                      <div class="media-body align-self-center g-hidden-md-down">
+                        <div class="media g-mb-10">
+                          <!-- Chat List Item: Name -->
+                          <h3 class="d-flex align-self-center g-font-size-16 g-font-weight-400 mb-0">E<span class="g-hidden-md-down">lizabeth&nbsp;</span><span class="g-hidden-md-up">.</span>French</h3>
+                          <!-- End Chat List Item: Name -->
+
+                          <!-- Chat List Item: Time -->
+                          <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 ml-auto">
+                            <i class="hs-admin-time icon-clock g-mr-5"></i>
+                            <small>22/11/20017</small>
+                          </em>
+                          <!-- End Chat List Item: Time -->
+                        </div>
+
+                        <div class="media">
+                          <p class="media-body mb-0">With MySpace becoming more popular</p>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- End Chat List Item -->
+
+                    <!-- Chat List Item -->
+                    <section class="media justify-content-center g-bg-gray-light-v8--active g-brd-bottom--lg g-brd-gray-light-v4 g-pa-15 g-pa-25--lg">
+                      <!-- Chat List Item: Avatar -->
+                      <div class="d-flex g-mr-20--lg">
+                        <span class="d-inline-block g-pos-rel">
+                          <span class="u-badge-v2--md u-badge--bottom-right g-bg-lightred-v2 g-mb-8 g-mr-8"></span>
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/200x200/img4.jpg" alt="Image Description">
+                        </span>
+                      </div>
+                      <!-- End Chat List Item: Avatar -->
+
+                      <div class="media-body align-self-center g-hidden-md-down">
+                        <div class="media g-mb-10">
+                          <!-- Chat List Item: Name -->
+                          <h3 class="d-flex align-self-center g-font-size-16 g-font-weight-400 mb-0">A<span class="g-hidden-md-down">drian&nbsp;</span><span class="g-hidden-md-up">.</span>Cruz</h3>
+                          <!-- End Chat List Item: Name -->
+
+                          <!-- Chat List Item: Time -->
+                          <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 ml-auto">
+                            <i class="hs-admin-time icon-clock g-mr-5"></i>
+                            <small>31/10/20017</small>
+                          </em>
+                          <!-- End Chat List Item: Time -->
+                        </div>
+
+                        <div class="media">
+                          <p class="media-body mb-0">Do you know what could beat the exciting</p>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- End Chat List Item -->
+
+                    <!-- Chat List Item -->
+                    <section class="media justify-content-center g-bg-gray-light-v8--active g-brd-bottom--lg g-brd-gray-light-v4 g-pa-15 g-pa-25--lg">
+                      <!-- Chat List Item: Avatar -->
+                      <div class="d-flex g-mr-20--lg">
+                        <span class="d-inline-block g-pos-rel">
+                          <span class="u-badge-v2--md u-badge--bottom-right g-bg-teal-v2 g-mb-8 g-mr-8"></span>
+                          <img class="rounded-circle g-width-45 g-width-55--lg g-height-45 g-height-55--lg" src="{{ root }}assets/img-temp/200x200/img7.jpg" alt="Image Description">
+                        </span>
+                      </div>
+                      <!-- End Chat List Item: Avatar -->
+
+                      <div class="media-body align-self-center g-hidden-md-down">
+                        <div class="media g-mb-10">
+                          <!-- Chat List Item: Name -->
+                          <h3 class="d-flex align-self-center g-font-size-16 g-font-weight-400 mb-0">A<span class="g-hidden-md-down">ustin&nbsp;</span><span class="g-hidden-md-up">.</span>Norris</h3>
+                          <!-- End Chat List Item: Name -->
+
+                          <!-- Chat List Item: Time -->
+                          <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 ml-auto">
+                            <i class="hs-admin-time icon-clock g-mr-5"></i>
+                            <small>13/10/20017</small>
+                          </em>
+                          <!-- End Chat List Item: Time -->
+                        </div>
+
+                        <div class="media">
+                          <p class="media-body mb-0">Having a baby can be a nerve wracking</p>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- End Chat List Item -->
+                  </div>
+                  <!-- End Chat List -->
+                </div>
+              </div>
+
+              <!-- Chat. Message Area. -->
+              <div class="col-lg-7">
+
+                <!-- Chat. Message Area. Header. -->
+                <header class="g-px-15 g-px-25--lg">
+                  <div class="media g-height-50 g-height-80--lg">
+                    <div class="d-flex align-self-center g-width-100--sm g-line-height-1_2 g-font-size-default g-pos-rel">
+                      <!-- Chat. Message Area. Search -->
+                      <a
+                        href="#!"
+                        class="u-link-v5 g-font-size-16 g-color-gray-light-v6 g-color-secondary--hover g-mr-15--sm"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        aria-controls="chat-searchform-1"
+                        data-dropdown-target="#chat-searchform-1"
+                        data-dropdown-type="css-animation"
+                        data-dropdown-duration="300"
+                        data-dropdown-animation-in="fadeInUp"
+                        data-dropdown-animation-out="fadeOutDown">
+                        <i class="hs-admin-search"></i>
+                      </a>
+
+                      <!-- Chat. Message Area. Search Form -->
+                      <form id="chat-searchform-1" class="u-searchform-v1--align-left u-dropdown--css-animation u-dropdown--hidden g-box-shadow-none g-mt-5">
+                        <div class="input-group g-pos-rel g-max-width-380">
+                          <input class="form-control g-font-size-default g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-20 g-pl-20 g-pr-50 g-py-10" placeholder="Enter Your Search Here..." type="text">
+                          <button class="btn g-pos-abs g-top-0 g-right-0 g-z-index-2 g-width-60 h-100 g-bg-transparent g-font-size-16 g-color-lightred-v2 g-color-lightblue-v3--hover rounded-0" type="submit">
+                            <i class="hs-admin-search g-absolute-centered"></i>
+                          </button>
+                        </div>
+                      </form>
+                      <!-- End Chat. Message Area. Search Form -->
+                      <!-- End Chat. Message Area. Search -->
+
+                      <a class="g-color-gray-dark-v6 g-hidden-sm-down" href="#!">History</a>
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-center g-font-size-16--md g-color-black">
+                      <a class="g-color-black" href="#!">I<span class="g-hidden-sm-up">.</span><span class="g-hidden-sm-down">saac&nbsp;</span>
+                        McDonald</a>
+                    </div>
+
+                    <div class="d-flex align-self-center align-items-center justify-content-end g-width-100--sm">
+                      <a class="u-link-v5 g-line-height-1 g-font-size-20 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-video-camera"></i>
+                      </a>
+
+                      <div class="g-pos-rel g-z-index-2 g-line-height-1 g-ml-10 g-ml-20--lg">
+                        <a
+                          id="dropDown1Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                          href="#!"
+                          aria-controls="dropDown1"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown1"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white u-dropdown--jquery-slide u-dropdown--hidden" aria-labelledby="dropDown1Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-15"></i>
+                                Rename
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-announcement g-font-size-18 g-color-gray-light-v6 g-mr-15"></i>
+                                Mark as Unread
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-close g-font-size-18 g-color-gray-light-v6 g-mr-15"></i>
+                                Close
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-15"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+                <!-- End Chat. Message Area. Header. -->
+
+                <hr class="d-flex g-brd-gray-light-v7 g-mx-15 g-mx-25--lg my-0">
+
+                <!-- Chat. Message Area. Messages. -->
+                <div class="js-custom-scroll g-height-50vh--lg g-pa-15 g-pa-25--lg">
+                  <!-- Chat. Message Area. Message (From). -->
+                  <section class="g-mb-30">
+                    <div class="media g-mb-12">
+                      <!-- Chat. Message Area. Message. Avatar. -->
+                      <div class="d-flex align-self-end g-mr-12">
+                        <img class="rounded-circle g-width-36 g-height-36" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                      </div>
+                      <!-- End Chat. Message Area. Message. Avatar. -->
+
+                      <!-- Chat. Message Area. Message. Body. -->
+                      <div class="media-body">
+                        <div class="d-inline-block g-width-170 g-width-auto--sm g-bg-gray-light-v8 g-font-size-12 g-font-size-default--lg g-color-gray-dark-v6 g-rounded-10 g-pa-10-15">
+                          <p class="mb-0">Attending a trade show can be a very effective method of promoting your</p>
+                        </div>
+                      </div>
+                      <!-- End Chat. Message Area. Message. Body. -->
+                    </div>
+
+                    <!-- Chat. Message Area. Message Time -->
+                    <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 g-ml-50">
+                      <i class="hs-admin-time icon-clock g-mr-5"></i>
+                      <small>11:49 PM</small>
+                    </em>
+                    <!-- End Chat. Message Area. Message Time -->
+                  </section>
+                  <!-- End Chat. Message Area. Message (From). -->
+
+                  <!-- Chat. Message Area. Message (To). -->
+                  <section class="g-mb-30">
+                    <div class="media g-mb-12">
+                      <!-- Chat. Message Area. Message. Body. -->
+                      <div class="media-body">
+                        <div class="d-inline-block g-width-170 g-width-auto--sm g-bg-lightblue-v6 g-font-size-12 g-font-size-default--lg g-color-gray-dark-v6 g-rounded-10 g-pa-10-15">
+                          <p class="mb-0">Conversations can be a tricky business. Sometimes, decoding what is said with what is meant is difficult</p>
+                        </div>
+                      </div>
+                      <!-- End Chat. Message Area. Message. Body. -->
+
+                      <!-- Chat. Message Area. Message. Avatar. -->
+                      <div class="d-flex align-self-end g-ml-12">
+                        <img class="rounded-circle g-width-36 g-height-36" src="{{ root }}assets/img-temp/200x200/img7.jpg" alt="Image Description">
+                      </div>
+                      <!-- End Chat. Message Area. Message. Avatar. -->
+                    </div>
+
+                    <!-- Chat. Message Area. Message Time -->
+                    <em class="d-flex align-self-center align-items-center justify-content-end g-font-style-normal g-color-gray-light-v1 g-mr-50">
+                      <i class="hs-admin-time icon-clock g-mr-5"></i>
+                      <small>11:49 PM</small>
+
+                      <i class="hs-admin-check g-font-size-10 g-color-lightblue-v3 g-ml-12"></i>
+                      <i class="hs-admin-check g-font-size-10 g-color-lightblue-v3"></i>
+                    </em>
+                    <!-- End Chat. Message Area. Message Time -->
+                  </section>
+                  <!-- End Chat. Message Area. Message (To). -->
+
+                  <!-- Chat. Message Area. Message (From). -->
+                  <section class="g-mb-30">
+                    <div class="media g-mb-12">
+                      <!-- Chat. Message Area. Message. Avatar. -->
+                      <div class="d-flex align-self-end g-mr-12">
+                        <img class="rounded-circle g-width-36 g-height-36" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                      </div>
+                      <!-- End Chat. Message Area. Message. Avatar. -->
+
+                      <!-- Chat. Message Area. Message. Body. -->
+                      <div class="media-body">
+                        <div class="d-inline-block g-width-170 g-width-auto--sm g-bg-gray-light-v8 g-font-size-12 g-font-size-default--lg g-color-gray-dark-v6 g-rounded-10 g-pa-10-15">
+                          <p class="mb-0">A Pocket PC is a handheld computer, which features many of the same capabilities as a modern PC</p>
+                        </div>
+                      </div>
+                      <!-- End Chat. Message Area. Message. Body. -->
+                    </div>
+
+                    <!-- Chat. Message Area. Message Time -->
+                    <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 g-ml-50">
+                      <i class="hs-admin-time icon-clock g-mr-5"></i>
+                      <small>11:49 PM</small>
+                    </em>
+                    <!-- End Chat. Message Area. Message Time -->
+                  </section>
+                  <!-- End Chat. Message Area. Message (From). -->
+
+                  <!-- Chat. Message Area. Message (To). -->
+                  <section class="g-mb-30 g-mb-65--md">
+                    <div class="media g-mb-12">
+                      <!-- Chat. Message Area. Message. Body. -->
+                      <div class="media-body">
+                        <div class="d-inline-block g-width-170 g-width-auto--sm g-bg-lightblue-v6 g-font-size-12 g-font-size-default--lg g-color-gray-dark-v6 g-rounded-10 g-pa-10-15">
+                          <p class="g-mb-10">Create a list with all possible keywords that fit to your product, service</p>
+                          <p class="g-mb-20">
+                            <a class="g-text-break-word g-text-underline g-color-darkblue-v2 g-color-lightblue-v3--hover" href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697">https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697</a>
+                          </p>
+                          <blockquote class="blockquote g-font-size-12 g-font-size-default--lg g-brd-left g-brd-3 g-brd-lightblue-v3 g-pl-15 mb-0">
+                            <h4 class="g-font-weight-600 g-font-size-default g-color-black">Unify - Responsive Website Template</h4>
+                            <p class="m-b-0">Unify is an incredibly beautiful and fully responsive Bootstrap 4 Template for any type of creative professionals, startups</p>
+                          </blockquote>
+                        </div>
+                      </div>
+                      <!-- End Chat. Message Area. Message. Body. -->
+
+                      <!-- Chat. Message Area. Message. Avatar. -->
+                      <div class="d-flex align-self-end g-ml-12">
+                        <img class="rounded-circle g-width-36 g-height-36" src="{{ root }}assets/img-temp/200x200/img7.jpg" alt="Image Description">
+                      </div>
+                      <!-- End Chat. Message Area. Message. Avatar. -->
+                    </div>
+
+                    <!-- Chat. Message Area. Message Time -->
+                    <em class="d-flex align-self-center align-items-center justify-content-end g-font-style-normal g-color-gray-light-v1 g-mr-50">
+                      <i class="hs-admin-time icon-clock g-mr-5"></i>
+                      <small>11:45 PM</small>
+
+                      <i class="hs-admin-check g-font-size-10 g-color-lightblue-v3 g-ml-12"></i>
+                      <i class="hs-admin-check g-font-size-10 g-color-lightblue-v3"></i>
+                    </em>
+                    <!-- End Chat. Message Area. Message Time -->
+                  </section>
+                  <!-- End Chat. Message Area. Message (To). -->
+
+                  <div class="text-center u-heading-v1-4 g-bg-main g-brd-lightblue-v3 g-mb-40">
+                    <h2 class="u-heading-v1__title g-font-size-default g-font-weight-400 g-color-lightblue-v3 g-px-20--md g-px-45--xl">4 New Messages</h2>
+                  </div>
+
+                  <!-- Chat. Message Area. Message (From). -->
+                  <section class="g-mb-30">
+                    <div class="media g-mb-12">
+                      <!-- Chat. Message Area. Message. Avatar. -->
+                      <div class="d-flex align-self-end g-mr-12">
+                        <img class="rounded-circle g-width-36 g-height-36" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                      </div>
+                      <!-- End Chat. Message Area. Message. Avatar. -->
+
+                      <!-- Chat. Message Area. Message. Body. -->
+                      <div class="media-body">
+                        <div class="g-max-width-500">
+                          <div class="row g-mx-minus-5">
+                            <div class="col-sm-4 g-px-5 g-mb-10 g-mb-0--md">
+                              <a class="d-block u-link-v5 g-parent g-pos-rel" href="#!">
+                                <img class="img-fluid g-rounded-2" src="{{ root }}assets/img-temp/900x600/img2.jpg" alt="Image description">
+
+                                <div class="g-pos-abs g-top-0 w-100 h-100 g-bg-gray-dark-v6 opacity-0 g-opacity-0_7--parent-hover g-rounded-2 g-transition--ease-in g-transition-0_2">
+                                  <i class="hs-admin-import g-absolute-centered g-font-size-24 g-color-white"></i>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="col-sm-4 g-px-5 g-mb-10 g-mb-0--md">
+                              <a class="d-block u-link-v5 g-parent g-pos-rel" href="#!">
+                                <img class="img-fluid g-rounded-2" src="{{ root }}assets/img-temp/900x600/img3.jpg" alt="Image description">
+
+                                <div class="g-pos-abs g-top-0 w-100 h-100 g-bg-gray-dark-v6 opacity-0 g-opacity-0_7--parent-hover g-rounded-2 g-transition--ease-in g-transition-0_2">
+                                  <i class="hs-admin-import g-absolute-centered g-font-size-24 g-color-white"></i>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="col-sm-4 g-px-5">
+                              <a class="d-block u-link-v5 g-parent g-pos-rel" href="#!">
+                                <img class="img-fluid g-rounded-2" src="{{ root }}assets/img-temp/900x600/img4.jpg" alt="Image description">
+
+                                <div class="g-pos-abs g-top-0 w-100 h-100 g-bg-gray-dark-v6 opacity-0 g-opacity-0_7--parent-hover g-rounded-2 g-transition--ease-in g-transition-0_2">
+                                  <i class="hs-admin-import g-absolute-centered g-font-size-24 g-color-white"></i>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Chat. Message Area. Message. Body. -->
+                    </div>
+
+                    <!-- Chat. Message Area. Message Time -->
+                    <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 g-ml-50">
+                      <i class="hs-admin-time icon-clock g-mr-5"></i>
+                      <small>11:43 PM</small>
+                    </em>
+                    <!-- End Chat. Message Area. Message Time -->
+                  </section>
+                  <!-- End Chat. Message Area. Message (From). -->
+
+                  <!-- Chat. Message Area. Message (From). -->
+                  <section class="g-mb-30">
+                    <div class="media g-mb-12">
+                      <!-- Chat. Message Area. Message. Avatar. -->
+                      <div class="d-flex align-self-end g-mr-12">
+                        <img class="rounded-circle g-width-36 g-height-36" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                      </div>
+                      <!-- End Chat. Message Area. Message. Avatar. -->
+
+                      <!-- Chat. Message Area. Message. Body. -->
+                      <div class="media-body">
+                        <div class="d-inline-block g-width-170 g-width-auto--sm g-bg-gray-light-v8 g-font-size-12 g-font-size-default--lg g-color-gray-dark-v6 g-rounded-10 g-pa-10-15">
+                          <p class="mb-0">To a general advertiser outdoor advertising is worthy of consideration. Outdoor advertising is considered as the oldest form of advertising. Posting bills on wooden boards in the late 19th</p>
+                        </div>
+                      </div>
+                      <!-- End Chat. Message Area. Message. Body. -->
+                    </div>
+
+                    <!-- Chat. Message Area. Message Time -->
+                    <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-light-v1 g-ml-50">
+                      <i class="hs-admin-time icon-clock g-mr-5"></i>
+                      <small>11:37 PM</small>
+                    </em>
+                    <!-- End Chat. Message Area. Message Time -->
+                  </section>
+                  <!-- End Chat. Message Area. Message (From). -->
+
+                  <!-- Chat. Message Area. Message (To). -->
+                  <section class="g-mb-30">
+                    <div class="media g-mb-12">
+                      <!-- Chat. Message Area. Message. Body. -->
+                      <div class="media-body g-pos-rel">
+                        <div class="media g-bg-lightblue-v6 g-color-gray-dark-v6 g-rounded-10 g-pa-10-15">
+                          <div class="d-flex align-self-center">
+                            <i class="hs-admin-zip g-font-size-20 g-color-lightblue-v4"></i>
+                            <span class="g-hidden-sm-down g-color-gray-dark-v6 g-ml-15">Project Updates.zip</span>
+                          </div>
+
+                          <div class="media-body text-right">
+                            <span class="g-hidden-sm-down g-font-weight-300 g-color-gray-dark-v6">
+                              <small>15mb</small>
+                            </span>
+                          </div>
+                          <a class="u-link-v2" href="#!">Download</a>
+                        </div>
+                      </div>
+                      <!-- End Chat. Message Area. Message. Body. -->
+
+                      <!-- Chat. Message Area. Message. Avatar. -->
+                      <div class="d-flex align-self-end g-ml-12">
+                        <img class="rounded-circle g-width-36 g-height-36" src="{{ root }}assets/img-temp/200x200/img7.jpg" alt="Image Description">
+                      </div>
+                      <!-- End Chat. Message Area. Message. Avatar. -->
+                    </div>
+
+                    <!-- Chat. Message Area. Message Time -->
+                    <em class="d-flex align-self-center align-items-center justify-content-end g-font-style-normal g-color-lightred-v2 g-mr-50">
+                      <i class="hs-admin-back-right g-mr-5"></i>
+                      <small>Not Delivered</small>
+                    </em>
+                    <!-- End Chat. Message Area. Message Time -->
+                  </section>
+                  <!-- End Chat. Message Area. Message (To). -->
+
+                  <!-- Chat. Message Area. Message: typing (From). -->
+                  <section>
+                    <div class="media">
+                      <!-- Chat. Message Area. Message. Avatar. -->
+                      <div class="d-flex align-self-end g-mr-12">
+                        <img class="rounded-circle g-width-36 g-height-36" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                      </div>
+                      <!-- End Chat. Message Area. Message. Avatar. -->
+
+                      <!-- Chat. Message Area. Message. Body: typing -->
+                      <div class="media-body align-self-center">
+                        <div class="media">
+                          <div class="d-flex align-self-center g-mr-15">
+                            <img src="{{ adminRoot }}assets/img/typing.gif" alt="Typing">
+                          </div>
+                          <p class="media-body align-self-center mb-0">Typing…</p>
+                        </div>
+                      </div>
+                      <!-- End Chat. Message Area. Message. Body: typing -->
+                    </div>
+                  </section>
+                  <!-- End Chat. Message Area. Message: typing (From). -->
+                </div>
+                <!-- End Chat. Message Area. Messages. -->
+
+                <footer class="g-bg-gray-light-v8 g-px-15 g-px-30--lg g-py-10 g-py-25--lg">
+                  <form action="#!">
+                    <div class="media align-items-top">
+                      <div class="d-flex">
+                        <label class="u-file-attach-v2 g-line-height-1 g-color-gray-dark-v6 mb-0">
+                          <input id="fileAttachment" name="file-attachment" type="file">
+                          <i class="hs-admin-clip g-font-size-18"></i>
+                        </label>
+                      </div>
+
+                      <div class="media-body g-ml-25">
+                        <textarea class="form-control u-textarea-expandable g-resize-none g-bg-transparent g-brd-none w-100 p-0 g-mt-minus-3" placeholder="Type Something"></textarea>
+                      </div>
+
+                      <div class="d-flex ml-auto">
+                        <button class="btn btn-link d-flex align-self-top align-items-top u-link-v5 g-color-lightblue-v3 g-color-lightblue-v4--hover p-0 g-ml-15">
+                          <i class="hs-admin-arrow-top-right g-font-size-18 g-line-height-1_4"></i>
+                          <span class="g-hidden-sm-down g-font-weight-300 g-font-size-12 g-font-size-default--md g-ml-4 g-ml-8--md">Send</span>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </footer>
+              </div>
+              <!-- End Chat. Message Area. -->
+            </div>
+          </div>
+        </div>
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+
+<script src="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+
+<script src="{{ adminRoot }}assets/js/components/hs.bar-chart.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll-horizontal'), {axis: 'x'});
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of charts
+    $.HSCore.components.HSBarChart.init('.js-bar-chart');
+  });
+</script>
+</body>
+</html>

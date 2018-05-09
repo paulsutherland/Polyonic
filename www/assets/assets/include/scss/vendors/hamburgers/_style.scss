@@ -1,0 +1,36 @@
+/*--------------------------------------------------
+  Hamburgers
+----------------------------------------------------*/
+
+.hamburger {
+	padding: 10px;
+}
+
+.hamburger-box {
+	width: 37px;
+	height: 25px;
+}
+
+.hamburger-inner {
+	margin-top: 1px;
+
+	&,
+	&::after,
+	&::before {
+		width: 100%;
+		height: 1px;
+		border-radius: 0;
+	}
+
+	.u-header__section--light &,
+	.u-header__section--light &::after,
+	.u-header__section--light &::before {
+		background: $g-color-main;
+	}
+
+	.u-header__section--dark &,
+	.u-header__section--dark &::after,
+	.u-header__section--dark &::before {
+		background: $g-color-white;
+	}
+}

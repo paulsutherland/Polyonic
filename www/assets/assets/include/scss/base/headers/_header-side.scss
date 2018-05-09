@@ -1,0 +1,206 @@
+/*------------------------------------
+  Side Header
+------------------------------------*/
+
+/* Common styles of Side Header */
+body[class*="u-body--header-side"] .u-header.u-header--side {
+	position: fixed;
+	top: 0;
+
+	height: 100%;
+	@include px-to-rem(width, 300px);
+
+	// Navbar
+	.navbar {
+		flex-direction: column;
+
+		// Container
+		.container {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+			flex-direction: column;
+		}
+
+		// Collapse
+		.navbar-collapse {
+			flex-direction: column;
+		}
+
+		// Nav
+		.navbar-nav {
+			width: 100%;
+			flex-direction: column;
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
+	}
+
+	// Sections Container
+	.u-header__sections-container {
+		height: 100%;
+	}
+
+	.dropdown-menu {
+		top: 0;
+	}
+
+	.mCSB_container,
+	.mCustomScrollBox {
+		overflow: visible;
+	}
+
+}
+
+/* Overlay */
+.u-header--side .u-header__overlay {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 2000%;
+	opacity: 0;
+	visibility: hidden;
+}
+
+body[class*="u-body--header-side"].u-body--header-side-opened .u-header__overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+.u-body--header-side {
+	&-static-left,
+	&-overlay-left,
+	&-push-left {
+		.u-header--side {
+			.dropdown-menu {
+				left: 100%;
+				@include px-to-rem(margin-left, 15px);
+			}
+
+			// Override necessary HSMegaMenu styles
+			.hs-menu-vertical .hs-mega-menu,
+			.hs-menu-vertical .hs-sub-menu {
+				@include px-to-rem(margin-left, 15px);
+
+				.hs-mega-menu,
+				.hs-sub-menu {
+					margin-left: 0;
+				}
+			}
+
+			.hs-menu-vertical.hs-rtl .hs-mega-menu,
+			.hs-menu-vertical.hs-rtl .hs-sub-menu {
+				margin-left: 0;
+				@include px-to-rem(margin-right, 15px);
+
+				.hs-mega-menu,
+				.hs-sub-menu {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	&-static-left {
+		@include px-to-rem(margin-left, 300px);
+
+		.u-header--side {
+			right: auto;
+			left: 0;
+		}
+	}
+
+	&-static-right {
+		@include px-to-rem(margin-right, 300px);
+
+		.u-header--side {
+			left: auto;
+			right: 0;
+		}
+	}
+
+	&-overlay-left,
+	&-push-left {
+		.u-header--side {
+			right: auto;
+			@include px-to-rem(left, -300px);
+
+			.u-header__overlay {
+				left: 100%;
+			}
+		}
+		&.u-body--header-side-opened {
+			.u-header--side {
+				left: 0;
+			}
+		}
+	}
+
+	&-push-left {
+		&.u-body--header-side-opened {
+			@include px-to-rem(margin-left, 300px);
+		}
+	}
+
+	&-overlay-right,
+	&-push-right {
+		.u-header--side {
+			left: auto;
+			@include px-to-rem(right, -300px);
+
+			.u-header__overlay {
+				right: 100%;
+			}
+		}
+		&.u-body--header-side-opened {
+			.u-header--side {
+				right: 0;
+			}
+		}
+	}
+
+	&-push-right {
+		&.u-body--header-side-opened {
+			@include px-to-rem(margin-right, 300px);
+		}
+	}
+
+	&-static-right,
+	&-overlay-right,
+	&-push-right {
+		.u-header--side {
+			.dropdown-menu {
+				left: auto;
+				right: 100%;
+				@include px-to-rem(margin-right, 15px);
+			}
+
+			// Override necessary HSMegaMenu styles
+			.hs-menu-vertical .hs-mega-menu,
+			.hs-menu-vertical .hs-sub-menu {
+				left: auto;
+				right: 100%;
+
+				@include px-to-rem(margin-right, 15px);
+
+				.hs-mega-menu,
+				.hs-sub-menu {
+					margin-right: 0;
+				}
+			}
+
+			.hs-menu-vertical.hs-rtl .hs-mega-menu,
+			.hs-menu-vertical.hs-rtl .hs-sub-menu {
+				margin-right: 0;
+				@include px-to-rem(margin-left, 15px);
+
+				.hs-mega-menu,
+				.hs-sub-menu {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+/*------------------------------------
+  Error state v1-3
+------------------------------------*/
+
+.u-has-error-v1-3 {
+  position: relative;
+
+  .form-control,
+  [class*="input-group-"],
+  [class*="u-select"] {
+    background-color: #fff0f0;
+    border-color: $g-color-red;
+
+    &[readonly] {
+      background-color: #fff0f0;
+    }
+  }
+
+  .form-control-feedback {
+    color: $g-color-red;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      right: 18px;
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 3px 0 3px;
+      border-color: $g-color-red transparent transparent transparent;
+    }
+  }
+
+  [class*="u-check-icon"] {
+    background-color: #fff0f0;
+  }
+
+  [class*="input-group-"]:last-child,
+  .chosen-single div b {
+    color: $g-color-red;
+  }
+
+  .error {
+    display: block;
+  }
+
+  [class*="input-group-"],
+  [class*="input-group-"]:last-child {
+    color: $g-color-white;
+    background-color: $g-color-red;
+  }
+}

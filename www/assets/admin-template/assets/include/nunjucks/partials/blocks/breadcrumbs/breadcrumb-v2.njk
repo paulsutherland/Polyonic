@@ -1,0 +1,18 @@
+<!-- Breadcrumb-v2 -->
+<div class="row align-items-center justify-content-between g-bg-gray-light-v8 g-px-5 g-py-20 g-mx-0">
+  <h1 class="col g-font-weight-300 g-font-size-28 g-color-black mb-0">{{ title }}</h1>
+  <div class="col g-hidden-sm-down">
+    <ul class="u-list-inline pull-right g-color-gray-dark-v6">
+      {% for item in breadcrumbs %}
+        <li class="list-inline-item g-mr-10">
+          <a class="u-link-v5 g-color-gray-dark-v6 g-color-lightblue-v3--hover g-valign-middle" href="{{ item.href }}">{{ item.breadcrumb }}</a>
+          <i class="hs-admin-angle-right g-font-size-12 g-color-gray-light-v6 g-valign-middle g-ml-10"></i>
+        </li>
+      {% endfor %}
+      <li class="list-inline-item">
+        <span class="g-valign-middle">{{ title }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- End Breadcrumb-v2 -->

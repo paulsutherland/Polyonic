@@ -1,0 +1,82 @@
+/*------------------------------------
+  Dot line v2
+------------------------------------*/
+
+.u-dot-line-v2,
+.u-dot-line-v2-2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: calc(50% + 30px);
+    border-top: {
+      width: 1px;
+      style: solid;
+    }
+    margin-top: -1px;
+  }
+
+  &::before {
+    li:first-child & {
+      display: none;
+    }
+
+    left: -30px;
+  }
+
+  &::after {
+    li:last-child & {
+      display: none;
+    }
+
+    right: -30px;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      transform: translate(-50%, -50%);
+      border: {
+        width: 1px;
+        style: solid;
+        radius: 50%;
+      }
+    }
+  }
+
+  &-2 {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $g-lg) {
+  .u-dot-line-v2 {
+    &-2 {
+      &::before,
+      &::after {
+        display: block;
+      }
+    }
+  }
+}

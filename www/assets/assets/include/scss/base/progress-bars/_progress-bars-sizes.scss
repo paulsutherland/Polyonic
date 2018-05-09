@@ -1,0 +1,26 @@
+/*------------------------------------
+  Progress Bars Sizes
+------------------------------------*/
+.u-progress-bar {
+  &--2xs {
+    min-height: 1px !important;
+  }
+  &--xs {
+    min-height: 3px !important;
+  }
+  &--sm {
+    min-height: 7px !important;
+  }
+  // &--md {
+  //   min-height: 12px !important;
+  // }
+  &--lg {
+    min-height: 18px !important;
+  }
+  &--xl {
+    min-height: 22px !important;
+  }
+  &--2xl {
+    min-height: 33px !important;
+  }
+}

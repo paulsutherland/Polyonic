@@ -1,0 +1,39 @@
+<!-- Header -->
+<header id="js-header" class="u-header u-header--sticky-top">
+  <div class="u-header__section u-header__section--admin-{% if layoutTheme == 'dark' %}dark{% else %}light u-shadow-v22{% endif %} g-min-height-65">
+    <nav class="navbar no-gutters g-pa-0">
+      <div class="col-auto d-flex flex-nowrap u-header-logo-toggler g-py-12">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/headers-components/logo.njk" %}
+
+        <!-- Sidebar Toggler -->
+        <a class="js-side-nav u-header__nav-toggler d-flex align-self-center ml-auto" href="#!"
+           data-hssm-class="u-side-nav--mini u-sidebar-navigation-v1--mini"
+           data-hssm-body-class="u-side-nav-mini"
+           data-hssm-is-close-all-except-this="true"
+           data-hssm-target="#sideNav">
+            <i class="hs-admin-align-left"></i>
+        </a>
+        <!-- End Sidebar Toggler -->
+      </div>
+
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/headers-components/search.njk" %}
+
+      <!-- Messages/Notifications/Top Search Bar/Top User -->
+      <div class="col-auto d-flex g-py-12 g-pl-40--lg ml-auto">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/headers-components/messages.njk" %}
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/headers-components/notifications.njk" %}
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/headers-components/search-toggler.njk" %}
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/headers-components/top-user.njk" %}
+      </div>
+      <!-- End Messages/Notifications/Top Search Bar/Top User -->
+
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/headers-components/activity-toggler.njk" %}
+    </nav>
+
+    {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/headers-components/activity.njk" %}
+  </div>
+</header>
+<!-- End Header -->

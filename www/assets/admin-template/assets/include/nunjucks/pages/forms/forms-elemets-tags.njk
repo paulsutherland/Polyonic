@@ -1,0 +1,231 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Text Inputs with Tags" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu7 = "unCollapsed" %}
+{% set isSubMenu7Elements = "unCollapsed" %}
+{% set activeMenuItem = "forms-elemets-tags" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: " Forms",
+    href: "#!"
+  }, {
+    breadcrumb: " Elements",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+	{% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+	<section class="container-fluid px-0 g-pt-65">
+		<div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+			{% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+			<div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+				{% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+				<div class="g-pa-20">
+					<h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-28">{{ title }}</h1>
+
+					<div class="row">
+						<!-- 1-st column -->
+						<div class="col-md-4">
+							<!-- Outline Tags -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Outline Tags</h3>
+
+                <!-- Basic Input -->
+                <div class="g-mb-30">
+                  <h4 class="h6 g-font-weight-600 g-color-black g-mb-20">Basic Input</h4>
+
+                  <div class="u-tagsinput--v2 g-brd-around g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-px-6 g-py-5">
+                    <input type="text" value="Content Tag" data-role="tagsinput">
+                  </div>
+                </div>
+                <!-- End Basic Input -->
+
+                <!-- Rounded Input -->
+                <div class="g-mb-30">
+                  <h4 class="h6 g-font-weight-600 g-color-black g-mb-20">Rounded Input</h4>
+
+                  <div class="u-tagsinput--v2 g-brd-around g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-25 g-px-6 g-py-5">
+                    <input type="text" value="Content Tag" data-role="tagsinput">
+                  </div>
+                </div>
+                <!-- End Rounded Input -->
+
+                <!-- Line Input -->
+                <div>
+                  <h4 class="h6 g-font-weight-600 g-color-black g-mb-20">Line Input</h4>
+
+                  <div class="u-tagsinput--v2 g-brd-bottom g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0 px-0 g-py-5">
+                    <input type="text" value="Content Tag" data-role="tagsinput">
+                  </div>
+                </div>
+                <!-- End Line Input -->
+              </div>
+							<!-- End Outline Tags -->
+						</div>
+						<!-- End 1-st column -->
+
+            <!-- 2-nd column -->
+            <div class="col-md-4">
+              <!-- Tags with light BG -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Tags with light BG</h3>
+
+                <!-- Basic Input -->
+                <div class="g-mb-30">
+                  <h4 class="h6 g-font-weight-600 g-color-black g-mb-20">Basic Input</h4>
+
+                  <div class="u-tagsinput--v2--gray g-brd-around g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-px-6 g-py-5">
+                    <input type="text" value="Content Tag" data-role="tagsinput">
+                  </div>
+                </div>
+                <!-- End Basic Input -->
+
+                <!-- Rounded Input -->
+                <div class="g-mb-30">
+                  <h4 class="h6 g-font-weight-600 g-color-black g-mb-20">Rounded Input</h4>
+
+                  <div class="u-tagsinput--v2--gray g-brd-around g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-25 g-px-6 g-py-5">
+                    <input type="text" value="Content Tag" data-role="tagsinput">
+                  </div>
+                </div>
+                <!-- End Rounded Input -->
+
+                <!-- Line Input -->
+                <div class="g-mb-30 g-mb-0--md">
+                  <h4 class="h6 g-font-weight-600 g-color-black g-mb-20">Line Input</h4>
+
+                  <div class="u-tagsinput--v2--gray g-brd-bottom g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0 px-0 g-py-5">
+                    <input type="text" value="Content Tag" data-role="tagsinput">
+                  </div>
+                </div>
+                <!-- End Line Input -->
+              </div>
+              <!-- End Tags with light BG -->
+            </div>
+            <!-- End 2-nd column -->
+
+            <!-- 3-d column -->
+            <div class="col-md-4">
+              <!-- Tags with dark BG -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Tags with dark BG</h3>
+
+                <!-- Basic Input -->
+                <div class="g-mb-30">
+                  <h4 class="h6 g-font-weight-600 g-color-black g-mb-20">Basic Input</h4>
+
+                  <div class="u-tagsinput--v2--blue g-brd-around g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-px-6 g-py-5">
+                    <input type="text" value="Content Tag" data-role="tagsinput">
+                  </div>
+                </div>
+                <!-- End Basic Input -->
+
+                <!-- Rounded Input -->
+                <div class="g-mb-30">
+                  <h4 class="h6 g-font-weight-600 g-color-black g-mb-20">Rounded Input</h4>
+
+                  <div class="u-tagsinput--v2--blue g-brd-around g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-25 g-px-6 g-py-5">
+                    <input type="text" value="Content Tag" data-role="tagsinput">
+                  </div>
+                </div>
+                <!-- End Rounded Input -->
+
+                <!-- Line Input -->
+                <div class="g-mb-30 g-mb-0--md">
+                  <h4 class="h6 g-font-weight-600 g-color-black g-mb-20">Line Input</h4>
+
+                  <div class="u-tagsinput--v2--blue g-brd-bottom g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0 px-0 g-py-5">
+                    <input type="text" value="Content Tag" data-role="tagsinput">
+                  </div>
+                </div>
+                <!-- End Line Input -->
+              </div>
+              <!-- End Tags with dark BG -->
+            </div>
+            <!-- End 3-d column -->
+					</div>
+				</div>
+
+				{% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+			</div>
+		</div>
+	</section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/blocks/modals/project-form.njk" %}
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Plugins Init. -->
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/bloodhound.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/typeahead.jquery.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ root }}assets/js/components/hs.count-qty.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+      dropdownHideOnScroll: false
+    });
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of forms
+    $.HSCore.components.HSCountQty.init('.js-quantity');
+  });
+</script>
+</body>
+</html>

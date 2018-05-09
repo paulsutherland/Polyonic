@@ -1,0 +1,1194 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-countdowns" %}
+{% set title = "Countdowns" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-block.njk" %}
+
+    <section>
+      <!-- Countdowns #01 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#01</span>
+            </h2>
+          </div>
+
+          <div id="shortcode1">
+            <div class="shortcode-html">
+              <div class="js-countdown u-countdown-v3 g-line-height-1_2 g-font-weight-300 g-color-black text-center text-uppercase"
+                   data-end-date="2019/08/10"
+                   data-month-format="%m"
+                   data-days-format="%D"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S">
+                <div class="d-inline-block g-mx-20 g-mb-20">
+                  <div class="js-cd-days g-font-size-36 mb-0">12</div>
+                  <span class="g-font-size-12">Days</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-36">:</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-20">
+                  <div class="js-cd-hours g-font-size-36 mb-0">01</div>
+                  <span class="g-font-size-12">Hours</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-36">:</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-20">
+                  <div class="js-cd-minutes g-font-size-36 mb-0">52</div>
+                  <span class="g-font-size-12">Minutes</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-36">:</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-20">
+                  <div class="js-cd-seconds g-font-size-36 mb-0">52</div>
+                  <span class="g-font-size-12">Seconds</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds'
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-main" %}
+          {% set contentTarget = "#shortcode1" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- Countdowns #01 -->
+
+      <!-- Countdowns #02 -->
+      <section class="g-bg-gray-dark-v1 g-color-white g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#02</span>
+            </h2>
+          </div>
+
+          <div id="shortcode2">
+            <div class="shortcode-html">
+              <div class="js-countdown u-countdown-v3 g-line-height-1_2 g-font-weight-300 text-center text-uppercase"
+                   data-end-date="2019/08/09"
+                   data-month-format="%m"
+                   data-days-format="%D"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S">
+                <div class="d-inline-block g-mx-20 g-mb-20">
+                  <div class="js-cd-days g-font-size-36 mb-0">12</div>
+                  <span class="g-font-size-12">Days</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-36">:</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-20">
+                  <div class="js-cd-hours g-font-size-36 mb-0">01</div>
+                  <span class="g-font-size-12">Hours</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-36">:</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-20">
+                  <div class="js-cd-minutes g-font-size-36 mb-0">52</div>
+                  <span class="g-font-size-12">Minutes</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-36">:</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-20">
+                  <div class="js-cd-seconds g-font-size-36 mb-0">52</div>
+                  <span class="g-font-size-12">Seconds</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds'
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-white" %}
+          {% set contentTarget = "#shortcode2" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- Countdowns #02 -->
+
+      <!-- Countdowns #03 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#03</span>
+            </h2>
+          </div>
+
+          <div id="shortcode3">
+            <div class="shortcode-html">
+              <div class="js-countdown u-countdown-v4 text-center"
+                   data-end-date="2019/08/09"
+                   data-month-format="%m"
+                   data-days-format="%D"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S">
+                <div class="d-inline-block g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-days g-font-size-45 g-font-weight-300 g-line-height-1 mb-0"></div>
+                  <span>Days</span>
+                </div>
+
+                <div class="d-inline-block g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-hours g-font-size-45 g-font-weight-300 g-line-height-1 mb-0"></div>
+                  <span>Hours</span>
+                </div>
+
+                <div class="d-inline-block g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-minutes g-font-size-45 g-font-weight-300 g-line-height-1 mb-0"></div>
+                  <span>Minutes</span>
+                </div>
+
+                <div class="d-inline-block g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-seconds g-font-size-45 g-font-weight-300 g-line-height-1 mb-0"></div>
+                  <span>Seconds</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds'
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-main" %}
+          {% set contentTarget = "#shortcode3" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Countdowns #03 -->
+
+      <!-- Countdowns #04 -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content">
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 g-bg-size-cover u-bg-overlay g-bg-black-opacity-0_7--after" style="height: 140%; background: url({{ root }}assets/img-temp/1920x800/img2.jpg)"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container u-bg-overlay__inner g-py-100">
+          <div class="text-center g-color-white g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#04</span>
+            </h2>
+          </div>
+
+          <div id="shortcode4">
+            <div class="shortcode-html">
+              <div class="js-countdown u-countdown-v4 g-color-white text-center"
+                   data-end-date="2019/08/09"
+                   data-month-format="%m"
+                   data-days-format="%D"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S">
+                <div class="d-inline-block g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-days g-font-size-45 g-font-weight-300 g-line-height-1 mb-0"></div>
+                  <span>Days</span>
+                </div>
+
+                <div class="d-inline-block g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-hours g-font-size-45 g-font-weight-300 g-line-height-1 mb-0"></div>
+                  <span>Hours</span>
+                </div>
+
+                <div class="d-inline-block g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-minutes g-font-size-45 g-font-weight-300 g-line-height-1 mb-0"></div>
+                  <span>Minutes</span>
+                </div>
+
+                <div class="d-inline-block g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-seconds g-font-size-45 g-font-weight-300 g-line-height-1 mb-0"></div>
+                  <span>Seconds</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds'
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-white" %}
+          {% set contentTarget = "#shortcode4" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Countdowns #04 -->
+
+      <!-- Countdowns #05 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#05</span>
+            </h2>
+          </div>
+
+          <div id="shortcode5">
+            <div class="shortcode-html">
+              <div class="js-countdown u-countdown-v5 text-center"
+                   data-end-date="2019/08/09"
+                   data-days-format="%D"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S">
+                <div class="d-inline-block g-mx-20 g-mb-40">
+                  <div class="js-cd-days g-font-size-56 g-font-weight-300 g-line-height-1"></div>
+                  <span>Days</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-28 g-font-weight-200 g-line-height-1_8">|</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-40">
+                  <div class="js-cd-hours g-font-size-56 g-font-weight-300 g-line-height-1"></div>
+                  <span>Hours</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-28 g-font-weight-200 g-line-height-1_8">|</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-40">
+                  <div class="js-cd-minutes g-font-size-56 g-font-weight-300 g-line-height-1"></div>
+                  <span>Minutes</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-28 g-font-weight-200 g-line-height-1_8">|</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-40">
+                  <div class="js-cd-seconds g-font-size-56 g-font-weight-300 g-line-height-1"></div>
+                  <span>Seconds</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds'
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-main" %}
+          {% set contentTarget = "#shortcode5" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Countdowns #05 -->
+
+      <!-- Countdowns #06 -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content">
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 g-bg-size-cover u-bg-overlay g-bg-black-opacity-0_5--after" style="height: 140%; background: url({{ root }}assets/img-temp/1920x800/img11.jpg)"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container u-bg-overlay__inner g-py-100">
+          <div class="text-center g-color-white g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#06</span>
+            </h2>
+          </div>
+
+          <div id="shortcode6">
+            <div class="shortcode-html">
+              <div class="js-countdown u-countdown-v5 g-color-white text-center"
+                   data-end-date="2019/08/09"
+                   data-days-format="%D"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S">
+                <div class="d-inline-block g-mx-20 g-mb-40">
+                  <div class="js-cd-days g-font-size-56 g-font-weight-300 g-line-height-1"></div>
+                  <span>Days</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-28 g-font-weight-200 g-line-height-1_8">|</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-40">
+                  <div class="js-cd-hours g-font-size-56 g-font-weight-300 g-line-height-1"></div>
+                  <span>Hours</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-28 g-font-weight-200 g-line-height-1_8">|</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-40">
+                  <div class="js-cd-minutes g-font-size-56 g-font-weight-300 g-line-height-1"></div>
+                  <span>Minutes</span>
+                </div>
+
+                <div class="hidden-down d-inline-block align-top g-font-size-28 g-font-weight-200 g-line-height-1_8">|</div>
+
+                <div class="d-inline-block g-mx-20 g-mb-40">
+                  <div class="js-cd-seconds g-font-size-56 g-font-weight-300 g-line-height-1"></div>
+                  <span>Seconds</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds'
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-white" %}
+          {% set contentTarget = "#shortcode6" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Countdowns #06 -->
+
+      <!-- Countdowns #07 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#07</span>
+            </h2>
+          </div>
+
+          <div id="shortcode7">
+            <div class="shortcode-html">
+              <div class="js-countdown u-countdown-v1 text-center text-uppercase g-color-white g-line-height-1"
+                   data-end-date="2019/08/09"
+                   data-month-format="%m"
+                   data-days-format="%d"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S">
+                <div class="d-inline-block g-bg-black g-brd-around g-brd-black g-pa-20 g-mx-15 g-mb-30">
+                  <div class="js-cd-month g-font-weight-700 g-font-size-40"></div>
+                  <hr class="g-brd-white-opacity-0_5 my-2">
+                  <span class="g-font-size-12">Month</span>
+                </div>
+
+                <div class="d-inline-block g-bg-black g-brd-around g-brd-black g-pa-20 g-mx-15 g-mb-30">
+                  <div class="js-cd-days g-font-weight-700 g-font-size-40"></div>
+                  <hr class="g-brd-white-opacity-0_5 my-2">
+                  <span class="g-font-size-12">Days</span>
+                </div>
+
+                <div class="d-inline-block g-bg-black g-brd-around g-brd-black g-pa-20 g-mx-15 g-mb-30">
+                  <div class="js-cd-hours g-font-weight-700 g-font-size-40"></div>
+                  <hr class="g-brd-white-opacity-0_5 my-2">
+                  <span class="g-font-size-12">Hours</span>
+                </div>
+
+                <div class="d-inline-block g-bg-black g-brd-around g-brd-black g-pa-20 g-mx-15 g-mb-30">
+                  <div class="js-cd-minutes g-font-weight-700 g-font-size-40"></div>
+                  <hr class="g-brd-white-opacity-0_5 my-2">
+                  <span class="g-font-size-12">Minutes</span>
+                </div>
+
+                <div class="d-inline-block g-bg-black g-brd-around g-brd-black g-pa-20 g-mx-15 g-mb-30">
+                  <div class="js-cd-seconds g-font-weight-700 g-font-size-40"></div>
+                  <hr class="g-brd-white-opacity-0_5 my-2">
+                  <span class="g-color-white g-font-size-12">Seconds</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds'
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-main" %}
+          {% set contentTarget = "#shortcode7" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Countdowns #07 -->
+
+      <!-- Countdowns #08 -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content">
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 g-bg-size-cover u-bg-overlay g-bg-black-opacity-0_6--after" style="height: 140%; background: url({{ root }}assets/img-temp/1920x800/img4.jpg)"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container u-bg-overlay__inner g-py-100">
+          <div class="text-center g-color-white g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#08</span>
+            </h2>
+          </div>
+
+          <div id="shortcode8">
+            <div class="shortcode-html">
+              <div class="js-countdown u-countdown-v1 g-color-white text-center text-uppercase g-line-height-1"
+                   data-end-date="2019/08/09"
+                   data-month-format="%m"
+                   data-days-format="%d"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S">
+                <div class="d-inline-block g-bg-white-opacity-0_05 g-brd-around g-brd-white-opacity-0_2 g-py-20 g-px-30 g-mx-15 g-mb-30">
+                  <div class="js-cd-month g-font-size-40 g-font-weight-600 g-mb-10">12</div>
+                  <span class="g-color-white-opacity-0_7 g-font-size-12">Month</span>
+                </div>
+
+                <div class="d-inline-block g-bg-white-opacity-0_05 g-brd-around g-brd-white-opacity-0_2 g-py-20 g-px-30 g-mx-15 g-mb-30">
+                  <div class="js-cd-days g-font-size-40 g-font-weight-600 g-mb-10">12</div>
+                  <span class="g-color-white-opacity-0_7 g-font-size-12">Days</span>
+                </div>
+
+                <div class="d-inline-block g-bg-white-opacity-0_05 g-brd-around g-brd-white-opacity-0_2 g-py-20 g-px-30 g-mx-15 g-mb-30">
+                  <div class="js-cd-hours g-font-size-40 g-font-weight-600 g-mb-10">01</div>
+                  <span class="g-color-white-opacity-0_7 g-font-size-12">Hours</span>
+                </div>
+
+                <div class="d-inline-block g-bg-white-opacity-0_05 g-brd-around g-brd-white-opacity-0_2 g-py-20 g-px-30 g-mx-15 g-mb-30">
+                  <div class="js-cd-minutes g-font-size-40 g-font-weight-600 g-mb-10">52</div>
+                  <span class="g-color-white-opacity-0_7 g-font-size-12">Minutes</span>
+                </div>
+
+                <div class="d-inline-block g-bg-white-opacity-0_05 g-brd-around g-brd-white-opacity-0_2 g-py-20 g-px-30 g-mx-15 g-mb-30">
+                  <div class="js-cd-seconds g-font-size-40 g-font-weight-600 g-mb-10">52</div>
+                  <span class="g-color-white-opacity-0_7 g-font-size-12">Seconds</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds'
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-white" %}
+          {% set contentTarget = "#shortcode8" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Countdowns #08 -->
+
+      <!-- Countdowns #09 -->
+      <section class="g-py-100">
+        <div class="container u-bg-overlay__inner text-center">
+          <div class="text-center g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#09</span>
+            </h2>
+          </div>
+
+          <div id="shortcode9">
+            <div class="shortcode-html">
+              <div class="js-countdown u-countdown-v2 g-color-white g-font-weight-300"
+                   data-end-date="2019/08/09"
+                   data-month-format="%m"
+                   data-days-format="%D"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S">
+                <div class="d-inline-block g-bg-black g-min-width-200 rounded g-py-25 g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-days g-font-size-60 g-line-height-1_2 mb-0">12</div>
+                  <span class="g-font-size-16">Days</span>
+                </div>
+
+                <div class="d-inline-block g-bg-black g-min-width-200 rounded g-py-25 g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-hours g-font-size-60 g-line-height-1_2 mb-0">01</div>
+                  <span class="g-font-size-16">Hours</span>
+                </div>
+
+                <div class="d-inline-block g-bg-black g-min-width-200 rounded g-py-25 g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-minutes g-font-size-60 g-line-height-1_2 mb-0">52</div>
+                  <span class="g-font-size-16">Minutes</span>
+                </div>
+
+                <div class="d-inline-block g-bg-black g-min-width-200 rounded g-py-25 g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-seconds g-font-size-60 g-line-height-1_2 mb-0">52</div>
+                  <span class="g-font-size-16">Seconds</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds'
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-main" %}
+          {% set contentTarget = "#shortcode9" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Countdowns #09 -->
+
+      <!-- Countdowns #10 -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content">
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 g-bg-size-cover u-bg-overlay g-bg-bluegray-opacity-0_2--after" style="height: 140%; background: url({{ root }}assets/img-temp/1920x800/img12.jpg)"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container u-bg-overlay__inner g-color-white text-center g-py-100">
+          <div class="text-center g-color-black g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#10</span>
+            </h2>
+          </div>
+
+          <div id="shortcode10">
+            <div class="shortcode-html">
+              <div class="js-countdown u-countdown-v2"
+                   data-end-date="2019/08/09"
+                   data-month-format="%m"
+                   data-days-format="%D"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S">
+                <div class="d-inline-block g-min-width-200 rounded g-bg-black-opacity-0_3 g-py-25 g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-days g-font-size-60 g-font-weight-700 g-line-height-1_2 mb-0">12</div>
+                  <span class="g-font-size-16">Days</span>
+                </div>
+
+                <div class="d-inline-block g-min-width-200 rounded g-bg-black-opacity-0_3 g-py-25 g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-hours g-font-size-60 g-font-weight-700 g-line-height-1_2 mb-0">01</div>
+                  <span class="g-font-size-16">Hours</span>
+                </div>
+
+                <div class="d-inline-block g-min-width-200 rounded g-bg-black-opacity-0_3 g-py-25 g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-minutes g-font-size-60 g-font-weight-700 g-line-height-1_2 mb-0">52</div>
+                  <span class="g-font-size-16">Minutes</span>
+                </div>
+
+                <div class="d-inline-block g-min-width-200 rounded g-bg-black-opacity-0_3 g-py-25 g-px-40 g-mx-15 g-mb-30">
+                  <div class="js-cd-seconds g-font-size-60 g-font-weight-700 g-line-height-1_2 mb-0">52</div>
+                  <span class="g-font-size-16">Seconds</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds'
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-main" %}
+          {% set contentTarget = "#shortcode10" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Countdowns #10 -->
+
+      <!-- Countdowns #11 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#11</span>
+            </h2>
+          </div>
+
+          <div id="shortcode11">
+            <div class="shortcode-html">
+              <div class="js-countdown-pies u-cd-v6 text-center text-uppercase"
+                   data-start-date="2015/06/17"
+                   data-end-date="2018/08/09"
+                   data-days-format="%D"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S"
+                   data-circles-bg-color="#f8f8f8"
+                   data-circles-fg-color="#72c02c"
+                   data-circles-radius="80"
+                   data-circles-stroke-width="7"
+                   data-circles-font-size="35">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-days g-mb-20"></div>
+                    <span class="g-font-size-18">Days</span>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-hours g-mb-20"></div>
+                    <span class="g-font-size-18">Hours</span>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-minutes g-mb-20"></div>
+                    <span class="g-font-size-18">Minutes</span>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-seconds g-mb-20"></div>
+                    <span class="g-font-size-18">Seconds</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/circles/circles.min.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns within chart pies
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown-pies', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds',
+                    circles: true
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-main" %}
+          {% set contentTarget = "#shortcode11" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Countdowns #11 -->
+
+      <!-- Countdowns #12 -->
+      <section class="g-bg-gray-dark-v1 g-color-white g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#12</span>
+            </h2>
+          </div>
+
+          <div id="shortcode12">
+            <div class="shortcode-html">
+              <div class="js-countdown-pies u-cd-v6 text-center g-color-white-opacity-0_8 g-font-weight-300 text-uppercase"
+                   data-start-date="2015/01/12"
+                   data-end-date="2018/05/27"
+                   data-days-format="%D"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S"
+                   data-circles-bg-color="#222"
+                   data-circles-fg-color="#72c02c"
+                   data-circles-radius="80"
+                   data-circles-stroke-width="2"
+                   data-circles-font-size="35">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-days g-mb-20"></div>
+                    <span class="g-font-size-18">Days</span>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-hours g-mb-20"></div>
+                    <span class="g-font-size-18">Hours</span>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-minutes g-mb-20"></div>
+                    <span class="g-font-size-18">Minutes</span>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-seconds g-mb-20"></div>
+                    <span class="g-font-size-18">Seconds</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/circles/circles.min.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns within chart pies
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown-pies', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds',
+                    circles: true
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-white" %}
+          {% set contentTarget = "#shortcode12" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Countdowns #12 -->
+
+      <!-- Countdowns #13 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-60">
+            <h2 class="h4">Countdowns
+              <span class="g-color-primary g-ml-5">#13</span>
+            </h2>
+          </div>
+
+          <div id="shortcode13">
+            <div class="shortcode-html">
+              <div class="js-countdown-pies u-cd-v6 text-center g-color-gray-light-v3 text-uppercase"
+                   data-start-date="2015/06/17"
+                   data-end-date="2018/08/09"
+                   data-days-format="%D"
+                   data-hours-format="%H"
+                   data-minutes-format="%M"
+                   data-seconds-format="%S"
+                   data-circles-bg-color="#f8f8f8"
+                   data-circles-fg-color="#333333"
+                   data-circles-radius="80"
+                   data-circles-stroke-width="15"
+                   data-circles-font-size="35">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-days g-mb-20"></div>
+                    <span class="g-font-size-16 g-color-gray-dark-v1 g-font-weight-700">Days</span>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-hours g-mb-20"></div>
+                    <span class="g-font-size-16 g-color-gray-dark-v1 g-font-weight-700">Hours</span>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-minutes g-mb-20"></div>
+                    <span class="g-font-size-16 g-color-gray-dark-v1 g-font-weight-700">Minutes</span>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 g-mb-50">
+                    <div class="js-cd-seconds g-mb-20"></div>
+                    <span class="g-font-size-16 g-color-gray-dark-v1 g-font-weight-700">Seconds</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/circles/circles.min.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of countdowns within chart pies
+                  var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown-pies', {
+                    yearsElSelector: '.js-cd-years',
+                    monthElSelector: '.js-cd-month',
+                    daysElSelector: '.js-cd-days',
+                    hoursElSelector: '.js-cd-hours',
+                    minutesElSelector: '.js-cd-minutes',
+                    secondsElSelector: '.js-cd-seconds',
+                    circles: true
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set SCExtendedClasses = "text-center" %}
+          {% set SCLinkColor = "g-color-main" %}
+          {% set contentTarget = "#shortcode13" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Countdowns #13 -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+  <script src="{{ root }}assets/vendor/circles/circles.min.js"></script>
+  <script src="{{ root }}assets/vendor/jquery.countdown.min.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.countdown.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of countdowns
+      var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+        yearsElSelector: '.js-cd-years',
+        monthElSelector: '.js-cd-month',
+        daysElSelector: '.js-cd-days',
+        hoursElSelector: '.js-cd-hours',
+        minutesElSelector: '.js-cd-minutes',
+        secondsElSelector: '.js-cd-seconds'
+      });
+
+      // initialization of countdowns within chart pies
+      var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown-pies', {
+        yearsElSelector: '.js-cd-years',
+        monthElSelector: '.js-cd-month',
+        daysElSelector: '.js-cd-days',
+        hoursElSelector: '.js-cd-hours',
+        minutesElSelector: '.js-cd-minutes',
+        secondsElSelector: '.js-cd-seconds',
+        circles: true
+      });
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

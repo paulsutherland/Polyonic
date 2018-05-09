@@ -1,0 +1,33 @@
+/*------------------------------------
+  Error state v1-2
+------------------------------------*/
+
+.u-has-error-v1-2 {
+  .form-control,
+  [class*="input-group-"],
+  [class*="u-select"] {
+    background-color: #fff0f0;
+    border-color: $g-color-red;
+
+    &[readonly] {
+      background-color: #fff0f0;
+    }
+  }
+
+  .form-control-feedback {
+    color: $g-color-red;
+  }
+
+  [class*="u-check-icon"] {
+    background-color: #fff0f0;
+  }
+
+  [class*="input-group-"]:last-child,
+  .chosen-single div b {
+    color: $g-color-red;
+  }
+
+  .error {
+    display: block;
+  }
+}

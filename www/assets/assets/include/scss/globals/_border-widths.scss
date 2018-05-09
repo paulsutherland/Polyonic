@@ -1,0 +1,293 @@
+/*------------------------------------
+  Border Width
+------------------------------------*/
+.g-brd {
+  &-0 {
+    border-width: 0 !important;
+  }
+
+  &-1 {
+    border-width: 1px !important;
+  }
+
+  &-2 {
+    border-width: 2px !important;
+  }
+
+  &-3 {
+    border-width: 3px !important;
+
+    &--before {
+      &::before {
+        border-width: 3px !important;
+      }
+
+      &--active {
+        &.active {
+          &::before {
+            border-width: 3px !important;
+          }
+        }
+      }
+    }
+  }
+
+  &-4 {
+    border-width: 4px !important;
+  }
+
+  &-5 {
+    border-width: 5px !important;
+  }
+
+  &-6 {
+    border-width: 6px !important;
+  }
+
+  &-7 {
+    border-width: 7px !important;
+  }
+
+  &-10 {
+    border-width: 10px !important;
+  }
+
+  &-12 {
+    border-width: 12px !important;
+  }
+
+  // Top
+  &-top {
+    &-0 {
+      border-top-width: 0 !important;
+    }
+    &-2 {
+      border-top-width: 2px !important;
+    }
+    &-3 {
+      border-top-width: 3px !important;
+    }
+    &-5 {
+      border-top-width: 5px !important;
+    }
+  }
+
+  // Bottom
+  &-bottom {
+    &-0 {
+      border-bottom-width: 0 !important;
+    }
+    &-2 {
+      border-bottom-width: 2px !important;
+
+      &--hover:hover {
+        border-bottom-width: 2px !important;
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          border-bottom-width: 2px !important;
+        }
+      }
+    }
+    &-5 {
+      border-bottom-width: 5px !important;
+    }
+  }
+
+  // Left
+  &-left {
+    &-0 {
+      border-left-width: 0 !important;
+    }
+
+    &-1 {
+      border-left-width: 1px !important;
+    }
+
+    &-2 {
+      border-left-width: 2px !important;
+    }
+
+    &-3 {
+      border-left-width: 3px !important;
+    }
+
+    &-4 {
+      border-left-width: 4px !important;
+    }
+  }
+
+  // Right
+  &-right {
+    &-0 {
+      border-right-width: 0 !important;
+    }
+
+    &-1 {
+      border-right-width: 1px !important;
+    }
+
+    &-2 {
+      border-right-width: 2px !important;
+    }
+
+    &-3 {
+      border-right-width: 3px !important;
+    }
+
+    &-4 {
+      border-right-width: 4px !important;
+    }
+  }
+}
+
+@media (min-width: $g-md) {
+  .g-brd {
+    &-0--md {
+      border-width: 0 !important;
+    }
+
+    &-1--md {
+      border-width: 1px !important;
+    }
+
+    &-2--md {
+      border-width: 2px !important;
+    }
+
+    &-3--md {
+      border-width: 3px !important;
+    }
+
+    &-4--md {
+      border-width: 4px !important;
+    }
+
+    &-5--md {
+      border-width: 5px !important;
+    }
+
+    &-6--md {
+      border-width: 6px !important;
+    }
+
+    &-10--md {
+      border-width: 10px !important;
+    }
+
+    // Top
+    &-top {
+      &-0--md {
+        border-top-width: 0 !important;
+      }
+      &-2--md {
+        border-top-width: 2px !important;
+      }
+      &-3--md {
+        border-top-width: 3px !important;
+      }
+      &-5--md {
+        border-top-width: 5px !important;
+      }
+    }
+
+    // Bottom
+    &-bottom {
+      &-0--md {
+        border-bottom-width: 0 !important;
+      }
+      &-2--md {
+        border-bottom-width: 2px !important;
+      }
+      &-5--md {
+        border-bottom-width: 5px !important;
+      }
+    }
+
+    // Left
+    &-left {
+      &-0--md {
+        border-left-width: 0 !important;
+      }
+
+      &-1--md {
+        border-left-width: 1px !important;
+      }
+
+      &-2--md {
+        border-left-width: 2px !important;
+      }
+
+      &-3--md {
+        border-left-width: 3px !important;
+      }
+
+      &-4--md {
+        border-left-width: 4px !important;
+      }
+    }
+
+    // Right
+    &-right {
+      &-0--md {
+        border-right-width: 0 !important;
+      }
+
+      &-1--md {
+        border-right-width: 1px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: $g-lg) {
+  .g-brd {
+    &-0--lg {
+      border-width: 0 !important;
+    }
+    &-1--lg {
+      border-width: 1px !important;
+    }
+
+    // Top
+    &-top {
+      &-0--lg {
+        border-top-width: 0 !important;
+      }
+      &-1--lg {
+        border-top-width: 1px !important;
+      }
+    }
+
+    // Bottom
+    &-bottom {
+      &-0--lg {
+        border-bottom-width: 0 !important;
+      }
+      &-1--lg {
+        border-bottom-width: 1px !important;
+      }
+    }
+
+    // Left
+    &-left {
+      &-0--lg {
+        border-left-width: 0 !important;
+      }
+      &-1--lg {
+        border-left-width: 1px !important;
+      }
+    }
+
+    // Right
+    &-right {
+      &-0--lg {
+        border-right-width: 0 !important;
+      }
+      &-1--lg {
+        border-right-width: 1px !important;
+      }
+    }
+  }
+}

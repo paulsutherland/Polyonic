@@ -1,0 +1,131 @@
+/*------------------------------------
+  Paginations
+------------------------------------*/
+
+//
+// Pagination v1
+//
+
+/* Pagination v1 */
+.u-pagination-v1__item {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px transparent;
+  transition: all .3s ease;
+
+  &--active,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  // Info
+  &-info {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  // Disabled
+  &--disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+}
+
+/* Pagination Style v1 */
+.u-pagination-v1-1 {
+  color: $g-color-gray-dark-v5;
+  border-color: $g-color-gray-dark-v5;
+
+  &--active,
+  &:hover,
+  &:focus {
+    background-color: $g-color-primary;
+    color: $g-color-white;
+    border-color: $g-color-primary;
+  }
+}
+
+/* Pagination Style v2 */
+.u-pagination-v1-2 {
+  color: $g-color-gray-dark-v3;
+  border-color: $g-color-gray-dark-v3;
+
+  &:hover,
+  &:focus {
+    color: $g-color-primary;
+    border-color: $g-color-primary;
+  }
+
+  &--active,
+  &--nav {
+    background-color: $g-color-primary;
+    color: $g-color-white;
+    border-color: $g-color-primary;
+
+    &:hover,
+    &:focus {
+      color: $g-color-white;
+    }
+  }
+
+  &--nav {
+    &:hover {
+      background-color: rgba($g-color-primary, .8);
+    }
+  }
+}
+
+/* Pagination Style v3 */
+.u-pagination-v1-3 {
+  color: $g-color-gray-dark-v2;
+  border-color: $g-color-gray-dark-v2;
+
+  &--active,
+  &:hover,
+  &:focus {
+    background-color: $g-color-gray-dark-v2;
+    color: $g-color-white;
+    border-color: $g-color-gray-dark-v2;
+  }
+}
+
+/* Pagination Style v4 */
+.u-pagination-v1-4 {
+  color: $g-color-gray-dark-v2;
+  border-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $g-color-primary;
+    border-color: $g-color-primary;
+  }
+
+  &--active {
+    color: $g-color-white;
+    background-color: $g-color-primary;
+    border-color: $g-color-primary;
+
+    &:hover,
+    &:focus {
+      color: $g-color-white;
+    }
+  }
+}
+
+/* Pagination Style v5 */
+.u-pagination-v1-5 {
+  color: $g-color-gray-dark-v5;
+  border-color: $g-color-gray-light-v2;
+
+  &--active,
+  &:hover,
+  &:focus {
+    background-color: $g-color-primary;
+    color: $g-color-white;
+    border-color: $g-color-primary;
+  }
+}

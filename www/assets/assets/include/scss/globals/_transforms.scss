@@ -1,0 +1,229 @@
+/*------------------------------------
+  Transforms
+------------------------------------*/
+
+.g-transform {
+  &-scale {
+    &-0_5 {
+      transform: scale(.5);
+
+      &--hover:hover {
+        transform: scale(.5);
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          transform: scale(.5);
+        }
+      }
+    }
+
+    &-0_8 {
+      transform: scale(.8);
+
+      &--hover:hover {
+        transform: scale(.8);
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          transform: scale(.8);
+        }
+      }
+    }
+
+    &-0_85 {
+      transform: scale(.85);
+
+      &--hover:hover {
+        transform: scale(.85);
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          transform: scale(.85);
+        }
+      }
+    }
+
+    &-0_9 {
+      transform: scale(.9);
+
+      &--hover:hover {
+        transform: scale(.9);
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          transform: scale(.9);
+        }
+      }
+    }
+
+    &-1 {
+      transform: scale(1);
+
+      &--hover:hover {
+        transform: scale(1);
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          transform: scale(1);
+        }
+      }
+    }
+
+    &-1_05 {
+      transform: scale3d(1.05, 1.05, 1.05);
+
+      &--hover:hover {
+        transform: scale3d(1.05, 1.05, 1.05);
+        z-index: 2;
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          transform: scale3d(1.1, 1.1, 1.1);
+        }
+      }
+    }
+
+    &-1_1 {
+      transform: scale3d(1.1, 1.1, 1.1);
+
+      &--hover:hover {
+        transform: scale3d(1.1, 1.1, 1.1);
+        z-index: 2;
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          transform: scale3d(1.1, 1.1, 1.1);
+        }
+      }
+    }
+
+    &-1_2 {
+      transform: scale(1.2);
+
+      &--hover:hover {
+        transform: scale(1.2);
+      }
+
+      &--parent-hover {
+        .g-parent:hover & {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  &-translate {
+    &-x {
+      &-100x {
+        transform: translateX(100%);
+
+        &--hover:hover {
+          transform: translateX(100%);
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            transform: translateX(100%);
+          }
+        }
+      }
+
+      &-minus {
+        &-100x {
+          transform: translateX(-100%);
+
+          &--hover:hover {
+            transform: translateX(-100%);
+          }
+
+          &--parent-hover {
+            .g-parent:hover & {
+              transform: translateX(-100%);
+            }
+          }
+        }
+      }
+    }
+
+    &-y {
+      &-5 {
+        transform: translateY(5px);
+
+        &--hover:hover {
+          transform: translateY(5px);
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            transform: translateY(5px);
+          }
+        }
+      }
+
+      &-100x {
+        transform: translateY(100%);
+
+        &--hover:hover {
+          transform: translateY(100%);
+        }
+
+        &--parent-hover {
+          .g-parent:hover & {
+            transform: translateY(100%);
+          }
+        }
+      }
+
+      &-minus {
+        &-5 {
+          transform: translateY(-5px);
+
+          &--hover:hover {
+            transform: translateY(-5px);
+          }
+
+          &--parent-hover {
+            .g-parent:hover & {
+              transform: translateY(-5px);
+            }
+          }
+        }
+
+        &-70 {
+          transform: translateY(-70px);
+
+          &--hover:hover {
+            transform: translateY(-70px);
+          }
+
+          &--parent-hover {
+            .g-parent:hover & {
+              transform: translateY(-70px);
+            }
+          }
+        }
+
+        &-100x {
+          transform: translateY(-100%);
+
+          &--hover:hover {
+            transform: translateY(-100%);
+          }
+
+          &--parent-hover {
+            .g-parent:hover & {
+              transform: translateY(-100%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+/* Inset Buttons */
+.u-btn-inset {
+  position: relative;
+
+  &::before {
+    @include absolute(top 2px right 2px bottom 2px left 2px);
+    content: "";
+    border: solid 1px #fff;
+    border-radius: 1px;
+  }
+
+  &--rounded::before {
+    border-radius: 50px;
+  }
+}

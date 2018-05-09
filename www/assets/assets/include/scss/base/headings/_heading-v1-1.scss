@@ -1,0 +1,13 @@
+/*------------------------------------
+  Heading-v1-1
+------------------------------------*/
+.u-heading-v1-1 {
+  &::before {
+    top: 48%;
+    border-top-style: solid;
+  }
+  &::after {
+    top: 58%;
+    border-top-style: solid;
+  }
+}

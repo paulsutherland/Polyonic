@@ -1,0 +1,107 @@
+/*------------------------------------
+  Borders Default (solid)
+------------------------------------*/
+//
+// .border-0, .border-top-0, .border-right-0, .border-bottom-0, .border-left-0
+//
+
+.g-brd-none { /* P */
+  border: none !important;
+}
+
+.g-brd-x {
+  border-left: solid 1px transparent !important;
+  border-right: solid 1px transparent !important;
+}
+.g-brd-y {
+  border-top: solid 1px transparent !important;
+  border-bottom: solid 1px transparent !important;
+}
+
+.g-brd-around {
+  border: solid 1px transparent !important;
+}
+.g-brd-top {
+  border-top: solid 1px transparent !important;
+}
+.g-brd-right {
+  border-right: solid 1px transparent !important;
+}
+.g-brd-bottom {
+  border-bottom: solid 1px transparent !important;
+}
+.g-brd-left {
+  border-left: solid 1px transparent !important;
+
+  &-none {
+    border-left: none !important;
+  }
+}
+
+@media (min-width: $g-sm) {
+  .g-brd-around--sm {
+    border: solid 1px transparent !important;
+  }
+  .g-brd-top--sm {
+    border-top: solid 1px transparent !important;
+  }
+  .g-brd-right--sm {
+    border-right: solid 1px transparent !important;
+  }
+  .g-brd-bottom--sm {
+    border-bottom: solid 1px transparent !important;
+  }
+  .g-brd-left--sm {
+    border-left: solid 1px transparent !important;
+  }
+}
+
+@media (min-width: $g-md) {
+  .g-brd-x--md {
+    border-left: solid 1px transparent !important;
+    border-right: solid 1px transparent !important;
+  }
+  .g-brd-around--md {
+    border: solid 1px transparent !important;
+  }
+  .g-brd-top--md {
+    border-top: solid 1px transparent !important;
+  }
+  .g-brd-right--md {
+    border-right: solid 1px transparent !important;
+  }
+  .g-brd-bottom--md {
+    border-bottom: solid 1px transparent !important;
+  }
+  .g-brd-left--md {
+    border-left: solid 1px transparent !important;
+  }
+}
+
+@media (min-width: $g-lg) { /* P */
+  .g-brd-around--lg {
+    border: solid 1px transparent !important;
+  }
+  .g-brd-top--lg {
+    border-top: solid 1px transparent !important;
+  }
+  .g-brd-right--lg {
+    border-right: solid 1px transparent !important;
+  }
+  .g-brd-bottom--lg {
+    border-bottom: solid 1px transparent !important;
+  }
+  .g-brd-left--lg {
+    border-left: solid 1px transparent !important;
+  }
+  .g-brd-left-none--lg { // Z
+    border-left: none !important;
+  }
+  .g-brd-x--lg {
+    border-left: solid 1px transparent;
+    border-right: solid 1px transparent;
+  }
+  .g-brd-none--lg {
+    border: none !important;
+  }
+}

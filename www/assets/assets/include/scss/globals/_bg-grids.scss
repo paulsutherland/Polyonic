@@ -1,0 +1,37 @@
+/*------------------------------------
+  Images Grid
+------------------------------------*/
+// v1
+.g-bg-grid-v1--before::before {
+  background-image: url(../img/bg/grid/wave.png);
+}
+
+// v2
+.g-bg-grid-v2--before::after {
+  background-image: url(../img/bg/grid/tile-left.png);
+}
+
+// v3
+.g-bg-grid-v3--before::after {
+  background-image: url(../img/bg/grid/tile-right.png);
+}
+
+// v4
+.g-bg-grid-v4--before::after {
+  background-image: url(../img/bg/grid/diagonal-left.png);
+}
+
+// v5
+.g-bg-grid-v5--before::after {
+  background-image: url(../img/bg/grid/diagonal-right.png);
+}
+
+// v6
+.g-bg-grid-v6--before::after {
+  background-image: url(../img/bg/grid/zigzag-left.png);
+}
+
+// v7
+.g-bg-grid-v7--before::after {
+  background-image: url(../img/bg/grid/zigzag-right.png);
+}

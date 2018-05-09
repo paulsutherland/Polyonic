@@ -1,0 +1,373 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Form Validation States" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu7 = "unCollapsed" %}
+{% set isSubMenu7Validation = "unCollapsed" %}
+{% set activeMenuItem = "forms-validation-states" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: " Forms",
+    href: "#!"
+  }, {
+    breadcrumb: " Elements",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+  <section class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+        <div class="g-pa-20">
+          <h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-28">{{ title }}</h1>
+
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Success State -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Success State</h3>
+
+                <!-- Default Input -->
+                <div class="form-group has-success g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-1_1">Default Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+                      <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-lightblue-v3"></i>
+                    </span>
+                    <input id="inputGroup-1_1" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Default Input -->
+
+                <!-- Rounded Input -->
+                <div class="form-group has-success g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-3_1">Rounded Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+                      <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-lightblue-v3"></i>
+                    </span>
+                    <input id="inputGroup-3_1" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-20 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Rounded Input -->
+
+                <!-- Square Input -->
+                <div class="form-group has-success g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-2_1">Square Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+                      <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-lightblue-v3"></i>
+                    </span>
+                    <input id="inputGroup-2_1" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Square Input -->
+
+                <!-- Line Text Input -->
+                <div class="form-group has-success">
+                  <label class="g-mb-10" for="inputGroup-4_1">Line Text Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+                      <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-lightblue-v3"></i>
+                    </span>
+                    <input id="inputGroup-4_1" class="form-control form-control-md g-brd-none g-brd-bottom g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0 px-0 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Line Text Input -->
+              </div>
+              <!-- End Success State -->
+            </div>
+
+            <div class="col-md-6">
+              <!-- Success State v.2 -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Success State v.2</h3>
+
+                <!-- Default Input -->
+                <div class="form-group has-success g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-3_1">Default Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-absolute-centered--y g-right-14 d-inline-block opacity-0 g-opacity-1--success">
+                      <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-dark-v6">
+                        <span class="g-pos-rel g-width-18 g-height-18 g-bg-lightblue-v3 g-brd-around g-brd-lightblue-v3 rounded-circle">
+                          <i class="hs-admin-check g-absolute-centered g-font-weight-800 g-font-size-8 g-color-white"></i>
+                        </span>
+                        <span class="g-hidden-sm-down g-font-size-default g-color-lightblue-v3 g-ml-8">Confirmed</span>
+                      </em>
+                    </span>
+                    <input class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-lightred-v2--error g-rounded-4 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Default Input -->
+
+                <!-- Rounded Input -->
+                <div class="form-group has-success g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-3_1">Rounded Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-absolute-centered--y g-right-14 d-inline-block opacity-0 g-opacity-1--success">
+                      <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-dark-v6">
+                        <span class="g-pos-rel g-width-18 g-height-18 g-bg-lightblue-v3 g-brd-around g-brd-lightblue-v3 rounded-circle">
+                          <i class="hs-admin-check g-absolute-centered g-font-weight-800 g-font-size-8 g-color-white"></i>
+                        </span>
+                        <span class="g-hidden-sm-down g-font-size-default g-color-lightblue-v3 g-ml-8">Confirmed</span>
+                      </em>
+                    </span>
+                    <input id="inputGroup-3_1" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-20 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Rounded Input -->
+
+                <!-- Square Input -->
+                <div class="form-group has-success g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-2_1">Square Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-absolute-centered--y g-right-14 d-inline-block opacity-0 g-opacity-1--success">
+                      <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-dark-v6">
+                        <span class="g-pos-rel g-width-18 g-height-18 g-bg-lightblue-v3 g-brd-around g-brd-lightblue-v3 rounded-circle">
+                          <i class="hs-admin-check g-absolute-centered g-font-weight-800 g-font-size-8 g-color-white"></i>
+                        </span>
+                        <span class="g-hidden-sm-down g-font-size-default g-color-lightblue-v3 g-ml-8">Confirmed</span>
+                      </em>
+                    </span>
+                    <input id="inputGroup-2_1" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Square Input -->
+
+                <!-- Line Text Input -->
+                <div class="form-group has-success">
+                  <label class="g-mb-10" for="inputGroup-4_1">Line Text Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-absolute-centered--y g-right-14 d-inline-block opacity-0 g-opacity-1--success">
+                      <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-dark-v6">
+                        <span class="g-pos-rel g-width-18 g-height-18 g-bg-lightblue-v3 g-brd-around g-brd-lightblue-v3 rounded-circle">
+                          <i class="hs-admin-check g-absolute-centered g-font-weight-800 g-font-size-8 g-color-white"></i>
+                        </span>
+                        <span class="g-hidden-sm-down g-font-size-default g-color-lightblue-v3 g-ml-8">Confirmed</span>
+                      </em>
+                    </span>
+                    <input id="inputGroup-4_1" class="form-control form-control-md g-brd-none g-brd-bottom g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0 px-0 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Line Text Input -->
+              </div>
+              <!-- End Success State v.2 -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Error State -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Error State</h3>
+
+                <!-- Default Input -->
+                <div class="form-group u-has-error-v3 g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-1_1">Default Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+                      <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-lightblue-v3"></i>
+                    </span>
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--error">
+                      <i class="hs-admin-close g-absolute-centered g-font-size-default g-color-primary"></i>
+                    </span>
+                    <input id="inputGroup-1_1" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-brd-pink-v2--error g-rounded-4 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Default Input -->
+
+                <!-- Rounded Input -->
+                <div class="form-group u-has-error-v3 g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-3_1">Rounded Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+                      <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-lightblue-v3"></i>
+                    </span>
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--error">
+                      <i class="hs-admin-close g-absolute-centered g-font-size-default g-color-primary"></i>
+                    </span>
+                    <input id="inputGroup-3_1" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-brd-pink-v2--error g-rounded-20 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Rounded Input -->
+
+                <!-- Square Input -->
+                <div class="form-group u-has-error-v3 g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-2_1">Square Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+                      <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-lightblue-v3"></i>
+                    </span>
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--error">
+                      <i class="hs-admin-close g-absolute-centered g-font-size-default g-color-primary"></i>
+                    </span>
+                    <input id="inputGroup-2_1" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-brd-pink-v2--error rounded-0 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Square Input -->
+
+                <!-- Line Text Input -->
+                <div class="form-group u-has-error-v3">
+                  <label class="g-mb-10" for="inputGroup-4_1">Line Text Input</label>
+
+                  <div class="g-pos-rel">
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+                      <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-lightblue-v3"></i>
+                    </span>
+                    <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--error">
+                      <i class="hs-admin-close g-absolute-centered g-font-size-default g-color-primary"></i>
+                    </span>
+                    <input id="inputGroup-4_1" class="form-control form-control-md g-brd-none g-brd-bottom g-brd-gray-light-v7 g-brd-pink-v2--error g-brd-gray-light-v3--focus rounded-0 px-0 g-py-10" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+                <!-- End Line Text Input -->
+              </div>
+              <!-- End Error State -->
+            </div>
+
+            <div class="col-md-6">
+              <!-- Disable State -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Disable State</h3>
+
+                <!-- Default Input -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-1_1">Default Input</label>
+
+                  <div class="g-pos-rel">
+                    <input id="inputGroup-1_1" class="form-control form-control-md g-bg-gray-light-v8--disabled g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-brd-pink-v2--error g-rounded-4 g-px-14 g-py-10" type="text" placeholder="Placeholder" disabled="disabled">
+                  </div>
+                </div>
+                <!-- End Default Input -->
+
+                <!-- Rounded Input -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-3_1">Rounded Input</label>
+
+                  <div class="g-pos-rel">
+                    <input id="inputGroup-3_1" class="form-control form-control-md g-bg-gray-light-v8--disabled g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-brd-pink-v2--error g-rounded-20 g-px-14 g-py-10" type="text" placeholder="Placeholder" disabled="disabled">
+                  </div>
+                </div>
+                <!-- End Rounded Input -->
+
+                <!-- Square Input -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-2_1">Square Input</label>
+
+                  <div class="g-pos-rel">
+                    <input id="inputGroup-2_1" class="form-control form-control-md g-bg-gray-light-v8--disabled g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-brd-pink-v2--error rounded-0 g-px-14 g-py-10" type="text" placeholder="Placeholder" disabled="disabled">
+                  </div>
+                </div>
+                <!-- End Square Input -->
+
+                <!-- Line Text Input -->
+                <div class="form-group">
+                  <label class="g-mb-10" for="inputGroup-4_1">Line Text Input</label>
+
+                  <div class="g-pos-rel">
+                    <input id="inputGroup-4_1" class="form-control form-control-md g-bg-gray-light-v8--disabled g-brd-none g-brd-bottom g-brd-gray-light-v7 g-brd-pink-v2--error g-brd-gray-light-v3--focus rounded-0 px-0 g-py-10" type="text" placeholder="Placeholder" disabled="disabled">
+                  </div>
+                </div>
+                <!-- End Line Text Input -->
+              </div>
+              <!-- End Disable State -->
+            </div>
+          </div>
+        </div>
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/blocks/modals/project-form.njk" %}
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Plugins Init. -->
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/bloodhound.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/typeahead.jquery.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ root }}assets/js/components/hs.count-qty.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+      dropdownHideOnScroll: false
+    });
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of forms
+    $.HSCore.components.HSCountQty.init('.js-quantity');
+  });
+</script>
+</body>
+</html>

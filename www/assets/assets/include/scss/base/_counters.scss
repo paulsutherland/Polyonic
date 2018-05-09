@@ -1,0 +1,47 @@
+/*--------------------------------------------------
+  Counter v1
+----------------------------------------------------*/
+.u-counter-v3 {
+	position: relative;
+}
+.u-counter-v3::after {
+	content: "";
+
+	position: absolute;
+	left: -9px;
+	right: -9px;
+	bottom: -9px;
+	top: -9px;
+	
+	display: block;
+	border-radius: inherit;
+	border-width: 1px;
+	border-style: solid;
+	border-color: inherit;
+}
+
+/*--------------------------------------------------
+  Counter v6
+----------------------------------------------------*/
+.u-counter-v6 {
+	position: relative;
+
+	width: 120px;
+	height: 120px;
+}
+.u-counter-v6::after {
+	content: "";
+
+	position: absolute;
+	top: -11px;
+	right: -11px;
+	bottom: -11px;
+	left: -11px;
+
+	display: block;
+	border-radius: inherit;
+	border-width: 2px;
+	border-style: inherit;
+	border-color: inherit;
+	clip: rect(auto, 71px, 142px, auto);
+}

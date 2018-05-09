@@ -1,0 +1,86 @@
+/*------------------------------------
+  Components
+------------------------------------*/
+
+//
+// Bases
+//
+
+//
+// Box Shadows
+@import "base/box-shadows/box-shadows";
+
+//
+// Buttons
+@import "base/buttons/buttons";
+
+//
+// Cards
+@import "base/cards/cards";
+
+//
+// Selects
+@import "base/selects/selects";
+
+//
+// Tagsinputs
+@import "base/tagsinputs/tagsinputs";
+
+//
+// Headers
+@import "base/headers/header-admin";
+
+//
+// Sidebars
+@import "base/sidebars/sidebar-admin";
+
+//
+// Footer
+@import "base/footer/footer-admin";
+
+//
+// Charts
+@import "base/charts/area-charts";
+@import "base/charts/sparklines";
+
+//
+// Tooltips
+@import "base/tooltips/tooltips";
+
+//
+// Tables
+@import "base/tables/tables";
+
+//
+// Toasts
+@import "base/toasts/toasts";
+
+//
+// Datepickers
+@import "base/datepickers/datepickers";
+
+//
+// Sliders
+@import "base/sliders/sliders";
+
+//
+// Checkboxes
+@import "base/form-controls/checkboxes/checkboxes";
+
+//
+// Quantities
+@import "base/form-controls/quantity";
+
+//
+// States
+@import "base/form-controls/states/success/success-states";
+@import "base/form-controls/states/error/error-states";
+
+//
+// Vendors
+@import "vendors/bootstrap/style.scss";
+@import "vendors/bootstrap-select/bootstrap-select";
+@import "vendors/bootstrap-tagsinput/bootstrap-tagsinput";
+@import "vendors/fancybox/fancybox";
+@import "vendors/noty/noty";
+@import "vendors/datatables/datatables";

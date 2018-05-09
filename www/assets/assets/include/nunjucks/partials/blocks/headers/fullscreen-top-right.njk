@@ -1,0 +1,71 @@
+<!-- Logo -->
+<a class="navbar-brand g-pos-abs g-top-20 g-left-20 g-z-index-2" href="{{ root }}index.html">
+  <img src="{{ root }}assets/img/logo/logo-2.png" alt="Image Description">
+</a>
+<!-- End Logo -->
+
+<!-- Responsive Toggle Button -->
+<button class="btn u-header-toggler u-header-toggler--top-right g-pa-0" id="header-toggler"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="js-header"
+        aria-label="Toggle Header"
+        data-target="#js-header">
+  <span class="hamburger hamburger--collapse">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </span>
+</button>
+<!-- End Responsive Toggle Button -->
+
+<!-- Header -->
+<div id="js-header" class="u-header u-header--fullscreen--top-right"
+     aria-labelledby="header-toggler"
+     data-overlay-classes="g-bg-black-opacity-0_8">
+  <div class="u-header__sections-container">
+    <div class="u-header__section u-header__section--dark">
+      <nav class="navbar">
+        <div class="container">
+          <!-- Navigation -->
+          <div class="align-items-center flex-sm-row w-100" id="navBar">
+            <ul class="js-mega-menu navbar-nav text-uppercase mx-auto g-font-size-22">
+              <li class="nav-item{% if mainNavActive_1 == 'home' %} active{% endif %}">
+                <a href="#!" class="nav-link">Home
+                  {% if mainNavActive_1 == 'home' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              </li>
+              <li class="nav-item{% if mainNavActive_1 == 'features' %} active{% endif %}">
+                <a href="#!" class="nav-link">Features
+                  {% if mainNavActive_1 == 'features' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              </li>
+              <li class="nav-item{% if mainNavActive_1 == 'shortcodes' %} active{% endif %}">
+                <a href="#!" class="nav-link">Shortcodes
+                  {% if mainNavActive_1 == 'shortcodes' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              </li>
+              <li class="nav-item{% if mainNavActive_1 == 'pages' %} active{% endif %}">
+                <a href="#!" class="nav-link">Pages
+                  {% if mainNavActive_1 == 'pages' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              </li>
+              <li class="nav-item{% if mainNavActive_1 == 'demos' %} active{% endif %}">
+                <a href="#!" class="nav-link">Demos
+                  {% if mainNavActive_1 == 'demos' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              </li>
+              <li class="nav-item{% if mainNavActive_1 == 'whats-new' %} active{% endif %}">
+                <a href="#!" class="nav-link">What's New
+                  {% if mainNavActive_1 == 'whats-new' %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- End Header -->

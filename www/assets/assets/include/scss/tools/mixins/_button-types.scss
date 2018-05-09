@@ -1,0 +1,96 @@
+//
+// Button Flat Type
+//
+
+// e.g. @include u-button-flat ($g-color-primary, $g-color-white, $g-color-black);
+@mixin u-button-flat ($color-bg-brd, $color-text, $color-text-hover) {
+  color: $color-text;
+  background-color: $color-bg-brd;
+
+  &:hover,
+  &.active {
+    border-color: lighten($color-bg-brd, 10%);
+    background-color: lighten($color-bg-brd, 10%);
+  }
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: $color-text-hover;
+  }
+
+  // Test from Oleg
+  &.g-btn-hover-reset {
+    &:hover,
+    &.active {
+      background-color: $color-bg-brd;
+      border-color: $color-bg-brd;
+    }
+  }
+}
+
+
+
+//
+// Button Outline Type
+//
+
+// e.g. @include u-hover-btn-v1-1 ($g-color-primary, $g-color-white);
+@mixin u-button-outline ($color-bg-brd, $color-text, $color-text-hover) {
+  color: $color-text;
+  border-color: $color-bg-brd;
+  background-color: transparent;
+
+  &:focus,
+  &.active {
+    color: $color-text-hover;
+    background-color: $color-bg-brd;
+  }
+
+  &:hover {
+    color: $color-text-hover;
+    background-color: $color-bg-brd
+  }
+}
+
+
+
+//
+// Button Gradient Type
+//
+
+// e.g. @include u-button-gradient ($g-color-primary, $g-color-red);
+@mixin u-button-gradient ($btn-left, $btn-right){
+  color: $g-color-white;
+  background: linear-gradient(to right, $btn-left 0%, $btn-right 100%) !important;
+  border-image: linear-gradient(to right, $btn-left 0%, $btn-right 100%);
+  border-image-slice: 1;
+
+  &:hover,
+  &:focus,
+  &.active {
+    opacity: .9;
+    color: $g-color-white;
+  }
+}
+
+
+
+//
+// Button Gradient Outline Type
+//
+
+// e.g. @include u-button-outline-gradient ($g-color-primary, $g-color-red);
+@mixin u-button-outline-gradient ($btn-left, $btn-right){
+  color: $g-color-gray-dark-v3;
+  background: transparent;
+  border-image: linear-gradient(to right, $btn-left 0%, $btn-right 100%);
+  border-image-slice: 1;
+
+  &:hover,
+  &:focus,
+  &.active {
+    background: linear-gradient(to right, $btn-left 0%, $btn-right 100%);
+    color: $g-color-white;
+  }
+}

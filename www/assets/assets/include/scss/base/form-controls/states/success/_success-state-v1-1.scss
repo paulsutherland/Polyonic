@@ -1,0 +1,35 @@
+/*------------------------------------
+  Success state v1-1
+------------------------------------*/
+
+.u-has-success-v1-1 {
+  .form-control,
+  [class*="input-group-"],
+  [class*="u-select"] {
+    background-color: #f0fff0;
+    border-color: $g-color-primary;
+
+    &[readonly] {
+      background-color: #f0fff0;
+    }
+  }
+
+  .form-control-feedback {
+    color: $g-color-primary;
+  }
+
+  [class*="u-check-icon"] {
+    color: #f0fff0;
+    background-color: #f0fff0;
+  }
+
+  [class*="u-check-icon"] i {
+    color: rgba($g-color-primary, .2);
+  }
+
+  [class*="input-group-"],
+  [class*="input-group-"]:last-child,
+  .chosen-single div b {
+    color: $g-color-primary;
+  }
+}

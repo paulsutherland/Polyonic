@@ -1,0 +1,267 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Textareas" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu7 = "unCollapsed" %}
+{% set isSubMenu7Elements = "unCollapsed" %}
+{% set activeMenuItem = "form-elements-textareas" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: " Forms",
+    href: "#!"
+  }, {
+    breadcrumb: " Elements",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+	{% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+	<section class="container-fluid px-0 g-pt-65">
+		<div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+			{% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+			<div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+				{% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+				<div class="g-pa-20">
+					<h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-28">{{ title }}</h1>
+
+					<div class="row">
+						<!-- 1-st column -->
+						<div class="col-md-6">
+							<!-- Basic Textareas -->
+							<div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+								<h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Basic Textareas</h3>
+
+                <!-- Textarea -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-1_1">Textarea</label>
+
+                  <textarea id="inputGroup-1_1" class="form-control form-control-md g-resize-none g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4" rows="3" placeholder="Text area"></textarea>
+                  <small class="form-text text-muted g-font-size-default g-mt-10">
+                    <strong>Note:</strong> height of the textarea depends on the rows attribute.
+                  </small>
+                </div>
+                <!-- End Textarea -->
+
+                <!-- Textarea Resizable -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-1_2">Textarea resizable</label>
+
+                  <textarea id="inputGroup-1_2" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4" rows="3" placeholder="Text area"></textarea>
+                </div>
+                <!-- End Textarea Resizable -->
+
+                <!-- Textarea Expandable -->
+                <div class="form-group">
+                  <label class="g-mb-10" for="inputGroup-1_2">Textarea expandable</label>
+
+                  <textarea id="inputGroup-1_3" class="form-control form-control-md u-textarea-expandable g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-resize-none g-overflow-hidden" rows="3" placeholder="Text area"></textarea>
+
+                  <small class="form-text text-muted g-font-size-default g-mt-10">
+                    <strong>Note:</strong> expands on focus.
+                  </small>
+                </div>
+                <!-- End Textarea Expandable -->
+							</div>
+							<!-- End Basic Textareas -->
+
+              <!-- Square Textareas -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Square Textareas</h3>
+
+                <!-- Textarea -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-2_1">Textarea</label>
+
+                  <textarea id="inputGroup-2_1" class="form-control form-control-md g-resize-none g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0" rows="3" placeholder="Text area"></textarea>
+                  <small class="form-text text-muted g-font-size-default g-mt-10">
+                    <strong>Note:</strong> height of the textarea depends on the rows attribute.
+                  </small>
+                </div>
+                <!-- End Textarea -->
+
+                <!-- Textarea Resizable -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-2_2">Textarea resizable</label>
+
+                  <textarea id="inputGroup-2_2" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0" rows="3" placeholder="Text area"></textarea>
+                </div>
+                <!-- End Textarea Resizable -->
+
+                <!-- Textarea Expandable -->
+                <div class="form-group">
+                  <label class="g-mb-10" for="inputGroup-2_2">Textarea expandable</label>
+
+                  <textarea id="inputGroup-2_3" class="form-control form-control-md u-textarea-expandable g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0 g-resize-none g-overflow-hidden" rows="3" placeholder="Text area"></textarea>
+
+                  <small class="form-text text-muted g-font-size-default g-mt-10">
+                    <strong>Note:</strong> expands on focus.
+                  </small>
+                </div>
+                <!-- End Textarea Expandable -->
+              </div>
+              <!-- End Square Textareas -->
+						</div>
+						<!-- End 1-st column -->
+
+						<!-- 2-nd column -->
+						<div class="col-md-6">
+              <!-- Rounded Textareas -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Rounded Textareas</h3>
+
+                <!-- Textarea -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-3_1">Textarea</label>
+
+                  <textarea id="inputGroup-3_1" class="form-control form-control-md g-resize-none g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-20" rows="3" placeholder="Text area"></textarea>
+                  <small class="form-text text-muted g-font-size-default g-mt-10">
+                    <strong>Note:</strong> height of the textarea depends on the rows attribute.
+                  </small>
+                </div>
+                <!-- End Textarea -->
+
+                <!-- Textarea Resizable -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-3_2">Textarea resizable</label>
+
+                  <textarea id="inputGroup-3_2" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-20" rows="3" placeholder="Text area"></textarea>
+                </div>
+                <!-- End Textarea Resizable -->
+
+                <!-- Textarea Expandable -->
+                <div class="form-group">
+                  <label class="g-mb-10" for="inputGroup-3_3">Textarea expandable</label>
+
+                  <textarea id="inputGroup-3_3" class="form-control form-control-md u-textarea-expandable g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-20 g-resize-none g-overflow-hidden" rows="3" placeholder="Text area"></textarea>
+
+                  <small class="form-text text-muted g-font-size-default g-mt-10">
+                    <strong>Note:</strong> expands on focus.
+                  </small>
+                </div>
+                <!-- End Textarea Expandable -->
+              </div>
+              <!-- End Rounded Textareas -->
+
+              <!-- Line Textareas -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Line Textareas</h3>
+
+                <!-- Textarea -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-2_1">Textarea</label>
+
+                  <textarea id="inputGroup-2_1" class="form-control form-control-md g-resize-none g-brd-none g-brd-bottom g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0" rows="3" placeholder="Text area"></textarea>
+                  <small class="form-text text-muted g-font-size-default g-mt-10">
+                    <strong>Note:</strong> height of the textarea depends on the rows attribute.
+                  </small>
+                </div>
+                <!-- End Textarea -->
+
+                <!-- Textarea Resizable -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10" for="inputGroup-2_2">Textarea resizable</label>
+
+                  <textarea id="inputGroup-2_2" class="form-control form-control-md g-brd-none g-brd-bottom g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0" rows="3" placeholder="Text area"></textarea>
+                </div>
+                <!-- End Textarea Resizable -->
+
+                <!-- Textarea Expandable -->
+                <div class="form-group">
+                  <label class="g-mb-10" for="inputGroup-2_2">Textarea expandable</label>
+
+                  <textarea id="inputGroup-2_3" class="form-control form-control-md u-textarea-expandable g-brd-none g-brd-bottom g-brd-gray-light-v7 g-brd-gray-light-v3--focus rounded-0 g-resize-none g-overflow-hidden" rows="3" placeholder="Text area"></textarea>
+
+                  <small class="form-text text-muted g-font-size-default g-mt-10">
+                    <strong>Note:</strong> expands on focus.
+                  </small>
+                </div>
+                <!-- End Textarea Expandable -->
+              </div>
+              <!-- End Line Textareas -->
+            </div>
+						<!-- End 2-nd column -->
+					</div>
+				</div>
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+			</div>
+		</div>
+	</section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/blocks/modals/project-form.njk" %}
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Plugins Init. -->
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/bloodhound.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/typeahead.jquery.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ root }}assets/js/components/hs.count-qty.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+      dropdownHideOnScroll: false
+    });
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of forms
+    $.HSCore.components.HSCountQty.init('.js-quantity');
+  });
+</script>
+</body>
+</html>

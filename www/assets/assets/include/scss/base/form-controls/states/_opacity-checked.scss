@@ -1,0 +1,19 @@
+/*------------------------------------
+  Checked state opacity
+------------------------------------*/
+
+.g-opacity-1 {
+  &--checked {
+    input[type="checkbox"]:checked + &,
+    input[type="radio"]:checked + &,
+    input[type="checkbox"]:checked + * &,
+    input[type="radio"]:checked + * & {
+      opacity: 1;
+    }
+
+    &.g-checked,
+    .g-checked & {
+      opacity: 1;
+    }
+  }
+}

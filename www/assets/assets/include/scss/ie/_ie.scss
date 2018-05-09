@@ -1,0 +1,23 @@
+/*------------------------------------
+  Internet Explorer (IE)
+------------------------------------*/
+
+/* Text Gradients */
+.IE {
+  .g-color-cyan-gradient-opacity-v1,
+  .g-color-blue-gradient-opacity-v1 {
+    background: transparent;
+    -webkit-text-fill-color: initial;
+  }
+
+  .g-color-cyan-gradient-opacity-v1 {
+    color: #00bed6;
+  }
+  .g-color-blue-gradient-opacity-v1 {
+    color: #8654da;
+  }
+
+  .form-control:-ms-input-placeholder {
+    opacity: 1;
+  }
+}

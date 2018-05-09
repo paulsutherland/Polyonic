@@ -1,0 +1,7 @@
+/*------------------------------------
+  Shadow Effect
+------------------------------------*/
+.u-icon-shadow--hover:hover,
+.u-icon-block--hover:hover .u-icon-shadow--hover {
+  box-shadow: 0 0 10px rgba(0,0,0, .3);
+}

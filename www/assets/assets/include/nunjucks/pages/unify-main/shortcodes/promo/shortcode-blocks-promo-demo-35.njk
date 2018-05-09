@@ -1,0 +1,285 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-promo" %}
+{% set title = "Promo Blocks 35" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/chosen/chosen.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    <!-- Promo Block -->
+    <div class="g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-cover g-bg-black-opacity-0_3--after g-py-100" style="background-image: url({{ root }}assets/img-temp/1920x1080/img53.jpg);">
+      <div class="container g-pos-rel g-z-index-1">
+        <div class="g-mb-20">
+          <h1 class="g-color-white g-font-size-40 mb-0">Find a Home</h1>
+        </div>
+
+        <div class="g-bg-white g-pa-30">
+          <!-- Input Group -->
+          <form>
+            <div class="row g-mx-0--md">
+              <div class="col-md-6 col-lg-8 g-px-0--md g-mb-30">
+                <input class="form-control rounded-0 g-brd-gray-light-v3 g-px-20 g-py-15" type="text" placeholder="Search by City, Address, ZIP ...">
+              </div>
+
+              <!-- Button Group -->
+              <div class="col-sm-6 col-md-3 col-lg-2 g-px-0--md g-mb-30">
+                <select class="js-custom-select w-100 u-select-v1 g-min-width-150 g-brd-left-none--md g-brd-gray-light-v3 g-color-black g-color-primary--hover g-pt-12 g-pb-13" required
+                        data-placeholder="All Cities"
+                        data-open-icon="fa fa-angle-down"
+                        data-close-icon="fa fa-angle-up">
+                  <option></option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="NY">New York</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="VC">Vancouver</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="LN">London</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="BR">Berlin</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="ML">Milan</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="PR">Paris</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="MS">Moscow</option>
+                </select>
+              </div>
+              <!-- End Button Group -->
+
+              <!-- Button Group -->
+              <div class="col-sm-6 col-md-3 col-lg-2 g-px-0--md g-mb-30">
+                <select class="js-custom-select w-100 u-select-v1 g-min-width-150 g-brd-left-none--md g-brd-gray-light-v3 g-color-black g-color-primary--hover g-pt-12 g-pb-13" required
+                        data-placeholder="All Areas"
+                        data-open-icon="fa fa-angle-down"
+                        data-close-icon="fa fa-angle-up">
+                  <option></option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="NR">North</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="NTE">Northeast</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="NTW">Northwest</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="EA">East</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="SO">South</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="SOE">Southeast</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="SOW">Southwest</option>
+                  <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="WE">West</option>
+                </select>
+              </div>
+              <!-- End Button Group -->
+            </div>
+
+            <div class="row">
+              <div class="col-6 col-lg-3 g-mb-30">
+                <!-- Button Group -->
+                <div class="input-group-btn">
+                  <select class="js-custom-select u-select-v1 w-100 g-brd-gray-light-v3 g-color-black g-color-primary--hover g-py-12" required
+                          data-placeholder="All Status"
+                          data-open-icon="fa fa-angle-down"
+                          data-close-icon="fa fa-angle-up">
+                    <option></option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="FR">For Rent</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="FS">For Sale</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="FC">Foreclosure</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="NC">New Construction</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="NL">New Listing</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="OH">Open House</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="RP">Reduced Price</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="RS">Resale</option>
+                  </select>
+                </div>
+                <!-- End Button Group -->
+              </div>
+
+              <div class="col-6 col-lg-3 g-mb-30">
+                <!-- Button Group -->
+                <div class="input-group-btn">
+                  <select class="js-custom-select u-select-v1 w-100 g-brd-gray-light-v3 g-color-black g-color-primary--hover g-py-12" required
+                          data-placeholder="All Types"
+                          data-open-icon="fa fa-angle-down"
+                          data-close-icon="fa fa-angle-up">
+                    <option></option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="AP">Apartment</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="CO">Condo</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="FA">Farm</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="LO">Loft</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="LO">Lot</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="MU">Multi Family Home</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="SI">Single Family Home</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="TO">Townhouse</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="VI">Villa</option>
+                  </select>
+                </div>
+                <!-- End Button Group -->
+              </div>
+
+              <div class="col-6 col-lg-3 g-mb-30">
+                <!-- Button Group -->
+                <div class="input-group-btn">
+                  <select class="js-custom-select u-select-v1 w-100 g-brd-gray-light-v3 g-color-black g-color-primary--hover g-py-12" required
+                          data-placeholder="Beds"
+                          data-open-icon="fa fa-angle-down"
+                          data-close-icon="fa fa-angle-up">
+                    <option></option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="1">1</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="2">2</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="3">3</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="4">4</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="5">5</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="6">6</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="7">7</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="8">8</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="9">9</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="10">10</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="ANY">Any</option>
+                  </select>
+                </div>
+                <!-- End Button Group -->
+              </div>
+
+              <div class="col-6 col-lg-3 g-mb-30">
+                <!-- Button Group -->
+                <div class="input-group-btn">
+                  <select class="js-custom-select u-select-v1 w-100 g-brd-gray-light-v3 g-color-black g-color-primary--hover g-py-12" required
+                          data-placeholder="Baths"
+                          data-open-icon="fa fa-angle-down"
+                          data-close-icon="fa fa-angle-up">
+                    <option></option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="1">1</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="2">2</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="3">3</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="4">4</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="5">5</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="6">6</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="7">7</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="8">8</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="9">9</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="10">10</option>
+                    <option class="g-brd-none g-color-black g-color-white--hover g-color-white--active g-bg-primary--hover g-bg-primary--active" value="ANY2">Any</option>
+                  </select>
+                </div>
+                <!-- End Button Group -->
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6 col-lg-3 g-mb-30">
+                <input class="form-control rounded-0 g-brd-gray-light-v3 g-px-20 g-py-15" type="text" placeholder="Min Area (sqft)">
+              </div>
+
+              <div class="col-6 col-lg-3 g-mb-30">
+                <input class="form-control rounded-0 g-brd-gray-light-v3 g-px-20 g-py-15" type="text" placeholder="Max Area (sqft)">
+              </div>
+
+              <div class="col-sm-6 col-lg-2 g-mb-30">
+                <!-- Radio Group -->
+                <div class="btn-group justified-content">
+                  <label class="u-check">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio" checked="">
+                    <span class="btn btn-md btn-block u-btn-outline-white g-brd-gray-light-v3 g-brd-primary--checked g-color-black g-color-primary--checked g-font-size-default rounded-0 g-py-13">Buy</span>
+                  </label>
+                  <label class="u-check">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio">
+                    <span class="btn btn-md btn-block u-btn-outline-white g-brd-gray-light-v3 g-brd-primary--checked g-color-black g-color-primary--checked g-font-size-default rounded-0 g-py-13">Rent</span>
+                  </label>
+                </div>
+                <!-- End Radio Group -->
+              </div>
+
+              <div class="col-sm-6 col-lg-4 g-mb-30">
+                <h2 class="h6 g-font-weight-600 mb-4">Price Range $(<span id="rangeSliderAmount3">0</span>)</h2>
+                <div id="rangeSlider1" class="u-slider-v1-3"
+                     data-result-container="rangeSliderAmount3"
+                     data-range="true"
+                     data-default="30, 3500000"
+                     data-min="0"
+                     data-max="3500000"></div>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <button class="btn btn-block u-btn-primary g-color-white g-bg-primary-dark-v1--hover g-font-weight-600 rounded-0 g-px-18 g-py-15" type="submit">
+                Search
+              </button>
+            </div>
+          </form>
+          <!-- End Input Group -->
+        </div>
+      </div>
+    </div>
+    <!-- End Promo Block -->
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/content-demo-1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="{{ root }}assets/vendor/chosen/chosen.jquery.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widget.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/slider.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+  <script src="{{ root }}assets/js/components/hs.slider.js"></script>
+  <script src="{{ root }}assets/js/components/hs.select.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of range slider
+      $.HSCore.components.HSSlider.init('#rangeSlider1');
+
+      // initialization of custom select
+      $.HSCore.components.HSSelect.init('.js-custom-select');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+  <!-- End JS Plugins Init. -->
+</body>
+</html>

@@ -1,0 +1,1099 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-lists-group" %}
+{% set title = "Lists Group" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section>
+      <!-- List Groups #01 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">List Groups
+              <span class="g-color-primary g-ml-5">#01</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode1">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="media">
+                        <div class="d-flex g-mt-2 g-mr-15">
+                          <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                        </div>
+                        <div class="media-body">
+                          <p class="m-0"><strong>James Coolman</strong> saved your pin</p>
+                          <span class="g-font-size-12 g-color-gray">5 minutes ago</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="media">
+                        <div class="d-flex g-mt-2 g-mr-15">
+                          <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                        </div>
+                        <div class="media-body">
+                          <p class="m-0"><strong>Alberta Watson</strong> sent you a message</p>
+                          <span class="g-font-size-12 g-color-gray">5 minutes ago</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="media">
+                        <div class="d-flex g-mt-2 g-mr-15">
+                          <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                        </div>
+                        <div class="media-body">
+                          <p class="m-0"><strong>Jasica Coolman</strong> is offering free coffee</p>
+                          <span class="g-font-size-12 g-color-gray">5 minutes ago</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="media">
+                        <div class="d-flex g-mt-2 g-mr-15">
+                          <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                        </div>
+                        <div class="media-body">
+                          <p class="m-0"><strong>Edmon Low</strong> released a new update</p>
+                          <span class="g-font-size-12 g-color-gray">5 minutes ago</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode1" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode2">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="d-flex g-mt-2 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <strong>James Coolman</strong>
+                          <span class="align-self-center small text-nowrap">2 min ago</span>
+                        </div>
+                        <span class="d-block">saved your pin</span>
+                      </div>
+                    </li>
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="d-flex g-mt-2 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <strong>Alberta Watson</strong>
+                          <span class="align-self-center small text-nowrap">24 min ago</span>
+                        </div>
+                        <span class="d-block">sent you a message</span>
+                      </div>
+                    </li>
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="d-flex g-mt-2 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <strong>David Lee</strong>
+                          <span class="align-self-center small text-nowrap">56 min ago</span>
+                        </div>
+                        <span class="d-block">is offering free coffee</span>
+                      </div>
+                    </li>
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="d-flex g-mt-2 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <strong>Albert Heller</strong>
+                          <span class="align-self-center small text-nowrap">2 hr ago</span>
+                        </div>
+                        <span class="d-block">sent you a message</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode2" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+          </div>
+        </div>
+      </section>
+      <!-- End List Groups #01 -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- List Groups #02 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">List Groups
+              <span class="g-color-primary g-ml-5">#02</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode3">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="media">
+                        <div class="d-flex g-mt-2 g-mr-15">
+                          <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                        </div>
+                        <div class="media-body">
+                          <p class="m-0"><strong class="g-color-blue">James Coolman</strong> saved your pin</p>
+                          <span class="g-font-size-12 g-color-gray">5 minutes ago</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="media">
+                        <div class="d-flex g-mt-2 g-mr-15">
+                          <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                        </div>
+                        <div class="media-body">
+                          <p class="m-0"><strong class="g-color-pink">Alberta Watson</strong> sent you a message
+                          </p>
+                          <span class="g-font-size-12 g-color-gray">5 minutes ago</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="media">
+                        <div class="d-flex g-mt-2 g-mr-15">
+                          <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                        </div>
+                        <div class="media-body">
+                          <p class="m-0">
+                            <strong class="g-color-teal">Jasica Coolman</strong> is offering free coffee</p>
+                          <span class="g-font-size-12 g-color-gray">5 minutes ago</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="media">
+                        <div class="d-flex g-mt-2 g-mr-15">
+                          <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                        </div>
+                        <div class="media-body">
+                          <p class="m-0">
+                            <strong class="g-color-darkpurple">Edmon Low</strong> released a new update</p>
+                          <span class="g-font-size-12 g-color-gray">5 minutes ago</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode3" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode4">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="d-flex g-mt-2 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <strong class="g-color-purple">James Coolman</strong>
+                          <span class="align-self-center small text-nowrap g-color-purple">2 min ago</span>
+                        </div>
+                        <span class="d-block">saved your pin</span>
+                      </div>
+                    </li>
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="d-flex g-mt-2 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <strong class="g-color-cyan">Alberta Watson</strong>
+                          <span class="align-self-center small text-nowrap g-color-cyan">24 min ago</span>
+                        </div>
+                        <span class="d-block">sent you a message</span>
+                      </div>
+                    </li>
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="d-flex g-mt-2 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <strong class="g-color-lightred">David Lee</strong>
+                          <span class="align-self-center small text-nowrap g-color-lightred">56 min ago</span>
+                        </div>
+                        <span class="d-block">is offering free coffee</span>
+                      </div>
+                    </li>
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="d-flex g-mt-2 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <strong class="g-color-green">Albert Heller</strong>
+                          <span class="align-self-center small text-nowrap g-color-green">2 hr ago</span>
+                        </div>
+                        <span class="d-block">sent you a message</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode4" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+      </section>
+      <!-- End List Groups #02 -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- List Groups #03 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">List Groups
+              <span class="g-color-primary g-ml-5">#03</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode5">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="g-mt-2">
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      </div>
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">James Coolman</span>
+                          <small class="g-font-size-12 g-color-blue">8k+ earned</small>
+                        </h5>
+                        <p class="m-0">Nulla ipsum dolor sit amet adipiscing</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="u-label u-label--sm g-bg-blue g-rounded-20 g-px-10">$25 / hr</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="g-mt-2">
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      </div>
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">Alberta Watson</span>
+                          <small class="g-font-size-12 g-color-pink">5k+ earned</small>
+                        </h5>
+                        <p class="m-0">Hac consectetur habitasse platea dictumst</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="u-label u-label--sm g-bg-pink g-rounded-20 g-px-10">$32 / hr</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="g-mt-2">
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                      </div>
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">David Lee</span>
+                          <small class="g-font-size-12 g-color-teal">3k+ earned</small>
+                        </h5>
+                        <p class="m-0">Curabitur hendrerit dolor sit amet consectetur</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="u-label u-label--sm g-bg-teal g-rounded-20 g-px-10">$28 / hr</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="g-mt-2">
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </div>
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">Albert Heller</span>
+                          <small class="g-font-size-12 g-color-darkpurple">4k+ earned</small>
+                        </h5>
+                        <p class="m-0">Adipiscing elitut leosit amet, consectetur eleifend</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="u-label u-label--sm g-bg-darkpurple g-rounded-20 g-px-10">$35 / hr</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode5" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode6">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="g-mt-2">
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      </div>
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">Alberta Watson</span>
+                          <span class="u-label u-label--sm g-bg-purple g-rounded-20 g-ml-5 g-px-10">$32 / hr</span>
+                        </h5>
+                        <p class="m-0">Hac consectetur habitasse platea dictumst</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="g-font-size-12 g-color-purple">5k+ earned</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="g-mt-2">
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      </div>
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">James Coolman</span>
+                          <span class="u-label u-label--sm g-bg-cyan g-rounded-20 g-px-10">$25 / hr</span>
+                        </h5>
+                        <p class="m-0">Nulla ipsum dolor sit amet adipiscing</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="g-font-size-12 g-color-cyan">8k+ earned</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="g-mt-2">
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      </div>
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">David Lee</span>
+                          <span class="u-label u-label--sm g-bg-lightred g-rounded-20 g-px-10">$28 / hr</span>
+                        </h5>
+                        <p class="m-0">Curabitur hendrerit dolor sit amet consectetur</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="g-font-size-12 g-color-lightred">3k+ earned</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-minus-1">
+                      <div class="g-mt-2">
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </div>
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">Edmon Low</span>
+                          <span class="u-label u-label--sm g-bg-green g-rounded-20 g-px-10">$35 / hr</span>
+                        </h5>
+                        <p class="m-0">Adipiscing elitut leosit amet, consectetur eleifend</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="g-font-size-12 g-color-green">4k+ earned</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode6" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+          </div>
+        </div>
+      </section>
+      <!-- End List Groups #03 -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- List Groups #04 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">List Groups
+              <span class="g-color-primary g-ml-5">#04</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode7">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-7">
+                      <div class="g-pos-rel g-mr-5">
+                        <span class="u-badge-v2--xs g-bg-green g-brd-around g-brd-white"></span>
+                        <img class="g-width-50 g-height-50 rounded" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">James Coolman</span>
+                          <small class="g-font-size-12 g-color-blue">8k+ earned</small>
+                        </h5>
+                        <p class="m-0">Nulla ipsum dolor sit amet adipiscing</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="u-label u-label--sm g-bg-blue g-rounded-20 g-px-10">$25 / hr</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-7">
+                      <div class="g-pos-rel g-mr-5">
+                        <span class="u-badge-v2--xs g-bg-red g-brd-around g-brd-white"></span>
+                        <img class="g-width-50 g-height-50 rounded" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">Alberta Watson</span>
+                          <small class="g-font-size-12 g-color-pink">5k+ earned</small>
+                        </h5>
+                        <p class="m-0">Hac consectetur habitasse platea dictumst</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="u-label u-label--sm g-bg-pink g-rounded-20 g-px-10">$32 / hr</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-7">
+                      <div class="g-pos-rel g-mr-5">
+                        <span class="u-badge-v2--xs g-bg-yellow g-brd-around g-brd-white"></span>
+                        <img class="g-width-50 g-height-50 rounded" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">David Lee</span>
+                          <small class="g-font-size-12 g-color-teal">3k+ earned</small>
+                        </h5>
+                        <p class="m-0">Curabitur hendrerit dolor sit amet consectetur</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="u-label u-label--sm g-bg-teal g-rounded-20 g-px-10">$28 / hr</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-7">
+                      <div class="g-pos-rel g-mr-5">
+                        <span class="u-badge-v2--xs g-bg-green g-brd-around g-brd-white"></span>
+                        <img class="g-width-50 g-height-50 rounded" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">Albert Heller</span>
+                          <small class="g-font-size-12 g-color-darkpurple">4k+ earned</small>
+                        </h5>
+                        <p class="m-0">Adipiscing elitut leosit amet, consectetur eleifend</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="u-label u-label--sm g-bg-darkpurple g-rounded-20 g-px-10">$35 / hr</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode7" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode8">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-7">
+                      <div class="g-pos-rel g-mr-5">
+                        <span class="u-badge-v2--xs g-bg-red g-brd-around g-brd-white g-mt-7 g-mr-7"></span>
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">Alberta Watson</span>
+                          <span class="u-label u-label--sm g-bg-purple g-rounded-20 g-ml-5 g-px-10">$32 / hr</span>
+                        </h5>
+                        <p class="m-0">Hac consectetur habitasse platea dictumst</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="g-font-size-12 g-color-purple">5k+ earned</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-7">
+                      <div class="g-pos-rel g-mr-5">
+                        <span class="u-badge-v2--xs g-bg-green g-brd-around g-brd-white g-mt-7 g-mr-7"></span>
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">James Coolman</span>
+                          <span class="u-label u-label--sm g-bg-cyan g-rounded-20 g-px-10">$25 / hr</span>
+                        </h5>
+                        <p class="m-0">Nulla ipsum dolor sit amet adipiscing</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="g-font-size-12 g-color-cyan">8k+ earned</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-7">
+                      <div class="g-pos-rel g-mr-5">
+                        <span class="u-badge-v2--xs g-bg-yellow g-brd-around g-brd-white g-mt-7 g-mr-7"></span>
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">David Lee</span>
+                          <span class="u-label u-label--sm g-bg-lightred g-rounded-20 g-px-10">$28 / hr</span>
+                        </h5>
+                        <p class="m-0">Curabitur hendrerit dolor sit amet consectetur</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="g-font-size-12 g-color-lightred">3k+ earned</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-7">
+                      <div class="g-pos-rel g-mr-5">
+                        <span class="u-badge-v2--xs g-bg-green g-brd-around g-brd-white g-mt-7 g-mr-7"></span>
+                        <img class="g-width-50 g-height-50 rounded-circle" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="align-self-center g-px-10">
+                        <h5 class="h6 g-font-weight-600 g-color-black g-mb-3">
+                          <span class="g-mr-5">Edmon Low</span>
+                          <span class="u-label u-label--sm g-bg-green g-rounded-20 g-px-10">$35 / hr</span>
+                        </h5>
+                        <p class="m-0">Adipiscing elitut leosit amet, consectetur eleifend</p>
+                      </div>
+                      <div class="align-self-center ml-auto">
+                        <span class="g-font-size-12 g-color-green">4k+ earned</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode8" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+          </div>
+        </div>
+      </section>
+      <!-- End List Groups #04 -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- List Groups #05 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">List Groups
+              <span class="g-color-primary g-ml-5">#05</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode9">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-blue-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex g-mt-2 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <h5 class="h6 g-font-weight-600 g-color-black">James Coolman</h5>
+                          <span class="small text-nowrap g-color-blue">2 min ago</span>
+                        </div>
+                        <p>Curabitur hendrerit dolor sit amet consectetur. Adipiscing elitut leosit amet, consectetur eleifend.</p>
+                        <span class="u-label u-label--sm g-bg-blue g-rounded-20 g-px-10">HTML</span>
+                        <span class="u-label u-label--sm g-bg-pink g-rounded-20 g-px-10">AnhularJS</span>
+                        <span class="u-label u-label--sm g-bg-black g-rounded-20 g-px-10">PHP</span>
+                      </div>
+                    </li>
+
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-pink-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex g-mt-2 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <h5 class="h6 g-font-weight-600 g-color-black">Alberta Watson</h5>
+                          <span class="small text-nowrap g-color-pink">16 min ago</span>
+                        </div>
+                        <p>Hac consectetur habitasse platea dictumst, adipiscing elitut leosit amet, consectetur eleifend.</p>
+                        <span class="u-label u-label--sm g-bg-deeporange g-rounded-20 g-px-10">CSS</span>
+                        <span class="u-label u-label--sm g-bg-yellow g-color-black g-rounded-20 g-px-10">JavaScript</span>
+                        <span class="u-label u-label--sm g-bg-teal g-rounded-20 g-px-10">Ruby</span>
+                        <span class="u-label u-label--sm g-bg-darkpurple g-rounded-20 g-px-10">ASP.NET</span>
+                      </div>
+                    </li>
+
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-black-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex g-mt-2 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <h5 class="h6 g-font-weight-600 g-color-black">Edmon Low</h5>
+                          <span class="small text-nowrap g-color-blue">2 min ago</span>
+                        </div>
+                        <p>Curabitur hendrerit dolor sit amet consectetur. Adipiscing elitut leosit amet, consectetur eleifend.</p>
+                        <span class="u-label u-label--sm g-bg-indigo g-rounded-20 g-px-10">ReactJS</span>
+                        <span class="u-label u-label--sm g-bg-deeporange g-rounded-20 g-px-10">CSS</span>
+                        <span class="u-label u-label--sm g-bg-blue g-rounded-20 g-px-10">HTML</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode9" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode10">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-teal-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex g-mt-4 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <h5 class="h6 g-font-weight-600 g-color-black">David Lee</h5>
+                          <span class="small text-nowrap g-color-teal">30 min ago</span>
+                        </div>
+                        <p>Platea dictumst curabitur hendrerit dolor sit amet consectetur leosit amet, consectetur eleifend.</p>
+                        <span class="u-label u-label--sm g-bg-indigo rounded g-px-10">ReacJS</span>
+                        <span class="u-label u-label--sm g-bg-deeporange rounded g-px-10">CSS</span>
+                      </div>
+                    </li>
+
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-darkpurple-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex g-mt-4 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <h5 class="h6 g-font-weight-600 g-color-black">Albert Heller</h5>
+                          <span class="small text-nowrap g-color-darkpurple">1 hr ago</span>
+                        </div>
+                        <p>Adipiscing elitut leosit amet, consectetur eleifend. Hac consectetur habitasse platea dictumst.</p>
+                        <span class="u-label u-label--sm g-bg-yellow g-color-black rounded g-px-10">JavaScript</span>
+                        <span class="u-label u-label--sm g-bg-purple rounded g-px-10">Bootstrap</span>
+                        <span class="u-label u-label--sm g-bg-primary rounded g-px-10">C++</span>
+                      </div>
+                    </li>
+
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-deeporange-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex g-mt-4 g-mr-15">
+                        <img class="g-width-40 g-height-40 rounded" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                          <h5 class="h6 g-font-weight-600 g-color-black">Edmon Low</h5>
+                          <span class="small text-nowrap g-color-blue">2 min ago</span>
+                        </div>
+                        <p>Curabitur hendrerit dolor sit amet consectetur. Adipiscing elitut leosit amet, consectetur eleifend.</p>
+                        <span class="u-label u-label--sm g-bg-indigo rounded g-px-10">ReactJS</span>
+                        <span class="u-label u-label--sm g-bg-deeporange rounded g-px-10">CSS</span>
+                        <span class="u-label u-label--sm g-bg-blue rounded g-px-10">HTML</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode10" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+          </div>
+        </div>
+      </section>
+      <!-- End List Groups #05 -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- List Groups #06 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">List Groups
+              <span class="g-color-primary g-ml-5">#06</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode11">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-blue-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex justify-content-start">
+                        <h5 class="g-font-weight-600 g-color-black">UX Project</h5>
+                        <span class="ml-auto small g-color-blue g-px-10">Dropbox Inc</span>
+                      </div>
+                      <p>Curabitur hendrerit dolor sit amet consectetur. Adipiscing elitut leosit amet, consectetur eleifend.</p>
+                      <div class="d-flex justify-content-between">
+                        <ul class="u-list-inline">
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img1.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img2.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <a class="u-link-v4 d-inline-block g-bg-blue g-color-white g-font-weight-600 g-text-underline--none--hover g-rounded-50 g-py-7 g-px-10" href="#!">5+</a>
+                          </li>
+                        </ul>
+                        <div class="align-self-center">
+                          <a class="btn u-btn-outline-blue g-font-weight-600 g-rounded-50" href="#!">Follow</a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-pink-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex justify-content-start">
+                        <h5 class="g-font-weight-600 g-color-black">Python Algorithm</h5>
+                        <span class="ml-auto small g-color-pink g-px-10">Google I/O</span>
+                      </div>
+                      <p>Hac consectetur habitasse platea dictumst, adipiscing elitut leosit amet, consectetur eleifend.</p>
+                      <div class="d-flex justify-content-between">
+                        <ul class="u-list-inline">
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img8.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img3.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img11.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <a class="u-link-v4 d-inline-block g-bg-pink g-color-white g-font-weight-600 g-text-underline--none--hover g-rounded-50 g-py-7 g-px-10" href="#!">17+</a>
+                          </li>
+                        </ul>
+                        <div class="align-self-center">
+                          <a class="btn u-btn-outline-pink g-font-weight-600 g-rounded-50" href="#!">Follow</a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-primary-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex justify-content-start">
+                        <h5 class="g-font-weight-600 g-color-black">Unify Tempalte</h5>
+                        <span class="ml-auto small g-color-primary g-px-10">Htmlstream</span>
+                      </div>
+                      <p>Hac consectetur habitasse platea dictumst, adipiscing elitut leosit amet, consectetur eleifend.</p>
+                      <div class="d-flex justify-content-between">
+                        <ul class="u-list-inline">
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img1.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img12.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img3.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 rounded-circle" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <a class="u-link-v4 d-inline-block g-bg-primary g-color-white g-font-weight-600 g-text-underline--none--hover g-rounded-50 g-py-7 g-px-10" href="#!">9+</a>
+                          </li>
+                        </ul>
+                        <div class="align-self-center">
+                          <a class="btn u-btn-outline-primary g-font-weight-600 g-rounded-50" href="#!">Follow</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode11" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+
+            <!-- Basic example -->
+            <div class="col-lg">
+              <div id="shortcode12">
+                <div class="shortcode-html">
+                  <ul class="list-unstyled">
+                    <li class="g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-blue-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex justify-content-start">
+                        <h5 class="g-font-weight-600 g-color-black">UX Project</h5>
+                        <span class="ml-auto small g-color-blue g-px-10">Dropbox Inc</span>
+                      </div>
+                      <p>Curabitur hendrerit dolor sit amet consectetur. Adipiscing elitut leosit amet, consectetur eleifend.</p>
+                      <div class="d-flex justify-content-between">
+                        <ul class="u-list-inline">
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img1.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img2.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <a class="u-link-v4 d-inline-block g-bg-blue g-color-white g-font-weight-600 g-text-underline--none--hover g-rounded-3 g-py-8 g-px-11" href="#!">5+</a>
+                          </li>
+                        </ul>
+                        <div class="align-self-center">
+                          <a class="btn u-btn-outline-blue g-brd-2 g-font-weight-600 g-rounded-3" href="#!">Follow</a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-pink-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex justify-content-start">
+                        <h5 class="g-font-weight-600 g-color-black">Python Algorithm</h5>
+                        <span class="ml-auto small g-color-pink g-px-10">Google I/O</span>
+                      </div>
+                      <p>Hac consectetur habitasse platea dictumst, adipiscing elitut leosit amet, consectetur eleifend.</p>
+                      <div class="d-flex justify-content-between">
+                        <ul class="u-list-inline">
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img8.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img3.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img11.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <a class="u-link-v4 d-inline-block g-bg-pink g-color-white g-font-weight-600 g-text-underline--none--hover g-rounded-3 g-py-8 g-px-11" href="#!">17+</a>
+                          </li>
+                        </ul>
+                        <div class="align-self-center">
+                          <a class="btn u-btn-outline-pink g-brd-2 g-font-weight-600 g-rounded-3" href="#!">Follow</a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="g-brd-around g-brd-gray-light-v4 g-brd-left-3 g-brd-primary-left g-rounded-3 g-pa-20 g-mb-7">
+                      <div class="d-flex justify-content-start">
+                        <h5 class="g-font-weight-600 g-color-black">Unify Tempalte</h5>
+                        <span class="ml-auto small g-color-primary g-px-10">Htmlstream</span>
+                      </div>
+                      <p>Hac consectetur habitasse platea dictumst, adipiscing elitut leosit amet, consectetur eleifend.</p>
+                      <div class="d-flex justify-content-between">
+                        <ul class="u-list-inline">
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img1.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img12.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img3.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <img class="g-brd-around g-brd-gray-light-v3 g-pa-2 g-width-40 g-height-40 g-rounded-3" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                          </li>
+                          <li class="list-inline-item mr-0">
+                            <a class="u-link-v4 d-inline-block g-bg-primary g-color-white g-font-weight-600 g-text-underline--none--hover g-rounded-3 g-py-8 g-px-11" href="#!">9+</a>
+                          </li>
+                        </ul>
+                        <div class="align-self-center">
+                          <a class="btn u-btn-outline-primary g-brd-2 g-font-weight-600 g-rounded-3" href="#!">Follow</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {% set contentTarget = "#shortcode12" %}
+              {% set modalID = "#modalMarkup" %}
+              {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+            </div>
+            <!-- End Basic example -->
+          </div>
+        </div>
+      </section>
+      <!-- End List Groups #06 -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

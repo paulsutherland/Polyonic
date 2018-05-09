@@ -1,0 +1,155 @@
+.slick-slide {
+  &:focus {
+    outline: 0 none;
+  }
+}
+
+[data-lazy] {
+  opacity: 0;
+  transition: {
+    property: opacity;
+    duration: .4s;
+    timing-function: ease-in;
+  }
+}
+
+.js {
+  &-carousel {
+    background: url(../../assets/img/preloaders/preloader-black.svg) no-repeat 50% 50%;
+
+    .js-next,
+    .js-prev {
+      opacity: 0;
+    }
+
+    &.slick-initialized {
+      background: none;
+
+      .js-slide,
+      .js-thumb {
+        visibility: visible;
+        height: auto;
+        overflow: visible;
+      }
+
+      .js-next,
+      .js-prev {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-slide,
+  &-thumb {
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+
+    &:first-child {
+      height: auto;
+    }
+  }
+}
+
+.slick {
+  &-vertical {
+    .slick-slide {
+      border: none;
+    }
+  }
+}
+
+
+
+/*------------------------------------
+  Border Colors
+------------------------------------*/
+
+/* Primary Colors */
+.g-brd-primary {
+  &--before {
+    &--active {
+      &::before {
+        .slick-active & {
+          border-color: $g-color-primary !important;
+        }
+      }
+    }
+  }
+
+  &--active {
+    .slick-active & {
+      border-color: $g-color-primary !important;
+    }
+  }
+}
+
+.js-pagination .g-brd-primary--before--hover:hover::before {
+  border-color: $g-color-primary !important;
+}
+
+
+
+/*------------------------------------
+  Border Width
+------------------------------------*/
+
+.g-brd-3 {
+  &--before {
+    &--active {
+      &::before {
+        .slick-active & {
+          border-width: 3px !important;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*------------------------------------
+  Box shadows
+------------------------------------*/
+
+.g-parent.slick-current {
+  .u-shadow-v24--active {
+    box-shadow: 0 15px 20px 0 rgba($g-color-black, .06);
+  }
+}
+
+
+
+/*------------------------------------
+  Dot line v1
+------------------------------------*/
+
+.u-dot-line-v1,
+.u-dot-line-v1-2 {
+  &__inner {
+    &::before {
+      .slick-active & {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+
+/*------------------------------------
+  Dot line v2
+------------------------------------*/
+
+.u-dot-line-v2,
+.u-dot-line-v2-2 {
+  &__inner {
+    &::before {
+      .slick-active & {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

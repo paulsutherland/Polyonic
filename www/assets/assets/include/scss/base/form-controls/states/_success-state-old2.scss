@@ -1,0 +1,72 @@
+/*------------------------------------
+  Success state
+------------------------------------*/
+
+.u-has-success {
+  &-v1-1,
+  &-v1-2 {
+    .form-control,
+    [class*="input-group-"],
+    [class*="u-select"] {
+      background-color: #f0fff0;
+
+      &[readonly] {
+        background-color: #f0fff0;
+      }
+    }
+
+    .form-control-feedback {
+      color: $g-color-primary;
+    }
+
+    [class*="u-check-icon"] {
+      color: #f0fff0;
+      background-color: #f0fff0;
+      border-radius: 50%;
+    }
+
+    [class*="u-check-icon"] i {
+      color: rgba($g-color-primary, .2);
+    }
+  }
+
+  &-v1-1,
+  &-v1-2 {
+    .form-control,
+    [class*="input-group-"],
+    [class*="u-select"] {
+      border-color: $g-color-primary;
+    }
+
+    [class*="input-group-"],
+    [class*="input-group-"]:last-child,
+    .chosen-single div b {
+      color: $g-color-primary;
+    }
+  }
+
+  &-v1-2 {
+    position: relative;
+
+    [class*="input-group-"],
+    [class*="input-group-"]:last-child {
+      color: $g-color-white;
+      background-color: $g-color-primary;
+    }
+
+    .form-control-feedback {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        right: 18px;
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 3px 3px 0 3px;
+        border-color: $g-color-primary transparent transparent transparent;
+      }
+    }
+  }
+}

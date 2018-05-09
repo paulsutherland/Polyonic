@@ -1,0 +1,115 @@
+/*------------------------------------
+  Sliders v2
+------------------------------------*/
+
+.u-slider {
+  &-v2,
+  &-v2-2,
+  &-v2-3 {
+    &.ui {
+      &-slider {
+        position: relative;
+        background: rgba($g-color-primary, .5);
+        border: none;
+        border-radius: 0;
+        margin: {
+          top: 12px;
+          left: 6px;
+          right: 6px;
+        }
+
+        .ui-slider {
+          &-range {
+            height: 100%;
+          }
+
+          &-handle {
+            position: absolute;
+            top: 50%;
+            border-style: solid;
+            outline: none;
+            background: $g-color-primary;
+            border-radius: 0;
+            cursor: pointer;
+            transition: {
+              property: border-color, transform;
+              duration: .3s;
+              timing-function: ease;
+            }
+
+            &.ui-state-active {
+              transform: scale(1.5);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-v2 {
+    &.ui {
+      &-slider {
+        height: 2px;
+
+        .ui-slider {
+          &-range {
+            background: rgba($g-color-primary, 1);
+          }
+
+          &-handle {
+            width: 20px;
+            height: 20px;
+            margin: {
+              top: -10px;
+              left: -10px;
+            }
+            border: {
+              width: 2px;
+              color: $g-color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-v2-2,
+  &-v2-3 {
+    &.ui {
+      &-slider {
+        height: 4px;
+
+        .ui-slider {
+          &-range {
+            background: rgba($g-color-primary, 1);
+          }
+
+          &-handle {
+            width: 15px;
+            height: 15px;
+            margin: {
+              top: -8px;
+              left: -8px;
+            }
+            border: {
+              width: 2px;
+              color: $g-color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-v2-3 {
+    &.ui {
+      &-slider {
+        .ui-slider {
+          &-handle {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

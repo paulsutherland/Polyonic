@@ -1,0 +1,77 @@
+/*------------------------------------
+  Select v1
+------------------------------------*/
+
+.u-select--v1 {
+  line-height: 1;
+  position: relative;
+
+  &-select {
+    .dropdown-toggle {
+      display: flex;
+      line-height: 1;
+      background: none;
+      border: none;
+      padding: 0;
+
+      &::after {
+        content: "";
+        display: none;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        outline: 0 none !important;
+      }
+    }
+
+    .bs-caret {
+      display: none;
+    }
+
+    .dropdown-menu {
+      &[role="combobox"] {
+        border: none;
+        box-shadow: 0 10px 15px 0 rgba($g-color-black, .1);
+        @include px-to-rem(margin-top, 10px);
+        @include px-to-rem(margin-left, -10px);
+      }
+
+      &[role="listbox"] {
+        a {
+          display: flex;
+          align-items: center;
+          white-space: nowrap;
+          @include px-to-rem(min-height, 50px);
+          @include px-to-rem(padding, 0 25px);
+
+          &:hover {
+            text-decoration: none;
+            background-color: $g-color-gray-light-v8;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $g-sm) {
+  .u-select--v1 {
+    &-select {
+      .dropdown-menu {
+        &[role="combobox"] {
+          min-width: calc(100% + 60px);
+          @include px-to-rem(margin-top, 25px);
+          @include px-to-rem(margin-left, -30px);
+        }
+
+        &[role="listbox"] {
+          a {
+            @include px-to-rem(padding, 0 30px);
+          }
+        }
+      }
+    }
+  }
+}

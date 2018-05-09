@@ -1,0 +1,532 @@
+/*------------------------------------
+  Padding Spaces
+------------------------------------*/
+//
+// .p-0, .pt-0, .pr-0, .pb-0, .pl-0, .px-0, .py-0
+//
+
+/* Padding Spaces (xs)
+------------------------------------*/
+@include padding-spaces(xs);
+
+/* Padding Spaces (sm)
+------------------------------------*/
+@include padding-spaces(sm);
+
+/* Padding Spaces (md)
+------------------------------------*/
+@include padding-spaces(md);
+
+/* Padding Spaces (lg) P
+------------------------------------*/
+@include padding-spaces(lg);
+
+/* Padding Spaces (xl) P
+------------------------------------*/
+@include padding-spaces(xl);
+
+/* Custom Paddings (xs)
+------------------------------------*/
+.g-pa-0-20-20 {
+  @include px-to-rem(padding, 0 20px 20px !important);
+}
+
+.g-pa-4-11 {
+  @include px-to-rem(padding, 4px 11px !important);
+}
+
+.g-pa-4-13 {
+  @include px-to-rem(padding, 4px 13px !important);
+}
+
+.g-pa-5-10 {
+  @include px-to-rem(padding, 5px 10px !important);
+}
+
+.g-pa-5-15 {
+  @include px-to-rem(padding, 5px 15px !important);
+}
+
+.g-pa-6-8 {
+  @include px-to-rem(padding, 6px 8px !important);
+}
+
+.g-pa-7-14 {
+  @include px-to-rem(padding, 7px 14px !important);
+}
+
+.g-pa-7-16 {
+  @include px-to-rem(padding, 7px 16px !important);
+}
+
+.g-pa-10-5-5 {
+  @include px-to-rem(padding, 10px 5px 5px !important);
+}
+
+.g-pa-10-15 {
+  @include px-to-rem(padding, 10px 15px !important);
+}
+
+.g-pa-10-16 {
+  @include px-to-rem(padding, 10px 16px !important);
+}
+
+.g-pa-10-20 {
+  @include px-to-rem(padding, 10px 20px !important);
+}
+
+.g-pa-10-30 {
+  @include px-to-rem(padding, 10px 30px !important);
+}
+
+.g-pa-12 {
+  @include px-to-rem(padding, 12px !important);
+}
+
+.g-pa-12-19 {
+  @include px-to-rem(padding, 12px 19px !important);
+}
+
+.g-pa-12-21 {
+  @include px-to-rem(padding, 12px 21px !important);
+}
+
+.g-pa-12-5-7 {
+  @include px-to-rem(padding, 12px 5px 7px !important);
+}
+
+.g-pa-14-18 {
+  @include px-to-rem(padding, 14px 18px !important);
+}
+
+.g-pa-15-0 {
+  @include px-to-rem(padding, 15px 0 !important);
+}
+
+.g-pa-15-5 {
+  @include px-to-rem(padding, 15px 5px !important);
+}
+
+.g-pa-15-20-10 {
+  @include px-to-rem(padding, 15px 20px 10px !important);
+}
+
+.g-pa-15-20 {
+  @include px-to-rem(padding, 15px 20px !important);
+}
+
+.g-pa-15-30 {
+  @include px-to-rem(padding, 15px 30px !important);
+}
+
+.g-pa-17-23 {
+  @include px-to-rem(padding, 17px 23px !important);
+}
+
+.g-pa-20-10 {
+  @include px-to-rem(padding, 20px 10px !important);
+}
+
+.g-pa-20-20-15 {
+  @include px-to-rem(padding, 20px 20px 15px !important);
+}
+
+.g-pa-20-20-20-55 {
+  @include px-to-rem(padding, 20px 20px 20px 55px !important);
+}
+
+.g-pa-20-30-0 {
+  @include px-to-rem(padding, 20px 30px 0 !important);
+}
+
+.g-pa-20-40-25 {
+  @include px-to-rem(padding, 20px 40px 25px !important);
+}
+
+.g-pa-24 {
+  @include px-to-rem(padding, 24px !important);
+}
+
+.g-pa-25-20-30 {
+  @include px-to-rem(padding, 25px 20px 30px !important);
+}
+
+.g-pa-25-30-20 {
+  @include px-to-rem(padding, 25px 30px 20px !important);
+}
+
+.g-pa-25-30 {
+  @include px-to-rem(padding, 25px 30px !important);
+}
+
+.g-pa-30-10 {
+  @include px-to-rem(padding, 30px 10px !important);
+}
+
+.g-pa-30-15 {
+  @include px-to-rem(padding, 30px 15px !important);
+}
+
+.g-pa-30-20 {
+  @include px-to-rem(padding, 30px 20px !important);
+}
+
+.g-pa-30-30-20 {
+  @include px-to-rem(padding, 30px 30px 20px !important);
+}
+
+.g-pa-40 {
+  @include px-to-rem(padding, 40px !important);
+}
+
+.g-pa-40-20 {
+  @include px-to-rem(padding, 40px 20px !important);
+}
+
+.g-pa-40-30-30 {
+  @include px-to-rem(padding, 40px 30px 30px !important);
+}
+
+.g-pa-50-15-0 {
+  @include px-to-rem(padding, 50px 15px 0 !important);
+}
+
+.g-pa-15x {
+  padding: 15% !important;
+}
+
+.g-px-17 {
+  @include px-to-rem(padding-left, 17px !important);
+  @include px-to-rem(padding-right, 17px !important);
+}
+
+.g-px-18 {
+  @include px-to-rem(padding-left, 18px !important); /* O */
+  @include px-to-rem(padding-right, 18px !important);
+}
+
+.g-py-23 {
+  @include px-to-rem(padding-top, 23px !important); /* O */
+  @include px-to-rem(padding-bottom, 23px !important);
+}
+
+.g-py-235 {
+  @include px-to-rem(padding-top, 235px !important); /* O */
+  @include px-to-rem(padding-bottom, 235px !important);
+}
+
+.g-pl-12 {
+  @include px-to-rem(padding-left, 12px !important);
+}
+
+.g-pl-17 {
+  @include px-to-rem(padding-left, 17px !important);
+}
+
+.g-pl-7--hover:hover {
+  @include px-to-rem(padding-left, 7px !important);
+}
+.g-pl-25--hover:hover {
+  @include px-to-rem(padding-left, 25px !important);
+}
+.active.g-pl-25--active {
+  @include px-to-rem(padding-left, 25px !important);
+}
+.g-pl-60--xs {
+  @include px-to-rem(padding-left, 60px !important);
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.g-pt-11 {
+  @include px-to-rem(padding-top, 11px !important);
+}
+
+.g-pt-12 {
+  @include px-to-rem(padding-top, 12px !important);
+}
+
+.g-pt-25 {
+  &--parent-hover {
+    .g-parent:hover & {
+      @include px-to-rem(padding-top, 25px !important);
+    }
+  }
+}
+
+.g-pt-130 {
+  @include px-to-rem(padding-top, 130px !important);
+}
+
+.g-pt-150 {
+  @include px-to-rem(padding-top, 150px !important);
+}
+
+.g-pt-170 {
+  @include px-to-rem(padding-top, 170px !important);
+}
+
+.g-pt-195 {
+  @include px-to-rem(padding-top, 195px !important);
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.g-pb-170 {
+  @include px-to-rem(padding-bottom, 170px !important);
+}
+
+.g-pb-180 {
+  @include px-to-rem(padding-bottom, 180px !important);
+}
+
+.g-pb-200 {
+  @include px-to-rem(padding-bottom, 200px !important);
+}
+
+.g-pb-250 {
+  @include px-to-rem(padding-bottom, 250px !important);
+}
+
+.g-pb-13 {
+  @include px-to-rem(padding-bottom, 13px !important);
+}
+
+.g-pb-16 {
+  @include px-to-rem(padding-bottom, 16px !important);
+}
+
+.g-pa-9 {
+  @include px-to-rem(padding, 9px !important);
+}
+
+.g-pa-11 {
+  @include px-to-rem(padding, 11px !important);
+}
+
+.g-pa-12 {
+  @include px-to-rem(padding, 12px !important);
+}
+
+.g-pl-30--hover:hover {
+  @include px-to-rem(padding-left, 30px !important);
+}
+
+/* Custom Paddings (sm)
+------------------------------------*/
+@media (min-width: $g-sm) {
+  // Check
+  .g-px-10x--sm {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+  .g-px-0--sm {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .g-py-0--sm {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .g-py-5--sm {
+    @include px-to-rem(padding-top, 5px !important);
+    @include px-to-rem(padding-bottom, 5px !important);
+  }
+
+  // Check
+  .g-pa-0-10x--sm {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+  // .g-pa-20--sm {
+  //   @include px-to-rem(padding, 20px !important);
+  // }
+  // .g-pa-30--sm {
+  //   @include px-to-rem(padding, 30px !important);
+  // }
+  // .g-pr-20--sm {
+  //   @include px-to-rem(padding-right, 20px !important);
+  // }
+
+  .g-pa-0-35-35--sm {
+    @include px-to-rem(padding, 0 35px 35px !important);
+  }
+
+  .g-pa-5-10--sm {
+    @include px-to-rem(padding, 5px 10px !important);
+  }
+
+  .g-pa-8-16--sm {
+    @include px-to-rem(padding, 8px 16px !important);
+  }
+
+  .g-pa-10-20--sm {
+    @include px-to-rem(padding, 10px 20px !important);
+  }
+
+  .g-pa-15-20-10--sm {
+    @include px-to-rem(padding, 15px 20px 10px !important);
+  }
+
+  .g-pa-20-20-0--sm {
+    @include px-to-rem(padding, 20px 20px 0 !important);
+  }
+  .g-pa-20-20-10--sm {
+    @include px-to-rem(padding, 20px 20px 10px !important);
+  }
+  .g-pa-20-30-0--sm {
+    @include px-to-rem(padding, 20px 30px 0 !important);
+  }
+  .g-pa-20-30--sm {
+    @include px-to-rem(padding, 20px 30px !important);
+  }
+
+  .g-pa-30-20--sm {
+    @include px-to-rem(padding, 30px 20px !important);
+  }
+  .g-pa-30-25-20--sm {
+    @include px-to-rem(padding, 30px 25px 20px !important);
+  }
+  .g-pa-30-30-20--sm {
+    @include px-to-rem(padding, 30px 30px 20px !important);
+  }
+  .g-pa-30-50-40--sm {
+    @include px-to-rem(padding, 30px 50px 40px !important);
+  }
+  .g-pa-30-80--sm {
+    @include px-to-rem(padding, 30px 80px !important);
+  }
+
+  .g-pa-40-30-30--sm {
+    @include px-to-rem(padding, 40px 30px 30px !important);
+  }
+
+  .g-pa-60-30--sm {
+    @include px-to-rem(padding, 60px 30px !important);
+  }
+
+  .g-pa-70-50-50-30--sm {
+    @include px-to-rem(padding, 70px 50px 50px 30px !important);
+  }
+
+  .g-pa-80-40--sm {
+    @include px-to-rem(padding, 80px 40px !important);
+  }
+
+  .g-pa-85-0-40--sm {
+    @include px-to-rem(padding, 85px 0 40px !important);
+  }
+
+  .g-pa-100-30--sm {
+    @include px-to-rem(padding, 100px 30px !important);
+  }
+
+  .g-pa-170-0-150--sm {
+    @include px-to-rem(padding, 170px 0 150px !important);
+  }
+
+  .g-pl-300--sm {
+    @include px-to-rem(padding-left, 300px !important);
+  }
+}
+
+/* Custom Paddings (md)
+------------------------------------*/
+@media (min-width: $g-md) {
+  .g-pa-25-30--md {
+    @include px-to-rem(padding, 25px 30px !important);
+  }
+  .g-pa-30-10--md {
+    @include px-to-rem(padding, 30px 10px !important);
+  }
+  .g-pa-30-35--md {
+    @include px-to-rem(padding, 30px 35px !important);
+  }
+
+  .g-py-0--md {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .g-py-23--md {
+    @include px-to-rem(padding-top, 23px !important);
+    @include px-to-rem(padding-bottom, 23px !important);
+  }
+
+  .g-px-18--md {
+    @include px-to-rem(padding-left, 18px !important);
+    @include px-to-rem(padding-right, 18px !important);
+  }
+
+  .g-pt-135--md {
+    @include px-to-rem(padding-top, 135px !important);
+  }
+  .g-pt-145--md {
+    @include px-to-rem(padding-top, 145px !important);
+  }
+  .g-pt-150--md {
+    @include px-to-rem(padding-top, 150px !important);
+  }
+  .g-pt-170--md {
+    @include px-to-rem(padding-top, 170px !important);
+  }
+  .g-pt-175--md {
+    @include px-to-rem(padding-top, 175px !important);
+  }
+  .g-pb-70--md {
+    @include px-to-rem(padding-bottom, 70px !important);
+  }
+  .g-pb-170--md {
+    @include px-to-rem(padding-bottom, 170px !important);
+  }
+  .g-pb-250--md {
+    @include px-to-rem(padding-bottom, 250px !important);
+  }
+
+  .g-pl-300--md {
+    @include px-to-rem(padding-left, 300px !important);
+  }
+}
+
+/* Custom Paddings (lg)
+------------------------------------*/
+@media (min-width: $g-lg) {
+  .g-py-0--lg {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .g-py-100--lg {
+    @include px-to-rem(padding-top, 100px !important);
+    @include px-to-rem(padding-bottom, 100px !important);
+  }
+
+  .g-px-200--lg {
+    @include px-to-rem(padding-left, 200px !important);
+    @include px-to-rem(padding-right, 200px !important);
+  }
+
+  .g-pt-170--lg {
+    @include px-to-rem(padding-top, 170px !important);
+  }
+
+  .g-pb-200--lg {
+    @include px-to-rem(padding-bottom, 200px !important);
+  }
+}
+
+/* Custom Paddings (xl)
+------------------------------------*/
+@media (min-width: $g-xl) {
+  .g-py-0--xl {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .g-px-23--xl {
+    @include px-to-rem(padding-left, 23px !important);
+    @include px-to-rem(padding-right, 23px !important);
+  }
+}

@@ -1,0 +1,15 @@
+<!-- Breadcrumb-v1 -->
+<div class="g-hidden-sm-down g-bg-gray-light-v8 g-pa-20">
+  <ul class="u-list-inline g-color-gray-dark-v6">
+    {% for item in breadcrumbs %}
+      <li class="list-inline-item g-mr-10">
+        <a class="u-link-v5 g-color-gray-dark-v6 g-color-lightblue-v3--hover g-valign-middle" href="{{ item.href }}">{{ item.breadcrumb }}</a>
+        <i class="hs-admin-angle-right g-font-size-12 g-color-gray-light-v6 g-valign-middle g-ml-10"></i>
+      </li>
+    {% endfor %}
+    <li class="list-inline-item">
+      <span class="g-valign-middle">{{ title }}</span>
+    </li>
+  </ul>
+</div>
+<!-- End Breadcrumb-v1 -->

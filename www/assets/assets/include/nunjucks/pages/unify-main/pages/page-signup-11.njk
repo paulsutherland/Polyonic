@@ -1,0 +1,189 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-login-signup" %}
+{% set mainNavActive_3 = "page-signup-11" %}
+{% set title = "Signup Page 11 | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Signup -->
+      <section class="clearfix">
+        <div class="row no-gutters align-items-center">
+          <div class="col-lg-6">
+            <!-- Promo Block - Slider -->
+            <div class="js-carousel"
+                 data-autoplay="true"
+                 data-infinite="true"
+                 data-fade="true"
+                 data-speed="5000">
+              <div class="js-slide g-bg-img-hero g-min-height-100vh--lg" style="background-image: url({{ root }}assets/img-temp/900x900/img3.jpg);"
+                   data-calc-target="#js-header"></div>
+
+              <div class="js-slide g-bg-img-hero g-min-height-100vh--lg" style="background-image: url({{ root }}assets/img-temp/900x900/img4.jpg);"
+                   data-calc-target="#js-header"></div>
+            </div>
+            <!-- End Promo Block - Slider -->
+          </div>
+
+          <div class="col-lg-6">
+            <div class="g-pa-40 g-mx-70--xl">
+              <!-- Form -->
+              <form class="g-py-15">
+                <h2 class="h3 g-color-black mb-4">Signup</h2>
+
+                <div class="mb-4">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v4 g-color-primary"><i class="icon-communication-128 u-line-icon-pro g-pos-rel g-top-2"></i></span>
+                    </div>
+                    <input class="form-control g-color-black g-brd-left-none g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-pl-0 g-pr-15 g-py-15" type="email" placeholder="Your name">
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v4 g-color-primary"><i class="icon-finance-067 u-line-icon-pro g-pos-rel g-top-2"></i></span>
+                    </div>
+                    <input class="form-control g-color-black g-brd-left-none g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-pl-0 g-pr-15 g-py-15" type="email" placeholder="User name">
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v4 g-color-primary"><i class="icon-communication-062 u-line-icon-pro g-pos-rel g-top-2"></i></span>
+                    </div>
+                    <input class="form-control g-color-black g-brd-left-none g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-pl-0 g-pr-15 g-py-15" type="tel" placeholder="Your email">
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v4 g-color-primary"><i class="icon-media-094 u-line-icon-pro g-pos-rel g-top-2"></i></span>
+                    </div>
+                    <input class="form-control g-color-black g-brd-left-none g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-pl-0 g-pr-15 g-py-15" type="tel" placeholder="Password">
+                  </div>
+                </div>
+
+                <div class="mb-1">
+                  <label class="form-check-inline u-check g-font-size-13 g-pl-25 mb-2">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                    <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
+                      <i class="fa g-rounded-2" data-check-icon="&#xf00c"></i>
+                    </div>
+                    I accept the <a href="#!">Terms and Conditions</a>
+                  </label>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-check-inline u-check g-font-size-13 g-pl-25 mb-2">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                    <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
+                      <i class="fa g-rounded-2" data-check-icon="&#xf00c"></i>
+                    </div>
+                    Subscribe to our newsletter
+                  </label>
+                </div>
+
+                <div class="g-mb-30">
+                  <button class="btn btn-md btn-block u-btn-primary rounded text-uppercase g-py-13" type="button">Signup</button>
+                </div>
+
+                <p class="g-font-size-13 text-center mb-0">Already have an account? <a class="g-font-weight-600" href="page-signup-11.html">Login</a>
+                </p>
+              </form>
+              <!-- End Form -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Signup -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.height-calc.js"></script>
+    <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of carousel
+        $.HSCore.components.HSCarousel.init('.js-carousel');
+
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of header's height equal offset
+        $.HSCore.helpers.HSHeightCalc.init();
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

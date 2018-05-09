@@ -1,0 +1,88 @@
+/*------------------------------------
+  Tagsinput v2
+------------------------------------*/
+
+[class*="u-tagsinput--v2"] {
+  overflow: hidden;
+
+  .bootstrap-tagsinput {
+    width: 100%;
+    line-height: 1;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: -5px;
+
+    &::before {
+      content: "|";
+      display: inline-block;
+      width: 1px;
+      line-height: 1;
+      font-size: 14px;
+      opacity: 0;
+      @include px-to-rem(padding, 8px 0);
+      margin-bottom: 5px;
+      margin-left: -1px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+    }
+
+    .tag + input[type="text"] {
+      width: auto;
+    }
+
+    .tag {
+      position: relative;
+      display: inline-block;
+      line-height: 1;
+      font-size: 14px;
+      color: $g-color-gray-dark-v11;
+      border: 1px solid $g-color-lightblue-v3;
+      border-radius: 16px;
+      @include px-to-rem(padding, 8px 25px 8px 40px);
+      margin-bottom: 5px;
+
+      [data-role="remove"] {
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        font-size: 10px;
+        font-family: "hs-admin-icons", sans-serif;
+        color: $g-color-lightred-v2;
+        margin-left: 0;
+        transform: translateY(-50%);
+
+        &::after {
+          content: "\e939";
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.u-tagsinput--v2--gray {
+  .bootstrap-tagsinput {
+    .tag {
+      background-color: $g-color-gray-light-v8;
+      border-color: $g-color-gray-light-v8;
+    }
+  }
+}
+
+.u-tagsinput--v2--blue {
+  .bootstrap-tagsinput {
+    .tag {
+      background-color: $g-color-lightblue-v3;
+      color: $g-color-white;
+      border-color: $g-color-lightblue-v3;
+
+      [data-role="remove"] {
+        color: $g-color-white;
+      }
+    }
+  }
+}

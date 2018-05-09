@@ -1,0 +1,160 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-login-signup" %}
+{% set mainNavActive_3 = "page-login-3" %}
+{% set title = "Login Page 3 | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Breadcrumbs -->
+      <section class="g-bg-gray-light-v5 g-py-50">
+        <div class="container">
+          <div class="d-sm-flex text-center">
+            <div class="align-self-center">
+              <h2 class="h3 g-font-weight-300 w-100 g-mb-10 g-mb-0--md">Login</h2>
+            </div>
+
+            <div class="align-self-center ml-auto">
+              <ul class="u-list-inline">
+                <li class="list-inline-item g-mr-5">
+                  <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Home</a>
+                  <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                </li>
+                <li class="list-inline-item g-mr-5">
+                  <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Pages</a>
+                  <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                </li>
+                <li class="list-inline-item g-color-primary">
+                  <span>Login</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Breadcrumbs -->
+
+      <!-- Login -->
+      <section class="container g-py-100">
+        <div class="row justify-content-center">
+          <div class="col-sm-8 col-lg-5">
+            <div class="g-brd-around g-brd-gray-light-v4 rounded g-py-40 g-px-30">
+              <header class="text-center mb-4">
+                <h2 class="h2 g-color-black g-font-weight-600">Login</h2>
+              </header>
+
+              <!-- Form -->
+              <form class="g-py-15">
+                <div class="mb-4">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="email" placeholder="johndoe@gmail.com">
+                </div>
+
+                <div class="g-mb-35">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15 mb-3" type="password" placeholder="Password">
+                  <div class="row justify-content-between">
+                    <div class="col align-self-center">
+                      <label class="form-check-inline u-check g-color-gray-dark-v5 g-font-size-12 g-pl-25 mb-0">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                        <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf00c"></i>
+                        </div>
+                        Keep signed in
+                      </label>
+                    </div>
+                    <div class="col align-self-center text-right">
+                      <a class="g-font-size-12" href="#!">Forgot password?</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <button class="btn btn-md btn-block u-btn-primary g-rounded-50 g-py-13" type="button">Login</button>
+                </div>
+              </form>
+              <!-- End Form -->
+
+              <footer class="text-center">
+                <p class="g-color-gray-dark-v5 g-font-size-13 mb-0">Don't have an account? <a class="g-font-weight-600" href="page-signup3.html">signup</a></p>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Login -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

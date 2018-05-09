@@ -1,0 +1,62 @@
+/*------------------------------------
+  Breadcrumbs v2
+------------------------------------*/
+
+.u-breadcrumbs-v2 {
+  padding-left: 0;
+  margin-bottom: 0;
+
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+
+    > * {
+      display: block;
+      border-radius: 3px;
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  [class*="u-triangle"]:not([class*="__front"], [class*="__back"]) {
+    display: none;
+  }
+}
+
+@media (min-width: $g-md) {
+  .u-breadcrumbs-v2 {
+    > * {
+      position: relative;
+      background-color: $g-color-white;
+
+      > * {
+        border-radius: 0;
+      }
+
+      &:first-child {
+        > * {
+          border-radius: 5px 0 0 5px;
+        }
+      }
+
+      &:last-child {
+        > * {
+          border-radius: 0 5px 5px 0;
+        }
+      }
+    }
+
+    [class*="u-triangle"]:not([class*="__front"], [class*="__back"]) {
+      top: 0;
+      z-index: 2;
+      display: block;
+      width: 20px;
+      height: 100%;
+      margin-left: -0.05em;
+    }
+  }
+}

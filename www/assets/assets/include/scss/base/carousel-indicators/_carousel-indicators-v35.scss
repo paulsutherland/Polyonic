@@ -1,0 +1,72 @@
+/*------------------------------------
+  Carousel indicators v35
+------------------------------------*/
+
+.u-carousel-indicators-v35,
+.u-carousel-indicators-v35--white,
+.u-carousel-indicators-v35--main {
+  li {
+  	display: inline-block;
+    margin: 0 5px;
+
+    &.slick-active {
+      span {
+        opacity: 1;
+      }
+    }
+  }
+
+  span {
+  	width: 13px;
+  	height: 13px;
+    background-color: $g-color-primary;
+    border: 2px solid transparent;
+    opacity: .7;
+    border-radius: 50%;
+    transform: scale(.6);
+    transition: all .3s ease;
+  }
+}
+
+.u-carousel-indicators-v35,
+.u-carousel-indicators-v35--white,
+.u-carousel-indicators-v35--main {
+	li.slick-active {
+		span {
+	    background-color: transparent;
+	    border-color: $g-color-primary;
+    	opacity: .5;
+    	transform: scale(.9);
+	  }
+	}
+}
+
+.u-carousel-indicators-v35 {
+	&--white {
+		li {
+			span {
+	    	background-color: $g-color-white;
+	    }
+
+	    &.slick-active {
+				span {
+			    border-color: $g-color-white;
+			  }
+			}
+		}
+	}
+
+	&--main {
+		li {
+			span {
+	    	background-color: $g-color-black;
+	    }
+
+	    &.slick-active {
+				span {
+			    border-color: $g-color-black;
+			  }
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+/*------------------------------------
+  Paginations
+------------------------------------*/
+
+//
+// Pagination v1
+//
+
+/* Pagination v1 */
+[class*="u-pagination-v1__item"] {
+  transition: all .3s ease;
+}
+
+.u-pagination-v1__item {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  &--active,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  // Skip
+  &--skip:hover,
+  &--skip:focus {
+    cursor: default;
+  }
+
+  // Info
+  &--info:hover,
+  &--info:focus {
+    cursor: text;
+  }
+
+  // Disabled
+  &--disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+}

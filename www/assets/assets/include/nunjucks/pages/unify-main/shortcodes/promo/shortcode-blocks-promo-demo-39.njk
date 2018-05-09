@@ -1,0 +1,122 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-promo" %}
+{% set title = "Promo Blocks 39" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    <!-- Promo Block -->
+    <div class="g-bg-img-hero g-bg-cover g-bg-black-opacity-0_3--after" style="background-image: url({{ root }}assets/img-temp/1920x1080/img55.jpg);">
+      <div class="container g-pos-rel g-z-index-1 g-pt-80 g-pb-50">
+        <div class="row justify-content-lg-between align-items-md-center">
+          <div class="col-md-6 col-lg-5 g-mb-30">
+            <h1 class="g-color-white g-font-size-40--md mb-4">The Impact of Augmented, Mixed and Virtual Reality Beyond Gaming</h1>
+            <p class="g-color-white-opacity-0_9 g-font-size-20--md">22nd - 23rd May 2018, Kingston Hall, Orlando</p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 g-mb-30">
+            <!-- Contact Form -->
+            <form class="u-shadow-v35 g-bg-white rounded g-px-40 g-py-50">
+              <div class="g-mb-20">
+                <label class="g-color-black g-font-weight-500 g-font-size-15 g-pl-20">Full name</label>
+                <input class="form-control g-brd-secondary-light-v2 g-bg-secondary g-bg-secondary-dark-v1--focus g-rounded-30 g-px-20 g-py-12" type="text" placeholder="Enter your full name">
+              </div>
+
+              <div class="g-mb-20">
+                <label class="g-color-black g-font-weight-500 g-font-size-15 g-pl-20">Email</label>
+                <input class="form-control g-brd-secondary-light-v2 g-bg-secondary g-bg-secondary-dark-v1--focus g-rounded-30 g-px-20 g-py-12" type="email" placeholder="Enter your email">
+              </div>
+
+              <div class="g-mb-20">
+                <label class="g-color-black g-font-weight-500 g-font-size-15 g-pl-20">How many seats?</label>
+                <input class="form-control g-brd-secondary-light-v2 g-bg-secondary g-bg-secondary-dark-v1--focus g-rounded-30 g-px-20 g-py-12" type="text" placeholder="1">
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover g-font-size-default" href="#"><i class="align-middle mr-1 icon-real-estate-027 u-line-icon-pro"></i> Get the Location</a>
+                <button type="submit" class="btn u-shadow-v32 g-color-white g-bg-primary g-bg-main--hover g-font-size-default g-rounded-30 g-px-25 g-py-7">Book</button>
+              </div>
+            </form>
+            <!-- End Contact Form -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Promo Block -->
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/content-demo-1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.height-calc.js"></script>
+  <script src="{{ root }}assets/js/components/hs.slider.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of header's height equal offset
+      $.HSCore.helpers.HSHeightCalc.init();
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+  <!-- End JS Plugins Init. -->
+</body>
+</html>

@@ -1,0 +1,2150 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Metrics" %}
+{% set layoutTheme = "dark" %}
+{% set activeMenuItem = "metrics" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/chartist-js-tooltip/chartist-plugin-tooltip.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+  <section class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+        <div class="g-pa-20">
+          <h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-30">{{ title }}</h1>
+
+          <!-- Metrics 1 -->
+          <h2 class="h4 text-center g-font-weight-300 g-mb-20">Metrics <span class="g-color-primary g-ml-5">#01</span></h2>
+          <div class="row g-mb-35">
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 g-rounded-3">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="u-header-dropdown-icon-v1 g-pos-rel g-width-60 g-height-60 g-bg-lightblue-v4 g-font-size-18 g-font-size-24--md g-color-white rounded-circle">
+                        <i class="hs-admin-briefcase g-absolute-centered"></i>
+                      </div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <div class="d-flex align-items-center g-mb-5">
+                        <span class="g-font-size-24 g-line-height-1 g-color-black">99.9%</span>
+                        <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                          <i class="g-fill-gray-dark-v9">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-21.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                          <i class="g-fill-lightblue-v3">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-33.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon
+                                        transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                        points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                        </span>
+                      </div>
+
+                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Projects Done</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 g-rounded-3">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="u-header-dropdown-icon-v1 g-pos-rel g-width-60 g-height-60 g-bg-teal-v2 g-font-size-18 g-font-size-24--md g-color-white rounded-circle">
+                        <i class="hs-admin-check-box g-absolute-centered"></i>
+                      </div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <div class="d-flex align-items-center g-mb-5">
+                        <span class="g-font-size-24 g-line-height-1 g-color-black">324</span>
+                        <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                          <i class="g-fill-gray-dark-v9">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-21.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                          <i class="g-fill-lightblue-v3">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-33.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon
+                                        transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                        points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                        </span>
+                      </div>
+
+                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Total Tasks</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 g-rounded-3">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="u-header-dropdown-icon-v1 g-pos-rel g-width-60 g-height-60 g-bg-darkblue-v2 g-font-size-18 g-font-size-24--md g-color-white rounded-circle">
+                        <i class="hs-admin-wallet g-absolute-centered"></i>
+                      </div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <div class="d-flex align-items-center g-mb-5">
+                        <span class="g-font-size-24 g-line-height-1 g-color-black">$124.2</span>
+                        <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                          <i class="g-fill-red">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-21.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                          <i class="g-fill-gray-dark-v9">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-33.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon
+                                        transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                        points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                        </span>
+                      </div>
+
+                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Projects Done</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 g-rounded-3">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="u-header-dropdown-icon-v1 g-pos-rel g-width-60 g-height-60 g-bg-lightred-v2 g-font-size-18 g-font-size-24--md g-color-white rounded-circle">
+                        <i class="hs-admin-user g-absolute-centered"></i>
+                      </div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <div class="d-flex align-items-center g-mb-5">
+                        <span class="g-font-size-24 g-line-height-1 g-color-black">148</span>
+                        <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                          <i class="g-fill-gray-dark-v9">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-21.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                          <i class="g-fill-gray-dark-v9">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-33.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon
+                                        transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                        points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                        </span>
+                      </div>
+
+                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">New Clients</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+          </div>
+          <!-- Metrics 1 -->
+
+          <!-- Metrics 2 -->
+          <h2 class="h4 text-center g-font-weight-300 g-mb-20">Metrics <span class="g-color-primary g-ml-5">#02</span></h2>
+          <div class="row g-mb-35">
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-weight-300 g-font-size-16 g-mb-10 g-mb-20--md">
+                    <span class="d-flex align-self-center g-color-gray-dark-v6 g-font-weight-400">Projects Done</span>
+                    <span class="media-body align-self-center text-right g-font-size-18--md g-color-black">32</span>
+                  </h4>
+
+                  <div class="progress g-height-6 g-rounded-3 g-mb-10 g-mb-15--md">
+                    <div class="progress-bar g-bg-lightblue-v4 g-rounded-3" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Total completed projects</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-weight-300 g-font-size-16 g-mb-10 g-mb-20--md">
+                    <span class="d-flex align-self-center g-color-gray-dark-v6 g-font-weight-400">Task Complete</span>
+                    <span class="media-body align-self-center text-right g-font-size-18--md g-color-black">256</span>
+                  </h4>
+
+                  <div class="progress g-height-6 g-rounded-3 g-mb-10 g-mb-15--md">
+                    <div class="progress-bar g-bg-teal-v2 g-rounded-3" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Total completed tasks</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-weight-300 g-font-size-16 g-mb-10 g-mb-20--md">
+                    <span class="d-flex align-self-center g-color-gray-dark-v6 g-font-weight-400">Weekly Income</span>
+                    <span class="media-body d-flex align-self-center justify-content-end g-font-size-18--md g-color-black">
+                      <span>-2,5%</span>
+                      <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                        <i class="g-fill-red">
+                          <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-21.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                        <i class="g-fill-gray-dark-v9">
+                          <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-33.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon
+                                      transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                      points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                      </span>
+                    </span>
+                  </h4>
+
+                  <div class="progress g-height-6 g-rounded-3 g-mb-10 g-mb-15--md">
+                    <div class="progress-bar g-bg-darkblue-v2 g-rounded-3" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Summury of all payments</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-weight-300 g-font-size-16 g-mb-10 g-mb-20--md">
+                    <span class="d-flex align-self-center g-color-gray-dark-v6 g-font-weight-400">New Clients</span>
+                    <span class="media-body d-flex align-self-center justify-content-end g-font-size-18--md g-color-black">
+                      <span>+5,2%</span>
+                      <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                        <i class="g-fill-gray-dark-v9">
+                          <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-21.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                        <i class="g-fill-lightblue-v3">
+                          <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-33.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon
+                                      transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                      points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                      </span>
+                    </span>
+                  </h4>
+
+                  <div class="progress g-height-6 g-rounded-3 g-mb-10 g-mb-15--md">
+                    <div class="progress-bar g-bg-lightred-v2 g-rounded-3" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Amount of new clients</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+          </div>
+          <!-- End Metrics 2 -->
+
+          <!-- Metrics 3 -->
+          <h2 class="h4 text-center g-font-weight-300 g-mb-20">Metrics <span class="g-color-primary g-ml-5">#03</span></h2>
+          <div class="row g-mb-35">
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">Income</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center g-mb-25">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">$48,2<span class="g-hidden-md-down">00</span><span class="g-hidden-md-up">k</span></span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-lightblue-v3">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+
+                  <div
+                    class="js-bar-chart g-line-height-0"
+                    data-series='[
+                         [10,8,5,7,6,6,10,10,8,5,7,6,6,10,6,6,10,10,8,5,7,6,6,10,6,6,10,10,8]
+                       ]'
+                    data-is-show-axis-x="false"
+                    data-is-show-axis-y="false"
+                    data-height="62px"
+                    data-high="10"
+                    data-low="0"
+                    data-distance="5"
+                    data-stroke-width="6"
+                    data-stroke-color="#1cc9e4"></div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">Task Complete</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center g-mb-25">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">28</span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-red">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+
+                  <div
+                    class="js-bar-chart g-line-height-0"
+                    data-series='[
+                         [10,8,5,7,6,6,10,10,8,5,7,6,6,10,6,6,10,10,8,5,7,6,6,10,6,6,10,10,8]
+                       ]'
+                    data-is-show-axis-x="false"
+                    data-is-show-axis-y="false"
+                    data-height="62px"
+                    data-high="10"
+                    data-low="0"
+                    data-distance="5"
+                    data-stroke-width="6"
+                    data-stroke-color="#15d3b2"></div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">Weekly Income</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center g-mb-25">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">$48,2<span class="g-hidden-md-down">00</span><span class="g-hidden-md-up">k</span></span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+
+                  <div
+                    class="js-bar-chart g-line-height-0"
+                    data-series='[
+                         [10,8,5,7,6,6,10,10,8,5,7,6,6,10,6,6,10,10,8,5,7,6,6,10,6,6,10,10,8]
+                       ]'
+                    data-is-show-axis-x="false"
+                    data-is-show-axis-y="false"
+                    data-height="62px"
+                    data-high="10"
+                    data-low="0"
+                    data-distance="5"
+                    data-stroke-width="6"
+                    data-stroke-color="#1d75e5"></div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">New Clients</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center g-mb-25">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">+125</span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-lightblue-v3">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+
+                  <div
+                    class="js-bar-chart g-line-height-0"
+                    data-series='[
+                         [10,8,5,7,6,6,10,10,8,5,7,6,6,10,6,6,10,10,8,5,7,6,6,10,6,6,10,10,8]
+                       ]'
+                    data-is-show-axis-x="false"
+                    data-is-show-axis-y="false"
+                    data-height="62px"
+                    data-high="10"
+                    data-low="0"
+                    data-distance="5"
+                    data-stroke-width="6"
+                    data-stroke-color="#e62154"></div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+          </div>
+          <!-- Metrics 3 -->
+
+          <!-- Metrics 4 -->
+          <h2 class="h4 text-center g-font-weight-300 g-mb-20">Metrics <span class="g-color-primary g-ml-5">#04</span></h2>
+          <div class="row g-mb-35">
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="js-donut-chart g-pos-rel mx-auto" style="width: 60px; height: 60px;" data-series='[54, 46]' data-border-width="2" data-start-angle="0" data-fill-colors='["#3dd1e8","#f1f5f5"]'>
+                        <span class="g-absolute-centered g-font-size-22 g-color-black">54</span>
+                      </div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <div class="d-flex align-items-center g-mb-5">
+                        <span class="g-font-weight-300 g-font-size-24 g-line-height-1 g-color-black">99.9%</span>
+                        <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                          <i class="g-fill-gray-dark-v9">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-21.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                          <i class="g-fill-lightblue-v3">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-33.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon
+                                        transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                        points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                        </span>
+                      </div>
+
+                      <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Projects Done</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="js-donut-chart g-pos-rel mx-auto" style="width: 60px; height: 60px;" data-series='[40, 60]' data-border-width="2" data-start-angle="0" data-fill-colors='["#15d3b2","#f1f5f5"]'>
+                        <span class="g-absolute-centered g-font-size-22 g-color-black">40</span>
+                      </div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <div class="d-flex align-items-center g-mb-5">
+                        <span class="g-font-weight-300 g-font-size-24 g-line-height-1 g-color-black">324</span>
+                        <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                          <i class="g-fill-gray-dark-v9">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-21.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                          <i class="g-fill-lightblue-v3">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-33.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon
+                                        transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                        points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                        </span>
+                      </div>
+
+                      <h4 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Total Tasks</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="js-donut-chart g-pos-rel mx-auto" style="width: 60px; height: 60px;" data-series='[40, 60]' data-border-width="2" data-start-angle="0" data-fill-colors='["#1d75e5","#f1f5f5"]'>
+                        <span class="g-absolute-centered g-font-size-22 g-color-black">40</span>
+                      </div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <div class="d-flex align-items-center g-mb-5">
+                        <span class="g-font-weight-300 g-font-size-24 g-line-height-1 g-color-black">$124.2</span>
+                        <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                          <i class="g-fill-red">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-21.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                          <i class="g-fill-gray-dark-v9">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-33.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon
+                                        transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                        points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                        </span>
+                      </div>
+
+                      <h4 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Weekly Income</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="js-donut-chart g-pos-rel mx-auto" style="width: 60px; height: 60px;" data-series='[80, 20]' data-border-width="2" data-start-angle="0" data-fill-colors='["#e62154","#f1f5f5"]'>
+                        <span class="g-absolute-centered g-font-size-22 g-color-black">80</span>
+                      </div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <div class="d-flex align-items-center g-mb-5">
+                        <span class="g-font-weight-300 g-font-size-24 g-line-height-1 g-color-black">148</span>
+                        <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                          <i class="g-fill-gray-dark-v9">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-21.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                          <i class="g-fill-gray-dark-v9">
+                            <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g transform="translate(-33.000000, -751.000000)">
+                                <g transform="translate(0.000000, 64.000000)">
+                                  <g transform="translate(20.000000, 619.000000)">
+                                    <g transform="translate(1.000000, 68.000000)">
+                                      <polygon
+                                        transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                        points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                        </span>
+                      </div>
+
+                      <h4 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">New Clients</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+          </div>
+          <!-- Metrics 4 -->
+
+          <!-- Metrics 5 -->
+          <h2 class="h4 text-center g-font-weight-300 g-mb-20">Metrics <span class="g-color-primary g-ml-5">#05</span></h2>
+          <div class="row g-mb-35">
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">New Clients</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-font-size-16 g-font-size-18--md g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">+125</span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-lightblue-v3">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  class="js-area-chart u-area-chart--v1 g-pos-rel g-line-height-0"
+                  data-height="72px"
+                  data-high="2420"
+                  data-low="0"
+                  data-offset-x="0"
+                  data-offset-y="0"
+                  data-postfix=" m"
+                  data-is-show-area="true"
+                  data-is-show-line="true"
+                  data-is-show-point="true"
+                  data-is-full-width="true"
+                  data-is-stack-bars="true"
+                  data-is-show-axis-x="false"
+                  data-is-show-axis-y="false"
+                  data-is-show-tooltips="true"
+                  data-tooltip-description-position="left"
+                  data-tooltip-custom-class="u-tooltip--v2 g-font-weight-300 g-font-size-default g-color-gray-dark-v6"
+                  data-align-text-axis-x="center"
+                  data-fill-opacity=".1"
+                  data-fill-colors='["#1cc9e4"]'
+                  data-stroke-width="2px"
+                  data-stroke-color="#1cc9e4"
+                  data-stroke-dash-array="0"
+                  data-text-size-x="14px"
+                  data-text-color-x="#000000"
+                  data-text-offset-top-x="0"
+                  data-text-size-y="14px"
+                  data-text-color-y="#53585e"
+                  data-points-colors='["#1cc9e4"]'
+                  data-series='[
+                       [
+                         {"meta": "$", "value": 900},
+                         {"meta": "$", "value": 1700},
+                         {"meta": "$", "value": 1000},
+                         {"meta": "$", "value": 2420},
+                         {"meta": "$", "value": 800}
+                       ]
+                     ]'
+                  data-labels='["2013", "2014", "2015", "2016", "2017"]'></div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">Task Complete</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-font-size-16 g-font-size-18--md g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">28</span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-red">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  class="js-area-chart u-area-chart--v1 g-pos-rel g-line-height-0"
+                  data-height="72px"
+                  data-high="2420"
+                  data-low="0"
+                  data-offset-x="0"
+                  data-offset-y="0"
+                  data-postfix=" m"
+                  data-is-show-area="true"
+                  data-is-show-line="true"
+                  data-is-show-point="true"
+                  data-is-full-width="true"
+                  data-is-stack-bars="true"
+                  data-is-show-axis-x="false"
+                  data-is-show-axis-y="false"
+                  data-is-show-tooltips="true"
+                  data-tooltip-description-position="left"
+                  data-tooltip-custom-class="u-tooltip--v2 g-font-weight-300 g-font-size-default g-color-gray-dark-v6"
+                  data-align-text-axis-x="center"
+                  data-fill-opacity=".1"
+                  data-fill-colors='["#15d3b2"]'
+                  data-stroke-width="2px"
+                  data-stroke-color="#15d3b2"
+                  data-stroke-dash-array="0"
+                  data-text-size-x="14px"
+                  data-text-color-x="#000000"
+                  data-text-offset-top-x="0"
+                  data-text-size-y="14px"
+                  data-text-color-y="#53585e"
+                  data-points-colors='["#15d3b2"]'
+                  data-series='[
+                         [
+                           {"meta": "$", "value": 900},
+                           {"meta": "$", "value": 1700},
+                           {"meta": "$", "value": 1000},
+                           {"meta": "$", "value": 2420},
+                           {"meta": "$", "value": 800}
+                         ]
+                       ]'
+                  data-labels='["2013", "2014", "2015", "2016", "2017"]'></div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">Task Complete</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-font-size-16 g-font-size-18--md g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">72</span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-red">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  class="js-area-chart u-area-chart--v1 g-pos-rel g-line-height-0"
+                  data-height="72px"
+                  data-high="2420"
+                  data-low="0"
+                  data-offset-x="0"
+                  data-offset-y="0"
+                  data-postfix=" m"
+                  data-is-show-area="true"
+                  data-is-show-line="true"
+                  data-is-show-point="true"
+                  data-is-full-width="true"
+                  data-is-stack-bars="true"
+                  data-is-show-axis-x="false"
+                  data-is-show-axis-y="false"
+                  data-is-show-tooltips="true"
+                  data-tooltip-description-position="left"
+                  data-tooltip-custom-class="u-tooltip--v2 g-font-weight-300 g-font-size-default g-color-gray-dark-v6"
+                  data-align-text-axis-x="center"
+                  data-fill-opacity=".1"
+                  data-fill-colors='["#1d75e5"]'
+                  data-stroke-width="2px"
+                  data-stroke-color="#1d75e5"
+                  data-stroke-dash-array="0"
+                  data-text-size-x="14px"
+                  data-text-color-x="#000000"
+                  data-text-offset-top-x="0"
+                  data-text-size-y="14px"
+                  data-text-color-y="#53585e"
+                  data-points-colors='["#1d75e5"]'
+                  data-series='[
+                         [
+                           {"meta": "$", "value": 900},
+                           {"meta": "$", "value": 1700},
+                           {"meta": "$", "value": 1000},
+                           {"meta": "$", "value": 2420},
+                           {"meta": "$", "value": 800}
+                         ]
+                       ]'
+                  data-labels='["2013", "2014", "2015", "2016", "2017"]'></div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">New Clients</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-font-size-16 g-font-size-18--md g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">+125</span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-lightblue-v3">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  class="js-area-chart u-area-chart--v1 g-pos-rel g-line-height-0"
+                  data-height="72px"
+                  data-high="2420"
+                  data-low="0"
+                  data-offset-x="0"
+                  data-offset-y="0"
+                  data-postfix=" m"
+                  data-is-show-area="true"
+                  data-is-show-line="true"
+                  data-is-show-point="true"
+                  data-is-full-width="true"
+                  data-is-stack-bars="true"
+                  data-is-show-axis-x="false"
+                  data-is-show-axis-y="false"
+                  data-is-show-tooltips="true"
+                  data-tooltip-description-position="left"
+                  data-tooltip-custom-class="u-tooltip--v2 g-font-weight-300 g-font-size-default g-color-gray-dark-v6"
+                  data-align-text-axis-x="center"
+                  data-fill-opacity=".1"
+                  data-fill-colors='["#e62154"]'
+                  data-stroke-width="2px"
+                  data-stroke-color="#e62154"
+                  data-stroke-dash-array="0"
+                  data-text-size-x="14px"
+                  data-text-color-x="#000000"
+                  data-text-offset-top-x="0"
+                  data-text-size-y="14px"
+                  data-text-color-y="#53585e"
+                  data-points-colors='["#e62154"]'
+                  data-series='[
+                       [
+                         {"meta": "$", "value": 900},
+                         {"meta": "$", "value": 1700},
+                         {"meta": "$", "value": 1000},
+                         {"meta": "$", "value": 2420},
+                         {"meta": "$", "value": 800}
+                       ]
+                     ]'
+                  data-labels='["2013", "2014", "2015", "2016", "2017"]'></div>
+              </div>
+              <!-- End Panel -->
+            </div>
+          </div>
+          <!-- Metrics 5 -->
+
+          <!-- Metrics 6 -->
+          <h2 class="h4 text-center g-font-weight-300 g-mb-20">Metrics <span class="g-color-primary g-ml-5">#06</span></h2>
+          <div class="row g-mb-35">
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="media-body align-self-center">
+                      <span class="g-font-size-24 g-font-size-40--md g-line-height-1 g-font-weight-300 g-color-lightblue-v4 g-mb-10">324</span>
+                      <h4 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Projects Done</h4>
+                    </div>
+
+                    <div class="d-flex align-self-start align-items-center g-color-gray-dark-v10">
+                      <span>+35%</span>
+                      <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                        <i class="g-fill-gray-dark-v9">
+                          <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-21.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                        <i class="g-fill-lightblue-v3">
+                          <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-33.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon
+                                      transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                      points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="media-body align-self-center">
+                      <span class="g-font-size-24 g-font-size-40--md g-line-height-1 g-font-weight-300 g-color-teal-v2 g-mb-10">156</span>
+                      <h4 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Tasks Complete</h4>
+                    </div>
+
+                    <div class="d-flex align-self-start align-items-center g-color-gray-dark-v10">
+                      <span>+25%</span>
+                      <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                        <i class="g-fill-gray-dark-v9">
+                          <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-21.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                        <i class="g-fill-lightblue-v3">
+                          <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-33.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon
+                                      transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                      points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="media-body align-self-center">
+                      <span class="g-font-size-24 g-font-size-40--md g-line-height-1 g-font-weight-300 g-color-darkblue-v2 g-mb-10">$2,8<span class="g-hidden-md-down">00</span><span class="g-hidden-md-up">k</span></span>
+                      <h4 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Weekly Income</h4>
+                    </div>
+
+                    <div class="d-flex align-self-start align-items-center g-color-gray-dark-v10">
+                      <span>-15%</span>
+                      <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                        <i class="g-fill-red">
+                          <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-21.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                        <i class="g-fill-gray-dark-v9">
+                          <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-33.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon
+                                      transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                      points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="media-body align-self-center">
+                      <span class="g-font-size-24 g-font-size-40--md g-line-height-1 g-font-weight-300 g-color-lightred-v2 g-mb-10">196</span>
+                      <h4 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">New Clients</h4>
+                    </div>
+
+                    <div class="d-flex align-self-start align-items-center g-color-gray-dark-v10">
+                      <span>+20%</span>
+                      <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                        <i class="g-fill-gray-dark-v9">
+                          <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-21.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                        <i class="g-fill-lightblue-v3">
+                          <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-33.000000, -751.000000)">
+                              <g transform="translate(0.000000, 64.000000)">
+                                <g transform="translate(20.000000, 619.000000)">
+                                  <g transform="translate(1.000000, 68.000000)">
+                                    <polygon
+                                      transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                      points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+          </div>
+          <!-- Metrics 6 -->
+
+          <!-- Metrics 7 -->
+          <h2 class="h4 text-center g-font-weight-300 g-mb-20">Metrics <span class="g-color-primary g-ml-5">#07</span></h2>
+          <div class="row g-mb-35">
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">Income</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">$48,2<span class="g-hidden-md-down">00</span><span class="g-hidden-md-up">k</span></span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-lightblue-v3">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  class="js-area-chart u-area-chart--v1 g-pos-rel g-line-height-0"
+                  data-height="72px"
+                  data-high="2420"
+                  data-low="0"
+                  data-offset-x="0"
+                  data-offset-y="0"
+                  data-postfix=" m"
+                  data-is-show-area="true"
+                  data-is-show-line="false"
+                  data-is-show-point="true"
+                  data-is-full-width="true"
+                  data-is-stack-bars="true"
+                  data-is-show-axis-x="false"
+                  data-is-show-axis-y="false"
+                  data-is-show-tooltips="true"
+                  data-tooltip-description-position="left"
+                  data-tooltip-custom-class="u-tooltip--v2 g-font-weight-300 g-font-size-default g-color-gray-dark-v6"
+                  data-align-text-axis-x="center"
+                  data-fill-opacity="1"
+                  data-fill-colors='["#1cc9e4"]'
+                  data-stroke-color="#e1eaea"
+                  data-stroke-dash-array="0"
+                  data-text-size-x="14px"
+                  data-text-color-x="#000000"
+                  data-text-offset-top-x="0"
+                  data-text-size-y="14px"
+                  data-text-color-y="#53585e"
+                  data-points-colors='["#1cc9e4"]'
+                  data-series='[
+                       [
+                         {"meta": "$", "value": 900},
+                         {"meta": "$", "value": 1700},
+                         {"meta": "$", "value": 1000},
+                         {"meta": "$", "value": 2420},
+                         {"meta": "$", "value": 800}
+                       ]
+                     ]'
+                  data-labels='["2013", "2014", "2015", "2016", "2017"]'></div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">Task Complete</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">28</span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-red">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  class="js-area-chart u-area-chart--v1 g-pos-rel g-line-height-0"
+                  data-height="72px"
+                  data-high="2420"
+                  data-low="0"
+                  data-offset-x="0"
+                  data-offset-y="0"
+                  data-postfix=" m"
+                  data-is-show-area="true"
+                  data-is-show-line="false"
+                  data-is-show-point="true"
+                  data-is-full-width="true"
+                  data-is-stack-bars="true"
+                  data-is-show-axis-x="false"
+                  data-is-show-axis-y="false"
+                  data-is-show-tooltips="true"
+                  data-tooltip-description-position="left"
+                  data-tooltip-custom-class="u-tooltip--v2 g-font-weight-300 g-font-size-default g-color-gray-dark-v6"
+                  data-align-text-axis-x="center"
+                  data-fill-opacity="1"
+                  data-fill-colors='["#15d3b2"]'
+                  data-stroke-color="#15d3b2"
+                  data-stroke-dash-array="0"
+                  data-text-size-x="14px"
+                  data-text-color-x="#000000"
+                  data-text-offset-top-x="0"
+                  data-text-size-y="14px"
+                  data-text-color-y="#53585e"
+                  data-points-colors='["#15d3b2"]'
+                  data-series='[
+                       [
+                         {"meta": "$", "value": 900},
+                         {"meta": "$", "value": 1700},
+                         {"meta": "$", "value": 1000},
+                         {"meta": "$", "value": 2420},
+                         {"meta": "$", "value": 800}
+                       ]
+                     ]'
+                  data-labels='["2013", "2014", "2015", "2016", "2017"]'></div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">Weekly Income</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">$48,2<span class="g-hidden-md-down">00</span><span class="g-hidden-md-up">k</span></span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  class="js-area-chart u-area-chart--v1 g-pos-rel g-line-height-0"
+                  data-height="72px"
+                  data-high="2420"
+                  data-low="0"
+                  data-offset-x="0"
+                  data-offset-y="0"
+                  data-postfix=" m"
+                  data-is-show-area="true"
+                  data-is-show-line="false"
+                  data-is-show-point="true"
+                  data-is-full-width="true"
+                  data-is-stack-bars="true"
+                  data-is-show-axis-x="false"
+                  data-is-show-axis-y="false"
+                  data-is-show-tooltips="true"
+                  data-tooltip-description-position="left"
+                  data-tooltip-custom-class="u-tooltip--v2 g-font-weight-300 g-font-size-default g-color-gray-dark-v6"
+                  data-align-text-axis-x="center"
+                  data-fill-opacity="1"
+                  data-fill-colors='["#1d75e5"]'
+                  data-stroke-color="#1d75e5"
+                  data-stroke-dash-array="0"
+                  data-text-size-x="14px"
+                  data-text-color-x="#000000"
+                  data-text-offset-top-x="0"
+                  data-text-size-y="14px"
+                  data-text-color-y="#53585e"
+                  data-points-colors='["#1d75e5"]'
+                  data-series='[
+                       [
+                         {"meta": "$", "value": 900},
+                         {"meta": "$", "value": 1700},
+                         {"meta": "$", "value": 1000},
+                         {"meta": "$", "value": 2420},
+                         {"meta": "$", "value": 800}
+                       ]
+                     ]'
+                  data-labels='["2013", "2014", "2015", "2016", "2017"]'></div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-pa-20">
+                  <h4 class="media g-font-size-16 g-mb-10">
+                    <span class="d-flex align-self-center g-font-weight-400 g-color-gray-dark-v6">New Clients</span>
+
+                    <span class="media-body align-self-center text-right">
+                      <a class="u-link-v5 g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-reload"></i>
+                      </a>
+                    </span>
+                  </h4>
+
+                  <div class="d-flex align-items-center">
+                    <span class="g-font-weight-300 g-font-size-24 g-color-black">+125</span>
+                    <span class="d-flex align-self-center g-font-size-0 g-ml-5 g-ml-10--md">
+                      <i class="g-fill-gray-dark-v9">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-21.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                      <i class="g-fill-lightblue-v3">
+                        <svg width="12px" height="20px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g transform="translate(-33.000000, -751.000000)">
+                            <g transform="translate(0.000000, 64.000000)">
+                              <g transform="translate(20.000000, 619.000000)">
+                                <g transform="translate(1.000000, 68.000000)">
+                                  <polygon
+                                    transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                    points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  class="js-area-chart u-area-chart--v1 g-pos-rel g-line-height-0"
+                  data-height="72px"
+                  data-high="2420"
+                  data-low="0"
+                  data-offset-x="0"
+                  data-offset-y="0"
+                  data-postfix=" m"
+                  data-is-show-area="true"
+                  data-is-show-line="false"
+                  data-is-show-point="true"
+                  data-is-full-width="true"
+                  data-is-stack-bars="true"
+                  data-is-show-axis-x="false"
+                  data-is-show-axis-y="false"
+                  data-is-show-tooltips="true"
+                  data-tooltip-description-position="left"
+                  data-tooltip-custom-class="u-tooltip--v2 g-font-weight-300 g-font-size-default g-color-gray-dark-v6"
+                  data-align-text-axis-x="center"
+                  data-fill-opacity="1"
+                  data-fill-colors='["#e62154"]'
+                  data-stroke-color="#e62154"
+                  data-stroke-dash-array="0"
+                  data-text-size-x="14px"
+                  data-text-color-x="#000000"
+                  data-text-offset-top-x="0"
+                  data-text-size-y="14px"
+                  data-text-color-y="#53585e"
+                  data-points-colors='["#e62154"]'
+                  data-series='[
+                       [
+                         {"meta": "$", "value": 900},
+                         {"meta": "$", "value": 1700},
+                         {"meta": "$", "value": 1000},
+                         {"meta": "$", "value": 2420},
+                         {"meta": "$", "value": 800}
+                       ]
+                     ]'
+                  data-labels='["2013", "2014", "2015", "2016", "2017"]'></div>
+              </div>
+              <!-- End Panel -->
+            </div>
+          </div>
+          <!-- Metrics 7 -->
+
+          <!-- Metrics 8 -->
+          <h2 class="h4 text-center g-font-weight-300 g-mb-20">Metrics <span class="g-color-primary g-ml-5">#08</span></h2>
+          <div class="row g-mb-35">
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="js-pie-chart g-pos-rel mx-auto" style="width: 60px; height: 60px;" data-series='[50, 20, 50]' data-start-angle="330" data-fill-colors='["#f1f5f5", "#1d75e5", "#3dd1e8"]'></div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <h4 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Projects Done</h4>
+
+                      <div class="d-flex">
+                        <span class="d-flex g-font-size-22 g-color-black">99.9%</span>
+
+                        <div class="d-flex align-items-center g-color-gray-dark-v10 g-ml-10">
+                          <span>+35%</span>
+                          <span class="d-flex align-self-center g-font-size-0 g-mt-2 g-ml-5">
+                            <i class="g-fill-gray-dark-v9">
+                              <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g transform="translate(-21.000000, -751.000000)">
+                                  <g transform="translate(0.000000, 64.000000)">
+                                    <g transform="translate(20.000000, 619.000000)">
+                                      <g transform="translate(1.000000, 68.000000)">
+                                        <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                            <i class="g-fill-lightblue-v3">
+                              <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g transform="translate(-33.000000, -751.000000)">
+                                  <g transform="translate(0.000000, 64.000000)">
+                                    <g transform="translate(20.000000, 619.000000)">
+                                      <g transform="translate(1.000000, 68.000000)">
+                                        <polygon
+                                          transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                          points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="js-pie-chart g-pos-rel mx-auto" style="width: 60px; height: 60px;" data-series='[70, 50]' data-start-angle="330" data-fill-colors='["#f1f5f5", "#15d3b2"]'></div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <h4 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Tasks Complete</h4>
+
+                      <div class="d-flex">
+                        <span class="d-flex g-font-size-22 g-color-black">168</span>
+
+                        <div class="d-flex align-items-center g-color-gray-dark-v10 g-ml-10">
+                          <span>+15%</span>
+                          <span class="d-flex align-self-center g-font-size-0 g-mt-2 g-ml-5">
+                            <i class="g-fill-gray-dark-v9">
+                              <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g transform="translate(-21.000000, -751.000000)">
+                                  <g transform="translate(0.000000, 64.000000)">
+                                    <g transform="translate(20.000000, 619.000000)">
+                                      <g transform="translate(1.000000, 68.000000)">
+                                        <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                            <i class="g-fill-lightblue-v3">
+                              <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g transform="translate(-33.000000, -751.000000)">
+                                  <g transform="translate(0.000000, 64.000000)">
+                                    <g transform="translate(20.000000, 619.000000)">
+                                      <g transform="translate(1.000000, 68.000000)">
+                                        <polygon
+                                          transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                          points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="js-pie-chart g-pos-rel mx-auto" style="width: 60px; height: 60px;" data-series='[50, 20, 50]' data-start-angle="330" data-fill-colors='["#f1f5f5", "#3dd1e8", "#1d75e5"]'></div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <h4 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">Weekly Income</h4>
+
+                      <div class="d-flex">
+                        <span class="d-flex g-font-size-22 g-color-black">$24,800</span>
+
+                        <div class="d-flex align-items-center g-color-gray-dark-v10 g-ml-10">
+                          <span>+52%</span>
+                          <span class="d-flex align-self-center g-font-size-0 g-mt-2 g-ml-5">
+                            <i class="g-fill-gray-dark-v9">
+                              <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g transform="translate(-21.000000, -751.000000)">
+                                  <g transform="translate(0.000000, 64.000000)">
+                                    <g transform="translate(20.000000, 619.000000)">
+                                      <g transform="translate(1.000000, 68.000000)">
+                                        <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                            <i class="g-fill-lightblue-v3">
+                              <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g transform="translate(-33.000000, -751.000000)">
+                                  <g transform="translate(0.000000, 64.000000)">
+                                    <g transform="translate(20.000000, 619.000000)">
+                                      <g transform="translate(1.000000, 68.000000)">
+                                        <polygon
+                                          transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                          points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+              <!-- Panel -->
+              <div class="card h-100 g-brd-gray-light-v7 rounded">
+                <div class="card-block g-font-weight-300 g-pa-20">
+                  <div class="media">
+                    <div class="d-flex g-mr-15">
+                      <div class="js-pie-chart g-pos-rel mx-auto" style="width: 60px; height: 60px;" data-series='[50, 70]' data-start-angle="330" data-fill-colors='["#f1f5f5", "#e62154"]'></div>
+                    </div>
+
+                    <div class="media-body align-self-center">
+                      <h4 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">New Clients</h4>
+
+                      <div class="d-flex">
+                        <span class="d-flex g-font-size-22 g-color-black">32</span>
+
+                        <div class="d-flex align-items-center g-color-gray-dark-v10 g-ml-10">
+                          <span>+5%</span>
+                          <span class="d-flex align-self-center g-font-size-0 g-mt-2 g-ml-5">
+                            <i class="g-fill-gray-dark-v9">
+                              <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g transform="translate(-21.000000, -751.000000)">
+                                  <g transform="translate(0.000000, 64.000000)">
+                                    <g transform="translate(20.000000, 619.000000)">
+                                      <g transform="translate(1.000000, 68.000000)">
+                                        <polygon points="6 20 0 13.9709049 0.576828937 13.3911999 5.59205874 18.430615 5.59205874 0 6.40794126 0 6.40794126 18.430615 11.4223552 13.3911999 12 13.9709049"></polygon>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                            <i class="g-fill-lightblue-v3">
+                              <svg width="8px" height="13px" viewbox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g transform="translate(-33.000000, -751.000000)">
+                                  <g transform="translate(0.000000, 64.000000)">
+                                    <g transform="translate(20.000000, 619.000000)">
+                                      <g transform="translate(1.000000, 68.000000)">
+                                        <polygon
+                                          transform="translate(18.000000, 10.000000) scale(1, -1) translate(-18.000000, -10.000000)"
+                                          points="18 20 12 13.9709049 12.5768289 13.3911999 17.5920587 18.430615 17.5920587 0 18.4079413 0 18.4079413 18.430615 23.4223552 13.3911999 24 13.9709049"></polygon>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+          </div>
+          <!-- Metrics 8 -->
+        </div>
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/chartist-js-tooltip/chartist-plugin-tooltip.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.area-chart.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.bar-chart.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.pie-chart.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.donut-chart.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of charts
+    $.HSCore.components.HSAreaChart.init('.js-area-chart');
+    $.HSCore.components.HSPieChart.init('.js-pie-chart');
+    $.HSCore.components.HSDonutChart.init('.js-donut-chart');
+    $.HSCore.components.HSBarChart.init('.js-bar-chart');
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav', {
+      afterOpen: function() {
+        setTimeout(function() {
+          $.HSCore.components.HSAreaChart.init('.js-area-chart');
+          $.HSCore.components.HSPieChart.init('.js-pie-chart');
+          $.HSCore.components.HSDonutChart.init('.js-donut-chart');
+          $.HSCore.components.HSBarChart.init('.js-bar-chart');
+        }, 400);
+      },
+      afterClose: function() {
+        setTimeout(function() {
+          $.HSCore.components.HSAreaChart.init('.js-area-chart');
+          $.HSCore.components.HSPieChart.init('.js-pie-chart');
+          $.HSCore.components.HSDonutChart.init('.js-donut-chart');
+          $.HSCore.components.HSBarChart.init('.js-bar-chart');
+        }, 400);
+      }
+    });
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+  });
+</script>
+</body>
+</html>

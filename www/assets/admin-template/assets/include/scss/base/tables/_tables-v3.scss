@@ -1,0 +1,83 @@
+/*------------------------------------
+  Tables v3
+------------------------------------*/
+
+[class*="u-table--v3"] {
+  margin-bottom: 0;
+
+  th,
+  td {
+    color: inherit;
+    vertical-align: middle;
+    @include px-to-rem(padding, 20px);
+    border-top-color: $g-color-gray-light-v7 !important;
+    border-bottom-color: $g-color-gray-light-v7 !important;
+    border-left-color: $g-color-gray-light-v7 !important;
+    border-right-color: $g-color-gray-light-v7 !important;
+
+    &:first-child,
+    &.g-first-child {
+      text-align: center;
+      border-left: 1px solid;
+    }
+
+    &:last-child,
+    &.g-last-child {
+      border-right: 1px solid;
+    }
+  }
+
+  th {
+    font-weight: 400;
+    border-bottom: none !important;
+  }
+
+  td {
+    font-weight: 300;
+    @include px-to-rem(padding-top, 16px);
+    @include px-to-rem(padding-bottom, 16px);
+  }
+
+  .opened {
+    & + tr {
+      background-color: $g-color-gray-light-v8;
+    }
+  }
+
+  tr:last-child {
+    td {
+      border-bottom: 1px solid;
+    }
+  }
+
+  .thead-light {
+    th {
+      color: $g-color-gray-dark-v6;
+      background-color: $g-color-gray-light-v8;
+      border-color: $g-color-gray-light-v8;
+    }
+  }
+
+  &.table-hover {
+    tbody {
+      tr:hover {
+        background-color: rgba($g-color-gray-light-v8, .4);
+      }
+    }
+  }
+
+  &.table-striped {
+    tbody {
+      tr:nth-of-type(2n+1) {
+        background-color: $g-color-gray-light-v8;
+      }
+    }
+  }
+}
+
+.u-table--v3--bordered {
+  th,
+  td {
+    border-left: 1px solid;
+  }
+}

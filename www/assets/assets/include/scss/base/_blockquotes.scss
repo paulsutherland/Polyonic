@@ -1,0 +1,184 @@
+/*------------------------------------
+  Blockquotes
+------------------------------------*/
+
+//
+// Blockquote v1
+//
+
+.u-blockquote-v1 {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 5px 6px 9px -6px rgba($g-color-black, .15);
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    width: 60px;
+    color: $g-color-primary;
+    font-size: 60px;
+    margin: -25px 0 0 -40px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 80px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: {
+      style: solid;
+      width: 30px 30px 0 0;
+      color: $g-color-white transparent transparent transparent;
+    }
+    -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .1));
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .1));
+  }
+}
+
+//
+// Blockquote v2
+//
+
+.u-blockquote-v2 {
+  &::before,
+  &::after {
+    position: relative;
+    top: 5px;
+    font-size: 22px;
+    line-height: 10px;
+  }
+
+  &::before {
+    content: "\“";
+    padding-right: 5px;
+  }
+
+  &::after {
+    content: "\”";
+    padding-left: 5px;
+  }
+}
+
+//
+// Blockquote v3
+//
+
+.u-blockquote-v3 {
+  position: relative;
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    font-size: 60px;
+    color: $g-color-primary;
+    margin: -30px 0 0 -40px;
+  }
+}
+
+//
+// Blockquote v4
+//
+
+.u-blockquote-v4 {
+  &::before,
+  &::after {
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    margin-top: -12px;
+  }
+
+  &::before {
+    margin-left: -30px;
+  }
+
+  &::after {
+    margin-left: 13px;
+  }
+}
+
+//
+// Blockquote v5
+//
+
+.u-blockquote-v5 {
+  &::before {
+    content: "\201C";
+    position: absolute;
+    width: 60px;
+    color: rgba($g-color-white, .2);
+    font-size: 70px;
+    margin: -25px 0 0 -40px;
+  }
+}
+
+//
+// Blockquote v6
+//
+
+.u-blockquote-v6 {
+  &::before,
+  &::after {
+    content: "\0022";
+    font-family: inherit;
+    color: inherit;
+  }
+}
+
+//
+// Blockquote v7
+//
+
+.u-blockquote-v7 {
+  position: relative;
+  padding-top: 55px;
+
+  &::before {
+    content: "\f10d";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 35px;
+    height: 35px;
+    font: {
+      size: 12px;
+      family: "FontAwesome";
+    }
+    color: $g-color-white;
+    line-height: 35px;
+    background: $g-color-primary;
+    border-radius: 50%;
+    margin-left: -18px;
+  }
+}
+
+//
+// Blockquote v8
+//
+
+.u-blockquote-v8 {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 5px 6px 9px -6px rgba($g-color-main, .08);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50px;
+    bottom: -15px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: {
+      style: solid;
+      width: 15px 15px 0 0;
+      color: $g-color-white transparent transparent transparent;
+    }
+    -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .05));
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .05));
+  }
+}

@@ -1,0 +1,43 @@
+/*------------------------------------
+  Heading-v9
+------------------------------------*/
+.u-heading-v9 {
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin-left: -35px;
+    width: 70px;
+    height: 96px;
+    border: 2px solid $g-color-primary;
+  }
+
+  &--left {
+    padding-left: 35px;
+    text-align: left;
+
+    &::before {
+      left: 0;
+      margin-left: 0;
+    }
+  }
+  &--right {
+    padding-right: 35px;
+    text-align: right;
+
+    &::before {
+      left: auto;
+      right: 0;
+      margin-left: 0;
+    }
+  }
+
+  & * {
+    position: relative;
+    z-index: 3;
+  }
+}

@@ -1,0 +1,1281 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-gallery-grid" %}
+{% set title = "Gallery Grid" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section>
+      <div class="g-py-100">
+        <div class="container">
+          <!-- Bootstrap Gallery Grid -->
+          <section>
+            <!-- Heading -->
+            <header class="g-mb-80">
+              <div class="u-heading-v6-2  text-uppercase">
+                <h2 class="h4 u-heading-v6__title g-font-weight-300">Bootstrap Gallery Grid</h2>
+              </div>
+              <div class="g-line-height-2 g-pl-90">
+                <p>Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl. In hac habitasse platea dictumst. Curabitur hendrerit.</p>
+              </div>
+            </header>
+            <!-- End Heading -->
+
+            <!-- 2 Column -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">2 Column</h3>
+              </div>
+
+              <div class="col-md-9">
+                <div id="shortcode1">
+                  <div class="shortcode-html">
+                    <div class="row">
+                      <div class="col-md-6 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col2"
+                           data-src="{{ root }}assets/img-temp/500x450/img3.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img3.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-6 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col2"
+                           data-src="{{ root }}assets/img-temp/500x450/img4.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img4.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-6 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col2"
+                           data-src="{{ root }}assets/img-temp/500x450/img5.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img5.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-6 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col2"
+                           data-src="{{ root }}assets/img-temp/500x450/img6.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img6.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSPopup.init('.js-fancybox', {
+                          transitionEffect: false
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode1" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End 2 Column -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- 3 Column -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">3 Column</h3>
+              </div>
+
+              <div class="col-md-9">
+                <div id="shortcode2">
+                  <div class="shortcode-html">
+                    <div class="row">
+                      <div class="col-md-4 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col3"
+                           data-src="{{ root }}assets/img-temp/400x270/img8.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img8.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-4 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col3"
+                           data-src="{{ root }}assets/img-temp/400x270/img2.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img2.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-4 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col3"
+                           data-src="{{ root }}assets/img-temp/400x270/img3.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img3.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-4 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col3"
+                           data-src="{{ root }}assets/img-temp/400x270/img7.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img7.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-4 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col3"
+                           data-src="{{ root }}assets/img-temp/400x270/img5.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img5.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-4 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col3"
+                           data-src="{{ root }}assets/img-temp/400x270/img6.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img6.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSPopup.init('.js-fancybox', {
+                          transitionEffect: false
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode2" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End 3 Column -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- 4 Column -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">4 Column</h3>
+              </div>
+
+              <div class="col-md-9">
+                <div id="shortcode3">
+                  <div class="shortcode-html">
+                    <div class="row">
+                      <div class="col-md-3 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col4"
+                           data-src="{{ root }}assets/img-temp/230x230/img4.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/230x230/img4.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-3 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col4"
+                           data-src="{{ root }}assets/img-temp/230x230/img1.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/230x230/img1.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-3 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col4"
+                           data-src="{{ root }}assets/img-temp/230x230/img3.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/230x230/img3.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-3 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col4"
+                           data-src="{{ root }}assets/img-temp/230x230/img1.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/230x230/img1.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-3 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col4"
+                           data-src="{{ root }}assets/img-temp/230x230/img2.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/230x230/img2.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-3 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col4"
+                           data-src="{{ root }}assets/img-temp/230x230/img3.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/230x230/img3.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-3 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col4"
+                           data-src="{{ root }}assets/img-temp/230x230/img4.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/230x230/img4.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-3 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col4"
+                           data-src="{{ root }}assets/img-temp/230x230/img2.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/230x230/img2.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSPopup.init('.js-fancybox', {
+                          transitionEffect: false
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode3" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End 4 Column -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- 6 Column -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">6 Column</h3>
+              </div>
+
+              <div class="col-md-9">
+                <div id="shortcode4">
+                  <div class="shortcode-html">
+                    <div class="row">
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img13.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img13.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img2.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img2.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img3.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img3.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img4.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img4.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img5.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img5.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img6.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img6.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img7.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img7.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img8.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img8.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img9.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img9.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img10.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img10.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img11.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img11.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                      <div class="col-md-2 g-mb-30">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--col6"
+                           data-src="{{ root }}assets/img-temp/400x270/img12.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img12.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of popups
+                        $.HSCore.components.HSPopup.init('.js-fancybox', {
+                          transitionEffect: false
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode4" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End 6 Column -->
+          </section>
+          <!-- End Bootstrap Gallery Grid -->
+
+          <hr class="g-brd-gray-light-v4 g-my-60">
+
+          <!-- Masonry Gallery Grid -->
+          <section>
+            <!-- Heading -->
+            <header class="g-mb-80">
+              <div class="u-heading-v6-2  text-uppercase">
+                <h2 class="h4 u-heading-v6__title g-font-weight-300">Masonry Gallery Grid</h2>
+              </div>
+
+              <div class="g-line-height-2 g-pl-90">
+                <p>Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl. In hac habitasse platea dictumst. Curabitur hendrerit.</p>
+              </div>
+            </header>
+            <!-- End Heading -->
+
+            <!-- 2 Column -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">2 Column</h3>
+              </div>
+
+              <div class="col-md-9">
+                <div id="shortcode5">
+                  <div class="shortcode-html">
+                    <div class="masonry-grid">
+                      <div class="masonry-grid-sizer g-width-50x--sm"></div>
+
+                      <div class="masonry-grid-item g-width-50x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col2"
+                           data-src="{{ root }}assets/img-temp/500x450/img1.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img1.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-50x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col2"
+                           data-src="{{ root }}assets/img-temp/500x450/img2.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img2.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="w-100 masonry-grid-item">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col2"
+                           data-src="{{ root }}assets/img-temp/700x350/img2.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid w-100" src="{{ root }}assets/img-temp/700x350/img2.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-50x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col2"
+                           data-src="{{ root }}assets/img-temp/500x450/img4.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img4.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-50x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col2"
+                           data-src="{{ root }}assets/img-temp/500x450/img5.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img5.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/imagesloaded/imagesloaded.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of masonry
+                        $('.masonry-grid').imagesLoaded().then(function () {
+                          $('.masonry-grid').masonry({
+                            columnWidth: '.masonry-grid-sizer',
+                            itemSelector: '.masonry-grid-item',
+                            percentPosition: true
+                          });
+                        });
+
+                        // initialization of popups
+                        $.HSCore.components.HSPopup.init('.js-fancybox', {
+                          transitionEffect: false
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode5" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End 2 Column -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- 3 Column -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">3 Column</h3>
+              </div>
+
+              <div class="col-md-9">
+                <div id="shortcode6">
+                  <div class="shortcode-html">
+                    <div class="masonry-grid">
+                      <div class="masonry-grid-sizer g-width-33_3x--sm"></div>
+
+                      <div class="masonry-grid-item g-width-33_3x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col3"
+                           data-src="{{ root }}assets/img-temp/500x450/img3.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img3.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-33_3x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col3"
+                           data-src="{{ root }}assets/img-temp/500x450/img2.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img2.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-33_3x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col3"
+                           data-src="{{ root }}assets/img-temp/500x450/img4.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img4.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="w-100 masonry-grid-item g-width-66_6x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col3"
+                           data-src="{{ root }}assets/img-temp/500x450/img1.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid w-100" src="{{ root }}assets/img-temp/500x450/img1.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-33_3x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col3"
+                           data-src="{{ root }}assets/img-temp/500x450/img5.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img5.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-33_3x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col3"
+                           data-src="{{ root }}assets/img-temp/500x450/img6.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img6.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-33_3x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col3"
+                           data-src="{{ root }}assets/img-temp/500x450/img9.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img9.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-33_3x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col3"
+                           data-src="{{ root }}assets/img-temp/500x450/img10.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img10.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-33_3x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col3"
+                           data-src="{{ root }}assets/img-temp/500x450/img4.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img4.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/imagesloaded/imagesloaded.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of masonry
+                        $('.masonry-grid').imagesLoaded().then(function () {
+                          $('.masonry-grid').masonry({
+                            columnWidth: '.masonry-grid-sizer',
+                            itemSelector: '.masonry-grid-item',
+                            percentPosition: true
+                          });
+                        });
+
+                        // initialization of popups
+                        $.HSCore.components.HSPopup.init('.js-fancybox', {
+                          transitionEffect: false
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode6" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End 3 Column -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- 4 Column -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">4 Column</h3>
+              </div>
+
+              <div class="col-md-9">
+                <div id="shortcode7">
+                  <div class="shortcode-html">
+                    <div class="masonry-grid">
+                      <div class="masonry-grid-sizer g-width-25x--sm"></div>
+
+                      <div class="masonry-grid-item g-width-50x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col4"
+                           data-src="{{ root }}assets/img-temp/400x270/img14.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img14.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-25x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col4"
+                           data-src="{{ root }}assets/img-temp/400x270/img6.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img6.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-25x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col4"
+                           data-src="{{ root }}assets/img-temp/400x270/img8.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img8.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-25x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col4"
+                           data-src="{{ root }}assets/img-temp/400x270/img18.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img18.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-25x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col4"
+                           data-src="{{ root }}assets/img-temp/400x270/img16.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img16.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-25x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col4"
+                           data-src="{{ root }}assets/img-temp/400x270/img15.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img15.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-25x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col4"
+                           data-src="{{ root }}assets/img-temp/400x270/img11.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img11.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-25x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col4"
+                           data-src="{{ root }}assets/img-temp/400x270/img12.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img12.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-25x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col4"
+                           data-src="{{ root }}assets/img-temp/400x270/img13.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/400x270/img13.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/imagesloaded/imagesloaded.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of masonry
+                        $('.masonry-grid').imagesLoaded().then(function () {
+                          $('.masonry-grid').masonry({
+                            columnWidth: '.masonry-grid-sizer',
+                            itemSelector: '.masonry-grid-item',
+                            percentPosition: true
+                          });
+                        });
+
+                        // initialization of popups
+                        $.HSCore.components.HSPopup.init('.js-fancybox', {
+                          transitionEffect: false
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode7" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End 4 Column -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- 5 Column -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">5 Column</h3>
+              </div>
+
+              <div class="col-md-9">
+                <div id="shortcode8">
+                  <div class="shortcode-html">
+                    <div class="masonry-grid">
+                      <div class="masonry-grid-sizer g-width-20x--sm"></div>
+
+                      <div class="masonry-grid-item g-width-20x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col5"
+                           data-src="{{ root }}assets/img-temp/500x650/img1.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x650/img1.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-40x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col5"
+                           data-src="{{ root }}assets/img-temp/500x650/img2.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x650/img2.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-20x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col5"
+                           data-src="{{ root }}assets/img-temp/500x650/img3.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x650/img3.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-20x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col5"
+                           data-src="{{ root }}assets/img-temp/500x650/img4.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x650/img4.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-20x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col5"
+                           data-src="{{ root }}assets/img-temp/500x650/img5.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x650/img5.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-20x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col5"
+                           data-src="{{ root }}assets/img-temp/500x650/img6.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x650/img6.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-20x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col5"
+                           data-src="{{ root }}assets/img-temp/500x650/img7.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x650/img7.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-60x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col5"
+                           data-src="{{ root }}assets/img-temp/500x650/img8.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x650/img8.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-20x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col5"
+                           data-src="{{ root }}assets/img-temp/500x650/img9.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x650/img9.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-20x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col5"
+                           data-src="{{ root }}assets/img-temp/500x650/img10.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x650/img10.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-40x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col5"
+                           data-src="{{ root }}assets/img-temp/500x650/img11.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x650/img11.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/imagesloaded/imagesloaded.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of masonry
+                        $('.masonry-grid').imagesLoaded().then(function () {
+                          $('.masonry-grid').masonry({
+                            columnWidth: '.masonry-grid-sizer',
+                            itemSelector: '.masonry-grid-item',
+                            percentPosition: true
+                          });
+                        });
+
+                        // initialization of popups
+                        $.HSCore.components.HSPopup.init('.js-fancybox', {
+                          transitionEffect: false
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode8" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End 5 Column -->
+
+            <hr class="g-brd-gray-light-v4 g-my-60">
+
+            <!-- 6 Column -->
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="h4 g-font-weight-300 g-mb-30">6 Column</h3>
+              </div>
+
+              <div class="col-md-9">
+                <div id="shortcode9">
+                  <div class="shortcode-html">
+                    <div class="masonry-grid">
+                      <div class="masonry-grid-sizer g-width-16_6x--sm"></div>
+
+                      <div class="masonry-grid-item g-width-16_6x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img1.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img1.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-16_6x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img2.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img2.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-33_3x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img3.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img3.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-16_6x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img4.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img4.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-16_6x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img5.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img5.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-33_3x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img6.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img6.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-16_6x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img7.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img7.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-16_6x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img8.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img8.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-66_6x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img9.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid w-100" src="{{ root }}assets/img-temp/500x450/img9.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-16_6x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img10.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img10.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-16_6x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img11.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img11.jpg" alt="Image Description">
+                        </a>
+                      </div>
+
+                      <div class="masonry-grid-item g-width-33_3x--sm">
+                        <a class="js-fancybox" href="javascript:;"
+                           data-fancybox="lightbox-gallery--masonry-col6"
+                           data-src="{{ root }}assets/img-temp/500x450/img8.jpg"
+                           data-caption="Lightbox Gallery">
+                          <img class="img-fluid" src="{{ root }}assets/img-temp/500x450/img8.jpg" alt="Image Description">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shortcode-styles">
+                    <!-- CSS Implementing Plugins -->
+                    <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+                  </div>
+
+                  <div class="shortcode-scripts">
+                    <!-- JS Implementing Plugins -->
+                    <script type="text/plain" src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/imagesloaded/imagesloaded.js"></script>
+                    <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+                    <!-- JS Unify -->
+                    <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+                    <!-- JS Plugins Init. -->
+                    <script type="text/plain">
+                      $(document).on('ready', function () {
+                        // initialization of masonry
+                        $('.masonry-grid').imagesLoaded().then(function () {
+                          $('.masonry-grid').masonry({
+                            columnWidth: '.masonry-grid-sizer',
+                            itemSelector: '.masonry-grid-item',
+                            percentPosition: true
+                          });
+                        });
+
+                        // initialization of popups
+                        $.HSCore.components.HSPopup.init('.js-fancybox', {
+                          transitionEffect: false
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                {% set contentTarget = "#shortcode9" %}
+                {% set modalID = "#modalMarkup" %}
+                {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+              </div>
+            </div>
+            <!-- End 6 Column -->
+          </section>
+          <!-- End Masonry Gallery Grid -->
+        </div>
+      </div>
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+  <script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of popups
+      $.HSCore.components.HSPopup.init('.js-fancybox', {
+        transitionEffect: false
+      });
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

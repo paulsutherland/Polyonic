@@ -1,0 +1,236 @@
+/*------------------------------------
+  Datepickers v1
+------------------------------------*/
+
+.u-datepicker-v1 {
+  padding: 10px 12px;
+  border: {
+    width: 1px;
+    style: solid;
+    radius: 0;
+  }
+  z-index: 2 !important;
+
+  &.ui-datepicker-inline {
+    width: 100%;
+  }
+
+  .ui {
+    &-datepicker {
+      width: 100%;
+      padding: 0;
+      border: none;
+
+      &-header {
+        background-color: transparent;
+        border: none;
+        border: {
+          radius: 0;
+          bottom: {
+            width: 1px;
+            style: solid;
+            color: $g-color-gray-dark-v5;
+          }
+        }
+        padding: 0;
+        margin: -10px -12px 10px;
+      }
+
+      &-title {
+        height: 46px;
+        line-height: 46px;
+        font-size: 16px;
+        margin: {
+          left: 46px;
+          right: 46px;
+        }
+      }
+
+      &-prev,
+      &-next {
+        width: 46px;
+        height: 46px;
+        line-height: 46px;
+        top: 0;
+        text-align: center;
+        border-radius: 0;
+        cursor: pointer;
+
+        > span {
+          position: static;
+          top: 0;
+          left: 0;
+          display: inline-block;
+          width: auto;
+          height: auto;
+          font-size: 16px;
+          background-image: none;
+          text-indent: 0;
+          margin: {
+            top: 0;
+            left: 0;
+          }
+        }
+
+        &-hover {
+          top: 0;
+          background-color: transparent;
+        }
+
+        &.ui-state-hover {
+          border: none;
+        }
+      }
+
+      &-prev {
+        left: 0;
+        border-right: {
+          width: 1px;
+          style: solid;
+          color: $g-color-gray-dark-v5;
+        }
+
+        &-hover {
+          left: 0;
+        }
+
+        &.ui-state-hover {
+          border-right: {
+            width: 1px;
+            style: solid;
+            color: $g-color-gray-dark-v5;
+          }
+        }
+      }
+
+      &-next {
+        right: 0;
+        border-left: {
+          width: 1px;
+          style: solid;
+          color: $g-color-gray-dark-v5;
+        }
+
+        &-hover {
+          right: 0;
+        }
+
+        &.ui-state-hover {
+          border-left: {
+            width: 1px;
+            style: solid;
+            color: $g-color-gray-dark-v5;
+          }
+        }
+      }
+
+      &-calendar {
+        margin-bottom: 0;
+
+        th,
+        td {
+          text-align: center;
+          padding: 0;
+
+          span,
+          a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            color: $g-color-gray-dark-v3;
+            text-align: center;
+            background: none;
+            border: {
+              width: 1px;
+              style: solid;
+              color: transparent;
+            }
+            padding: 0;
+
+            &.ui-state-active {
+              color: $g-color-white;
+              background: $g-color-primary;
+              border: {
+                color: $g-color-primary;
+              }
+            }
+          }
+        }
+
+        th {
+          span,
+          a {
+            font-size: 12px;
+            color: $g-color-gray-dark-v5;
+            text-transform: uppercase;
+          }
+        }
+
+        td {
+          span,
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .u-datepicker-v1 {
+    min-width: 340px;
+
+    .ui {
+      &-datepicker {
+        &-title {
+          height: 52px;
+          line-height: 52px;
+          font-size: 18px;
+          margin: {
+            left: 52px;
+            right: 52px;
+          }
+        }
+
+        &-prev,
+        &-next {
+          width: 52px;
+          height: 52px;
+          line-height: 52px;
+
+          > span {
+            font-size: 18px;
+          }
+        }
+
+        &-calendar {
+          th,
+          td {
+            span,
+            a {
+              width: 44px;
+              height: 44px;
+              line-height: 42px;
+            }
+          }
+
+          th {
+            span,
+            a {
+              font-size: 14px;
+            }
+          }
+
+          td {
+            span,
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

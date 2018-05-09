@@ -1,0 +1,259 @@
+/*------------------------------------
+  TAG Progress Bars
+------------------------------------*/
+//
+// Common Styles
+//
+
+.u-progress {
+	display: block;
+	width: 100%;
+  height: 12px;
+  overflow: hidden;
+  background-color: $g-color-gray-light-v4;
+	border: none;
+	outline: none;
+	appearance: none;
+
+	&::-webkit-progress-bar {
+		background-color: $g-color-gray-light-v4;
+	}
+
+	&::-ms-fill {
+		background-color: $g-color-primary;
+	}
+	&::-webkit-progress-value {
+		background-color: $g-color-primary;
+	}
+	&::-moz-progress-bar {
+		background-color: $g-color-primary;
+	}
+}
+
+
+
+//
+// Progress Bars Additional BG colors
+//
+
+.u-progress {
+  // Color Blue
+  &--blue::-ms-fill {
+    background-color: $g-color-blue;
+  }
+  &--blue::-webkit-progress-value {
+    background-color: $g-color-blue;
+  }
+  &--blue::-moz-progress-bar {
+    background-color: $g-color-blue;
+  }
+
+  // Color Light Blue
+  &--lightblue::-ms-fill {
+    background-color: $g-color-lightblue;
+  }
+  &--lightblue::-webkit-progress-value {
+    background-color: $g-color-lightblue;
+  }
+  &--lightblue::-moz-progress-bar {
+    background-color: $g-color-lightblue;
+  }
+
+  // Color Dark Blue
+  &--darkblue::-ms-fill {
+    background-color: $g-color-darkblue;
+  }
+  &--darkblue::-webkit-progress-value {
+    background-color: $g-color-darkblue;
+  }
+  &--darkblue::-moz-progress-bar {
+    background-color: $g-color-darkblue;
+  }
+
+  // Color Indigo
+  &--indigo::-ms-fill {
+    background-color: $g-color-indigo;
+  }
+  &--indigo::-webkit-progress-value {
+    background-color: $g-color-indigo;
+  }
+  &--indigo::-moz-progress-bar {
+    background-color: $g-color-indigo;
+  }
+
+  // Color Red
+  &--red::-ms-fill {
+    background-color: $g-color-red;
+  }
+  &--red::-webkit-progress-value {
+    background-color: $g-color-red;
+  }
+  &--red::-moz-progress-bar {
+    background-color: $g-color-red;
+  }
+
+  // Color Light Red
+  &--lightred::-ms-fill {
+    background-color: $g-color-lightred;
+  }
+  &--lightred::-webkit-progress-value {
+    background-color: $g-color-lightred;
+  }
+  &--lightred::-moz-progress-bar {
+    background-color: $g-color-lightred;
+  }
+
+  // Color Dark Red
+  &--darkred::-ms-fill {
+    background-color: $g-color-darkred;
+  }
+  &--darkred::-webkit-progress-value {
+    background-color: $g-color-darkred;
+  }
+  &--darkred::-moz-progress-bar {
+    background-color: $g-color-darkred;
+  }
+
+  // Color Purple
+  &--purple::-ms-fill {
+    background-color: $g-color-purple;
+  }
+  &--purple::-webkit-progress-value {
+    background-color: $g-color-purple;
+  }
+  &--purple::-moz-progress-bar {
+    background-color: $g-color-purple;
+  }
+
+  // Color Dark Purple
+  &--darkpurple::-ms-fill {
+    background-color: $g-color-darkpurple;
+  }
+  &--darkpurple::-webkit-progress-value {
+    background-color: $g-color-darkpurple;
+  }
+  &--darkpurple::-moz-progress-bar {
+    background-color: $g-color-darkpurple;
+  }
+
+  // Color Pink
+  &--pink::-ms-fill {
+    background-color: $g-color-pink;
+  }
+  &--pink::-webkit-progress-value {
+    background-color: $g-color-pink;
+  }
+  &--pink::-moz-progress-bar {
+    background-color: $g-color-pink;
+  }
+
+  // Color Orange
+  &--orange::-ms-fill {
+    background-color: $g-color-orange;
+  }
+  &--orange::-webkit-progress-value {
+    background-color: $g-color-orange;
+  }
+  &--orange::-moz-progress-bar {
+    background-color: $g-color-orange;
+  }
+
+  // Color Deep Orange
+  &--deeporange::-ms-fill {
+    background-color: $g-color-deeporange;
+  }
+  &--deeporange::-webkit-progress-value {
+    background-color: $g-color-deeporange;
+  }
+  &--deeporange::-moz-progress-bar {
+    background-color: $g-color-deeporange;
+  }
+
+  // Color Yellow
+  &--yellow::-ms-fill {
+    background-color: $g-color-yellow;
+  }
+  &--yellow::-webkit-progress-value {
+    background-color: $g-color-yellow;
+  }
+  &--yellow::-moz-progress-bar {
+    background-color: $g-color-yellow;
+  }
+
+  // Color Aqua
+  &--aqua::-ms-fill {
+    background-color: $g-color-aqua;
+  }
+  &--aqua::-webkit-progress-value {
+    background-color: $g-color-aqua;
+  }
+  &--aqua::-moz-progress-bar {
+    background-color: $g-color-aqua;
+  }
+
+  // Color Cyan
+  &--cyan::-ms-fill {
+    background-color: $g-color-cyan;
+  }
+  &--cyan::-webkit-progress-value {
+    background-color: $g-color-cyan;
+  }
+  &--cyan::-moz-progress-bar {
+    background-color: $g-color-cyan;
+  }
+
+  // Color Teal
+  &--teal::-ms-fill {
+    background-color: $g-color-teal;
+  }
+  &--teal::-webkit-progress-value {
+    background-color: $g-color-teal;
+  }
+  &--teal::-moz-progress-bar {
+    background-color: $g-color-teal;
+  }
+
+  // Color Brown
+  &--brown::-ms-fill {
+    background-color: $g-color-brown;
+  }
+  &--brown::-webkit-progress-value {
+    background-color: $g-color-brown;
+  }
+  &--brown::-moz-progress-bar {
+    background-color: $g-color-brown;
+  }
+
+  // Color Blue Gray
+  &--bluegray::-ms-fill {
+    background-color: $g-color-bluegray;
+  }
+  &--bluegray::-webkit-progress-value {
+    background-color: $g-color-bluegray;
+  }
+  &--bluegray::-moz-progress-bar {
+    background-color: $g-color-bluegray;
+  }
+
+  // Color Beige
+  &--beige::-ms-fill {
+    background-color: $g-color-beige;
+  }
+  &--beige::-webkit-progress-value {
+    background-color: $g-color-beige;
+  }
+  &--beige::-moz-progress-bar {
+    background-color: $g-color-beige;
+  }
+
+  // Color Black
+  &--black::-ms-fill {
+    background-color: $g-color-black;
+  }
+  &--black::-webkit-progress-value {
+    background-color: $g-color-black;
+  }
+  &--black::-moz-progress-bar {
+    background-color: $g-color-black;
+  }
+}

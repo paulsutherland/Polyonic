@@ -1,0 +1,419 @@
+<!-- Shortcode Sidebar Navigation -->
+<div id="sideNav" class="u-header u-header--side u-sidebar-navigation"
+     aria-labelledby="sideNav-toggler"
+     data-header-behavior="push"
+     data-header-position="left"
+     data-header-breakpoint="lg"
+     data-header-classes="g-transition-0_5"
+     data-header-body-classes="g-transition-0_5"
+     data-header-overlay-classes="g-bg-black-opacity-0_8 g-transition-0_5">
+  <!-- Header Toggle Button -->
+  <button class="btn u-sidebar-navigation__toggler" id="sideNav-toggler"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="sideNav"
+          aria-label="Toggle Header"
+          data-target="#sideNav">
+    <i class="icon-list"></i>
+  </button>
+  <!-- End Header Toggle Button -->
+  <div class="u-header__sections-container">
+    <div class="u-sidebar-navigation-inner">
+
+      <h3 class="h5 g-px-20 g-mb-20">Unify Shortcodes</h3>
+
+      <div class="form-group g-px-20 g-mb-20">
+        <input id="u-sidebar-navigation__search-autocomplete" class="form-control form-control-md u-sidebar-navigation__search-input g-py-13" type="text" placeholder="Search over 1610 shortcodes"
+               data-url="{{ root }}assets/include/ajax/autocomplete-data-shortcode-search.json">
+      </div>
+
+      <ul class="js-shortcode-filter list-inline d-flex justify-content-between u-hs-filter">
+        <li class="list-inline-item active g-mr-10 g-mb-10">
+          <a href="#!" data-shortcode-filter="all">All</a>
+        </li>
+        <li class="list-inline-item g-mr-10 g-mb-10">
+          <a href="#!" data-shortcode-filter="bases">Bases</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#!" data-shortcode-filter="blocks">Blocks</a>
+        </li>
+      </ul>
+
+      <ul class="js-shortcode-filter-result nav flex-column u-sidebar-navigation-list">
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-accordions.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-accordions' %}active{% endif %}">Accordions</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-alerts.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-alerts' %}active{% endif %}">Alerts</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-badges.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-badges' %}active{% endif %}">Badges</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-blockquotes.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-blockquotes' %}active{% endif %}">Blockquotes</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-box-shadows.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-box-shadow' %}active{% endif %}">Box Shadow</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-breadcrumbs.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-breadcrumbs' %}active{% endif %}">Breadcrumbs</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-buttons.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-buttons' %}active{% endif %}">Buttons</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-dividers.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-dividers' %}active{% endif %}">Dividers</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-lightbox.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-lightbox' %}active{% endif %}">Lightbox</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-modals.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-modals' %}active{% endif %}">Modals</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-gallery-grid.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-gallery-grid' %}active{% endif %}">Gallery Grid</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-gradient-backgrounds.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-gradient-backgrounds' %}active{% endif %}">Gradient Backgrounds</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-labels.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-labels' %}active{% endif %}">Labels</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-lists-group.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-lists-group' %}active{% endif %}">Lists Group</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown bases">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-base-media-audios' %}active{% elif sidebarNavActive_1 == 'shortcode-base-media-images' %}active{% elif sidebarNavActive_1 == 'shortcode-base-media-videos' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-base-media-audios.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-media-audios' %}active{% endif %}">Media Audios</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-base-media-images.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-media-images' %}active{% endif %}">Media Images</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-base-media-videos.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-media-videos' %}active{% endif %}">Media Videos</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-onscroll-animations.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-onscroll-animations' %}active{% endif %}">Onscroll Animations</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-paginations.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-paginations' %}active{% endif %}">Paginations</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-panels.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-panels' %}active{% endif %}">Panels</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-progress-bars.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-progress-bars' %}active{% endif %}">Progress Bars</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown blocks">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-base-dynamic-process-blocks-1' %}active{% elif sidebarNavActive_1 == 'shortcode-base-static-process-blocks-1' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Process Blocks</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-base-dynamic-process-blocks-1.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-dynamic-process-blocks-1' %}active{% endif %}">Dynamic Process Blocks</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-base-static-process-blocks-1.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-static-process-blocks-1' %}active{% endif %}">Static Process Blocks</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-tables.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-tables' %}active{% endif %}">Tables</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-taglines.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-taglines' %}active{% endif %}">Taglines</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-tags.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-tags' %}active{% endif %}">Tags</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-headings.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-headings' %}active{% endif %}">Headings</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-typography.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-typography' %}active{% endif %}">Typography</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-base-dropcaps.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-dropcaps' %}active{% endif %}">Dropcaps</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown bases">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-base-google-maps' %}active{% elif sidebarNavActive_1 == 'shortcode-base-vector-maps' %}active{% elif sidebarNavActive_1 == 'shortcode-base-maps-with-pins' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maps</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-base-google-maps.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-google-maps' %}active{% endif %}">Google Maps</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-base-vector-maps.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-vector-maps' %}active{% endif %}">Vector Maps</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-base-maps-with-pins.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-maps-with-pins' %}active{% endif %}">Maps With Pins</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown bases blocks">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-base-forms-bootstrap' %}active{% elif sidebarNavActive_1 == 'shortcode-base-forms-unify' %}active{% elif sidebarNavActive_1 == 'shortcode-base-forms-horizontal-unify' %}active{% elif sidebarNavActive_1 == 'shortcode-base-forms-disabled-states-unify' %}active{% elif sidebarNavActive_1 == 'shortcode-base-forms-success-states-unify' %}active{% elif sidebarNavActive_1 == 'shortcode-base-forms-error-states-unify' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forms</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/forms/shortcode-base-forms-bootstrap.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-forms-bootstrap' %}active{% endif %}">Forms Bootstrap</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/forms/shortcode-base-forms-unify.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-forms-unify' %}active{% endif %}">Forms Unify</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/forms/shortcode-base-form-layouts.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-form-layouts' %}active{% endif %}">Form Layouts</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/forms/shortcode-base-forms-horizontal-unify.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-forms-horizontal-unify' %}active{% endif %}">Forms Horizontal Unify</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/forms/shortcode-base-forms-disabled-states-unify.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-forms-disabled-states-unify' %}active{% endif %}">Forms Disabled States Unify</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/forms/shortcode-base-forms-success-states-unify.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-forms-success-states-unify' %}active{% endif %}">Forms Success States unify</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/forms/shortcode-base-forms-error-states-unify.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-forms-error-states-unify' %}active{% endif %}">Forms Error States Unify</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown bases">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-base-icons' %}active{% elif sidebarNavActive_1 == 'shortcode-base-icon-hovers' %}active{% elif sidebarNavActive_1 == 'shortcode-base-icon-sizes' %}active{% elif sidebarNavActive_1 == 'shortcode-base-social-icons' %}active{% elif sidebarNavActive_1 == 'shortcode-base-icon-fontawesome' %}active{% elif sidebarNavActive_1 == 'shortcode-base-icon-material' %}active{% elif sidebarNavActive_1 == 'shortcode-base-icon-line-icons-pro-1' %}active{% elif sidebarNavActive_1 == 'shortcode-base-icon-line-icons-pro-2' %}active{% elif sidebarNavActive_1 == 'shortcode-base-icon-simple-line-icons' %}active{% elif sidebarNavActive_1 == 'shortcode-base-icon-et-line-icon' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Icons</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/icons/shortcode-base-icons.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-icons' %}active{% endif %}">Icons</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/icons/shortcode-base-icon-hovers.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-icon-hovers' %}active{% endif %}">Icon Hovers</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/icons/shortcode-base-icon-sizes.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-icon-sizes' %}active{% endif %}">Icon Sizes</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/icons/shortcode-base-social-icons.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-social-icons' %}active{% endif %}">Social Icons</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/icons/shortcode-base-icon-fontawesome.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-icon-fontawesome' %}active{% endif %}">Icon Fontawesome</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/icons/shortcode-base-icon-material.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-icon-material' %}active{% endif %}">Material Icons</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/icons/shortcode-base-icon-line-icons-pro-1.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-icon-line-icons-pro-1' %}active{% endif %}">Icon Line Icons Pro 1</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/icons/shortcode-base-icon-line-icons-pro-2.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-icon-line-icons-pro-2' %}active{% endif %}">Icon Line Icons Pro 2</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/icons/shortcode-base-icon-simple-line-icons.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-icon-simple-line-icons' %}active{% endif %}">Icon Simple Line Icons</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item bases">
+                <a href="{{ root }}unify-main/shortcodes/icons/shortcode-base-icon-et-line-icon.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-icon-et-line-icon' %}active{% endif %}">Icon Et Line Icon</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item bases">
+          <a href="{{ root }}unify-main/shortcodes/tabs/index.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-tabs' %}active{% endif %}">Tabs</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/portfolios/index.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-portfolios' %}active{% endif %}">Portfolios</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/headers/index.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-base-headers' %}active{% endif %}">Headers</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/promo/index.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-promo' %}active{% endif %}">Promo</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown blocks">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-blocks-footer-classic' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-footer-contact-forms' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-footer-maps' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-footer-modern' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Footers</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/footers/shortcode-blocks-footer-classic.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-footer-classic' %}active{% endif %}">Footer Classic</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/footers/shortcode-blocks-footer-contact-forms.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-footer-contact-forms' %}active{% endif %}">Footer Contact Forms</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/footers/shortcode-blocks-footer-maps.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-footer-maps' %}active{% endif %}">Footer Maps</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/footers/shortcode-blocks-footer-modern.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-footer-modern' %}active{% endif %}">Footer Modern</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-banners.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-banners' %}active{% endif %}">Banners</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-clients.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-clients' %}active{% endif %}">Clients</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-comments.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-comments' %}active{% endif %}">Comments</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-countdowns.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-countdowns' %}active{% endif %}">Countdowns</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-counters.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-counters' %}active{% endif %}">Counters</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown blocks">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-blocks-cta-boxed' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-cta-full-width' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call To Action</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-cta-boxed.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-cta-boxed' %}active{% endif %}">Call To Action (boxed)</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-cta-full-width.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-cta-full-width' %}active{% endif %}">Call To Action (full width)</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-gallery.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-gallery' %}active{% endif %}">Gallery</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown blocks">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-blocks-hero-info' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-hero-blocks' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-hero-content' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hero</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-hero-info.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-hero-info' %}active{% endif %}">Hero Info</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-hero-blocks.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-hero-blocks' %}active{% endif %}">Hero Blocks</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-hero-content.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-hero-content' %}active{% endif %}">Hero Content</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown blocks">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-blocks-icons' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-icons-app' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-icons-interactive' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Icon Blocks</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-icons.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-icons' %}active{% endif %}">Icon Blocks</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-icons-app.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-icons-app' %}active{% endif %}">Icons App</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-icons-interactive.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-icons-interactive' %}active{% endif %}">Icons Interactive</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-info-blocks.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-info-blocks' %}active{% endif %}">Info Blocks</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown blocks">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-blocks-news' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-news-image' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-news-no-images' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-news-small' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News Blocks</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-news.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-news' %}active{% endif %}">News</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-news-image.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-news-image' %}active{% endif %}">News Image</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-news-no-images.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-news-no-images' %}active{% endif %}">News Without Images</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-news-small.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-news-small' %}active{% endif %}">News Small</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-tables.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-tables' %}active{% endif %}">Table Designs</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown blocks">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-blocks-pricing-plans' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-pricing-sections' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-pricing-table' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pricing</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-pricing-plans.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-pricing-plans' %}active{% endif %}">Pricing Plans</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-pricing-sections.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-pricing-sections' %}active{% endif %}">Pricing Sections</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-pricing-table.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-pricing-table' %}active{% endif %}">Pricing Table</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown blocks">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-blocks-products' %}active{% elif sidebarNavActive_1 == 'shortcode-locks-products-advanced' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-products-list' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-products-overlay' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-products.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-products' %}active{% endif %}">Products</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-products-advanced.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-locks-products-advanced' %}active{% endif %}">Products Advanced</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-products-list.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-products-list' %}active{% endif %}">Products List</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-products-overlay.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-products-overlay' %}active{% endif %}">Products Overlay</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown blocks">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-blocks-team' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-team-advanced' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Team Blocks</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-team.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-team' %}active{% endif %}">Team</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-team-advanced.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-team-advanced' %}active{% endif %}">Team Advanced</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item dropdown blocks">
+          <a class="nav-link dropdown-toggle {% if sidebarNavActive_1 == 'shortcode-blocks-testimonials' %}active{% elif sidebarNavActive_1 == 'shortcode-blocks-testimonials-advanced' %}active{% endif %}" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Testimonials</a>
+          <div class="dropdown-menu u-dropdown-static">
+            <ul class="nav flex-column">
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-testimonials.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-testimonials' %}active{% endif %}">Testimonials</a>
+              </li>
+              <li class="js-shortcode-filter__item nav-item blocks">
+                <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-testimonials-advanced.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-testimonials-advanced' %}active{% endif %}">Testimonials Advanced</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-timelines.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-timelines' %}active{% endif %}">Timelines</a>
+        </li>
+        <li class="js-shortcode-filter__item nav-item blocks">
+          <a href="{{ root }}unify-main/shortcodes/shortcode-blocks-users.html" class="nav-link {% if sidebarNavActive_1 == 'shortcode-blocks-users' %}active{% endif %}">Users</a>
+        </li>
+      </ul>
+
+      <button class="btn u-sidebar-navigation__closer" id="sideNav-toggler-closer" aria-haspopup="true" aria-expanded="false" aria-controls="sideNav" aria-label="Toggle Header" data-target="#sideNav">
+        <i class="hs-icon hs-icon-close"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- End Shortcode Sidebar Navigation -->

@@ -1,0 +1,1060 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Panels with tabs" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu6 = "unCollapsed" %}
+{% set activeMenuItem = "panel-tabs" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: "Panels",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+  <section class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel">
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+        <div class="g-pa-20">
+          <h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-40">{{ title }}</h1>
+
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-15 g-pa-30--sm pb-0">
+                  <div class="media g-pos-rel">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-block d-sm-flex justify-content-end">
+                      <!-- Nav tabs -->
+                      <ul
+                        class="nav text-uppercase g-absolute-centered--x g-absolute-centered--x-sm--reset g-top-100x g-top-auto--sm g-bg-white g-bg-transparent--sm mb-0"
+                        role="tablist"
+                        data-target="nav-1"
+                        data-tabs-mobile-type="slide-up-down"
+                        data-btn-classes="btn btn-sm u-btn-outline-cyan g-rounded-30 g-ml-20">
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-px-9 active" href="#nav-1-1" role="tab" data-toggle="tab">Tab #1
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-px-9" href="#nav-1-2" role="tab" data-toggle="tab">Tab #2
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-px-9" href="#nav-1-3" role="tab" data-toggle="tab">Tab #3
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- End Nav tabs -->
+                    </div>
+
+                    <div class="d-flex align-self-center g-ml-10 g-ml-30--sm">
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown1Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                          href="#!"
+                          aria-controls="dropDown1"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown1"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown1Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-font-weight-300 g-pa-15 g-pa-30--sm">
+                  <!-- Tab panes -->
+                  <div id="nav-1" class="tab-content">
+                    <div id="nav-1-1" class="tab-pane fade show active" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-1-2" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs 2</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-1-3" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs 3</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-15 g-pa-30--sm pb-0">
+                  <div class="media g-pos-rel">
+                    <div class="media-body d-flex align-self-center">
+                      <!-- Nav tabs -->
+                      <ul
+                        class="nav text-uppercase g-absolute-centered--x g-absolute-centered--x-sm--reset g-top-100x g-top-auto--sm g-bg-white g-bg-transparent--sm mb-0"
+                        role="tablist"
+                        data-target="nav-2"
+                        data-tabs-mobile-type="slide-up-down"
+                        data-btn-classes="btn btn-sm u-btn-outline-cyan g-rounded-30">
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-px-9 active" href="#nav-2-1" role="tab" data-toggle="tab">Tab #1
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-px-9" href="#nav-2-2" role="tab" data-toggle="tab">Tab #2
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-px-9" href="#nav-2-3" role="tab" data-toggle="tab">Tab #3
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- End Nav tabs -->
+                    </div>
+
+                    <div class="d-flex align-self-center align-items-center justify-content-end">
+                      <a class="u-tags-v1 text-center g-width-100 g-width-130--md g-font-weight-300 g-color-black g-brd-around g-brd-lightblue-v3 g-bg-lightblue-v3--hover g-color-white--hover g-rounded-50 g-py-4 g-px-15" href="#!">Tag Label</a>
+
+                      <div class="g-pos-rel g-z-index-2 g-ml-10 g-ml-20--sm">
+                        <a
+                          id="dropDown2Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                          href="#!"
+                          aria-controls="dropDown2"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown2"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown2" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown2Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-font-weight-300 g-pa-15 g-pa-30--sm">
+                  <!-- Tab panes -->
+                  <div id="nav-2" class="tab-content">
+                    <div id="nav-2-1" class="tab-pane fade show active" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-2-2" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs 2</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-2-3" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs 3</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-gray-light-v8 g-brd-bottom-none g-pa-15 g-px-30--sm">
+                  <div class="media g-pos-rel">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <!-- Nav tabs -->
+                      <ul
+                        class="nav text-uppercase u-nav-v5-2 g-absolute-centered--x g-absolute-centered--x-sm--reset g-top-100x g-top-auto--sm g-bg-white g-bg-transparent--sm mb-0"
+                        role="tablist"
+                        data-target="nav-3"
+                        data-tabs-mobile-type="slide-up-down"
+                        data-btn-classes="btn btn-sm u-btn-outline-cyan g-rounded-30 g-ml-20">
+                        <li class="nav-item mb-0">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 pt-0 g-pb-0 active" href="#nav-3-1" role="tab" data-toggle="tab">Tab #1
+                          </a>
+                        </li>
+                        <li class="nav-item mb-0">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 pt-0 g-pb-0" href="#nav-3-2" role="tab" data-toggle="tab">Tab #2
+                          </a>
+                        </li>
+                        <li class="nav-item mb-0">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 pt-0 g-pb-0" href="#nav-3-3" role="tab" data-toggle="tab">Tab #3
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- End Nav tabs -->
+                    </div>
+
+                    <div class="d-flex g-ml-30">
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown3Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                          href="#!"
+                          aria-controls="dropDown3"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown3"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown3" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown3Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-font-weight-300 g-pa-15 g-pa-30--sm">
+                  <!-- Tab panes -->
+                  <div id="nav-3" class="tab-content">
+                    <div id="nav-3-1" class="tab-pane fade show active" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-3-2" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs 2</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-3-3" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs 3</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-pa-15 g-pa-30--sm pb-0">
+                  <div class="media g-pos-rel">
+                    <div class="d-flex align-self-center g-pos-rel">
+                      <a
+                        class="d-flex align-items-center u-link-v5 g-parent g-width-100--sm g-line-height-1_2 g-font-size-default"
+                        href="#!"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        aria-controls="searchFirst"
+                        data-dropdown-target="#searchFirst"
+                        data-dropdown-type="css-animation"
+                        data-dropdown-duration="300"
+                        data-dropdown-animation-in="fadeInUp"
+                        data-dropdown-animation-out="fadeOutDown">
+                        <i class="hs-admin-search g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v3--parent-hover g-mr-10 g-mr-15--md"></i>
+                        <span class="g-color-gray-dark-v6 g-color-lightblue-v3--parent-hover">Search</span>
+                      </a>
+
+                      <form id="searchFirst" class="u-dropdown--css-animation u-dropdown--hidden g-pos-abs g-top-100x g-left-0 g-width-200 g-mt-8">
+                        <div class="input-group mb-0">
+                          <input class="form-control g-font-size-default w-100" type="search">
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-center text-uppercase g-color-black">
+                      <!-- Nav tabs -->
+                      <ul
+                        class="nav text-uppercase g-absolute-centered--x g-absolute-centered--x-sm--reset g-top-100x g-top-auto--sm g-bg-white g-bg-transparent--sm mb-0"
+                        role="tablist"
+                        data-target="nav-4"
+                        data-tabs-mobile-type="slide-up-down"
+                        data-btn-classes="btn btn-sm u-btn-outline-cyan g-rounded-30 g-ml-20">
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-px-9 active" href="#nav-4-1" role="tab" data-toggle="tab">Tab #1
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-px-9" href="#nav-4-2" role="tab" data-toggle="tab">Tab #2
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-px-9" href="#nav-4-3" role="tab" data-toggle="tab">Tab #3
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- End Nav tabs -->
+                    </div>
+
+                    <div class="d-flex align-self-center justify-content-end g-width-100">
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown4Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                          href="#!"
+                          aria-controls="dropDown4"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown4"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown4" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown4Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block text-center g-font-weight-300 g-pa-15 g-pa-30--sm">
+                  <!-- Tab panes -->
+                  <div id="nav-4" class="tab-content">
+                    <div id="nav-4-1" class="tab-pane fade show active" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Center align</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-4-2" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Center align 2</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-4-3" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Center align 3</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-md-6">
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-gray-light-v7 g-pa-15 g-pa-30--sm g-pb-0--sm">
+                  <div class="media g-pos-rel">
+                    <h3 class="d-flex align-self-top text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <!-- Nav tabs -->
+                      <ul
+                        class="nav text-uppercase u-nav-v5-2 g-absolute-centered--x g-absolute-centered--x-sm--reset g-top-100x g-top-auto--sm g-bg-white g-bg-transparent--sm mb-0"
+                        role="tablist"
+                        data-target="nav-5"
+                        data-tabs-mobile-type="slide-up-down"
+                        data-btn-classes="btn btn-sm u-btn-outline-cyan g-rounded-30 g-ml-20">
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 pt-0 g-pb-0 active g-mb-30" href="#nav-5-1" role="tab" data-toggle="tab">Tab #1
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 pt-0 g-pb-0 g-mb-30" href="#nav-5-2" role="tab" data-toggle="tab">Tab #2
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 pt-0 g-pb-0 g-mb-30" href="#nav-5-3" role="tab" data-toggle="tab">Tab #3
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- End Nav tabs -->
+                    </div>
+
+                    <div class="d-flex g-ml-30">
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown5Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                          href="#!"
+                          aria-controls="dropDown5"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown5"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown5" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown5Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-font-weight-300 g-pa-15 g-pa-30--sm">
+                  <!-- Tab panes -->
+                  <div id="nav-5" class="tab-content">
+                    <div id="nav-5-1" class="tab-pane fade show active" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs and Separator</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-5-2" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs and Separator 2</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-5-3" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Tabs and Separator 3</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-gray-light-v7 g-pa-20 g-pa-30--sm g-pt-15 g-pt-25--sm g-pb-15 g-pb-0--sm">
+                  <div class="media g-pos-rel">
+                    <div class="media-body d-flex align-self-center align-self-sm-auto">
+                      <!-- Nav tabs -->
+                      <ul
+                        class="nav text-uppercase u-nav-v5-2 g-absolute-centered--x g-absolute-centered--x-sm--reset g-top-100x g-top-auto--sm g-bg-white g-bg-transparent--sm mb-0"
+                        role="tablist"
+                        data-target="nav-6"
+                        data-tabs-mobile-type="slide-up-down"
+                        data-btn-classes="btn btn-sm u-btn-outline-cyan g-rounded-30">
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 g-pb-0 active g-mb-30" href="#nav-6-1" role="tab" data-toggle="tab">Tab #1
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 g-pb-0 g-mb-30" href="#nav-6-2" role="tab" data-toggle="tab">Tab #2
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 g-pb-0 g-mb-30" href="#nav-6-3" role="tab" data-toggle="tab">Tab #3
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- End Nav tabs -->
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-end">
+                      <a class="u-tags-v1 text-center g-width-100 g-width-130--md g-font-weight-300 g-color-black g-brd-around g-brd-lightblue-v3 g-bg-lightblue-v3--hover g-color-white--hover g-rounded-50 g-py-4 g-px-15" href="#!">Tag Label</a>
+
+                      <div class="g-pos-rel g-z-index-2 g-ml-20">
+                        <a
+                          id="dropDown6Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                          href="#!"
+                          aria-controls="dropDown6"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown6"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown6" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown6Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-font-weight-300 g-pa-15 g-pa-30--sm">
+                  <!-- Tab panes -->
+                  <div id="nav-6" class="tab-content">
+                    <div id="nav-6-1" class="tab-pane fade show active" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Separator</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-6-2" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Separator 2</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-6-3" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Separator 3</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-gray-light-v8 g-brd-bottom-none g-pa-15 g-pa-30--sm g-pt-25--sm g-pb-0--sm">
+                  <div class="media g-pos-rel">
+                    <div class="media-body d-flex align-self-center align-self-sm-auto">
+                      <!-- Nav tabs -->
+                      <ul
+                        class="nav text-uppercase u-nav-v5-2 g-absolute-centered--x g-absolute-centered--x-sm--reset g-top-100x g-top-auto--sm g-bg-white g-bg-transparent--sm mb-0"
+                        role="tablist"
+                        data-target="nav-7"
+                        data-tabs-mobile-type="slide-up-down"
+                        data-btn-classes="btn btn-sm u-btn-outline-cyan g-rounded-30">
+                        <li class="nav-item mb-0">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 g-pb-0 active g-mb-30" href="#nav-7-1" role="tab" data-toggle="tab">Tab #1
+                          </a>
+                        </li>
+                        <li class="nav-item mb-0">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 g-pb-0 g-mb-30" href="#nav-7-2" role="tab" data-toggle="tab">Tab #2
+                          </a>
+                        </li>
+                        <li class="nav-item mb-0">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 g-pb-0 g-mb-30" href="#nav-7-3" role="tab" data-toggle="tab">Tab #3
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- End Nav tabs -->
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-end">
+                      <a class="u-tags-v1 text-center g-width-100 g-width-130--md g-font-weight-300 g-color-black g-brd-around g-brd-lightblue-v3 g-bg-lightblue-v3--hover g-color-white--hover g-rounded-50 g-py-4 g-px-15" href="#!">Tag Label</a>
+
+                      <div class="g-pos-rel g-z-index-2 g-ml-20">
+                        <a
+                          id="dropDown7Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                          href="#!"
+                          aria-controls="dropDown7"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown7"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown7" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown7Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-font-weight-300 g-pa-15 g-pa-30--sm">
+                  <!-- Tab panes -->
+                  <div id="nav-7" class="tab-content">
+                    <div id="nav-7-1" class="tab-pane fade show active" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Separator</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-7-2" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Separator 2</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-7-3" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Separator 3</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-gray-light-v7 g-pa-15 g-px-30--sm">
+                  <div class="media g-pos-rel">
+                    <div class="d-flex align-self-center g-pos-rel">
+                      <a
+                        class="d-flex align-items-center u-link-v5 g-parent g-width-100--sm g-line-height-1_2 g-font-size-default"
+                        href="#!"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        aria-controls="searchSecond"
+                        data-dropdown-target="#searchSecond"
+                        data-dropdown-type="css-animation"
+                        data-dropdown-duration="300"
+                        data-dropdown-animation-in="fadeInUp"
+                        data-dropdown-animation-out="fadeOutDown">
+                        <i class="hs-admin-search g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v3--parent-hover g-mr-10 g-mr-15--md"></i>
+                        <span class="g-color-gray-dark-v6 g-color-lightblue-v3--parent-hover">Search</span>
+                      </a>
+
+                      <form id="searchSecond" class="u-dropdown--css-animation u-dropdown--hidden g-pos-abs g-top-100x g-left-0 g-width-200 g-mt-8">
+                        <div class="input-group mb-0">
+                          <input class="form-control g-font-size-default w-100" type="search">
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-center text-uppercase g-color-black">
+                      <!-- Nav tabs -->
+                      <ul
+                        class="nav text-uppercase u-nav-v5-2 g-absolute-centered--x g-absolute-centered--x-sm--reset g-top-100x g-top-auto--sm g-bg-white g-bg-transparent--sm mb-0"
+                        role="tablist"
+                        data-target="nav-8"
+                        data-tabs-mobile-type="slide-up-down"
+                        data-btn-classes="btn btn-sm u-btn-outline-cyan g-rounded-30 g-ml-20">
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 pt-0 g-pb-0 active" href="#nav-8-1" role="tab" data-toggle="tab">Tab #1
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 pt-0 g-pb-0" href="#nav-8-2" role="tab" data-toggle="tab">Tab #2
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link g-color-lightblue-v3--active g-brd-lightblue-v3--active g-px-9 pt-0 g-pb-0" href="#nav-8-3" role="tab" data-toggle="tab">Tab #3
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- End Nav tabs -->
+                    </div>
+
+                    <div class="d-flex align-self-center align-self-sm-auto justify-content-end g-width-100">
+                      <div class="g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown8Invoker"
+                          class="u-link-v5 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover"
+                          href="#!"
+                          aria-controls="dropDown8"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown8"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown8" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown8Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block text-center g-font-weight-300 g-pa-15 g-pa-30--sm">
+                  <!-- Tab panes -->
+                  <div id="nav-8" class="tab-content">
+                    <div id="nav-8-1" class="tab-pane fade show active" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Center align and Separator</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-8-2" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Center align and Separator 2</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+
+                    <div id="nav-8-3" class="tab-pane fade" role="tabpanel">
+                      <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Center align and Separator 3</h4>
+                      <p class="g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be in the form of a
+                        heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to use some form of
+                        advertisement. Advertising is being more and more known as a reasonable and desirable business force. Let’s say you own a department store.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel -->
+            </div>
+          </div>
+        </div>
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.bar-chart.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of charts
+    $.HSCore.components.HSBarChart.init('.js-bar-chart');
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav', {
+      afterOpen: function() {
+        setTimeout(function() {
+          $.HSCore.components.HSBarChart.init('.js-bar-chart');
+        }, 400);
+      },
+      afterClose: function() {
+        setTimeout(function() {
+          $.HSCore.components.HSBarChart.init('.js-bar-chart');
+        }, 400);
+      }
+    });
+
+    // initialization of tabs
+    $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+  });
+
+  $(window).on('resize', function () {
+    setTimeout(function () {
+      $.HSCore.components.HSTabs.init('[role="tablist"]');
+    }, 200);
+  });
+</script>
+</body>
+</html>

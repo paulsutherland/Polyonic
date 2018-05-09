@@ -1,0 +1,93 @@
+/*------------------------------------
+  Carousel indicators v25
+------------------------------------*/
+
+.u-carousel-indicators-v25,
+.u-carousel-indicators-v25--white {
+  white-space: nowrap;
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-200%);
+      transition: transform .3s ease, opacity .3s ease, visibility 0s .3s;
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      text-indent: -9999px;
+      transition: transform .3s ease, opacity .3s ease, background-color .3s ease;
+
+      &::before,
+      &::after {
+        content: "";
+        display: none;
+      }
+    }
+
+    &.slick-active {
+      &::before {
+        opacity: 1;
+        visibility: visible;
+        transition: transform .3s ease, opacity .3s ease;
+        transform: translateY(0);
+      }
+
+      span {
+        opacity: 0;
+        transform: translateY(200%);
+      }
+    }
+  }
+}
+
+.u-carousel-indicators-v25--white {
+  li {
+    &::before {
+      background-color: $g-color-primary;
+    }
+
+    span {
+      background: rgba($g-color-white, .5);
+
+      &::before {
+        background-color: $g-color-primary;
+      }
+
+      &:focus {
+        background-color: $g-color-primary;
+      }
+    }
+
+    &:hover {
+      span {
+        background-color: $g-color-white;
+      }
+    }
+
+    &.slick-active {
+      span {
+        background-color: $g-color-primary;
+      }
+    }
+  }
+}

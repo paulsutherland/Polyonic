@@ -1,0 +1,596 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-products-list" %}
+{% set title = "Product Blocks - List" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-block.njk" %}
+
+    <section>
+      <!-- Product Blocks v1 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Products
+              <span class="g-color-primary g-ml-5">#01</span>
+            </h2>
+          </div>
+
+          <div id="shortcode01">
+            <div class="shortcode-html">
+              <!-- Article -->
+              <article class="d-md-table w-100 g-bg-white g-mb-1">
+                <!-- Date -->
+                <div class="d-md-table-cell align-middle g-width-125--md text-center g-color-gray-dark-v5 g-py-10 g-px-20">
+                  <time datetime="2015-06-27">
+                    <span class="d-block g-color-black g-font-weight-700 g-font-size-40 g-line-height-1">27</span>
+                    Jun, 2015
+                  </time>
+                </div>
+                <!-- End Date -->
+
+                <!-- Article Image -->
+                <a class="d-md-table-cell align-middle g-width-130" href="#!">
+                  <img class="d-block info-v5-2__image g-ml-minus-1" src="{{ root }}assets/img-temp/150x150/img1.jpg" alt="Image Description">
+                </a>
+                <!-- End Article Image -->
+
+                <!-- Article Content -->
+                <div class="d-md-table-cell align-middle g-py-15 g-px-20">
+                  <h3 class="h6 g-font-weight-700 text-uppercase">
+                    <a class="g-color-gray-dark-v2" href="#!">Your brand's has a story to tell</a>
+                  </h3>
+                  <em class="g-color-gray-dark-v5 g-font-style-normal">8 Rue de Montpensier 75001, Paris, France, 18:00</em>
+                </div>
+                <!-- End Article Content -->
+
+                <!-- Price -->
+                <div class="d-md-table-cell align-middle g-py-5 g-px-20">
+                  <span class="d-block g-color-gray-dark-v2 g-font-weight-700">$15</span>
+                  <span class="d-block g-color-gray-dark-v5 g-font-size-11 text-uppercase">Per Ticket</span>
+                </div>
+                <!-- End Price -->
+
+                <!-- Actions -->
+                <div class="d-md-table-cell align-middle text-md-right g-pa-20">
+                  <div class="g-mt-minus-10 g-mx-minus-5">
+                    <a class="btn btn-lg u-btn-outline-black g-font-weight-600 g-font-size-12 text-uppercase g-mx-5 g-mt-10" href="#!">Learn More</a>
+                    <a class="btn btn-lg u-btn-primary g-font-weight-600 g-font-size-12 text-uppercase g-mx-5 g-mt-10" href="#!">Buy Ticket</a>
+                  </div>
+                </div>
+                <!-- End Actions -->
+              </article>
+              <!-- End Article -->
+
+              <!-- Article -->
+              <article class="d-md-table w-100 g-bg-white g-mb-1">
+                <!-- Date -->
+                <div class="d-md-table-cell align-middle g-width-125--md text-center g-color-gray-dark-v5 g-py-10 g-px-20">
+                  <time datetime="2015-08-01">
+                    <span class="d-block g-color-black g-font-weight-700 g-font-size-40 g-line-height-1">01</span>
+                    Aug, 2015
+                  </time>
+                </div>
+                <!-- End Date -->
+
+                <!-- Article Image -->
+                <a class="d-md-table-cell align-middle g-width-130" href="#!">
+                  <img class="d-block info-v5-2__image g-ml-minus-1" src="{{ root }}assets/img-temp/150x150/img2.jpg" alt="Image Description">
+                </a>
+                <!-- End Article Image -->
+
+                <!-- Article Content -->
+                <div class="d-md-table-cell align-middle g-py-15 g-px-20">
+                  <h3 class="h6 g-font-weight-700 text-uppercase">
+                    <a class="g-color-gray-dark-v2" href="#!">Your brand's has a story to tell</a>
+                  </h3>
+                  <em class="g-color-gray-dark-v5 g-font-style-normal">8 Rue de Montpensier 75001, Paris, France, 18:00</em>
+                </div>
+                <!-- End Article Content -->
+
+                <!-- Price -->
+                <div class="d-md-table-cell align-middle g-py-5 g-px-20">
+                  <span class="d-block g-color-gray-dark-v2 g-font-weight-700">$15</span>
+                  <span class="d-block g-color-gray-dark-v5 g-font-size-11 text-uppercase">Per Ticket</span>
+                </div>
+                <!-- End Price -->
+
+                <!-- Actions -->
+                <div class="d-md-table-cell align-middle text-md-right g-pa-20">
+                  <div class="g-mt-minus-10 g-mx-minus-5">
+                    <a class="btn btn-lg u-btn-outline-black g-font-weight-600 g-font-size-12 text-uppercase g-mx-5 g-mt-10" href="#!">Learn More</a>
+                    <a class="btn btn-lg u-btn-primary g-font-weight-600 g-font-size-12 text-uppercase g-mx-5 g-mt-10" href="#!">Buy Ticket</a>
+                  </div>
+                </div>
+                <!-- End Actions -->
+              </article>
+              <!-- End Article -->
+
+              <!-- Article -->
+              <article class="d-md-table w-100 g-bg-white g-mb-1">
+                <!-- Date -->
+                <div class="d-md-table-cell align-middle g-width-125--md text-center g-color-gray-dark-v5 g-py-10 g-px-20">
+                  <time datetime="2015-10-05">
+                    <span class="d-block g-color-black g-font-weight-700 g-font-size-40 g-line-height-1">05</span>
+                    Oct, 2015
+                  </time>
+                </div>
+                <!-- End Date -->
+
+                <!-- Article Image -->
+                <a class="d-md-table-cell align-middle g-width-130" href="#!">
+                  <img class="d-block info-v5-2__image g-ml-minus-1" src="{{ root }}assets/img-temp/150x150/img3.jpg" alt="Image Description">
+                </a>
+                <!-- End Article Image -->
+
+                <!-- Article Content -->
+                <div class="d-md-table-cell align-middle g-py-15 g-px-20">
+                  <h3 class="h6 g-font-weight-700 text-uppercase">
+                    <a class="g-color-gray-dark-v2" href="#!">Your brand's has a story to tell</a>
+                  </h3>
+                  <em class="g-color-gray-dark-v5 g-font-style-normal">8 Rue de Montpensier 75001, Paris, France, 18:00</em>
+                </div>
+                <!-- End Article Content -->
+
+                <!-- Price -->
+                <div class="d-md-table-cell align-middle g-py-5 g-px-20">
+                  <span class="d-block g-color-gray-dark-v2 g-font-weight-700">$15</span>
+                  <span class="d-block g-color-gray-dark-v5 g-font-size-11 text-uppercase">Per Ticket</span>
+                </div>
+                <!-- End Price -->
+
+                <!-- Actions -->
+                <div class="d-md-table-cell align-middle text-md-right g-pa-20">
+                  <div class="g-mt-minus-10 g-mx-minus-5">
+                    <a class="btn btn-lg u-btn-outline-black g-font-weight-600 g-font-size-12 text-uppercase g-mx-5 g-mt-10" href="#!">Learn More</a>
+                    <a class="btn btn-lg u-btn-primary g-font-weight-600 g-font-size-12 text-uppercase g-mx-5 g-mt-10" href="#!">Buy Ticket</a>
+                  </div>
+                </div>
+                <!-- End Actions -->
+              </article>
+              <!-- End Article -->
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode01" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Product Blocks v1 -->
+
+      <!-- Product Blocks v2 -->
+      <section class="container g-py-100">
+        <div class="text-center g-mb-50">
+          <h2 class="h4">Products
+            <span class="g-color-primary g-ml-5">#02</span>
+          </h2>
+        </div>
+
+        <div id="shortcode02">
+          <div class="shortcode-html">
+            <!-- Products Block -->
+            <div class="g-overflow-x-scroll g-overflow-x-visible--lg">
+              <table class="text-center g-width-900 g-width-100x--lg g-color-gray-dark-v4">
+                <thead class="g-color-gray-dark-v5 g-font-weight-700 g-font-size-16 text-uppercase">
+                  <tr>
+                    <th class="g-pb-20">Product</th>
+                    <th class="g-pb-20">Price</th>
+                    <th class="g-width-250 g-pb-20">Qty</th>
+                    <th class="g-width-130 g-pb-20">Total</th>
+                    <th></th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr class="g-bg-secondary">
+                    <td class="text-left g-pa-15">
+                      <!-- Table Image -->
+                      <img class="d-inline-block g-brd-gray-light-v4 g-brd-around g-width-120 g-mr-15" src="{{ root }}assets/img-temp/150x150/img1.jpg" alt="Image Description">
+                      <!-- End Table Image -->
+
+                      <!-- Table Info -->
+                      <div class="d-inline-block align-middle">
+                        <h4 class="h6 g-color-black g-font-weight-700 text-uppercase">Double-Breasted</h4>
+                        <em class="g-font-style-normal g-color-gray-dark-v5">Sed aliquam tincidunt tempus</em>
+                      </div>
+                      <!-- End Table Info -->
+                    </td>
+
+                    <td>$ 160.00</td>
+
+                    <td>
+                      <!-- Table Input -->
+                      <div class="d-inline-block">
+                        <div class="js-quantity input-group u-quantity-v1 g-width-150 g-height-45 g-brd-gray-light-v4 g-brd-primary--focus">
+                          <div class="js-minus input-group-addon d-flex g-font-size-15 g-width-45 g-color-gray-dark-v4 g-bg-gray-light-v4 g-brd-gray-light-v4 g-rounded-0">
+                            &minus;
+                          </div>
+                          <input class="js-result form-control text-center g-brd-gray-light-v4 g-color-gray-dark-v4 g-rounded-0 g-pa-15" type="text" value="1" readonly>
+                          <div class="js-plus input-group-addon d-flex g-font-size-15 g-width-45 g-color-gray-dark-v4 g-bg-gray-light-v4 g-brd-gray-light-v4 g-rounded-0">
+                            &plus;
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Table Input -->
+                    </td>
+
+                    <td class="g-color-black g-font-weight-600">$ 320.00</td>
+
+                    <td class="g-width-80">
+                      <a class="d-inline-block g-color-main g-color-gray-dark-v1--hover g-font-size-18 g-text-underline--none--hover g-pr-10" href="#!">&times;</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-left g-pa-15">
+                      <!-- Table Image -->
+                      <img class="d-inline-block g-brd-gray-light-v4 g-brd-around g-width-120 g-mr-15" src="{{ root }}assets/img-temp/150x150/img2.jpg" alt="Image Description">
+                      <!-- End Table Image -->
+
+                      <!-- Table Info -->
+                      <div class="d-inline-block align-middle">
+                        <h4 class="h6 g-color-black g-font-weight-700 text-uppercase">Vivamus ligula</h4>
+                        <em class="g-font-style-normal g-color-gray-dark-v5">Sed aliquam tincidunt tempus</em>
+                      </div>
+                      <!-- End Table Info -->
+                    </td>
+
+                    <td>$ 160.00</td>
+
+                    <td>
+                      <!-- Table Input -->
+                      <div class="d-inline-block">
+                        <div class="js-quantity input-group u-quantity-v1 g-width-150 g-height-45 g-brd-gray-light-v4 g-brd-primary--focus">
+                          <div class="js-minus input-group-addon d-flex g-font-size-15 g-width-45 g-color-gray-dark-v4 g-bg-gray-light-v4 g-brd-gray-light-v4 g-rounded-0">
+                            &minus;
+                          </div>
+                          <input class="js-result form-control text-center g-brd-gray-light-v4 g-color-gray-dark-v4 g-rounded-0 g-pa-15" type="text" value="1" readonly>
+                          <div class="js-plus input-group-addon d-flex g-font-size-15 g-width-45 g-color-gray-dark-v4 g-bg-gray-light-v4 g-brd-gray-light-v4 g-rounded-0">
+                            &plus;
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Table Input -->
+                    </td>
+
+                    <td class="g-color-black g-font-weight-600">$ 320.00</td>
+
+                    <td class="g-width-80">
+                      <a class="d-inline-block g-color-main g-color-gray-dark-v1--hover g-font-size-18 g-text-underline--none--hover g-pr-10" href="#!">&times;</a>
+                    </td>
+                  </tr>
+
+                  <tr class="g-bg-secondary">
+                    <td class="text-left g-pa-15">
+                      <!-- Table Image -->
+                      <img class="d-inline-block g-brd-gray-light-v4 g-brd-around g-width-120 g-mr-15" src="{{ root }}assets/img-temp/150x150/img3.jpg" alt="Image Description">
+                      <!-- End Table Image -->
+
+                      <!-- Table Info -->
+                      <div class="d-inline-block align-middle">
+                        <h4 class="h6 g-color-black g-font-weight-700 text-uppercase">Vivamus ligula</h4>
+                        <em class="g-font-style-normal g-color-gray-dark-v5">Sed aliquam tincidunt tempus</em>
+                      </div>
+                      <!-- End Table Info -->
+                    </td>
+
+                    <td>$ 160.00</td>
+
+                    <td>
+                      <!-- Table Input -->
+                      <div class="d-inline-block">
+                        <div class="js-quantity input-group u-quantity-v1 g-width-150 g-height-45 g-brd-gray-light-v4 g-brd-primary--focus">
+                          <div class="js-minus input-group-addon d-flex g-font-size-15 g-width-45 g-color-gray-dark-v4 g-bg-gray-light-v4 g-brd-gray-light-v4 g-rounded-0">
+                            &minus;
+                          </div>
+                          <input class="js-result form-control text-center g-brd-gray-light-v4 g-color-gray-dark-v4 g-rounded-0 g-pa-15" type="text" value="1" readonly>
+                          <div class="js-plus input-group-addon d-flex g-font-size-15 g-width-45 g-color-gray-dark-v4 g-bg-gray-light-v4 g-brd-gray-light-v4 g-rounded-0">
+                            &plus;
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Table Input -->
+                    </td>
+
+                    <td class="g-color-black g-font-weight-600">$ 320.00</td>
+
+                    <td class="g-width-80">
+                      <a class="d-inline-block g-color-main g-color-gray-dark-v1--hover g-font-size-18 g-text-underline--none--hover g-pr-10" href="#!">&times;</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-left g-pa-15">
+                      <!-- Table Image -->
+                      <img class="d-inline-block g-brd-gray-light-v4 g-brd-around g-width-120 g-mr-15" src="{{ root }}assets/img-temp/150x150/img4.jpg" alt="Image Description">
+                      <!-- End Table Image -->
+
+                      <!-- Table Info -->
+                      <div class="d-inline-block align-middle">
+                        <h4 class="h6 g-color-black g-font-weight-700 text-uppercase">Vivamus ligula</h4>
+                        <em class="g-font-style-normal g-color-gray-dark-v5">Sed aliquam tincidunt tempus</em>
+                      </div>
+                      <!-- End Table Info -->
+                    </td>
+
+                    <td>$ 160.00</td>
+
+                    <td>
+                      <!-- Table Input -->
+                      <div class="d-inline-block">
+                        <div class="js-quantity input-group u-quantity-v1 g-width-150 g-height-45 g-brd-gray-light-v4 g-brd-primary--focus">
+                          <div class="js-minus input-group-addon d-flex g-font-size-15 g-width-45 g-color-gray-dark-v4 g-bg-gray-light-v4 g-brd-gray-light-v4 g-rounded-0">
+                            &minus;
+                          </div>
+                          <input class="js-result form-control text-center g-brd-gray-light-v4 g-color-gray-dark-v4 g-rounded-0 g-pa-15" type="text" value="1" readonly>
+                          <div class="js-plus input-group-addon d-flex g-font-size-15 g-width-45 g-color-gray-dark-v4 g-bg-gray-light-v4 g-brd-gray-light-v4 g-rounded-0">
+                            &plus;
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Table Input -->
+                    </td>
+
+                    <td class="g-color-black g-font-weight-600">$ 320.00</td>
+
+                    <td class="g-width-80">
+                      <a class="d-inline-block g-color-main g-color-gray-dark-v1--hover g-font-size-18 g-text-underline--none--hover g-pr-10" href="#!">&times;</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- End Products Block -->
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.count-qty.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).ready(function () {
+                // initialization of qty
+                $.HSCore.components.HSCountQty.init('.js-quantity');
+              });
+            </script>
+          </div>
+        </div>
+
+        {% set contentTarget = "#shortcode02" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </section>
+      <!-- End Product Blocks v2 -->
+
+      <!-- Product Blocks v3 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Products
+              <span class="g-color-primary g-ml-5">#03</span>
+            </h2>
+          </div>
+
+          <div id="shortcode03">
+            <div class="shortcode-html">
+              <!-- Article -->
+              <article class="g-bg-white g-mb-1">
+                <div class="w-100 d-md-table" role="button" data-toggle="collapse" data-target="#player-1" aria-expanded="false" aria-controls="player-1">
+                  <div class="d-md-table-cell align-middle g-pa-20">
+                    <div class="d-inline-block g-hidden-md-down align-middle g-color-gray-light-v1 g-font-size-12 g-mr-20">1.</div>
+
+                    <!-- Article Image -->
+                    <img class="d-inline-block g-hidden-md-down g-width-40 g-mr-20" src="{{ root }}assets/img-temp/100x100/img12.jpg" alt="Image Description">
+                    <!-- End Article Image-->
+
+                    <!-- Article Title -->
+                    <h4 class="h6 d-inline-block g-font-weight-700 text-uppercase mb-0">
+                      <a class="g-color-black g-color-primary g-text-underline--none--hover" href="#!">Happy Rock</a>
+                    </h4>
+                    <!-- End Article Title -->
+                  </div>
+
+                  <!-- Article Info -->
+                  <span class="font-weight-bold d-md-table-cell align-middle g-width-100 g-color-gray-dark-v5 g-px-20 g-py-5">2015</span>
+                  <span class="font-weight-bold d-md-table-cell align-middle g-width-100 g-color-gray-dark-v5 g-px-20 g-py-5">4:13</span>
+                  <span class="d-md-table-cell align-middle g-width-140 g-color-gray-dark-v5 g-px-20 g-py-5">Only
+                    <span class="g-color-black g-font-weight-700 g-ml-5">$0.99</span>
+                  </span>
+                  <div class="d-md-table-cell text-md-right align-middle g-width-140 g-pa-20">
+                    <button type="button" class="btn btn-lg u-btn-primary g-font-weight-600 g-font-size-12 text-uppercase g-mx-5 g-mt-10">Buy Ticket</button>
+                  </div>
+                  <!-- End Article Info -->
+                </div>
+
+                <!-- Temporary, instead audio player -->
+                <div class="collapse g-color-white g-bg-black" id="player-1">
+                  <div class="g-pa-20">
+                    All right Reserved.
+                  </div>
+                </div>
+              </article>
+              <!-- End Article -->
+
+              <!-- Article -->
+              <article class="g-bg-white g-mb-1">
+                <div class="w-100 d-md-table" role="button" data-toggle="collapse" data-target="#player-2" aria-expanded="false" aria-controls="player-2">
+                  <div class="d-md-table-cell align-middle g-pa-20">
+                    <div class="d-inline-block g-hidden-md-down align-middle g-color-gray-light-v1 g-font-size-12 g-mr-20">2.</div>
+
+                    <!-- Article Image -->
+                    <img class="d-inline-block g-hidden-md-down g-width-40 g-mr-20" src="{{ root }}assets/img-temp/100x100/img10.jpg" alt="Image Description">
+                    <!-- End Article Image-->
+
+                    <!-- Article Title -->
+                    <h4 class="h6 d-inline-block g-font-weight-700 text-uppercase mb-0">
+                      <a class="g-color-black g-color-primary g-text-underline--none--hover" href="#!">Rumble</a>
+                    </h4>
+                    <!-- End Article Title -->
+                  </div>
+
+                  <!-- Article Info -->
+                  <span class="font-weight-bold d-md-table-cell align-middle g-width-100 g-color-gray-dark-v5 g-px-20 g-py-5">2015</span>
+                  <span class="font-weight-bold d-md-table-cell align-middle g-width-100 g-color-gray-dark-v5 g-px-20 g-py-5">4:13</span>
+                  <span class="d-md-table-cell align-middle g-width-140 g-color-gray-dark-v5 g-px-20 g-py-5">Only
+                    <span class="g-color-black g-font-weight-700 g-ml-5">$0.99</span>
+                  </span>
+                  <div class="d-md-table-cell text-md-right align-middle g-width-140 g-pa-20">
+                    <button type="button" class="btn btn-lg u-btn-primary g-font-weight-600 g-font-size-12 text-uppercase g-mx-5 g-mt-10">Buy Ticket</button>
+                  </div>
+                  <!-- End Article Info -->
+                </div>
+
+                <!-- Temporary, instead audio player -->
+                <div class="collapse g-color-white g-bg-black" id="player-2">
+                  <div class="g-pa-20">
+                    All right Reserved.
+                  </div>
+                </div>
+              </article>
+              <!-- End Article -->
+
+              <!-- Article -->
+              <article class="g-bg-white g-mb-1">
+                <div class="w-100 d-md-table" role="button" data-toggle="collapse" data-target="#player-3" aria-expanded="false" aria-controls="player-3">
+                  <div class="d-md-table-cell align-middle g-pa-20">
+                    <div class="d-inline-block g-hidden-md-down align-middle g-color-gray-light-v1 g-font-size-12 g-mr-20">3.</div>
+
+                    <!-- Article Image -->
+                    <img class="d-inline-block g-hidden-md-down g-width-40 g-mr-20" src="{{ root }}assets/img-temp/100x100/img13.jpg" alt="Image Description">
+                    <!-- End Article Image-->
+
+                    <!-- Article Title -->
+                    <h4 class="h6 d-inline-block g-font-weight-700 text-uppercase mb-0">
+                      <a class="g-color-black g-color-primary g-text-underline--none--hover" href="#!">A New Beginning</a>
+                    </h4>
+                    <!-- End Article Title -->
+                  </div>
+
+                  <!-- Article Info -->
+                  <span class="font-weight-bold d-md-table-cell align-middle g-width-100 g-color-gray-dark-v5 g-px-20 g-py-5">2015</span>
+                  <span class="font-weight-bold d-md-table-cell align-middle g-width-100 g-color-gray-dark-v5 g-px-20 g-py-5">4:13</span>
+                  <span class="d-md-table-cell align-middle g-width-140 g-color-gray-dark-v5 g-px-20 g-py-5">Only
+                    <span class="g-color-black g-font-weight-700 g-ml-5">$0.99</span>
+                  </span>
+                  <div class="d-md-table-cell text-md-right align-middle g-width-140 g-pa-20">
+                    <button type="button" class="btn btn-lg u-btn-primary g-font-weight-600 g-font-size-12 text-uppercase g-mx-5 g-mt-10">Buy Ticket</button>
+                  </div>
+                  <!-- End Article Info -->
+                </div>
+
+                <!-- Temporary, instead audio player -->
+                <div class="collapse g-color-white g-bg-black" id="player-3">
+                  <div class="g-pa-20">
+                    All right Reserved.
+                  </div>
+                </div>
+              </article>
+              <!-- End Article -->
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode03" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End Product Blocks v3 -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.count-qty.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of qty
+      $.HSCore.components.HSCountQty.init('.js-quantity');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

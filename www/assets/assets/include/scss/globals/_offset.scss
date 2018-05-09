@@ -1,0 +1,18 @@
+/*------------------------------------
+  Offsets
+------------------------------------*/
+
+@media (min-width: $g-md) {
+  .g-offset-md-1 {
+    margin-left: 8.333333%;
+  }
+}
+
+@media (min-width: $g-lg) {
+  .g-offset-lg-1 {
+    margin-left: 8.333333%;
+  }
+  .g-offset-lg-4 {
+    margin-left: 33.333333%;
+  }
+}

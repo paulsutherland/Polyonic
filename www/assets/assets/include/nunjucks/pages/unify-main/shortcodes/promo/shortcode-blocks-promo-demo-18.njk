@@ -1,0 +1,122 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-promo" %}
+{% set title = "Promo Blocks 18" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    <!-- Promo Block -->
+    <section class="g-pos-rel">
+      <!-- Promo Block - Slider -->
+      <div class="js-carousel"
+           data-autoplay="true"
+           data-infinite="true"
+           data-fade="true"
+           data-speed="5000">
+        <div class="js-slide g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-black-opacity-0_3--after" style="background-image: url({{ root }}assets/img-temp/1920x1080/img20.jpg);" data-calc-target="#js-header"></div>
+        <div class="js-slide g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-black-opacity-0_3--after" style="background-image: url({{ root }}assets/img-temp/1920x1080/img17.jpg);" data-calc-target="#js-header"></div>
+      </div>
+      <!-- End Promo Block - Slider -->
+
+      <!-- Promo Block Content -->
+      <div class="g-absolute-centered--y g-left-0 g-right-0">
+        <div class="container g-z-index-1">
+          <div class="g-max-width-600">
+            <h1 class="g-color-white g-font-weight-700 g-font-size-40 g-font-size-60--md g-mb-30">Unify Agency</h1>
+            <p class="h3 g-color-white g-font-weight-300 g-letter-spacing-1 mb-5">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+          </div>
+          <div class="input-group g-max-width-400 u-shadow-v19">
+            <input class="form-control g-color-gray-dark-v4 g-placeholder-gray-dark-v3 border-0 g-rounded-left-50 g-px-20" type="email" placeholder="Enter email" aria-label="Enter email">
+            <div class="input-group-append">
+              <span class="input-group-text g-bg-white border-0 g-rounded-right-50">
+                <button class="btn u-btn-primary g-width-40 g-height-40 rounded-circle" type="submit">
+                  <i class="fa fa-send"></i>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Promo Block Content -->
+    </section>
+    <!-- End Promo Block -->
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/content-demo-1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/appear.js"></script>
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.height-calc.js"></script>
+  <script src="{{ root }}assets/js/components/hs.onscroll-animation.js"></script>
+  <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).ready(function () {
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of scroll animation
+      $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+      // initialization of header's height equal offset
+      $.HSCore.helpers.HSHeightCalc.init();
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

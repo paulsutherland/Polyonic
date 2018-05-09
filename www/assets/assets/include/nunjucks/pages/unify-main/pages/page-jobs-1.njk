@@ -1,0 +1,1108 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-jobs" %}
+{% set mainNavActive_3 = "page-jobs-1" %}
+{% set title = "Unify Jobs Page | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    {% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Promo Block -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-white-opacity-0_8--after" style="height: 120%; background-image: url(../../assets/img-temp/1920x800/img3.jpg);"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container u-bg-overlay__inner text-center g-py-100 g-py-160--md">
+          <h2 class="h1 g-color-gray-dark-v1 text-uppercase g-font-weight-600 g-width-60x--md mx-auto g-mb-30">Discover Your Dream Job</h2>
+
+          <!-- Search Form -->
+          <form>
+            <div class="row justify-content-center g-mb-20 g-mb-0--lg">
+              <div class="col-lg-4">
+                <div id="form-icon-magnifier" class="input-group u-shadow-v21 g-bg-white rounded g-mb-15">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-0 border-0 g-font-size-16 g-color-gray-light-v1"><i class="icon-magnifier g-pos-rel g-top-1 g-px-1"></i></span>
+                  </div>
+                  <input class="form-control form-control-md g-font-size-16 border-0 g-pl-2 g-py-15" type="text" placeholder="Job Title or Skills" aria-label="Job Title or Skills" aria-describedby="form-icon-magnifier">
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="input-group u-shadow-v21 g-bg-white rounded g-mb-15">
+                  <div id="form-icon-location-pin" class="input-group-append">
+                    <span class="input-group-text rounded-0 border-0 g-font-size-16 g-color-gray-light-v1"><i class="icon-location-pin g-pos-rel g-top-1 g-px-1"></i></span>
+                  </div>
+                  <input class="form-control form-control-md g-font-size-16 border-0 g-pl-2 g-py-15" type="text" placeholder="City, Zip or Country" aria-label="City, Zip or Country" aria-describedby="form-icon-location-pin">
+                </div>
+              </div>
+
+              <div class="col-lg-2">
+                <button class="btn btn-md btn-block u-btn-primary u-shadow-v21 text-uppercase g-py-14" type="submit">Search</button>
+              </div>
+            </div>
+
+            <small class="form-text g-font-size-default">Search any type of work and much more..</small>
+          </form>
+          <!-- End Search Form -->
+        </div>
+      </section>
+      <!-- Promo Block -->
+
+      <!-- Popular Jobs -->
+      <section class="g-py-100">
+        <div class="container">
+          <header class="text-center g-width-60x--md mx-auto g-mb-50">
+            <h2 class="h1 g-color-gray-dark-v1 g-font-weight-300">Popular Jobs</h2>
+            <p class="lead">Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie.</p>
+          </header>
+
+          <div class="row g-mb-30">
+            <div class="col-lg-4 g-mb-40 g-mb-0--lg">
+              <ul class="list-unstyled mb-0">
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img1.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">Junior UX Designer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> London, UK
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Airbnb
+                    </span>
+                  </div>
+                </li>
+
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img2.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">Frontend Developer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> San Francisco, CA
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Github Inc.
+                    </span>
+                  </div>
+                </li>
+
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img3.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">AngularJS Developer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> New York, NY
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Medium.
+                    </span>
+                  </div>
+                </li>
+
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img4.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">Full Stack Developer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> Vancouver, BC
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Snapchat Inc.
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 g-mb-40 g-mb-0--lg">
+              <ul class="list-unstyled mb-0">
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img5.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">Junior UX Designer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> London, UK
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Airbnb
+                    </span>
+                  </div>
+                </li>
+
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img6.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">Frontend Developer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> San Francisco, CA
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Github Inc.
+                    </span>
+                  </div>
+                </li>
+
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img5.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">AngularJS Developer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> New York, NY
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Medium.
+                    </span>
+                  </div>
+                </li>
+
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img4.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">Full Stack Developer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> Vancouver, BC
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Snapchat Inc.
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4">
+              <ul class="list-unstyled mb-0">
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img3.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">Junior UX Designer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> London, UK
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Airbnb
+                    </span>
+                  </div>
+                </li>
+
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img2.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">Frontend Developer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> San Francisco, CA
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Github Inc.
+                    </span>
+                  </div>
+                </li>
+
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img1.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">AngularJS Developer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> New York, NY
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Medium.
+                    </span>
+                  </div>
+                </li>
+
+                <li class="media u-shadow-v11 rounded g-pa-20 g-mb-10">
+                  <div class="d-flex align-self-center g-mt-3 g-mr-15">
+                    <img class="g-width-40 g-height-40" src="{{ root }}assets/img-temp/logos/img5.png" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="d-block u-link-v5 g-color-main g-color-primary--hover g-font-weight-600 g-mb-3" href="">Full Stack Developer</a>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> Vancouver, BC
+                    </span>
+                    <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
+                      <i class="icon-directions g-pos-rel g-top-1 mr-1"></i> Snapchat Inc.
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a class="btn btn-xl u-btn-outline-primary text-uppercase g-font-weight-600 g-font-size-12" href="#!">View More Jobs</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Popular Jobs -->
+
+      <!-- Call To Action -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-white-gradient-opacity-v4--after" style="height: 120%; background-image: url({{ root }}assets/img-temp/1920x1080/img5.jpg);"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container g-py-150--md g-py-80">
+          <div class="row">
+            <div class="col-lg-6 g-mb-50 g-mb-0--lg">
+              <h2 class="h1 g-color-gray-dark-v1 g-font-weight-300 g-mb-20">Most quality solution for you</h2>
+              <p class="lead g-line-height-2 g-mb-30">Morbi a suscipit ipsum. Suspendisse mollis libero ante. Pellentesque finibus convallis nulla vel placerat. Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl. Ullam elementum tincidunt massa, a pulvinar leo ultricies ut</p>
+
+              <a href="#!" class="btn btn-xl u-btn-primary text-uppercase g-font-weight-600 g-font-size-12 rounded g-mr-15 g-mb-10 g-mb-0--sm">Buy full version</a>
+              <small class="d-block d-sm-inline-block g-color-gray-dark-v5 g-font-size-12">*Exclusive item on Wrapboostrap Marketpalce</small>
+            </div>
+
+            <div class="col-lg-6 align-self-center text-lg-center g-pos-rel">
+              <a class="js-fancybox d-block g-pos-rel" href="javascript:;"
+                 data-src="//vimeo.com/167434033"
+                 data-speed="1000"
+                 data-animate-in="bounceInDown"
+                 data-animate-out="bounceOutDown"
+                 data-caption="Single Image"
+                 data-overlay-blur-bg="true">
+                <span class="u-icon-v3 u-icon-size--xl u-block-hover--scale u-shadow-v24 g-bg-white g-color-gray-dark-v1 g-color-primary--hover g-font-size-20 rounded-circle g-cursor-pointer g-mb-10">
+                  <i class="fa fa-play g-pos-rel g-left-2"></i>
+                </span>
+              </a>
+              <p>Whatch our 2 min video.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Call To Action -->
+
+      <!-- Counters -->
+      <section class="g-brd-bottom g-brd-gray-light-v4 g-pt-50">
+        <div class="container">
+          <div class="row text-center text-uppercase">
+            <div class="col-lg-3 col-sm-6 g-brd-right g-brd-gray-light-v4 g-mb-50">
+              <div class="js-counter g-color-gray-dark-v1 g-font-size-35 g-font-weight-300 g-mb-7">52147</div>
+              <h4 class="h6 g-color-gray-dark-v5">Code Lines</h4>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 g-brd-right--lg g-brd-gray-light-v4 g-mb-50">
+              <div class="js-counter g-color-gray-dark-v1 g-font-size-35 g-font-weight-300 g-mb-7">24583</div>
+              <h4 class="h6 g-color-gray-dark-v5">Projects</h4>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 g-brd-right g-brd-gray-light-v4 g-mb-50">
+              <div class="js-counter g-color-gray-dark-v1 g-font-size-35 g-font-weight-300 g-mb-7">7348</div>
+              <h4 class="h6 g-color-gray-dark-v5">Working Hours</h4>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 g-mb-50">
+              <div class="js-counter g-color-gray-dark-v1 g-font-size-35 g-font-weight-300 g-mb-7">87904</div>
+              <h4 class="h6 g-color-gray-dark-v5">Job Offers</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counters -->
+
+      <!-- Recent Jobs -->
+      <section class="g-py-100">
+        <div class="container">
+          <header class="text-center g-width-60x--md mx-auto g-mb-50">
+            <h2 class="h1 g-color-gray-dark-v1 g-font-weight-300">Recent Jobs</h2>
+            <p class="lead">Ut fringilla lectus tellusimp imperdiet molestie. Nullam elementum tincidunt massa, a pulvinar leo ultricies ut.</p>
+          </header>
+
+          <div class="row g-mb-30">
+            <div class="col-lg-4 g-mb-30 g-mb-0--lg">
+              <!-- Recent Jobs -->
+              <article class="u-shadow-v11 rounded g-pa-25">
+                <h2 class="h4 g-mb-15">
+                  <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Junior UX Designer</a>
+                </h2>
+
+                <ul class="list-inline d-flex justify-content-between g-mb-15">
+                  <li class="list-inline-item g-mr-20">
+                    <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="{{ root }}assets/img-temp/100x100/img1.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Htmlstream</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="js-rating d-block g-color-primary" data-rating="5"></span>
+                  </li>
+                </ul>
+
+                <p class="g-mb-15">Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at, sed viverra cursus nibh.</p>
+
+                <ul class="list-unstyled">
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-wallet g-pos-rel g-top-1 g-mr-5"></i> Sallery:
+                    </span>
+                    <span class="media-body">$4000 - $5000</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-calendar g-pos-rel g-top-1 g-mr-5"></i> Date:
+                    </span>
+                    <span class="media-body">3 July, 2017</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-user g-pos-rel g-top-1 g-mr-5"></i> Skills:
+                    </span>
+                    <span class="media-body">Photoshop, Sketch</span>
+                  </li>
+                  <li class="media">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-location-pin g-pos-rel g-top-1 g-mr-5"></i> Location:
+                    </span>
+                    <span class="media-body">London, UK</span>
+                  </li>
+                </ul>
+
+                <hr class="g-brd-gray-light-v4">
+
+                <ul class="list-inline d-flex justify-content-between mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-tags-v1 g-font-size-12 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-3 g-px-8" href="#!">Part-Time</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#!">See Details</a>
+                  </li>
+                </ul>
+              </article>
+              <!-- End Recent Jobs -->
+            </div>
+
+            <div class="col-lg-4 g-mb-30 g-mb-0--lg">
+              <!-- Recent Jobs -->
+              <article class="u-shadow-v11 rounded g-pa-25">
+                <h2 class="h4 g-mb-15">
+                  <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Ruby Developer</a>
+                </h2>
+
+                <ul class="list-inline d-flex justify-content-between g-mb-15">
+                  <li class="list-inline-item g-mr-20">
+                    <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Pinterest</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="js-rating d-block g-color-primary" data-rating="4"></span>
+                  </li>
+                </ul>
+
+                <p class="g-mb-15">Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at, sed viverra cursus nibh.</p>
+
+                <ul class="list-unstyled">
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-wallet g-pos-rel g-top-1 g-mr-5"></i> Sallery:
+                    </span>
+                    <span class="media-body">$6000 - $8000</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-calendar g-pos-rel g-top-1 g-mr-5"></i> Date:
+                    </span>
+                    <span class="media-body">3 July, 2017</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-user g-pos-rel g-top-1 g-mr-5"></i> Skills:
+                    </span>
+                    <span class="media-body">Ruby in Rails, JavaScript</span>
+                  </li>
+                  <li class="media">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-location-pin g-pos-rel g-top-1 g-mr-5"></i> Location:
+                    </span>
+                    <span class="media-body">New York, US</span>
+                  </li>
+                </ul>
+
+                <hr class="g-brd-gray-light-v4">
+
+                <ul class="list-inline d-flex justify-content-between mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-tags-v1 g-font-size-12 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-3 g-px-8" href="#!">Full-Time</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#!">See Details</a>
+                  </li>
+                </ul>
+              </article>
+              <!-- End Recent Jobs -->
+            </div>
+
+            <div class="col-lg-4">
+              <!-- Recent Jobs -->
+              <article class="u-shadow-v11 rounded g-pa-25">
+                <h2 class="h4 g-mb-15">
+                  <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">AngularJS Developer</a>
+                </h2>
+
+                <ul class="list-inline d-flex justify-content-between g-mb-15">
+                  <li class="list-inline-item g-mr-20">
+                    <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="{{ root }}assets/img-temp/100x100/img3.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Pixeel Ltd.</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="js-rating d-block g-color-primary" data-rating="4.5"></span>
+                  </li>
+                </ul>
+
+                <p class="g-mb-15">Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at, sed viverra cursus nibh.</p>
+
+                <ul class="list-unstyled">
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-wallet g-pos-rel g-top-1 g-mr-5"></i> Sallery:
+                    </span>
+                    <span class="media-body">$7000 - $9000</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-calendar g-pos-rel g-top-1 g-mr-5"></i> Date:
+                    </span>
+                    <span class="media-body">7 July, 2017</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-user g-pos-rel g-top-1 g-mr-5"></i> Skills:
+                    </span>
+                    <span class="media-body">JavaScript, HTML, CSS</span>
+                  </li>
+                  <li class="media">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-location-pin g-pos-rel g-top-1 g-mr-5"></i> Location:
+                    </span>
+                    <span class="media-body">Remote (Worldwide)</span>
+                  </li>
+                </ul>
+
+                <hr class="g-brd-gray-light-v4">
+
+                <ul class="list-inline d-flex justify-content-between mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-tags-v1 g-font-size-12 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-3 g-px-8" href="#!">Full-Time</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#!">See Details</a>
+                  </li>
+                </ul>
+              </article>
+              <!-- End Recent Jobs -->
+            </div>
+          </div>
+
+          <div class="row g-mb-40">
+            <div class="col-lg-4 g-mb-30 g-mb-0--lg">
+              <!-- Recent Jobs -->
+              <article class="u-shadow-v11 rounded g-pa-25">
+                <h2 class="h4 g-mb-15">
+                  <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">ASP.NET Developer</a>
+                </h2>
+
+                <ul class="list-inline d-flex justify-content-between g-mb-15">
+                  <li class="list-inline-item g-mr-20">
+                    <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Starbucks</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="js-rating d-block g-color-primary" data-rating="3.5"></span>
+                  </li>
+                </ul>
+
+                <p class="g-mb-15">Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at, sed viverra cursus nibh.</p>
+
+                <ul class="list-unstyled">
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-wallet g-pos-rel g-top-1 g-mr-5"></i> Sallery:
+                    </span>
+                    <span class="media-body">$6000 - $8000</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-calendar g-pos-rel g-top-1 g-mr-5"></i> Date:
+                    </span>
+                    <span class="media-body">3 July, 2017</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-user g-pos-rel g-top-1 g-mr-5"></i> Skills:
+                    </span>
+                    <span class="media-body">ASP.NET, JavaScript</span>
+                  </li>
+                  <li class="media">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-location-pin g-pos-rel g-top-1 g-mr-5"></i> Location:
+                    </span>
+                    <span class="media-body">New York, US</span>
+                  </li>
+                </ul>
+
+                <hr class="g-brd-gray-light-v4">
+
+                <ul class="list-inline d-flex justify-content-between mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-tags-v1 g-font-size-12 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-3 g-px-8" href="#!">Full-Time</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#!">See Details</a>
+                  </li>
+                </ul>
+              </article>
+              <!-- End Recent Jobs -->
+            </div>
+
+            <div class="col-lg-4 g-mb-30 g-mb-0--lg">
+              <!-- Recent Jobs -->
+              <article class="u-shadow-v11 rounded g-pa-25">
+                <h2 class="h4 g-mb-15">
+                  <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">AngularJS Developer</a>
+                </h2>
+
+                <ul class="list-inline d-flex justify-content-between g-mb-15">
+                  <li class="list-inline-item g-mr-20">
+                    <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="{{ root }}assets/img-temp/100x100/img3.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Pixeel Ltd.</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="js-rating d-block g-color-primary" data-rating="4.5"></span>
+                  </li>
+                </ul>
+
+                <p class="g-mb-15">Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at, sed viverra cursus nibh.</p>
+
+                <ul class="list-unstyled">
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-wallet g-pos-rel g-top-1 g-mr-5"></i> Sallery:
+                    </span>
+                    <span class="media-body">$7000 - $9000</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-calendar g-pos-rel g-top-1 g-mr-5"></i> Date:
+                    </span>
+                    <span class="media-body">7 July, 2017</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-user g-pos-rel g-top-1 g-mr-5"></i> Skills:
+                    </span>
+                    <span class="media-body">JavaScript, HTML, CSS</span>
+                  </li>
+                  <li class="media">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-location-pin g-pos-rel g-top-1 g-mr-5"></i> Location:
+                    </span>
+                    <span class="media-body">Remote (Worldwide)</span>
+                  </li>
+                </ul>
+
+                <hr class="g-brd-gray-light-v4">
+
+                <ul class="list-inline d-flex justify-content-between mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-tags-v1 g-font-size-12 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-3 g-px-8" href="#!">Full-Time</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#!">See Details</a>
+                  </li>
+                </ul>
+              </article>
+              <!-- End Recent Jobs -->
+            </div>
+
+            <div class="col-lg-4">
+              <!-- Recent Jobs -->
+              <article class="u-shadow-v11 rounded g-pa-25">
+                <h2 class="h4 g-mb-15">
+                  <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">UX/UI Designer</a>
+                </h2>
+
+                <ul class="list-inline d-flex justify-content-between g-mb-15">
+                  <li class="list-inline-item g-mr-20">
+                    <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="{{ root }}assets/img-temp/100x100/img1.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Htmlstream</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="js-rating d-block g-color-primary" data-rating="5"></span>
+                  </li>
+                </ul>
+
+                <p class="g-mb-15">Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at, sed viverra cursus nibh.</p>
+
+                <ul class="list-unstyled">
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-wallet g-pos-rel g-top-1 g-mr-5"></i> Sallery:
+                    </span>
+                    <span class="media-body">$4000 - $5000</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-calendar g-pos-rel g-top-1 g-mr-5"></i> Date:
+                    </span>
+                    <span class="media-body">3 July, 2017</span>
+                  </li>
+                  <li class="media g-mb-10">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-user g-pos-rel g-top-1 g-mr-5"></i> Skills:
+                    </span>
+                    <span class="media-body">Photoshop, Sketch</span>
+                  </li>
+                  <li class="media">
+                    <span class="d-block g-color-gray-dark-v5 g-width-110">
+                      <i class="icon-location-pin g-pos-rel g-top-1 g-mr-5"></i> Location:
+                    </span>
+                    <span class="media-body">London, UK</span>
+                  </li>
+                </ul>
+
+                <hr class="g-brd-gray-light-v4">
+
+                <ul class="list-inline d-flex justify-content-between mb-0">
+                  <li class="list-inline-item">
+                    <a class="u-tags-v1 g-font-size-12 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-3 g-px-8" href="#!">Part-Time</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#!">See Details</a>
+                  </li>
+                </ul>
+              </article>
+              <!-- End Recent Jobs -->
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a class="btn btn-xl u-btn-outline-primary text-uppercase g-font-weight-600 g-font-size-12" href="#!">View More Jobs</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Recent Jobs -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Our Exclusive Partners -->
+      <section class="g-py-100">
+        <div class="container">
+          <header class="text-center g-width-60x--md mx-auto g-mb-50">
+            <h2 class="h1 g-color-gray-dark-v1 g-font-weight-300">Our Exclusive Partners</h2>
+            <p class="lead">Ut fringilla lectus tellusimp imperdiet molestie. Nullam elementum tincidunt massa, a pulvinar leo ultricies ut.</p>
+          </header>
+
+          <div class="g-overflow-hidden g-mb-40">
+            <div class="row text-center mx-0 g-ml-minus-1 g-mb-minus-1">
+              <div class="col-sm-3 col-md-3 px-0">
+                <div class="u-block-hover g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                  <img class="mx-auto g-width-100 u-block-hover__main--grayscale g-opacity-0_4 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-3 px-0">
+                <div class="u-block-hover g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                  <img class="mx-auto g-width-100 u-block-hover__main--grayscale g-opacity-0_5 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-3 px-0">
+                <div class="u-block-hover g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                  <img class="mx-auto g-width-100 u-block-hover__main--grayscale g-opacity-0_6 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-3 px-0">
+                <div class="u-block-hover g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                  <img class="mx-auto g-width-100 u-block-hover__main--grayscale g-opacity-0_5 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-3 px-0">
+                <div class="u-block-hover g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                  <img class="mx-auto g-width-100 u-block-hover__main--grayscale g-opacity-0_5 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-3 px-0">
+                <div class="u-block-hover g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                  <img class="mx-auto g-width-100 u-block-hover__main--grayscale g-opacity-0_4 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-3 px-0">
+                <div class="u-block-hover g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                  <img class="mx-auto g-width-100 u-block-hover__main--grayscale g-opacity-0_5 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-3 px-0">
+                <div class="u-block-hover g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                  <img class="mx-auto g-width-100 u-block-hover__main--grayscale g-opacity-0_7 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image Description" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image Description">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-center g-color-gray-dark-v5 mb-0">Be Our Exclusive Partner! <a href="#!">Contact Us</a></p>
+        </div>
+      </section>
+      <!-- End Our Exclusive Partners -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+      <!-- Footer -->
+      <section class="u-shadow-v11 g-py-60">
+        <div class="container">
+          <div class="row">
+            <!-- Footer Content -->
+            <div class="col-lg-4 g-mb-60 g-mb-0--lg">
+              <a class="d-block g-mb-20" href="index.html">
+                <img class="img-fluid" src="{{ root }}assets/img/logo/logo-1.png" alt="Logo">
+              </a>
+
+              <div class="g-mb-30">
+                <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt.</p>
+              </div>
+
+              <address class="g-line-height-2 g-mt-minus-4">
+                <ul class="list-unstyled">
+                  <li class="d-flex align-items-baseline g-mb-5">
+                    <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-10"></i>
+                    <span>25, Lorem Lis Street, Orange California, US</span>
+                  </li>
+                  <li class="d-flex align-items-baseline g-mb-5">
+                    <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-10"></i>
+                    <span>Phone: 800 123 3456</span>
+                  </li>
+                  <li class="d-flex align-items-baseline g-mb-5">
+                    <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-10"></i>
+                    <span>Fax: 800 123 3457</span>
+                  </li>
+                  <li class="d-flex align-items-baseline g-mb-5">
+                    <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-10"></i>
+                    <span>Email: <a class="g-color-black-opacity-0_8" href="mailto:info@htmlstream.com" class="">info@htmlstream.com</a></span>
+                  </li>
+                </ul>
+              </address>
+
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item g-mr-10">
+                  <a class="u-icon-v3 u-icon-size--xs g-bg-gray-light-v5 g-bg-primary--hover g-color-black-opacity-0_5 g-color-white--hover rounded" href="#!">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mr-10">
+                  <a class="u-icon-v3 u-icon-size--xs g-bg-gray-light-v5 g-bg-primary--hover g-color-black-opacity-0_5 g-color-white--hover rounded" href="#!">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mr-10">
+                  <a class="u-icon-v3 u-icon-size--xs g-bg-gray-light-v5 g-bg-primary--hover g-color-black-opacity-0_5 g-color-white--hover rounded" href="#!">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mr-10">
+                  <a class="u-icon-v3 u-icon-size--xs g-bg-gray-light-v5 g-bg-primary--hover g-color-black-opacity-0_5 g-color-white--hover rounded" href="#!">
+                    <i class="fa fa-dribbble"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Footer Content -->
+
+            <!-- Footer Content -->
+            <div class="col-lg-2 col-sm-3">
+              <h2 class="h6 text-uppercase g-color-gray-dark-v1 g-mb-15">Secciones</h2>
+              <ul class="list-unstyled g-mb-35">
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Ultima Hora</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Exclusiva</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Documentos</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Francisco papa</a>
+                </li>
+                <li>...</li>
+              </ul>
+
+              <h2 class="h6 text-uppercase g-color-gray-dark-v1 g-mb-15">Temas</h2>
+              <ul class="list-unstyled g-mb-35 g-mb-0--md">
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Ultima Hora</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Exclusiva</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Documentos</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Francisco papa</a>
+                </li>
+                <li>...</li>
+              </ul>
+            </div>
+            <!-- End Footer Content -->
+
+            <!-- Footer Content -->
+            <div class="col-lg-2 col-sm-3">
+              <h2 class="h6 text-uppercase g-color-gray-dark-v1 g-mb-15">Utilidades</h2>
+              <ul class="list-unstyled g-mb-35">
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Ultima Hora</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Exclusiva</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Documentos</a>
+                </li>
+                <li>...</li>
+              </ul>
+
+              <h2 class="h6 text-uppercase g-color-gray-dark-v1 g-mb-15">Documentos</h2>
+              <ul class="list-unstyled g-mb-35 g-mb-0--md">
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Ultima Hora</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Exclusiva</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Documentos</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Francisco papa</a>
+                </li>
+                <li>...</li>
+              </ul>
+            </div>
+            <!-- End Footer Content -->
+
+            <!-- Footer Content -->
+            <div class="col-lg-2 col-sm-3">
+              <h2 class="h6 text-uppercase g-color-gray-dark-v1 g-mb-15">Publicidad</h2>
+              <ul class="list-unstyled g-mb-35">
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Ultima Hora</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Exclusiva</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Documentos</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Francisco papa</a>
+                </li>
+                <li>...</li>
+              </ul>
+
+              <h2 class="h6 text-uppercase g-color-gray-dark-v1 g-mb-15">Contacto</h2>
+              <ul class="list-unstyled g-mb-35 g-mb-0--md">
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Ultima Hora</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Exclusiva</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Documentos</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Francisco papa</a>
+                </li>
+                <li>...</li>
+              </ul>
+            </div>
+            <!-- End Footer Content -->
+
+            <!-- Footer Content -->
+            <div class="col-lg-2 col-sm-3">
+              <h2 class="h6 text-uppercase g-color-gray-dark-v1 g-mb-15">Utilidades</h2>
+              <ul class="list-unstyled g-mb-35">
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Ultima Hora</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Exclusiva</a>
+                </li>
+                <li>...</li>
+              </ul>
+
+              <h2 class="h6 text-uppercase g-color-gray-dark-v1 g-mb-15">Documentos</h2>
+              <ul class="list-unstyled g-mb-35 g-mb-0--md">
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Ultima Hora</a>
+                </li>
+                <li class="g-mb-5">
+                  <a class="g-color-black-opacity-0_5" href="#!">Exclusiva</a>
+                </li>
+                <li>...</li>
+              </ul>
+            </div>
+            <!-- End Footer Content -->
+          </div>
+        </div>
+      </section>
+      <!-- End Footer -->
+
+      <!-- Copyright Footer -->
+      <footer class="g-py-20">
+        <div class="container">
+          <div class="row">
+            <!-- Copyright Content -->
+            <div class="col-md-6 align-self-center text-center text-md-left g-mb-10 g-mb-0--md">
+              <div class="d-lg-flex">
+                <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2018 &copy; All Rights Reserved.</small>
+                <ul class="u-list-inline">
+                  <li class="list-inline-item">
+                    <a class="g-color-main" href="#!">Privacy Policy</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <span>|</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="g-color-main" href="#!">Terms of Use</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Copyright Content -->
+
+            <!-- Copyright Content -->
+            <div class="col-md-6 align-self-center text-center text-md-right">
+              <ul class="list-inline g-color-gray-light-v1 g-font-size-40 g-line-height-1 mb-0">
+                <li class="list-inline-item">
+                  <i class="fa fa-cc-paypal"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fa fa-cc-visa"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fa fa-cc-mastercard"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fa fa-cc-discover"></i>
+                </li>
+              </ul>
+            </div>
+            <!-- End Copyright Content -->
+          </div>
+        </div>
+      </footer>
+      <!-- End Copyright Footer -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/appear.js"></script>
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="{{ root }}assets/vendor/circles/circles.min.js"></script>
+    {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+    <script src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.counter.js"></script>
+    <script src="{{ root }}assets/js/components/hs.rating.js"></script>
+    <script src="{{ root }}assets/js/components/hs.popup.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+
+        // initialization of counters
+        var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
+
+        // initialization of popups
+        $.HSCore.components.HSPopup.init('.js-fancybox', {
+          transitionEffect: false
+        });
+
+        // initialization of rating
+        $.HSCore.components.HSRating.init($('.js-rating'), {
+          spacing: 2
+        });
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

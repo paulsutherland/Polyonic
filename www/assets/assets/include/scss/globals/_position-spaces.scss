@@ -1,0 +1,634 @@
+/*------------------------------------
+  Position Spaces
+------------------------------------*/
+/* Top */
+.g-top-auto { /* P */
+  top: auto;
+
+  &--parent-hover {
+    .g-parent:hover & {
+      top: auto;
+    }
+  }
+}
+
+.g-top-0 {
+  @include px-to-rem(top, 0 !important);
+
+  &--hover:hover {
+    @include px-to-rem(top, 0 !important);
+  }
+
+  &--parent-hover {
+    .g-parent:hover & {
+      @include px-to-rem(top, 0 !important);
+    }
+  }
+}
+
+.g-top-1 {
+  @include px-to-rem(top, 1px);
+}
+
+.g-top-2 {
+  @include px-to-rem(top, 2px);
+}
+
+.g-top-3 {
+  @include px-to-rem(top, 3px);
+}
+
+.g-top-5 {
+  @include px-to-rem(top, 5px !important);
+}
+
+.g-top-7 {
+  @include px-to-rem(top, 7px !important);
+}
+
+.g-top-10 {
+  @include px-to-rem(top, 10px !important);
+}
+
+.g-top-15 {
+  @include px-to-rem(top, 15px);
+}
+
+.g-top-20 {
+  @include px-to-rem(top, 20px);
+}
+
+.g-top-25 {
+  @include px-to-rem(top, 25px);
+}
+
+.g-top-30 {
+  @include px-to-rem(top, 30px);
+}
+
+.g-top-35 {
+  @include px-to-rem(top, 35px);
+}
+
+.g-top-55 {
+  @include px-to-rem(top, 55px);
+}
+
+.g-top-65 {
+  @include px-to-rem(top, 65px);
+}
+
+.g-top-100 {
+  @include px-to-rem(top, 100px);
+}
+
+.g-top-15x {
+  top: 15%;
+}
+
+.g-top-20x {
+  top: 20%;
+}
+
+.g-top-25x {
+  top: 25%;
+}
+
+.g-top-30x {
+  top: 30%;
+}
+
+.g-top-35x {
+  top: 35%;
+}
+
+.g-top-50x {
+  top: 50%;
+}
+
+.g-top-100x {
+  top: 100%;
+}
+
+/* Top Minis */
+.g-top-minus-1 {
+  @include px-to-rem(top, -1px);
+}
+
+.g-top-minus-2 {
+  @include px-to-rem(top, -2px);
+}
+
+.g-top-minus-3 {
+  @include px-to-rem(top, -3px !important);
+}
+
+.g-top-minus-4 {
+  @include px-to-rem(top, -4px);
+}
+
+.g-top-minus-5 {
+  @include px-to-rem(top, -5px);
+}
+
+.g-top-minus-6 {
+  @include px-to-rem(top, -6px);
+}
+
+.g-top-minus-8 {
+  @include px-to-rem(top, -8px);
+}
+
+.g-top-minus-10 {
+  @include px-to-rem(top, -10px);
+}
+
+.g-top-minus-15 {
+  @include px-to-rem(top, -15px);
+}
+
+.g-top-minus-20 {
+  @include px-to-rem(top, -20px);
+}
+
+.g-top-minus-30 {
+  @include px-to-rem(top, -30px);
+}
+
+.g-top-minus-35 {
+  @include px-to-rem(top, -35px);
+}
+
+.g-top-minus-40 {
+  @include px-to-rem(top, -40px);
+}
+
+.g-top-minus-70 {
+  @include px-to-rem(top, -70px);
+}
+
+.g-top-minus-120 {
+  @include px-to-rem(top, -120px);
+}
+
+.g-top-minus-25x {
+  top: -25%;
+}
+
+.g-top-minus-80x {
+  top: -80%;
+}
+
+/* Left */
+.g-left-auto { /* P */
+  left: auto !important;
+}
+
+.g-left-0 {
+  @include px-to-rem(left, 0);
+
+  &--hover:hover {
+    @include px-to-rem(left, 0);
+  }
+
+  &--parent-hover {
+    .g-parent:hover & {
+      @include px-to-rem(left, 0);
+    }
+  }
+}
+
+.g-left-2 {
+  @include px-to-rem(left, 2px);
+}
+
+.g-left-5 {
+  @include px-to-rem(left, 5px);
+}
+
+.g-left-10 {
+  @include px-to-rem(left, 10px);
+}
+
+.g-left-15 {
+  @include px-to-rem(left, 15px !important);
+}
+
+.g-left-20 {
+  @include px-to-rem(left, 20px);
+}
+
+.g-left-30 {
+  @include px-to-rem(left, 30px);
+}
+
+.g-left-40 {
+  @include px-to-rem(left, 40px); /* O */
+}
+
+.g-left-45 {
+  @include px-to-rem(left, 45px); /* P */
+}
+
+.g-left-75 {
+  @include px-to-rem(left, 75px);
+}
+
+.g-left-110 {
+  @include px-to-rem(left, 110px);
+}
+
+.g-left-130 {
+  @include px-to-rem(left, 130px);
+}
+
+.g-left-200 {
+  @include px-to-rem(left, 200px);
+}
+
+.g-left-15x {
+  left: 15%;
+}
+
+.g-left-35x {
+  left: 35%;
+}
+
+.g-left-50x {
+  left: 50%;
+}
+
+.g-left-100x {
+  left: 100%;
+}
+
+/* Left Minus */
+.g-left-minus-3 {
+  @include px-to-rem(left, -3px);
+}
+
+.g-left-minus-6 {
+  @include px-to-rem(left, -6px);
+}
+
+.g-left-minus-7 {
+  @include px-to-rem(left, -7px);
+}
+
+.g-left-minus-10 {
+  @include px-to-rem(left, -10px);
+}
+
+.g-left-minus-15 {
+  @include px-to-rem(left, -15px);
+}
+
+.g-left-minus-20 {
+  @include px-to-rem(left, -20px);
+}
+
+.g-left-minus-25 {
+  @include px-to-rem(left, -25px);
+}
+
+.g-left-minus-30 {
+  @include px-to-rem(left, -30px);
+}
+
+.g-left-minus-40 {
+  @include px-to-rem(left, -40px);
+}
+
+.g-left-minus-50 {
+  @include px-to-rem(left, -50px);
+
+  &--parent-hover {
+    .g-parent:hover & {
+      @include px-to-rem(left, -50px);
+    }
+  }
+}
+
+/* Right */
+.g-right-auto { /* P */
+  right: auto;
+}
+
+.g-right-0 {
+  @include px-to-rem(right, 0 !important);
+
+  &--hover:hover {
+    @include px-to-rem(right, 0 !important);
+  }
+
+  &--parent-hover {
+    .g-parent:hover & {
+      @include px-to-rem(right, 0 !important);
+    }
+  }
+}
+
+.g-right-5 {
+  @include px-to-rem(right, 5px !important);
+}
+
+.g-right-7 {
+  @include px-to-rem(right, 7px !important);
+}
+
+.g-right-10 {
+  @include px-to-rem(right, 10px !important);
+}
+
+.g-right-14 {
+  @include px-to-rem(right, 14px !important);
+}
+
+.g-right-15 {
+  @include px-to-rem(right, 15px !important);
+}
+
+.g-right-20 {
+  @include px-to-rem(right, 20px);
+}
+
+.g-right-30 {
+  @include px-to-rem(right, 30px);
+}
+
+.g-right-40 {
+  @include px-to-rem(right, 40px);
+}
+
+.g-right-45 {
+  @include px-to-rem(right, 45px); /* P */
+}
+
+.g-right-55 {
+  @include px-to-rem(right, 55px); /* O */
+}
+
+.g-right-65 {
+  @include px-to-rem(right, 65px);
+}
+
+.g-right-100 {
+  @include px-to-rem(right, 100px);
+}
+
+.g-right-110 {
+  @include px-to-rem(right, 110px);
+}
+
+.g-right-130 {
+  @include px-to-rem(right, 130px);
+}
+
+.g-right-15x {
+  right: 15%;
+}
+
+.g-right-35x {
+  right: 35%;
+}
+
+.g-right-50x {
+  right: 50%;
+}
+
+.g-right-100x {
+  right: 100%;
+}
+
+/* Right Minus */
+.g-right-minus-3 {
+  @include px-to-rem(right, -3px !important);
+}
+
+.g-right-minus-6 {
+  @include px-to-rem(right, -6px);
+}
+
+.g-right-minus-5 {
+  @include px-to-rem(right, -5px);
+}
+
+.g-right-minus-10 {
+  @include px-to-rem(right, -10px);
+}
+
+.g-right-minus-13 {
+  @include px-to-rem(right, -13px);
+}
+
+.g-right-minus-15 {
+  @include px-to-rem(right, -15px);
+}
+
+.g-right-minus-20 {
+  @include px-to-rem(right, -20px);
+}
+
+.g-right-minus-25 {
+  @include px-to-rem(right, -25px);
+}
+
+.g-right-minus-40 {
+  @include px-to-rem(right, -40px);
+}
+
+.g-right-minus-50 {
+  @include px-to-rem(right, -50px);
+}
+
+/* Bottom */
+.g-bottom-auto { /* P */
+  bottom: auto;
+}
+
+.g-bottom-0 {
+  @include px-to-rem(bottom, 0);
+
+  &--hover:hover {
+    @include px-to-rem(bottom, 0);
+  }
+
+  &--parent-hover {
+    .g-parent:hover & {
+      @include px-to-rem(bottom, 0);
+    }
+  }
+}
+
+.g-bottom-6 {
+  @include px-to-rem(bottom, 6px);
+}
+
+.g-bottom-10 {
+  @include px-to-rem(bottom, 10px);
+}
+
+.g-bottom-20 {
+  @include px-to-rem(bottom, 20px);
+}
+
+.g-bottom-30 {
+  @include px-to-rem(bottom, 30px);
+}
+
+.g-bottom-40 {
+  @include px-to-rem(bottom, 40px);
+}
+
+.g-bottom-50 {
+  @include px-to-rem(bottom, 50px);
+
+  &--parent-hover {
+    .g-parent:hover & {
+      @include px-to-rem(bottom, 50px);
+    }
+  }
+}
+
+.g-bottom-60 {
+  @include px-to-rem(bottom, 60px);
+}
+
+.g-bottom-80 {
+  @include px-to-rem(bottom, 80px);
+}
+
+.g-bottom-minus-20 {
+  @include px-to-rem(bottom, -20px);
+}
+
+.g-bottom-minus-30 {
+  @include px-to-rem(bottom, -30px);
+}
+
+.g-bottom-minus-40 {
+  @include px-to-rem(bottom, -40px);
+}
+
+.g-bottom-minus-70 {
+  @include px-to-rem(bottom, -70px);
+}
+
+.g-bottom-minus-35x {
+  bottom: -35%;
+}
+
+.g-bottom-15x {
+  bottom: 15%;
+}
+
+.g-bottom-minus-25x {
+  bottom: -25%;
+}
+
+.g-bottom-100x {
+  bottom: 100%;
+}
+
+/* Z */
+@media (min-width: $g-sm) {
+  .g-top-auto--sm {
+    top: auto;
+  }
+
+  .g-left-auto--sm {
+    left: auto;
+  }
+
+  .g-left-minus-20--sm {
+    left: -20px;
+  }
+
+  .g-right-minus-20--sm {
+    right: -20px;
+  }
+}
+
+/* O */
+@media (min-width: $g-md) {
+  .g-right-0--md {
+    right: 0;
+  }
+
+  .g-right-minus-15--md {
+    @include px-to-rem(right, -15px);
+  }
+
+  .g-left-minus-15--md {
+    @include px-to-rem(left, -15px);
+  }
+
+  .g-top-minus-20--md {
+    @include px-to-rem(top, -20px);
+  }
+
+  .g-right-minus-25--md {
+    @include px-to-rem(right, -25px);
+  }
+
+  .g-right-100--md {
+    @include px-to-rem(right, 100px);
+  }
+
+  .g-bottom-minus-50--md {
+    @include px-to-rem(bottom, -50px);
+  }
+
+  .g-left-auto--md {
+    left: auto;
+  }
+
+  .g-left-minus-25--md {
+    @include px-to-rem(left, -25px);
+  }
+
+  .g-left-130--md {
+    @include px-to-rem(left, 130px);
+  }
+
+  .g-left-35x--md {
+    left: 35%;
+  }
+
+  .g-left-50x--md {
+    left: 50%;
+  }
+
+  .g-right-130--md {
+    @include px-to-rem(right, 130px);
+  }
+
+  .g-right-35x--md {
+    right: 35%;
+  }
+
+  .g-right-50x--md {
+    right: 50%;
+  }
+}
+
+@media (min-width: $g-lg) {
+  .g-top-0--lg {
+    top: 0;
+  }
+  .g-right-0--lg {
+    right: 0;
+  }
+  .g-left-minus-35--lg {
+    @include px-to-rem(left, -35px);
+  }
+  .g-left-40--lg {
+    @include px-to-rem(left, 40px);
+  }
+  .g-right-minus-35--lg {
+    @include px-to-rem(right, -35px);
+  }
+  .g-right-40--lg {
+    @include px-to-rem(right, 40px);
+  }
+}

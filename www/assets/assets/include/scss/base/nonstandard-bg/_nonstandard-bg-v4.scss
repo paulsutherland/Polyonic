@@ -1,0 +1,118 @@
+/*------------------------------------
+  Nonstandard Background v4
+------------------------------------*/
+
+[class*="u-ns-bg-v4"] {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 0;
+    height: 0;
+    border: {
+      style: solid;
+      color: transparent;
+    }
+  }
+}
+
+.u-ns-bg-v4 {
+  &-top,
+  &-bottom {
+    &::before {
+      left: 8%;
+    }
+  }
+
+  &-left,
+  &-right {
+    &::before {
+      top: 8%;
+    }
+  }
+
+  &-top,
+  &-left {
+    &.g-bg-primary {
+      &::before {
+        border-bottom-color: $g-color-primary;
+      }
+    }
+
+    &.g-bg-white {
+      &::before {
+        border-bottom-color: $g-color-white;
+      }
+    }
+
+    &.g-bg-gray-light-v2 {
+      &::before {
+        border-bottom-color: $g-color-gray-light-v2;
+      }
+    }
+
+    &.g-bg-black {
+      &::before {
+        border-bottom-color: $g-color-black;
+      }
+    }
+  }
+
+  &-bottom,
+  &-right {
+    &.g-bg-primary {
+      &::before {
+        border-top-color: $g-color-primary;
+      }
+    }
+
+    &.g-bg-white {
+      &::before {
+        border-top-color: $g-color-white;
+      }
+    }
+
+    &.g-bg-gray-light-v2 {
+      &::before {
+        border-top-color: $g-color-gray-light-v2;
+      }
+    }
+
+    &.g-bg-black {
+      &::before {
+        border-top-color: $g-color-black;
+      }
+    }
+  }
+
+  &-top {
+    &::before {
+      top: -22px;
+      border-width: 22px 22px 0 0;
+    }
+  }
+
+  &-bottom {
+    &::before {
+      bottom: -22px;
+      border-width: 22px 0 0 22px;
+    }
+  }
+
+  &-left {
+    &::before {
+      left: -22px;
+      border-width: 22px 22px 0 0;
+    }
+  }
+
+  &-right {
+    &::before {
+      right: -22px;
+      border-width: 0 22px 22px 0;
+    }
+  }
+}

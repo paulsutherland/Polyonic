@@ -1,0 +1,75 @@
+//
+// Header Toggle Positionings
+//
+
+@mixin header-toggler-positioning($media-type: 0) {
+
+	$media-var: 0;
+	$media-type-mod: '';
+
+	@if $media-type == sm {
+		$media-var: $g-sm;
+		$media-type-mod: --sm;
+	}
+	@else if $media-type == md {
+		$media-var: $g-md;
+		$media-type-mod: --md;
+	}
+	@else if $media-type == lg {
+		$media-var: $g-lg;
+		$media-type-mod: --lg;
+	}
+	@else if $media-type == xl {
+		$media-var: $g-xl;
+		$media-type-mod: --xl;
+	}
+
+	@media all and (min-width: #{$media-var}) {
+
+		.u-header-toggler {
+
+			// Positioning
+
+			&--top-right#{$media-type-mod},
+			&--top-right#{$media-type-mod}.btn,
+			&--top-left#{$media-type-mod},
+			&--top-left#{$media-type-mod}.btn,
+			&--bottom-right#{$media-type-mod},
+			&--bottom-right#{$media-type-mod}.btn,
+			&--bottom-left#{$media-type-mod},
+			&--bottom-left#{$media-type-mod}.btn {
+				position: fixed;
+			}
+
+			// Axis y
+
+			&--top-right#{$media-type-mod},
+			&--top-right#{$media-type-mod}.btn,
+			&--top-left#{$media-type-mod},
+			&--top-left#{$media-type-mod}.btn {
+				@include px-to-rem(top, 20px);
+			}
+
+			&--bottom-right#{$media-type-mod},
+			&--bottom-right#{$media-type-mod}.btn,
+			&--bottom-left#{$media-type-mod},
+			&--bottom-left#{$media-type-mod}.btn {
+				@include px-to-rem(bottom, 20px);
+			}
+
+			// Axis x
+			&--top-left#{$media-type-mod},
+			&--bottom-left#{$media-type-mod} {
+				@include px-to-rem(left, 20px);
+			}
+
+			&--top-right#{$media-type-mod},
+			&--bottom-right#{$media-type-mod} {
+				@include px-to-rem(right, 20px);
+			}
+
+		}
+
+	}
+
+}

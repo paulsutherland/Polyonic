@@ -1,0 +1,8 @@
+/* Button Red */
+.btn-u-red {
+  @include u-button-flat ($g-color-red, $g-color-white, $g-color-white);
+  @include u-button-flat-hover-v1 (1, $g-color-red);
+  @include u-button-flat-hover-v1 (2, $g-color-red);
+  @include u-button-flat-hover-v1 (3, $g-color-red);
+  @include u-button-flat-hover-v1 (4, $g-color-red);
+}

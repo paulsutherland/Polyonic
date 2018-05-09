@@ -1,0 +1,640 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "home" %}
+{% set mainNavActive_2 = "home-default" %}
+{% set title = "Home Default | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/typedjs/typed.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Promo Block -->
+      <section class="g-pos-rel">
+        <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+          <div class="divimage dzsparallaxer--target w-100 g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-bluegray-opacity-0_2--after" style="height: 130%; background-image: url({{ root }}assets/img-temp/1920x700/img3.jpg);"></div>
+
+          <div class="container g-bg-cover__inner g-py-100">
+            <div class="row align-items-center">
+              <div class="col-lg-6 g-mb-30 g-mb-0--lg">
+                <h2 class="h1 text-uppercase g-color-white g-mb-30">
+                  <span class="g-bg-primary-dark-v3 g-px-5">Clean &amp; Fresh</span><br>
+                  <span class="g-bg-primary-dark-v3 g-px-5">Fully Responsive</span><br>
+                  <span class="g-bg-primary-dark-v3 g-px-5">Design</span>
+                </h2>
+                <h3 class="h4 g-color-white">
+                  <span class="g-bg-black-opacity-0_6 g-px-5">Start a new project with easy</span><br>
+                  <span class="g-bg-black-opacity-0_6 g-px-5">to use 1610+ Reusable</span><br>
+                  <span class="g-bg-black-opacity-0_6 g-px-5">UI Components</span>
+                </h3>
+              </div>
+              <div class="col-lg-6">
+                <!-- Vimeo Example -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe src="//player.vimeo.com/video/47911018" width="530" height="300" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                </div>
+                <!-- End Vimeo Example -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Promo Block -->
+
+      <!-- Icon Blocks -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-lg-4 g-px-40 g-mb-50 g-mb-0--lg">
+              <!-- Icon Blocks -->
+              <div class="text-center">
+                <span class="d-inline-block u-icon-v3 u-icon-size--xl g-bg-primary g-color-white rounded-circle g-mb-30">
+                  <i class="icon-communication-081 u-line-icon-pro"></i>
+                </span>
+                <h3 class="h5 g-color-gray-dark-v2 g-font-weight-600 text-uppercase mb-3">Beautiful Designs</h3>
+                <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-px-40 g-mb-50 g-mb-0--lg">
+              <!-- Icon Blocks -->
+              <div class="text-center">
+                <span class="d-inline-block u-icon-v3 u-icon-size--xl g-bg-primary g-color-white rounded-circle g-mb-30">
+                  <i class="icon-finance-086 u-line-icon-pro"></i>
+                </span>
+                <h3 class="h5 g-color-gray-dark-v2 g-font-weight-600 text-uppercase mb-3">Unique Features</h3>
+                <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-px-40">
+              <!-- Icon Blocks -->
+              <div class="text-center">
+                <span class="d-inline-block u-icon-v3 u-icon-size--xl g-bg-primary g-color-white rounded-circle g-mb-30">
+                  <i class="icon-communication-057 u-line-icon-pro"></i>
+                </span>
+                <h3 class="h5 g-color-gray-dark-v2 g-font-weight-600 text-uppercase mb-3">Reliable Support</h3>
+                <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Icon Blocks -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Our Services -->
+      <section class="g-py-100">
+        <div class="container">
+          <header class="text-center g-width-60x--md mx-auto g-mb-50">
+            <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
+              <h2 class="h4 u-heading-v2__title g-color-gray-dark-v2 g-font-weight-600 text-uppercase">Our Services</h2>
+            </div>
+            <p class="g-font-size-16">Unify's 1610+ easy to use and customizable UI elements make it most customizable theme on the market. Build websites easily as never before!</p>
+          </header>
+
+          <div class="row justify-content-center g-mb-20">
+            <div class="col-md-6 col-lg-4 g-mb-50 g-mb-0--lg">
+              <!-- Services -->
+              <div class="u-shadow-v28 g-bg-white text-left text-md-center rounded g-py-40">
+                <!-- Services - Header -->
+                <header class="text-center g-px-30 mb-5">
+                  <div class="g-mb-25">
+                    <span class="u-icon-v2 u-icon-size--md g-brd-gray-light-v4 g-color-primary rounded-circle">
+                      <i class="icon-finance-211 u-line-icon-pro"></i>
+                    </span>
+                  </div>
+                  <h2 class="h5 g-color-gray-dark-v2 g-font-weight-600">Marketing &amp; Consulting</h2>
+                  <p class="g-font-size-13">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                </header>
+                <!-- End Services - Header -->
+
+                <!-- Services - List -->
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex align-items-center g-px-35 g-py-15">
+                    <svg class="g-fill-primary" width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#72c02c"></path>
+                    </svg>
+                    <span class="g-color-text ml-3">24/7 support</span>
+                  </li>
+                  <li class="d-flex align-items-center u-shadow-v19 g-bg-secondary g-px-35 g-py-15">
+                    <svg class="g-fill-primary" width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#72c02c"></path>
+                    </svg>
+                    <span class="g-color-text ml-3">1610+ elements</span>
+                  </li>
+                  <li class="d-flex align-items-center g-px-35 g-py-15">
+                    <svg class="g-fill-primary" width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#72c02c"></path>
+                    </svg>
+                    <span class="g-color-text ml-3">600+ pages</span>
+                  </li>
+                  <li class="d-flex align-items-center u-shadow-v19 g-bg-secondary g-px-35 g-py-15">
+                    <svg class="g-fill-primary" width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#72c02c"></path>
+                    </svg>
+                    <span class="g-color-text ml-3">Unlimited domain or user</span>
+                  </li>
+                </ul>
+                <!-- End Services - List -->
+              </div>
+              <!-- End Services -->
+            </div>
+
+            <div class="col-md-6 col-lg-4 g-mb-50 g-mb-0--lg">
+              <!-- Services -->
+              <div class="u-shadow-v29 g-bg-primary text-left text-md-center rounded g-py-40">
+                <!-- Services - Header -->
+                <header class="text-center g-px-35 mb-5">
+                  <div class="g-mb-25">
+                    <span class="u-icon-v3 u-icon-size--md g-color-text g-bg-secondary rounded-circle">
+                      <i class="icon-finance-257 u-line-icon-pro"></i>
+                    </span>
+                  </div>
+                  <h2 class="h5 g-color-white g-font-weight-600">SEO &amp; Advertising</h2>
+                  <p class="g-color-white-opacity-0_9 g-font-size-13">Now that we've aligned the details, it's time to get things organized.</p>
+                </header>
+                <!-- End Services - Header -->
+
+                <!-- Services - List -->
+                <ul class="list-unstyled g-color-white-opacity-0_8 mb-0">
+                  <li class="d-flex align-items-center g-px-35 g-py-15">
+                    <svg width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#fff"></path>
+                    </svg>
+                    <span class="ml-3">24/7 support</span>
+                  </li>
+                  <li class="d-flex align-items-center u-shadow-v19 g-bg-white-opacity-0_1 g-px-35 g-py-15">
+                    <svg width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#fff"></path>
+                    </svg>
+                    <span class="ml-3">1610+ elements</span>
+                  </li>
+                  <li class="d-flex align-items-center g-px-35 g-py-15">
+                    <svg width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#fff"></path>
+                    </svg>
+                    <span class="ml-3">600+ pages</span>
+                  </li>
+                  <li class="d-flex align-items-center u-shadow-v19 g-bg-white-opacity-0_1 g-px-35 g-py-15">
+                    <svg width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#fff"></path>
+                    </svg>
+                    <span class="ml-3">Unlimited domain or user</span>
+                  </li>
+                </ul>
+                <!-- End Services - List -->
+              </div>
+              <!-- End Services -->
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <!-- Services -->
+              <div class="u-shadow-v28 g-bg-white text-left text-md-center rounded g-py-40">
+                <!-- Services - Header -->
+                <header class="text-center g-px-35 mb-5">
+                  <div class="g-mb-25">
+                    <span class="u-icon-v2 u-icon-size--md g-brd-gray-light-v4 g-color-primary rounded-circle">
+                      <i class="icon-communication-164 u-line-icon-pro"></i>
+                    </span>
+                  </div>
+                  <h2 class="h5 g-color-gray-dark-v2 g-font-weight-600">Design &amp; Development</h2>
+                  <p class="g-font-size-13">This is where we begin to visualize your sketches and make them into beautiful pixels.</p>
+                </header>
+                <!-- End Services - Header -->
+
+                <!-- Services - List -->
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex align-items-center g-px-35 g-py-15">
+                    <svg class="g-fill-primary" width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#72c02c"></path>
+                    </svg>
+                    <span class="g-color-text ml-3">24/7 support</span>
+                  </li>
+                  <li class="d-flex align-items-center u-shadow-v19 g-bg-secondary g-px-35 g-py-15">
+                    <svg class="g-fill-primary" width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#72c02c"></path>
+                    </svg>
+                    <span class="g-color-text ml-3">1610+ elements</span>
+                  </li>
+                  <li class="d-flex align-items-center g-px-35 g-py-15">
+                    <svg class="g-fill-primary" width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#72c02c"></path>
+                    </svg>
+                    <span class="g-color-text ml-3">600+ pages</span>
+                  </li>
+                  <li class="d-flex align-items-center u-shadow-v19 g-bg-secondary g-px-35 g-py-15">
+                    <svg class="g-fill-primary" width="13" height="13" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#72c02c"></path>
+                    </svg>
+                    <span class="g-color-text ml-3">Unlimited domain or user</span>
+                  </li>
+                </ul>
+                <!-- End Services - List -->
+              </div>
+              <!-- End Services -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Our Services -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Our Recent Projects -->
+      <section class="g-py-100">
+        <div class="container">
+          <header class="g-mb-50">
+            <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
+              <h2 class="h4 u-heading-v2__title g-color-gray-dark-v2 g-font-weight-600 text-uppercase">Our Recent Projects</h2>
+            </div>
+            <p class="g-font-size-16">Included Over 2000+ UI Components tvero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas moles.</p>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 g-mb-30 g-mb-0--lg">
+              <article class="u-block-hover u-shadow-v21 rounded">
+                <figure class="u-bg-overlay g-bg-black-opacity-0_4--after">
+                  <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img17.jpg" alt="Image description">
+                </figure>
+
+                <header class="u-bg-overlay__inner g-pos-abs g-top-30 g-right-30 g-left-30 g-color-white">
+                  <h3 class="h4">
+                    <a class="g-color-white" href="#!">Unify Template</a>
+                  </h3>
+                  <p>Consectetur adipiscing elitut eleifend nisl</p>
+                </header>
+
+                <ul class="list-inline u-bg-overlay__inner g-pos-abs g-bottom-10 g-left-30 g-opacity-0_8">
+                  <li class="list-inline-item">
+                    <div class="g-brd-around g-brd-2 g-brd-white rounded-circle">
+                      <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img12.jpg" alt="Image description">
+                    </div>
+                  </li>
+                  <li class="list-inline-item g-ml-minus-20">
+                    <div class="g-brd-around g-brd-2 g-brd-white rounded-circle">
+                      <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image description">
+                    </div>
+                  </li>
+                  <li class="list-inline-item g-ml-minus-20">
+                    <div class="g-brd-around g-brd-2 g-brd-white rounded-circle">
+                      <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image description">
+                    </div>
+                  </li>
+                  <li class="list-inline-item g-font-weight-600 g-color-white">+21</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 g-mb-30 g-mb-0--lg">
+              <article class="u-block-hover u-shadow-v21 rounded">
+                <figure class="u-bg-overlay g-bg-black-opacity-0_4--after">
+                  <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img13.jpg" alt="Image description">
+                </figure>
+
+                <header class="u-bg-overlay__inner g-pos-abs g-top-30 g-right-30 g-left-30 g-color-white">
+                  <h3 class="h4">
+                    <a class="g-color-white" href="#!">Htmlstream Freebies</a>
+                  </h3>
+                  <p>Consectetur adipiscing elitut eleifend nisl</p>
+                </header>
+
+                <ul class="list-inline u-bg-overlay__inner g-pos-abs g-bottom-10 g-left-30 g-opacity-0_8">
+                  <li class="list-inline-item">
+                    <div class="g-brd-around g-brd-2 g-brd-white rounded-circle">
+                      <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image description">
+                    </div>
+                  </li>
+                  <li class="list-inline-item g-ml-minus-20">
+                    <div class="g-brd-around g-brd-2 g-brd-white rounded-circle">
+                      <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image description">
+                    </div>
+                  </li>
+                  <li class="list-inline-item g-ml-minus-20">
+                    <div class="g-brd-around g-brd-2 g-brd-white rounded-circle">
+                      <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image description">
+                    </div>
+                  </li>
+                  <li class="list-inline-item g-font-weight-600 g-color-white">+42</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <article class="u-block-hover u-shadow-v21 rounded">
+                <figure class="u-bg-overlay g-bg-black-opacity-0_4--after">
+                  <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ root }}assets/img-temp/400x270/img3.jpg" alt="Image description">
+                </figure>
+
+                <header class="u-bg-overlay__inner g-pos-abs g-top-30 g-right-30 g-left-30 g-color-white">
+                  <h3 class="h4">
+                    <a class="g-color-white" href="#!">Pixeel Ltd.</a>
+                  </h3>
+                  <p>Consectetur adipiscing elitut eleifend nisl</p>
+                </header>
+
+                <ul class="list-inline u-bg-overlay__inner g-pos-abs g-bottom-10 g-left-30 g-opacity-0_8">
+                  <li class="list-inline-item">
+                    <div class="g-brd-around g-brd-2 g-brd-white rounded-circle">
+                      <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image description">
+                    </div>
+                  </li>
+                  <li class="list-inline-item g-ml-minus-20">
+                    <div class="g-brd-around g-brd-2 g-brd-white rounded-circle">
+                      <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image description">
+                    </div>
+                  </li>
+                  <li class="list-inline-item g-ml-minus-20">
+                    <div class="g-brd-around g-brd-2 g-brd-white rounded-circle">
+                      <img class="g-width-30 g-height-30 rounded-circle" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image description">
+                    </div>
+                  </li>
+                  <li class="list-inline-item g-font-weight-600 g-color-white">+15</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Our Recent Projects -->
+
+      <!-- Most Quality Solution -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-img-hero g-bg-white-opacity-0_7--after" style="height: 140%; background-image: url({{ root }}assets/img-temp/1920x1080/img7.jpg);"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container u-bg-overlay__inner g-py-150--md g-py-80">
+          <div class="row">
+            <!-- Section Content -->
+            <div class="col-lg-6 order-2 order-sm-1 g-mb-0 g-mb-50--sm g-mb-0--lg">
+              <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                <h2 class="h4 u-heading-v2__title g-color-gray-dark-v2 g-font-weight-600 text-uppercase">Most Quality Solution</h2>
+              </div>
+              <p class="g-font-size-16 g-line-height-2 g-mb-30">Morbi a suscipit ipsum. Suspendisse mollis libero ante. Pellentesque finibus convallis nulla vel placerat. Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl. Ullam elementum tincidunt massa, a pulvinar leo ultricies ut.</p>
+
+              <div class="g-mb-30">
+                <img class="u-block-hover__main--grayscale g-width-100 g-opacity-0_6 g-mr-40 g-mb-10 g-mb-0--sm" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image description">
+                <img class="u-block-hover__main--grayscale g-width-100 g-opacity-0_6 g-mr-40 g-mb-10 g-mb-0--sm" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image description">
+                <img class="u-block-hover__main--grayscale g-width-100 g-opacity-0_6" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image description">
+              </div>
+
+              <a href="#!" class="btn btn-xl u-btn-primary text-uppercase g-font-weight-600 g-font-size-12 rounded g-mr-15 g-mb-15 g-mb-0--sm">Buy Full Version</a>
+              <small class="d-block d-sm-inline-block g-color-gray-dark-v5 g-font-size-12">*Exclusive item on Wrapboostrap Marketpalce</small>
+            </div>
+            <!-- End Section Content -->
+
+            <!-- Video Icon -->
+            <div class="col-lg-6 order-1 order-sm-2 align-self-center text-center g-pos-rel g-mb-40 g-mb-0--sm">
+              <a class="js-fancybox d-block g-pos-rel" href="javascript:;"
+                 data-src="//vimeo.com/167434033"
+                 data-speed="350"
+                 data-caption="Lightbox Gallery">
+                <span class="u-icon-v3 u-icon-size--xl u-block-hover--scale u-shadow-v24 g-bg-white g-color-gray-dark-v1 g-color-primary--hover g-font-size-20 rounded-circle g-cursor-pointer g-mb-10">
+                  <i class="fa fa-play g-pos-rel g-left-2"></i>
+                </span>
+              </a>
+              <p class="g-color-gray-dark-v5">Watch our 2 min video.</p>
+            </div>
+            <!-- End Video Icon -->
+          </div>
+        </div>
+      </section>
+      <!-- End Most Quality Solution -->
+
+      <!-- Counters -->
+      <section class="g-brd-top g-brd-bottom g-brd-gray-light-v4 g-pt-50">
+        <div class="container">
+          <div class="row text-center text-uppercase">
+            <div class="col-lg-3 col-sm-6 g-brd-right g-brd-gray-light-v4 g-mb-50">
+              <div class="js-counter g-color-gray-dark-v2 g-font-size-35 g-font-weight-300 g-mb-7">52147</div>
+              <h4 class="h6 g-color-gray-dark-v5">Code Lines</h4>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 g-brd-right--lg g-brd-gray-light-v4 g-mb-50">
+              <div class="js-counter g-color-gray-dark-v2 g-font-size-35 g-font-weight-300 g-mb-7">24583</div>
+              <h4 class="h6 g-color-gray-dark-v5">Projects</h4>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 g-brd-right g-brd-gray-light-v4 g-mb-50">
+              <div class="js-counter g-color-gray-dark-v2 g-font-size-35 g-font-weight-300 g-mb-7">7348</div>
+              <h4 class="h6 g-color-gray-dark-v5">Working Hours</h4>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 g-mb-50">
+              <div class="js-counter g-color-gray-dark-v2 g-font-size-35 g-font-weight-300 g-mb-7">87904</div>
+              <h4 class="h6 g-color-gray-dark-v5">Job Offers</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counters -->
+
+      <!-- Latest News -->
+      <section class="g-py-100">
+        <div class="container">
+          <header class="text-center g-width-60x--md mx-auto g-mb-50">
+            <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
+              <h2 class="h4 u-heading-v2__title g-color-gray-dark-v2 g-font-weight-600 text-uppercase">Our Latest News</h2>
+            </div>
+            <p class="g-font-size-16">Unify creative technology company providing key digital services. Keep in touch with our support team to get the latest updates from us.</p>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-4 g-mb-30">
+              <!-- Article -->
+              <article class="u-shadow-v21 g-bg-white rounded">
+                <div class="g-pa-30">
+                  <h3 class="g-font-weight-300 g-mb-15">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Focused on helping our clients to build a great business</a>
+                  </h3>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                </div>
+
+                <div class="media g-font-size-12 g-brd-top g-brd-gray-light-v4 g-pa-15-30">
+                  <img class="d-flex g-width-20 g-height-20 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                  <div class="media-body align-self-center">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Kathy Reyes</a>
+                  </div>
+
+                  <div class="align-self-center">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                      <i class="icon-bubbles align-middle g-mr-3"></i> 24
+                    </a>
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                      <i class="icon-eye align-middle g-mr-3"></i> 108
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <!-- End Article -->
+            </div>
+
+            <div class="col-lg-4 g-mb-30">
+              <!-- Article -->
+              <article class="u-shadow-v21 g-bg-white rounded">
+                <div class="g-pa-30">
+                  <h3 class="g-font-weight-300 g-mb-15">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">We build your website to realise your vision, project and more</a>
+                  </h3>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                </div>
+
+                <div class="media g-font-size-12 g-brd-top g-brd-gray-light-v4 g-pa-15-30">
+                  <img class="d-flex g-width-20 g-height-20 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                  <div class="media-body align-self-center">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">William Sh.</a>
+                  </div>
+
+                  <div class="align-self-center">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                      <i class="icon-bubbles align-middle g-mr-3"></i> 16
+                    </a>
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                      <i class="icon-eye align-middle g-mr-3"></i> 124
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <!-- End Article -->
+            </div>
+
+            <div class="col-lg-4 g-mb-30">
+              <!-- Article -->
+              <article class="u-shadow-v21 g-bg-white rounded">
+                <div class="g-pa-30">
+                  <h3 class="g-font-weight-300 g-mb-15">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Praesentium to website realise imperdiet demore elementum</a>
+                  </h3>
+                  <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh.</p>
+                </div>
+
+                <div class="media g-font-size-12 g-brd-top g-brd-gray-light-v4 g-pa-15-30">
+                  <img class="d-flex g-width-20 g-height-20 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                  <div class="media-body align-self-center">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">James Doe</a>
+                  </div>
+
+                  <div class="align-self-center">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                      <i class="icon-bubbles align-middle g-mr-3"></i> 41
+                    </a>
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                      <i class="icon-eye align-middle g-mr-3"></i> 219
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <!-- End Article -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Latest News -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+    <script src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="{{ root }}assets/vendor/typedjs/typed.min.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.popup.js"></script>
+    <script src="{{ root }}assets/js/components/text-animation/hs.text-slideshow.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of carousel
+        $.HSCore.components.HSCarousel.init('.js-carousel');
+
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of popups
+        $.HSCore.components.HSPopup.init('.js-fancybox');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+
+        // initialization of text animation (typing)
+        $(".u-text-animation.u-text-animation--typing").typed({
+          strings: [
+            "an awesome template",
+            "perfect template",
+            "just like a boss"
+          ],
+          typeSpeed: 60,
+          loop: true,
+          backDelay: 1500
+        });
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

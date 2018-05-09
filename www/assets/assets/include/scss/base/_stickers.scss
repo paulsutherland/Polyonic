@@ -1,0 +1,18 @@
+/*------------------------------------
+  Stickers
+------------------------------------*/
+
+%u-sticker {
+  position: absolute;
+}
+
+/* Sticker Position
+------------------------------------*/
+.u-sticker {
+  @extend %u-sticker;
+
+  &-center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

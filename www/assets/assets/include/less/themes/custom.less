@@ -1,0 +1,1704 @@
+.u-header__section--light .navbar-nav:not([class*="u-main-nav-v"]) .open > .nav-link, .u-header__section--light .navbar-nav:not([class*="u-main-nav-v"]) .active > .nav-link, .u-header__section--light .navbar-nav:not([class*="u-main-nav-v"]) .nav-link.open, .u-header__section--light .navbar-nav:not([class*="u-main-nav-v"]) .nav-link.active, .u-header__section--light--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .open > .nav-link, .u-header__section--light--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .active > .nav-link, .u-header__section--light--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .nav-link.open, .u-header__section--light--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .nav-link.active,
+.u-secondary-navigation .active a {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-block-hover:hover .g-color-primary--hover,
+.g-color-primary--hover:hover {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+/*------------------------------------
+  Custom BG
+------------------------------------*/
+
+[class*="g-bgi-v"] {
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.g-bgi-v1,
+.g-bgi-v1 .u-outer-spaces-helper::after {
+  background-image: url(../../../img-temp/1920x1080/img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.g-bgi-v2,
+.g-bgi-v2 .u-outer-spaces-helper::after{
+  background-image: url(../../../img-temp/1920x1080/img2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.g-bgi-v3,
+.g-bgi-v3 .u-outer-spaces-helper::after {
+  background-image: url(../../../img-temp/1920x1080/img3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.g-bgi-v4,
+.g-bgi-v4 .u-outer-spaces-helper::after {
+  background-image: url(../../../img-temp/1920x1080/img4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.g-bgi-v5,
+.g-bgi-v5 .u-outer-spaces-helper::after {
+  background-image: url(../../../img-temp/1920x1080/img5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.g-bgi-v6,
+.g-bgi-v6 .u-outer-spaces-helper::after {
+  background-image: url(../../../img-temp/1920x1080/img6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.g-bgi-v7,
+.g-bgi-v7 .u-outer-spaces-helper::after {
+  background-image: url(../../../img-temp/1920x1080/img7.jpg);
+}
+
+.g-bgi-v8,
+.g-bgi-v8 .u-outer-spaces-helper::after {
+  background-image: url(../../../img/bg/pattern/bricks-white.png);
+}
+
+.g-bgi-v9,
+.g-bgi-v9 .u-outer-spaces-helper::after {
+  background-image: url(../../../img/bg/pattern/math-dark.png);
+}
+
+.g-bgi-v10,
+.g-bgi-v10 .u-outer-spaces-helper::after {
+  background-image: url(../../../img/bg/pattern/figures-light.png);
+}
+
+.g-bgi-v11,
+.g-bgi-v11 .u-outer-spaces-helper::after {
+  background-image: url(../../../img/bg/pattern/footer-lodyas.png);
+}
+
+.g-bgi-v12,
+.g-bgi-v12 .u-outer-spaces-helper::after {
+  background-image: url(../../../img/bg/pattern/doodles.png);
+}
+
+.g-bgi-v13,
+.g-bgi-v13 .u-outer-spaces-helper::after {
+  background-image: url(../../../img/bg/pattern/darkness.png);
+}
+
+.g-bgi-v14,
+.g-bgi-v14 .u-outer-spaces-helper::after {
+  background-image: url(../../../img/bg/pattern/memphis-colorful.png);
+}
+
+/*------------------------------------
+  Boxed layout
+------------------------------------*/
+
+.g-layout-boxed,
+.g-layout-semiboxed {
+  background-color: #f7f7f7;
+}
+
+.u-outer-space-v1 .g-layout-boxed::after,
+.u-outer-space-v2 .g-layout-boxed::after,
+.u-outer-space-v1 .g-layout-semiboxed::after,
+.u-outer-space-v2 .g-layout-semiboxed::after {
+  border-bottom-color: #f7f7f7;
+}
+
+.g-layout-boxed main,
+.g-layout-semiboxed main {
+  position: relative;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+
+@media (min-width: 1200px) {
+  .g-layout-boxed main {
+    width: 1140px;
+  }
+}
+
+// Semiboxed layout
+@media (min-width: 1400px) {
+  .g-layout-semiboxed main {
+    width: 1340px;
+  }
+}
+
+// Outer space (20px)
+@media (min-width: 768px) {
+  .u-outer-space-v1 {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .u-outer-space-v1 body {
+    height: ~"calc(100% - 40px)";
+    min-height: ~"calc(100% - 40px)";
+  }
+}
+
+// Outer space (40px)
+@media (min-width: 768px) {
+  .u-outer-space-v2 {
+    margin: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .u-outer-space-v2 body {
+    height: ~"calc(100% - 80px)";
+    min-height: ~"calc(100% - 80px)";
+  }
+}
+
+/*------------------------------------
+  Dark Theme
+------------------------------------*/
+
+.g-dark-theme {
+  background-color: #000;
+  color: #fff;
+}
+
+.g-dark-theme main {
+  background-color: #222;
+}
+
+.g-dark-theme .u-header__section {
+  background-color: #222;
+}
+
+.g-dark-theme .u-header__section:not([class*="g-bg-white"]) .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.g-dark-theme .u-header__section:not([class*="g-bg-white"]) .navbar-nav .active > .nav-link {
+  color: rgba(255, 255, 255, .7);
+}
+
+.g-dark-theme .u-btn-inset::before {
+  border-color: #222;
+}
+
+/*------------------------------------
+  Fonts
+------------------------------------*/
+
+body {
+  font-family: @contentFont;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: @headingFont;
+}
+
+a {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  color: darken(@customColor, 5%);
+}
+
+/*------------------------------------
+  Bootstrap
+------------------------------------*/
+
+.page-link,
+.page-link:hover,
+.page-link:focus,
+.btn-outline-primary:disabled,
+.btn-outline-primary.disabled {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.page-item.active .page-link,
+.page-item.active .page-link:focus,
+.page-item.active .page-link:hover,
+.btn-primary,
+.btn-primary:disabled,
+.btn-primary.disabled {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.btn-outline-primary {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.show > .btn-outline-primary.dropdown-toggle {
+  background-color: darken(@customColor, 2%);
+  border-color: darken(@customColor, 2%);
+}
+
+.nav-pills .nav-item.show .nav-link,
+.nav-pills .nav-link.active,
+.progress-bar {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: darken(@customColor, 2%);
+  border-color: darken(@customColor, 2%);
+}
+
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+  box-shadow: 0 0 0 2px rgba(red(@customColor), green(@customColor), blue(@customColor), .5);
+}
+
+/*------------------------------------
+  Background colors
+------------------------------------*/
+
+.g-bg-primary,
+.g-bg-primary--hover:hover,
+.g-parent:hover .g-bg-primary--parent-hover,
+.g-bg-primary--active.active,
+.active .g-bg-primary--active,
+.g-parent.active .g-bg-primary--parent-active {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.g-bg-primary--before::before,
+.g-bg-primary--after::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.g-bg-primary-opacity-0_1 {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .1) !important;
+}
+
+.g-bg-primary-opacity-0_2,
+.g-bg-primary-opacity-0_2--hover:hover,
+.g-bg-primary-opacity-0_2--hover--after:hover::after,
+.g-bg-primary-opacity-0_2--before::before,
+.g-bg-primary-opacity-0_2--after::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .2) !important;
+}
+
+.active .g-bg-primary-opacity-0_2--active {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .2) !important;
+}
+
+.g-bg-primary-opacity-0_4,
+.g-bg-primary-opacity-0_4--hover:hover,
+.g-bg-primary-opacity-0_4--hover--after:hover::after,
+.g-bg-primary-opacity-0_4--after::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .4) !important;
+}
+
+.g-bg-primary-opacity-0_6,
+.g-bg-primary-opacity-0_6--hover:hover,
+.g-bg-primary-opacity-0_6--hover--after:hover::after,
+.g-bg-primary-opacity-0_6--after::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .6) !important;
+}
+
+.g-bg-primary-opacity-0_8,
+.g-bg-primary-opacity-0_8--hover:hover,
+.g-bg-primary-opacity-0_8--hover--after:hover::after,
+.g-bg-primary-opacity-0_8--before::after,
+.g-bg-primary-opacity-0_8--after::after,
+.g-bg-primary-opacity-0_8--before--hover:hover::after,
+.g-bg-primary-opacity-0_8--after--hover:hover::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .8) !important;
+}
+
+.g-bg-primary-opacity-0_9,
+.g-bg-primary-opacity-0_9--hover:hover,
+.g-bg-primary-opacity-0_9--hover--after:hover::after,
+.g-bg-primary-opacity-0_9--before::after,
+.g-bg-primary-opacity-0_9--after::after,
+.g-bg-primary-opacity-0_9--before--hover:hover::after,
+.g-bg-primary-opacity-0_9--after--hover:hover::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .9) !important;
+}
+
+.g-bg-primary-dark-v1 {
+  background-color: darken(rgba(red(@customColor), green(@customColor), blue(@customColor), 1), 2%) !important;
+}
+
+.g-bg-primary-dark-v2 {
+  background-color: darken(rgba(red(@customColor), green(@customColor), blue(@customColor), 1), 5%) !important;
+}
+
+.g-bg-primary-dark-v3 {
+  background-color: darken(rgba(red(@customColor), green(@customColor), blue(@customColor), 1), 10%) !important;
+}
+
+/*.g-bg-primary-gradient-opacity-v1,
+.g-bg-primary-gradient-opacity-v1--after::after {
+  background: linear-gradient(to bottom, rgba(red(@customColor), green(@customColor), blue(@customColor), .5), rgba(red(@customColor), green(@customColor), blue(@customColor), 1));
+}*/
+
+/*------------------------------------
+  Border colors
+------------------------------------*/
+
+.g-brd-primary,
+.g-brd-primary--before::before,
+.g-brd-primary--before--active.active::before,
+.slick-active .g-brd-primary--before--active::before,
+.g-brd-primary--hover:hover,
+.g-brd-primary--active.active,
+.g-brd-primary--active.cbp-filter-item-active,
+.slick-active .g-brd-primary--active,
+*:hover > .g-brd-primary--hover-parent {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.g-brd-primary-opacity-0_3,
+.g-brd-primary-opacity-0_3--hover:hover,
+.g-brd-primary-opacity-0_3--active.active,
+.g-brd-primary-opacity-0_3--active.cbp-filter-item-active,
+*:hover > .g-brd-primary-opacity-0_3--hover-parent {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .3) !important;
+}
+
+.g-brd-primary-top,
+.g-brd-primary-top--before::before,
+.g-brd-primary-top--hover:hover,
+.g-brd-primary-top--hover:hover::after,
+.g-brd-primary-top--active.active,
+.g-brd-primary-top--active.active::after {
+  border-top-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.g-brd-primary-bottom,
+.g-brd-primary-bottom--before::before,
+.g-brd-primary-bottom--hover:hover,
+.g-brd-primary-bottom--hover:hover::after,
+.g-brd-primary-bottom--active.active,
+.g-brd-primary-bottom--active.active::after {
+  border-bottom-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.g-brd-primary-left,
+.g-brd-primary-left--before::before {
+  border-left-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.g-brd-primary-right,
+.g-brd-primary-right--before::before {
+  border-right-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.g-brd-primary-opacity-0_3-top {
+  border-top-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .3) !important;
+}
+
+.g-brd-primary-opacity-0_3-bottom {
+  border-bottom-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .3) !important;
+}
+
+.g-brd-primary-opacity-0_3-left {
+  border-left-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .3) !important;
+}
+
+.g-brd-primary-opacity-0_3-right {
+  border-right-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .3) !important;
+}
+
+.g-brd-primary-dark-dark-v1,
+.g-brd-primary-dark-dark-v1--hover:hover,
+.g-brd-primary-dark-dark-v1--active.active,
+.g-brd-primary-dark-dark-v1--active.cbp-filter-item-active,
+*:hover > .g-brd-primary-dark-dark-v1--hover-parent {
+  border-color: darken(@customColor, 2%) !important;
+}
+
+.g-brd-primary-dark-dark-v2,
+.g-brd-primary-dark-dark-v2--hover:hover,
+.g-brd-primary-dark-dark-v2--active.active,
+.g-brd-primary-dark-dark-v2--active.cbp-filter-item-active,
+*:hover > .g-brd-primary-dark-dark-v2--hover-parent {
+  border-color: darken(@customColor, 5%) !important;
+}
+
+.g-brd-primary-dark-dark-v3,
+.g-brd-primary-dark-dark-v3--hover:hover,
+.g-brd-primary-dark-dark-v3--active.active,
+.g-brd-primary-dark-dark-v3--active.cbp-filter-item-active,
+*:hover > .g-brd-primary-dark-dark-v3--hover-parent {
+  border-color: darken(@customColor, 10%) !important;
+}
+
+.g-brd-primary-dark-dark-v1-top {
+  border-top-color: darken(@customColor, 2%) !important;
+}
+
+.g-brd-primary-dark-dark-v1-bottom {
+  border-bottom-color: darken(@customColor, 2%) !important;
+}
+
+.g-brd-primary-dark-dark-v1-left {
+  border-left-color: darken(@customColor, 2%) !important;
+}
+
+.g-brd-primary-dark-dark-v1-right {
+  border-right-color: darken(@customColor, 2%) !important;
+}
+
+.g-brd-primary-dark-dark-v2-top {
+  border-top-color: darken(@customColor, 5%) !important;
+}
+
+.g-brd-primary-dark-dark-v2-bottom {
+  border-bottom-color: darken(@customColor, 5%) !important;
+}
+
+.g-brd-primary-dark-dark-v2-left {
+  border-left-color: darken(@customColor, 5%) !important;
+}
+
+.g-brd-primary-dark-dark-v2-right {
+  border-right-color: darken(@customColor, 5%) !important;
+}
+
+.g-brd-primary-dark-dark-v3-top {
+  border-top-color: darken(@customColor, 10%) !important;
+}
+
+.g-brd-primary-dark-dark-v3-bottom {
+  border-bottom-color: darken(@customColor, 10%) !important;
+}
+
+.g-brd-primary-dark-dark-v3-left {
+  border-left-color: darken(@customColor, 10%) !important;
+}
+
+.g-brd-primary-dark-dark-v3-right {
+  border-right-color: darken(@customColor, 10%) !important;
+}
+
+/*------------------------------------
+  Colors
+------------------------------------*/
+
+.g-color-primary,
+.g-color-primary--hover:hover,
+.g-color-primary--active.cbp-filter-item-active {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.g-color-primary-opacity-0_3 {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), .3) !important;
+}
+
+.g-color-primary-opacity-0_4 {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), .4) !important;
+}
+
+.g-color-primary--before::before,
+.g-color-primary--after::after {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Box-shadows
+------------------------------------*/
+
+.u-shadow-v13 {
+  box-shadow: inset 2px 2px 2px 0 rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Fill colors
+------------------------------------*/
+
+.g-fill-primary,
+.g-fill-primary path,
+.g-fill-primary polygon,
+.g-fill-primary--hover:hover path,
+.g-fill-primary--hover:hover polygon,
+*:hover > * > .g-fill-primary--hover-parent svg path,
+*:hover > * > .g-fill-primary--hover-parent svg polygon {
+  fill: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+/*------------------------------------
+  Highlight Color
+------------------------------------*/
+
+::-moz-selection {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+::selection {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.g-bg-primary ::-moz-selection {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.g-bg-primary ::selection {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Buttons
+------------------------------------*/
+
+.u-btn-primary {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-btn-primary:hover,
+.u-btn-primary.active,
+.u-btn-primary.cbp-filter-item-active {
+  border-color: lighten(@customColor, 10%);
+  background-color: lighten(@customColor, 10%);
+}
+
+.u-btn-primary.u-btn-hover-v1-1::after,
+.u-btn-primary.u-btn-hover-v1-1:hover::after,
+.u-btn-primary.u-btn-hover-v1-2::after,
+.u-btn-primary.u-btn-hover-v1-2:hover::after,
+.u-btn-primary.u-btn-hover-v1-3::after,
+.u-btn-primary.u-btn-hover-v1-3:hover::after,
+.u-btn-primary.u-btn-hover-v1-4::after,
+.u-btn-primary.u-btn-hover-v1-4:hover::after,
+.u-btn-primary.u-btn-hover-v2-1::after,
+.u-btn-primary.u-btn-hover-v2-1:hover::after,
+.u-btn-primary.u-btn-hover-v2-2::after,
+.u-btn-primary.u-btn-hover-v2-2:hover::after {
+  background-color: lighten(@customColor, 5%);
+}
+
+.u-btn-primary.u-btn-hover-v1-1:hover,
+.u-btn-primary.u-btn-hover-v1-2:hover,
+.u-btn-primary.u-btn-hover-v1-3:hover,
+.u-btn-primary.u-btn-hover-v1-4:hover,
+.u-btn-primary.u-btn-hover-v2-1:hover,
+.u-btn-primary.u-btn-hover-v2-2:hover {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-btn-outline-primary {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-btn-outline-primary:hover {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-btn-outline-primary.u-btn-hover-v1-1::after,
+.u-btn-outline-primary.u-btn-hover-v1-1:hover::after,
+.u-btn-outline-primary.u-btn-hover-v1-2::after,
+.u-btn-outline-primary.u-btn-hover-v1-2:hover::after,
+.u-btn-outline-primary.u-btn-hover-v1-3::after,
+.u-btn-outline-primary.u-btn-hover-v1-3:hover::after,
+.u-btn-outline-primary.u-btn-hover-v1-4::after,
+.u-btn-outline-primary.u-btn-hover-v1-4:hover::after,
+.u-btn-outline-primary.u-btn-hover-v2-1::after,
+.u-btn-outline-primary.u-btn-hover-v2-1:hover::after,
+.u-btn-outline-primary.u-btn-hover-v2-2::after,
+.u-btn-outline-primary.u-btn-hover-v2-2:hover::after,
+.u-btn-outline-primary.u-btn-hover-v3-1::after,
+.u-btn-outline-primary.u-btn-hover-v3-1:hover::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .95);
+}
+
+/*------------------------------------
+  Checkboxes & Radio Buttons
+------------------------------------*/
+
+.u-check input[type="checkbox"]:checked + .u-check-icon-font i,
+.u-check input[type="radio"]:checked + .u-check-icon-font i,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-font i,
+.u-check input[type="radio"]:checked + * .u-check-icon-font i {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-check input[type="checkbox"]:checked + .u-check-icon-checkbox-v1,
+.u-check input[type="radio"]:checked + .u-check-icon-checkbox-v1,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-checkbox-v1,
+.u-check input[type="radio"]:checked + * .u-check-icon-checkbox-v1,
+.u-check input[type="checkbox"]:checked + .u-check-icon-radio-v1,
+.u-check input[type="radio"]:checked + .u-check-icon-radio-v1,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-radio-v1,
+.u-check input[type="radio"]:checked + * .u-check-icon-radio-v1,
+.u-check input[type="checkbox"]:checked + .u-check-icon-checkbox-v7,
+.u-check input[type="radio"]:checked + .u-check-icon-checkbox-v7,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-checkbox-v7,
+.u-check input[type="radio"]:checked + * .u-check-icon-checkbox-v7,
+.u-check input[type="checkbox"]:checked + .u-check-icon-radio-v7,
+.u-check input[type="radio"]:checked + .u-check-icon-radio-v7,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-radio-v7,
+.u-check input[type="radio"]:checked + * .u-check-icon-radio-v7 {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-check-icon-checkbox-v2,
+.u-check-icon-radio-v2,
+.u-check-icon-checkbox-v3,
+.u-check-icon-radio-v3 {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-check input[type="checkbox"]:checked + .u-check-icon-checkbox-v4,
+.u-check input[type="radio"]:checked + .u-check-icon-checkbox-v4,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-checkbox-v4,
+.u-check input[type="radio"]:checked + * .u-check-icon-checkbox-v4,
+.u-check input[type="checkbox"]:checked + .u-check-icon-radio-v4,
+.u-check input[type="radio"]:checked + .u-check-icon-radio-v4,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-radio-v4,
+.u-check input[type="radio"]:checked + * .u-check-icon-radio-v4,
+.u-check input[type="checkbox"]:checked + .u-check-icon-checkbox-v8,
+.u-check input[type="radio"]:checked + .u-check-icon-checkbox-v8,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-checkbox-v8,
+.u-check input[type="radio"]:checked + * .u-check-icon-checkbox-v8,
+.u-check input[type="checkbox"]:checked + .u-check-icon-radio-v8,
+.u-check input[type="radio"]:checked + .u-check-icon-radio-v8,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-radio-v8,
+.u-check input[type="radio"]:checked + * .u-check-icon-radio-v8 {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-check input[type="checkbox"]:checked + .u-check-icon-checkbox-v5 i,
+.u-check input[type="radio"]:checked + .u-check-icon-checkbox-v5 i,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-checkbox-v5 i,
+.u-check input[type="radio"]:checked + * .u-check-icon-checkbox-v5 i,
+.u-check input[type="checkbox"]:checked + .u-check-icon-radio-v5 i,
+.u-check input[type="radio"]:checked + .u-check-icon-radio-v5 i,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-radio-v5 i,
+.u-check input[type="radio"]:checked + * .u-check-icon-radio-v5 i {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-check input[type="checkbox"]:checked + .u-check-icon-checkbox-v6 i,
+.u-check input[type="radio"]:checked + .u-check-icon-checkbox-v6 i,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-checkbox-v6 i,
+.u-check input[type="radio"]:checked + * .u-check-icon-checkbox-v6 i,
+.u-check input[type="checkbox"]:checked + .u-check-icon-radio-v6 i,
+.u-check input[type="radio"]:checked + .u-check-icon-radio-v6 i,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-radio-v6 i,
+.u-check input[type="radio"]:checked + * .u-check-icon-radio-v6 i {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-check input[type="checkbox"]:checked + .u-check-icon-checkbox-v8 i::after,
+.u-check input[type="radio"]:checked + .u-check-icon-checkbox-v8 i::after,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-checkbox-v8 i::after,
+.u-check input[type="radio"]:checked + * .u-check-icon-checkbox-v8 i::after,
+.u-check input[type="checkbox"]:checked + .u-check-icon-radio-v8 i::after,
+.u-check input[type="radio"]:checked + .u-check-icon-radio-v8 i::after,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-radio-v8 i::after,
+.u-check input[type="radio"]:checked + * .u-check-icon-radio-v8 i::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-checkbox-v1--checked-color-primary:checked + label {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.u-checkbox-v1--checked-brd-primary:checked + label {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+/*------------------------------------
+  Selects
+------------------------------------*/
+
+.u-select-v1 .chosen-results > li.highlighted,
+.u-select-v1 .chosen-results > li.result-selected {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .2);
+  border-bottom-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .2);
+}
+
+/*------------------------------------
+  Arrows
+------------------------------------*/
+
+.u-arrow-v3:hover .u-arrow-icon-before,
+.u-arrow-v3:hover .u-arrow-icon-after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-arrow-v4:hover .u-arrow-icon,
+.u-arrow-v7:hover .u-arrow-icon,
+.u-arrow-v8:hover .u-arrow-icon {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-arrow-v14 .u-arrow-icon::before,
+.u-arrow-v14 .u-arrow-icon::after {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Badges
+------------------------------------*/
+
+.u-badge-bg-primary::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Badges v2
+------------------------------------*/
+
+[class*="u-badge-v2"] {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Triangles
+------------------------------------*/
+
+.u-triangle-v1.u-triangle-top.g-bg-primary::before,
+.u-triangle-v1.u-triangle-left.g-bg-primary::before,
+.u-triangle-v1-2.u-triangle-top.g-bg-primary::before,
+.u-triangle-v1-2.u-triangle-left.g-bg-primary::before,
+.u-triangle-v2.u-triangle-top.g-bg-primary::before,
+.u-triangle-v2.u-triangle-left.g-bg-primary::before,
+.u-triangle-v5.u-triangle-top.g-bg-primary::before,
+.u-triangle-v5.u-triangle-left.g-bg-primary::before,
+.u-triangle-v6.u-triangle-top.g-bg-primary::before,
+.u-triangle-v6.u-triangle-left.g-bg-primary::before {
+  border-bottom-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-triangle-v1.u-triangle-bottom.g-bg-primary::before,
+.u-triangle-v1.u-triangle-right.g-bg-primary::before,
+.u-triangle-v1-2.u-triangle-bottom.g-bg-primary::before,
+.u-triangle-v1-2.u-triangle-right.g-bg-primary::before,
+.u-triangle-v2.u-triangle-bottom.g-bg-primary::before,
+.u-triangle-v2.u-triangle-right.g-bg-primary::before,
+.u-triangle-v5.u-triangle-bottom.g-bg-primary::before,
+.u-triangle-v5.u-triangle-right.g-bg-primary::before,
+.u-triangle-v6.u-triangle-bottom.g-bg-primary::before,
+.u-triangle-v6.u-triangle-right.g-bg-primary::before {
+  border-top-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-triangle-v1-2.u-triangle-left.g-bg-primary::before {
+  border-right-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-triangle-v1-2.u-triangle-right.g-bg-primary::before {
+  border-left-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-triangle-v3.u-triangle-top.g-bg-primary::before,
+.u-triangle-v3.u-triangle-left.g-bg-primary::before {
+  background-image: linear-gradient(to bottom right, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%);
+}
+
+.u-triangle-v3.u-triangle-bottom.g-bg-primary::before,
+.u-triangle-v3.u-triangle-right.g-bg-primary::before {
+  background-image: linear-gradient(to top right, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%);
+}
+
+.u-triangle-v4.u-triangle-top.g-bg-primary::before,
+.u-triangle-v4.u-triangle-left.g-bg-primary::before {
+  background-image: linear-gradient(to bottom right, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%), linear-gradient(to bottom left, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%);
+}
+
+.u-triangle-v4.u-triangle-bottom.g-bg-primary::before,
+.u-triangle-v4.u-triangle-right.g-bg-primary::before {
+  background-image: linear-gradient(to top right, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%), linear-gradient(to top left, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%);
+}
+
+.u-semicircle-v1.g-bg-primary::before {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-zigzag-top-primary::before {
+  background: -webkit-linear-gradient(-225deg, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 10px, transparent 0) 0 10px, -webkit-linear-gradient(-315deg, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 10px, transparent 0) 0 10px;
+}
+
+@media (min-width: 768px) {
+  .u-triangle-v1.u-triangle-left.g-bg-primary::before {
+    border-right-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-triangle-v1.u-triangle-right.g-bg-primary::before {
+    border-left-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-triangle-v3.u-triangle-left.g-bg-primary::before {
+    background-image: linear-gradient(to bottom right, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%);
+  }
+
+  .u-triangle-v3.u-triangle-right.g-bg-primary::before {
+    background-image: linear-gradient(to bottom left, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%);
+  }
+
+  .u-triangle-v4.u-triangle-left.g-bg-primary::before {
+    background-image: linear-gradient(to bottom right, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%), linear-gradient(to top right, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%);
+  }
+
+  .u-triangle-v4.u-triangle-right.g-bg-primary::before {
+    background-image: linear-gradient(to bottom left, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%), linear-gradient(to top left, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%);
+  }
+}
+
+/*------------------------------------
+  Block Hovers
+------------------------------------*/
+
+.u-block-hover:hover .u-block-hover__prop-bg-primary {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-block-hover:hover .u-block-hover__prop-bg-primary-opacity-0_9 {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .9);
+}
+
+/*------------------------------------
+  Blockquotes
+------------------------------------*/
+
+.u-blockquote-v3::before {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-blockquote-v7::before {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Carousel indicators
+------------------------------------*/
+
+.u-carousel-indicators-v1 li.slick-active span,
+.u-carousel-indicators-v1--white li.slick-active span,
+.u-carousel-indicators-v4 li.slick-active span,
+.u-carousel-indicators-v8 li.slick-active span {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v6 li.slick-active {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v6 li.slick-active span {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v9 li.slick-active,
+.u-carousel-indicators-v10 li.slick-active {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v18--white li span {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v20 li span:hover,
+.u-carousel-indicators-v20 li span:focus,
+.u-carousel-indicators-v20--white li span:hover,
+.u-carousel-indicators-v20--white li span:focus,
+.u-carousel-indicators-v20 li.slick-active span,
+.u-carousel-indicators-v20 li.slick-active span,
+.u-carousel-indicators-v20--white li.slick-active span,
+.u-carousel-indicators-v20--white li.slick-active span {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v20--white li span::before {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  box-shadow: 0 0 1px rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v21--white li span::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v22--white li span {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v22--white li span::before {
+  border-top-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v22--white li.slick-active {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v23--white .u-dots-helper::before {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v24--white li span {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v25--white li::before {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v25--white li span:focus {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v25--white li span::before {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v25--white li.slick-active span {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v26--white li::before,
+.u-carousel-indicators-v26--white li::after,
+.u-carousel-indicators-v26--vertical--white li::before,
+.u-carousel-indicators-v26--vertical--white li::after {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v27--white li span::before,
+.u-carousel-indicators-v27--vertical--white li span::before {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-carousel-indicators-v28 li.slick-active span {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Paginations
+------------------------------------*/
+
+.u-pagination-v1-1--active,
+.u-pagination-v1-1:hover,
+.u-pagination-v1-1:focus {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-pagination-v1-2:hover,
+.u-pagination-v1-2:focus {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-pagination-v1-2--active,
+.u-pagination-v1-2--nav {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-pagination-v1-2--nav:hover {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .8);
+}
+
+.u-pagination-v1-4:hover,
+.u-pagination-v1-4:focus {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-pagination-v1-4--active {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Ribbons
+------------------------------------*/
+
+.u-ribbon-bookmark.g-bg-primary::after {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-ribbon-clip-v4__inner.g-bg-primary {
+  box-shadow: 0 0 0 3px rgba(red(@customColor), green(@customColor), blue(@customColor), 1), 0 21px 5px -18px rgba(0, 0, 0, .6);
+}
+
+/*------------------------------------
+  Accordions
+------------------------------------*/
+
+.u-accordion-color-primary__header [aria-expanded="true"] {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.u-accordion-bg-primary__header [aria-expanded="true"] {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.u-accordion-brd-primary__header [aria-expanded="true"] {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.u-accordion-v2:nth-child(odd) {
+  background-color: darken(@customColor, 5%);
+}
+
+/*------------------------------------
+  Datepickers
+------------------------------------*/
+
+.u-datepicker-v1 .ui-datepicker-calendar td span.ui-state-active,
+.u-datepicker-v1 .ui-datepicker-calendar th span.ui-state-active,
+.u-datepicker-v1 .ui-datepicker-calendar td a.ui-state-active,
+.u-datepicker-v1 .ui-datepicker-calendar th a.ui-state-active {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Sliders
+------------------------------------*/
+
+.u-slider-v1.ui-slider .ui-slider-range {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-slider-v1.ui-slider .ui-slider-handle {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Headers
+------------------------------------*/
+
+.js-header-change-moment.g-bg-primary--shift {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.js-header-change-moment.g-bg-primary-semi-transparent--shift {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .9);
+}
+
+/*------------------------------------
+  Heading
+------------------------------------*/
+
+.u-heading-v5-color-primary .u-heading-v5__title::before {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-heading-massive-underline::before {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Effects
+------------------------------------*/
+
+.u-icon-effect-v1-1--hover::after,
+.u-icon-effect-v1-2--hover::after {
+  box-shadow: 0 0 0 1px rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-icon-effect-v1-1--hover:hover,
+.u-icon-effect-v1-2--hover:hover,
+.u-icon-v4.u-icon-effect-v1-1--hover:hover .u-icon-v4-inner,
+.u-icon-v4.u-icon-effect-v1-2--hover:hover .u-icon-v4-inner,
+.u-icon-block--hover:hover .u-icon-effect-v1-1--hover,
+.u-icon-block--hover:hover .u-icon-effect-v1-2--hover,
+.u-icon-block--hover:hover .u-icon-v4.u-icon-effect-v1-1--hover .u-icon-v4-inner,
+.u-icon-block--hover:hover .u-icon-v4.u-icon-effect-v1-2--hover .u-icon-v4-inner {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+.u-icon-effect-v2--hover:hover,
+.u-icon-effect-v2--hover:hover::after {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-icon-effect-v5--hover.g-bg-primary:hover,
+.u-icon-block--hover:hover .u-icon-effect-v5--hover.g-bg-primary,
+.u-icon-effect-v5--hover.g-color-primary:hover,
+.u-icon-block--hover:hover .u-icon-effect-v5--hover.g-color-primary {
+  box-shadow: 0 0 10px 10px rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-icon-v4-bg-primary {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-icon-v4-bg-primary .u-icon-v4-inner {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-icon-v4-bg-primary--hover:hover,
+.u-icon-block--hover:hover .u-icon-v4-bg-primary--hover {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-icon-v4-bg-primary--hover:hover .u-icon-v4-inner,
+.u-icon-block--hover:hover .u-icon-v4-bg-primary--hover .u-icon-v4-inner {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-icon-v5.g-bg-primary::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-icon-block--hover:hover .g-color-primary--hover {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-icon-block--hover:hover .g-brd-primary--hover {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-icon-block--hover:hover .g-bg-primary--hover {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Navigation Dropdown
+------------------------------------*/
+
+.navbar .u-sub-menu-v1 .hs-sub-menu,
+.navbar .u-sub-menu-v1 .hs-mega-menu,
+.navbar .u-sub-menu-v1 .dropdown-menu {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.navbar .u-sub-menu-v2 .hs-sub-menu,
+.navbar .u-sub-menu-v2 .hs-mega-menu,
+.navbar .u-sub-menu-v2 .dropdown-menu,
+.navbar .u-sub-menu-v3 .hs-sub-menu,
+.navbar .u-sub-menu-v3 .hs-mega-menu,
+.navbar .u-sub-menu-v3 .dropdown-menu {
+  border-top-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.navbar .u-main-nav-v1 .nav-item.active > .nav-link,
+.navbar .u-main-nav-v1 .nav-item:hover > .nav-link,
+.navbar .u-main-nav-v1 .nav-item:focus > .nav-link,
+.navbar .u-main-nav-v1 .nav-item.show > .nav-link,
+.navbar .u-main-nav-v1 .nav-item.hs-sub-menu-opened > .nav-link,
+.navbar .u-main-nav-v1 .nav-item .nav-link:focus,
+.navbar .u-main-nav-v8 .nav-item.active > .nav-link,
+.navbar .u-main-nav-v8 .nav-item:hover > .nav-link,
+.navbar .u-main-nav-v8 .nav-item:focus > .nav-link,
+.navbar .u-main-nav-v8 .nav-item.show > .nav-link,
+.navbar .u-main-nav-v8 .nav-item.hs-sub-menu-opened > .nav-link,
+.navbar .u-main-nav-v8 .nav-item .nav-link:focus {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.navbar .u-main-nav-v2 .nav-item.active > .nav-link,
+.navbar .u-main-nav-v2 .nav-item:hover > .nav-link,
+.navbar .u-main-nav-v2 .nav-item:focus > .nav-link,
+.navbar .u-main-nav-v2 .nav-item.show > .nav-link,
+.navbar .u-main-nav-v2 .nav-item.hs-sub-menu-opened > .nav-link,
+.navbar .u-main-nav-v2 .nav-item .nav-link:focus,
+.navbar .u-main-nav-v3 .nav-item.active > .nav-link,
+.navbar .u-main-nav-v3 .nav-item:hover > .nav-link,
+.navbar .u-main-nav-v3 .nav-item:focus > .nav-link,
+.navbar .u-main-nav-v3 .nav-item.show > .nav-link,
+.navbar .u-main-nav-v3 .nav-item.hs-sub-menu-opened > .nav-link,
+.navbar .u-main-nav-v3 .nav-item .nav-link:focus,
+.navbar .u-main-nav-v4 .nav-item.active > .nav-link,
+.navbar .u-main-nav-v4 .nav-item:hover > .nav-link,
+.navbar .u-main-nav-v4 .nav-item:focus > .nav-link,
+.navbar .u-main-nav-v4 .nav-item.show > .nav-link,
+.navbar .u-main-nav-v4 .nav-item.hs-sub-menu-opened > .nav-link,
+.navbar .u-main-nav-v4 .nav-item .nav-link:focus,
+.navbar .u-main-nav-v5 .nav-item.active > .nav-link,
+.navbar .u-main-nav-v5 .nav-item:hover > .nav-link,
+.navbar .u-main-nav-v5 .nav-item:focus > .nav-link,
+.navbar .u-main-nav-v5 .nav-item.show > .nav-link,
+.navbar .u-main-nav-v5 .nav-item.hs-sub-menu-opened > .nav-link,
+.navbar .u-main-nav-v5 .nav-item .nav-link:focus,
+.navbar .u-main-nav-v6 .nav-item.active > .nav-link,
+.navbar .u-main-nav-v6 .nav-item:hover > .nav-link,
+.navbar .u-main-nav-v6 .nav-item:focus > .nav-link,
+.navbar .u-main-nav-v6 .nav-item.show > .nav-link,
+.navbar .u-main-nav-v6 .nav-item.hs-sub-menu-opened > .nav-link,
+.navbar .u-main-nav-v6 .nav-item .nav-link:focus,
+.navbar .u-main-nav-v7 .nav-item.active > .nav-link,
+.navbar .u-main-nav-v7 .nav-item:hover > .nav-link,
+.navbar .u-main-nav-v7 .nav-item:focus > .nav-link,
+.navbar .u-main-nav-v7 .nav-item.show > .nav-link,
+.navbar .u-main-nav-v7 .nav-item.hs-sub-menu-opened > .nav-link,
+.navbar .u-main-nav-v7 .nav-item .nav-link:focus {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.navbar .u-main-nav-v9 .nav-item.active > .nav-link::after,
+.navbar .u-main-nav-v9 .nav-item:hover > .nav-link::after,
+.navbar .u-main-nav-v9 .nav-item:focus > .nav-link::after,
+.navbar .u-main-nav-v9 .nav-item .nav-link:focus::after {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Nonstandard Background
+------------------------------------*/
+
+.u-ns-bg-v1-top.g-bg-primary::before,
+.u-ns-bg-v2-top.g-bg-primary::before,
+.u-ns-bg-v2-2-top.g-bg-primary::before,
+.u-ns-bg-v6-top.g-bg-primary .u-ns-bg-before::before {
+  border-bottom-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-ns-bg-v1-bottom.g-bg-primary::before,
+.u-ns-bg-v2-bottom.g-bg-primary::before,
+.u-ns-bg-v2-2-bottom.g-bg-primary::before,
+.u-ns-bg-v6-bottom.g-bg-primary .u-ns-bg-before::before {
+  border-top-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-ns-bg-v1-left.g-bg-primary::before,
+.u-ns-bg-v2-left.g-bg-primary::before,
+.u-ns-bg-v2-2-left.g-bg-primary::before,
+.u-ns-bg-v6-left.g-bg-primary .u-ns-bg-before::before {
+  border-right-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-ns-bg-v1-right.g-bg-primary::before,
+.u-ns-bg-v2-right.g-bg-primary::before,
+.u-ns-bg-v2-2-right.g-bg-primary::before,
+.u-ns-bg-v6-right.g-bg-primary .u-ns-bg-before::before {
+  border-left-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-ns-bg-v3-top.g-bg-primary::before,
+.u-ns-bg-v3-left.g-bg-primary::before,
+.u-ns-bg-v4-top.g-bg-primary::before,
+.u-ns-bg-v4-left.g-bg-primary::before {
+  border-bottom-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-ns-bg-v3-bottom.g-bg-primary::before,
+.u-ns-bg-v3-right.g-bg-primary::before,
+.u-ns-bg-v4-bottom.g-bg-primary::before,
+.u-ns-bg-v4-right.g-bg-primary::before {
+  border-top-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+[class*="u-ns-bg-v5"].g-bg-primary svg path,
+[class*="u-ns-bg-v5"].g-bg-primary svg polygon {
+  fill: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+@media (min-width: 768px) {
+  .u-ns-bg-v1-top--md.g-bg-primary::before,
+  .u-ns-bg-v2-top--md.g-bg-primary::before,
+  .u-ns-bg-v2-2-top--md.g-bg-primary::before,
+  .u-ns-bg-v6-top.g-bg-primary .u-ns-bg-before::before {
+    border-bottom-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-ns-bg-v1-bottom--md.g-bg-primary::before,
+  .u-ns-bg-v2-bottom--md.g-bg-primary::before,
+  .u-ns-bg-v2-2-bottom--md.g-bg-primary::before,
+  .u-ns-bg-v6-bottom.g-bg-primary .u-ns-bg-before::before {
+    border-top-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-ns-bg-v1-left--md.g-bg-primary::before,
+  .u-ns-bg-v2-left--md.g-bg-primary::before,
+  .u-ns-bg-v2-2-left--md.g-bg-primary::before,
+  .u-ns-bg-v6-left.g-bg-primary .u-ns-bg-before::before {
+    border-right-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-ns-bg-v1-right--md.g-bg-primary::before,
+  .u-ns-bg-v2-right--md.g-bg-primary::before,
+  .u-ns-bg-v2-2-right--md.g-bg-primary::before,
+  .u-ns-bg-v6-right.g-bg-primary .u-ns-bg-before::before {
+    border-left-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+}
+
+/*------------------------------------
+  Progress Bars
+------------------------------------*/
+
+.u-progress::-ms-fill,
+.u-progress::-webkit-progress-value,
+.u-progress::-moz-progress-bar {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-progress__pointer-v2::after,
+.u-progress__pointer-v3::after {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Steps
+------------------------------------*/
+
+@media (min-width: 768px) {
+  .u-steps-v1__item a,
+  .u-steps-v1__item a::before,
+  .u-steps-v1__item.active a,
+  .u-steps-v1__item.active span {
+    background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-steps-v2__indicator,
+  .u-steps-v2__item a::before,
+  .u-steps-v2__item a .u-steps-v2__indicator,
+  .u-steps-v3__indicator,
+  .u-steps-v3__item a::before,
+  .u-steps-v3__item a .u-steps-v3__indicator {
+    background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-steps-v2__item:hover a,
+  .u-steps-v3__item:hover a {
+    color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-steps-v2__item:hover a .u-steps-v2__indicator,
+  .u-steps-v3__item:hover a .u-steps-v3__indicator {
+    box-shadow: 0 0 0 3px rgba(red(@customColor), green(@customColor), blue(@customColor), .3);
+  }
+
+  .u-steps-v2__item:hover a .u-steps-v2__indicator,
+  .u-steps-v2__item:hover span .u-steps-v2__indicator,
+  .u-steps-v3__item:hover a .u-steps-v3__indicator,
+  .u-steps-v3__item:hover span .u-steps-v3__indicator {
+    background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+}
+
+/*------------------------------------
+  Tabs
+------------------------------------*/
+
+.g-color-primary--active.active {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+[class*="u-nav-v8"] .nav-link.active,
+[class*="u-nav-v8"] .nav-link.active .u-nav-v8__icon,
+[class*="u-nav-v8"].u-nav-light .nav-link.active .u-nav-v8__icon {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+@media (min-width: 768px) {
+  .u-nav-v1-1.u-nav-primary .nav-link.active,
+  .u-nav-v2-1.u-nav-primary .nav-link.active,
+  [class*="u-nav-v8"].u-nav-light .nav-link.active {
+    background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-nav-v1-2.u-nav-primary .nav-link.active,
+  [class*="u-nav-v2"].u-nav-primary .nav-link,
+  [class*="u-nav-v2"].u-nav-primary .nav-link.active,
+  .u-nav-v3-2 .nav-link.active,
+  [class*="u-nav-v5"].u-nav-primary .nav-link.active,
+  [class*="u-nav-v6"] .nav-link.active,
+  [class*="u-nav-v6"].flex-column .nav-link.active {
+    border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-nav-v2-2 .nav-link.active,
+  [class*="u-nav-v3"] .nav-link.active,
+  [class*="u-nav-v3"].u-nav-light .nav-link.active,
+  [class*="u-nav-v5"].u-nav-primary .nav-link.active,
+  [class*="u-nav-v7"] .nav-link.active {
+    color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-nav-v4-1.u-nav-primary .nav-link.active,
+  [class*="u-nav-v6"] .nav-link.active::before {
+    border-top-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  .u-nav-v4-1-column .u-nav-v4-1.u-nav-primary .nav-link.active,
+  [class*="u-nav-v6"].flex-column .nav-link.active::before {
+    border-left-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  [class*="u-nav-v8"].u-nav-light .nav-link.active::before {
+    background-image: linear-gradient(to bottom left, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%), linear-gradient(to top left, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%);
+  }
+
+  [class*="u-nav-v8"].justify-content-end .nav-link.active::before,
+  [class*="u-nav-v8"].text-right .nav-link.active::before {
+    background-image: linear-gradient(to bottom right, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%), linear-gradient(to top right, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%);
+  }
+
+  .u-nav-v8-2 .nav-link.active::before {
+    background-image: linear-gradient(to bottom left, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%), linear-gradient(to top left, transparent 49.6%, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 50%);
+  }
+}
+
+@media (max-width: 767px) {
+  [role="tablist"]:not([data-tabs-mobile-type="slide-up-down"],
+  [data-tabs-mobile-type="accordion"]) {
+    border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  }
+
+  [data-tabs-mobile-type="slide-up-down"].u-nav-primary .nav-link,
+  [data-tabs-mobile-type="slide-up-down"].nav-pills .nav-link,
+  [data-tabs-mobile-type="slide-up-down"].u-nav-primary .nav-link.active,
+  [data-tabs-mobile-type="slide-up-down"].u-nav-primary .nav-item.show .nav-link,
+  [data-tabs-mobile-type="slide-up-down"].nav-pills .nav-link.active,
+  [data-tabs-mobile-type="slide-up-down"].nav-pills .nav-item.show .nav-link {
+    border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+  }
+}
+
+/*--------------------------------------------------
+  Info Blocks
+----------------------------------------------------*/
+
+.u-info-v1-2:hover .u-info-v1-2__item::after,
+.u-info-v7-1:hover .u-info-v7-1__item-child-v2 {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-info-v1-5__item::after {
+  border-bottom-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.info-v4-3:hover::after {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.info-v5-3:hover .info-v5-3__info {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .9);
+}
+
+.u-info-v6-1__item::after,
+.u-info-v6-1:hover .u-info-v6-1__item::after {
+  background-image: linear-gradient(to right, rgba(red(@customColor), green(@customColor), blue(@customColor), 1) 0, transparent 100%);
+}
+
+/*------------------------------------
+  Checked state background
+------------------------------------*/
+
+input[type="checkbox"]:checked + .g-bg-primary--checked,
+input[type="radio"]:checked + .g-bg-primary--checked,
+input[type="checkbox"]:checked + * .g-bg-primary--checked,
+input[type="radio"]:checked + * .g-bg-primary--checked,
+.g-checked .g-bg-primary--checked,
+.g-bg-primary--checked.g-checked {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+/*------------------------------------
+  Checked state border
+------------------------------------*/
+
+input[type="checkbox"]:checked + .g-brd-primary--checked,
+input[type="radio"]:checked + .g-brd-primary--checked,
+input[type="checkbox"]:checked + * .g-brd-primary--checked,
+input[type="radio"]:checked + * .g-brd-primary--checked,
+.g-checked .g-brd-primary--checked,
+.g-brd-primary--checked.g-checked {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+/*------------------------------------
+  Focus state border
+------------------------------------*/
+
+.g-brd-primary--focus:focus,
+.g-brd-primary--focus.g-state-focus *,
+.g-brd-primary--focus.g-state-focus *:focus {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+/*------------------------------------
+  Focus state color
+------------------------------------*/
+
+.g-color-primary:focus {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Checked state overlay
+------------------------------------*/
+
+input[type="checkbox"]:checked + .g-overlay-primary-0_5--checked::after,
+input[type="radio"]:checked + .g-overlay-primary-0_5--checked::after,
+input[type="checkbox"]:checked + * .g-overlay-primary-0_5--checked::after,
+input[type="radio"]:checked + * .g-overlay-primary-0_5--checked::after,
+.g-overlay-primary-0_5--checked.g-checked::after,
+.g-checked .g-overlay-primary-0_5--checked::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .5);
+}
+
+input[type="checkbox"]:checked + .g-overlay-primary-0_9--checked::after,
+input[type="radio"]:checked + .g-overlay-primary-0_9--checked::after,
+input[type="checkbox"]:checked + * .g-overlay-primary-0_9--checked::after,
+input[type="radio"]:checked + * .g-overlay-primary-0_9--checked::after,
+.g-overlay-primary-0_9--checked.g-checked::after,
+.g-checked .g-overlay-primary-0_9--checked::after {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), .9);
+}
+
+/*------------------------------------
+  Success state
+------------------------------------*/
+
+.u-has-success-v1 .form-control-feedback,
+.u-has-success-v1-2 .form-control-feedback,
+.u-has-success-v1-3 .form-control-feedback {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-has-success-v1-2 .form-control,
+.u-has-success-v1-2 .input-group-addon,
+.u-has-success-v1-2 [class*="u-select"],
+.u-has-success-v1-3 .form-control,
+.u-has-success-v1-3 .input-group-addon,
+.u-has-success-v1-3 [class*="u-select"] {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-has-success-v1-2 .input-group-addon:last-child,
+.u-has-success-v1-2 .chosen-single div b,
+.u-has-success-v1-3 .input-group-addon:last-child,
+.u-has-success-v1-3 .chosen-single div b {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-has-success-v1-3 .input-group-addon,
+.u-has-success-v1-3 .input-group-addon:last-child {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+.u-has-success-v1-3 .form-control-feedback::before {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) transparent transparent transparent;
+}
+
+.u-has-success-v2::after {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  jQuery UI
+------------------------------------*/
+
+.ui-autocomplete .ui-menu-item:hover {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Pin Map
+------------------------------------*/
+
+.point::before {
+  background: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Go To
+------------------------------------*/
+
+.u-go-to-v1:hover,
+.u-go-to-v1:focus:hover {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  List Group
+------------------------------------*/
+
+.list-group-item.active {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Accordions
+------------------------------------*/
+
+.u-accordion-color-primary .u-accordion__header [aria-expanded="true"] {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1) !important;
+}
+
+/*------------------------------------
+  Blockquotes
+------------------------------------*/
+
+.u-blockquote-v1::before {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Form Controls
+------------------------------------*/
+
+.form-control:focus,
+.custom-select:focus {
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Cubeportfolio
+------------------------------------*/
+
+.u-filter-v1 > li:hover,
+.u-filter-v1 [class*="active"] {
+  color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Pagination
+------------------------------------*/
+
+.u-pagination-v1-5--active, .u-pagination-v1-5:hover,
+.u-pagination-v1-5:focus {
+  background-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+  border-color: rgba(red(@customColor), green(@customColor), blue(@customColor), 1);
+}
+
+/*------------------------------------
+  Keyframes
+------------------------------------*/
+
+@keyframes sonarEffect-primary {
+  0% {
+    opacity: .3;
+  }
+  40% {
+    opacity: .5;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px rgba(red(@customColor), green(@customColor), blue(@customColor), 1), 0 0 0 10px rgba(255, 255, 255, .5);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px rgba(red(@customColor), green(@customColor), blue(@customColor), 1), 0 0 0 10px rgba(255, 255, 255, .5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}

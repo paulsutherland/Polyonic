@@ -1,0 +1,103 @@
+<!-- Header -->
+<header id="js-header" class="u-header u-header--sticky-top u-header--change-logo u-header--toggle-section u-header--change-appearance"
+        data-header-fix-moment="300">
+  <!-- Top Bar -->
+  <div class="u-header__section u-header__section--hidden u-header__section--dark g-bg-black g-transition-0_3 g-py-7">
+    <div class="container">
+      <div class="row flex-column flex-md-row align-items-center justify-content-md-end text-uppercase g-font-weight-600 g-color-white g-font-size-13 g-mt-minus-10">
+
+        <div class="col-auto mr-md-auto g-px-15 g-mt-10">
+          <i class="fa fa-phone g-valign-middle g-mt-minus-1 g-mr-5"></i>
+          1 800 88 4411
+        </div>
+
+        <div class="col-auto g-px-15 g-mt-10">
+          <ul class="list-inline mb-0 g-mx-minus-3">
+            <li class="list-inline-item g-valign-middle g-mx-3">
+              <a class="d-block u-icon-v3 u-icon-size--xs g-rounded-50x g-bg-white g-color-gray-dark-v1 g-color-gray-dark-v1--hover g-text-underline--none--hover" href="#!">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item g-valign-middle g-mx-3">
+              <a class="d-block u-icon-v3 u-icon-size--xs g-rounded-50x g-bg-white g-color-gray-dark-v1 g-color-gray-dark-v1--hover g-text-underline--none--hover" href="#!">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item g-valign-middle g-mx-3 g-mr-minus-2--lg">
+              <a class="d-block u-icon-v3 u-icon-size--xs g-rounded-50x g-bg-white g-color-gray-dark-v1 g-color-gray-dark-v1--hover g-text-underline--none--hover" href="#!">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Top Bar -->
+
+  <div class="u-header__section u-header__section--dark g-bg-black-opacity-0_7 g-py-10"
+       data-header-fix-moment-exclude="u-header__section--dark g-bg-black-opacity-0_7 g-py-10"
+       data-header-fix-moment-classes="u-header__section--light g-bg-white-opacity-0_7 u-shadow-v18 g-py-0">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Responsive Toggle Button -->
+        <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar"
+                data-toggle="collapse"
+                data-target="#navBar">
+          <span class="hamburger hamburger--slider">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </span>
+        </button>
+        <!-- End Responsive Toggle Button -->
+
+        <!-- Logo -->
+        <a href="{{ root }}index.html" class="navbar-brand u-header__logo">
+          <img class="u-header__logo-img u-header__logo-img--main" src="{{ root }}assets/img/logo/logo-2.png" alt="Image Description">
+
+          <img class="u-header__logo-img" src="{{ root }}assets/img/logo/logo-1.png" alt="Image Description">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+          <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
+            <li class="nav-item g-mx-20--lg{% if mainNavActive_1 == 'home' %} active{% endif %}">
+              <a href="#!" class="nav-link px-0">Home
+                {% if mainNavActive_1 == 'home' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+            <li class="nav-item g-mx-20--lg{% if mainNavActive_1 == 'features' %} active{% endif %}">
+              <a href="#!" class="nav-link px-0">Features
+                {% if mainNavActive_1 == 'features' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+            <li class="nav-item g-mx-20--lg{% if mainNavActive_1 == 'shortcodes' %} active{% endif %}">
+              <a href="#!" class="nav-link px-0">Shortcodes
+                {% if mainNavActive_1 == 'shortcodes' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+            <li class="nav-item g-mx-20--lg{% if mainNavActive_1 == 'pages' %} active{% endif %}">
+              <a href="#!" class="nav-link px-0">Pages
+                {% if mainNavActive_1 == 'pages' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+            <li class="nav-item g-mx-20--lg{% if mainNavActive_1 == 'demos' %} active{% endif %}">
+              <a href="#!" class="nav-link px-0">Demos
+                {% if mainNavActive_1 == 'demos' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+            <li class="nav-item g-ml-20--lg g-mr-0--lg{% if mainNavActive_1 == 'whats-new' %} active{% endif %}">
+              <a href="#!" class="nav-link px-0">What's New
+                {% if mainNavActive_1 == 'whats-new' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End Navigation -->
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- End Header -->

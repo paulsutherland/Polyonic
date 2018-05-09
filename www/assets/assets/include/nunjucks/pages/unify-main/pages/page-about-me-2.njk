@@ -1,0 +1,446 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-about" %}
+{% set mainNavActive_3 = "page-about-me-2" %}
+{% set title = "About Me 2 | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    {% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Breadcrumbs -->
+      <section class="g-bg-gray-light-v5 g-py-50">
+        <div class="container">
+          <div class="d-sm-flex text-center">
+            <div class="align-self-center">
+              <h2 class="h3 g-font-weight-300 w-100 g-mb-10 g-mb-0--md">About Me</h2>
+            </div>
+
+            <div class="align-self-center ml-auto">
+              <ul class="u-list-inline">
+                <li class="list-inline-item g-mr-5">
+                  <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Home</a>
+                  <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                </li>
+                <li class="list-inline-item g-mr-5">
+                  <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Pages</a>
+                  <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                </li>
+                <li class="list-inline-item g-color-primary">
+                  <span>About Me</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Breadcrumbs -->
+
+      <!-- Figure -->
+      <section class="container g-pt-100 g-pb-40">
+        <figure class="row">
+          <!-- Figure Image -->
+          <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0 g-mb-30">
+            <img class="w-100" src="{{ root }}assets/img-temp/400x450/img2.jpg" alt="Image Description">
+          </div>
+          <!-- End Figure Image -->
+
+          <!-- Figure Body -->
+          <div class="col-lg-8">
+            <div class="d-flex justify-content-between g-mb-10">
+              <div class="g-mb-20">
+                <h4 class="h5 g-mb-5">Ketey Reyes</h4>
+                <em class="d-block g-font-style-normal g-font-size-default text-uppercase g-color-primary">CEO, Director</em>
+              </div>
+
+              <!-- Figure Social Icons -->
+              <ul class="list-inline">
+                <li class="list-inline-item g-mx-2">
+                  <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="#!">
+                    <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
+                    <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-2">
+                  <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="#!">
+                    <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+                    <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-2">
+                  <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="#!">
+                    <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-google-plus"></i>
+                    <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-2">
+                  <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="#!">
+                    <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-linkedin"></i>
+                    <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Figure Social Icons -->
+            </div>
+
+            <!-- Figure Info -->
+            <div class="g-mb-50">
+              <p>I am an ambitious workaholic, but apart from that, pretty simple person. Whether it's branding, print, UI + UX I've got you covered. I strive to figure out the right solutions for your look to stand out amongst the rest.</p>
+              <p>As creatives, it's important that I strive to do work outside of obligation. This lets us stay ahead of the curve for our clients and internal projects. At the end of the day, it's important to not let being busy distract us from having fun. Smiling, laughing, and hanging helps us work together to achieve this.</p>
+            </div>
+            <!-- End Info -->
+
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Progress Bar v2 -->
+                <h4 class="h6 g-mb-5">Web Design - 80%</h4>
+                <div class="js-hr-progress-bar progress rounded-0 g-height-4 mb-5">
+                  <div class="js-hr-progress-bar-indicator progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <!-- End Progress Bar v2 -->
+
+                <!-- Progress Bar v2 -->
+                <h4 class="h6 g-mb-5">PHP/WordPress - 76%</h4>
+                <div class="js-hr-progress-bar progress rounded-0 g-height-4 mb-5">
+                  <div class="js-hr-progress-bar-indicator progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <!-- End Progress Bar v2 -->
+              </div>
+
+              <div class="col-sm-6">
+                <!-- Progress Bar v2 -->
+                <h4 class="h6 g-mb-5">jQuery - 80%</h4>
+                <div class="js-hr-progress-bar progress rounded-0 g-height-4 mb-5">
+                  <div class="js-hr-progress-bar-indicator progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <!-- End Progress Bar v2 -->
+
+                <!-- Progress Bar v2 -->
+                <h4 class="h6 g-mb-5">CSS - 76%</h4>
+                <div class="js-hr-progress-bar progress rounded-0 g-height-4 mb-5">
+                  <div class="js-hr-progress-bar-indicator progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <!-- End Progress Bar v2 -->
+              </div>
+            </div>
+          </div>
+          <!-- End Figure Body -->
+        </figure>
+      </section>
+      <!-- End Figure -->
+
+      <!-- Testimonials -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content use-loading g-bg-cover g-bg-white-opacity-0_9--after">
+        <div class="divimage dzsparallaxer--target w-100" style="height: 140%; background: url({{ root }}assets/img-temp/720x299/img1.jpg);"></div>
+        <div class="container g-z-index-1 g-py-100">
+          <!-- Testimonials -->
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <div class="text-center g-z-index-1 text-uppercase">
+                <blockquote class="g-font-size-28 g-mb-20">If you can design one thing
+                  <span class="g-color-primary g-font-weight-700">you can design</span> everything. Just believe it.
+                </blockquote>
+                <h4 class="h6 g-mb-0">- Kathy Reyes -</h4>
+              </div>
+            </div>
+          </div>
+          <!-- End Testimonials -->
+        </div>
+      </section>
+      <!-- Testimonials -->
+
+      <!-- Cubeportfolio -->
+      <section class="container g-py-100">
+        <div class="row justify-content-center g-mb-60">
+          <div class="col-lg-7">
+            <!-- Heading -->
+            <div class="text-center">
+              <h2 class="h4 text-uppercase mb-3">Branding works</h2>
+              <div class="d-inline-block g-width-60 g-height-1 g-bg-black mb-2"></div>
+              <p class="mb-0">I am a creative person focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+            </div>
+            <!-- End Heading -->
+          </div>
+        </div>
+
+        <!-- Cubeportfolio Filter -->
+        <ul id="filterControls" class="text-center u-filter-v1 g-mb-40">
+          <li class="list-inline-item cbp-filter-item cbp-filter-item-active g-cursor-pointer g-transition-0_2" data-filter="*">All</li>
+          <li class="list-inline-item cbp-filter-item text-uppercase g-cursor-pointer g-transition-0_2" data-filter=".js-illustration">Illustration</li>
+          <li class="list-inline-item cbp-filter-item text-uppercase g-cursor-pointer g-transition-0_2" data-filter=".js-design">Design</li>
+          <li class="list-inline-item cbp-filter-item text-uppercase g-cursor-pointer g-transition-0_2" data-filter=".js-graphic">Graphic</li>
+          <li class="list-inline-item cbp-filter-item text-uppercase g-cursor-pointer g-transition-0_2" data-filter=".js-logo">Logo</li>
+        </ul>
+        <!-- End Cubeportfolio Filter -->
+
+        <!-- Cubeportfolio container -->
+        <div class="cbp" data-controls="#filterControls">
+          <div class="cbp-item js-logo">
+            <!-- Figure -->
+            <figure class="u-info-v1-4 g-overflow-hidden mb-0">
+              <!-- Figure Image -->
+              <img class="w-100 u-info-v1-4__item-regular g-transition-0_2" src="{{ root }}assets/img-temp/400x270/img13.jpg" alt="Image Description">
+              <!-- End Figure Image-->
+
+              <a class="cbp-caption cbp-singlePageInline u-link-v2" href="../ajax/projects/projects-1.html"></a>
+
+              <!-- Figure Caption -->
+              <figcaption class="u-info-v1-4__item-hidden g-transition-0_2 g-bg-black g-color-white g-px-30 g-py-10">
+                <h4 class="h6 g-font-weight-500 mb-0">Kathy Reyes</h4>
+                <em class="d-block g-color-white-opacity-0_8 g-font-style-normal g-font-size-13">Logo</em>
+              </figcaption>
+              <!-- End Figure Caption-->
+            </figure>
+            <!-- End Figure -->
+          </div>
+
+          <div class="cbp-item js-logo">
+            <!-- Figure -->
+            <figure class="u-info-v1-4 g-overflow-hidden mb-0">
+              <!-- Figure Image -->
+              <img class="w-100 u-info-v1-4__item-regular g-transition-0_2" src="{{ root }}assets/img-temp/400x270/img14.jpg" alt="Image Description">
+              <!-- End Figure Image-->
+
+              <a class="cbp-caption cbp-singlePageInline u-link-v2" href="../ajax/projects/projects-2.html"></a>
+
+              <!-- Figure Caption -->
+              <figcaption class="u-info-v1-4__item-hidden g-transition-0_2 g-bg-black g-color-white g-px-30 g-py-10">
+                <h4 class="h6 g-font-weight-500 mb-0">Kathy Reyes</h4>
+                <em class="d-block g-color-white-opacity-0_8 g-font-style-normal g-font-size-13">Logo</em>
+              </figcaption>
+              <!-- End Figure Caption-->
+            </figure>
+            <!-- End Figure -->
+          </div>
+
+          <div class="cbp-item js-illustration js-design">
+            <!-- Figure -->
+            <figure class="u-info-v1-4 g-overflow-hidden mb-0">
+              <!-- Figure Image -->
+              <img class="w-100 u-info-v1-4__item-regular g-transition-0_2" src="{{ root }}assets/img-temp/400x270/img15.jpg" alt="Image Description">
+              <!-- End Figure Image-->
+
+              <a class="cbp-caption cbp-singlePageInline u-link-v2" href="../ajax/projects/projects-3.html"></a>
+
+              <!-- Figure Caption -->
+              <figcaption class="u-info-v1-4__item-hidden g-transition-0_2 g-bg-black g-color-white g-px-30 g-py-10">
+                <h4 class="h6 g-font-weight-500 mb-0">Kathy Reyes</h4>
+                <em class="d-block g-color-white-opacity-0_8 g-font-style-normal g-font-size-13">Illustration</em>
+              </figcaption>
+              <!-- End Figure Caption-->
+            </figure>
+            <!-- End Figure -->
+          </div>
+
+          <div class="cbp-item js-design js-illustration">
+            <!-- Figure -->
+            <figure class="u-info-v1-4 g-overflow-hidden mb-0">
+              <!-- Figure Image -->
+              <img class="w-100 u-info-v1-4__item-regular g-transition-0_2" src="{{ root }}assets/img-temp/400x270/img16.jpg" alt="Image Description">
+              <!-- End Figure Image-->
+
+              <a class="cbp-caption cbp-singlePageInline u-link-v2" href="../ajax/projects/projects-4.html"></a>
+
+              <!-- Figure Caption -->
+              <figcaption class="u-info-v1-4__item-hidden g-transition-0_2 g-bg-black g-color-white g-px-30 g-py-10">
+                <h4 class="h6 g-font-weight-500 mb-0">Kathy Reyes</h4>
+                <em class="d-block g-color-white-opacity-0_8 g-font-style-normal g-font-size-13">Design</em>
+              </figcaption>
+              <!-- End Figure Caption-->
+            </figure>
+            <!-- End Figure -->
+          </div>
+
+          <div class="cbp-item js-design js-graphic">
+            <!-- Figure -->
+            <figure class="u-info-v1-4 g-overflow-hidden mb-0">
+              <!-- Figure Image -->
+              <img class="w-100 u-info-v1-4__item-regular g-transition-0_2" src="{{ root }}assets/img-temp/400x270/img9.jpg" alt="Image Description">
+              <!-- End Figure Image-->
+
+              <a class="cbp-caption cbp-singlePageInline u-link-v2" href="../ajax/projects/projects-5.html"></a>
+
+              <!-- Figure Caption -->
+              <figcaption class="u-info-v1-4__item-hidden g-transition-0_2 g-bg-black g-color-white g-px-30 g-py-10">
+                <h4 class="h6 g-font-weight-500 mb-0">Kathy Reyes</h4>
+                <em class="d-block g-color-white-opacity-0_8 g-font-style-normal g-font-size-13">Graphic</em>
+              </figcaption>
+              <!-- End Figure Caption-->
+            </figure>
+            <!-- End Figure -->
+          </div>
+
+          <div class="cbp-item js-illustration js-design js-graphic">
+            <!-- Figure -->
+            <figure class="u-info-v1-4 g-overflow-hidden mb-0">
+              <!-- Figure Image -->
+              <img class="w-100 u-info-v1-4__item-regular g-transition-0_2" src="{{ root }}assets/img-temp/400x270/img10.jpg" alt="Image Description">
+              <!-- End Figure Image-->
+
+              <a class="cbp-caption cbp-singlePageInline u-link-v2" href="../ajax/projects/projects-6.html"></a>
+
+              <!-- Figure Caption -->
+              <figcaption class="u-info-v1-4__item-hidden g-transition-0_2 g-bg-black g-color-white g-px-30 g-py-10">
+                <h4 class="h6 g-font-weight-500 mb-0">Kathy Reyes</h4>
+                <em class="d-block g-color-white-opacity-0_8 g-font-style-normal g-font-size-13">Design</em>
+              </figcaption>
+              <!-- End Figure Caption-->
+            </figure>
+            <!-- End Figure -->
+          </div>
+        </div>
+        <!-- End Cubeportfolio container -->
+      </section>
+      <!-- End Cubeportfolio -->
+
+      <div class="u-ns-bg-v1-bottom g-bg-white"></div>
+
+      <!-- Counters -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content">
+        <!-- Parallax Image -->
+        <div class="dzsparallaxer--target w-100" style="height: 140%; background: url({{ root }}assets/img/bg/pattern2.png)"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container g-pt-100 g-pb-70">
+          <div class="row text-center text-uppercase">
+            <div class="col-md-6 col-lg-3 g-mb-30">
+              <!-- Counters -->
+              <div class="g-bg-white g-rounded-4 g-brd-bottom g-brd-2 g-brd-gray-light-v3 g-pa-20">
+                <div class="js-counter h1 g-font-weight-300 g-mb-5">18298</div>
+                <h4 class="g-font-weight-300">Web Developers</h4>
+              </div>
+            </div>
+            <!-- End Counters -->
+
+            <div class="col-md-6 col-lg-3 g-mb-30">
+              <!-- Counters -->
+              <div class="g-bg-white g-rounded-4 g-brd-bottom g-brd-2 g-brd-gray-light-v3 g-pa-20">
+                <div class="js-counter h1 g-font-weight-300 g-mb-5">24583</div>
+                <h4 class="g-font-weight-300">Designers</h4>
+              </div>
+            </div>
+            <!-- End Counters -->
+
+            <div class="col-md-6 col-lg-3 g-mb-30">
+              <!-- Counters -->
+              <div class="g-bg-white g-rounded-4 g-brd-bottom g-brd-2 g-brd-gray-light-v3 g-pa-20">
+                <div class="js-counter h1 g-font-weight-300 g-mb-5">37904</div>
+                <h4 class="g-font-weight-300">Open Contests</h4>
+              </div>
+            </div>
+            <!-- End Counters -->
+
+            <div class="col-md-6 col-lg-3 g-mb-30">
+              <!-- Counters -->
+              <div class="g-bg-white g-rounded-4 g-brd-bottom g-brd-2 g-brd-gray-light-v3 g-pa-20">
+                <div class="js-counter h1 g-font-weight-300 g-mb-5">50892</div>
+                <h4 class="g-font-weight-300">Happy Customers</h4>
+              </div>
+            </div>
+            <!-- End Counters -->
+          </div>
+        </div>
+      </section>
+      <!-- End Counters -->
+
+      <section class="container g-py-50">
+        <div class="d-flex justify-content-between">
+          <h3 class="h5 align-self-center mb-0 mr-4">Want to hire best people for your project? Look no further you came to the right place!</h3>
+          <a class="align-self-center btn btn-xl u-btn-outline-black g-font-weight-600 g-font-size-default g-px-35" href="#!">Hire Me</a>
+        </div>
+      </section>
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/appear.js"></script>
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+    <script src="{{ root }}assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.progress-bar.js"></script>
+    <script src="{{ root }}assets/js/components/hs.counter.js"></script>
+    <script src="{{ root }}assets/js/components/hs.cubeportfolio.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of counters
+        var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+
+        // initialization of cubeportfolio
+        $.HSCore.components.HSCubeportfolio.init('.cbp');
+
+        // initialization of horizontal progress bars
+        var horizontalProgressBars = $.HSCore.components.HSProgressBar.init('.js-hr-progress-bar', {
+          direction: 'horizontal',
+          indicatorSelector: '.js-hr-progress-bar-indicator'
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

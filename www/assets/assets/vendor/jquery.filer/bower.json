@@ -1,0 +1,19 @@
+{
+  "name": "jquery.filer",
+  "version": "1.3.0",
+  "main": "js/jquery.filer.min.js",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test"
+  ],
+  "homepage": "https://github.com/CreativeDream/jquery.filer",
+  "authors": [
+    "CreativeDream <yuliangagarin@mail.ru>"
+  ],
+  "description": "Simple HTML5 File Uploader, a plugin tool for jQuery which change completely File Input and make it with multiple file selection, drag&drop support, different validations, thumbnails, icons, instant upload, print-screen upload and many other features and options.",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": ">= 1.7.2"
+  }
+}

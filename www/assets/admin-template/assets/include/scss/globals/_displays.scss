@@ -1,0 +1,15 @@
+/*------------------------------------
+  Displays
+------------------------------------*/
+
+.g-d-none--parent-opened {
+	.g-parent.opened & {
+		display: none !important;
+	}
+}
+
+.g-d-block--parent-opened {
+	.g-parent.opened & {
+		display: block !important;
+	}
+}

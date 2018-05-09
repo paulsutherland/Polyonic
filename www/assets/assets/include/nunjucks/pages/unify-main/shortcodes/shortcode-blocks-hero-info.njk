@@ -1,0 +1,846 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-hero-info" %}
+{% set title = "Hero Info" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-block.njk" %}
+
+    <section>
+      <div id="shortcode1">
+        <div class="shortcode-html">
+          <!-- Hero Info #01 -->
+          <section class="text-center g-py-120--md g-py-80">
+            <div class="container">
+              <div class="u-heading-v2-5--bottom g-brd-primary g-mb-30">
+                <h2 class="u-heading-v2__title text-uppercase g-font-weight-300 mb-0">We are hiring</h2>
+              </div>
+
+              <p class="lead g-px-60--md g-mb-40"> Lorem ipsum dolor
+                <span class="g-color-primary">sit amet consectetur</span>
+                adipiscing elit. Nam eget varius leo, at elementum eros. Fusce tristique, ipsum egestas fermentum imperdiet, ex nunc iaculis sem, a semper augue turpis ut nulla.
+              </p>
+
+              <img class="img-fluid" src="{{ root }}assets/img/maps/map1.png" alt="Image description">
+            </div>
+          </section>
+          <!-- End Hero Info #01 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode1" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode2">
+        <div class="shortcode-html">
+          <!-- Hero Info #02 -->
+          <section class="u-bg-overlay g-bg-black-opacity-0_3--after g-bg-img-hero g-py-120--md g-py-80" style="background-image: url({{ root }}assets/img-temp/1920x1080/img10.jpg);">
+            <div class="container u-bg-overlay__inner text-center g-color-white">
+              <div class="u-heading-v2-5--bottom g-brd-primary g-mb-30">
+                <h2 class="u-heading-v2__title text-uppercase g-font-weight-300 mb-0">We are hiring</h2>
+              </div>
+
+              <p class="lead g-px-60--md g-mb-40"> Lorem ipsum dolor
+                <span class="g-color-primary">sit amet consectetur</span>
+                adipiscing elit. Nam eget varius leo, at elementum eros. Fusce tristique, ipsum egestas fermentum imperdiet, ex nunc iaculis sem, a semper augue turpis ut nulla.
+              </p>
+
+              <img class="img-fluid" src="{{ root }}assets/img/maps/map1.png" alt="Image description">
+            </div>
+          </section>
+          <!-- End Hero Info #02 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode2" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode3">
+        <div class="shortcode-html">
+          <!-- Hero Info #03 -->
+          <section class="g-py-200--md g-py-80" style="background-image: url({{ root }}assets/img/bg/bricks--white.png);">
+            <div class="container text-center">
+              <h2 class="text-uppercase g-font-weight-600 g-mb-20">Most quality solution for you</h2>
+
+              <p class="lead g-px-100--md g-mb-40">Morbi a suscipit ipsum. Suspendisse mollis libero ante. Pellentesque finibus convallis nulla vel placerat. Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl.</p>
+
+              <a href="#!" class="btn btn-xl u-btn-outline-darkgray text-uppercase g-font-weight-600 g-font-size-12 g-rounded-50 g-mb-15 g-mr-30--md">Try trial version</a>
+              <div class="g-hidden-md-up"></div>
+              <a href="#!" class="btn btn-xl u-btn-primary text-uppercase g-font-weight-600 g-font-size-12 g-rounded-50 g-mb-15">Buy full version</a>
+            </div>
+          </section>
+          <!-- Hero Info #03 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode3" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode4">
+        <div class="shortcode-html">
+          <!-- Hero Info #04 -->
+          <section class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+            <!-- Parallax Image -->
+            <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_4--after" style="height: 140%; background-image: url({{ root }}assets/img-temp/1920x1080/img13.jpg);"></div>
+            <!-- End Parallax Image -->
+
+            <div class="container text-center g-color-white g-py-200--md g-py-80">
+              <h2 class="text-uppercase g-font-weight-700 g-mb-20">Most quality solution for you</h2>
+
+              <p class="lead g-px-100--md g-mb-40">Morbi a suscipit ipsum. Suspendisse mollis libero ante. Pellentesque finibus convallis nulla vel placerat. Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl.</p>
+
+              <a href="#!" class="btn btn-xl u-btn-outline-white text-uppercase g-font-weight-600 g-font-size-12 g-rounded-50 g-mb-15 g-mr-30--md">Try trial version</a>
+              <div class="g-hidden-md-up"></div>
+              <a href="#!" class="btn btn-xl u-btn-primary text-uppercase g-font-weight-600 g-font-size-12 g-rounded-50 g-mb-15">Buy full version</a>
+            </div>
+          </section>
+          <!-- Hero Info #04 -->
+        </div>
+
+        <div class="shortcode-styles">
+          <!-- CSS Global Compulsory -->
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+        </div>
+
+        <div class="shortcode-scripts">
+          <!-- JS Implementing Plugins -->
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode4" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode5">
+        <div class="shortcode-html">
+          <!-- Hero Info #05 -->
+          <section class="g-py-200--md g-py-80">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-md-10 ml-md-auto mr-md-auto">
+                  <h3 class="h5 text-uppercase g-font-weight-700 g-mb-20">Purchase now and</h3>
+                  <h2 class="display-4 text-uppercase g-font-weight-600 g-mb-20">
+                    <span class="g-color-primary">Get 15%</span>
+                    discount
+                  </h2>
+
+                  <p class="lead g-mb-40">Donec eleifend mauris eu leo varius consectetur. Aliquam luctus a lorem ac rutrum. Cras in nulla id mi ornare vestibulum. Donec et magna nulla. Pellentesque ut ipsum id nibh pretium blandit quis ac erat.</p>
+
+                  <a class="btn btn-xl u-btn-primary text-uppercase g-font-weight-700 g-font-size-12" href="#!">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Hero Info #05 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode5" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode6">
+        <div class="shortcode-html">
+          <!-- Hero Info #06 -->
+          <section class="u-bg-overlay g-bg-black-opacity-0_5--after g-bg-img-hero g-py-200--md g-py-80" style="background-image: url({{ root }}assets/img-temp/1920x1080/img12.jpg);">
+            <div class="container u-bg-overlay__inner text-center g-color-white">
+              <div class="row">
+                <div class="col-md-10 ml-md-auto mr-md-auto">
+                  <h3 class="h5 text-uppercase g-font-weight-700 g-mb-20">Purchase now and</h3>
+                  <h2 class="display-4 text-uppercase g-font-weight-600 g-mb-20">
+                    <span class="g-color-primary">Get 15%</span>
+                    discount
+                  </h2>
+
+                  <p class="lead g-mb-40">Donec eleifend mauris eu leo varius consectetur. Aliquam luctus a lorem ac rutrum. Cras in nulla id mi ornare vestibulum. Donec et magna nulla. Pellentesque ut ipsum id nibh pretium blandit quis ac erat.</p>
+
+                  <a class="btn btn-xl u-btn-primary text-uppercase g-font-weight-700 g-font-size-12" href="#!">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Hero Info #06 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode6" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode7">
+        <div class="shortcode-html">
+          <!-- Hero Info #07 -->
+          <section class="g-py-200--md g-py-80">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-md-8 ml-md-auto mr-md-auto">
+                  <div class="u-heading-v7-2 g-mb-30">
+                    <h2 class="display-4 u-heading-v7__title g-mb-20">Build a Great
+                      <span class="g-color-primary">Product!</span>
+                    </h2>
+                    <i class="fa fa-star g-color-primary g-font-size-70x"></i>
+                    <i class="fa fa-star g-font-size-95x g-color-primary"></i>
+                    <i class="fa fa-star g-color-primary"></i>
+                    <i class="fa fa-star g-font-size-95x g-color-primary"></i>
+                    <i class="fa fa-star g-font-size-70x g-color-primary"></i>
+                  </div>
+
+                  <p class="lead g-mb-60">Sed feugiat porttitor nunc, non dignissim ipsum vestibulum in. Donec in blandit dolor. Vivamus a fringilla lorem, vel faucibus ante. Nunc ullamcorper, justo a iaculis elementum, enim orci viverra eros, fringilla porttitor lorem eros vel.</p>
+
+                  <a class="js-fancybox-media btn btn-xl u-btn-primary g-rounded-15" href="javascript:;"
+                     data-src="//vimeo.com/14220611"
+                     data-animate-in="flipInY"
+                     data-animate-out="flipOutY"
+                     data-speed="1000">
+                    <i class="fa fa-video-camera g-mr-15"></i>
+                    Watch Our Presentation
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Hero Info #07 -->
+        </div>
+
+        <div class="shortcode-styles">
+          <!-- CSS Implementing Plugins -->
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+        </div>
+
+        <div class="shortcode-scripts">
+          <!-- JS Implementing Plugins -->
+          <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+          <!-- JS Unify -->
+          <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+          <!-- JS Plugins Init. -->
+          <script type="text/plain">
+            $(document).ready(function () {
+              // initialization of popups with media
+              $.HSCore.components.HSPopup.init('.js-fancybox-media', {
+                helpers: {
+                  media: {},
+                  overlay: {
+                    css: {
+                      'background': 'rgba(255, 255, 255, .8)'
+                    }
+                  }
+                }
+              });
+            });
+          </script>
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode7" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode8">
+        <div class="shortcode-html">
+          <!-- Hero Info #08 -->
+          <section class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+            <!-- Parallax Image -->
+            <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_5--after" style="height: 140%; background-image: url({{ root }}assets/img-temp/1920x1080/img35.jpg)"></div>
+            <!-- End Parallax Image -->
+
+            <div class="container text-center g-color-white g-py-200--md g-py-80">
+              <div class="row">
+                <div class="col-md-8 ml-md-auto mr-md-auto">
+                  <div class="u-heading-v7-2 g-mb-30">
+                    <h2 class="display-4 u-heading-v7__title g-mb-20">Build a Great
+                      <span class="g-color-primary">Product!</span>
+                    </h2>
+                    <i class="fa fa-star g-color-primary g-font-size-70x"></i>
+                    <i class="fa fa-star g-font-size-95x g-color-primary"></i>
+                    <i class="fa fa-star g-color-primary"></i>
+                    <i class="fa fa-star g-font-size-95x g-color-primary"></i>
+                    <i class="fa fa-star g-font-size-70x g-color-primary"></i>
+                  </div>
+
+                  <p class="lead g-mb-60">Sed feugiat porttitor nunc, non dignissim ipsum vestibulum in. Donec in blandit dolor. Vivamus a fringilla lorem, vel faucibus ante. Nunc ullamcorper, justo a iaculis elementum, enim orci viverra eros, fringilla porttitor lorem eros vel.</p>
+
+                  <a class="js-fancybox-media btn btn-xl u-btn-primary g-rounded-15" href="javascript:;"
+                     data-src="//vimeo.com/14220611"
+                     data-animate-in="flipInY"
+                     data-animate-out="flipOutY"
+                     data-speed="1000">
+                    <i class="fa fa-video-camera g-mr-15"></i>
+                    Watch Our Presentation
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Hero Info #08 -->
+        </div>
+
+        <div class="shortcode-styles">
+          <!-- CSS Implementing Plugins -->
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+        </div>
+
+        <div class="shortcode-scripts">
+          <!-- JS Implementing Plugins -->
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+
+          <!-- JS Implementing Plugins -->
+          <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+          <!-- JS Unify -->
+          <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+          <!-- JS Plugins Init. -->
+          <script type="text/plain">
+            $(document).ready(function () {
+              // initialization of popups with media
+              $.HSCore.components.HSPopup.init('.js-fancybox-media', {
+                helpers: {
+                  media: {},
+                  overlay: {
+                    css: {
+                      'background': 'rgba(255, 255, 255, .8)'
+                    }
+                  }
+                }
+              });
+            });
+          </script>
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode8" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode9">
+        <div class="shortcode-html">
+          <!-- Hero Info #09 -->
+          <section class="g-py-200--md g-py-80">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-md-8 ml-md-auto mr-md-auto">
+                  <h3 class="g-font-size-12 text-uppercase g-font-weight-600 g-mb-15">
+                    <span class="g-color-primary">Our</span>
+                    Presentation
+                  </h3>
+                  <h2 class="h1 text-uppercase g-mb-25"> Watch our presentation</h2>
+
+                  <p class="lead g-mb-60">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas ac nulla vehicula risus pulvinar feugiat ullamcorper sit amet mi. Nam placerat efficitur dui, quis mattis magna.</p>
+
+                  <a class="js-fancybox-media btn u-btn-primary g-pos-rel g-width-70 g-height-70 g-rounded-50" href="javascript:;"
+                     data-src="//vimeo.com/14220611"
+                     data-animate-in="flipInY"
+                     data-animate-out="flipOutY"
+                     data-speed="1000">
+                    <i class="fa fa-play center-it"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Hero Info #09 -->
+        </div>
+
+        <div class="shortcode-styles">
+          <!-- CSS Implementing Plugins -->
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+        </div>
+
+        <div class="shortcode-scripts">
+          <!-- JS Implementing Plugins -->
+          <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+          <!-- JS Unify -->
+          <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+          <!-- JS Plugins Init. -->
+          <script type="text/plain">
+            $(document).ready(function () {
+              // initialization of popups with media
+              $.HSCore.components.HSPopup.init('.js-fancybox-media', {
+                helpers: {
+                  media: {},
+                  overlay: {
+                    css: {
+                      'background': 'rgba(255, 255, 255, .8)'
+                    }
+                  }
+                }
+              });
+            });
+          </script>
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode9" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode10">
+        <div class="shortcode-html">
+          <!-- Hero Info #10 -->
+          <section class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+            <!-- Parallax Image -->
+            <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_5--after" style="height: 140%; background-image: url({{ root }}assets/img-temp/1920x1080/img10.jpg)"></div>
+            <!-- End Parallax Image -->
+
+            <div class="container text-center g-color-white g-py-200--md g-py-80">
+              <div class="row">
+                <div class="col-md-8 ml-md-auto mr-md-auto">
+                  <h3 class="g-font-size-12 text-uppercase g-font-weight-600 g-mb-15">
+                    <span class="g-color-primary">Our</span>
+                    Presentation
+                  </h3>
+                  <h2 class="h1 text-uppercase g-mb-25"> Watch our presentation</h2>
+
+                  <p class="lead g-mb-60">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas ac nulla vehicula risus pulvinar feugiat ullamcorper sit amet mi. Nam placerat efficitur dui, quis mattis magna.</p>
+
+                  <a class="js-fancybox-media btn u-btn-primary g-pos-rel g-width-70 g-height-70 g-rounded-50" href="javascript:;"
+                     data-src="//vimeo.com/14220611"
+                     data-animate-in="flipInY"
+                     data-animate-out="flipOutY"
+                     data-speed="1000">
+                    <i class="fa fa-play center-it"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Hero Info #10 -->
+        </div>
+
+        <div class="shortcode-styles">
+          <!-- CSS Implementing Plugins -->
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.css">
+        </div>
+
+        <div class="shortcode-scripts">
+          <!-- JS Implementing Plugins -->
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode10" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode11">
+        <div class="shortcode-html">
+          <!-- Hero Info #11 -->
+          <section class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+            <!-- Parallax Image -->
+            <div class="divimage dzsparallaxer--target w-100 g-bg-repeat" style="height: 160%; background-image: url({{ root }}assets/img/bg/pattern4.png)"></div>
+            <!-- End Parallax Image -->
+
+            <div class="container g-py-150--md g-py-80">
+              <div class="row">
+                <div class="col-md-7 align-self-center g-mb-60 g-mb-0--md">
+                  <h2 class="h1 text-uppercase g-font-weight-300 g-mb-20">Premium Collection</h2>
+                  <p class="lead g-mb-30">Duis in posuere risus. Vivamus sed dignissim tellus. In vehicula justo tempor commodo. Nunc lobortis dapibus neque quis lacinia</p>
+                  <a class="btn btn-md u-btn-outline-darkgray g-brd-2 rounded-0" href="#!">
+                    <i class="fa fa-shopping-cart g-mr-10"></i>
+                    Shop Now
+                  </a>
+                </div>
+
+                <div class="col-md-5 g-pos-rel">
+                  <div class="d-flex g-color-gray-dark-v2">
+                    <p class="g-font-size-200 g-mr-15 mb-0">50</p>
+                    <p class="align-self-end">
+                      <span class="g-font-size-70 mb-0 g-mb-15--md g-mr-15 g-mr-0--md">%</span>
+                      <span class="d-block g-font-size-40 text-uppercase mb-0">off</span>
+                    </p>
+                  </div>
+
+                  <div class="g-bg-primary g-color-white g-pos-abs g-top-minus-30 g-right-10 g-width-85 g-height-85 rounded-circle">
+                    <div class="g-absolute-centered text-center">
+                      <p class="g-font-weight-600 g-font-size-21 g-mb-minus-5"><strong>new</strong></p>
+                      <p class="mb-0">Products</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Hero Info #11 -->
+        </div>
+
+        <div class="shortcode-styles">
+          <!-- CSS Global Compulsory -->
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+        </div>
+
+        <div class="shortcode-scripts">
+          <!-- JS Implementing Plugins -->
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+          <!-- JS Unify -->
+          <script type="text/plain" src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+          <!-- JS Plugins Init. -->
+          <script type="text/plain">
+            $(document).ready(function () {
+              // initialization of popups with media
+              $.HSCore.components.HSPopup.init('.js-fancybox-media', {
+                helpers: {
+                  media: {},
+                  overlay: {
+                    css: {
+                      'background': 'rgba(255, 255, 255, .8)'
+                    }
+                  }
+                }
+              });
+            });
+          </script>
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode11" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode12">
+        <div class="shortcode-html">
+          <!-- Hero Info #12 -->
+          <section class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+            <!-- Parallax Image -->
+            <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_5--after" style="height: 140%; background-image: url({{ root }}assets/img-temp/1920x800/img10.jpg)"></div>
+            <!-- End Parallax Image -->
+
+            <div class="container g-color-white g-py-150--md g-py-80">
+              <div class="row">
+                <div class="col-md-7 align-self-center g-mb-60 g-mb-0--md">
+                  <h2 class="h1 text-uppercase g-font-weight-300 g-mb-20">Premium Collection</h2>
+                  <p class="lead g-mb-30">Duis in posuere risus. Vivamus sed dignissim tellus. In vehicula justo tempor commodo. Nunc lobortis dapibus neque quis lacinia</p>
+                  <a class="btn btn-md u-btn-outline-white rounded-0" href="#!">
+                    <i class="fa fa-shopping-cart g-mr-10"></i>
+                    Shop Now
+                  </a>
+                </div>
+
+                <div class="col-md-5 g-pos-rel">
+                  <div class="d-flex g-color-white">
+                    <p class="g-font-size-200 g-mr-15 mb-0">50</p>
+                    <p class="align-self-end">
+                      <span class="g-font-size-70 mb-0 g-mb-15--md g-mr-15 g-mr-0--md">%</span>
+                      <span class="d-block g-font-size-40 text-uppercase mb-0">off</span>
+                    </p>
+                  </div>
+
+                  <div class="g-bg-primary g-color-white g-pos-abs g-top-minus-30 g-right-10 g-width-85 g-height-85 rounded-circle">
+                    <div class="g-absolute-centered text-center">
+                      <p class="g-font-weight-600 g-font-size-21 g-mb-minus-5"><strong>new</strong></p>
+                      <p class="mb-0">Products</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Hero Info #12 -->
+        </div>
+
+        <div class="shortcode-styles">
+          <!-- CSS Global Compulsory -->
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+        </div>
+
+        <div class="shortcode-scripts">
+          <!-- JS Implementing Plugins -->
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode12" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode13">
+        <div class="shortcode-html">
+          <!-- Hero Info #13 -->
+          <section class="g-pt-100">
+            <div class="container text-center">
+              <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                <h2 class="h1 text-uppercase g-font-weight-300 u-heading-v2__title g-mb-10">We Are Unify Agency</h2>
+              </div>
+
+              <p class="lead g-px-100--md g-mb-60">Unify
+                <strong>creative</strong> technology company providing key digital services. Focused on helping our clients to build a
+                <strong>successful</strong> business on web and mobile.</p>
+
+              <img class="img-fluid" src="{{ root }}assets/img-temp/900x535/img1.png" alt="Image Description">
+            </div>
+          </section>
+          <!-- Hero Info #13 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode13" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode14">
+        <div class="shortcode-html">
+          <!-- Hero Info #14 -->
+          <div class="g-bg-img-hero g-bg-pos-top-center g-bg-size-cover g-bg-cover g-bg-white-gradient-opacity-v5--after" style="background-image: url(../../assets/img-temp/1920x800/img28.jpg);">
+            <div class="container g-pos-rel g-z-index-1">
+              <div class="row justify-content-between">
+                <div class="col-md-5 g-py-100">
+                  <div class="mb-5">
+                    <span class="d-block text-uppercase g-color-dark-light-v1 g-font-weight-500 g-font-size-13 mb-4">How does it work?</span>
+                    <h2 class="mb-4 g-color-black">Marketing Service by<br>&#171;Unify Marketing&#187;</h2>
+                    <p class="g-font-size-16 g-line-height-2">This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key.</p>
+                  </div>
+                  <a class="btn u-btn-primary g-font-weight-600 g-font-size-12 text-uppercase g-px-25 g-py-13" href="page-login-1.html">
+
+                    Register Now
+
+                    <i class="g-pos-rel g-top-minus-1 ml-2 fa fa-angle-right"></i>
+
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Info #14 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode14" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode15">
+        <div class="shortcode-html">
+          <!-- Hero Info #15 -->
+          <div class="g-bg-img-hero g-bg-pos-top-center g-bg-size-cover g-bg-cover g-bg-white-gradient-opacity-v5--after" style="background-image: url(../../assets/img-temp/1920x800/img29.jpg);">
+            <div class="container g-pos-rel g-z-index-1">
+              <div class="row justify-content-between">
+                <div class="col-md-5 g-py-100">
+                  <div class="mb-5">
+                    <span class="d-block text-uppercase g-color-dark-light-v1 g-font-weight-500 g-font-size-13 mb-4">Be Brave</span>
+                    <h2 class="mb-4 g-color-black">&#171;Unify Marketing&#187; - is the first step towards favorable changes</h2>
+                    <p class="g-font-size-16 g-line-height-2">This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key.</p>
+                  </div>
+
+                  <span class="d-inline-block g-font-weight-600 text-uppercase mr-4">Call Us</span>
+                  <a class="btn u-btn-outline-primary g-brd-2 g-font-weight-600 g-font-size-12 text-uppercase g-px-25 g-py-13" href="#">
+                    (0161) 347 8854
+                    <i class="g-pos-rel g-top-minus-1 ml-2 fa fa-angle-right"></i>
+                  </a>
+                  <span class="d-inline-block g-font-weight-600 text-uppercase mx-4">or</span>
+                  <a class="btn u-btn-primary g-font-weight-600 g-font-size-12 text-uppercase g-px-25 g-py-13" href="page-contacts-1.html">
+                    Say Hello
+                    <i class="g-pos-rel g-top-minus-1 ml-2 fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Info #15 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode15" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode16">
+        <div class="shortcode-html">
+          <!-- Hero Info #16 -->
+          <div class="g-bg-img-hero g-bg-pos-top-center g-bg-size-cover g-bg-cover g-bg-black-opacity-0_4--after" style="background-image: url(../../assets/img-temp/1920x800/img30.jpg);">
+            <div class="container g-pos-rel g-z-index-1">
+              <div class="row justify-content-between">
+                <div class="col-md-5 g-py-100">
+                  <div class="mb-5">
+                    <h2 class="h1 g-color-white mb-4">Marketing Service by<br>&#171;Unify Marketing&#187;</h2>
+                    <p class="g-color-white-opacity-0_9 g-font-size-16 g-line-height-2">This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key.</p>
+                  </div>
+                  <a class="btn u-btn-primary g-font-weight-600 g-font-size-12 text-uppercase g-px-25 g-py-13" href="page-login-1.html">
+                    Register Now
+                    <i class="g-pos-rel g-top-minus-1 ml-2 fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Info #16 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode16" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <div id="shortcode17">
+        <div class="shortcode-html">
+          <!-- Hero Info #17 -->
+          <div class="g-bg-img-hero g-bg-pos-top-center g-bg-size-cover g-py-150" style="background-image: url(../../assets/img-temp/1920x800/img32.jpg);">
+            <div class="container g-pos-rel g-z-index-1">
+              <span class="d-block text-uppercase g-color-primary g-font-weight-500 g-font-size-13 mb-4">Make a Career of Making an Impact</span>
+              <h2 class="g-color-white g-font-size-60--lg mb-0">Work at Unify Marketing</h2>
+            </div>
+          </div>
+          <!-- Hero Info #17 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode17" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/appear.js"></script>
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+  <script src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.popup.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of popups with medis
+      $.HSCore.components.HSPopup.init('.js-fancybox-media', {
+        helpers: {
+          media: {},
+          overlay: {
+            css: {
+              'background': 'rgba(255, 255, 255, .8)'
+            }
+          }
+        }
+      });
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of header HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

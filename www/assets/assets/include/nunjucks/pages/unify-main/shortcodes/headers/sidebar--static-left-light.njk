@@ -1,0 +1,128 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+
+{% set title = "Sidebar Navigation - Static - Left Side" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/bootstrap/offcanvas.css">
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/fancybox/jquery.fancybox.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-static-left">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/sidebar-static-left-light.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/promo/promo-block-v1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/about/about-block-v1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/icons-blocks/icons-block-v1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/mockup-blocks/mockup-block-v1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/grid-blocks/blog-grid-block-v1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/content/projects-blocks/projects-block-v1.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+  <script src="{{ root }}assets/vendor/bootstrap/offcanvas.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+  <script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="{{ root }}assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="{{ root }}assets/vendor/gmaps/gmaps.min.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+  <script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+  <script src="{{ root }}assets/js/components/hs.popup.js"></script>
+  <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+  <script src="{{ root }}assets/js/components/gmap/hs.map.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    // initialization of google map
+    function initMap() {
+      $.HSCore.components.HSGMap.init('.js-g-map');
+    }
+
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of HSDropdown component
+      $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+        afterOpen: function(){
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of popups
+      $.HSCore.components.HSPopup.init('.js-fancybox');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeaderSide.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        direction: 'vertical',
+        breakpoint: 991
+      });
+    });
+  </script>
+
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async defer></script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+/*------------------------------------
+  Nonstandard Background v2
+------------------------------------*/
+
+[class*="u-ns-bg-v2"] {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 0;
+    height: 0;
+    border: {
+      style: solid;
+      color: transparent;
+    }
+  }
+}
+
+.u-ns-bg-v2,
+.u-ns-bg-v2-2 {
+  &-top,
+  &-bottom {
+    &::before {
+      left: 45px;
+    }
+  }
+
+  &-left,
+  &-right {
+    &::before {
+      top: 23px;
+    }
+  }
+
+  &-top {
+    &::before {
+      top: -15px;
+      border-width: 0 17px 15px 17px;
+    }
+
+    &.g-bg-primary {
+      &::before {
+        border-bottom-color: $g-color-primary;
+      }
+    }
+
+    &.g-bg-white {
+      &::before {
+        border-bottom-color: $g-color-white;
+      }
+    }
+
+    &.g-bg-gray-light-v2 {
+      &::before {
+        border-bottom-color: $g-color-gray-light-v2;
+      }
+    }
+
+    &.g-bg-gray-light-v5 {
+      &::before {
+        border-bottom-color: $g-color-gray-light-v5;
+      }
+    }
+
+    &.g-bg-black {
+      &::before {
+        border-bottom-color: $g-color-black;
+      }
+    }
+  }
+
+  &-bottom {
+    &::before {
+      bottom: -15px;
+      border-width: 15px 17px 0 17px;
+    }
+
+    &.g-bg-primary {
+      &::before {
+        border-top-color: $g-color-primary;
+      }
+    }
+
+    &.g-bg-white {
+      &::before {
+        border-top-color: $g-color-white;
+      }
+    }
+
+    &.g-bg-gray-light-v2 {
+      &::before {
+        border-top-color: $g-color-gray-light-v2;
+      }
+    }
+
+    &.g-bg-black {
+      &::before {
+        border-top-color: $g-color-black;
+      }
+    }
+  }
+
+  &-left {
+    &::before {
+      left: -15px;
+      border-width: 17px 15px 17px 0;
+    }
+
+    &.g-bg-primary {
+      &::before {
+        border-right-color: $g-color-primary;
+      }
+    }
+
+    &.g-bg-white {
+      &::before {
+        border-right-color: $g-color-white;
+      }
+    }
+
+    &.g-bg-gray-light-v2 {
+      &::before {
+        border-right-color: $g-color-gray-light-v2;
+      }
+    }
+
+    &.g-bg-black {
+      &::before {
+        border-right-color: $g-color-black;
+      }
+    }
+  }
+
+  &-right {
+    &::before {
+      right: -15px;
+      border-width: 17px 0 17px 15px;
+    }
+
+    &.g-bg-primary {
+      &::before {
+        border-left-color: $g-color-primary;
+      }
+    }
+
+    &.g-bg-white {
+      &::before {
+        border-left-color: $g-color-white;
+      }
+    }
+
+    &.g-bg-gray-light-v2 {
+      &::before {
+        border-left-color: $g-color-gray-light-v2;
+      }
+    }
+
+    &.g-bg-black {
+      &::before {
+        border-left-color: $g-color-black;
+      }
+    }
+  }
+
+  &-2 {
+    &-top,
+    &-bottom {
+      &::before {
+        left: 20px;
+      }
+    }
+
+    &-left,
+    &-right {
+      &::before {
+        top: 30px;
+      }
+    }
+
+    &-top {
+      &::before {
+        border-width: 0 15px 15px 15px;
+      }
+    }
+
+    &-bottom {
+      &::before {
+        border-width: 15px 15px 0 15px;
+      }
+    }
+
+    &-left {
+      &::before {
+        border-width: 15px 15px 15px 0;
+      }
+    }
+
+    &-right {
+      &::before {
+        border-width: 15px 0 15px 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: $g-md) {
+  .u-ns-bg-v2,
+  .u-ns-bg-v2-2 {
+    &-top--md,
+    &-bottom--md,
+    &-left--md,
+    &-right--md {
+      &::before {
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin: {
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+
+      &.g-bg-primary,
+      &.g-bg-white,
+      &.g-bg-gray-light-v2,
+      &.g-bg-black {
+        &::before {
+          border-top-color: transparent;
+          border-bottom-color: transparent;
+          border-left-color: transparent;
+          border-right-color: transparent;
+        }
+      }
+    }
+
+    &-top--md {
+      &::before {
+        top: -15px;
+        border-width: 0 17px 15px 17px;
+      }
+
+      &.g-bg-primary {
+        &::before {
+          border-bottom-color: $g-color-primary;
+        }
+      }
+
+      &.g-bg-white {
+        &::before {
+          border-bottom-color: $g-color-white;
+        }
+      }
+
+      &.g-bg-gray-light-v2 {
+        &::before {
+          border-bottom-color: $g-color-gray-light-v2;
+        }
+      }
+
+      &.g-bg-black {
+        &::before {
+          border-bottom-color: $g-color-black;
+        }
+      }
+    }
+
+    &-bottom--md {
+      &::before {
+        bottom: -15px;
+        border-width: 15px 17px 0 17px;
+      }
+
+      &.g-bg-primary {
+        &::before {
+          border-top-color: $g-color-primary;
+        }
+      }
+
+      &.g-bg-white {
+        &::before {
+          border-top-color: $g-color-white;
+        }
+      }
+
+      &.g-bg-gray-light-v2 {
+        &::before {
+          border-top-color: $g-color-gray-light-v2;
+        }
+      }
+
+      &.g-bg-black {
+        &::before {
+          border-top-color: $g-color-black;
+        }
+      }
+    }
+
+    &-left--md {
+      &::before {
+        left: -15px;
+        border-width: 17px 15px 17px 0;
+      }
+
+      &.g-bg-primary {
+        &::before {
+          border-right-color: $g-color-primary;
+        }
+      }
+
+      &.g-bg-white {
+        &::before {
+          border-right-color: $g-color-white;
+        }
+      }
+
+      &.g-bg-gray-light-v2 {
+        &::before {
+          border-right-color: $g-color-gray-light-v2;
+        }
+      }
+
+      &.g-bg-black {
+        &::before {
+          border-right-color: $g-color-black;
+        }
+      }
+    }
+
+    &-right--md {
+      &::before {
+        right: -15px;
+        border-width: 17px 0 17px 15px;
+      }
+
+      &.g-bg-primary {
+        &::before {
+          border-left-color: $g-color-primary;
+        }
+      }
+
+      &.g-bg-white {
+        &::before {
+          border-left-color: $g-color-white;
+        }
+      }
+
+      &.g-bg-gray-light-v2 {
+        &::before {
+          border-left-color: $g-color-gray-light-v2;
+        }
+      }
+
+      &.g-bg-black {
+        &::before {
+          border-left-color: $g-color-black;
+        }
+      }
+    }
+
+    &-2 {
+      &-top--md,
+      &-bottom--md {
+        &::before {
+          left: 20px;
+        }
+      }
+
+      &-left--md,
+      &-right--md {
+        &::before {
+          top: 30px;
+        }
+      }
+
+      &-top--md {
+        &::before {
+          border-width: 0 15px 15px 15px;
+        }
+      }
+
+      &-bottom--md {
+        &::before {
+          border-width: 15px 15px 0 15px;
+        }
+      }
+
+      &-left--md {
+        &::before {
+          border-width: 15px 15px 15px 0;
+        }
+      }
+
+      &-right--md {
+        &::before {
+          border-width: 15px 0 15px 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2457 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-forms-unify" %}
+{% set title = "Unify Forms" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/themify-icons/themify-icons.css">
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+      <!-- Form Controls -->
+      <section class="container g-py-100">
+        <!-- Heading -->
+        <header class="g-mb-80">
+          <div class="u-heading-v6-2 text-uppercase">
+            <h2 class="h4 u-heading-v6__title g-font-weight-300">Form Controls</h2>
+          </div>
+          <div class="g-pl-90">
+            <p>Unify's form controls extend on
+              <a href="#!">Bootstrap forms</a>
+              with classes. In all examples,
+              <code>.form-control-md</code> class is used to change Bootstrap's default form size. Also, all form styles can be extended with Unify's global classes.
+            </p>
+          </div>
+        </header>
+        <!-- End Heading -->
+
+        <!-- General Forms -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Text Inputs</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode1">
+              <div class="shortcode-html">
+                <!-- General Forms -->
+                <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                  <!-- Text Input -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10" for="inputGroup1_1">Text input</label>
+                    <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="email" placeholder="Enter email">
+                    <small class="form-text text-muted g-font-size-default g-mt-10">We'll never share your email with anyone else.</small>
+                  </div>
+                  <!-- End Text Input -->
+
+                  <!-- Input with Autocomplete -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10" for="autocomplete1">Input with autocomplete</label>
+                    <input id="autocomplete2" class="form-control form-control-md rounded-0" type="text" placeholder="e.g. Alice" data-url="{{ root }}assets/include/ajax/autocomplete-data-1.json">
+                    <small class="form-text text-muted g-font-size-default g-mt-10">
+                        <strong>Note:</strong> works in Chrome, Firefox, Opera and above IE11.
+                      </small>
+                  </div>
+                  <!-- End Input with Autocomplete -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <h4 class="h6 g-font-weight-700 g-mb-20">Appended icon(s)</h4>
+
+                  <!-- Text Input with Right Appended Icon -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text input with right appended icon</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <input class="form-control form-control-md border-right-0 rounded-0 pr-0" type="text" placeholder="Ipsum Aenean Porta">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-equalizer"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Text Input with Right Appended Icon -->
+
+                  <!-- Text Input with Left Appended Icon -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text Input with left appended icon</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user-follow"></i></span>
+                      </div>
+                      <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="text" placeholder="Cras Ullamcorper Nibh">
+                    </div>
+                  </div>
+                  <!-- End Text Input with Left Appended Icon -->
+
+                  <!-- Text Input with Both Appended Icon -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text input with both appended icons</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user"></i></span>
+                      </div>
+                      <input class="form-control form-control-md border-left-0 border-right-0 rounded-0 px-0" type="text" placeholder="Epsum Aenean Porta">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-lock"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Text Input with Both Appended Icon -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <h4 class="h6 g-font-weight-700 g-mb-20">Appended icon(s) with border</h4>
+
+                  <!-- Text Input with Right Appended Icon -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text input with right appended icon</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <input class="form-control form-control-md rounded-0" type="text" placeholder="Ipsum Aenean Porta">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-equalizer"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Text Input with Right Appended Icon -->
+
+                  <!-- Text Input with Left Appended Icon -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text Input with left appended icon</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user-follow"></i></span>
+                      </div>
+                      <input class="form-control form-control-md rounded-0" type="text" placeholder="Cras Ullamcorper Nibh">
+                    </div>
+                  </div>
+                  <!-- End Text Input with Left Appended Icon -->
+
+                  <!-- Text Input with Both Appended Icon -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text input with both appended icons</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user"></i></span>
+                      </div>
+                      <input class="form-control form-control-md rounded-0" type="text" placeholder="Epsum Aenean Porta">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-lock"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Text Input with Both Appended Icon -->
+                </form>
+                <!-- End General Forms -->
+              </div>
+
+              <div class="shortcode-styles">
+                <!-- CSS Implementing Plugins -->
+                <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+              </div>
+
+              <div class="shortcode-scripts">
+                <!-- jQuery UI Core -->
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/jquery-ui.core.js"></script>
+
+                <!-- jQuery UI Helpers -->
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+                <!-- jQuery UI Widgets -->
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+                <!-- JS Unify -->
+                <script type="text/plain" src="{{ root }}assets/js/components/hs.autocomplete.js"></script>
+
+                <!-- JS Plugins Init. -->
+                <script type="text/plain">
+                  $(document).on('ready', function () {
+                      // initialization of autocomplet
+                      $.HSCore.components.HSAutocomplete.init('#autocomplete2');
+                    });
+                </script>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode1" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End General Forms -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- Textareas -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Textareas</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode2">
+              <!-- Textareas -->
+              <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                <!-- Textarea -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10" for="inputGroup2_1">Textarea</label>
+                  <textarea id="inputGroup2_1" class="form-control form-control-md g-resize-none rounded-0" rows="3" placeholder="Text area"></textarea>
+                  <small class="form-text text-muted g-font-size-default g-mt-10">
+                      <strong>Note:</strong> height of the textarea depends on the rows attribute.
+                    </small>
+                </div>
+                <!-- End Textarea -->
+
+                <!-- Textarea Resizable -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10" for="inputGroup2_2">Textarea resizable</label>
+                  <textarea id="inputGroup2_2" class="form-control form-control-md rounded-0" rows="3" placeholder="Text area"></textarea>
+                </div>
+                <!-- End Textarea Resizable -->
+
+                <!-- Textarea Expandable -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10" for="inputGroup2_2">Textarea expandable</label>
+                  <textarea id="inputGroup2_3" class="form-control form-control-md u-textarea-expandable rounded-0" rows="3" placeholder="Text area"></textarea>
+                  <small class="form-text text-muted g-font-size-default g-mt-10">
+                      <strong>Note:</strong> expands on focus.
+                    </small>
+                </div>
+                <!-- End Textarea Expandable -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <h4 class="h6 g-font-weight-700 g-mb-20">Appended icon(s)</h4>
+
+                <!-- Textarea Input with Right Appended Icon -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10">Textarea with right appended icon</label>
+                  <div class="input-group g-brd-primary--focus">
+                    <textarea class="form-control form-control-md border-right-0 g-resize-none rounded-0 pr-0" rows="4" placeholder="Ipsum Aenean Porta"></textarea>
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-equalizer"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Right Appended Icon -->
+
+                <!-- Textarea Input with Left Appended Icon -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10">Text input with left prepended icon</label>
+                  <div class="input-group g-brd-primary--focus">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user"></i></span>
+                    </div>
+                    <textarea class="form-control form-control-md border-left-0 g-resize-none rounded-0 pl-0" rows="4" placeholder="Cras Ullamcorper Nibh"></textarea>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Left Appended Icon -->
+
+                <!-- Textarea Input with Both Appended Icon -->
+                <div class="form-group g-mb-30">
+                  <label class="g-mb-10">Textarea with both prepended icon</label>
+                  <div class="input-group g-brd-primary--focus">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user-following"></i></span>
+                    </div>
+                    <textarea class="form-control form-control-md g-resize-none border-left-0 border-right-0 rounded-0 px-0" rows="4" placeholder="Inceptos Fusce"></textarea>
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-lock"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Both Appended Icon -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <h4 class="h6 g-font-weight-700 g-mb-20">Appended icon(s) with border</h4>
+
+                <!-- Textarea Input with Right Appended Icon -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10">Textarea with right appended icon</label>
+                  <div class="input-group g-brd-primary--focus">
+                    <textarea class="form-control form-control-md g-resize-none rounded-0" rows="4" placeholder="Ipsum Aenean Porta"></textarea>
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-equalizer"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Right Appended Icon -->
+
+                <!-- Textarea Input with Left Appended Icon -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10">Text input with left prepended icon</label>
+                  <div class="input-group g-brd-primary--focus">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user"></i></span>
+                    </div>
+                    <textarea class="form-control form-control-md g-resize-none rounded-0" rows="4" placeholder="Cras Ullamcorper Nibh"></textarea>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Left Appended Icon -->
+
+                <!-- Textarea Input with Both Appended Icon -->
+                <div class="form-group mb-0">
+                  <label class="g-mb-10">Textarea with both prepended icon</label>
+                  <div class="input-group g-brd-primary--focus">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user-following"></i></span>
+                    </div>
+                    <textarea class="form-control form-control-md g-resize-none rounded-0" rows="4" placeholder="Inceptos Fusce"></textarea>
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-lock"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Both Appended Icon -->
+              </form>
+              <!-- End Textareas -->
+            </div>
+
+            {% set contentTarget = "#shortcode2" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Textareas -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- File Inputs -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">File Inputs
+              <small class="text-muted">(attachments)</small>
+            </h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode3">
+              <div class="shortcode-html">
+                <!-- File Inputs -->
+                <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                  <!-- Plain File Input -->
+                  <div class="form-group mb-0">
+                    <p>Plain File Input</p>
+                    <label class="u-file-attach-v2 g-color-gray-dark-v5 mb-0">
+                      <input id="fileAttachment" name="file-attachment" type="file">
+                      <i class="icon-cloud-upload g-font-size-16 g-pos-rel g-top-2 g-mr-5"></i>
+                      <span class="js-value">Attach file</span>
+                    </label>
+                  </div>
+                  <!-- End Plain File Input -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <!-- File Input -->
+                  <div class="form-group">
+                    <label class="g-mb-10" for="inputGroup1_2">File input</label>
+
+                    <div class="input-group u-file-attach-v1 g-brd-gray-light-v2">
+                      <input id="inputGroup1_2" class="form-control form-control-md rounded-0" type="text" placeholder="Text in field" readonly>
+
+                      <div class="input-group-append">
+                        <button class="btn btn-md u-btn-primary rounded-0" type="submit">Browse</button>
+                        <input type="file">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End File Input -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <!-- Advanced File Input -->
+                  <div class="form-group mb-0">
+                    <label class="g-mb-10">Advanced File input</label>
+                    <input class="js-file-attachment" type="file" name="fileAttachment2[]">
+                  </div>
+                  <!-- End Advanced File Input -->
+                </form>
+                <!-- End File Inputs -->
+              </div>
+
+              <div class="shortcode-scripts">
+                <!-- JS Implementing Plugins -->
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery.filer/js/jquery.filer.min.js"></script>
+
+                <!-- JS Unify -->
+                <script type="text/plain" src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+                <script type="text/plain" src="{{ root }}assets/js/components/hs.file-attachement.js"></script>
+
+                <!-- JS Plugins Init. -->
+                <script type="text/plain">
+                  $(document).on('ready', function () {
+                      // initialization of forms
+                      $.HSCore.components.HSFileAttachment.init('.js-file-attachment');
+                      $.HSCore.helpers.HSFocusState.init();
+                    });
+                </script>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode3" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End File Inputs -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- Quantities -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Quantities</h3>
+          </div>
+
+          <div class="col-md-10">
+          <div id="shortcode4">
+            <div class="shortcode-html">
+              <!-- Quantities -->
+              <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <!-- Quantity -->
+                    <div class="form-group">
+                      <label class="g-mb-10">Quantity</label>
+                      <div class="js-quantity input-group u-quantity-v1 g-width-170 g-brd-primary--focus">
+                        <div class="js-minus input-group-prepend g-width-55 g-color-gray g-bg-grey-light-v3">
+                          <span class="input-group-text rounded-0 w-100"><i class="ti ti-minus"></i></span>
+                        </div>
+                        <input class="js-result form-control text-center rounded-0 g-pa-15" type="text" value="0" readonly>
+                        <div class="js-plus input-group-append g-width-55 g-color-gray g-bg-grey-light-v3">
+                          <span class="input-group-text rounded-0 w-100"><i class="ti ti-plus"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Quantity -->
+                  </div>
+
+                  <div class="col-lg-8">
+                    <!-- Quantity -->
+                    <div class="form-group">
+                      <label class="g-mb-10">Quantity</label>
+                      <div class="js-quantity input-group u-quantity-v1 g-width-250 g-brd-primary--focus">
+                        <div class="js-minus input-group-prepend g-color-gray g-bg-grey-light-v3">
+                          <span class="input-group-text rounded-0 g-width-55"><i class="ti ti-minus"></i></span>
+                        </div>
+                        <input class="js-result form-control text-center rounded-0 g-pa-15" type="text" value="0" readonly>
+                        <div class="input-group-append g-color-gray g-bg-grey-light-v3">
+                          <div class="input-group-text justify-content-center g-width-55 g-font-size-16 g-color-gray g-bg-gray-light-v5 rounded-0">$</div>
+                          <span class="js-plus input-group-text rounded-0 g-width-55"><i class="ti ti-plus"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Quantity -->
+                  </div>
+                </div>
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <!-- Quantity -->
+                    <div class="form-group g-mb-20">
+                      <label class="g-mb-10">Quantity</label>
+                      <div class="js-quantity input-group u-quantity-v1 w-100 g-brd-gray-light-v3 g-brd-primary--focus">
+                        <div class="js-minus input-group-prepend g-width-55 g-color-gray g-bg-grey-light-v3">
+                          <span class="input-group-text rounded-0 w-100"><i class="ti ti-minus"></i></span>
+                        </div>
+                        <input class="js-result form-control text-center g-font-size-16 rounded-0 g-pa-10-16" type="text" value="0" readonly>
+                        <div class="js-plus input-group-append g-width-55 g-color-gray g-bg-grey-light-v3">
+                          <span class="input-group-text rounded-0 w-100"><i class="ti ti-plus"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Quantity -->
+                  </div>
+
+                  <div class="col-lg-4">
+                    <!-- Quantity -->
+                    <div class="form-group g-mb-20">
+                      <label class="g-mb-10">Quantity</label>
+                      <div class="js-quantity input-group u-quantity-v1 w-100 g-brd-gray-light-v3 g-brd-primary--focus">
+                        <div class="js-minus input-group-prepend g-color-gray g-bg-grey-light-v3">
+                          <span class="input-group-text rounded-0 g-width-55"><i class="ti ti-minus"></i></span>
+                        </div>
+                        <input class="js-result form-control text-center g-font-size-16 rounded-0 g-pa-10-16" type="text" value="0" readonly>
+                        <div class="input-group-append g-color-gray g-bg-grey-light-v3">
+                          <div class="input-group-text justify-content-center g-width-55 g-font-size-16 g-color-gray g-bg-gray-light-v5 rounded-0">$</div>
+                          <span class="js-plus input-group-text rounded-0 g-width-55"><i class="ti ti-plus"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Quantity -->
+                  </div>
+
+                  <div class="col-lg-4">
+                    <!-- Quantity -->
+                    <div class="form-group g-mb-20">
+                      <label class="g-mb-10">Quantity</label>
+                      <div class="js-quantity input-group u-quantity-v1 w-100 g-brd-gray-light-v3 g-brd-primary--focus">
+                        <div class="js-minus input-group-prepend g-color-gray g-bg-grey-light-v3">
+                          <span class="input-group-text rounded-0 g-width-55"><i class="ti ti-minus"></i></span>
+                          <div class="input-group-text justify-content-center g-width-55 g-font-size-16 g-color-gray g-bg-gray-light-v5 rounded-0">$</div>
+                        </div>
+                        <input class="js-result form-control text-center g-font-size-16 rounded-0 g-pa-10-16" type="text" value="0" readonly>
+                        <div class="input-group-append g-color-gray g-bg-grey-light-v3">
+                          <span class="js-plus input-group-text rounded-0 g-width-55"><i class="ti ti-plus"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Quantity -->
+                  </div>
+                </div>
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <!-- Quantity -->
+                    <div class="form-group g-mb-20">
+                      <label class="g-mb-10">Quantity</label>
+                      <div class="js-quantity input-group u-quantity-v1 w-100 g-brd-gray-light-v3 g-brd-primary--focus">
+                        <input class="js-result form-control text-center g-font-size-16 rounded-0 g-pa-10-16" type="text" value="0" readonly>
+                        <div class="input-group-append g-color-gray">
+                          <span class="js-minus input-group-text rounded-0 g-width-55"><i class="ti ti-minus"></i></span>
+                          <span class="js-plus input-group-text rounded-0 g-width-55"><i class="ti ti-plus"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Quantity -->
+                  </div>
+
+                  <div class="col-md-4">
+                    <!-- Quantity -->
+                    <div class="form-group g-mb-20">
+                      <label class="g-mb-10">Quantity</label>
+                      <div class="js-quantity input-group u-quantity-v1 w-100 g-brd-gray-light-v3 g-brd-primary--focus">
+                        <input class="js-result form-control text-center g-font-size-16 rounded-0 g-pa-10-16" type="text" value="0" readonly>
+                        <div class="input-group-append g-color-gray">
+                          <div class="input-group-text align-items-center rounded-0 d-block g-width-55 g-pt-8">
+                            <i class="js-plus ti ti-angle-up d-block"></i>
+                            <i class="js-minus ti ti-angle-down d-block"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Quantity -->
+                  </div>
+                </div>
+              </form>
+              <!-- End Quantities -->
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.count-qty.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                    // initialization of forms
+                    $.HSCore.components.HSCountQty.init('.js-quantity');
+                  });
+              </script>
+            </div>
+          </div>
+
+            {% set contentTarget = "#shortcode4" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Quantities -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- Radios Options -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Radios Options</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode5">
+              <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                <h4 class="h6 g-font-weight-700 g-mb-20">Radio options</h4>
+                <!-- Radio Option 1 -->
+                <label class="form-check-inline u-check g-pl-25 ml-0 g-mr-25">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroup1_1" type="radio" checked>
+                  <div class="u-check-icon-font g-absolute-centered--y g-left-0">
+                    <i class="fa" data-check-icon="&#xf192" data-uncheck-icon="&#xf1db"></i>
+                  </div>
+                  Option 1
+                </label>
+                <!-- End Radio Option 1 -->
+
+                <!-- Radio Option 2 -->
+                <label class="form-check-inline u-check g-pl-25 ml-0 g-mr-25">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroup1_2" type="radio" checked>
+                  <div class="u-check-icon-radio-v5 g-absolute-centered--y g-left-0">
+                    <i></i>
+                  </div>
+                  Option 2
+                </label>
+                <!-- End Radio Option 2 -->
+
+                <!-- Radio Option 3 -->
+                <label class="form-check-inline u-check g-pl-25 ml-0 g-mr-25">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroup1_3" type="radio" checked>
+                  <div class="u-check-icon-radio-v4 g-absolute-centered--y g-left-0 g-width-18 g-height-18">
+                    <i class="g-absolute-centered d-block g-width-10 g-height-10 g-bg-primary--checked"></i>
+                  </div>
+                  Option 3
+                </label>
+                <!-- End Radio Option 3 -->
+
+                <!-- Radio Option 4 -->
+                <label class="form-check-inline u-check g-pl-25 ml-0">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroup1_4" type="radio" checked>
+                  <div class="u-check-icon-radio-v6 g-absolute-centered--y g-left-0">
+                    <i></i>
+                  </div>
+                  Option 4
+                </label>
+                <!-- End Radio Option 4 -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Columned Radios -->
+                <h4 class="h6 g-font-weight-700 g-mb-20">Columned radios</h4>
+                <div class="row g-mb-30">
+                  <!-- Left Column -->
+                  <div class="col-md-6">
+                    <div class="form-group g-mb-10">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroup2_1" type="radio" checked>
+                        <div class="u-check-icon-font g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf192" data-uncheck-icon="&#xf1db"></i>
+                        </div>
+                        USA
+                      </label>
+                    </div>
+
+                    <div class="form-group g-mb-10">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroup2_1" type="radio">
+                        <div class="u-check-icon-font g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf192" data-uncheck-icon="&#xf1db"></i>
+                        </div>
+                        Canada
+                      </label>
+                    </div>
+
+                    <div class="form-group g-mb-10 g-mb-0--md">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroup2_1" type="radio">
+                        <div class="u-check-icon-font g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf192" data-uncheck-icon="&#xf1db"></i>
+                        </div>
+                        Greenland
+                      </label>
+                    </div>
+                  </div>
+                  <!-- End Left Column -->
+
+                  <!-- Right Column -->
+                  <div class="col-md-6">
+                    <div class="form-group g-mb-10">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroup2_1" type="radio">
+                        <div class="u-check-icon-font g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf192" data-uncheck-icon="&#xf1db"></i>
+                        </div>
+                        New Zealand
+                      </label>
+                    </div>
+
+                    <div class="form-group g-mb-10">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroup2_1" type="radio">
+                        <div class="u-check-icon-font g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf192" data-uncheck-icon="&#xf1db"></i>
+                        </div>
+                        United Kingdom
+                      </label>
+                    </div>
+
+                    <div class="form-group g-mb-10 g-mb-0--md">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroup2_1" type="radio">
+                        <div class="u-check-icon-font g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf192" data-uncheck-icon="&#xf1db"></i>
+                        </div>
+                        Sweden
+                      </label>
+                    </div>
+                  </div>
+                  <!-- End Right Column -->
+                </div>
+                <!-- End Columned Radios -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <h4 class="h6 g-font-weight-700 g-mb-20">Inline radios</h4>
+                <div class="g-mb-15">
+                  <label class="form-check-inline u-check g-pl-25 ml-0 g-mr-25">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radInline1_1" type="radio" checked>
+                    <div class="u-check-icon-radio-v4 g-absolute-centered--y g-left-0 g-width-18 g-height-18">
+                      <i class="g-absolute-centered d-block g-width-10 g-height-10 g-bg-primary--checked"></i>
+                    </div>
+                    USA
+                  </label>
+
+                  <label class="form-check-inline u-check g-pl-25 ml-0 g-mr-25">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radInline1_1" type="radio">
+                    <div class="u-check-icon-radio-v4 g-absolute-centered--y g-left-0 g-width-18 g-height-18">
+                      <i class="g-absolute-centered d-block g-width-10 g-height-10 g-bg-primary--checked"></i>
+                    </div>
+                    Canada
+                  </label>
+
+                  <label class="form-check-inline u-check g-pl-25 ml-0 g-mr-25">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radInline1_1" type="radio">
+                    <div class="u-check-icon-radio-v4 g-absolute-centered--y g-left-0 g-width-18 g-height-18">
+                      <i class="g-absolute-centered d-block g-width-10 g-height-10 g-bg-primary--checked"></i>
+                    </div>
+                    United Kingdom
+                  </label>
+
+                  <label class="form-check-inline u-check g-pl-25 ml-0">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radInline1_1" type="radio">
+                    <div class="u-check-icon-radio-v4 g-absolute-centered--y g-left-0 g-width-18 g-height-18">
+                      <i class="g-absolute-centered d-block g-width-10 g-height-10 g-bg-primary--checked"></i>
+                    </div>
+                    Sweden
+                  </label>
+                </div>
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <h4 class="h6 g-font-weight-700 g-mb-20">Radio Group</h4>
+                <div class="btn-group justified-content">
+                  <label class="u-check">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio" checked>
+                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked rounded-0">USA</span>
+                  </label>
+                  <label class="u-check">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio">
+                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Greenland</span>
+                  </label>
+                  <label class="u-check">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio">
+                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">UK</span>
+                  </label>
+                  <label class="u-check">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio">
+                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Sweden</span>
+                  </label>
+                  <label class="u-check">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio">
+                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Canada</span>
+                  </label>
+                </div>
+              </form>
+            </div>
+
+            {% set contentTarget = "#shortcode5" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Radios Options -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- Checkboxes Options -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Checkbox Options</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode6">
+              <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                <h4 class="h6 g-font-weight-700 g-mb-20">Checkboxes Options</h4>
+                <!-- Checkboxes Option 1 -->
+                <label class="form-check-inline u-check g-pl-25">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked>
+                  <div class="u-check-icon-font g-absolute-centered--y g-left-0">
+                    <i class="fa g-font-size-default" data-check-icon="&#xf0c1" data-uncheck-icon="&#xf127"></i>
+                  </div>
+                  Option 1
+                </label>
+                <!-- End Checkboxes Option 1 -->
+
+                <!-- Checkboxes Option 2 -->
+                <label class="form-check-inline u-check g-pl-25">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked>
+                  <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                    <i class="fa" data-check-icon="&#xf00c"></i>
+                  </div>
+                  Option 2
+                </label>
+                <!-- End Checkboxes Option 2 -->
+
+                <!-- Checkboxes Option 3 -->
+                <label class="form-check-inline u-check g-pl-25">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked>
+                  <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
+                    <i class="fa" data-check-icon="&#xf00c"></i>
+                  </div>
+                  Option 3
+                </label>
+                <!-- End Checkboxes Option 3 -->
+
+                <!-- Checkboxes Option 4 -->
+                <label class="form-check-inline u-check g-pl-25">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked>
+                  <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
+                    <i></i>
+                  </div>
+                  Option 4
+                </label>
+                <!-- Checkboxes Option 4 -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Columned Checkboxes -->
+                <h4 class="h6 g-font-weight-700 g-mb-20">Columned checkboxes</h4>
+                <div class="row g-mb-30">
+                  <!-- Left Column -->
+                  <div class="col-md-6">
+                    <div class="form-group g-mb-10">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked>
+                        <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf00c"></i>
+                        </div>
+                        Canada
+                      </label>
+                    </div>
+
+                    <div class="form-group g-mb-10">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                        <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf00c"></i>
+                        </div>
+                        United Kingdom
+                      </label>
+                    </div>
+
+                    <div class="form-group g-mb-10 g-mb-0--md">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                        <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf00c"></i>
+                        </div>
+                        Australia
+                      </label>
+                    </div>
+                  </div>
+                  <!-- End Left Column -->
+
+                  <!-- Right Column -->
+                  <div class="col-md-6">
+                    <div class="form-group g-mb-10">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                        <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf00c"></i>
+                        </div>
+                        USA
+                      </label>
+                    </div>
+
+                    <div class="form-group g-mb-10">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                        <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf00c"></i>
+                        </div>
+                        New Zealand
+                      </label>
+                    </div>
+
+                    <div class="form-group g-mb-10 g-mb-0--md">
+                      <label class="u-check g-pl-25">
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                        <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                          <i class="fa" data-check-icon="&#xf00c"></i>
+                        </div>
+                        Sweden
+                      </label>
+                    </div>
+                  </div>
+                  <!-- End Right Column -->
+                </div>
+                <!-- End Columned Checkboxes -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Inline Checkboxes -->
+                <h4 class="h6 g-font-weight-700 g-mb-20">Inline checkboxes</h4>
+                <div class="g-mb-20">
+                  <label class="form-check-inline u-check g-pl-25">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked>
+                    <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
+                      <i class="fa" data-check-icon="&#xf00c"></i>
+                    </div>
+                    USA
+                  </label>
+
+                  <label class="form-check-inline u-check g-pl-25">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                    <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
+                      <i class="fa" data-check-icon="&#xf00c"></i>
+                    </div>
+                    Sweden
+                  </label>
+
+                  <label class="form-check-inline u-check g-pl-25">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                    <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
+                      <i class="fa" data-check-icon="&#xf00c"></i>
+                    </div>
+                    Canada
+                  </label>
+
+                  <label class="form-check-inline u-check g-pl-25">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                    <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0 g-transition-0_2 g-transition--ease-in">
+                      <i class="fa" data-check-icon="&#xf00c"></i>
+                    </div>
+                    United Kingdom
+                  </label>
+                </div>
+                <!-- End Inline Checkboxes -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Checkboxes Group -->
+                <h4 class="h6 g-font-weight-700 g-mb-20">Checkboxes Group</h4>
+                <div class="btn-group justified-content">
+                  <label class="u-check g-pl-0">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked>
+                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked rounded-0">Canada</span>
+                  </label>
+                  <label class="u-check g-pl-0">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">UK</span>
+                  </label>
+                  <label class="u-check g-pl-0">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Sweden</span>
+                  </label>
+                  <label class="u-check g-pl-0">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Australia</span>
+                  </label>
+                  <label class="u-check g-pl-0">
+                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">USA</span>
+                  </label>
+                </div>
+                <!-- End Checkboxes Group -->
+              </form>
+            </div>
+
+            {% set contentTarget = "#shortcode6" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Checkboxes Options -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- Toggles -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Toggles</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode7">
+              <!-- Toggles -->
+              <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                <h4 class="h6 g-font-weight-700 g-mb-20">Toggles views</h4>
+
+                <!-- Toggles Views -->
+                <label class="form-check-inline u-check g-mr-20 mx-0 mb-0">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-right-0" name="radGroup1_1" type="checkbox">
+                  <div class="u-check-icon-radio-v7">
+                    <i class="fa" data-check-icon="&#xf00c" data-uncheck-icon="&#xf00d"></i>
+                  </div>
+                </label>
+                <!-- End Toggles Views -->
+
+                <!-- Toggles Views -->
+                <label class="form-check-inline u-check g-mr-20 mx-0 mb-0">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-right-0" name="radGroup1_1" type="checkbox">
+                  <div class="u-check-icon-radio-v7">
+                    <i class="fa" data-check-icon="&#xf00c"></i>
+                  </div>
+                </label>
+                <!-- End Toggles Views -->
+
+                <!-- Toggles Views -->
+                <label class="form-check-inline u-check g-mr-20 mx-0 mb-0">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-right-0" name="radGroup1_1" type="checkbox" checked>
+                  <div class="u-check-icon-radio-v7">
+                    <i class="d-inline-block"></i>
+                  </div>
+                </label>
+                <!-- End Toggles Views -->
+
+                <!-- Toggles Views -->
+                <label class="form-check-inline u-check g-mr-20 mx-0 mb-0">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-right-0" name="radGroup1_1" type="checkbox" checked>
+                  <div class="u-check-icon-radio-v7">
+                    <i class="fa" data-check-icon="&#xf00c"></i>
+                  </div>
+                </label>
+                <!-- End Toggles Views -->
+
+                <!-- Toggles Views -->
+                <label class="form-check-inline u-check mx-0 mb-0">
+                  <input class="g-hidden-xs-up g-pos-abs g-top-0 g-right-0" name="radGroup1_1" type="checkbox" checked>
+                  <div class="u-check-icon-radio-v8">
+                    <i class="fa" data-check-icon="&#xf00c"></i>
+                  </div>
+                </label>
+                <!-- End Toggles Views -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Toggles based on radios -->
+                <h4 class="h6 g-font-weight-700 g-mb-20">Toggles based on radios</h4>
+
+                <!-- Toggles Radio -->
+                <div class="form-group">
+                  <label class="d-flex align-items-center justify-content-between">
+                    <span>inof@htmlstream.com</span>
+                    <div class="u-check">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-0 g-right-0" name="radGroup2_1" type="radio" checked>
+                      <div class="u-check-icon-radio-v7">
+                        <i class="fa" data-check-icon="&#xf00c"></i>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <!-- End Toggles Radio -->
+
+                <!-- Toggles Radio -->
+                <div class="form-group">
+                  <label class="d-flex align-items-center justify-content-between">
+                    <span>hello@google.com</span>
+                    <div class="u-check">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-0 g-right-0" name="radGroup2_1" type="radio">
+                      <div class="u-check-icon-radio-v7">
+                        <i class="fa" data-check-icon="&#xf00c"></i>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <!-- End Toggles Radio -->
+
+                <!-- Toggles Radio -->
+                <div class="form-group">
+                  <label class="d-flex align-items-center justify-content-between">
+                    <span>admin@yahoo.com</span>
+                    <div class="u-check">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-0 g-right-0" name="radGroup2_1" type="radio">
+                      <div class="u-check-icon-radio-v7">
+                        <i class="fa" data-check-icon="&#xf00c"></i>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <!-- End Toggles Radio -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Toggles based on radios -->
+                <h4 class="h6 g-font-weight-700 g-mb-20">Toggles based on checkboxes</h4>
+
+                <!-- Toggles Checkbox -->
+                <div class="form-group">
+                  <label class="d-flex align-items-center justify-content-between">
+                    <span>inof@htmlstream.com</span>
+                    <div class="u-check">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-0 g-right-0" name="radGroup3_1" type="checkbox" checked>
+                      <div class="u-check-icon-radio-v8">
+                        <i class="fa" data-check-icon="&#xf00c"></i>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <!-- End Toggles Checkbox -->
+
+                <!-- Toggles Checkbox -->
+                <div class="form-group">
+                  <label class="d-flex align-items-center justify-content-between">
+                    <span>hello@google.com</span>
+                    <div class="u-check">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-0 g-right-0" name="radGroup3_1" type="checkbox">
+                      <div class="u-check-icon-radio-v8">
+                        <i class="fa" data-check-icon="&#xf00c"></i>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <!-- End Toggles Checkbox -->
+
+                <!-- Toggles Checkbox -->
+                <div class="form-group">
+                  <label class="d-flex align-items-center justify-content-between">
+                    <span>admin@yahoo.com</span>
+                    <div class="u-check">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-0 g-right-0" name="radGroup3_1" type="checkbox">
+                      <div class="u-check-icon-radio-v8">
+                        <i class="fa" data-check-icon="&#xf00c"></i>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <!-- End Toggles Checkbox -->
+              </form>
+              <!-- End Toggles -->
+            </div>
+
+            {% set contentTarget = "#shortcode7" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Toggles -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- Ratings -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Ratings</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode8">
+              <div class="shortcode-html">
+                <!-- Ratings -->
+                <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                  <!-- Stars -->
+                  <div class="form-group d-flex align-items-center justify-content-between mb-0">
+                    <label class="mb-0">Stars</label>
+                    <ul class="js-rating u-rating-v1 g-font-size-17 g-color-gray-light-v3 mb-0" data-hover-classes="g-color-primary">
+                      <li class="g-color-primary click">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="g-color-primary click">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="g-color-primary click">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="g-color-primary click">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- End Stars -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <!-- Hearts -->
+                  <div class="form-group d-flex align-items-center justify-content-between mb-0">
+                    <label class="mb-0">Hearts</label>
+                    <ul class="js-rating u-rating-v1 g-font-size-17 g-color-gray-light-v3" data-hover-classes="g-color-primary">
+                      <li class="g-color-primary click">
+                        <i class="fa fa-heart"></i>
+                      </li>
+                      <li class="g-color-primary click">
+                        <i class="fa fa-heart"></i>
+                      </li>
+                      <li class="g-color-primary click">
+                        <i class="fa fa-heart"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-heart"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-heart"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- End Hearts -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <!-- Emoticons -->
+                  <div class="form-group d-flex align-items-center justify-content-between mb-0">
+                    <label class="mb-0">Emoticons</label>
+                    <ul class="js-rating u-rating-v1 g-font-size-17 g-color-gray-light-v2" data-hover-classes="g-color-primary">
+                      <li class="g-color-primary g-pl-15 click">
+                        <i class="fa fa-smile-o"></i>
+                      </li>
+                      <li class="g-color-primary g-pl-15 click">
+                        <i class="fa fa-smile-o"></i>
+                      </li>
+                      <li class="g-color-primary g-pl-15 click">
+                        <i class="fa fa-smile-o"></i>
+                      </li>
+                      <li class="g-color-primary g-pl-15 click">
+                        <i class="fa fa-smile-o"></i>
+                      </li>
+                      <li class="g-pl-15">
+                        <i class="fa fa-smile-o"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- End Emoticons -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <!-- Trophies -->
+                  <div class="form-group d-flex align-items-center justify-content-between mb-0">
+                    <label class="mb-0">Trophies</label>
+                    <ul class="js-rating u-rating-v1 g-font-size-17 g-color-gray-light-v3" data-hover-classes="g-color-primary">
+                      <li class="g-color-primary g-pl-15 click">
+                        <i class="fa fa-trophy"></i>
+                      </li>
+                      <li class="g-color-primary g-pl-15 click">
+                        <i class="fa fa-trophy"></i>
+                      </li>
+                      <li class="g-pl-15">
+                        <i class="fa fa-trophy"></i>
+                      </li>
+                      <li class="g-pl-15">
+                        <i class="fa fa-trophy"></i>
+                      </li>
+                      <li class="g-pl-15">
+                        <i class="fa fa-trophy"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- End Trophies -->
+                </form>
+                <!-- End Ratings -->
+              </div>
+
+              <div class="shortcode-scripts">
+                <!-- JS Unify -->
+                <script type="text/plain" src="{{ root }}assets/js/helpers/hs.rating.js"></script>
+
+                <!-- JS Plugins Init. -->
+                <script type="text/plain">
+                  $(document).on('ready', function () {
+                    // initialization of forms
+                    $.HSCore.helpers.HSRating.init();
+                  });
+                </script>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode8" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Ratings -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- Slider Forms -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Slider Forms</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode9">
+              <div class="shortcode-html">
+                <!-- Slider Forms -->
+                <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                  <h3 class="h6 g-font-weight-700 g-mb-20">Regular slider</h3>
+
+                  <!-- Regular Slider Option One -->
+                  <div class="form-group g-mb-40">
+                    <label class="g-mb-10">
+                      Option one
+                      <span class="g-color-primary">(
+                        <span id="regularSliderAmount">25</span>
+                        )
+                      </span>
+                    </label>
+                    <div id="regularSlider" class="u-slider-v1-2"
+                         data-result-container="regularSliderAmount"
+                         data-default="25"
+                         data-min="0"
+                         data-max="100"></div>
+                  </div>
+                  <!-- End Regular Slider Option One -->
+
+                  <!-- Regular Slider Option Two -->
+                  <div class="form-group g-mb-40">
+                    <label class="g-mb-10">
+                      Option two
+                      <span class="g-color-primary">(
+                        <span id="regularSliderAmount3">25</span>
+                        )
+                      </span>
+                    </label>
+                    <div id="regularSlider3" class="u-slider-v1-3"
+                         data-result-container="regularSliderAmount3"
+                         data-default="25"
+                         data-min="0"
+                         data-max="100"></div>
+                  </div>
+                  <!-- End Regular Slider Option Two -->
+
+                  <!-- Regular Slider Option Three -->
+                  <div class="form-group g-mb-40">
+                    <label class="g-mb-10">
+                      Option three
+                      <span class="g-color-primary">(
+                        <span id="regularSliderAmount2">25</span>
+                        )
+                      </span>
+                    </label>
+
+                    <div id="regularSlider2" class="u-slider-v1"
+                         data-result-container="regularSliderAmount2"
+                         data-default="25"
+                         data-min="0"
+                         data-max="100"></div>
+                  </div>
+                  <!-- End Regular Slider Option Three -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <h3 class="h6 g-font-weight-700 g-mb-20">Range slider</h3>
+
+                  <!-- Range Slider Option One -->
+                  <div class="form-group g-mb-40">
+                    <label class="g-mb-10">
+                      Option one
+                      <span class="g-color-primary">(
+                        <span id="rangeSliderAmount">0</span>
+                        )
+                      </span>
+                    </label>
+
+                    <div id="rangeSlider" class="u-slider-v1-2"
+                         data-range="true"
+                         data-result-container="rangeSliderAmount"
+                         data-default="75, 300"
+                         data-min="0"
+                         data-max="500"></div>
+                  </div>
+                  <!-- End Range Slider Option One -->
+
+                  <!-- Range Slider Option Two -->
+                  <div class="form-group g-mb-40">
+                    <label class="g-mb-10">
+                      Option two
+                      <span class="g-color-primary">(
+                        <span id="rangeSliderAmount3">0</span>
+                        )
+                      </span>
+                    </label>
+
+                    <div id="rangeSlider3" class="u-slider-v1-3"
+                         data-range="true"
+                         data-result-container="rangeSliderAmount3"
+                         data-default="75, 300"
+                         data-min="0"
+                         data-max="500"></div>
+                  </div>
+                  <!-- End Range Slider Option Two -->
+
+                  <!-- Range Slider Option Three -->
+                  <div class="form-group g-mb-40">
+                    <label class="g-mb-10">
+                      Option three
+                      <span class="g-color-primary">(
+                        <span id="rangeSliderAmount2">0</span>
+                        )
+                      </span>
+                    </label>
+
+                    <div id="rangeSlider2" class="u-slider-v1"
+                         data-range="true"
+                         data-result-container="rangeSliderAmount2"
+                         data-default="75, 300"
+                         data-min="0"
+                         data-max="500"></div>
+                  </div>
+                  <!-- End Range Slider Option Three -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <h3 class="h6 g-font-weight-700 g-mb-20">Step slider</h3>
+
+                  <!-- Range Slider Option One -->
+                  <div class="form-group g-mb-40">
+                    <label class="g-mb-10">
+                      Option one
+                      <span class="g-color-primary">(
+                        <span id="stepSliderAmount">0</span>
+                        )
+                      </span>
+                    </label>
+
+                    <div id="stepSlider" class="u-slider-v1-2"
+                         data-result-container="stepSliderAmount"
+                         data-step="100"
+                         data-min="0"
+                         data-max="500"></div>
+                  </div>
+                  <!-- End Range Slider Option One -->
+
+                  <!-- Range Slider Option Two -->
+                  <div class="form-group g-mb-40">
+                    <label class="g-mb-10">
+                      Option two
+                      <span class="g-color-primary">(
+                        <span id="stepSliderAmount3">0</span>
+                        )
+                      </span>
+                    </label>
+
+                    <div id="stepSlider3" class="u-slider-v1-3"
+                         data-result-container="stepSliderAmount3"
+                         data-step="100"
+                         data-min="0"
+                         data-max="500"></div>
+                  </div>
+                  <!-- End Range Slider Option Two -->
+
+                  <!-- Range Slider Option Three -->
+                  <div class="form-group g-mb-40">
+                    <label class="g-mb-10">
+                      Option three
+                      <span class="g-color-primary">(
+                        <span id="stepSliderAmount2">0</span>
+                        )
+                      </span>
+                    </label>
+
+                    <div id="stepSlider2" class="u-slider-v1"
+                         data-result-container="stepSliderAmount2"
+                         data-step="100"
+                         data-min="0"
+                         data-max="500"></div>
+                  </div>
+                  <!-- End Range Slider Option Three -->
+                </form>
+                <!-- End Slider Forms -->
+              </div>
+
+              <div class="shortcode-styles">
+                <!-- CSS Implementing Plugins -->
+                <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+              </div>
+
+              <div class="shortcode-scripts">
+                <!-- jQuery UI Core -->
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widget.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/version.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/keycode.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/position.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/unique-id.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/safe-active-element.js"></script>
+
+                <!-- jQuery UI Helpers -->
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+                <!-- jQuery UI Widgets -->
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/slider.js"></script>
+
+                <!-- JS Unify -->
+                <script type="text/plain" src="{{ root }}assets/js/components/hs.slider.js"></script>
+
+                <!-- JS Plugins Init. -->
+                <script type="text/plain">
+                  $(document).on('ready', function () {
+                    // initialization of forms
+                    $.HSCore.components.HSSlider.init('#regularSlider, #regularSlider2, #regularSlider3, #rangeSlider, #rangeSlider2, #rangeSlider3, #stepSlider, #stepSlider2, #stepSlider3');
+                  });
+                </script>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode9" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Slider Forms -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- Masking Rules -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Masking Rules</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode10">
+              <div class="shortcode-html">
+                <!-- Slider Forms -->
+                <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                  <!-- Date Masking -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Date masking</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <input id="inputGroup1_1" class="form-control form-control-md g-brd-right-none rounded-0" type="text" placeholder="XX/XX/XXXX" data-mask="99/99/9999">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-calendar"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Date Masking -->
+
+                  <!-- Phone Masking -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Phone masking</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <input id="inputGroup1_2" class="form-control form-control-md g-brd-right-none rounded-0" type="text" placeholder="(XXX) XXX-XXXX" data-mask="(999) 999-9999">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-phone"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Phone Masking -->
+
+                  <!-- Credit Card Masking -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Credit card masking</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <input id="inputGroup1_3" class="form-control form-control-md g-brd-right-none rounded-0" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" data-mask="9999-9999-9999-9999">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-credit-card"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Credit Card Masking -->
+
+                  <!-- Serial Number Masking -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Serial number masking</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <input id="inputGroup1_4" class="form-control form-control-md g-brd-right-none rounded-0" type="text" placeholder="___-___-___-___-___-___" data-mask="***-***-***-***-***-***">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-key"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Serial Number Masking -->
+
+                  <!-- Tax ID Masking -->
+                  <div class="form-group mb-0">
+                    <label class="g-mb-10">Tax ID masking</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <input id="inputGroup1_5" class="form-control form-control-md g-brd-right-none rounded-0" type="text" placeholder="XX-XXXXXXX" data-mask="99-9999999">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-briefcase"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Tax ID Masking -->
+                </form>
+              </div>
+
+              <div class="shortcode-scripts">
+                <!-- JS Implementing Plugins -->
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+
+                <!-- JS Unify -->
+                <script type="text/plain" src="{{ root }}assets/js/components/hs.masked-input.js"></script>
+
+                <!-- JS Plugins Init. -->
+                <script type="text/plain">
+                  $(document).on('ready', function () {
+                      // initialization of forms
+                      $.HSCore.components.HSMaskedInput.init('[data-mask]');
+                    });
+                </script>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode10" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Masking Rules -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- Datepickers -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Datepickers</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode11">
+              <div class="shortcode-html">
+                <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                  <h4 class="h6 g-font-weight-700 g-mb-20">Datepicker inputs</h4>
+
+                  <!-- Select Single Date -->
+                  <div class="form-group g-mb-30">
+                    <label class="g-mb-10">Select single date</label>
+                    <div class="input-group g-brd-primary--focus">
+                      <input id="datepickerDefault" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0" type="text">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-calendar"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Select Single Date -->
+
+                  <!-- Select Date Range -->
+                  <div class="form-group mb-0">
+                    <label class="g-mb-10">Select date range</label>
+                    <div class="row">
+                      <div class="col-xl-6 g-mb-40 g-mb-0--xl">
+                        <!-- Datepicker -->
+                        <div class="input-group g-brd-primary--focus">
+                          <input id="datepickerFrom" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0" type="text" placeholder="Start date" data-range="true" data-to="datepickerTo">
+                          <div class="input-group-append">
+                            <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-calendar"></i></span>
+                          </div>
+                        </div>
+                        <!-- End Datepicker -->
+                      </div>
+
+                      <div class="col-xl-6">
+                        <!-- Datepicker -->
+                        <div class="input-group g-brd-primary--focus">
+                          <input id="datepickerTo" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0" type="text" placeholder="Expected finish date">
+                          <div class="input-group-append">
+                            <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-calendar"></i></span>
+                          </div>
+                        </div>
+                        <!-- End Datepicker -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Select Date Range -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <h4 class="h6 g-font-weight-700 g-mb-20">Inline datepicker</h4>
+
+                  <!-- Single Inline Datepicker -->
+                  <div class="form-group g-mb-50">
+                    <label class="g-mb-10">Select single date</label>
+                    <div id="datepickerInline" class="u-datepicker-v1 g-brd-gray-light-v2"></div>
+                  </div>
+                  <!-- End Single Inline Datepicker -->
+
+                  <!-- Inline Range Datepicker -->
+                  <div class="form-group mb-0">
+                    <label class="g-mb-10">Select date range with inline datepicker</label>
+                    <div class="row">
+                      <div class="col-xl-6">
+                        <div id="datepickerInlineFrom" class="u-datepicker-v1 g-brd-gray-light-v2 g-mb-40 g-mb-0--xl" data-range="true" data-to="datepickerInlineTo"></div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div id="datepickerInlineTo" class="u-datepicker-v1 g-brd-gray-light-v2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Inline Range Datepicker -->
+                </form>
+              </div>
+
+              <div class="shortcode-styles">
+                <!-- CSS Implementing Plugins -->
+                <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+              </div>
+
+              <div class="shortcode-scripts">
+                <!-- jQuery UI Core -->
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widget.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/version.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/keycode.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/position.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/unique-id.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/safe-active-element.js"></script>
+
+                <!-- jQuery UI Helpers -->
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+                <!-- jQuery UI Widgets -->
+                <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/datepicker.js"></script>
+
+                <!-- JS Unify -->
+                <script type="text/plain" src="{{ root }}assets/js/components/hs.datepicker.js"></script>
+
+                <!-- JS Plugins Init. -->
+                <script type="text/plain">
+                  $(document).on('ready', function () {
+                      // initialization of forms
+                      $.HSCore.components.HSDatepicker.init('#datepickerDefault, #datepickerInline, #datepickerInlineFrom, #datepickerFrom');
+                    });
+                </script>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode11" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Datepickers -->
+      </section>
+      <!-- End Form Controls -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Form Tooltips -->
+      <section class="container g-py-100">
+        <!-- Heading -->
+        <header class="g-mb-80">
+          <div class="u-heading-v6-2 text-uppercase">
+            <h2 class="h4 u-heading-v6__title g-font-weight-300">Form Tooltips</h2>
+          </div>
+          <div class="g-pl-90">
+            <p>Unify's form controls extend on <a href="#!">Bootstrap forms</a> with classes. In all examples, <code>.form-control-md</code> class is used to change Bootstrap's default form size. Also, all form styles can be extended with Unify's global classes.</p>
+          </div>
+        </header>
+        <!-- End Heading -->
+
+        <!-- Text Input Tooltips -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Text Input Tooltips</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode12">
+              <div class="shortcode-html">
+                <!-- Text Input Tooltips -->
+                <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                  <!-- Text input with Top Right Tooltip -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text input with top-right tooltip</label>
+                    <div class="input-group g-brd-primary--focus g-mb-10">
+                      <input class="form-control form-control-md border-right-0 rounded-0 pr-0" type="text" placeholder="Ipsum Aenean Porta">
+                      <b class="tooltip tooltip-top-right u-tooltip--v1">Some helpful information</b>
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-info"></i></span>
+                      </div>
+                    </div>
+                    <small class="text-muted g-font-size-12">Some information about the form field</small>
+                  </div>
+                  <!-- End Text input with Top Right Tooltip -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <!-- Text input with Top Left Tooltip -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text input with top-left tooltip</label>
+                    <div class="input-group g-brd-primary--focus g-mb-10">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-user-follow"></i></span>
+                      </div>
+                      <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="text" placeholder="Cras Ullamcorper Nibh">
+                      <b class="tooltip tooltip-top-left u-tooltip--v1">Some helpful information</b>
+                    </div>
+                    <small class="text-muted g-font-size-12">Some information about the form field</small>
+                  </div>
+                  <!-- End Text input with Top Left Tooltip -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <!-- Text Input with Bottom Right Tooltip -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text input with bottom-right tooltip</label>
+                    <div class="input-group g-brd-primary--focus g-mb-10">
+                      <input class="form-control form-control-md border-right-0 rounded-0 pr-0" type="text" placeholder="Cras Ullamcorper Nibh">
+                      <b class="tooltip tooltip-bottom-right u-tooltip--v1">Some helpful information</b>
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-info"></i></span>
+                      </div>
+                    </div>
+                    <small class="text-muted g-font-size-12">Some information about the form field</small>
+                  </div>
+                  <!-- End Text Input with Bottom Right Tooltip -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <!-- Text Input with Bottom Left Tooltip -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text input with bottom-left tooltip</label>
+                    <div class="input-group g-brd-primary--focus g-mb-10">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-user-follow"></i></span>
+                      </div>
+                      <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="text" placeholder="Cras Ullamcorper Nibh">
+                      <b class="tooltip tooltip-bottom-left u-tooltip--v1">Some helpful information</b>
+                    </div>
+                    <small class="text-muted g-font-size-12">Some information about the form field</small>
+                  </div>
+                  <!-- End Text Input with Bottom Left Tooltip -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <!-- Text Input with Right Tooltip -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text input with right tooltip</label>
+                    <div class="input-group g-brd-primary--focus g-mb-10">
+                      <input class="form-control form-control-md border-right-0 rounded-0 pr-0" type="text" placeholder="Cras Ullamcorper Nibh">
+                      <b class="tooltip tooltip-right u-tooltip--v1">Some helpful information</b>
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-info"></i></span>
+                      </div>
+                    </div>
+                    <small class="text-muted g-font-size-12">Some information about the form field</small>
+                  </div>
+                  <!-- End Text Input with Right Tooltip -->
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <!-- Text Input with Left Tooltip -->
+                  <div class="form-group g-mb-20">
+                    <label class="g-mb-10">Text input with left tooltip</label>
+                    <div class="input-group g-brd-primary--focus g-mb-10">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-user-follow"></i></span>
+                      </div>
+                      <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="text" placeholder="Cras Ullamcorper Nibh">
+                      <b class="tooltip tooltip-left u-tooltip--v1">Some helpful information</b>
+                    </div>
+                    <small class="text-muted g-font-size-12">Some information about the form field</small>
+                  </div>
+                  <!-- End Text Input with Left Tooltip -->
+                </form>
+                <!-- End Text Input Tooltips -->
+              </div>
+
+              <div class="shortcode-scripts">
+                <!-- JS Global Compulsory -->
+                <script src="{{ root }}assets/vendor/popper.min.js"></script>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode12" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Text Input Tooltips -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- Textarea Tooltips -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Textarea Tooltips</h3>
+          </div>
+
+          <div class="col-md-10">
+          <div id="shortcode13">
+            <div class="shortcode-html">
+              <!-- Textarea Tooltips -->
+              <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                <!-- Textarea with Top Right Tooltip -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10">Textarea with top-right tooltip</label>
+                  <div class="input-group g-brd-primary--focus g-mb-10">
+                    <textarea class="form-control form-control-md border-right-0 g-resize-none rounded-0 pr-0" rows="4" placeholder="Ipsum Aenean Porta"></textarea>
+                    <b class="tooltip tooltip-top-right u-tooltip--v1">Some helpful information</b>
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-info"></i></span>
+                    </div>
+                  </div>
+                  <small class="text-muted g-font-size-12">Some information about the form field</small>
+                </div>
+                <!-- End Textarea with Top Right Tooltip -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Textarea with Top Left Tooltip -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10">Text input with top-left icon</label>
+                  <div class="input-group g-brd-primary--focus g-mb-10">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-user-follow"></i></span>
+                    </div>
+                    <textarea class="form-control form-control-md border-left-0 g-resize-none rounded-0 pl-0" rows="4" placeholder="Cras Ullamcorper Nibh"></textarea>
+                    <b class="tooltip tooltip-top-left u-tooltip--v1">Some helpful information</b>
+                  </div>
+                  <small class="text-muted g-font-size-12">Some information about the form field</small>
+                </div>
+                <!-- Textarea with Top Left Tooltip -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Textarea with Bottom Right Tooltip -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10">Textarea with bottom-right tooltip</label>
+                  <div class="input-group g-brd-primary--focus g-mb-10">
+                    <textarea class="form-control form-control-md border-right-0 g-resize-none rounded-0 pr-0" rows="4" placeholder="Ipsum Aenean Porta"></textarea>
+                    <b class="tooltip tooltip-bottom-right u-tooltip--v1">Some helpful information</b>
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-info"></i></span>
+                    </div>
+                  </div>
+                  <small class="text-muted g-font-size-12">Some information about the form field</small>
+                </div>
+                <!-- End Textarea with Bottom Right Tooltip -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Textarea with Bottom Left Tooltip -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10">Text input with bottom-left icon</label>
+                  <div class="input-group g-brd-primary--focus g-mb-10">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-user-follow"></i></span>
+                    </div>
+                    <textarea class="form-control form-control-md border-left-0 g-resize-none rounded-0 pl-0" rows="4" placeholder="Cras Ullamcorper Nibh"></textarea>
+                    <b class="tooltip tooltip-bottom-left u-tooltip--v1">Some helpful information</b>
+                  </div>
+                  <small class="text-muted g-font-size-12">Some information about the form field</small>
+                </div>
+                <!-- Textarea with Bottom Left Tooltip -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Textarea with Right Tooltip -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10">Textarea with right tooltip</label>
+                  <div class="input-group g-brd-primary--focus g-mb-10">
+                    <textarea class="form-control form-control-md border-right-0 g-resize-none rounded-0 pr-0" rows="4" placeholder="Ipsum Aenean Porta"></textarea>
+                    <b class="tooltip tooltip-right u-tooltip--v1">Some helpful information</b>
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-info"></i></span>
+                    </div>
+                  </div>
+                  <small class="text-muted g-font-size-12">Some information about the form field</small>
+                </div>
+                <!-- End Textarea with Right Tooltip -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Textarea with Left Tooltip -->
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10">Text input with left icon</label>
+                  <div class="input-group g-brd-primary--focus g-mb-10">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text rounded-0 g-color-gray-dark-v5"><i class="icon-user-follow"></i></span>
+                    </div>
+                    <textarea class="form-control form-control-md border-left-0 g-resize-none rounded-0 pl-0" rows="4" placeholder="Cras Ullamcorper Nibh"></textarea>
+                    <b class="tooltip tooltip-left u-tooltip--v1">Some helpful information</b>
+                  </div>
+                  <small class="text-muted g-font-size-12">Some information about the form field</small>
+                </div>
+                <!-- Textarea with Left Tooltip -->
+              </form>
+              <!-- End Textarea Tooltips -->
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Global Compulsory -->
+              <script src="{{ root }}assets/vendor/popper.min.js"></script>
+            </div>
+          </div>
+
+            {% set contentTarget = "#shortcode13" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Textarea Tooltips -->
+      </section>
+      <!-- End Textarea Tooltips -->
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <!-- Custom Form Extensions -->
+      <section class="container g-py-100">
+        <!-- Heading -->
+        <header class="g-mb-80">
+          <div class="u-heading-v6-2 text-uppercase">
+            <h2 class="h4 u-heading-v6__title g-font-weight-300">Custom Form Extensions</h2>
+          </div>
+          <div class="g-pl-90">
+            <p>Unify's form controls extend on
+              <a href="#!">Bootstrap forms</a>
+              with classes. In all examples,
+              <code>.form-control-md</code> class is used to change Bootstrap's default form size. Also, all form styles can be extended with Unify's global classes.
+            </p>
+          </div>
+        </header>
+        <!-- End Heading -->
+
+        <!-- Text Inputs & Textareas -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Text Inputs & Textareas</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode14">
+              <div class="shortcode-html">
+                <!-- Text Inputs & Textareas -->
+                <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                  <p>Text input</p>
+                  <div class="form-group g-mb-20">
+                    <div class="u-input-group-v1">
+                      <input id="fullName" class="form-control form-control-md rounded-0" name="full-name" type="text">
+                      <label for="fullName">Full name</label>
+                    </div>
+                  </div>
+
+                  <p>Textarea</p>
+                  <div class="form-group">
+                    <div class="u-input-group-v1">
+                      <textarea id="message" class="form-control form-control-md rounded-0 g-resize-none" name="message" rows="4"></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+
+                  <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                  <p>Text input</p>
+                  <div class="form-group g-mb-20">
+                    <div class="u-input-group-v2">
+                      <input id="fullName2" class="form-control rounded-0 u-form-control" name="full-name" type="text">
+                      <label for="fullName2">Full name</label>
+                    </div>
+                  </div>
+
+                  <p>Textarea</p>
+                  <div class="form-group mb-0">
+                    <div class="u-input-group-v2">
+                      <textarea id="message" class="form-control rounded-0 u-form-control g-resize-none" name="message" rows="4"></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                </form>
+                <!-- End Text Inputs & Textareas -->
+              </div>
+
+              <div class="shortcode-scripts">
+                <!-- JS Unify -->
+                <script type="text/plain" src="{{ root }}assets/js/helpers/hs.not-empty-state.js"></script>
+
+                <!-- JS Plugins Init. -->
+                <script type="text/plain">
+                  $(document).on('ready', function () {
+                    // initialization of forms
+                    $.HSCore.helpers.HSNotEmptyState.init();
+                  });
+                </script>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode14" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Text Inputs & Textareas -->
+
+        <hr class="g-brd-gray-light-v4 g-my-50">
+
+        <!-- Checkboxes & Radios -->
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="h4 g-font-weight-300">Checkboxes & Radios</h3>
+          </div>
+
+          <div class="col-md-10">
+            <div id="shortcode15">
+              <!-- Checkboxes & Radios -->
+              <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                <h4 class="h6 g-font-weight-700 g-mb-20">Custom checkboxes</h4>
+
+                <!-- Option 1 -->
+                <div class="d-flex align-items-center justify-content-between">
+                  <p>Option 1</p>
+                  <div>
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox" checked>
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked">
+                        <i class="fa fa-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="fa fa-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox">
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked">
+                        <i class="fa fa-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="fa fa-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox">
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked">
+                        <i class="fa fa-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="fa fa-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox">
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked">
+                        <i class="fa fa-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="fa fa-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <!-- End Option 1 -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Option 2 -->
+                <div class="d-flex align-items-center justify-content-between">
+                  <p>Option 2</p>
+                  <div>
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox" checked>
+                      <div class="u-check-icon-checkbox-v3 g-brd-gray-light-v3 g-brd-primary--checked g-bg-primary--checked">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-gray-light-v2 g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox" checked>
+                      <div class="u-check-icon-checkbox-v3 g-brd-gray-light-v3 g-brd-primary--checked g-bg-primary--checked">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-gray-light-v2 g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox">
+                      <div class="u-check-icon-checkbox-v3 g-brd-gray-light-v3 g-brd-primary--checked g-bg-primary--checked">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-gray-light-v2 g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox">
+                      <div class="u-check-icon-checkbox-v3 g-brd-gray-light-v3 g-brd-primary--checked g-bg-primary--checked">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-gray-light-v2 g-hide-check"></i>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <!-- End Option 2 -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Option 3 -->
+                <div class="d-flex align-items-center justify-content-between">
+                  <p>Option 3</p>
+                  <div>
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox" checked>
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked rounded-0">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox" checked>
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked rounded-0">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox" checked>
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked rounded-0">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="checkbox">
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked rounded-0">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <!-- End Option 3 -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <h4 class="h6 g-font-weight-700 g-mb-20">Custom radios</h4>
+
+                <!-- Option 1 -->
+                <div class="d-flex align-items-center justify-content-between">
+                  <p>Option 1</p>
+                  <div>
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_1" checked>
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked">
+                        <i class="fa fa-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="fa fa-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_1">
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked">
+                        <i class="fa fa-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="fa fa-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_1">
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked">
+                        <i class="fa fa-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="fa fa-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_1">
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked">
+                        <i class="fa fa-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="fa fa-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <!-- End Option 1 -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Option 2 -->
+                <div class="d-flex align-items-center justify-content-between">
+                  <p>Option 2</p>
+                  <div>
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_2">
+                      <div class="u-check-icon-checkbox-v3 g-brd-gray-light-v3 g-brd-primary--checked g-bg-primary--checked">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-gray-light-v2 g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_2" checked>
+                      <div class="u-check-icon-checkbox-v3 g-brd-gray-light-v3 g-brd-primary--checked g-bg-primary--checked">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-gray-light-v2 g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_2">
+                      <div class="u-check-icon-checkbox-v3 g-brd-gray-light-v3 g-brd-primary--checked g-bg-primary--checked">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-gray-light-v2 g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_2">
+                      <div class="u-check-icon-checkbox-v3 g-brd-gray-light-v3 g-brd-primary--checked g-bg-primary--checked">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-gray-light-v2 g-hide-check"></i>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <!-- End Option 2 -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <!-- Option 3 -->
+                <div class="d-flex align-items-center justify-content-between">
+                  <p>Option 3</p>
+                  <div>
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_3">
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked rounded-0">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_3">
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked rounded-0">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check g-mr-15 mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_3" checked>
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked rounded-0">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+
+                    <label class="u-check mb-0">
+                      <input class="g-hidden-xs-up g-pos-abs g-top-10 g-left-10" type="radio" name="radCustom1_3">
+                      <div class="u-check-icon-checkbox-v3 g-bg-primary--checked rounded-0">
+                        <i class="ti ti-check g-absolute-centered g-color-white g-show-check"></i>
+                        <i class="ti ti-plus g-absolute-centered g-color-primary g-hide-check"></i>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <!-- End Option 3 -->
+              </form>
+              <!-- End Checkboxes & Radios -->
+            </div>
+
+            {% set contentTarget = "#shortcode15" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Checkboxes & Radios -->
+      </section>
+      <!-- End Custom Form Extensions -->
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+  <script src="{{ root }}assets/vendor/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+  <script src="{{ root }}assets/vendor/jquery.filer/js/jquery.filer.min.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/datepicker.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/slider.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/helpers/hs.rating.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.not-empty-state.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.file-attachments.js"></script>
+  <script src="{{ root }}assets/js/components/hs.file-attachement.js"></script>
+  <script src="{{ root }}assets/js/components/hs.datepicker-1.0.js"></script>
+  <script src="{{ root }}assets/js/components/hs.slider.js"></script>
+  <script src="{{ root }}assets/js/components/hs.masked-input.js"></script>
+  <script src="{{ root }}assets/js/components/hs.count-qty.js"></script>
+  <script src="{{ root }}assets/js/components/hs.autocomplete.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of forms
+      $.HSCore.helpers.HSFileAttachments.init();
+      $.HSCore.components.HSFileAttachment.init('.js-file-attachment');
+      $.HSCore.helpers.HSRating.init();
+      $.HSCore.helpers.HSFocusState.init();
+      $.HSCore.helpers.HSNotEmptyState.init();
+      $.HSCore.components.HSDatepicker.init('#datepickerDefault, #datepickerInline, #datepickerInlineFrom, #datepickerFrom');
+      $.HSCore.components.HSSlider.init('#regularSlider, #regularSlider2, #regularSlider3, #rangeSlider, #rangeSlider2, #rangeSlider3, #stepSlider, #stepSlider2, #stepSlider3');
+      $.HSCore.components.HSMaskedInput.init('[data-mask]');
+      $.HSCore.components.HSCountQty.init('.js-quantity');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of autocomplet
+      $.HSCore.components.HSAutocomplete.init('#autocomplete2');
+
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/*------------------------------------
+  Typography Text Decoration
+------------------------------------*/
+
+.g-text-strike {
+  text-decoration: line-through;
+
+  &--checked {
+    input[type="checkbox"]:checked + * + &,
+    input[type="radio"]:checked + * + &,
+    input[type="checkbox"]:checked + &,
+    input[type="radio"]:checked + & {
+      text-decoration: line-through;
+    }
+  }
+}

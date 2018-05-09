@@ -1,0 +1,53 @@
+audio {
+  &:not([controls]) {
+    display: none;
+    height: 0;
+  }
+}
+
+video {
+  max-width: 100%
+}
+
+.u-video {
+  &-v1 {
+    margin-bottom: 15px;
+
+    &-info {
+      display: none;
+      padding-left: 0;
+
+      &__item {
+        display: inline-block;
+        list-style: none;
+      }
+    }
+  }
+}
+
+.u-audio {
+  &-v1 {
+    margin-bottom: 15px;
+
+    &-info {
+      display: none;
+      padding-left: 0;
+
+      &__item {
+        display: inline-block;
+        list-style: none;
+      }
+    }
+  }
+
+  &-v2 {
+    .plyr__controls {
+      background-color: transparent;
+      border: none;
+
+      button {
+        color: $g-color-white;
+      }
+    }
+  }
+}

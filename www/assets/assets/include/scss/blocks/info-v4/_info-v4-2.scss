@@ -1,0 +1,31 @@
+/*------------------------------------
+  Info Block v4-2
+------------------------------------*/
+.info-v4-2__price-block {
+	position: relative;
+	overflow: hidden;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: -15px;
+		display: block;
+		width: 0%;
+		background-color: $g-color-black;
+		transition: inherit;
+		transform: skewX(15deg);
+	}
+}
+
+.info-v4-2:hover {
+	.info-v4-2__price {
+		color: $g-color-white;
+	}
+
+	.info-v4-2__price-block::after {
+		width: 120%;
+		transform: skewX(0deg);
+	}
+}

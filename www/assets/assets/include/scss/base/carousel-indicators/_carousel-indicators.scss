@@ -1,0 +1,19 @@
+/*------------------------------------
+  Carousel indicators
+------------------------------------*/
+
+[class*="u-carousel-indicators"] {
+  display: block;
+  position: absolute;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  li {
+    list-style: none;
+  }
+
+  span {
+    display: block;
+    cursor: pointer;
+  }
+}

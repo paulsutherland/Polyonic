@@ -1,0 +1,79 @@
+/*------------------------------------
+  Success state
+------------------------------------*/
+
+.u-has-success {
+  &-v1,
+  &-v1-2,
+  &-v1-3 {
+    .form-control,
+    [class*="input-group-"],
+    [class*="u-select"] {
+      background-color: #f0fff0;
+
+      &[readonly] {
+        background-color: #f0fff0;
+      }
+    }
+
+    .form-control-feedback {
+      color: $g-color-primary;
+    }
+
+    [class*="u-check-icon"] {
+      background-color: #f0fff0;
+    }
+  }
+
+  &-v1-2,
+  &-v1-3 {
+    .form-control,
+    [class*="input-group-"],
+    [class*="u-select"] {
+      border-color: $g-color-primary;
+    }
+
+    [class*="input-group-"],
+    [class*="input-group-"]:last-child,
+    .chosen-single div b {
+      color: $g-color-primary;
+    }
+  }
+
+  &-v1-3 {
+    position: relative;
+
+    [class*="input-group-"],
+    [class*="input-group-"]:last-child {
+      color: $g-color-white;
+      background-color: $g-color-primary;
+    }
+
+    .form-control-feedback {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        right: 18px;
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 3px 3px 0 3px;
+        border-color: $g-color-primary transparent transparent transparent;
+      }
+    }
+  }
+
+  &-v2 {
+    &::after {
+      content: '\f00c';
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      font-family: 'FontAwesome', sans-serif;
+      color: $g-color-primary;
+      transform: translateY(-50%);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/*------------------------------------
+  Animation on the scroll
+------------------------------------*/
+[data-animation]:not(.u-in-viewport) {
+  visibility: hidden;
+}
+
+[data-animation].js-carousel {
+  visibility: visible;
+}
+
+.u-in-viewport {
+  visibility: visible;
+}

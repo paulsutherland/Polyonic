@@ -1,0 +1,25 @@
+/*------------------------------------
+  Tagsinput v1
+------------------------------------*/
+
+.u-tagsinput--v1 {
+  .bootstrap-tagsinput {
+    width: 100%;
+    @include px-to-rem(padding, 8px 9px);
+    border: 1px solid $g-color-gray-light-v7;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+
+  [data-role="remove"] {
+    @include px-to-rem(font-size, 12px);
+    font-family: "hs-admin-icons", sans-serif;
+    color: $g-color-white;
+    @include px-to-rem(margin-left, 14px);
+
+    &::after {
+      content: "\e939" !important;
+      padding: 0 !important;
+    }
+  }
+}

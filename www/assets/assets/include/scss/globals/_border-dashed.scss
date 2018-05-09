@@ -1,0 +1,54 @@
+/*------------------------------------
+  Borders Default (dashed)
+------------------------------------*/
+.g-brd-around--dashed {
+  border: dashed 1px transparent;
+}
+.g-brd-top--dashed {
+  border-top: dashed 1px transparent;
+}
+.g-brd-bottom--dashed {
+  border-bottom: dashed 1px transparent;
+}
+.g-brd-right--dashed {
+  border-right: dashed 1px transparent;
+}
+.g-brd-left--dashed {
+  border-left: dashed 1px transparent;
+}
+
+@media (min-width: $g-sm) {
+  .g-brd-around--dashed--sm {
+    border: dashed 1px transparent;
+  }
+  .g-brd-top--dashed--sm {
+    border-top: dashed 1px transparent;
+  }
+  .g-brd-bottom--dashed--sm {
+    border-bottom: dashed 1px transparent;
+  }
+  .g-brd-right--dashed--sm {
+    border-right: dashed 1px transparent;
+  }
+  .g-brd-left--dashed--sm {
+    border-left: dashed 1px transparent;
+  }
+}
+
+@media (min-width: $g-md) {
+  .g-brd-around--dashed--md {
+    border: dashed 1px transparent;
+  }
+  .g-brd-top--dashed--md {
+    border-top: dashed 1px transparent;
+  }
+  .g-brd-bottom--dashed--md {
+    border-bottom: dashed 1px transparent;
+  }
+  .g-brd-right--dashed--md {
+    border-right: dashed 1px transparent;
+  }
+  .g-brd-left--dashed--md {
+    border-left: dashed 1px transparent;
+  }
+}

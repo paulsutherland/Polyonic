@@ -1,0 +1,1250 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-clients" %}
+{% set title = "Clients" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+<main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-block.njk" %}
+
+  <section>
+    <!-- Clients #01 -->
+    <section class="g-py-100">
+      <div class="container">
+        <div class="text-center g-mb-50">
+          <h2 class="h4">Clients
+            <span class="g-color-primary g-ml-5">#01</span>
+          </h2>
+        </div>
+
+        <div id="shortcode1" class="g-mb-40">
+          <div class="shortcode-html">
+            <div class="js-carousel"
+                 data-autoplay="true"
+                 data-slides-show="6"
+                 data-responsive='[{
+                   "breakpoint": 1200,
+                   "settings": {
+                     "slidesToShow": 4
+                   }
+                 }, {
+                   "breakpoint": 992,
+                   "settings": {
+                     "slidesToShow": 3
+                   }
+                 }, {
+                   "breakpoint": 768,
+                   "settings": {
+                     "slidesToShow": 2
+                   }
+                 }, {
+                   "breakpoint": 576,
+                   "settings": {
+                     "slidesToShow": 1
+                   }
+                 }]'>
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img9.png" alt="Image Description">
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <script type="text/plain">
+              $(document).on('ready', function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        {% set contentTarget = "#shortcode1" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- End Clients #01 -->
+
+    <hr class="g-brd-gray-light-v4 my-0">
+
+    <!-- Clients #02 -->
+    <section class="g-py-100">
+      <div class="container">
+        <div class="text-center g-mb-50">
+          <h2 class="h4">Clients
+            <span class="g-color-primary g-ml-5">#02</span>
+          </h2>
+        </div>
+
+        <div id="shortcode2" class="g-mb-40">
+          <div class="shortcode-html">
+            <div class="js-carousel g-pb-45"
+                 data-autoplay="true"
+                 data-slides-show="5"
+                 data-slides-scroll="5"
+                 data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x text-center g-bottom-20"
+                 data-responsive='[{
+                   "breakpoint": 1200,
+                   "settings": {
+                     "slidesToShow": 4
+                   }
+                 }, {
+                   "breakpoint": 992,
+                   "settings": {
+                     "slidesToShow": 3
+                   }
+                 }, {
+                   "breakpoint": 768,
+                   "settings": {
+                     "slidesToShow": 2
+                   }
+                 }, {
+                   "breakpoint": 576,
+                   "settings": {
+                     "slidesToShow": 1
+                   }
+                 }]'>
+              <div class="js-slide g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mx-10">
+                <img class="img-fluid mx-auto" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mx-10">
+                <img class="img-fluid mx-auto" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mx-10">
+                <img class="img-fluid mx-auto" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mx-10">
+                <img class="img-fluid mx-auto" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mx-10">
+                <img class="img-fluid mx-auto" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mx-10">
+                <img class="img-fluid mx-auto" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mx-10">
+                <img class="img-fluid mx-auto" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mx-10">
+                <img class="img-fluid mx-auto" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mx-10">
+                <img class="img-fluid mx-auto" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mx-10">
+                <img class="img-fluid mx-auto" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mx-10">
+                <img class="img-fluid mx-auto" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <script type="text/plain">
+              $(document).on('ready', function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        {% set contentTarget = "#shortcode2" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- End Clients #02 -->
+
+    <hr class="g-brd-gray-light-v4 my-0">
+
+    <!-- Clients #03 -->
+    <section class="g-py-100">
+      <div class="container">
+        <div class="text-center g-mb-50">
+          <h2 class="h4">Clients
+            <span class="g-color-primary g-ml-5">#03</span>
+          </h2>
+        </div>
+
+
+        <div id="shortcode3" class="g-mb-40">
+          <div class="shortcode-html">
+            <div class="js-carousel"
+                 data-autoplay="true"
+                 data-slides-show="6"
+                 data-responsive='[{
+                   "breakpoint": 1200,
+                   "settings": {
+                     "slidesToShow": 4
+                   }
+                 }, {
+                   "breakpoint": 992,
+                   "settings": {
+                     "slidesToShow": 3
+                   }
+                 }, {
+                   "breakpoint": 768,
+                   "settings": {
+                     "slidesToShow": 2
+                   }
+                 }, {
+                   "breakpoint": 576,
+                   "settings": {
+                     "slidesToShow": 1
+                   }
+                 }]'>
+              <div class="js-slide g-brd-around g-brd-gray-light-v3--hover g-transition-0_2 rounded g-pa-20 g-mx-10">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v3--hover g-transition-0_2 rounded g-pa-20 g-mx-10">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v3--hover g-transition-0_2 rounded g-pa-20 g-mx-10">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v3--hover g-transition-0_2 rounded g-pa-20 g-mx-10">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v3--hover g-transition-0_2 rounded g-pa-20 g-mx-10">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v3--hover g-transition-0_2 rounded g-pa-20 g-mx-10">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v3--hover g-transition-0_2 rounded g-pa-20 g-mx-10">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v3--hover g-transition-0_2 rounded g-pa-20 g-mx-10">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-brd-around g-brd-gray-light-v3--hover g-transition-0_2 rounded g-pa-20 g-mx-10">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img9.png" alt="Image Description">
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <script type="text/plain">
+              $(document).on('ready', function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        {% set contentTarget = "#shortcode3" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- End Clients #03 -->
+
+    <hr class="g-brd-gray-light-v4 my-0">
+
+    <!-- Clients #04 -->
+    <section class="g-py-100">
+      <div class="container">
+        <div class="text-center g-mb-50">
+          <h2 class="h4">Clients
+            <span class="g-color-primary g-ml-5">#04</span>
+          </h2>
+        </div>
+
+        <div id="shortcode4" class="g-mb-40">
+          <div class="shortcode-html">
+            <div class="row text-center g-mx-0--sm">
+              <div class="col-lg-2 col-md-6 g-px-0--sm">
+                <div class="g-brd-around g-brd-gray-light-v4 g-py-50 g-px-30 g-ml-minus-1 g-mb-minus-1">
+                  <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6 g-px-0--sm">
+                <div class="g-brd-around g-brd-gray-light-v4 g-py-50 g-px-30 g-ml-minus-1 g-mb-minus-1">
+                  <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6 g-px-0--sm">
+                <div class="g-brd-around g-brd-gray-light-v4 g-py-50 g-px-30 g-ml-minus-1 g-mb-minus-1">
+                  <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6 g-px-0--sm">
+                <div class="g-brd-around g-brd-gray-light-v4 g-py-50 g-px-30 g-ml-minus-1 g-mb-minus-1">
+                  <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6 g-px-0--sm">
+                <div class="g-brd-around g-brd-gray-light-v4 g-py-50 g-px-30 g-ml-minus-1 g-mb-minus-1">
+                  <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img9.png" alt="Image Description">
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6 g-px-0--sm">
+                <div class="g-brd-around g-brd-gray-light-v4 g-py-50 g-px-30 g-ml-minus-1 g-mb-minus-1">
+                  <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% set contentTarget = "#shortcode4" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- End Clients #04 -->
+
+    <hr class="g-brd-gray-light-v4 my-0">
+
+    <!-- Clients #05 -->
+    <section class="g-py-100">
+      <div class="container">
+        <div class="text-center g-mb-50">
+          <h2 class="h4">Clients
+            <span class="g-color-primary g-ml-5">#05</span>
+          </h2>
+        </div>
+
+        <div id="shortcode5" class="g-mb-40">
+          <div class="shortcode-html">
+            <div class="g-overflow-hidden">
+              <div class="row text-center mx-0 g-ml-minus-1 g-mb-minus-1">
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img9.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img10.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img11.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-2 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15">
+                    <img class="img-fluid g-width-100 g-opacity-0_8--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% set contentTarget = "#shortcode5" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- End Clients #05 -->
+
+    <!-- Clients #06 -->
+    <section>
+      <div id="shortcode6">
+        <div class="shortcode-html">
+          <div class="dzsparallaxer auto-init height-is-based-on-content">
+            <!-- Parallax Image -->
+            <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_6--after" style="height: 140%; background: url({{ root }}assets/img-temp/1920x800/img11.jpg)"></div>
+            <!-- End Parallax Image -->
+
+            <div class="container g-py-100">
+              <h2 class="h4 text-center g-color-white g-mb-50">Clients
+                <span class="g-color-primary g-ml-5">#06</span>
+              </h2>
+
+              <div class="js-carousel"
+                   data-speed="4000"
+                   data-autoplay="true"
+                   data-infinite="true"
+                   data-slides-show="6"
+                   data-responsive='[{
+                     "breakpoint": 1200,
+                     "settings": {
+                       "slidesToShow": 4
+                     }
+                   }, {
+                     "breakpoint": 992,
+                     "settings": {
+                       "slidesToShow": 3
+                     }
+                   }, {
+                     "breakpoint": 768,
+                     "settings": {
+                       "slidesToShow": 2
+                     }
+                   }, {
+                     "breakpoint": 576,
+                     "settings": {
+                       "slidesToShow": 1
+                     }
+                   }]'>
+                <div class="js-slide u-block-hover g-height-150 g-bg-white g-pa-30 g-mx-5 g-rounded-3">
+                  <img class="img-fluid mx-auto u-block-hover__main--zoom-v1 g-max-height-100x" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+                </div>
+
+                <div class="js-slide u-block-hover g-height-150 g-bg-white g-pa-30 g-mx-5 g-rounded-3">
+                  <img class="img-fluid mx-auto u-block-hover__main--zoom-v1 g-max-height-100x" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+                </div>
+
+                <div class="js-slide u-block-hover g-height-150 g-bg-white g-pa-30 g-mx-5 g-rounded-3">
+                  <img class="img-fluid mx-auto u-block-hover__main--zoom-v1 g-max-height-100x" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+                </div>
+
+                <div class="js-slide u-block-hover g-height-150 g-bg-white g-pa-30 g-mx-5 g-rounded-3">
+                  <img class="img-fluid mx-auto u-block-hover__main--zoom-v1 g-max-height-100x" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+                </div>
+
+                <div class="js-slide u-block-hover g-height-150 g-bg-white g-pa-30 g-mx-5 g-rounded-3">
+                  <img class="img-fluid mx-auto u-block-hover__main--zoom-v1 g-max-height-100x" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+                </div>
+
+                <div class="js-slide u-block-hover g-height-150 g-bg-white g-pa-30 g-mx-5 g-rounded-3">
+                  <img class="img-fluid mx-auto u-block-hover__main--zoom-v1 g-max-height-100x" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+                </div>
+
+                <div class="js-slide u-block-hover g-height-150 g-bg-white g-pa-30 g-mx-5 g-rounded-3">
+                  <img class="img-fluid mx-auto u-block-hover__main--zoom-v1 g-max-height-100x" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shortcode-styles">
+          <!-- CSS Implementing Plugins -->
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+        </div>
+
+        <div class="shortcode-scripts">
+          <!-- JS Implementing Plugins -->
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+          <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+          <!-- JS Unify -->
+          <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+          <script type="text/plain">
+            $(document).on('ready', function () {
+              // initialization of carousel
+              $.HSCore.components.HSCarousel.init('.js-carousel');
+            });
+          </script>
+        </div>
+      </div>
+
+      <div class="container">
+        {% set contentTarget = "#shortcode6" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- Clients #06 -->
+
+    <hr class="g-brd-gray-light-v4 my-0">
+
+    <!-- Clients #07 -->
+    <section class="g-py-100">
+      <div class="container">
+        <div class="text-center g-mb-50">
+          <h2 class="h4">Clients
+            <span class="g-color-primary g-ml-5">#07</span>
+          </h2>
+        </div>
+
+        <div id="shortcode7" class="g-mb-40">
+          <div class="shortcode-html">
+            <div class="text-center">
+              <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5" href="#!">
+                <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+
+                <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+                  <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Twillio</h3>
+                </div>
+              </a>
+
+              <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5" href="#!">
+                <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+
+                <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+                  <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Hubspot</h3>
+                </div>
+              </a>
+
+              <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5" href="#!">
+                <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+
+                <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+                  <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Airbnb</h3>
+                </div>
+              </a>
+
+              <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5" href="#!">
+                <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+
+                <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+                  <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Atlassian</h3>
+                </div>
+              </a>
+
+              <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5" href="#!">
+                <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+
+                <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+                  <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">CircleCi</h3>
+                </div>
+              </a>
+
+              <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5" href="#!">
+                <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+
+                <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+                  <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">FitBit</h3>
+                </div>
+              </a>
+
+              <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5" href="#!">
+                <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+
+                <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+                  <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Invision</h3>
+                </div>
+              </a>
+
+              <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5" href="#!">
+                <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image Description">
+
+                <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+                  <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Spotify</h3>
+                </div>
+              </a>
+
+              <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5" href="#!">
+                <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{{ root }}assets/img-temp/200x100/img9.png" alt="Image Description">
+
+                <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+                  <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Adroll</h3>
+                </div>
+              </a>
+
+              <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5" href="#!">
+                <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{{ root }}assets/img-temp/200x100/img10.png" alt="Image Description">
+
+                <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+                  <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Sass</h3>
+                </div>
+              </a>
+
+              <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5" href="#!">
+                <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{{ root }}assets/img-temp/200x100/img11.png" alt="Image Description">
+
+                <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+                  <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Visa</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {% set contentTarget = "#shortcode7" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- End Clients #07 -->
+
+    <!-- Clients #08 -->
+    <section>
+      <div id="shortcode8">
+        <div class="shortcode-html">
+          <div class="g-bg-secondary g-py-100">
+            <div class="container">
+              <div class="text-center g-color-black g-mb-50">
+                <h2 class="h4">Clients
+                  <span class="g-color-primary g-ml-5">#08</span>
+                </h2>
+              </div>
+
+              <div class="g-overflow-hidden">
+                <div class="row text-center mx-0 g-ml-minus-1 g-mb-minus-1">
+                  <div class="col-md-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-white-opacity-0_2 g-py-40">
+                      <img class="img-fluid g-width-120 g-opacity-0_6 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-white-opacity-0_2 g-py-40">
+                      <img class="img-fluid g-width-120 g-opacity-0_6 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-white-opacity-0_2 g-py-40">
+                      <img class="img-fluid g-width-120 g-opacity-0_6 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-white-opacity-0_2 g-py-40">
+                      <img class="img-fluid g-width-120 g-opacity-0_6 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-white-opacity-0_2 g-py-40">
+                      <img class="img-fluid g-width-120 g-opacity-0_6 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-white-opacity-0_2 g-py-40">
+                      <img class="img-fluid g-width-120 g-opacity-0_6 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img10.png" alt="Image Description">
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-white-opacity-0_2 g-py-40">
+                      <img class="img-fluid g-width-120 g-opacity-0_6 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-white-opacity-0_2 g-py-40">
+                      <img class="img-fluid g-width-120 g-opacity-0_6 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image Description">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        {% set contentTarget = "#shortcode8" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- End Clients #08 -->
+
+    <hr class="g-brd-gray-light-v4 my-0">
+
+    <!-- Clients #09 -->
+    <section class="g-py-100">
+      <div class="container">
+        <div class="text-center g-mb-50">
+          <h2 class="h4">Clients
+            <span class="g-color-primary g-ml-5">#09</span>
+          </h2>
+        </div>
+
+        <div id="shortcode9" class="g-mb-40">
+          <div class="shortcode-html">
+            <div class="g-overflow-hidden">
+              <div class="row text-center mx-0 g-ml-minus-1 g-mb-minus-1">
+                <div class="col-md-3 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                    <img class="img-fluid g-width-120 g-opacity-0_8 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-md-3 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                    <img class="img-fluid g-width-120 g-opacity-0_8 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-md-3 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                    <img class="img-fluid g-width-120 g-opacity-0_8 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-md-3 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                    <img class="img-fluid g-width-120 g-opacity-0_8 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-md-3 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                    <img class="img-fluid g-width-120 g-opacity-0_8 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-md-3 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                    <img class="img-fluid g-width-120 g-opacity-0_8 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-md-3 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                    <img class="img-fluid g-width-120 g-opacity-0_8 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="col-md-3 px-0">
+                  <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                    <img class="img-fluid g-width-120 g-opacity-0_8 g-opacity-1--hover g-transition-0_2" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image Description">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% set contentTarget = "#shortcode9" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- End Clients #09 -->
+
+    <!-- Clients #10 -->
+    <section class="g-bg-img-hero g-bg-size-cover" style="background-image: url({{ root }}assets/img-temp/1920x800/img10.jpg);">
+      <div class="container u-bg-overlay__inner text-center g-py-100">
+        <h2 class="h4 g-color-black g-mb-50">Clients
+          <span class="g-color-primary g-ml-5">#10</span>
+        </h2>
+
+        <div id="shortcode10">
+          <div class="shortcode-html">
+            <div class="js-carousel"
+                 data-autoplay="true"
+                 data-infinite="true"
+                 data-slides-show="6"
+                 data-responsive='[{
+                   "breakpoint": 1200,
+                   "settings": {
+                     "slidesToShow": 4
+                   }
+                 }, {
+                   "breakpoint": 992,
+                   "settings": {
+                     "slidesToShow": 3
+                   }
+                 }, {
+                   "breakpoint": 768,
+                   "settings": {
+                     "slidesToShow": 2
+                   }
+                 }, {
+                   "breakpoint": 576,
+                   "settings": {
+                     "slidesToShow": 1
+                   }
+                 }]'>
+              <div class="js-slide g-mx-15">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-mx-15">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-mx-15">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-mx-15">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-mx-15">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-mx-15">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+              </div>
+
+              <div class="js-slide g-mx-15">
+                <img class="mx-auto g-width-120" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+              </div>
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+            <script type="text/plain">
+              $(document).on('ready', function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+        {% set contentTarget = "#shortcode10" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- Clients #10 -->
+
+    <!-- Clients #11 -->
+    <section class="g-py-100">
+      <div class="container g-mb-50">
+        <h2 class="h4 text-center">Clients
+          <span class="g-color-primary g-ml-5">#11</span>
+        </h2>
+      </div>
+
+      <div id="shortcode11" class="g-mb-40">
+        <div class="shortcode-html">
+          <div class="js-carousel g-brd-top g-brd-bottom g-brd-gray-light-v4"
+               data-autoplay="true"
+               data-slides-show="7"
+               data-responsive='[{
+                 "breakpoint": 1200,
+                 "settings": {
+                   "slidesToShow": 4
+                 }
+               }, {
+                 "breakpoint": 992,
+                 "settings": {
+                   "slidesToShow": 3
+                 }
+               }, {
+                 "breakpoint": 768,
+                 "settings": {
+                   "slidesToShow": 2
+                 }
+               }, {
+                 "breakpoint": 576,
+                 "settings": {
+                   "slidesToShow": 1
+                 }
+               }]'>
+            <div class="js-slide u-block-hover g-brd-left g-brd-gray-light-v4">
+              <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer g-py-50" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+            </div>
+
+            <div class="js-slide u-block-hover g-brd-left g-brd-gray-light-v4">
+              <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer g-py-50" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+            </div>
+
+            <div class="js-slide u-block-hover g-brd-left g-brd-gray-light-v4">
+              <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer g-py-50" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+            </div>
+
+            <div class="js-slide u-block-hover g-brd-left g-brd-gray-light-v4">
+              <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer g-py-50" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+            </div>
+
+            <div class="js-slide u-block-hover g-brd-left g-brd-gray-light-v4">
+              <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer g-py-50" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+            </div>
+
+            <div class="js-slide u-block-hover g-brd-left g-brd-gray-light-v4">
+              <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer g-py-50" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+            </div>
+
+            <div class="js-slide u-block-hover g-brd-left g-brd-gray-light-v4">
+              <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer g-py-50" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+            </div>
+
+            <div class="js-slide u-block-hover g-brd-left g-brd-gray-light-v4">
+              <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer g-py-50" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image Description">
+            </div>
+
+            <div class="js-slide u-block-hover g-brd-left g-brd-gray-light-v4">
+              <img class="mx-auto g-width-120 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer g-py-50" src="{{ root }}assets/img-temp/200x100/img9.png" alt="Image Description">
+            </div>
+          </div>
+        </div>
+
+        <div class="shortcode-styles">
+          <!-- CSS Implementing Plugins -->
+          <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+        </div>
+
+        <div class="shortcode-scripts">
+          <!-- JS Implementing Plugins -->
+          <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+          <!-- JS Unify -->
+          <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+          <script type="text/plain">
+            $(document).on('ready', function () {
+              // initialization of carousel
+              $.HSCore.components.HSCarousel.init('.js-carousel');
+            });
+          </script>
+        </div>
+      </div>
+
+      <div class="container">
+        {% set contentTarget = "#shortcode11" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- End Clients #11 -->
+
+    <hr class="g-brd-gray-light-v4 g-my-10">
+
+    <!-- Clients #12 -->
+    <section class="g-py-100">
+      <div class="container g-mb-50">
+        <h2 class="h4 text-center">Clients
+          <span class="g-color-primary g-ml-5">#12</span>
+        </h2>
+      </div>
+
+      <div id="shortcode12" class="g-mb-40">
+        <div class="shortcode-html">
+          <!-- Clients -->
+          <div class="container u-shadow-v29 g-bg-size-cover g-bg-img-hero g-bg-cover g-bg-black-opacity-0_5--after g-rounded-100 g-rounded-100--after g-mt-100 g-mb-10 g-py-60" style="background-image: url({{ root }}assets/img-temp/1920x500/img1.jpg);">
+            <div class="js-carousel g-pos-rel g-z-index-1"
+                 data-infinite="true"
+                 data-autoplay="true"
+                 data-slides-show="6"
+                 data-responsive='[{
+                   "breakpoint": 1200,
+                   "settings": {
+                     "slidesToShow": 6
+                   }
+                 }, {
+                   "breakpoint": 992,
+                   "settings": {
+                     "slidesToShow": 4
+                   }
+                 }, {
+                   "breakpoint": 768,
+                   "settings": {
+                     "slidesToShow": 3
+                   }
+                 }, {
+                   "breakpoint": 576,
+                   "settings": {
+                     "slidesToShow": 3
+                   }
+                 }, {
+                   "breakpoint": 446,
+                   "settings": {
+                     "slidesToShow": 2
+                   }
+                 }]'>
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--white g-opacity-0_8 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--white g-opacity-0_8 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--white g-opacity-0_8 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--white g-opacity-0_8 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--white g-opacity-0_8 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--white g-opacity-0_8 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image description">
+              </div>
+
+              <div class="js-slide u-block-hover">
+                <img class="mx-auto g-width-80 u-block-hover__main--white g-opacity-0_8 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image description">
+              </div>
+            </div>
+          </div>
+          <!-- End Clients -->
+        </div>
+      </div>
+
+      <div class="shortcode-styles">
+        <!-- CSS Implementing Plugins -->
+        <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+      </div>
+
+      <div class="shortcode-scripts">
+        <!-- JS Implementing Plugins -->
+        <script type="text/plain" src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+        <!-- JS Unify -->
+        <script type="text/plain" src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+        <script type="text/plain">
+          $(document).on('ready', function () {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+          });
+        </script>
+      </div>
+
+      <div class="container">
+        {% set contentTarget = "#shortcode12" %}
+        {% set modalID = "#modalMarkup" %}
+        {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+      </div>
+    </section>
+    <!-- End Clients #12 -->
+  </section>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+  {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+  {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+</main>
+
+{% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Implementing Plugins -->
+<script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+{% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+<script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+{% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+<!-- jQuery UI Helpers -->
+<script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+<script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+<!-- jQuery UI Widgets -->
+<script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.header.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+<script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+{% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of go to
+    $.HSCore.components.HSGoTo.init('.js-go-to');
+
+    // initialization of carousel
+    $.HSCore.components.HSCarousel.init('.js-carousel');
+  });
+
+  $(window).on('load', function () {
+    // initialization of header
+    $.HSCore.components.HSHeader.init($('#js-header'));
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+    $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+    // initialization of autocomplet
+    $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+    // initialization of HSMegaMenu component
+    $('.js-mega-menu').HSMegaMenu({
+      event: 'hover',
+      pageContainer: $('.container'),
+      breakpoint: 991
+    });
+  });
+</script>
+</body>
+</html>

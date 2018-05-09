@@ -1,0 +1,70 @@
+/*------------------------------------
+  Focus state background
+------------------------------------*/
+
+/* Black Colors */
+.g-bg-black {
+  &--focus:focus {
+    background-color: $g-color-black !important;
+  }
+
+  // Black opacity
+  &-opacity {
+    &-0_2 {
+      &--focus:focus {
+        background-color: rgba($g-color-black, .2) !important;
+      }
+    }
+    &-0_4 {
+      &--focus:focus {
+        background-color: rgba($g-color-black, .4) !important;
+      }
+    }
+  }
+}
+
+/* Gray Colors */
+.g-bg-gray {
+  // Dark Gray
+  &-dark {
+    &-v1 {
+      &--focus:focus {
+        background-color: $g-color-gray-dark-v1 !important;
+      }
+    }
+
+    &-v2 {
+      &--focus:focus {
+        background-color: $g-color-gray-dark-v2 !important;
+      }
+    }
+
+    &-v3 {
+      &--focus:focus {
+        background-color: $g-color-gray-dark-v3 !important;
+      }
+    }
+  }
+
+  // Light Gray
+  &-light {
+    &-v4 {
+      &--focus:focus {
+        background-color: $g-color-gray-light-v4 !important;
+      }
+    }
+
+    &-v5 {
+      &--focus:focus {
+        background-color: $g-color-gray-light-v5 !important;
+      }
+    }
+  }
+}
+
+/* Transparent */
+.g-bg-transparent {
+  &--focus:focus {
+    background-color: transparent;
+  }
+}

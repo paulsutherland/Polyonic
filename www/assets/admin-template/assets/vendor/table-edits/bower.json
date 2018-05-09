@@ -1,0 +1,25 @@
+{
+  "name": "table-edits",
+  "version": "0.0.3",
+  "authors": [
+    "Nathan Cahill <nathan@nathancahill.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nathancahill/table-edits",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+    "font-awesome": "~4.3.0",
+    "skeleton": "~2.0.4",
+    "pikaday-skeleton": "~2.0.4",
+    "momentjs": "~2.10.3"
+  }
+}

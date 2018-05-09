@@ -1,0 +1,139 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-contacts" %}
+{% set mainNavActive_3 = "page-contacts-4" %}
+{% set title = "Contacts 4 | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Promo Block -->
+      <section class="g-bg-gray-dark-v1">
+        <div class="container g-color-white g-py-150">
+          <h2 class="display-4 g-font-weight-600 text-uppercase">Our contacts</h2>
+          <h3 class="h2 g-font-weight-300 mb-0">Got a question? We'd love to hear from you!</h3>
+        </div>
+      </section>
+      <!-- End Promo Block -->
+
+      <section class="clearfix">
+        <div class="row no-gutters">
+          <div class="col-md-6 align-self-center">
+            <!-- Google Map -->
+            <div id="GMapCustomized-light" class="js-g-map embed-responsive embed-responsive-21by9 g-height-100vh"
+                 data-type="custom"
+                 data-lat="40.674"
+                 data-lng="-73.946"
+                 data-zoom="12"
+                 data-title="Agency"
+                 data-styles='[["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]], ["", "labels", [{"visibility":"on"}]], ["water", "", [{"color":"#bac6cb"}]] ]'
+                 data-pin="true"
+                 data-pin-icon="{{ root }}assets/img/icons/pin/green.png">
+            </div>
+            <!-- End Google Map -->
+          </div>
+
+          <div class="col-md-6 align-self-center">
+            <div class="g-pa-100">
+              <div class="g-mb-60">
+                <h2 class="h1 g-color-black">Contact us</h2>
+                <p class="g-color-gray-dark-v3 g-font-size-16">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+              </div>
+
+              <div class="mb-5">
+                <h2 class="h4 g-color-black">Pixeel Ltd.</h2>
+                <p class="g-color-gray-dark-v3 g-font-size-16 mb-0">Unit 25 Suite 3, 925 Prospect PI</p>
+                <p class="g-color-gray-dark-v3 g-font-size-16 mb-0">htmlstream@support.com</p>
+              </div>
+
+              <a class="btn u-btn-black g-font-weight-600 g-font-size-12 text-uppercase rounded0 g-py-15 g-py-13 g-px-40" href="index.html">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="{{ root }}assets/vendor/gmaps/gmaps.min.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/gmap/hs.map.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      // initialization of google map
+      function initMap() {
+        $.HSCore.components.HSGMap.init('.js-g-map');
+      }
+
+      $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async defer></script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

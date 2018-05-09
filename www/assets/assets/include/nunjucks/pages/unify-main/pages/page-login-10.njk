@@ -1,0 +1,184 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-login-signup" %}
+{% set mainNavActive_3 = "page-login-10" %}
+{% set title = "Login Page 10 | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Login -->
+      <section class="g-bg-secondary">
+        <div class="container g-pt-100 g-pb-20">
+          <div class="row justify-content-between">
+            <div class="col-md-6 col-lg-5 flex-md-unordered align-self-center g-mb-80">
+              <div class="u-shadow-v21 g-bg-white rounded g-pa-50">
+                <header class="text-center mb-4">
+                  <h2 class="h2 g-color-black g-font-weight-600">Login</h2>
+                </header>
+
+                <!-- Form -->
+                <form class="g-py-15">
+                  <div class="mb-4">
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="email" placeholder="johndoe@gmail.com">
+                  </div>
+
+                  <div class="g-mb-30">
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="Password" placeholder="Password">
+                  </div>
+
+                  <div class="text-center mb-5">
+                    <button class="btn btn-block u-btn-primary rounded g-py-13" type="button">Login</button>
+                  </div>
+
+                  <div class="d-flex justify-content-center text-center g-mb-30">
+                    <div class="d-inline-block align-self-center g-width-50 g-height-1 g-bg-gray-light-v1"></div>
+                    <span class="align-self-center g-color-gray-dark-v5 mx-4">OR</span>
+                    <div class="d-inline-block align-self-center g-width-50 g-height-1 g-bg-gray-light-v1"></div>
+                  </div>
+
+                  <div class="row no-gutters g-mb-40">
+                    <div class="col-6">
+                      <button class="btn btn-block u-btn-facebook rounded g-px-30 g-py-13 mr-1" type="button">Facebook</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-block u-btn-twitter rounded g-px-30 g-py-13 ml-1" type="button">Twitter</button>
+                    </div>
+                  </div>
+                </form>
+                <!-- End Form -->
+
+                <footer class="text-center">
+                  <p class="g-color-gray-dark-v5 mb-0">Don't have an account? <a class="g-font-weight-600" href="page-signup-10.html">signup</a></p>
+                </footer>
+              </div>
+            </div>
+
+            <div class="col-md-6 flex-md-first align-self-center g-mb-80">
+              <div class="mb-5">
+                <h1 class="h3 g-font-weight-600 mb-3">Profitable contracts,<br>invoices &amp; payments for the best cases!</h1>
+                <p class="g-color-gray-dark-v5 g-font-size-12 text-uppercase">Trusted by 31,000+ users globally</p>
+              </div>
+
+              <div class="row">
+                <div class="col-md-11 col-lg-9">
+                  <!-- Icon Blocks -->
+                  <div class="media mb-4">
+                    <div class="d-flex mr-4">
+                    <span class="align-self-center u-icon-v1 u-icon-size--lg g-color-primary">
+                      <i class="icon-finance-168 u-line-icon-pro"></i>
+                    </span>
+                    </div>
+                    <div class="media-body align-self-center">
+                      <p class="g-color-gray-dark-v5 mb-0">Reliable contracts, multifanctionality &amp; best usage of Unify template</p>
+                    </div>
+                  </div>
+                  <!-- End Icon Blocks -->
+
+                  <!-- Icon Blocks -->
+                  <div class="media mb-5">
+                    <div class="d-flex mr-4">
+                    <span class="align-self-center u-icon-v1 u-icon-size--lg g-color-primary">
+                      <i class="icon-finance-193 u-line-icon-pro"></i>
+                    </span>
+                    </div>
+                    <div class="media-body align-self-center">
+                      <p class="g-color-gray-dark-v5 mb-0">Secure &amp; integrated options to create individual &amp; business websites</p>
+                    </div>
+                  </div>
+                  <!-- End Icon Blocks -->
+
+                  <!-- Testimonials -->
+                  <blockquote class="u-blockquote-v1 g-color-gray-dark-v5 rounded g-pl-60 g-pr-30 g-py-25 g-mb-40">Look no further you came to the right place. Unify offers everything you have dreamed of in one package.</blockquote>
+                  <div class="media">
+                    <img class="d-flex align-self-center rounded-circle g-width-40 g-height-40 mr-3" src="{{ root }}assets/img-temp/100x100/img12.jpg" alt="Image Description">
+                    <div class="media-body align-self-center">
+                      <h4 class="h6 g-font-weight-600 g-mb-0">Alex Pottorf</h4>
+                      <em class="g-color-gray-dark-v5 g-font-style-normal g-font-size-12">Web Developer</em>
+                    </div>
+                  </div>
+                  <!-- End Testimonials -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Login -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

@@ -1,0 +1,36 @@
+/*------------------------------------
+  Icon-v4 Gradient BG colors
+------------------------------------*/
+.u-icon-v4 {
+  &-bg-lightblue-radialgradient-ellipse {
+    border-color: $g-color-lightblue-v1;
+
+    .u-icon-v4-inner {
+      background: radial-gradient(ellipse at center center, #fff 22%, $g-color-lightblue-v1 100%) repeat;
+    }
+  }
+
+  &-bg-gray-radialgradient-ellipse {
+    border-color: $g-color-gray-light-v1;
+
+    .u-icon-v4-inner {
+      background: radial-gradient(ellipse at center center, $g-color-gray-light-v3 22%, $g-color-gray-light-v1 100%) repeat;
+    }
+  }
+
+  &-bg-blue-radialgradient-circle {
+    border-color: #275296;
+
+    .u-icon-v4-inner {
+      background: radial-gradient(circle farthest-side at 100% 0, #2294d7, #275296) no-repeat;
+    }
+  }
+
+  &-bg-darkgray-radialgradient-circle {
+    border-color: #31353e;
+
+    .u-icon-v4-inner {
+      background: radial-gradient(circle farthest-side at 110% 0, #596070, #31353e) no-repeat;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+/*------------------------------------
+  Error state v2
+------------------------------------*/
+
+.u-has-error-v2 {
+  &:after {
+    content: '\f00d';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    font-family: 'FontAwesome', sans-serif;
+    color: $g-color-red;
+    transform: translateY(-50%);
+  }
+
+  input:not([type="checkbox"], [type="radio"]),
+  textarea {
+    border-color: $g-color-red;
+  }
+}

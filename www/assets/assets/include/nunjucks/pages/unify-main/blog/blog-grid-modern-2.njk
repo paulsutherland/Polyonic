@@ -1,0 +1,271 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "blog" %}
+{% set mainNavActive_2 = "blog-grid-modern" %}
+{% set mainNavActive_3 = "blog-grid-modern-2" %}
+{% set title = "Blog Grid Modern 1 | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Breadcrumbs -->
+      <section class="g-bg-gray-light-v5">
+        <div class="container text-center g-py-80">
+          <h2 class="h2 g-color-black g-font-weight-600">Blog grid modern 2</h2>
+
+          <ul class="u-list-inline">
+            <li class="list-inline-item g-mr-5">
+              <a class="u-link-v5 g-color-gray-dark-v5 g-color-primary--hover" href="#!">Home</a>
+              <i class="g-color-gray-light-v2 g-ml-5">/</i>
+            </li>
+            <li class="list-inline-item g-mr-5">
+              <a class="u-link-v5 g-color-gray-dark-v5 g-color-primary--hover" href="#!">Blog</a>
+              <i class="g-color-gray-light-v2 g-ml-5">/</i>
+            </li>
+            <li class="list-inline-item g-color-primary">
+              <span>Blog grid modern 2</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Breadcrumbs -->
+
+      <!-- Blog Grid Modern Blocks -->
+      <div class="container g-py-100">
+        <div class="masonry-grid row g-mx-minus-5 g-mb-70">
+          <div class="masonry-grid-sizer col-sm-1"></div>
+
+          <div class="masonry-grid-item col-sm-6 col-lg-3 g-px-5 g-mb-10">
+            <!-- Blog Grid Modern Blocks -->
+            <article class="g-flex-middle g-min-height-400 g-bg-purple g-pa-30">
+              <span class="d-block g-color-white-opacity-0_8 g-font-size-11 text-uppercase mb-4">Interview</span>
+              <h2 class="h4 g-color-white g-font-weight-600 g-mb-30">Exclusive interview with InVision's CEO</h2>
+              <div class="d-inline-block">
+                <a class="btn g-color-white g-bg-white-opacity-0_2 g-brd-white--hover g-color-black--hover g-bg-white--hover g-font-size-11 g-rounded-25 g-px-20 g-py-10" href="#!">read more..</a>
+              </div>
+            </article>
+            <!-- End Blog Grid Modern Blocks -->
+          </div>
+
+          <div class="masonry-grid-item col-sm-6 col-lg-3 g-px-5 g-mb-10">
+            <!-- Blog Grid Modern Blocks -->
+            <article class="g-flex-middle g-min-height-400 g-bg-teal g-pa-30">
+              <span class="d-block g-color-white-opacity-0_8 g-font-size-11 text-uppercase mb-4">Studio</span>
+              <h2 class="h4 g-color-white g-font-weight-600 g-mb-30">Discover the Htmlstream Studio with Unify</h2>
+              <div class="d-inline-block">
+                <a class="btn g-color-white g-bg-white-opacity-0_2 g-brd-white--hover g-color-black--hover g-bg-white--hover g-font-size-11 g-rounded-25 g-px-20 g-py-10" href="#!">read more..</a>
+              </div>
+            </article>
+            <!-- End Blog Grid Modern Blocks -->
+          </div>
+
+          <div class="masonry-grid-item col-sm-6 g-px-5 g-mb-10">
+            <!-- Blog Background Modern Blocks -->
+            <article class="g-bg-cover g-bg-size-cover g-bg-cyan-gradient-opacity-v1--after" data-bg-img-src="{{ root }}assets/img-temp/500x450/img10.jpg">
+              <div class="g-flex-middle g-min-height-400 g-pos-rel g-z-index-1 g-pa-30">
+                <span class="d-block g-color-white-opacity-0_8 g-font-size-11 text-uppercase mb-4">Work</span>
+                <h2 class="g-color-white g-font-weight-600 g-font-size-20 g-font-size-26--lg g-mb-30">In the future, design principles won’t be about design</h2>
+                <div class="d-inline-block">
+                  <a class="btn g-color-white g-bg-white-opacity-0_2 g-brd-white--hover g-color-black--hover g-bg-white--hover g-font-size-11 g-rounded-25 g-px-20 g-py-10" href="#!">find out more..</a>
+                </div>
+              </div>
+            </article>
+            <!-- End Blog Background Modern Blocks -->
+          </div>
+
+          <div class="masonry-grid-item col-sm-6 col-lg-3 g-px-5 g-mb-10">
+            <!-- Blog Grid Modern Blocks -->
+            <article class="g-flex-middle g-min-height-400 g-bg-aqua g-pa-30">
+              <span class="d-block g-color-white-opacity-0_8 g-font-size-11 text-uppercase mb-4">Interview</span>
+              <h2 class="h4 g-color-white g-font-weight-600 g-mb-30">Announcing a free plan for small teams</h2>
+              <div class="d-inline-block">
+                <a class="btn g-color-white g-bg-white-opacity-0_2 g-brd-white--hover g-color-black--hover g-bg-white--hover g-font-size-11 g-rounded-25 g-px-20 g-py-10" href="#!">read more..</a>
+              </div>
+            </article>
+            <!-- End Blog Grid Modern Blocks -->
+          </div>
+
+          <div class="masonry-grid-item col-sm-6 g-px-5 g-mb-10">
+            <!-- Blog Background Modern Blocks -->
+            <article class="g-bg-cover g-bg-size-cover g-bg-white-gradient-opacity-v1--after" data-bg-img-src="{{ root }}assets/img-temp/500x450/img2.jpg">
+              <div class="g-flex-middle g-min-height-400 g-pos-rel g-z-index-1 g-pa-30">
+                <span class="d-block g-color-white-opacity-0_8 g-font-size-11 text-uppercase mb-4">Work</span>
+                <h2 class="g-color-white g-font-weight-600 g-font-size-20 g-font-size-26--lg g-mb-30">The Maddening and Brilliang James Watson</h2>
+                <div class="d-inline-block">
+                  <a class="btn g-color-white g-bg-white-opacity-0_2 g-brd-white--hover g-color-black--hover g-bg-white--hover g-font-size-11 g-rounded-25 g-px-20 g-py-10" href="#!">find out more..</a>
+                </div>
+              </div>
+            </article>
+            <!-- End Blog Background Modern Blocks -->
+          </div>
+
+          <div class="masonry-grid-item col-sm-6 col-lg-3 g-px-5 g-mb-10">
+            <!-- Blog Grid Modern Blocks -->
+            <article class="g-flex-middle g-min-height-400 g-bg-aqua g-pa-30">
+              <span class="d-block g-color-white-opacity-0_8 g-font-size-11 text-uppercase mb-4">Studio</span>
+              <h2 class="h4 g-color-white g-font-weight-600 g-mb-30">New Rolls Royce Wraith coupe</h2>
+              <div class="d-inline-block">
+                <a class="btn g-color-white g-bg-white-opacity-0_2 g-brd-white--hover g-color-black--hover g-bg-white--hover g-font-size-11 g-rounded-25 g-px-20 g-py-10" href="#!">read more..</a>
+              </div>
+            </article>
+            <!-- End Blog Grid Modern Blocks -->
+          </div>
+
+          <div class="masonry-grid-item col-sm-6 g-px-5 g-mb-10">
+            <!-- Blog Background Modern Blocks -->
+            <article class="g-bg-cover g-bg-size-cover g-bg-purple-gradient-opacity-v1--after" data-bg-img-src="{{ root }}assets/img-temp/500x450/img6.jpg">
+              <div class="g-flex-middle g-min-height-400 g-pos-rel g-z-index-1 g-pa-30">
+                <span class="d-block g-color-white-opacity-0_8 g-font-size-11 text-uppercase mb-4">Work</span>
+                <h2 class="g-color-white g-font-weight-600 g-font-size-20 g-font-size-26--lg g-mb-30">A UX strategy for the Ultimate Product Launch</h2>
+                <div class="d-inline-block">
+                  <a class="btn g-color-white g-bg-white-opacity-0_2 g-brd-white--hover g-color-black--hover g-bg-white--hover g-font-size-11 g-rounded-25 g-px-20 g-py-10" href="#!">find out more..</a>
+                </div>
+              </div>
+            </article>
+            <!-- End Blog Background Modern Blocks -->
+          </div>
+
+          <div class="masonry-grid-item col-sm-6 col-lg-3 g-px-5 g-mb-10">
+            <!-- Blog Grid Modern Blocks -->
+            <article class="g-flex-middle g-min-height-400 g-bg-purple g-pa-30">
+              <span class="d-block g-color-white-opacity-0_8 g-font-size-11 text-uppercase mb-4">Interview</span>
+              <h2 class="h4 g-color-white g-font-weight-600 g-mb-30">The Hypnotic Allure of Cinemagraphic Waves</h2>
+              <div class="d-inline-block">
+                <a class="btn g-color-white g-bg-white-opacity-0_2 g-brd-white--hover g-color-black--hover g-bg-white--hover g-font-size-11 g-rounded-25 g-px-20 g-py-10" href="#!">read more..</a>
+              </div>
+            </article>
+            <!-- End Blog Grid Modern Blocks -->
+          </div>
+
+          <div class="masonry-grid-item col-sm-6 col-lg-3 g-px-5 g-mb-10">
+            <!-- Blog Grid Modern Blocks -->
+            <article class="g-flex-middle g-min-height-400 g-bg-cyan-gradient-opacity-v1 g-pa-30">
+              <span class="d-block g-color-white-opacity-0_8 g-font-size-11 text-uppercase mb-4">Studio</span>
+              <h2 class="h4 g-color-white g-font-weight-600 g-mb-30">Accessibility - Apple</h2>
+              <div class="d-inline-block">
+                <a class="btn g-color-white g-bg-white-opacity-0_2 g-brd-white--hover g-color-black--hover g-bg-white--hover g-font-size-11 g-rounded-25 g-px-20 g-py-10" href="#!">read more..</a>
+              </div>
+            </article>
+            <!-- End Blog Grid Modern Blocks -->
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="text-center" aria-label="Page Navigation">
+          <ul class="list-inline">
+            <li class="list-inline-item float-left g-hidden-xs-down">
+              <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="#!" aria-label="Previous">
+              <span aria-hidden="true">
+                <i class="fa fa-angle-left g-mr-5"></i> Previous
+              </span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="u-pagination-v1__item u-pagination-v1-4 u-pagination-v1-4--active g-rounded-50 g-pa-7-14" href="#!">1</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="u-pagination-v1__item u-pagination-v1-4 g-rounded-50 g-pa-7-14" href="#!">2</a>
+            </li>
+            <li class="list-inline-item float-right g-hidden-xs-down">
+              <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="#!" aria-label="Next">
+              <span aria-hidden="true">
+                Next <i class="fa fa-angle-right g-ml-5"></i>
+              </span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- End Pagination -->
+      </div>
+      <!-- End Blog Grid Modern Blocks -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="{{ root }}assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+    <script src="{{ root }}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+
+        // initialization of masonry
+        setTimeout(function() { // important in this case
+          $('.masonry-grid').imagesLoaded().then(function () {
+            $('.masonry-grid').masonry({
+              columnWidth: '.masonry-grid-sizer',
+              itemSelector: '.masonry-grid-item',
+              percentPosition: true
+            });
+          });
+        }, 1);
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

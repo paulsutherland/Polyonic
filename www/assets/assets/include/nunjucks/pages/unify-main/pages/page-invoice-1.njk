@@ -1,0 +1,356 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-others" %}
+{% set mainNavActive_3 = "page-invoice-1" %}
+{% set title = "Invoice Page | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+
+    <!-- Page Style -->
+    <style type="text/css">
+      @media print {
+        * { -webkit-print-color-adjust: exact; }
+
+        .u-header,
+        .footer,
+        footer,
+        .breadcrumbs,
+        .btn {
+          display: none;
+        }
+
+        .row > [class*="col-"] {
+          float: left;
+        }
+
+        .col-md-3,
+        .col-md-6 {
+          width: 33%;
+        }
+
+        .col-lg-2 {
+          width: 24%;
+        }
+
+        .g-bg-primary {
+          color: #000 !important;
+        }
+
+        .g-font-size-default {
+          font-size: 11px !important;
+        }
+
+        .h4,
+        .h5 {
+          font-size: 14px !important;
+        }
+
+        .g-pa-15 {
+          padding: 10px !important;
+        }
+
+        .py-4 {
+          padding-top: 10px !important;
+          padding-bottom: 10px !important;
+        }
+
+        .g-py-15 {
+          padding-top: 5px !important;
+          padding-bottom: 5px !important;
+        }
+
+        .g-pt-100 {
+          padding-top: 30px !important;
+        }
+
+        .g-pb-30 {
+          padding-bottom: 0 !important;
+        }
+
+        .g-mb-30,
+        .g-mb-40 {
+          margin-bottom: 20px !important;
+        }
+
+        .my-2 {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+        table tr th {
+          font-size: 13px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Breadcrumbs -->
+      <section class="breadcrumbs g-bg-gray-light-v5 g-py-50">
+        <div class="container">
+          <div class="d-sm-flex text-center">
+            <div class="align-self-center">
+              <h2 class="h3 g-font-weight-300 w-100 g-mb-10 g-mb-0--md">Invoice</h2>
+            </div>
+
+            <div class="align-self-center ml-auto">
+              <ul class="u-list-inline">
+                <li class="list-inline-item g-mr-5">
+                  <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Home</a>
+                  <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                </li>
+                <li class="list-inline-item g-mr-5">
+                  <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Pages</a>
+                  <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                </li>
+                <li class="list-inline-item g-color-primary">
+                  <span>Invoice</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Breadcrumbs -->
+
+      <!-- General Info -->
+      <section class="container g-pt-100 g-pb-30">
+        <div class="row">
+          <div class="col-md-6 g-mb-30">
+            <h1 class="g-font-weight-600 text-uppercase g-font-size-13">Invoice to:</h1>
+            <h2 class="h4 g-font-weight-700 text-uppercase">Pixeel Ltd.</h2>
+            <p class="g-color-gray-dark-v4">Unit 25 Suite 3, 925 Prospect PI<br>London<br>United Kingdom</p>
+          </div>
+
+          <div class="col-md-3 g-mb-30">
+            <h3 class="h5 g-color-black g-font-weight-600 text-uppercase">Client Info:</h3>
+            <ul class="list-unstyled g-font-size-default">
+              <li><span class="g-font-weight-700">First name:</span> Alexandar</li>
+              <li><span class="g-font-weight-700">Last name:</span> Joshua</li>
+              <li><span class="g-font-weight-700">Country:</span> United States</li>
+              <li><span class="g-font-weight-700">DOB:</span> 05/07/1989</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 g-mb-30">
+            <h3 class="h5 g-color-black g-font-weight-600 text-uppercase">Payment Details:</h3>
+            <ul class="list-unstyled g-font-size-default">
+              <li><span class="g-font-weight-700">Bank name:</span> Payoneer</li>
+              <li><span class="g-font-weight-700">Account number:</span> 32562941093</li>
+              <li><span class="g-font-weight-700">SWIFT code:</span> PGA2107</li>
+              <li><span class="g-font-weight-700">V.A.T Reg:</span> 77BHM399100</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End General Info -->
+
+      <!-- Invoice Info -->
+      <section class="container g-mb-40">
+        <div class="row justify-content-end no-gutters">
+          <div class="col-sm-4 col-md-3 col-lg-2 mb-1">
+            <div class="g-bg-gray-light-v5 text-center g-pa-15">
+              <h3 class="h6 g-color-black g-font-weight-600 text-uppercase"># Invoice No</h3>
+              <p class="g-font-size-13 mb-0">236290482</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-md-3 col-lg-2 mb-1">
+            <div class="g-bg-gray-light-v5 text-center g-pa-15">
+              <h3 class="h6 g-color-black g-font-weight-600 text-uppercase"># Invoice Date</h3>
+              <p class="g-font-size-13 mb-0">27 May 2017</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-md-3 col-lg-2 mb-1">
+            <div class="g-bg-gray-light-v5 text-center g-pa-15">
+              <h3 class="h6 g-color-black g-font-weight-600 text-uppercase"># Invoice Account</h3>
+              <p class="g-font-size-13 mb-0">32562941093</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Invoice Info -->
+
+      <!-- Table Striped Rows -->
+      <section class="container g-pb-70">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead class="g-color-white g-bg-primary text-center text-uppercase">
+              <tr>
+                <th class="g-brd-top-none g-font-weight-500 g-py-15">Ref</th>
+                <th class="g-brd-top-none g-font-weight-500 text-left g-py-15">Item description</th>
+                <th class="g-brd-top-none g-font-weight-500 g-py-15">Quantity</th>
+                <th class="g-brd-top-none g-font-weight-500 g-py-15">Unit price</th>
+                <th class="g-brd-top-none g-font-weight-500 g-py-15">Total</th>
+              </tr>
+            </thead>
+
+            <tbody class="text-center">
+              <tr>
+                <td class="g-width-70 g-color-gray-dark-v4 g-font-weight-600 g-py-15">01</td>
+                <td class="g-max-width-300 text-left g-py-15">
+                  <h4 class="g-color-gray-dark-v4 g-font-weight-700 g-font-size-16">External storage</h4>
+                  <p class="g-color-gray-dark-v5 g-font-size-12 mb-0">Whether through commerce or just an experience to tell your brand's story.</p>
+                </td>
+                <td class="g-color-gray-dark-v4 g-font-weight-600 g-py-15">2</td>
+                <td class="g-color-gray-dark-v4 g-font-weight-600 g-py-15">$379.00</td>
+                <td class="g-color-gray-dark-v4 g-font-weight-600 g-py-15">$758.00</td>
+              </tr>
+              <tr>
+                <td class="g-width-70 g-color-gray-dark-v4 g-font-weight-600 g-py-15">02</td>
+                <td class="g-max-width-300 text-left g-py-15">
+                  <h4 class="g-color-gray-dark-v4 g-font-weight-700 g-font-size-16">Samsung Notebook 9</h4>
+                  <p class="g-color-gray-dark-v5 g-font-size-12 mb-0">Whether through commerce or just an experience to tell your brand's story.</p>
+                </td>
+                <td class="g-color-gray-dark-v4 g-font-weight-600 g-py-15">4</td>
+                <td class="g-color-gray-dark-v4 g-font-weight-600 g-py-15">$643.00</td>
+                <td class="g-color-gray-dark-v4 g-font-weight-600 g-py-15">$2,572.00</td>
+              </tr>
+              <tr>
+                <td class="g-width-70 g-color-gray-dark-v4 g-font-weight-600 g-py-15">03</td>
+                <td class="g-max-width-300 text-left g-py-15">
+                  <h4 class="g-color-gray-dark-v4 g-font-weight-700 g-font-size-16">Logitech Mouse</h4>
+                  <p class="g-color-gray-dark-v5 g-font-size-12 mb-0">Whether through commerce or just an experience to tell your brand's story.</p>
+                </td>
+                <td class="g-color-gray-dark-v4 g-font-weight-600 g-py-15">7</td>
+                <td class="g-color-gray-dark-v4 g-font-weight-600 g-py-15">$105.00</td>
+                <td class="g-color-gray-dark-v4 g-font-weight-600 g-py-15">$735.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Subtotal -->
+        <div class="g-bg-gray-light-v5 mb-2">
+          <div class="row justify-content-end">
+            <div class="col-lg-5">
+              <ul class="list-unstyled g-font-weight-600 text-uppercase py-4 g-pr-50 mb-0">
+                <li class="text-right my-1">
+                  <h4 class="d-inline-block h6 text-left g-font-weight-600 g-min-width-110 mb-0">Subtotal</h4>
+                  <span class="text-left mx-5">:</span>
+                  <span class="d-inline-block g-min-width-65">$4,077</span>
+                </li>
+                <li class="text-right my-1">
+                  <h4 class="d-inline-block h6 text-left g-font-weight-600 g-min-width-110 mb-0">VAT 5%</h4>
+                  <span class="text-left mx-5">:</span>
+                  <span class="d-inline-block g-min-width-65">$25</span>
+                </li>
+                <li class="text-right my-1">
+                  <h4 class="d-inline-block h6 text-left g-font-weight-600 g-min-width-110 mb-0">Discount 15%</h4>
+                  <span class="text-left mx-5">:</span>
+                  <span class="d-inline-block g-min-width-65 g-color-red">$611.55</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Subtotal -->
+
+        <!-- Total -->
+        <div class="row justify-content-between">
+          <div class="col-md-4 align-self-center g-hidden-sm-down g-mb-30">
+            <ul class="list-unstyled mb-0">
+              <li class="my-1"><span class="g-font-weight-600">Address:</span> 25, Prospect 55,<br>Orange California, United States</li>
+              <li class="my-1"><span class="g-font-weight-600">Email:</span> htmlstream@support.com</li>
+              <li class="my-1"><span class="g-font-weight-600">Phone:</span> 800 123 3456</li>
+              <li class="my-1"><span class="g-font-weight-600">Fax:</span> 800 123 3457</li>
+            </ul>
+          </div>
+
+          <div class="col-md-7 col-lg-4 align-self-center g-mb-30">
+            <div class="g-bg-gray-light-v5 g-color-black g-font-weight-600 text-right text-uppercase py-4 g-pr-50 mb-3">
+              <h4 class="d-inline-block h6 text-left g-font-weight-600 g-min-width-110 mb-0">Grand Total</h4>
+              <span class="text-left mx-5">:</span>
+              <span class="d-inline-block g-min-width-65">$3,465.45</span>
+            </div>
+            <div class="text-right">
+              <button class="btn btn-md u-btn-darkgray g-font-size-default rounded-0 g-py-10 mr-2" type="button" onclick="javascript:window.print();">
+                <i class="g-pos-rel g-top-1 mr-2 icon-education-082 u-line-icon-pro"></i>
+                Print
+              </button>
+              <button class="btn btn-md u-btn-primary g-font-size-default rounded-0 g-py-10" type="button">Submit the Invoice</button>
+            </div>
+          </div>
+        </div>
+        <!-- End Total -->
+      </section>
+      <!-- End Table Striped Rows -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

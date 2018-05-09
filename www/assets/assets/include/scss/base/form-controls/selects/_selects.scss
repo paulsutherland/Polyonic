@@ -1,0 +1,16 @@
+/*------------------------------------
+  Selects
+------------------------------------*/
+
+.input-group {
+  select {
+    -webkit-appearance: none;
+  }
+}
+
+//
+// Imports
+//
+
+@import "selects-v1";
+@import "selects-v2";

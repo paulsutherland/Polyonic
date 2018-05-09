@@ -1,0 +1,361 @@
+[data-animation].cbp {
+  visibility: visible;
+}
+
+.cbp-slider-next,
+.cbp-slider-prev {
+  &::after {
+    display: none;
+  }
+}
+
+
+.cbp-filter-item {
+  cursor: pointer;
+}
+
+
+.cbp-item-off {
+  opacity: 0;
+}
+
+/*------------------------------------
+  Border Colors
+------------------------------------*/
+
+/* Primary Colors */
+.g-brd-primary {
+  &--active.cbp-filter-item-active {
+    border-color: $g-color-primary !important;
+  }
+
+  // Opacity
+  &-opacity {
+    &-0_3 {
+      &--active.cbp-filter-item-active {
+        border-color: rgba($g-color-primary, .3) !important;
+      }
+    }
+  }
+
+  // Primary dark
+  &-dark {
+    &-dark-v1 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-primary-dark-v1 !important;
+      }
+    }
+
+    &-dark-v2 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-primary-dark-v2 !important;
+      }
+    }
+
+    &-dark-v3 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-primary-dark-v3 !important;
+      }
+    }
+  }
+}
+
+/* Black Colors */
+.g-brd-black {
+  &--active.cbp-filter-item-active {
+    border-color: $g-color-black !important;
+  }
+}
+
+/* White Colors */
+.g-brd-white {
+  &--active.cbp-filter-item-active {
+    border-color: $g-color-white !important;
+  }
+
+  // White opacity
+  &-opacity {
+    &-0_1 {
+      &--active.cbp-filter-item-active {
+        border-color: rgba($g-color-white, .1) !important;
+      }
+    }
+
+    &-0_2 {
+      &--active.cbp-filter-item-active {
+        border-color: rgba($g-color-white, .2) !important;
+      }
+    }
+
+    &-0_3 {
+      &--active.cbp-filter-item-active {
+        border-color: rgba($g-color-white, .3) !important;
+      }
+    }
+
+    &-0_4 {
+      &--active.cbp-filter-item-active {
+        border-color: rgba($g-color-white, .4) !important;
+      }
+    }
+
+    &-0_5 {
+      &--active.cbp-filter-item-active {
+        border-color: rgba($g-color-white, .5) !important;
+      }
+    }
+
+    &-0_6 {
+      &--active.cbp-filter-item-active {
+        border-color: rgba($g-color-white, .6) !important;
+      }
+    }
+  }
+}
+
+/* Gray Colors */
+.g-brd-gray {
+  // Dark Gray
+  &-dark {
+    &-v1 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-gray-dark-v1 !important;
+      }
+    }
+
+    &-v2 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-gray-dark-v2 !important;
+      }
+    }
+
+    &-v3 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-gray-dark-v3 !important;
+      }
+    }
+
+    &-v4 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-gray-dark-v4 !important;
+      }
+    }
+
+    &-v5 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-gray-dark-v5 !important;
+      }
+    }
+  }
+
+  // Light Gray
+  &-light {
+    &-v1 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-gray-light-v1 !important;
+      }
+    }
+
+    &-v2 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-gray-light-v2 !important;
+      }
+    }
+
+    &-v3 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-gray-light-v3 !important;
+      }
+    }
+
+    &-v4 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-gray-light-v4 !important;
+      }
+    }
+
+    &-v5 {
+      &--active.cbp-filter-item-active {
+        border-color: $g-color-gray-light-v5 !important;
+      }
+    }
+  }
+}
+
+/* Transparent */
+.g-brd-transparent {
+  &--active.cbp-filter-item-active {
+    border-color: transparent !important;
+  }
+}
+
+
+
+/*------------------------------------
+  Background Colors
+------------------------------------*/
+/* Primary Colors */
+.g-bg-primary {
+  // Active
+  &--active {
+    &.cbp-filter-item-active {
+      background-color: $g-color-primary !important;
+    }
+  }
+}
+
+
+
+/*------------------------------------
+  Colors
+------------------------------------*/
+
+/* Primary Colors */
+.g-color-primary {
+  &--active.cbp-filter-item-active {
+    color: $g-color-primary !important;
+  }
+}
+
+/* Black Colors */
+.g-color-black {
+  &--active.cbp-filter-item-active {
+    color: $g-color-black !important;
+  }
+}
+
+/* White Colors */
+.g-color-white {
+  &--active.cbp-filter-item-active {
+    color: $g-color-white !important;
+  }
+}
+
+/* Gray Colors */
+.g-color-gray {
+  // Gray Light
+  &-light {
+    &-v1 {
+      &--active.cbp-filter-item-active {
+        color: $g-color-gray-light-v1 !important;
+      }
+    }
+    &-v2 {
+      &--active.cbp-filter-item-active {
+        color: $g-color-gray-light-v2 !important;
+      }
+    }
+    &-v3 {
+      &--active.cbp-filter-item-active {
+        color: $g-color-gray-light-v3 !important;
+      }
+    }
+    &-v4 {
+      &--active.cbp-filter-item-active {
+        color: $g-color-gray-light-v4 !important;
+      }
+    }
+    &-v5 {
+      &--active.cbp-filter-item-active {
+        color: $g-color-gray-light-v5 !important;
+      }
+    }
+  }
+
+  // Gray Dark
+  &-dark {
+    &-v1 {
+      &--active.cbp-filter-item-active {
+        color: $g-color-gray-dark-v1 !important;
+      }
+    }
+    &-v2 {
+      &--active.cbp-filter-item-active {
+        color: $g-color-gray-dark-v2 !important;
+      }
+    }
+    &-v3 {
+      &--active.cbp-filter-item-active {
+        color: $g-color-gray-dark-v3 !important;
+      }
+    }
+    &-v4 {
+      &--active.cbp-filter-item-active {
+        color: $g-color-gray-dark-v4 !important;
+      }
+    }
+    &-v5 {
+      &--active.cbp-filter-item-active {
+        color: $g-color-gray-dark-v5 !important;
+      }
+    }
+  }
+}
+
+
+
+//
+// Button Flat Type
+//
+
+// e.g. @include u-button-flat ($g-color-primary, $g-color-white, $g-color-black);
+@mixin u-button-flat ($color-bg-brd, $color-text, $color-text-hover) {
+  &.cbp-filter-item-active {
+    border-color: lighten($color-bg-brd, 10%);
+    background-color: lighten($color-bg-brd, 10%);
+  }
+
+  &.cbp-filter-item-active {
+    color: $color-text-hover;
+  }
+
+  // Test from Oleg
+  &.g-btn-hover-reset {
+    &.cbp-filter-item-active {
+      background-color: $color-bg-brd;
+      border-color: $color-bg-brd;
+    }
+  }
+}
+
+
+
+//
+// Button Outline Type
+//
+
+// e.g. @include u-hover-btn-v1-1 ($g-color-primary, $g-color-white);
+@mixin u-button-outline ($color-bg-brd, $color-text, $color-text-hover) {
+  &.cbp-filter-item-active {
+    color: $color-text-hover;
+    background-color: $color-bg-brd;
+  }
+}
+
+
+
+//
+// Button Gradient Type
+//
+
+// e.g. @include u-button-gradient ($g-color-primary, $g-color-red);
+@mixin u-button-gradient ($btn-left, $btn-right){
+  &.cbp-filter-item-active {
+    opacity: .9;
+    color: $g-color-white;
+  }
+}
+
+
+
+//
+// Button Gradient Outline Type
+//
+
+// e.g. @include u-button-outline-gradient ($g-color-primary, $g-color-red);
+@mixin u-button-outline-gradient ($btn-left, $btn-right){
+  &.cbp-filter-item-active {
+    background: linear-gradient(to right, $btn-left 0%, $btn-right 100%);
+    color: $g-color-white;
+  }
+}

@@ -1,0 +1,35 @@
+/*------------------------------------
+  File Attachments v2
+------------------------------------*/
+
+.u-file-attach-v3 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  background-color: $g-color-gray-light-v5;
+  overflow: hidden;
+  border: 1px dashed $g-color-gray-light-v2;
+  padding: 60px;
+  transition: {
+    property: background-color;
+    duration: .2s;
+    timing-function: ease-in;
+  }
+
+  input {
+    &[type="file"] {
+      position: absolute;
+      top: -25%;
+      left: -25%;
+      z-index: 10;
+      width: 150%;
+      height: 150%;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    background-color: $g-color-gray-light-v4;
+  }
+}

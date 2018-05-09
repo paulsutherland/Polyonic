@@ -1,0 +1,183 @@
+/* Primary Colors */
+.g-fill {
+  &-primary {
+    fill: $g-color-primary !important;
+
+    path,
+    polygon {
+      fill: $g-color-primary !important;
+    }
+
+    &--hover:hover {
+      path,
+      polygon {
+        fill: $g-color-primary !important;
+      }
+    }
+
+    &--hover-parent {
+      *:hover > * > & {
+        svg {
+          path,
+          polygon {
+            fill: $g-color-primary !important;
+          }
+        }
+      }
+    }
+  }
+
+  &-white {
+    fill: $g-color-white !important;
+
+    path,
+    polygon {
+      fill: $g-color-white !important;
+    }
+
+    &--opened-menu:not(.collapsed) {
+      path,
+      polygon {
+        fill: $g-color-white !important;
+      }
+    }
+
+    &--parent-opened-menu {
+      *:not(.collapsed) > & {
+        path,
+        polygon {
+          fill: $g-color-white !important;
+        }
+      }
+    }
+
+    &--hover:hover {
+      path,
+      polygon {
+        fill: $g-color-white !important;
+      }
+    }
+
+    &--hover-parent {
+      *:hover > * > & {
+        svg {
+          path,
+          polygon {
+            fill: $g-color-white !important;
+          }
+        }
+      }
+    }
+  }
+
+  &-main {
+    fill: $g-color-main !important;
+
+    path,
+    polygon {
+      fill: $g-color-main !important;
+    }
+
+    &--opened-menu:not(.collapsed) {
+      path,
+      polygon {
+        fill: $g-color-main !important;
+      }
+    }
+
+    &--parent-opened-menu {
+      *:not(.collapsed) > & {
+        path,
+        polygon {
+          fill: $g-color-main !important;
+        }
+      }
+    }
+
+    &--hover:hover {
+      path,
+      polygon {
+        fill: $g-color-main !important;
+      }
+    }
+
+    &--hover-parent {
+      *:hover > * > & {
+        svg {
+          path,
+          polygon {
+            fill: $g-color-white !important;
+          }
+        }
+      }
+    }
+  }
+
+  &-gray-light {
+    &-v4 {
+      path,
+      polygon {
+        fill: $g-color-gray-light-v4 !important;
+      }
+
+      &--hover:hover {
+        path,
+        polygon {
+          fill: $g-color-gray-light-v4 !important;
+        }
+      }
+
+      &--hover-parent {
+        *:hover > * > & {
+          svg {
+            path,
+            polygon {
+              fill: $g-color-gray-light-v4 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-red {
+    path,
+    polygon {
+      fill: $g-color-red !important;
+    }
+
+    &--hover:hover {
+      path,
+      polygon {
+        fill: $g-color-red !important;
+      }
+    }
+
+    &--hover-parent {
+      *:hover > * > & {
+        path,
+        polygon {
+          fill: $g-color-red !important;
+        }
+      }
+    }
+
+    &--parent-hover {
+      *:hover > & {
+        path,
+        polygon {
+          fill: $g-color-red !important;
+        }
+      }
+    }
+
+    &--parent-parent-parent-hover {
+      *:hover > * > * > & {
+        path,
+        polygon {
+          fill: $g-color-red !important;
+        }
+      }
+    }
+  }
+}

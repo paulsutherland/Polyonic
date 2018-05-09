@@ -1,0 +1,1187 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-news-no-images" %}
+{% set title = "News Without Images" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-block.njk" %}
+
+    <section>
+      <!-- News Block 01 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#01</span>
+            </h2>
+          </div>
+
+          <div id="shortcode1">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 text-center rounded g-py-80 g-px-40">
+                    <a class="btn btn-xs u-btn-cyan rounded-0" href="#!">Fashion</a>
+
+                    <h3 class="h4 g-font-weight-300 g-my-20">
+                      <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Be ready, fashion of the year is coming this year</a>
+                    </h3>
+
+                    <small>
+                      <i class="icon-clock align-middle g-mr-5"></i>
+                      July 26, 2017
+                    </small>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 text-center rounded g-py-80 g-px-40">
+                    <a class="btn btn-xs u-btn-purple rounded-0" href="#!">Beaches</a>
+
+                    <h3 class="h4 g-font-weight-300 g-my-20">
+                      <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Must be visited places in the USA - Florida Beaches</a>
+                    </h3>
+
+                    <small>
+                      <i class="icon-clock align-middle g-mr-5"></i>
+                      July 18, 2017
+                    </small>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 text-center rounded g-py-80 g-px-40">
+                    <a class="btn btn-xs u-btn-darkred rounded-0" href="#!">Food</a>
+                    <h3 class="h4 g-font-weight-300 g-my-20">
+                      <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Why your next glass of juice will cost you more</a>
+                    </h3>
+                    <small>
+                      <i class="icon-clock align-middle g-mr-5"></i>
+                      July 5, 2017
+                    </small>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode1" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Block 01 -->
+
+      <!-- News Block 02 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#02</span>
+            </h2>
+          </div>
+
+          <div id="shortcode2">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-shadow-v21 g-bg-white text-center rounded g-py-80 g-px-40">
+                    <a class="btn btn-xs u-btn-cyan rounded-0" href="#!">Fashion</a>
+
+                    <h3 class="h4 g-font-weight-300 g-my-20">
+                      <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Be ready, fashion of the year is coming this year</a>
+                    </h3>
+
+                    <small>
+                      <i class="icon-clock align-middle g-mr-5"></i>
+                      July 26, 2017
+                    </small>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-shadow-v21 g-bg-white text-center rounded g-py-80 g-px-40">
+                    <a class="btn btn-xs u-btn-primary rounded-0" href="#!">Beaches</a>
+
+                    <h3 class="h4 g-font-weight-300 g-my-20">
+                      <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Must be visited places in the USA - Florida Beaches</a>
+                    </h3>
+
+                    <small>
+                      <i class="icon-clock align-middle g-mr-5"></i>
+                      July 18, 2017
+                    </small>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-shadow-v21 g-bg-white text-center rounded g-py-80 g-px-40">
+                    <a class="btn btn-xs u-btn-darkred rounded-0" href="#!">Food</a>
+
+                    <h3 class="h4 g-font-weight-300 g-my-20">
+                      <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Why your next glass of juice will cost you more</a>
+                    </h3>
+
+                    <small>
+                      <i class="icon-clock align-middle g-mr-5"></i>
+                      July 5, 2017
+                    </small>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode2" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Block 02 -->
+
+      <!-- News Block 03 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#03</span>
+            </h2>
+          </div>
+
+          <div id="shortcode3">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 rounded">
+                    <div class="g-pa-30">
+                      <h3 class="g-font-weight-300 g-mb-15">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Focused on helping our clients to build a great business</a>
+                      </h3>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                    </div>
+
+                    <div class="media g-font-size-12 g-brd-top g-brd-gray-light-v4 g-pa-15-30">
+                      <img class="d-flex g-width-20 g-height-20 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Kathy Reyes</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          24
+                        </a>
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          108
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 rounded">
+                    <div class="g-pa-30">
+                      <h3 class="g-font-weight-300 g-mb-15">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">We build your website to realise your vision, project and more</a>
+                      </h3>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                    </div>
+
+                    <div class="media g-font-size-12 g-brd-top g-brd-gray-light-v4 g-pa-15-30">
+                      <img class="d-flex g-width-20 g-height-20 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">William Sh.</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          16
+                        </a>
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          124
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 rounded">
+                    <div class="g-pa-30">
+                      <h3 class="g-font-weight-300 g-mb-15">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Praesentium to website realise imperdiet demore elementum</a>
+                      </h3>
+                      <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh.</p>
+                    </div>
+
+                    <div class="media g-font-size-12 g-brd-top g-brd-gray-light-v4 g-pa-15-30">
+                      7
+                      <img class="d-flex g-width-20 g-height-20 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img1.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">James Doe</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          41
+                        </a>
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          219
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode3" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Block 03 -->
+
+      <!-- News Block 04 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#04</span>
+            </h2>
+          </div>
+
+          <div id="shortcode4">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-shadow-v21 g-bg-white rounded">
+                    <div class="g-pa-30">
+                      <h3 class="g-font-weight-300 g-mb-15">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Focused on helping our clients to build a great business</a>
+                      </h3>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                    </div>
+
+                    <div class="media g-font-size-12 g-brd-top g-brd-gray-light-v4 g-pa-15-30">
+                      <img class="d-flex g-width-20 g-height-20 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Kathy Reyes</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          24
+                        </a>
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          108
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-shadow-v21 g-bg-white rounded">
+                    <div class="g-pa-30">
+                      <h3 class="g-font-weight-300 g-mb-15">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">We build your website to realise your vision, project and more</a>
+                      </h3>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                    </div>
+
+                    <div class="media g-font-size-12 g-brd-top g-brd-gray-light-v4 g-pa-15-30">
+                      <img class="d-flex g-width-20 g-height-20 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">William Sh.</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          16
+                        </a>
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          124
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-shadow-v21 g-bg-white rounded">
+                    <div class="g-pa-30">
+                      <h3 class="g-font-weight-300 g-mb-15">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Praesentium to website realise imperdiet demore elementum</a>
+                      </h3>
+                      <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh.</p>
+                    </div>
+
+                    <div class="media g-font-size-12 g-brd-top g-brd-gray-light-v4 g-pa-15-30">
+                      <img class="d-flex g-width-20 g-height-20 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">James Doe</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          41
+                        </a>
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          219
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode4" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Block 04 -->
+
+      <!-- News Block 05 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#05</span>
+            </h2>
+          </div>
+
+          <div id="shortcode5">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-bg-pink rounded g-pa-25">
+                    <ul class="list-inline small g-color-white g-mb-20">
+                      <li class="list-inline-item">
+                        <a class="text-uppercase btn btn-xs u-btn-white rounded-0" href="#!">Tech</a>
+                      </li>
+                      <li class="list-inline-item">|</li>
+                      <li class="list-inline-item">July 02, 2017</li>
+                    </ul>
+
+                    <h3 class="h2 g-font-weight-300 g-mb-50">
+                      <a class="u-link-v4 g-color-white g-text-underline--none--hover" href="#!">There are many great solutions in Unify for your business</a>
+                    </h3>
+
+                    <div class="media g-font-size-12">
+                      <img class="d-flex g-width-30 g-height-30 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="text-uppercase g-color-white g-text-underline--none--hover" href="#!">John Doe</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="g-color-white g-text-underline--none--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          124
+                        </a>
+                        <a class="g-color-white g-text-underline--none--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          237
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-bg-primary rounded g-pa-25">
+                    <ul class="list-inline small g-color-white g-mb-20">
+                      <li class="list-inline-item">
+                        <a class="text-uppercase btn btn-xs u-btn-white rounded-0" href="#!">Business</a>
+                      </li>
+                      <li class="list-inline-item">|</li>
+                      <li class="list-inline-item">July 09, 2017</li>
+                    </ul>
+
+                    <h3 class="h2 g-font-weight-300 g-mb-50">
+                      <a class="u-link-v4 g-color-white g-text-underline--none--hover" href="#!">Focused on helping our clients to build a great business</a>
+                    </h3>
+
+                    <div class="media g-font-size-12">
+                      <img class="d-flex g-width-30 g-height-30 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="text-uppercase g-color-white g-text-underline--none--hover" href="#!">Kathy Reyes</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="g-color-white g-text-underline--none--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          24
+                        </a>
+                        <a class="g-color-white g-text-underline--none--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          108
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-bg-gray-dark-v2 rounded g-pa-25">
+                    <ul class="list-inline small g-color-white g-mb-20">
+                      <li class="list-inline-item">
+                        <a class="text-uppercase btn btn-xs u-btn-white rounded-0" href="#!">UX Design</a>
+                      </li>
+                      <li class="list-inline-item">|</li>
+                      <li class="list-inline-item">July 17, 2017</li>
+                    </ul>
+
+                    <h3 class="h2 g-font-weight-300 g-mb-50">
+                      <a class="u-link-v4 g-color-white g-text-underline--none--hover" href="#!">We build your website to realise your vision and product</a>
+                    </h3>
+
+                    <div class="media g-font-size-12">
+                      <img class="d-flex g-width-30 g-height-30 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="text-uppercase g-color-white g-text-underline--none--hover" href="#!">David Gates</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="g-color-white g-text-underline--none--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          17
+                        </a>
+                        <a class="g-color-white g-text-underline--none--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          66
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-bg-darkpurple rounded g-pa-25">
+                    <ul class="list-inline small g-color-white g-mb-20">
+                      <li class="list-inline-item">
+                        <a class="text-uppercase btn btn-xs u-btn-white rounded-0" href="#!">Tech</a>
+                      </li>
+                      <li class="list-inline-item">|</li>
+                      <li class="list-inline-item">July 02, 2017</li>
+                    </ul>
+
+                    <h3 class="h2 g-font-weight-300 g-mb-50">
+                      <a class="u-link-v4 g-color-white g-text-underline--none--hover" href="#!">There are many great solutions in Unify for your business</a>
+                    </h3>
+
+                    <div class="media g-font-size-12">
+                      <img class="d-flex g-width-30 g-height-30 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="text-uppercase g-color-white g-text-underline--none--hover" href="#!">David Gates</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="g-color-white g-text-underline--none--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          124
+                        </a>
+                        <a class="g-color-white g-text-underline--none--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          237
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-bg-cyan rounded g-pa-25">
+                    <ul class="list-inline small g-color-white g-mb-20">
+                      <li class="list-inline-item">
+                        <a class="text-uppercase btn btn-xs u-btn-white rounded-0" href="#!">Business</a>
+                      </li>
+                      <li class="list-inline-item">|</li>
+                      <li class="list-inline-item">July 09, 2017</li>
+                    </ul>
+
+                    <h3 class="h2 g-font-weight-300 g-mb-50">
+                      <a class="u-link-v4 g-color-white g-text-underline--none--hover" href="#!">Focused on helping our clients to build a great business</a>
+                    </h3>
+
+                    <div class="media g-font-size-12">
+                      <img class="d-flex g-width-30 g-height-30 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img17.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="text-uppercase g-color-white g-text-underline--none--hover" href="#!">Carla Frost</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="g-color-white g-text-underline--none--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          24
+                        </a>
+                        <a class="g-color-white g-text-underline--none--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          108
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-bg-darkred rounded g-pa-25">
+                    <ul class="list-inline small g-color-white g-mb-20">
+                      <li class="list-inline-item">
+                        <a class="text-uppercase btn btn-xs u-btn-white rounded-0" href="#!">UX Design</a>
+                      </li>
+                      <li class="list-inline-item">|</li>
+                      <li class="list-inline-item">July 17, 2017</li>
+                    </ul>
+
+                    <h3 class="h2 g-font-weight-300 g-mb-50">
+                      <a class="u-link-v4 g-color-white g-text-underline--none--hover" href="#!">We build your website to realise your vision and product</a>
+                    </h3>
+
+                    <div class="media g-font-size-12">
+                      <img class="d-flex g-width-30 g-height-30 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="text-uppercase g-color-white g-text-underline--none--hover" href="#!">Anastasia Sh.</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="g-color-white g-text-underline--none--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          17
+                        </a>
+                        <a class="g-color-white g-text-underline--none--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          66
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode5" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Block 05 -->
+
+      <!-- News Block 06 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#06</span>
+            </h2>
+          </div>
+
+          <div id="shortcode6">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-shadow-v21 g-bg-white rounded g-pa-25">
+                    <ul class="list-inline small g-color-gray-dark-v4 g-mb-20">
+                      <li class="list-inline-item">
+                        <a class="text-uppercase btn btn-xs u-btn-red rounded-0" href="#!">Tech</a>
+                      </li>
+                      <li class="list-inline-item">|</li>
+                      <li class="list-inline-item">July 02, 2017</li>
+                    </ul>
+
+                    <h3 class="h2 g-font-weight-300 g-mb-40">
+                      <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">There are many great solutions in Unify for your business</a>
+                    </h3>
+
+                    <div class="media g-font-size-12">
+                      <img class="d-flex g-width-30 g-height-30 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="text-uppercase g-color-main g-text-underline--none--hover" href="#!">John Doe</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          124
+                        </a>
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          237
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-shadow-v21 g-bg-white rounded g-pa-25">
+                    <ul class="list-inline small g-color-gray-dark-v4 g-mb-20">
+                      <li class="list-inline-item">
+                        <a class="text-uppercase btn btn-xs u-btn-primary rounded-0" href="#!">Business</a>
+                      </li>
+                      <li class="list-inline-item">|</li>
+                      <li class="list-inline-item">July 02, 2017</li>
+                    </ul>
+
+                    <h3 class="h2 g-font-weight-300 g-mb-40">
+                      <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Focused on helping our clients to build a great business</a>
+                    </h3>
+
+                    <div class="media g-font-size-12">
+                      <img class="d-flex g-width-30 g-height-30 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="text-uppercase g-color-main g-text-underline--none--hover" href="#!">Kathy Reyes</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          24
+                        </a>
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          108
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="u-shadow-v21 g-bg-white rounded g-pa-25">
+                    <ul class="list-inline small g-color-gray-dark-v4 g-mb-20">
+                      <li class="list-inline-item">
+                        <a class="text-uppercase btn btn-xs u-btn-purple rounded-0" href="#!">UX Design</a>
+                      </li>
+                      <li class="list-inline-item">|</li>
+                      <li class="list-inline-item">July 02, 2017</li>
+                    </ul>
+
+                    <h3 class="h2 g-font-weight-300 g-mb-40">
+                      <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">We build your website to realise your vision and best product</a>
+                    </h3>
+
+                    <div class="media g-font-size-12">
+                      <img class="d-flex g-width-30 g-height-30 rounded-circle g-mr-10" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                      <div class="media-body align-self-center">
+                        <a class="text-uppercase g-color-main g-text-underline--none--hover" href="#!">David Gates</a>
+                      </div>
+
+                      <div class="align-self-center">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                          <i class="icon-bubbles align-middle g-mr-3"></i>
+                          17
+                        </a>
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                          <i class="icon-eye align-middle g-mr-3"></i>
+                          66
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode6" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Block 06 -->
+
+      <!-- News Block 07 -->
+      <section class="g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#07</span>
+            </h2>
+          </div>
+
+          <div id="shortcode7">
+            <div class="shortcode-html">
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 g-brd-top-2 g-brd-primary-top rounded g-pa-25">
+                    <div class="u-heading-v2-6--bottom g-mb-20">
+                      <h2 class="h3 u-heading-v2__title g-font-weight-300 g-mb-0">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Unify - Responsive Bootstrap Template</a>
+                      </h2>
+                    </div>
+
+                    <div class="g-font-size-16">
+                      <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at.</p>
+                    </div>
+
+                    <hr class="g-mt-50 g-mb-20">
+
+                    <ul class="u-list-inline font-italic g-font-size-12">
+                      <li class="list-inline-item">
+                        By:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Alex</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        In:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Web Trends</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        Posted:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Aug 24, 2017</a>
+                      </li>
+                    </ul>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 g-brd-top-2 g-brd-black-top rounded g-pa-25">
+                    <div class="u-heading-v2-6--bottom g-mb-20">
+                      <h2 class="h3 u-heading-v2__title g-font-weight-300 g-mb-0">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Over 1000 UI Components For Your Projects</a>
+                      </h2>
+                    </div>
+
+                    <div class="g-font-size-16">
+                      <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at.</p>
+                    </div>
+
+                    <hr class="g-mt-50 g-mb-20">
+
+                    <ul class="u-list-inline font-italic g-font-size-12">
+                      <li class="list-inline-item">
+                        By:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Tom</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        In:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Tech</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        Posted:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Aug 24, 2017</a>
+                      </li>
+                    </ul>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 g-brd-top-2 g-brd-darkred-top rounded g-pa-25">
+                    <div class="u-heading-v2-6--bottom g-mb-20">
+                      <h2 class="h3 u-heading-v2__title g-font-weight-300 g-mb-0">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Boosting Your Project With Unify Demos</a>
+                      </h2>
+                    </div>
+
+                    <div class="g-font-size-16">
+                      <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at.</p>
+                    </div>
+
+                    <hr class="g-mt-50 g-mb-20">
+
+                    <ul class="u-list-inline font-italic g-font-size-12">
+                      <li class="list-inline-item">
+                        By:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Kate</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        In:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Startups</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        Posted:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Aug 24, 2017</a>
+                      </li>
+                    </ul>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 g-brd-top-2 g-brd-yellow-top rounded g-pa-25">
+                    <div class="u-heading-v2-6--bottom g-mb-20">
+                      <h2 class="h3 u-heading-v2__title g-font-weight-300 g-mb-0">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Over 1000 UI Components For Your Projects</a>
+                      </h2>
+                    </div>
+
+                    <div class="g-font-size-16">
+                      <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at.</p>
+                    </div>
+
+                    <hr class="g-mt-50 g-mb-20">
+
+                    <ul class="u-list-inline font-italic g-font-size-12">
+                      <li class="list-inline-item">
+                        By:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Alex</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        In:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Web Trends</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        Posted:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Aug 24, 2017</a>
+                      </li>
+                    </ul>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 g-brd-top-2 g-brd-darkpurple-top rounded g-pa-25">
+                    <div class="u-heading-v2-6--bottom g-mb-20">
+                      <h2 class="h3 u-heading-v2__title g-font-weight-300 g-mb-0">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Boosting Your Project With Unify Demos</a>
+                      </h2>
+                    </div>
+
+                    <div class="g-font-size-16">
+                      <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at.</p>
+                    </div>
+
+                    <hr class="g-mt-50 g-mb-20">
+
+                    <ul class="u-list-inline font-italic g-font-size-12">
+                      <li class="list-inline-item">
+                        By:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Tom</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        In:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Tech</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        Posted:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Aug 24, 2017</a>
+                      </li>
+                    </ul>
+                  </article>
+                  <!-- End Article -->
+                </div>
+
+                <div class="col-lg-4 g-mb-30">
+                  <!-- Article -->
+                  <article class="g-brd-around g-brd-gray-light-v4 g-brd-top-2 g-brd-cyan-top rounded g-pa-25">
+                    <div class="u-heading-v2-6--bottom g-mb-20">
+                      <h2 class="h3 u-heading-v2__title g-font-weight-300 g-mb-0">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Unify - Responsive Bootstrap Template</a>
+                      </h2>
+                    </div>
+
+                    <div class="g-font-size-16">
+                      <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at.</p>
+                    </div>
+
+                    <hr class="g-mt-50 g-mb-20">
+
+                    <ul class="u-list-inline font-italic g-font-size-12">
+                      <li class="list-inline-item">
+                        By:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Kate</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        In:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Startups</a>
+                      </li>
+                      <li class="list-inline-item">/</li>
+                      <li class="list-inline-item">
+                        Posted:
+                        <a class="g-color-main g-color-primary--hover" href="#!">Aug 24, 2017</a>
+                      </li>
+                    </ul>
+                  </article>
+                  <!-- End Article -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode7" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Block 07 -->
+
+      <!-- News Block 08 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">News Blocks
+              <span class="g-color-primary g-ml-5">#08</span>
+            </h2>
+          </div>
+
+          <div id="shortcode8">
+            <div class="shortcode-html">
+              <!-- More Events List -->
+              <ul class="list-unstyled g-mb-60">
+                <!-- Events Item -->
+                <li class="u-block-hover u-shadow-v37--hover g-bg-gray-light-v5 g-bg-white--hover rounded g-px-50 g-py-30 mb-4">
+                  <div class="row align-items-lg-center">
+                    <div class="col-md-3 col-lg-2 g-mb-30 g-mb-0--lg">
+                      <div class="d-flex align-items-center mb-3">
+                        <span class="g-color-primary g-font-size-50 g-line-height-1 mr-3">12</span>
+                        <div class="g-color-gray-dark-v4 text-center g-line-height-1_4">
+                          <span class="d-block">Nov.</span>
+                          <span class="d-block">2017</span>
+                        </div>
+                      </div>
+                      <span class="d-block g-color-gray-dark-v4">6.00pm - 7.15pm</span>
+                    </div>
+                    <div class="col-md-9 col-lg-8 g-mb-30 g-mb-0--lg">
+                      <h3 class="h5 g-color-black g-font-weight-500 mb-1">Health Sciences New Faculty Breakfast &amp; Resource Showcase</h3>
+                      <p>Professor Allan Pack, University of Pennsylvania</p>
+                      <a class="d-inline-block u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#">
+                        <i class="align-middle g-color-primary mr-2 icon-real-estate-027 u-line-icon-pro"></i>
+                        Unify Perkins Lecture Hall
+                      </a>
+                    </div>
+                    <div class="col-lg-2">
+                      <a class="btn btn-block g-brd-2 g-brd-gray-light-v4 g-brd-primary--hover g-color-primary g-color-white--hover g-bg-primary--hover g-rounded-30 g-py-10" href="#">Register now</a>
+                    </div>
+                  </div>
+                  <a class="u-link-v2" href="#"></a>
+                </li>
+                <!-- End Events Item -->
+
+                <!-- Events Item -->
+                <li class="u-block-hover u-shadow-v37--hover g-bg-gray-light-v4 g-bg-white--hover rounded g-px-50 g-pa-30 mb-4">
+                  <div class="row align-items-lg-center">
+                    <div class="col-md-3 col-lg-2 g-mb-30 g-mb-0--lg">
+                      <div class="d-flex align-items-center mb-3">
+                        <span class="g-color-primary g-font-size-50 g-line-height-1 mr-3">05</span>
+                        <div class="g-color-gray-dark-v4 text-center g-line-height-1_4">
+                          <span class="d-block">Dec.</span>
+                          <span class="d-block">2017</span>
+                        </div>
+                      </div>
+                      <span class="d-block g-color-gray-dark-v4">6.00pm - 7.15pm</span>
+                    </div>
+                    <div class="col-md-9 col-lg-8 g-mb-30 g-mb-0--lg">
+                      <h3 class="h5 g-color-black g-font-weight-500 mb-1">Build Your Weekly Schedule Drop-in Event</h3>
+                      <p>Toward a just and sustainable food system</p>
+                      <a class="d-inline-block u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#">
+                        <i class="align-middle g-color-primary mr-2 icon-real-estate-027 u-line-icon-pro"></i>
+                        Unify Business School
+                      </a>
+                    </div>
+                    <div class="col-lg-2">
+                      <a class="btn btn-block g-brd-2 g-brd-gray-light-v3 g-brd-primary--hover g-color-primary g-color-white--hover g-bg-primary--hover g-rounded-30 g-py-10" href="#">Register now</a>
+                    </div>
+                  </div>
+                  <a class="u-link-v2" href="#"></a>
+                </li>
+                <!-- End Events Item -->
+
+                <!-- Events Item -->
+                <li class="u-block-hover u-shadow-v37--hover g-bg-gray-light-v5 g-bg-white--hover rounded g-px-50 g-pa-30 mb-4">
+                  <div class="row align-items-lg-center">
+                    <div class="col-md-3 col-lg-2 g-mb-30 g-mb-0--lg">
+                      <div class="d-flex align-items-center mb-3">
+                        <span class="g-color-primary g-font-size-50 g-line-height-1 mr-3">23</span>
+                        <div class="g-color-gray-dark-v4 text-center g-line-height-1_4">
+                          <span class="d-block">Dec.</span>
+                          <span class="d-block">2017</span>
+                        </div>
+                      </div>
+                      <span class="d-block g-color-gray-dark-v4">6.00pm - 7.15pm</span>
+                    </div>
+                    <div class="col-md-9 col-lg-8 g-mb-30 g-mb-0--lg">
+                      <h3 class="h5 g-color-black g-font-weight-500 mb-1">Soulful Singing</h3>
+                      <p>Professor Allan Pack, University of Pennsylvania</p>
+                      <a class="d-inline-block u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#">
+                        <i class="align-middle g-color-primary mr-2 icon-real-estate-027 u-line-icon-pro"></i>
+                        Unify Perkins Lecture Hall
+                      </a>
+                    </div>
+                    <div class="col-lg-2">
+                      <a class="btn btn-block g-brd-2 g-brd-gray-light-v4 g-brd-primary--hover g-color-primary g-color-white--hover g-bg-primary--hover g-rounded-30 g-py-10" href="#">Register now</a>
+                    </div>
+                  </div>
+                  <a class="u-link-v2" href="#"></a>
+                </li>
+                <!-- End Events Item -->
+              </ul>
+              <!-- End More Events List -->
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode8" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </section>
+      <!-- End News Block 08 -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

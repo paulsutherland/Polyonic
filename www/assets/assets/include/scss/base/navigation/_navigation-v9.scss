@@ -1,0 +1,43 @@
+/*------------------------------------
+  Navigation Style v9
+------------------------------------*/
+
+.navbar .u-main-nav-v9 {
+	.nav-link {
+		@extend %u-main-nav-base-link;
+
+		color: $g-color-gray-dark-v4;
+
+		@include px-to-rem(padding, 0 20px 0 0);
+	}
+
+	.nav-item {
+		> a {
+			@include px-to-rem(padding, 20px 0);
+		}
+
+		&.hs-has-sub-menu,
+		&.hs-has-mega-menu {
+			@extend %u-main-nav-has-sub-menu;
+
+			> a {
+				&::after {
+					@include px-to-rem(font-size, 18px);
+					
+					right: 0;
+				}
+			}
+		}
+
+		&.active > .nav-link,
+		&:hover > .nav-link,
+		&:focus > .nav-link,
+		.nav-link:focus {
+			color: $g-color-black;
+
+			&::after {
+				color: $g-color-primary;
+			}
+		}
+	}
+}

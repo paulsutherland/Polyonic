@@ -1,0 +1,25 @@
+/*--------------------------------------------------
+  Info Block v1-2
+----------------------------------------------------*/
+
+.u-info-v1-2__item {
+	position: relative;
+	z-index: 1;
+  @include px-to-rem(padding-bottom, 11px);
+
+  &::after {
+	  content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display: block;
+		width: 40px;
+		height: 1px;
+		background: $g-color-gray-light-v1;
+		transition: all 0.4s ease-in-out;
+  }
+}
+.u-info-v1-2:hover .u-info-v1-2__item::after {
+	width: 100%;
+	background: $g-color-primary;
+}

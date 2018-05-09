@@ -1,0 +1,267 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Sliders" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu7 = "unCollapsed" %}
+{% set isSubMenu7Elements = "unCollapsed" %}
+{% set activeMenuItem = "forms-elemets-sliders" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: " Forms",
+    href: "#!"
+  }, {
+    breadcrumb: " Elements",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+<link  rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+	{% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+	<section class="container-fluid px-0 g-pt-65">
+		<div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+			{% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+			<div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+				{% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+				<div class="g-pa-20">
+					<h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-28">{{ title }}</h1>
+
+					<div class="row">
+						<!-- 1-st column -->
+						<div class="col-md-6">
+							<!-- Regular Slider -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Regular Slider</h3>
+
+                <!-- Regular Slider Option One -->
+                <div class="form-group g-mb-40">
+                  <label class="g-mb-10">
+                    Option one
+                    <span class="g-color-primary">(<span id="regularSliderAmount">25</span>)
+                    </span>
+                  </label>
+                  <div id="regularSlider" class="u-slider-v1-2" data-result-container="regularSliderAmount" data-default="25" data-min="0" data-max="100"></div>
+                </div>
+                <!-- End Regular Slider Option One -->
+
+                <!-- Regular Slider Option Two -->
+                <div class="form-group g-mb-40">
+                  <label class="g-mb-10">
+                    Option two
+                    <span class="g-color-primary">(<span id="regularSliderAmount3">25</span>)
+                    </span>
+                  </label>
+                  <div id="regularSlider3" class="u-slider-v1-3" data-result-container="regularSliderAmount3" data-default="25" data-min="0" data-max="100"></div>
+                </div>
+                <!-- End Regular Slider Option Two -->
+
+                <!-- Regular Slider Option Three -->
+                <div class="form-group g-mb-40">
+                  <label class="g-mb-10">
+                    Option three
+                    <span class="g-color-primary">(<span id="regularSliderAmount2">25</span>)
+                    </span>
+                  </label>
+
+                  <div id="regularSlider2" class="u-slider-v1" data-result-container="regularSliderAmount2" data-default="25" data-min="0" data-max="100"></div>
+                </div>
+                <!-- End Regular Slider Option Three -->
+              </div>
+							<!-- End Regular Slider -->
+						</div>
+						<!-- End 1-st column -->
+
+            <!-- 2-nd column -->
+            <div class="col-md-6">
+              <!-- Range Slider -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Range Slider</h3>
+
+                <!-- Range Slider Option One -->
+                <div class="form-group g-mb-40">
+                  <label class="g-mb-10">
+                    Option one
+                    <span class="g-color-primary">(<span id="rangeSliderAmount">0</span>)
+                    </span>
+                  </label>
+
+                  <div id="rangeSlider" class="u-slider-v1-2" data-range="true" data-result-container="rangeSliderAmount" data-default="75, 300" data-min="0" data-max="500"></div>
+                </div>
+                <!-- End Range Slider Option One -->
+
+                <!-- Range Slider Option Two -->
+                <div class="form-group g-mb-40">
+                  <label class="g-mb-10">
+                    Option two
+                    <span class="g-color-primary">(<span id="rangeSliderAmount3">0</span>)
+                    </span>
+                  </label>
+
+                  <div id="rangeSlider3" class="u-slider-v1-3" data-range="true" data-result-container="rangeSliderAmount3" data-default="75, 300" data-min="0" data-max="500"></div>
+                </div>
+                <!-- End Range Slider Option Two -->
+
+                <!-- Range Slider Option Three -->
+                <div class="form-group g-mb-40">
+                  <label class="g-mb-10">
+                    Option three
+                    <span class="g-color-primary">(<span id="rangeSliderAmount2">0</span>)
+                    </span>
+                  </label>
+
+                  <div id="rangeSlider2" class="u-slider-v1" data-range="true" data-result-container="rangeSliderAmount2" data-default="75, 300" data-min="0" data-max="500"></div>
+                </div>
+                <!-- End Range Slider Option Three -->
+              </div>
+              <!-- End Range Slider -->
+            </div>
+            <!-- End 2-nd column -->
+
+            <!-- 3-d column -->
+            <div class="col-md-6">
+              <!-- Step Slider -->
+              <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+                <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Step Slider</h3>
+
+                <!-- Range Slider Option One -->
+                <div class="form-group g-mb-40">
+                  <label class="g-mb-10">
+                    Option one
+                    <span class="g-color-primary">(<span id="stepSliderAmount">0</span>)
+                    </span>
+                  </label>
+
+                  <div id="stepSlider" class="u-slider-v1-2" data-result-container="stepSliderAmount" data-step="100" data-min="0" data-max="500"></div>
+                </div>
+                <!-- End Range Slider Option One -->
+
+                <!-- Range Slider Option Two -->
+                <div class="form-group g-mb-40">
+                  <label class="g-mb-10">
+                    Option two
+                    <span class="g-color-primary">(<span id="stepSliderAmount3">0</span>)
+                    </span>
+                  </label>
+
+                  <div id="stepSlider3" class="u-slider-v1-3" data-result-container="stepSliderAmount3" data-step="100" data-min="0" data-max="500"></div>
+                </div>
+                <!-- End Range Slider Option Two -->
+
+                <!-- Range Slider Option Three -->
+                <div class="form-group g-mb-40">
+                  <label class="g-mb-10">
+                    Option three
+                    <span class="g-color-primary">(<span id="stepSliderAmount2">0</span>)
+                    </span>
+                  </label>
+
+                  <div id="stepSlider2" class="u-slider-v1" data-result-container="stepSliderAmount2" data-step="100" data-min="0" data-max="500"></div>
+                </div>
+                <!-- End Range Slider Option Three -->
+              </div>
+              <!-- End Step Slider -->
+            </div>
+            <!-- End 3-d column -->
+					</div>
+				</div>
+
+				{% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+			</div>
+		</div>
+	</section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/blocks/modals/project-form.njk" %}
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+
+<!-- JS Plugins Init. -->
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/bloodhound.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bloodhound-js/js/typeahead.jquery.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+
+<!-- jQuery UI Core -->
+<script  src="{{ root }}assets/vendor/jquery-ui/ui/widget.js"></script>
+<script  src="{{ root }}assets/vendor/jquery-ui/ui/version.js"></script>
+<script  src="{{ root }}assets/vendor/jquery-ui/ui/keycode.js"></script>
+<script  src="{{ root }}assets/vendor/jquery-ui/ui/position.js"></script>
+<script  src="{{ root }}assets/vendor/jquery-ui/ui/unique-id.js"></script>
+<script  src="{{ root }}assets/vendor/jquery-ui/ui/safe-active-element.js"></script>
+
+<!-- jQuery UI Helpers -->
+<script  src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+<script  src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+<!-- jQuery UI Widgets -->
+<script  src="{{ root }}assets/vendor/jquery-ui/ui/widgets/slider.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+<script src="{{ root }}assets/js/components/hs.count-qty.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+<script  src="{{ root }}assets/js/components/hs.slider.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+      dropdownHideOnScroll: false
+    });
+
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of forms
+    $.HSCore.components.HSSlider.init('#regularSlider, #regularSlider2, #regularSlider3, #rangeSlider, #rangeSlider2, #rangeSlider3, #stepSlider, #stepSlider2, #stepSlider3');
+
+    // initialization of forms
+    $.HSCore.components.HSCountQty.init('.js-quantity');
+  });
+</script>
+</body>
+</html>

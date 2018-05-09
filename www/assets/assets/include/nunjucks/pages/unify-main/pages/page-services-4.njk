@@ -1,0 +1,560 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-services" %}
+{% set mainNavActive_3 = "page-services-4" %}
+{% set title = "Services 4 | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    {% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Promo Block -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "fromtop", animation_duration: 25, direction: "reverse"}'>
+        <!-- Parallax Image -->
+        <div class="dzsparallaxer--target w-100 u-bg-overlay g-bg-img-hero g-bg-white-opacity-0_8--after" style="height: 200%; background-image: url({{ root }}assets/img-temp/1920x800/img12.jpg);"></div>
+        <!-- End Parallax Image -->
+
+        <!-- Promo Block Content -->
+        <div class="container u-bg-overlay__inner text-center g-py-130">
+          <h3 class="h3 g-color-black g-font-weight-300 mb-2">Our services</h3>
+          <p class="g-color-black g-font-weight-600 g-font-size-35 text-uppercase">Creative freedom matters</p>
+        </div>
+        <!-- Promo Block Content -->
+      </section>
+      <!-- End Promo Block -->
+
+      <!-- News Blocks -->
+      <section class="container g-pt-100 g-pb-70">
+        <div class="row">
+          <div class="col-lg-4 g-mb-30">
+            <!-- Article -->
+            <article class="u-shadow-v22">
+              <figure class="g-pos-rel">
+                <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img6.jpg" alt="Image Description">
+
+                <figcaption class="g-pos-abs g-top-20 g-left-20">
+                  <a class="btn btn-sm u-btn-blue rounded-0" href="#!">Business</a>
+                </figcaption>
+              </figure>
+
+              <div class="g-pa-20">
+                <h3 class="h4 g-font-weight-300 g-mb-15">
+                  <a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover" href="#!">Cras justo odio, dapibus ac facilisis into egestas</a>
+                </h3>
+
+                <div class="g-mb-30">
+                  <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh.</p>
+                </div>
+
+                <div class="media g-font-size-12">
+                  <img class="d-flex mr-2 rounded-circle g-width-30 g-height-30" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                  <div class="media-body align-self-center text-uppercase">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">John Coolman</a>
+                  </div>
+
+                  <div class="align-self-center">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                      <i class="icon-bubbles g-mr-2"></i> 16
+                    </a>
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                      <i class="icon-eye g-mr-2"></i> 129
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- End Article -->
+          </div>
+
+          <div class="col-lg-4 g-mb-30">
+            <!-- Article -->
+            <article class="u-shadow-v22">
+              <figure class="g-pos-rel">
+                <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img13.jpg" alt="Image Description">
+
+                <figcaption class="g-pos-abs g-top-20 g-left-20">
+                  <a class="btn btn-sm u-btn-red rounded-0" href="#!">Meetup</a>
+                </figcaption>
+              </figure>
+
+              <div class="g-pa-20">
+                <h3 class="h4 g-font-weight-300 g-mb-15">
+                  <a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover" href="#!">Unify clean and fresh fully responsive template</a>
+                </h3>
+
+                <div class="g-mb-30">
+                  <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh.</p>
+                </div>
+
+                <div class="media g-font-size-12">
+                  <img class="d-flex mr-2 rounded-circle g-width-30 g-height-30" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                  <div class="media-body align-self-center text-uppercase">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Kathy Reyes</a>
+                  </div>
+
+                  <div class="align-self-center">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                      <i class="icon-bubbles g-mr-2"></i> 24
+                    </a>
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                      <i class="icon-eye g-mr-2"></i> 108
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- End Article -->
+          </div>
+
+          <div class="col-lg-4 g-mb-30">
+            <!-- Article -->
+            <article class="u-shadow-v22">
+              <figure class="g-pos-rel">
+                <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img8.jpg" alt="Image Description">
+
+                <figcaption class="g-pos-abs g-top-20 g-left-20">
+                  <a class="btn btn-sm u-btn-darkpurple rounded-0" href="#!">Tech</a>
+                </figcaption>
+              </figure>
+
+              <div class="g-pa-20">
+                <h3 class="h4 g-font-weight-300 g-mb-15">
+                  <a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover" href="#!">Facilisis odio, dapibus ac justo acilisis gestinas</a>
+                </h3>
+
+                <div class="g-mb-30">
+                  <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh.</p>
+                </div>
+
+                <div class="media g-font-size-12">
+                  <img class="d-flex mr-2 rounded-circle g-width-30 g-height-30" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                  <div class="media-body align-self-center text-uppercase">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">William Ch.</a>
+                  </div>
+
+                  <div class="align-self-center">
+                    <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                      <i class="icon-bubbles g-mr-2"></i> 16
+                    </a>
+                    <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                      <i class="icon-eye g-mr-2"></i> 129
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- End Article -->
+          </div>
+        </div>
+      </section>
+      <!-- End News Blocks -->
+
+      <!-- Icon Blocks -->
+      <section class="g-bg-secondary">
+        <div class="container g-py-100">
+          <div class="row justify-content-center g-mb-60">
+            <div class="col-lg-7">
+              <!-- Heading -->
+              <div class="text-center">
+                <h2 class="h3 g-color-black text-uppercase mb-2">Our features</h2>
+                <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
+                <p class="lead mb-0">We are a creative person focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+              </div>
+              <!-- End Heading -->
+            </div>
+          </div>
+
+          <!-- Icon Blocks -->
+          <div class="row">
+            <div class="col-lg-6 g-mb-30">
+              <!-- Icon Blocks -->
+              <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                <div class="media g-mb-15">
+                  <div class="d-flex mr-4">
+                  <span class="g-color-gray-dark-v4 g-font-size-26">
+                    <i class="icon-education-087 u-line-icon-pro"></i>
+                  </span>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="h5 g-color-black mb-20">Creative ideas</h3>
+                    <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                    <p class="g-color-gray-dark-v4 g-mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-6 g-mb-30">
+              <!-- Icon Blocks -->
+              <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                <div class="media g-mb-15">
+                  <div class="d-flex mr-4">
+                  <span class="g-color-gray-dark-v4 g-font-size-26">
+                    <i class="icon-education-035 u-line-icon-pro"></i>
+                  </span>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="h5 g-color-black mb-20">Excellent features</h3>
+                    <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                    <p class="g-color-gray-dark-v4 g-mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+          </div>
+          <!-- End Icon Blocks -->
+
+          <!-- Icon Blocks -->
+          <div class="row">
+            <div class="col-lg-6 g-mb-30">
+              <!-- Icon Blocks -->
+              <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                <div class="media g-mb-15">
+                  <div class="d-flex mr-4">
+                  <span class="g-color-gray-dark-v4 g-font-size-26">
+                    <i class="icon-education-141 u-line-icon-pro"></i>
+                  </span>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="h5 g-color-black mb-20">Fully responsive</h3>
+                    <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                    <p class="g-color-gray-dark-v4 g-mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-6 g-mb-30">
+              <!-- Icon Blocks -->
+              <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                <div class="media g-mb-15">
+                  <div class="d-flex mr-4">
+                  <span class="g-color-gray-dark-v4 g-font-size-26">
+                    <i class="icon-finance-256 u-line-icon-pro"></i>
+                  </span>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="h5 g-color-black mb-20">Clean code</h3>
+                    <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                    <p class="g-color-gray-dark-v4 g-mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+          </div>
+          <!-- End Icon Blocks -->
+
+          <!-- Icon Blocks -->
+          <div class="row">
+            <div class="col-lg-6 g-mb-30">
+              <!-- Icon Blocks -->
+              <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                <div class="media g-mb-15">
+                  <div class="d-flex mr-4">
+                  <span class="g-color-gray-dark-v4 g-font-size-26">
+                    <i class="icon-science-020 u-line-icon-pro"></i>
+                  </span>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="h5 g-color-black mb-20">Extensive documentation</h3>
+                    <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                    <p class="g-color-gray-dark-v4 g-mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-6 g-mb-30">
+              <!-- Icon Blocks -->
+              <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                <div class="media g-mb-15">
+                  <div class="d-flex mr-4">
+                  <span class="g-color-gray-dark-v4 g-font-size-26">
+                    <i class="icon-finance-009 u-line-icon-pro"></i>
+                  </span>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="h5 g-color-black mb-20">Modern design</h3>
+                    <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                    <p class="g-color-gray-dark-v4 g-mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+      </section>
+      <!-- End Icon Blocks -->
+
+      <!-- Counters -->
+      <section class="dzsparallaxer auto-init height-is-based-on-content">
+        <!-- Parallax Image -->
+        <div class="dzsparallaxer--target w-100 g-bg-size-cover u-bg-overlay g-bg-bluegray-opacity-0_3--after" style="height: 140%; background: url({{ root }}assets/img-temp/1920x800/img2.jpg)"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container u-bg-overlay__inner g-pt-150 g-pb-100">
+          <div class="row text-center text-uppercase g-color-white">
+            <!-- Counters -->
+            <div class="col-md-3 col-6 g-mb-50">
+              <i class="et-icon-beaker display-5 mb-3"></i>
+              <div class="js-counter g-font-size-32 mb-2">265</div>
+              <h4 class="h5 g-font-weight-300 mb-0">Innovations</h4>
+            </div>
+            <!-- End Counters -->
+
+            <!-- Counters -->
+            <div class="col-md-3 col-6 g-mb-50">
+              <i class="et-icon-clock display-5 mb-3"></i>
+              <div class="js-counter g-font-size-32 mb-2">5957</div>
+              <h4 class="h5 g-font-weight-300 mb-0">Working Hours</h4>
+            </div>
+            <!-- End Counters -->
+
+            <!-- Counters -->
+            <div class="col-md-3 col-6 g-mb-50">
+              <i class="et-icon-chat display-5 mb-3"></i>
+              <div class="js-counter g-font-size-32 mb-2">3495</div>
+              <h4 class="h5 g-font-weight-300 mb-0">Happy Clients</h4>
+            </div>
+            <!-- End Counters -->
+
+            <!-- Counters -->
+            <div class="col-md-3 col-6 g-mb-50">
+              <i class="et-icon-lightbulb display-5 mb-3"></i>
+              <div class="js-counter g-font-size-32 mb-2">576</div>
+              <h4 class="h5 g-font-weight-300 mb-0">New Ideas</h4>
+            </div>
+            <!-- End Counters -->
+          </div>
+        </div>
+      </section>
+      <!-- Counters -->
+
+      <section class="container g-pt-100">
+        <div class="row justify-content-center g-mb-70">
+          <div class="col-lg-7">
+            <!-- Heading -->
+            <div class="text-center">
+              <h2 class="h3 g-color-black text-uppercase mb-2">Unify template</h2>
+              <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
+              <p class="lead mb-5">We are a creative person focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+              <a class="btn btn-md u-btn-outline-black g-font-size-default g-py-12" href="#!">Explore more about Unify</a>
+            </div>
+            <!-- End Heading -->
+          </div>
+        </div>
+
+        <img class="img-fluid w-100" src="{{ root }}assets/img-temp/893x372/img1.jpg" alt="Image Description">
+      </section>
+
+      <!-- Icon Blocks -->
+      <section class="g-bg-secondary">
+        <div class="container g-pt-110 g-pb-40">
+          <div class="row">
+            <div class="col-lg-4 g-mb-60">
+              <!-- Icon Blocks -->
+              <div class="u-shadow-v19 g-bg-white text-center g-rounded-5 g-px-30 g-pb-30">
+              <span class="u-icon-v3 g-bg-primary g-color-white g-pull-50x-up g-rounded-5 g-mb-5">
+                <i class="icon-education-087 u-line-icon-pro"></i>
+              </span>
+                <h3 class="h5 g-color-black g-mb-10">Elegant Design</h3>
+                <p class="g-color-gray-dark-v4 g-mb-20">Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra.</p>
+                <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#!">Read More</a>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-mb-60">
+              <!-- Icon Blocks -->
+              <div class="u-shadow-v19 g-bg-white text-center g-rounded-5 g-px-30 g-pb-30">
+              <span class="u-icon-v3 g-bg-primary g-color-white g-pull-50x-up g-rounded-5 g-mb-5">
+                <i class="icon-finance-009 u-line-icon-pro"></i>
+              </span>
+                <h3 class="h5 g-color-black g-mb-10">Fully Responsive</h3>
+                <p class="g-color-gray-dark-v4 g-mb-20">Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra.</p>
+                <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#!">Read More</a>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-mb-60">
+              <!-- Icon Blocks -->
+              <div class="u-shadow-v19 g-bg-white text-center g-rounded-5 g-px-30 g-pb-30">
+              <span class="u-icon-v3 g-bg-primary g-color-white g-pull-50x-up g-rounded-5 g-mb-5">
+                <i class="icon-finance-256 u-line-icon-pro"></i>
+              </span>
+                <h3 class="h5 g-color-black g-mb-10">Friendly Support</h3>
+                <p class="g-color-gray-dark-v4 g-mb-20">Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra.</p>
+                <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#!">Read More</a>
+              </div>
+              <!-- End Icon Blocks -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Icon Blocks -->
+
+      <!-- Clients -->
+      <div class="container g-py-70">
+        <div class="js-carousel"
+             data-infinite="true"
+             data-autoplay="true"
+             data-slides-show="6"
+             data-responsive='[{
+               "breakpoint": 1200,
+               "settings": {
+                 "slidesToShow": 6
+               }
+             }, {
+               "breakpoint": 992,
+               "settings": {
+                 "slidesToShow": 5
+               }
+             }, {
+               "breakpoint": 768,
+               "settings": {
+                 "slidesToShow": 4
+               }
+             }, {
+               "breakpoint": 576,
+               "settings": {
+                 "slidesToShow": 2
+               }
+             }, {
+               "breakpoint": 446,
+               "settings": {
+                 "slidesToShow": 1
+               }
+             }]'>
+          <div class="js-slide u-block-hover">
+            <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img1.png" alt="Image Description">
+          </div>
+
+          <div class="js-slide u-block-hover">
+            <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img2.png" alt="Image Description">
+          </div>
+
+          <div class="js-slide u-block-hover">
+            <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img3.png" alt="Image Description">
+          </div>
+
+          <div class="js-slide u-block-hover">
+            <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img4.png" alt="Image Description">
+          </div>
+
+          <div class="js-slide u-block-hover">
+            <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img5.png" alt="Image Description">
+          </div>
+
+          <div class="js-slide u-block-hover">
+            <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img6.png" alt="Image Description">
+          </div>
+
+          <div class="js-slide u-block-hover">
+            <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img7.png" alt="Image Description">
+          </div>
+
+          <div class="js-slide u-block-hover">
+            <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img8.png" alt="Image Description">
+          </div>
+
+          <div class="js-slide u-block-hover">
+            <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="{{ root }}assets/img-temp/200x100/img9.png" alt="Image Description">
+          </div>
+        </div>
+      </div>
+      <!-- End Clients -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/appear.js"></script>
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+    <script src="{{ root }}assets/vendor/slick-carousel/slick/slick.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/hs.counter.js"></script>
+    <script src="{{ root }}assets/js/components/hs.carousel.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of carousel
+        $.HSCore.components.HSCarousel.init('.js-carousel');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of counters
+        var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

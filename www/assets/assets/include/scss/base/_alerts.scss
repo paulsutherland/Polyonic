@@ -1,0 +1,38 @@
+/*------------------------------------
+  Alerts
+------------------------------------*/
+/* Alert Close Button */
+.u-alert-close--light {
+  font-weight: 300;
+  color: #000;
+  opacity: .7;
+  text-shadow: none;
+  transition: color .3s;
+  font-size: 18px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+  &:focus,
+  &:active:focus {
+    outline: 0 none;
+    box-shadow: none;
+  }
+}
+
+
+/* Alert Lists */
+.u-alert-list {
+  margin-left: -20px;
+}
+
+/* Alert Lists with Font Awesome Icons */
+.alert__icon {
+  margin-left: 20px;
+}
+
+.alert__icon-list {
+  font-size: 12px;
+  line-height: 1.5;
+}

@@ -1,0 +1,526 @@
+{# Settings #}
+{% set root = "../../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-forms-horizontal-unify" %}
+{% set title = "Unify Horizontal Forms" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/themify-icons/themify-icons.css">
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <!-- Horizontal Forms -->
+    <section class="container g-py-100">
+      <!-- Heading -->
+      <header class="g-mb-80">
+        <div class="u-heading-v6-2 text-uppercase">
+          <h2 class="h4 u-heading-v6__title g-font-weight-300">Horizontal Forms</h2>
+        </div>
+
+        <div class="g-pl-90">
+          <p>Unify's form controls extend on
+            <a href="#!">Bootstrap forms</a>
+            with classes. In all examples,
+            <code>.form-control-md</code> class is used to change Bootstrap's default form size. Also, all form styles can be extended with Unify's global classes.
+          </p>
+        </div>
+      </header>
+      <!-- End Heading -->
+
+      <!-- General Forms -->
+
+      <!-- Horizontal Forms -->
+      <div class="row">
+        <div class="col-md-2">
+          <h3 class="h4 g-font-weight-300">General Forms</h3>
+        </div>
+
+        <div class="col-md-10">
+          <div id="shortcode1">
+            <div class="shortcode-html">
+              <!-- General Forms -->
+              <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                <!-- Text Input -->
+                <div class="form-group row g-mb-25">
+                  <label class="col-sm-3 col-form-label g-mb-10" for="hf-email">Text input</label>
+
+                  <div class="col-sm-9">
+                    <input id="hf-email" class="form-control u-form-control rounded-0" type="email" placeholder="Enter email">
+                    <small class="form-text text-muted g-font-size-default g-mt-10">We'll never share your email with anyone else.</small>
+                  </div>
+                </div>
+                <!-- End Text Input -->
+
+                <!-- Input with Autocomplete -->
+                <div class="form-group row g-mb-25">
+                  <label class="col-sm-3 col-form-label g-mb-10" for="autocomplete2">Input with autocomplete</label>
+
+                  <div class="col-sm-9">
+                    <input id="autocomplete2" class="form-control form-control-md rounded-0" type="text" data-url="{{ root }}assets/include/ajax/autocomplete-data-1.json">
+                    <small class="form-text text-muted g-font-size-default g-mt-10">
+                      <strong>Note:</strong> works in Chrome, Firefox, Opera and above IE11.
+                    </small>
+                  </div>
+                </div>
+                <!-- End Input with Autocomplete -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <h4 class="h6 g-font-weight-700 g-mb-20">Appended icon(s)</h4>
+
+                <!-- Text Input with Right Appended Icon -->
+                <div class="form-group row g-mb-25">
+                  <label class="col-sm-3 col-form-label g-mb-10">Right appended icon</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <input class="form-control form-control-md border-right-0 rounded-0 pr-0" type="text" placeholder="Ipsum Aenean Porta">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-equalizer"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Text Input with Right Appended Icon -->
+
+                <!-- Text Input with Left Appended Icon -->
+                <div class="form-group row g-mb-25">
+                  <label class="col-sm-3 col-form-label g-mb-10">Left appended icon</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user-follow"></i></span>
+                      </div>
+                      <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="text" placeholder="Cras Ullamcorper Nibh">
+                    </div>
+                  </div>
+                </div>
+                <!-- End Text Input with Left Appended Icon -->
+
+                <!-- Text Input with Both Appended Icon -->
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label g-mb-10">Both appended icons</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user"></i></span>
+                      </div>
+                      <input class="form-control form-control-md border-left-0 border-right-0 rounded-0 px-0" type="text" placeholder="Epsum Aenean Porta">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-lock"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Text Input with Both Appended Icon -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <h4 class="h6 g-font-weight-700 g-mb-20">Appended icon(s) with border</h4>
+
+                <!-- Text Input with Right Appended Icon -->
+                <div class="form-group row g-mb-25">
+                  <label class="col-sm-3 col-form-label g-mb-10">Right appended icon</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <input class="form-control form-control-md rounded-0" type="text" placeholder="Ipsum Aenean Porta">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-equalizer"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Text Input with Right Appended Icon -->
+
+                <!-- Text Input with Left Appended Icon -->
+                <div class="form-group row g-mb-25">
+                  <label class="col-sm-3 col-form-label g-mb-10">Left appended icon</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user"></i></span>
+                      </div>
+                      <input class="form-control form-control-md rounded-0" type="text" placeholder="Cras Ullamcorper Nibh">
+                    </div>
+                  </div>
+                </div>
+                <!-- End Text Input with Left Appended Icon -->
+
+                <!-- Text Input with Both Appended Icon -->
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label g-mb-10">Both appended icons</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user-follow"></i></span>
+                      </div>
+                      <input class="form-control form-control-md rounded-0" type="text" placeholder="Epsum Aenean Porta">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-lock"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Text Input with Both Appended Icon -->
+              </form>
+              <!-- End General Forms -->
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- jQuery UI Core -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/jquery-ui.core.js"></script>
+
+              <!-- jQuery UI Helpers -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+              <!-- jQuery UI Widgets -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.autocomplete.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of forms
+                  $.HSCore.helpers.HSFocusState.init();
+                });
+
+                $(window).on('load', function () {
+                  // initialization of autocomplet
+                  $.HSCore.components.HSAutocomplete.init('#autocomplete2');
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode1" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </div>
+      <!-- End General Forms -->
+
+      <hr class="g-brd-gray-light-v4 g-my-50">
+
+      <!-- Textareas -->
+      <div class="row">
+        <div class="col-md-2">
+          <h3 class="h4 g-font-weight-300">Textareas</h3>
+        </div>
+
+        <div class="col-md-10">
+          <div id="shortcode2">
+            <div class="shortcode-html">
+              <!-- Textareas -->
+              <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                <!-- Textarea -->
+                <div class="form-group row g-mb-30">
+                  <label class="col-sm-3 g-mb-10" for="inputGroup2_1">Textarea</label>
+                  <div class="col-sm-9">
+                    <textarea id="inputGroup2_1" class="form-control form-control-md g-resize-none rounded-0" rows="3" placeholder="Text area"></textarea>
+                    <small class="form-text text-muted g-font-size-default g-mt-10">
+                      <strong>Note:</strong> height of the textarea depends on the rows attribute.
+                    </small>
+                  </div>
+                </div>
+                <!-- End Textarea -->
+
+                <!-- Textarea Resizable -->
+                <div class="form-group row g-mb-30">
+                  <label class="col-sm-3 g-mb-10" for="inputGroup2_2">Textarea resizable</label>
+                  <div class="col-sm-9">
+                    <textarea id="inputGroup2_2" class="form-control form-control-md rounded-0" rows="3" placeholder="Text area"></textarea>
+                  </div>
+                </div>
+                <!-- End Textarea Resizable -->
+
+                <!-- Textarea Expandable -->
+                <div class="form-group row g-mb-20">
+                  <label class="col-sm-3 g-mb-10" for="inputGroup2_2">Textarea expandable</label>
+                  <div class="col-sm-9">
+                    <textarea id="inputGroup2_3" class="form-control form-control-md u-textarea-expandable rounded-0" rows="3" placeholder="Text area"></textarea>
+                    <small class="form-text text-muted g-font-size-default g-mt-10">
+                      <strong>Note:</strong> expands on focus.
+                    </small>
+                  </div>
+                </div>
+                <!-- End Textarea Expandable -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <h4 class="h6 g-font-weight-700 g-mb-20">Appended icon(s)</h4>
+
+                <!-- Textarea Input with Right Appended Icon -->
+                <div class="form-group row g-mb-30">
+                  <label class="col-sm-3 g-mb-10">Right appended icon</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <textarea class="form-control form-control-md border-right-0 g-resize-none rounded-0 pr-0" rows="4" placeholder="Ipsum Aenean Porta"></textarea>
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-equalizer"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Right Appended Icon -->
+
+                <!-- Textarea Input with Left Appended Icon -->
+                <div class="form-group row g-mb-30">
+                  <label class="col-sm-3 g-mb-10">Left prepended icon</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user"></i></span>
+                      </div>
+                      <textarea class="form-control form-control-md border-left-0 g-resize-none rounded-0 pl-0" rows="4" placeholder="Cras Ullamcorper Nibh"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Left Appended Icon -->
+
+                <!-- Textarea Input with Both Appended Icon -->
+                <div class="form-group row g-mb-30">
+                  <label class="col-sm-3 g-mb-10">Both prepended icon</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user-following"></i></span>
+                      </div>
+                      <textarea class="form-control form-control-md g-resize-none border-left-0 border-right-0 rounded-0 px-0" rows="4" placeholder="Inceptos Fusce"></textarea>
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-lock"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Both Appended Icon -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+
+                <h4 class="h6 g-font-weight-700 g-mb-20">Appended icon(s) with border</h4>
+
+                <!-- Textarea Input with Right Appended Icon -->
+                <div class="form-group row g-mb-30">
+                  <label class="col-sm-3 g-mb-10">Right appended icon</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <textarea class="form-control form-control-md g-resize-none rounded-0" rows="4" placeholder="Ipsum Aenean Porta"></textarea>
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-equalizer"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Right Appended Icon -->
+
+                <!-- Textarea Input with Left Appended Icon -->
+                <div class="form-group row g-mb-30">
+                  <label class="col-sm-3 g-mb-10">Left prepended icon</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user"></i></span>
+                      </div>
+                      <textarea class="form-control form-control-md g-resize-none rounded-0" rows="4" placeholder="Cras Ullamcorper Nibh"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Left Appended Icon -->
+
+                <!-- Textarea Input with Both Appended Icon -->
+                <div class="form-group row mb-0">
+                  <label class="col-sm-3 g-mb-10">Both prepended icon</label>
+                  <div class="col-sm-9">
+                    <div class="input-group g-brd-primary--focus">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-user-following"></i></span>
+                      </div>
+                      <textarea class="form-control form-control-md g-resize-none rounded-0" rows="4" placeholder="Inceptos Fusce"></textarea>
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-lock"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Textarea Input with Both Appended Icon -->
+              </form>
+              <!-- End Textareas -->
+
+              <!-- Horizontal Forms -->
+              <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
+                <!-- Text Input -->
+                <div class="form-group row g-mb-20">
+                  <label class="col-sm-3 col-form-label g-mb-10" for="hf-email">Text input</label>
+
+                  <div class="col-sm-9">
+                    <input id="hf-email-2" class="form-control u-form-control rounded-0" type="email" placeholder="Enter email">
+                    <small class="form-text text-muted g-font-size-default g-mt-10">We'll never share your email with anyone else.</small>
+                  </div>
+                </div>
+                <!-- End Text Input -->
+
+                <!-- Input with Autocomplete -->
+                <div class="form-group row g-mb-20">
+                  <label class="col-sm-3 col-form-label g-mb-10" for="autocomplete3">Input with autocomplete</label>
+
+                  <div class="col-sm-9">
+                    <input id="autocomplete3" class="form-control form-control-md rounded-0" type="text" data-url="{{ root }}assets/include/ajax/autocomplete-data-1.json">
+                    <small class="form-text text-muted g-font-size-default g-mt-10">
+                      <strong>Note:</strong> works in Chrome, Firefox, Opera and above IE11.
+                    </small>
+                  </div>
+                </div>
+                <!-- End Input with Autocomplete -->
+
+                <hr class="g-brd-gray-light-v4 g-mx-minus-30">
+              </form>
+              <!-- End Horizontal Forms -->
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link type="text/plain" rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- JS Implementing Plugins -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui.core.min.js"></script>
+
+              <!-- jQuery UI Helpers -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+              <!-- jQuery UI Widgets -->
+              <script type="text/plain" src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+              <!-- JS Unify -->
+              <script type="text/plain" src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+              <script type="text/plain" src="{{ root }}assets/js/components/hs.autocomplete.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script type="text/plain">
+                $(document).on('ready', function () {
+                  // initialization of forms
+                  $.HSCore.helpers.HSFocusState.init();
+                });
+
+                $(window).on('load', function () {
+                  // initialization of autocomplet
+                  $.HSCore.components.HSAutocomplete.init('#autocomplete3');
+                });
+              </script>
+            </div>
+          </div>
+
+          {% set contentTarget = "#shortcode2" %}
+          {% set modalID = "#modalMarkup" %}
+          {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+        </div>
+      </div>
+      <!-- End Textareas -->
+    </section>
+    <!-- End General Forms -->
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/helpers/hs.focus-state.js"></script>
+  <script src="{{ root }}assets/js/components/hs.autocomplete.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of forms
+      $.HSCore.helpers.HSFocusState.init();
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      $.HSCore.components.HSAutocomplete.init('#autocomplete2, #autocomplete3');
+
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

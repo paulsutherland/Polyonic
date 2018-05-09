@@ -1,0 +1,2533 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-base-badges" %}
+{% set title = "Badges" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-base.njk" %}
+
+    <section class="container">
+      <!-- Badge's Types -->
+      <section class="g-pt-100">
+        <!-- Heading -->
+        <header class="g-mb-80">
+          <div class="u-heading-v6-2  text-uppercase">
+            <h2 class="h4 u-heading-v6__title g-font-weight-300">Badge's Types</h2>
+          </div>
+
+          <div class="g-line-height-2 g-pl-90">
+            <p>Add a class
+              <code>.u-badge-v*</code> to make basic badge. The margin spacing might be any but for the all badges examples the following margin spacing classes are used
+              <code>g-mr-10</code> and <code>g-mb-10</code>.</p>
+          </div>
+        </header>
+        <!-- End Heading -->
+
+        <!-- Default -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Default</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode1">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode1" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Default -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Rounded -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Rounded</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode1-2">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-3">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-3">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-3">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-3">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-3">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-3">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-3">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-3">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-3">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-3">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode1-2" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Rounded -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Rounded (50x) -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Rounded (circle)</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode1-3">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode1-3" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Rounded (50x) -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Text Shadow -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Text Shadow</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode1-5">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">12</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">7</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">M</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">3</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">151</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">W</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">14</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">243</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">1</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">P</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode1-5" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Text Shadow -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Icons -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Icons</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode1-6">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-font-size-11">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-font-size-11">
+                    <i class="fa fa-life-ring"></i>
+                  </span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-font-size-11">
+                    <i class="fa fa-bell"></i>
+                  </span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-font-size-11">
+                    <i class="fa fa-address-book"></i>
+                  </span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-font-size-11">
+                    <i class="fa fa-address-card"></i>
+                  </span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-font-size-11">
+                    <i class="fa fa-anchor"></i>
+                  </span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-font-size-11">
+                    <i class="fa fa-link"></i>
+                  </span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-font-size-11">
+                    <i class="fa fa-language"></i>
+                  </span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-font-size-11">
+                    <i class="fa fa-area-chart"></i>
+                  </span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-font-size-11">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode1-6" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Icons -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Images -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Images</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode1-7">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img5.jpg);"></span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img6.jpg);"></span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode1-7" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Images -->
+      </section>
+      <!-- End Badge's Types -->
+
+      <hr class="g-brd-gray-light-v4 g-my-60">
+
+      <!-- Badge's Positions -->
+      <section>
+        <!-- Heading -->
+        <header class="g-mb-80">
+          <div class="u-heading-v6-2  text-uppercase">
+            <h2 class="h4 u-heading-v6__title g-font-weight-300">Badge's Positions</h2>
+          </div>
+
+          <div class="g-line-height-2 g-pl-90">
+            <p>Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl. In hac habitasse platea dictumst. Curabitur hendrerit.</p>
+          </div>
+        </header>
+        <!-- End Heading -->
+
+        <!-- Top Left -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Top Left</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode2">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--top-left">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--top-left">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--top-left">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--top-left">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--top-left">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--top-left">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--top-left">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--top-left">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--top-left">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--top-left">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode2" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Top Left -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Top Right -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Top Right</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode2-2">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode2-2" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Top Right -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Bottom Left -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Bottom Left</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode2-3">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-left">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-left">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-left">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-left">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-left">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-left">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-left">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-left">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-left">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-left">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode2-3" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Bottom Left -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Bottom Right -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Bottom Right</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode2-4">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-right">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-right">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-right">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-right">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-right">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-right">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-right">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-right">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-right">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 u-badge--bottom-right">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode2-4" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Bottom Right -->
+      </section>
+      <!-- End Badge's Positions -->
+
+      <hr class="g-brd-gray-light-v4 g-my-60">
+
+      <!-- Colored Badges -->
+      <section>
+        <!-- Heading -->
+        <header class="g-mb-80">
+          <div class="u-heading-v6-2  text-uppercase">
+            <h2 class="h4 u-heading-v6__title g-font-weight-300">Colored Badges</h2>
+          </div>
+
+          <div class="g-line-height-2 g-pl-90">
+            <p>Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl. In hac habitasse platea dictumst. Curabitur hendrerit.</p>
+          </div>
+        </header>
+        <!-- End Heading -->
+
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Default Color</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode3">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode3" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Primary Color</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode3-2">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode3-2" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Red Color</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode3-3">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode3-3" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Colored Badges -->
+      </section>
+      <!-- End Colored Badges -->
+
+      <hr class="g-brd-gray-light-v4 g-my-60">
+
+      <!-- Bordered Badges -->
+      <section>
+        <!-- Heading -->
+        <header class="g-mb-80">
+          <div class="u-heading-v6-2  text-uppercase">
+            <h2 class="h4 u-heading-v6__title g-font-weight-300">Bordered Badges</h2>
+          </div>
+
+          <div class="g-line-height-2 g-pl-90">
+            <p>Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl. In hac habitasse platea dictumst. Curabitur hendrerit.</p>
+          </div>
+        </header>
+        <!-- End Heading -->
+
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Border width: 1px</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode4">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-brd-around g-brd-white">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-brd-around g-brd-white">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-brd-around g-brd-white">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-brd-around g-brd-white">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-brd-around g-brd-white">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-brd-around g-brd-white">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-brd-around g-brd-white">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-brd-around g-brd-white">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-brd-around g-brd-white">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-rounded-50x g-brd-around g-brd-white">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode4" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Border width: 2px</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode4-2">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x g-brd-around g-brd-white g-brd-2">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x g-brd-around g-brd-white g-brd-2">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x g-brd-around g-brd-white g-brd-2">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x g-brd-around g-brd-white g-brd-2">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x g-brd-around g-brd-white g-brd-2">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x g-brd-around g-brd-white g-brd-2">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x g-brd-around g-brd-white g-brd-2">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x g-brd-around g-brd-white g-brd-2">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x g-brd-around g-brd-white g-brd-2">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-primary g-rounded-50x g-brd-around g-brd-white g-brd-2">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode4-2" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Border width: 3px</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode4-3">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white g-brd-3">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white g-brd-3">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white g-brd-3">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white g-brd-3">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white g-brd-3">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white g-brd-3">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white g-brd-3">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white g-brd-3">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white g-brd-3">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white g-brd-3">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode4-3" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Colored Badges -->
+      </section>
+      <!-- End Bordered Badges -->
+
+      <hr class="g-brd-gray-light-v4 g-my-60">
+
+      <!-- Different Usages -->
+      <section>
+        <!-- Heading -->
+        <header class="g-mb-80">
+          <div class="u-heading-v6-2  text-uppercase">
+            <h2 class="h4 u-heading-v6__title g-font-weight-300">Different Usages</h2>
+          </div>
+
+          <div class="g-line-height-2 g-pl-90">
+            <p>Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl. In hac habitasse platea dictumst. Curabitur hendrerit.</p>
+          </div>
+        </header>
+        <!-- End Heading -->
+
+        <!-- Badges with another type of icons -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Badges with another type of icons</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode5">
+              <div class="shortcode-html">
+                <a class="u-icon-v2 g-brd-facebook g-color-facebook g-color-facebook--hover g-rounded-50x g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-mt-5 g-mr-5">22</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v2 g-brd-twitter g-color-twitter g-color-twitter--hover g-rounded-50x g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-mt-5 g-mr-5">12</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v2 g-brd-pinterest g-color-pinterest g-color-pinterest--hover g-rounded-50x g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-mt-5 g-mr-5">42</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v2 g-brd-instagram g-color-instagram g-color-instagram--hover g-rounded-50x g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-mt-5 g-mr-5">6</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v2 g-brd-youtube g-color-youtube g-color-youtube--hover g-rounded-50x g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-mt-5 g-mr-5">9</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v2 g-brd-skype g-color-skype g-color-skype--hover g-rounded-50x g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-mt-5 g-mr-5">16</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v2 g-brd-google-plus g-color-google-plus g-color-google-plus--hover g-rounded-50x g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-mt-5 g-mr-5">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v2 g-brd-vk g-color-vk g-color-vk--hover g-rounded-50x g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-mt-5 g-mr-5">20</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v2 g-brd-dribbble g-color-dribbble g-color-dribbble--hover g-rounded-50x g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-mt-5 g-mr-5">23</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v2 g-brd-linkedin g-color-linkedin g-color-linkedin--hover g-rounded-50x g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-mt-5 g-mr-5">11</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode5" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Badges with another type of icons -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Badges with buttons -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Badges with buttons</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode5-2">
+              <div class="shortcode-html">
+                <a href="#!" class="btn btn-md u-btn-primary g-mr-15 g-mb-15">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white">14</span>
+                  Primary
+                </a>
+                <a href="#!" class="btn btn-md u-btn-red g-mr-15 g-mb-15">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white">1</span>
+                  Red
+                </a>
+                <a href="#!" class="btn btn-md u-btn-lightred g-mr-15 g-mb-15">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white">32</span>
+                  Light Red
+                </a>
+                <a href="#!" class="btn btn-md u-btn-darkred g-mr-15 g-mb-15">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white">8</span>
+                  Dark Red
+                </a>
+                <a href="#!" class="btn btn-md u-btn-blue g-mr-15 g-mb-15">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white">11</span>
+                  Blue
+                </a>
+                <a href="#!" class="btn btn-md u-btn-indigo g-mr-15 g-mb-15">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white">0</span>
+                  Indigo
+                </a>
+                <a href="#!" class="btn btn-md u-btn-purple g-mr-15 g-mb-15">
+                  <span class="u-badge-v1 g-color-white g-bg-red g-rounded-50x g-brd-around g-brd-white">23</span>
+                  Purple
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode5-2" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Badges with buttons -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Badges with Images -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Badges with Images</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div id="shortcode5-3">
+              <div class="shortcode-html">
+                <span class="d-inline-block g-pos-rel g-mr-30 g-mb-30">
+                  <span class="u-badge-v1 g-bg-primary g-color-white g-rounded-50x g-mt-5 g-mr-5">22</span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-30 g-mb-30">
+                  <span class="u-badge-v1 g-bg-primary g-color-white g-rounded-50x g-mt-5 g-mr-5">4</span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/100x100/img16.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-30 g-mb-30">
+                  <span class="u-badge-v1 g-bg-primary g-color-white g-rounded-50x g-mt-5 g-mr-5">9</span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-30 g-mb-30">
+                  <span class="u-badge-v1 g-bg-primary g-color-white g-rounded-50x g-mt-5 g-mr-5">18</span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-30 g-mb-30">
+                  <span class="u-badge-v1 g-bg-primary g-color-white g-rounded-50x g-mt-5 g-mr-5">2</span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                </span>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode5-3" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Badges with Images -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Badge as an Indicator -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Badge as an Indicator</h3>
+            <p>The Badge as an Indicator Badges style uses the <code>u-badge-indicator</code> class.</p>
+          </div>
+
+          <div class="col-md-9 g-mb-60">
+            <div id="shortcode5-4">
+              <div class="shortcode-html">
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs g-mt-7 g-mr-7"></span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/200x200/img1.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs u-badge--top-left g-bg-red g-mt-7 g-ml-7"></span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs u-badge--bottom-right g-mb-7 g-mr-7"></span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/200x200/img4.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs u-badge--bottom-left g-bg-yellow g-mb-7 g-ml-7"></span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/200x200/img3.jpg" alt="Image Description">
+                </span>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode5-4" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto g-mb-60">
+            <div id="shortcode5-5">
+              <div class="shortcode-html">
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs"></span>
+                  <img class="media-object u-image-icon-size-md" src="../../assets/img-temp/200x200/img5.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs u-badge--top-left g-bg-red"></span>
+                  <img class="media-object u-image-icon-size-md" src="../../assets/img-temp/200x200/img4.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs u-badge--bottom-right"></span>
+                  <img class="media-object u-image-icon-size-md" src="../../assets/img-temp/200x200/img2.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs u-badge--bottom-left g-bg-yellow"></span>
+                  <img class="media-object u-image-icon-size-md" src="../../assets/img-temp/200x200/img3.jpg" alt="Image Description">
+                </span>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode5-5" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto">
+            <div id="shortcode5-6">
+              <div class="shortcode-html">
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs g-brd-around g-brd-white g-mt-7 g-mr-7"></span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs u-badge--top-left g-bg-red g-brd-around g-brd-white g-mt-7 g-ml-7"></span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/100x100/img16.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs u-badge--bottom-right g-brd-around g-brd-white g-mb-7 g-mr-7"></span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                </span>
+                <span class="d-inline-block g-pos-rel g-mr-20 g-mb-20">
+                  <span class="u-badge-v2--xs u-badge--bottom-left g-bg-yellow g-brd-around g-brd-white g-mb-7 g-ml-7"></span>
+                  <img class="media-object g-rounded-50x u-image-icon-size-md" src="../../assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                </span>
+              </div>
+            </div>
+
+            {% set contentTarget = "#shortcode5-6" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Badge as an Indicator -->
+      </section>
+      <!-- End Different Usages -->
+
+      <hr class="g-brd-gray-light-v4 g-my-60">
+
+      <!-- Badge's Sizes -->
+      <section class="g-pb-100">
+        <!-- Heading -->
+        <header class="g-mb-80">
+          <div class="u-heading-v6-2  text-uppercase">
+            <h2 class="h4 u-heading-v6__title g-font-weight-300">Badge's Sizes</h2>
+          </div>
+
+          <div class="g-line-height-2 g-pl-90">
+            <p>Nulla ipsum dolor sit amet, consectetur adipiscing elitut eleifend nisl. In hac habitasse platea dictumst. Curabitur hendrerit.</p>
+          </div>
+        </header>
+        <!-- End Heading -->
+
+        <!-- Extra Small -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Extra Small (xs)</h3>
+          </div>
+
+          <div class="col-md-9 g-mb-60">
+            <div id="shortcode6">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto g-mb-60">
+            <div id="shortcode6-2">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xs"></span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xs"></span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xs"></span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xs"></span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xs"></span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xs"></span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xs"></span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xs"></span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xs"></span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xs"></span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-2" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto g-mb-60">
+            <div id="shortcode6-3">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xs">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xs">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xs">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xs">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xs">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xs">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xs">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xs">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xs">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xs">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-3" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto">
+            <div id="shortcode6-4">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img5.jpg);"></span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img6.jpg);"></span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xs g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-4" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Extra Small -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Small -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Small (sm)</h3>
+          </div>
+
+          <div class="col-md-9 g-mb-60">
+            <div id="shortcode6-5">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-5" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto g-mb-60">
+            <div id="shortcode6-6">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--sm"></span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--sm"></span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--sm"></span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--sm"></span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--sm"></span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--sm"></span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--sm"></span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--sm"></span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--sm"></span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--sm"></span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-6" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto g-mb-60">
+            <div id="shortcode6-7">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--sm">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--sm">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--sm">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--sm">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--sm">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--sm">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--sm">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--sm">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--sm">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--sm">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-7" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto">
+            <div id="shortcode6-8">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img5.jpg);"></span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img6.jpg);"></span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--sm g-bg-img-hero g-rounded-50x g-brd-around g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-8" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Small -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Default -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Default</h3>
+          </div>
+
+          <div class="col-md-9 g-mb-60">
+            <div id="shortcode6-9">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-9" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto g-mb-60">
+            <div id="shortcode6-10">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2"></span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2"></span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2"></span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2"></span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2"></span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2"></span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2"></span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2"></span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2"></span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2"></span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-10" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto g-mb-60">
+            <div id="shortcode6-11">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-11" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto">
+            <div id="shortcode6-12">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img5.jpg);"></span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img6.jpg);"></span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1 g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-12" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Default -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Large -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Large (lg)</h3>
+          </div>
+
+          <div class="col-md-9 g-mb-60">
+            <div id="shortcode6-13">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-13" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto g-mb-60">
+            <div id="shortcode6-14">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--lg"></span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--lg"></span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--lg"></span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--lg"></span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--lg"></span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--lg"></span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--lg"></span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--lg"></span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--lg"></span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--lg"></span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-14" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto g-mb-60">
+            <div id="shortcode6-15">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--lg">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--lg">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--lg">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--lg">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--lg">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--lg">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--lg">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--lg">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--lg">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--lg">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-15" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto">
+            <div id="shortcode6-16">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img5.jpg);"></span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img6.jpg);"></span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--lg g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-16" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Large -->
+
+        <hr class="g-brd-gray-light-v4 g-my-60">
+
+        <!-- Extra Large -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="h4 g-font-weight-300 g-mb-30">Extra Large (xl)</h3>
+          </div>
+
+          <div class="col-md-9 g-mb-60">
+            <div id="shortcode6-17">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-17" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto g-mb-60">
+            <div id="shortcode6-18">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xl"></span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xl"></span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xl"></span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xl"></span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xl"></span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xl"></span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xl"></span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xl"></span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xl"></span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v2--xl"></span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-18" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto g-mb-60">
+            <div id="shortcode6-19">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xl">4</span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xl">33</span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xl">33</span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xl">33</span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xl">33</span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xl">33</span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xl">33</span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xl">33</span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xl">33</span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v3--xl">33</span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-19" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+
+          <div class="col-md-9 ml-md-auto">
+            <div id="shortcode6-20">
+              <div class="shortcode-html">
+                <a class="u-icon-v3 g-bg-facebook g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-twitter g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-pinterest g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-instagram g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-youtube g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img5.jpg);"></span>
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-skype g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img6.jpg);"></span>
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-google-plus g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-vk g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img16.jpg);"></span>
+                  <i class="fa fa-vk"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-dribbble g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img14.jpg);"></span>
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a class="u-icon-v3 g-bg-linkedin g-color-white g-color-white--hover g-mr-20 g-mb-20" href="#!">
+                  <span class="u-badge-v1--xl g-bg-img-hero g-rounded-50x g-brd-around g-brd-2 g-brd-white" style="background-image: url({{ root }}assets/img-temp/100x100/img4.jpg);"></span>
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            {% set SCExtendedClasses = "text-center" %}
+            {% set contentTarget = "#shortcode6-20" %}
+            {% set modalID = "#modalMarkup" %}
+            {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+          </div>
+        </div>
+        <!-- End Extra Large -->
+      </section>
+      <!-- End Badge's Sizes -->
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

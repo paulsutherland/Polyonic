@@ -1,0 +1,19 @@
+/*------------------------------------
+  Tables Editable v1
+------------------------------------*/
+
+.u-editable-table--v1 {
+  input[type="text"] {
+    font-weight: 300;
+    border: 1px solid $g-color-gray-light-v7;
+    border-radius: 4px;
+    box-shadow: none;
+    @include px-to-rem(padding, 10px 20px);
+    transition: border-color .2s ease-in;
+
+    &:focus {
+      outline: 0 none;
+      border-color: $g-color-lightblue-v3;
+    }
+  }
+}

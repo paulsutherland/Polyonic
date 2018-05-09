@@ -1,0 +1,25 @@
+/*------------------------------------
+  Rating v1
+------------------------------------*/
+
+.u-rating-v1 {
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  > * {
+    float: left;
+    list-style: none;
+    cursor: pointer;
+
+    transition: {
+      property: color;
+      duration: .2s;
+      timing-function: ease;
+    }
+
+    & + * {
+      padding-left: 6px;
+    }
+  }
+}

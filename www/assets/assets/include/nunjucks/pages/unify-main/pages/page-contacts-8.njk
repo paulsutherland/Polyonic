@@ -1,0 +1,152 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "pages" %}
+{% set mainNavActive_2 = "pages-contacts" %}
+{% set mainNavActive_3 = "page-contacts-8" %}
+{% set title = "Contacts 8 | " %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+    {% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+    {% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+    {% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+  </head>
+
+  <body>
+    <main>
+      {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+      <!-- Contacts -->
+      <section class="container g-pt-100 g-pb-40">
+        <div class="row justify-content-between no-gutters">
+          <div class="col-lg-6 g-mb-60">
+            <div class="mb-5">
+              <h2 class="h1 g-color-black g-font-weight-700 g-line-height-1_2 mb-4">Contact<br>Htmlstream</h2>
+              <p class="lead mb-0">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+            </div>
+
+            <!-- Google Map -->
+            <div class="g-brd-around g-brd-gray-light-v4 g-pa-10 mb-5">
+              <div id="GMapCustomized-light" class="js-g-map embed-responsive embed-responsive-21by9 g-height-300"
+                   data-type="custom"
+                   data-lat="40.674"
+                   data-lng="-73.946"
+                   data-zoom="12"
+                   data-title="Agency"
+                   data-styles='[["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]], ["", "labels", [{"visibility":"on"}]], ["water", "", [{"color":"#bac6cb"}]] ]'
+                   data-pin="true"
+                   data-pin-icon="{{ root }}assets/img/icons/pin/green.png">
+              </div>
+            </div>
+            <!-- End Google Map -->
+
+            <div class="media">
+              <h3 class="d-flex g-color-black g-font-weight-600 g-font-size-default mr-4">Office hours:</h3>
+              <div class="media-body">
+                <p class="g-color-gray-dark-v4 g-font-size-12 mb-1">Monday - Friday: 09:00 AM - 06:00 PM</p>
+                <p class="g-color-gray-dark-v4 g-font-size-12 mb-1">Closed on Sunday &amp; Holidays</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 d-flex align-items-end g-min-height-600 g-bg-cover g-bg-size-cover g-bg-white-gradient-opacity-v2--after g-mb-60" data-bg-img-src="{{ root }}assets/img-temp/600x700/img1.jpg">
+            <div class="w-100 text-center g-pos-rel g-z-index-1 g-pa-20 g-pa-50--sm mt-auto">
+              <div class="g-mb-30">
+                <h2 class="g-color-white g-font-weight-600">Berlin, <span class="g-color-primary">Germany</span></h2>
+                <p class="g-color-white-opacity-0_8">Unit 25 Suite 3, 925 Prospect PI,<br>Beach Resort, 23001</p>
+              </div>
+
+              <div class="g-mb-30">
+                <h3 class="g-color-primary g-font-weight-600 g-font-size-12 text-uppercase">Phone number</h3>
+                <span class="g-color-white g-font-size-20">+01 (0) 333 444 55</span>
+              </div>
+
+              <h3 class="g-color-primary g-font-weight-600 g-font-size-12 text-uppercase mb-3">Special deals</h3>
+              <div class="input-group">
+                <input class="form-control g-rounded-left-50 border-0 g-pl-20 g-pr-15" type="email" placeholder="Your email">
+                <div class="input-group-btn">
+                  <button class="btn u-btn-primary g-font-size-11 text-uppercase g-rounded-right-50 g-px-20 g-py-15" type="submit">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contacts -->
+
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+    </main>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/helpers/outer-spaces-helper.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="{{ root }}assets/vendor/gmaps/gmaps.min.js"></script>
+
+    <!-- JS Unify -->
+    <script src="{{ root }}assets/js/hs.core.js"></script>
+    <script src="{{ root }}assets/js/components/hs.header.js"></script>
+    <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="{{ root }}assets/js/components/hs.tabs.js"></script>
+    <script src="{{ root }}assets/js/components/gmap/hs.map.js"></script>
+    <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="{{ root }}assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      // initialization of google map
+      function initMap() {
+        $.HSCore.components.HSGMap.init('.js-g-map');
+      }
+
+      $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+    </script>
+
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async defer></script>
+
+    {% set SSCookiePrefix = "unify" %}
+    {% set SSDefaultCustomColor = "#72c02c" %}
+    {% set SSDefaultOuterSpaces = "0px" %}
+    {% set SSDefaultContentFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% set SSDefaultHeadingFont = "Open Sans, Helvetica, Arial, sans-serif" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/style-switcher.njk" %}
+  </body>
+</html>

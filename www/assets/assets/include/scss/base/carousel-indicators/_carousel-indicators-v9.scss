@@ -1,0 +1,55 @@
+/*------------------------------------
+  Carousel indicators v9
+------------------------------------*/
+
+.u-carousel-indicators-v9 {
+  padding-left: 0;
+
+  li {
+    display: block;
+    color: $g-color-black;
+    text-transform: uppercase;
+    background-color: $g-color-gray-light-v1;
+    border-top: {
+      width: 0;
+      style: solid;
+      color: $g-color-white;
+    }
+    vertical-align: top;
+    cursor: pointer;
+    padding: 10px;
+
+    & + li {
+      border-top-width: 1px;
+    }
+
+    &.slick-active {
+      color: $g-color-white;
+      background-color: $g-color-primary;
+    }
+  }
+}
+
+@media (min-width: $g-sm) {
+  .u-carousel-indicators-v9 {
+    li {
+      display: table-cell;
+      width: 1%;
+      border: {
+        width: 1px;
+        style: solid;
+        color: $g-color-white;
+        left-width: 0;
+        right-width: 0;
+      }
+      float: none;
+      vertical-align: top;
+      cursor: pointer;
+      padding: 10px;
+
+      & + li {
+        border-left-width: 1px;
+      }
+    }
+  }
+}

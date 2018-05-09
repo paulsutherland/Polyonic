@@ -1,0 +1,918 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set adminRoot = "../" %}
+{% set title = "Panel Variations" %}
+{% set layoutTheme = "dark" %}
+{% set isSubMenu6 = "unCollapsed" %}
+{% set activeMenuItem = "panel-variations" %}
+{% set breadcrumbs = [
+  {
+    breadcrumb: "Dashboard",
+    href: "#!"
+  }, {
+    breadcrumb: "Panels",
+    href: "#!"
+  }
+] %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/hs-admin-icons/hs-admin-icons.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/flatpickr/dist/css/flatpickr.min.css">
+
+<link rel="stylesheet" href="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.css">
+
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/admin-template/assets/include/nunjucks/partials/css/css-unify-admin.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body>
+<main>
+  {% include "html/admin-template/assets/include/nunjucks/partials/blocks/headers/header-fixed.njk" %}
+
+  <section class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel">
+      {% include "html/admin-template/assets/include/nunjucks/partials/blocks/sidebars/sidebar-static.njk" %}
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/breadcrumbs/breadcrumb-v1.njk" %}
+
+        <div class="g-pa-20">
+          <h1 class="g-font-weight-300 g-font-size-28 g-color-black g-mb-40">{{ title }}</h1>
+
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-px-15 g-px-30--sm g-pt-15 g-pt-25--sm pb-0">
+                  <div class="media">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <div id="rangePickerWrapper" class="d-flex align-self-center u-datepicker-right u-datepicker--v3 g-pr-10">
+                        <input id="rangeDatepicker" class="g-font-size-12 g-font-size-default--md" type="text" data-rp-wrapper="#rangePickerWrapper" data-rp-type="range" data-rp-date-format="d M Y" data-rp-default-date='["01 Jan 2016", "31 Dec 2017"]'>
+                        <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v6"></i>
+                      </div>
+
+                      <div class="align-self-center g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown1Invoker"
+                          class="u-link-v5 g-pos-rel g-top-4 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown1"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown1"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown1" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown1Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-brd-bottom-none g-px-15 g-px-30--sm g-pt-15 g-pt-20--sm g-pb-10 g-pb-15--sm">
+                  <div class="media">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <a class="hs-admin-panel u-link-v5 g-font-size-20 g-color-gray-light-v3 g-color-secondary--hover" href="#!"></a>
+                      <a class="hs-admin-reload u-link-v5 g-font-size-20 g-color-gray-light-v3 g-color-secondary--hover g-ml-20" href="#!"></a>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Background</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <div class="progress g-height-6 g-bg-gray-light-v8 g-rounded-3">
+                  <div class="progress-bar g-bg-darkblue-v2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-px-15 g-px-30--sm g-pt-15 g-pt-25--sm pb-0">
+                  <div class="media">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <div id="rangePickerWrapper2" class="d-flex align-self-center u-datepicker-right u-datepicker--v3 g-pr-10">
+                        <input id="rangeDatepicker2" class="g-font-size-12 g-font-size-default--md" type="text" data-rp-wrapper="#rangePickerWrapper2" data-rp-type="range" data-rp-date-format="d M Y" data-rp-default-date='["01 Jan 2016", "31 Dec 2017"]'>
+                        <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v6"></i>
+                      </div>
+
+                      <div class="align-self-center g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown2Invoker"
+                          class="u-link-v5 g-pos-rel g-top-4 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown2"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown2"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown2" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown2Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Panel with Progress bar</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+
+                <footer class="card-footer d-flex g-bg-transparent g-brd-top-none g-px-15 g-px-30--sm pt-0 g-pb-10 g-pb-20--sm">
+                  <div class="d-flex align-items-center g-color-gray-dark-v6">
+                    <i class="hs-admin-comments g-font-size-18 g-color-gray-light-v6"></i>
+                    <span class="g-ml-12">32</span>
+                  </div>
+
+                  <div class="d-flex align-items-center g-color-gray-dark-v6 g-ml-15 g-ml-30--sm">
+                    <i class="hs-admin-file g-font-size-18 g-color-gray-light-v6"></i>
+                    <span class="g-ml-12">24</span>
+                  </div>
+
+                  <div class="d-flex align-items-center g-color-gray-dark-v6 g-ml-15 g-ml-30--sm">
+                    <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6"></i>
+                    <span class="g-ml-12">18</span>
+                  </div>
+                </footer>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-px-15 g-px-30--sm g-pt-15 g-pt-25--sm pb-0">
+                  <div class="media">
+                    <div class="u-select--v1 g-line-height-1 g-bg-gray-light-v8 g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-color-lightblue-v3--hover g-rounded-15 g-pl-15 g-pr-40 g-py-10">
+                      <select class="js-select u-select--v1-select w-100" style="display: none;">
+                        <option
+                          data-content='<span class="d-flex align-items-center"><span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-darkblue-v2 g-mr-8--sm"></span><span class="g-hidden-sm-down g-line-height-1_2 g-color-black">Employees</span></span>'>Employees</option>
+                        <option
+                          data-content='<span class="d-flex align-items-center"><span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8--sm"></span><span class="g-hidden-sm-down g-line-height-1_2 g-color-black">Friends</span></span>'>Friends</option>
+                        <option data-content='<span class="d-flex align-items-center"><span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-teal-v2 g-mr-8--sm"></span><span class="g-hidden-sm-down g-line-height-1_2 g-color-black">Colleagues</span></span>'>Colleagues</option>
+                      </select>
+                      <i class="hs-admin-angle-down g-absolute-centered--y g-right-15 g-color-gray-light-v6"></i>
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-end">
+                      <a class="d-flex align-items-center u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-share g-font-size-18"></i>
+                        <span class="g-hidden-sm-down g-ml-10">Forward</span>
+                      </a>
+                      <a class="d-flex align-items-center u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-15--sm g-ml-30--xl" href="#!">
+                        <i class="hs-admin-brush-alt g-font-size-18"></i>
+                        <span class="g-hidden-sm-down g-ml-10">Mark as Spam</span>
+                      </a>
+                      <div class="align-self-center g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown3Invoker"
+                          class="u-link-v5 g-pos-rel g-top-4 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown3"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown3"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown3" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown3Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-px-15 g-px-30--sm g-pt-15 g-pt-25--sm pb-0">
+                  <div class="media">
+                    <div class="d-flex align-self-center g-pos-rel">
+                      <a
+                        class="d-flex align-items-center u-link-v5 g-parent g-width-100--sm g-line-height-1_2 g-font-size-default"
+                        href="#!"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        aria-controls="searchFirst"
+                        data-dropdown-target="#searchFirst"
+                        data-dropdown-type="css-animation"
+                        data-dropdown-duration="300"
+                        data-dropdown-animation-in="fadeInUp"
+                        data-dropdown-animation-out="fadeOutDown">
+                        <i class="hs-admin-search g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v3--parent-hover g-mr-10 g-mr-15--md"></i>
+                        <span class="g-color-gray-dark-v6 g-color-lightblue-v3--parent-hover">Search</span>
+                      </a>
+
+                      <form id="searchFirst" class="u-dropdown--css-animation u-dropdown--hidden g-pos-abs g-top-100x g-left-0 g-width-200 g-mt-8">
+                        <div class="input-group mb-0">
+                          <input class="form-control g-font-size-default w-100" type="search">
+                        </div>
+                      </form>
+                    </div>
+
+                    <h3 class="media-body d-flex align-self-center justify-content-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-px-10 mb-0">Panel title</h3>
+
+                    <div class="d-flex align-self-center justify-content-end g-width-100--sm">
+                      <div class="align-self-center g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown4Invoker"
+                          class="u-link-v5 g-pos-rel g-top-4 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown4"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown4"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown4" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown4Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block text-center g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Center align</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-px-15 g-px-30--sm g-pt-15 g-pt-25--sm pb-0">
+                  <div class="media">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-lightblue-v3 g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <div class="align-self-center g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown5Invoker"
+                          class="u-link-v5 g-pos-rel g-top-4 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown5"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown5"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown5" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown5Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Panel with Footer</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+
+                <footer class="card-footer g-bg-transparent g-brd-gray-light-v7 g-px-15 g-px-30--sm g-py-15 g-py-25--sm">
+                  <div class="d-flex align-items-center g-color-gray-dark-v6">
+                    <i class="hs-admin-check g-font-size-18 g-color-lightblue-v3"></i>
+                    <span class="g-ml-10">All Tasks Completed</span>
+                  </div>
+                </footer>
+              </div>
+              <!-- End Panel -->
+            </div>
+
+            <div class="col-md-6">
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-gray-light-v7 g-px-15 g-px-30--sm g-pt-15 g-pt-20--sm g-pb-10 g-pb-15--sm">
+                  <div class="media">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <a class="hs-admin-panel u-link-v5 g-font-size-20 g-color-gray-light-v3 g-color-secondary--hover" href="#!"></a>
+                      <a class="hs-admin-reload u-link-v5 g-font-size-20 g-color-gray-light-v3 g-color-secondary--hover g-ml-20" href="#!"></a>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Background</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-lightblue-v4 g-brd-bottom-none g-px-15 g-px-30--sm g-pt-15 g-pt-20--sm g-pb-10 g-pb-15--sm">
+                  <div class="media">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-white g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <a class="hs-admin-panel u-link-v5 g-font-size-20 g-color-white-opacity-0_7 g-color-white--hover" href="#!"></a>
+                      <a class="hs-admin-reload u-link-v5 g-font-size-20 g-color-white-opacity-0_7 g-color-white--hover g-ml-20" href="#!"></a>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Background</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <div class="progress g-height-6 g-bg-gray-light-v8 g-rounded-3">
+                  <div class="progress-bar g-bg-darkblue-v2" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <header class="card-header g-bg-transparent g-brd-gray-light-v7 g-px-15 g-px-30--sm g-pt-15 g-pt-20--sm g-pb-10 g-pb-15--sm">
+                  <div class="media">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <a class="hs-admin-panel u-link-v5 g-font-size-20 g-color-gray-light-v3 g-color-secondary--hover" href="#!"></a>
+                      <a class="hs-admin-reload u-link-v5 g-font-size-20 g-color-gray-light-v3 g-color-secondary--hover g-ml-20" href="#!"></a>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Panel with Progress bar</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+
+                <footer class="card-footer d-flex g-bg-transparent g-brd-gray-light-v7 g-px-20 g-px-30--sm g-py-10 g-py-20--sm">
+                  <div class="d-flex align-items-center g-color-gray-dark-v6">
+                    <i class="hs-admin-comments g-font-size-18 g-color-gray-light-v6"></i>
+                    <span class="g-ml-12">32</span>
+                  </div>
+
+                  <div class="d-flex align-items-center g-color-gray-dark-v6 g-brd-left g-brd-2 g-brd-gray-light-v7 g-pl-15 g-pl-30--sm g-ml-15 g-ml-30--sm">
+                    <i class="hs-admin-file g-font-size-18 g-color-gray-light-v6"></i>
+                    <span class="g-ml-12">24</span>
+                  </div>
+
+                  <div class="d-flex align-items-center g-color-gray-dark-v6 g-brd-left g-brd-2 g-brd-gray-light-v7 g-pl-15 g-pl-30--sm g-ml-15 g-ml-30--sm">
+                    <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6"></i>
+                    <span class="g-ml-12">18</span>
+                  </div>
+                </footer>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-bottom-none g-px-15 g-px-30--sm g-py-15 g-py-25--sm">
+                  <div class="media">
+                    <div class="u-select--v1 g-line-height-1 g-bg-gray-light-v8 g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-color-lightblue-v3--hover g-rounded-15 g-pl-15 g-pr-40 g-py-10">
+                      <select class="js-select u-select--v1-select w-100" style="display: none;">
+                        <option
+                          data-content='<span class="d-flex align-items-center"><span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-darkblue-v2 g-mr-8--sm"></span><span class="g-hidden-sm-down g-line-height-1_2 g-color-black">Employees</span></span>'>Employees</option>
+                        <option
+                          data-content='<span class="d-flex align-items-center"><span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-lightblue-v3 g-mr-8--sm"></span><span class="g-hidden-sm-down g-line-height-1_2 g-color-black">Friends</span></span>'>Friends</option>
+                        <option data-content='<span class="d-flex align-items-center"><span class="u-badge-v2--md g-pos-stc g-transform-origin--top-left g-bg-teal-v2 g-mr-8--sm"></span><span class="g-hidden-sm-down g-line-height-1_2 g-color-black">Colleagues</span></span>'>Colleagues</option>
+                      </select>
+                      <i class="hs-admin-angle-down g-absolute-centered--y g-right-15 g-color-gray-light-v6"></i>
+                    </div>
+
+                    <div class="media-body d-flex align-self-center justify-content-end">
+                      <a class="d-flex align-items-center u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover" href="#!">
+                        <i class="hs-admin-share g-font-size-18"></i>
+                        <span class="g-hidden-sm-down g-ml-10">Forward</span>
+                      </a>
+                      <a class="d-flex align-items-center u-link-v5 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-15--sm g-ml-30--xl" href="#!">
+                        <i class="hs-admin-brush-alt g-font-size-18"></i>
+                        <span class="g-hidden-sm-down g-ml-10">Mark as Spam</span>
+                      </a>
+                      <div class="align-self-center g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown6Invoker"
+                          class="u-link-v5 g-pos-rel g-top-4 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown6"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown6"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown6" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown6Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <hr class="d-flex g-brd-gray-light-v7 g-mx-15 g-mx-30--sm my-0">
+
+                <div class="card-block g-pa-15 g-pa-30--sm g-pt-15 g-pt-25--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-gray-light-v7 g-px-15 g-px-30--sm g-pt-15 g-pt-25--sm g-pb-10 g-pb-20--sm">
+                  <div class="media">
+                    <div class="d-flex align-self-center g-pos-rel">
+                      <a
+                        class="d-flex align-items-center u-link-v5 g-parent g-width-100--sm g-line-height-1_2 g-font-size-default"
+                        href="#!"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-dropdown-event="click"
+                        aria-controls="searchSecond"
+                        data-dropdown-target="#searchSecond"
+                        data-dropdown-type="css-animation"
+                        data-dropdown-duration="300"
+                        data-dropdown-animation-in="fadeInUp"
+                        data-dropdown-animation-out="fadeOutDown">
+                        <i class="hs-admin-search g-font-size-16 g-color-gray-light-v6 g-color-lightblue-v3--parent-hover g-mr-10 g-mr-15--md"></i>
+                        <span class="g-color-gray-dark-v6 g-color-lightblue-v3--parent-hover">Search</span>
+                      </a>
+
+                      <form id="searchSecond" class="u-dropdown--css-animation u-dropdown--hidden g-pos-abs g-top-100x g-left-0 g-width-200 g-mt-8">
+                        <div class="input-group mb-0">
+                          <input class="form-control g-font-size-default w-100" type="search">
+                        </div>
+                      </form>
+                    </div>
+
+                    <h3 class="media-body d-flex align-self-center justify-content-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-px-10 mb-0">Panel title</h3>
+
+                    <div class="d-flex align-self-center justify-content-end g-width-100--sm">
+                      <div class="align-self-center g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown7Invoker"
+                          class="u-link-v5 g-pos-rel g-top-4 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown7"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown7"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown7" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown7Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block text-center g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Basic Panel with Center align</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Panel -->
+              <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">
+                <header class="card-header g-bg-transparent g-brd-gray-light-v7 g-px-15 g-px-30--sm g-pt-15 g-pt-25--sm g-pb-10 g-pb-20--sm">
+                  <div class="media">
+                    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-lightblue-v3 g-mr-10 mb-0">Panel title</h3>
+
+                    <div class="media-body d-flex justify-content-end">
+                      <div class="align-self-center g-pos-rel g-z-index-2">
+                        <a
+                          id="dropDown8Invoker"
+                          class="u-link-v5 g-pos-rel g-top-4 g-line-height-0 g-font-size-24 g-color-gray-light-v6 g-color-lightblue-v3--hover g-ml-10 g-ml-20--md"
+                          href="#!"
+                          aria-controls="dropDown8"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          data-dropdown-event="click"
+                          data-dropdown-target="#dropDown8"
+                          data-dropdown-type="jquery-slide">
+                          <i class="hs-admin-more-alt"></i>
+                        </a>
+
+                        <div id="dropDown8" class="u-shadow-v31 g-pos-abs g-right-0 g-bg-white" aria-labelledby="dropDown8Invoker">
+                          <ul class="list-unstyled g-nowrap mb-0">
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-pencil g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Edit
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-archive g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Archive
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-check g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Mark as Done
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-plus g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                New Task
+                              </a>
+                            </li>
+                            <li>
+                              <a class="d-flex align-items-center u-link-v5 g-bg-gray-light-v8--hover g-font-size-12 g-font-size-default--md g-color-gray-dark-v6 g-px-25 g-py-14" href="#!">
+                                <i class="hs-admin-trash g-font-size-18 g-color-gray-light-v6 g-mr-10 g-mr-15--md"></i>
+                                Delete
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="card-block g-pa-15 g-pa-30--sm">
+                  <h4 class="g-font-weight-300 g-font-size-18 g-font-size-22--md g-color-black g-mb-10">Panel with Footer</h4>
+                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper. The marketing may be
+                    in the form of a heart to heart talk with Mr. Brown on his prominent local television show. These are all advertising. Businesses cannot get away from the force of advertising. If they want to make their products known in the marketplace they have to
+                    use some form of advertisement.</p>
+                </div>
+
+                <footer class="card-footer g-bg-transparent g-brd-gray-light-v7 g-px-15 g-px-30--sm g-py-15 g-py-25--sm">
+                  <div class="d-flex align-items-center g-color-gray-dark-v6">
+                    <i class="hs-admin-check g-font-size-18 g-color-lightblue-v3"></i>
+                    <span class="g-ml-10">All Tasks Completed</span>
+                  </div>
+                </footer>
+              </div>
+              <!-- End Panel -->
+            </div>
+          </div>
+        </div>
+
+        {% include "html/admin-template/assets/include/nunjucks/partials/blocks/footers/footer-sticky.njk" %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "html/admin-template/assets/include/nunjucks/partials/core-js.njk" %}
+<script src="{{ root }}assets/vendor/appear.js"></script>
+<script src="{{ root }}assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script src="{{ adminRoot }}assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="{{ adminRoot }}assets/vendor/flatpickr/dist/js/flatpickr.min.js"></script>
+
+<script src="{{ adminRoot }}assets/vendor/chartist-js/chartist.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ root }}assets/js/hs.core.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.scrollbar.js"></script>
+
+<script src="{{ root }}assets/js/components/hs.dropdown.js"></script>
+<script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+<script src="{{ adminRoot }}assets/js/components/hs.side-nav.js"></script>
+
+<script src="{{ adminRoot }}assets/js/components/hs.range-datepicker.js"></script>
+
+<script src="{{ adminRoot }}assets/js/components/hs.bar-chart.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ root }}assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom scrollbar
+    $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of HSDropdown component
+    $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
+
+    // initialization of hamburger
+    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+    // initialization of custom select
+    $('.js-select').selectpicker();
+
+    // initialization of range datepicker
+    $.HSCore.components.HSRangeDatepicker.init('#rangeDatepicker, #rangeDatepicker2');
+
+    // initialization of charts
+    $.HSCore.components.HSBarChart.init('.js-bar-chart');
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav', {
+      afterOpen: function() {
+        setTimeout(function() {
+          $.HSCore.components.HSBarChart.init('.js-bar-chart');
+        }, 400);
+      },
+      afterClose: function() {
+        setTimeout(function() {
+          $.HSCore.components.HSBarChart.init('.js-bar-chart');
+        }, 400);
+      }
+    });
+  });
+</script>
+</body>
+</html>

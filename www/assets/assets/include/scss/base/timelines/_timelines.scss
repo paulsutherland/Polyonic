@@ -1,0 +1,16 @@
+/*------------------------------------
+  Time Lines
+------------------------------------*/
+[class*="u-timeline-v1-wrap"],
+[class*="u-timeline-v2-wrap"],
+[class*="u-timeline-v3-wrap"] {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+  }
+}

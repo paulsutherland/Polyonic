@@ -1,0 +1,84 @@
+/*------------------------------------
+  Carousel indicators v16
+------------------------------------*/
+
+.u-carousel-indicators-v16,
+.u-carousel-indicators-v16--white {
+  white-space: nowrap;
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border-radius: 50%;
+      overflow: hidden;
+      text-indent: -9999px;
+      transition: opacity .3s ease;
+
+      &::before,
+      &::after {
+        content: "";
+        display: none;
+      }
+
+      &::before {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transform: scale(0);
+        transform-origin: 50% 50%;
+        transition: transform .3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        opacity: .7;
+      }
+    }
+
+    &.slick-active {
+      span {
+        &::before {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+.u-carousel-indicators-v16--white {
+  li {
+    span {
+      box-shadow: inset 0 0 0 2px $g-color-white;
+
+      &::before {
+        background-color: $g-color-white;
+      }
+    }
+  }
+}
+
+// Small Size
+.u-carousel-indicators-v16--sm {
+  li {
+    width: 8px;
+    height: 8px;
+
+    span {
+      box-shadow: inset 0 0 0 1px $g-color-white;
+    }
+  }
+}

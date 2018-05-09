@@ -1,0 +1,24 @@
+/*------------------------------------
+  Placeholder
+------------------------------------*/
+
+.g-placeholder {
+  &-gray-light-v11 {
+    &--disabled:disabled {
+      &::placeholder {
+        opacity: 1;
+        color: $g-color-gray-light-v11;
+      }
+
+      &::-moz-placeholder {
+        opacity: 1;
+        color: $g-color-gray-light-v11;
+      }
+
+      &::-webkit-input-placeholder {
+        opacity: 1;
+        color: $g-color-gray-light-v11;
+      }
+    }
+  }
+}

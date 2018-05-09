@@ -1,0 +1,763 @@
+{# Settings #}
+{% set root = "../../" %}
+{% set mainNavActive_1 = "shortcodes" %}
+{% set sidebarNavActive_1 = "shortcode-blocks-timelines" %}
+{% set title = "Timelines" %}
+
+{% include "html/assets/include/nunjucks/partials/head.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-fonts.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-css.njk" %}
+{% include "html/assets/include/nunjucks/partials/core-icons.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-dzsparallaxer.njk" %}
+<link rel="stylesheet" href="{{ root }}assets/vendor/animate.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="{{ root }}assets/vendor/hamburgers/hamburgers.min.css">
+
+{% include "html/assets/include/nunjucks/partials/css/css-showcode.njk" %}
+
+{% include "html/assets/include/nunjucks/partials/css/css-unify.njk" %}
+{% include "html/assets/include/nunjucks/partials/css/css-custom.njk" %}
+</head>
+
+<body class="u-body--header-side-push-left u-body--header-side-opened u-has-sidebar-navigation g-overflow-x-hidden">
+  <main>
+    {% include "html/assets/include/nunjucks/partials/blocks/headers/header-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/sidebars/sidebar-shortcode-nav.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/page-title/shortcode-page-title/shortcode-page-title-block.njk" %}
+
+    <section>
+      <div id="shortcode1">
+        <div class="shortcode-html">
+          <!-- Timeline #01 -->
+          <section class="g-py-100">
+            <div class="container">
+              <div class="text-center g-mb-50">
+                <h2 class="h4">Timline
+                  <span class="g-color-primary g-ml-5">#01</span>
+                </h2>
+              </div>
+
+              <div class="row u-timeline-v1-wrap g-mx-minus-15">
+                <!-- Timeline Box -->
+                <div class="col-md-6 g-orientation-right g-pl-60 g-pl-15--md g-pr-40--md g-mb-60 g-mb-0--md">
+                  <div class="u-timeline-v1__icon g-color-gray-light-v5 g-ml-13 g-ml-minus-10--md">
+                    <i class="fa fa-circle"></i>
+                  </div>
+
+                  <div class="g-pos-rel">
+                    <!-- Timeline Arrow -->
+                    <div class="g-hidden-sm-down u-triangle-inclusive-v1--left g-top-30 g-z-index-2">
+                      <div class="u-triangle-inclusive-v1--left__front g-brd-white-left g-brd-white-right"></div>
+                      <div class="u-triangle-inclusive-v1--left__back g-brd-gray-light-v4-left g-brd-gray-light-v4-right"></div>
+                    </div>
+
+                    <div class="g-hidden-md-up u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                      <div class="u-triangle-inclusive-v1--right__front g-brd-white-right"></div>
+                      <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                    </div>
+                    <!-- End Timeline Arrow -->
+
+                    <!-- Timeline Content -->
+                    <article class="u-timeline-v1 g-pa-5">
+                      <figure class="g-pos-rel">
+                        <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img2.jpg" alt="Image Description">
+
+                        <figcaption class="g-pos-abs g-top-20 g-left-20">
+                          <a class="btn btn-sm u-btn-blue rounded-0" href="#!">Business</a>
+                        </figcaption>
+                      </figure>
+
+                      <div class="g-py-25 g-px-20">
+                        <h3 class="g-font-weight-300 g-mb-15">
+                          <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Most Popular Business Topics</a>
+                        </h3>
+
+                        <div class="g-mb-30">
+                          <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh.</p>
+                        </div>
+
+                        <hr class="g-brd-gray-light-v4">
+
+                        <div class="media g-font-size-12">
+                          <img class="d-flex mr-3 rounded-circle g-width-30 g-height-30" src="{{ root }}assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                          <div class="media-body align-self-center text-uppercase">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">John Coolman</a>
+                          </div>
+
+                          <div class="align-self-center">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                              <i class="icon-bubbles g-mr-2"></i>
+                              16
+                            </a>
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                              <i class="icon-eye g-mr-2"></i>
+                              129
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- End Timeline Content -->
+                  </div>
+                </div>
+                <!-- End Timeline Box -->
+
+                <!-- Timeline Box -->
+                <div class="col-md-6 g-orientation-left g-pl-60 g-pl-40--md g-mt-60--md g-mb-60 g-mb-0--md">
+                  <div class="u-timeline-v1__icon g-color-gray-light-v5 g-mr-13 g-mr-minus-8--md">
+                    <i class="fa fa-circle"></i>
+                  </div>
+
+                  <div class="g-pos-rel">
+                    <!-- Timeline Arrow -->
+                    <div class="u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                      <div class="u-triangle-inclusive-v1--right__front g-brd-white-right"></div>
+                      <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                    </div>
+                    <!-- End Timeline Arrow -->
+
+                    <!-- Timeline Content -->
+                    <article class="u-timeline-v1 g-pa-5">
+                      <figure class="g-pos-rel">
+                        <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img9.jpg" alt="Image Description">
+
+                        <figcaption class="g-pos-abs g-top-20 g-right-20">
+                          <a class="btn btn-sm u-btn-red rounded-0" href="#!">Marketing</a>
+                        </figcaption>
+                      </figure>
+
+                      <div class="g-py-25 g-px-20">
+                        <h3 class="g-font-weight-300 g-mb-15">
+                          <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Trends of Digital Marketing in 2017</a>
+                        </h3>
+
+                        <div class="g-mb-30">
+                          <p>Spen been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+
+                        <hr class="g-brd-gray-light-v4">
+
+                        <div class="media g-font-size-12">
+                          <img class="d-flex mr-3 rounded-circle g-width-30 g-height-30" src="{{ root }}assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                          <div class="media-body align-self-center text-uppercase">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Kate William</a>
+                          </div>
+
+                          <div class="align-self-center">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                              <i class="icon-bubbles g-mr-2"></i>
+                              21
+                            </a>
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                              <i class="icon-eye g-mr-2"></i>
+                              178
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- End Timeline Content -->
+                  </div>
+                </div>
+                <!-- End Timeline Box -->
+
+                <!-- Timeline Box -->
+                <div class="col-md-6 g-orientation-right g-pl-60 g-pl-15--md g-pr-40--md g-mb-60 g-mb-0--md">
+                  <div class="u-timeline-v1__icon g-color-gray-light-v5 g-ml-13 g-ml-minus-10--md">
+                    <i class="fa fa-circle"></i>
+                  </div>
+
+                  <div class="g-pos-rel">
+                    <!-- Timeline Arrow -->
+                    <div class="g-hidden-sm-down u-triangle-inclusive-v1--left g-top-30 g-z-index-2">
+                      <div class="u-triangle-inclusive-v1--left__front g-brd-white-left g-brd-white-right"></div>
+                      <div class="u-triangle-inclusive-v1--left__back g-brd-gray-light-v4-left g-brd-gray-light-v4-right"></div>
+                    </div>
+
+                    <div class="g-hidden-md-up u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                      <div class="u-triangle-inclusive-v1--right__front g-brd-white-right"></div>
+                      <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                    </div>
+                    <!-- End Timeline Arrow -->
+
+                    <!-- Timeline Content -->
+                    <article class="u-timeline-v1 g-pa-5">
+                      <figure class="g-pos-rel">
+                        <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img13.jpg" alt="Image Description">
+
+                        <figcaption class="g-pos-abs g-top-20 g-left-20">
+                          <a class="btn btn-sm u-btn-pink rounded-0" href="#!">Meetup</a>
+                        </figcaption>
+                      </figure>
+
+                      <div class="g-py-25 g-px-20">
+                        <h3 class="g-font-weight-300 g-mb-15">
+                          <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Dribbble UX &amp; UI Meetup</a>
+                        </h3>
+
+                        <div class="g-mb-30">
+                          <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh.</p>
+                        </div>
+
+                        <hr class="g-brd-gray-light-v4">
+
+                        <div class="media g-font-size-12">
+                          <img class="d-flex mr-3 rounded-circle g-width-30 g-height-30" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                          <div class="media-body align-self-center text-uppercase">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Emma Watson</a>
+                          </div>
+
+                          <div class="align-self-center">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                              <i class="icon-bubbles g-mr-2"></i>
+                              39
+                            </a>
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                              <i class="icon-eye g-mr-2"></i>
+                              193
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- End Timeline Content -->
+                  </div>
+                </div>
+                <!-- End Timeline Box -->
+
+                <!-- Timeline Box -->
+                <div class="col-md-6 g-orientation-left g-pl-60 g-pl-40--md g-mt-60--md g-mb-60 g-mb-0--md">
+                  <div class="u-timeline-v1__icon g-color-gray-light-v5 g-ml-13 g-mr-minus-8--md">
+                    <i class="fa fa-circle"></i>
+                  </div>
+
+                  <div class="g-pos-rel">
+                    <!-- Timeline Arrow -->
+                    <div class="u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                      <div class="u-triangle-inclusive-v1--right__front g-brd-white-right"></div>
+                      <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                    </div>
+                    <!-- End Timeline Arrow -->
+
+                    <!-- Timeline Content -->
+                    <article class="u-timeline-v1 g-pa-5">
+                      <figure class="g-pos-rel">
+                        <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img7.jpg" alt="Image Description">
+
+                        <figcaption class="g-pos-abs g-top-20 g-right-20">
+                          <a class="btn btn-sm u-btn-darkpurple rounded-0" href="#!">Workspace</a>
+                        </figcaption>
+                      </figure>
+
+                      <div class="g-py-25 g-px-20">
+                        <h3 class="g-font-weight-300 g-mb-15">
+                          <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Best Workspaces in London</a>
+                        </h3>
+
+                        <div class="g-mb-30">
+                          <p>Spen been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+
+                        <hr class="g-brd-gray-light-v4">
+
+                        <div class="media g-font-size-12">
+                          <img class="d-flex mr-3 rounded-circle g-width-30 g-height-30" src="{{ root }}assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                          <div class="media-body align-self-center text-uppercase">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Amanda Palmer</a>
+                          </div>
+
+                          <div class="align-self-center">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                              <i class="icon-bubbles g-mr-2"></i>
+                              42
+                            </a>
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                              <i class="icon-eye g-mr-2"></i>
+                              137
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- End Timeline Content -->
+                  </div>
+                </div>
+                <!-- End Timeline Box -->
+
+                <!-- Timeline Box -->
+                <div class="col-md-6 g-orientation-right g-pl-60 g-pl-15--md g-pr-40--md g-mb-60 g-mb-0--md">
+                  <div class="u-timeline-v1__icon g-color-gray-light-v5 g-ml-13 g-ml-minus-10--md">
+                    <i class="fa fa-circle"></i>
+                  </div>
+
+                  <div class="g-pos-rel">
+                    <!-- Timeline Arrow -->
+                    <div class="g-hidden-sm-down u-triangle-inclusive-v1--left g-top-30 g-z-index-2">
+                      <div class="u-triangle-inclusive-v1--left__front g-brd-white-left g-brd-white-right"></div>
+                      <div class="u-triangle-inclusive-v1--left__back g-brd-gray-light-v4-left g-brd-gray-light-v4-right"></div>
+                    </div>
+
+                    <div class="g-hidden-md-up u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                      <div class="u-triangle-inclusive-v1--right__front g-brd-white-right"></div>
+                      <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                    </div>
+                    <!-- End Timeline Arrow -->
+
+                    <!-- Timeline Content -->
+                    <article class="u-timeline-v1 g-pa-5">
+                      <figure class="g-pos-rel">
+                        <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img15.jpg" alt="Image Description">
+
+                        <figcaption class="g-pos-abs g-top-20 g-left-20">
+                          <a class="btn btn-sm u-btn-cyan rounded-0" href="#!">Startups</a>
+                        </figcaption>
+                      </figure>
+
+                      <div class="g-py-25 g-px-20">
+                        <h3 class="g-font-weight-300 g-mb-15">
+                          <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Great Tips for Startups</a>
+                        </h3>
+
+                        <div class="g-mb-30">
+                          <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh.</p>
+                        </div>
+
+                        <hr class="g-brd-gray-light-v4">
+
+                        <div class="media g-font-size-12">
+                          <img class="d-flex mr-3 rounded-circle g-width-30 g-height-30" src="{{ root }}assets/img-temp/100x100/img14.jpg" alt="Image Description">
+                          <div class="media-body align-self-center text-uppercase">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">John Coolman</a>
+                          </div>
+
+                          <div class="align-self-center">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                              <i class="icon-bubbles g-mr-2"></i>
+                              16
+                            </a>
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                              <i class="icon-eye g-mr-2"></i>
+                              129
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- End Timeline Content -->
+                  </div>
+                </div>
+                <!-- End Timeline Box -->
+
+                <!-- Timeline Box -->
+                <div class="col-md-6 g-orientation-left g-pl-60 g-pl-40--md g-mt-60--md">
+                  <div class="u-timeline-v1__icon g-color-gray-light-v5 g-ml-13 g-mr-minus-8--md">
+                    <i class="fa fa-circle"></i>
+                  </div>
+
+                  <div class="g-pos-rel">
+                    <!-- Timeline Arrow -->
+                    <div class="u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                      <div class="u-triangle-inclusive-v1--right__front g-brd-white-right"></div>
+                      <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                    </div>
+                    <!-- End Timeline Arrow -->
+
+                    <!-- Timeline Content -->
+                    <article class="u-timeline-v1 g-pa-5">
+                      <figure class="g-pos-rel">
+                        <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img1.jpg" alt="Image Description">
+
+                        <figcaption class="g-pos-abs g-top-20 g-right-20">
+                          <a class="btn btn-sm u-btn-teal rounded-0" href="#!">Analytics</a>
+                        </figcaption>
+                      </figure>
+
+                      <div class="g-py-25 g-px-20">
+                        <h3 class="g-font-weight-300 g-mb-15">
+                          <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Best Tools for Marketing</a>
+                        </h3>
+
+                        <div class="g-mb-30">
+                          <p>Spen been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+
+                        <hr class="g-brd-gray-light-v4">
+
+                        <div class="media g-font-size-12">
+                          <img class="d-flex mr-3 rounded-circle g-width-30 g-height-30" src="{{ root }}assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                          <div class="media-body align-self-center text-uppercase">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">James Franco</a>
+                          </div>
+
+                          <div class="align-self-center">
+                            <a class="u-link-v5 g-color-main g-color-primary--hover g-mr-10" href="#!">
+                              <i class="icon-bubbles g-mr-2"></i>
+                              21
+                            </a>
+                            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">
+                              <i class="icon-eye g-mr-2"></i>
+                              178
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- End Timeline Content -->
+                  </div>
+                </div>
+                <!-- End Timeline Box -->
+              </div>
+            </div>
+          </section>
+          <!-- End Timeline #01 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode1" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <div id="shortcode2">
+        <div class="shortcode-html">
+          <!-- Timeline #02 -->
+          <section class="g-py-100">
+            <div class="container">
+              <div class="text-center g-mb-50">
+                <h2 class="h4">Timline
+                  <span class="g-color-primary g-ml-5">#02</span>
+                </h2>
+              </div>
+
+              <!-- Timeline Box -->
+              <ul class="row u-timeline-v2-wrap list-unstyled">
+                <li class="col-md-12 g-mb-40">
+                  <div class="row">
+                    <!-- Timeline Date -->
+                    <div class="col-md-3 text-md-right g-pt-20--md g-pr-40--md g-mb-20">
+                      <h5 class="h6 mb-0">04/01/17</h5>
+                      <h4 class="h5">January</h4>
+                    </div>
+                    <!-- End Timeline Date -->
+
+                    <!-- Timeline Content -->
+                    <div class="col-md-9 g-orientation-left g-pl-40--md">
+                      <!-- Timeline Dot -->
+                      <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
+                        <i class="d-block g-width-18 g-height-18 g-bg-white g-brd-around g-brd-3 g-brd-gray-light-v5 rounded-circle"></i>
+                      </div>
+                      <!-- End Timeline Dot -->
+
+                      <article class="g-pos-rel g-bg-gray-light-v5 g-pa-30">
+                        <!-- Timeline Arrow -->
+                        <div class="g-hidden-sm-down u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                          <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v5-right"></div>
+                        </div>
+                        <div class="g-hidden-md-up u-triangle-inclusive-v1--top g-left-20 g-z-index-2">
+                          <div class="u-triangle-inclusive-v1--top__back g-brd-gray-light-v5-bottom"></div>
+                        </div>
+                        <!-- End Timeline Arrow -->
+
+                        <header class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-25">
+                          <h3 class="g-font-weight-300">Our First Step</h3>
+                        </header>
+
+                        <div class="row">
+                          <div class="col-md-4 g-mb-20 g-mb-0--md">
+                            <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img12.jpg" alt="Image description">
+                          </div>
+                          <div class="col-md-8">
+                            <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea cress potato sprouts wattle seed rutabaga okra yarrow cress avocado grape.</p>
+                            <p class="mb-0">Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato.</p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <!-- End Timeline Content -->
+                  </div>
+                </li>
+
+                <li class="col-md-12 g-mb-40">
+                  <div class="row">
+                    <!-- Timeline Date -->
+                    <div class="col-md-3 text-md-right g-pt-20--md g-pr-40--md g-mb-20">
+                      <h5 class="h6 mb-0">12/02/17</h5>
+                      <h4 class="h5">February</h4>
+                    </div>
+                    <!-- End Timeline Date -->
+
+                    <!-- Timeline Content -->
+                    <div class="col-md-9 g-orientation-left g-pl-40--md">
+                      <!-- Timeline Dot -->
+                      <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
+                        <i class="d-block g-width-18 g-height-18 g-bg-white g-brd-around g-brd-3 g-brd-gray-light-v5 rounded-circle"></i>
+                      </div>
+                      <!-- End Timeline Dot -->
+
+                      <article class="g-pos-rel g-bg-gray-light-v5 g-pa-30">
+                        <!-- Timeline Arrow -->
+                        <div class="g-hidden-sm-down u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                          <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v5-right"></div>
+                        </div>
+                        <div class="g-hidden-md-up u-triangle-inclusive-v1--top g-left-20 g-z-index-2">
+                          <div class="u-triangle-inclusive-v1--top__back g-brd-gray-light-v5-bottom"></div>
+                        </div>
+                        <!-- End Timeline Arrow -->
+
+                        <header class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-25">
+                          <h3 class="g-font-weight-300">First Achievements</h3>
+                        </header>
+
+                        <div class="row">
+                          <div class="col-md-4 g-mb-20 g-mb-0--md">
+                            <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img11.jpg" alt="Image description">
+                          </div>
+                          <div class="col-md-8">
+                            <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea cress potato sprouts wattle seed rutabaga okra yarrow cress avocado grape.</p>
+                            <p class="mb-0">Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato.</p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <!-- End Timeline Content -->
+                  </div>
+                </li>
+
+                <li class="col-md-12">
+                  <div class="row">
+                    <!-- Timeline Date -->
+                    <div class="col-md-3 text-md-right g-pt-20--md g-pr-40--md g-mb-20">
+                      <h5 class="h6 mb-0">22/03/17</h5>
+                      <h4 class="h5">March</h4>
+                    </div>
+                    <!-- End Timeline Date -->
+
+                    <!-- Timeline Content -->
+                    <div class="col-md-9 g-orientation-left g-pl-40--md">
+                      <!-- Timeline Dot -->
+                      <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
+                        <i class="d-block g-width-18 g-height-18 g-bg-white g-brd-around g-brd-3 g-brd-gray-light-v5 rounded-circle"></i>
+                      </div>
+                      <!-- End Timeline Dot -->
+
+                      <article class="g-pos-rel g-bg-gray-light-v5 g-pa-30">
+                        <!-- Timeline Arrow -->
+                        <div class="g-hidden-sm-down u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                          <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v5-right"></div>
+                        </div>
+                        <div class="g-hidden-md-up u-triangle-inclusive-v1--top g-left-20 g-z-index-2">
+                          <div class="u-triangle-inclusive-v1--top__back g-brd-gray-light-v5-bottom"></div>
+                        </div>
+                        <!-- End Timeline Arrow -->
+
+                        <header class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-25">
+                          <h3 class="g-font-weight-300">Our Popularity</h3>
+                        </header>
+
+                        <div class="row">
+                          <div class="col-md-4 g-mb-20 g-mb-0--md">
+                            <img class="img-fluid w-100" src="{{ root }}assets/img-temp/400x270/img13.jpg" alt="Image description">
+                          </div>
+                          <div class="col-md-8">
+                            <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea cress potato sprouts wattle seed rutabaga okra yarrow cress avocado grape.</p>
+                            <p class="mb-0">Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato.</p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <!-- End Timeline Content -->
+                  </div>
+                </li>
+              </ul>
+              <!-- End Timeline Box -->
+            </div>
+          </section>
+          <!-- End Timeline #02 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode2" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+
+      <hr class="g-brd-gray-light-v4 my-0">
+
+      <div id="shortcode3">
+        <div class="shortcode-html">
+          <!-- Timeline #03 -->
+          <section class="g-py-100">
+            <div class="container">
+              <div class="text-center g-mb-50">
+                <h2 class="h4">Timline
+                  <span class="g-color-primary g-ml-5">#03</span>
+                </h2>
+              </div>
+
+              <div class="u-timeline-v3-wrap">
+                <a class="u-timeline-v3 d-block text-center text-md-left g-parent u-link-v5 g-mb-100" href="#!">
+                  <div class="g-hidden-sm-down u-timeline-v3__icon g-absolute-centered--y g-z-index-3 g-width-16 g-height-16 g-ml-minus-8">
+                    <i class="d-inline-block g-width-16 g-height-16 g-bg-white g-brd-5 g-brd-style-solid g-brd-gray-light-v4 g-rounded-50"></i>
+                  </div>
+
+                  <div class="row mx-0">
+                    <div class="col-md-3 g-order-2 g-order-1--sm d-flex align-self-center px-0">
+                      <div class="u-heading-v1-4 g-brd-gray-light-v4 w-100">
+                        <span class="text-center g-pos-rel d-block g-width-115 g-font-weight-600 g-color-white g-font-size-14 g-bg-gray-dark-v1 g-bg-primary--parent-hover g-py-5 g-px-10 mx-auto g-ml-0--md g-transition-0_2 g-transition--ease-in">15:30 - 17:30</span>
+                      </div>
+                    </div>
+
+                    <div class="col-md-9 g-order-1 g-order-2--sm px-0 g-mb-15 g-mb-0--md">
+                      <div class="media d-block d-md-flex">
+                        <div class="d-md-flex g-width-120 g-width-170--md g-height-120 g-height-170--md g-overlay-black-0_7 g-overlay-none--parent-hover g-rounded-50x g-mr-30--md mx-auto g-mb-15 g-mb-0--md g-transition-0_2 g-transition--ease-in">
+                          <img class="img-fluid g-rounded-50x" src="{{ root }}assets/img-temp/200x200/img1.jpg" alt="Image description">
+                        </div>
+
+                        <div class="media-body align-self-center">
+                          <h4 class="text-uppercase g-font-weight-600 g-font-size-12 g-color-primary g-mb-5">Intro to UI/UX Design</h4>
+                          <h3 class="text-uppercase g-font-weight-600 g-font-size-22 g-color-gray-dark-v1 g-mb-10">John Doe, Dribbble</h3>
+                          <p class="g-color-gray-dark-v5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut scelerisque odio, a viverra arcu. Nulla ut suscipit velit, non dictum quam. Proin hendrerit vulputate mauris a imperdiet</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+                <a class="u-timeline-v3 d-block text-center text-md-left g-parent u-link-v5 g-mb-100" href="#!">
+                  <div class="g-hidden-sm-down u-timeline-v3__icon g-absolute-centered--y g-z-index-3 g-width-16 g-height-16 g-ml-minus-8">
+                    <i class="d-inline-block g-width-16 g-height-16 g-bg-white g-brd-5 g-brd-style-solid g-brd-gray-light-v4 g-rounded-50"></i>
+                  </div>
+
+                  <div class="row mx-0">
+                    <div class="col-md-3 g-order-2 g-order-1--sm d-flex align-self-center px-0">
+                      <div class="u-heading-v1-4 g-brd-gray-light-v4 w-100">
+                        <span class="text-center g-pos-rel d-block g-width-115 g-font-weight-600 g-color-white g-font-size-14 g-bg-gray-dark-v1 g-bg-primary--parent-hover g-py-5 g-px-10 mx-auto g-ml-0--md g-transition-0_2 g-transition--ease-in">19:00 - 21:00</span>
+                      </div>
+                    </div>
+
+                    <div class="col-md-9 g-order-1 g-order-2--sm px-0 g-mb-15 g-mb-0--md">
+                      <div class="media d-block d-md-flex">
+                        <div class="d-md-flex g-width-120 g-width-170--md g-height-120 g-height-170--md g-overlay-black-0_7 g-overlay-none--parent-hover g-rounded-50x g-mr-30--md mx-auto g-mb-15 g-mb-0--md g-transition-0_2 g-transition--ease-in">
+                          <img class="img-fluid g-rounded-50x" src="{{ root }}assets/img-temp/200x200/img2.jpg" alt="Image description">
+                        </div>
+
+                        <div class="media-body align-self-center">
+                          <h4 class="text-uppercase g-font-weight-600 g-font-size-12 g-color-primary g-mb-5">Digital Marketing</h4>
+                          <h3 class="text-uppercase g-font-weight-600 g-font-size-22 g-color-gray-dark-v1 g-mb-10">Sara Woodman, Google</h3>
+                          <p class="g-color-gray-dark-v5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut scelerisque odio, a viverra arcu. Nulla ut suscipit velit, non dictum quam. Proin hendrerit vulputate mauris a imperdiet</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+                <a class="u-timeline-v3 d-block text-center text-md-left g-parent u-link-v5" href="#!">
+                  <div class="g-hidden-sm-down u-timeline-v3__icon g-absolute-centered--y g-z-index-3 g-width-16 g-height-16 g-ml-minus-8">
+                    <i class="d-inline-block g-width-16 g-height-16 g-bg-white g-brd-5 g-brd-style-solid g-brd-gray-light-v4 g-rounded-50"></i>
+                  </div>
+
+                  <div class="row mx-0">
+                    <div class="col-md-3 g-order-2 g-order-1--sm d-flex align-self-center px-0">
+                      <div class="u-heading-v1-4 g-brd-gray-light-v4 w-100">
+                        <span class="text-center g-pos-rel d-block g-width-115 g-font-weight-600 g-color-white g-font-size-14 g-bg-gray-dark-v1 g-bg-primary--parent-hover g-py-5 g-px-10 mx-auto g-ml-0--md g-transition-0_2 g-transition--ease-in">21:15 - 22:00</span>
+                      </div>
+                    </div>
+
+                    <div class="col-md-9 g-order-1 g-order-2--sm px-0 g-mb-15 g-mb-0--md">
+                      <div class="media d-block d-md-flex">
+                        <div class="d-md-flex g-width-120 g-width-170--md g-height-120 g-height-170--md g-overlay-black-0_7 g-overlay-none--parent-hover g-rounded-50x g-mr-30--md mx-auto g-mb-15 g-mb-0--md g-transition-0_2 g-transition--ease-in">
+                          <img class="img-fluid g-rounded-50x" src="{{ root }}assets/img-temp/200x200/img3.jpg" alt="Image description">
+                        </div>
+
+                        <div class="media-body align-self-center">
+                          <h4 class="text-uppercase g-font-weight-600 g-font-size-12 g-color-primary g-mb-5">Photoshop vs Sketch</h4>
+                          <h3 class="text-uppercase g-font-weight-600 g-font-size-22 g-color-gray-dark-v1 g-mb-10">Maya Rayman, Invision</h3>
+                          <p class="g-color-gray-dark-v5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut scelerisque odio, a viverra arcu. Nulla ut suscipit velit, non dictum quam. Proin hendrerit vulputate mauris a imperdiet</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- End Timeline #03 -->
+        </div>
+      </div>
+
+      {% set SCExtendedClasses = "container text-center" %}
+      {% set contentTarget = "#shortcode3" %}
+      {% set modalID = "#modalMarkup" %}
+      {% include "html/assets/include/nunjucks/partials/blocks/show-code.njk" %}
+    </section>
+
+    {% include "html/assets/include/nunjucks/partials/blocks/cta/cta-main.njk" %}
+
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/footers/copyright-footer-main.njk" %}
+    {% include "html/assets/include/nunjucks/partials/blocks/go-to-top/go-to-top-1.njk" %}
+  </main>
+
+  {% include "html/assets/include/nunjucks/partials/blocks/modals/modal-markup.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/core-js.njk" %}
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ root }}assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  {% include "html/assets/include/nunjucks/partials/js/js-dzsparallaxer.njk" %}
+
+  {% include "html/assets/include/nunjucks/partials/js/js-jquery-ui-core.njk" %}
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ root }}assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ root }}assets/js/hs.core.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="{{ root }}assets/js/components/hs.header-side.js"></script>
+  <script src="{{ root }}assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ root }}assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="{{ root }}assets/js/helpers/hs.shortcode-filter.js"></script>
+  <script src="{{ root }}assets/js/components/hs.go-to.js"></script>
+
+  {% include "html/assets/include/nunjucks/partials/js/js-show-code.njk" %}
+
+  <!-- JS Custom -->
+  <script src="{{ root }}assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+</body>
+</html>

@@ -61,13 +61,6 @@ eg:
 ionic serve --lab --port 4000 -r
 ```
 
-# Running on Linux
-When developing on linux, you may run into a ENOSPC issue.  You will need to increase the number of file watchers to allow gulp to work.
-```
-echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-See: <a href="https://stackoverflow.com/questions/22475849/node-js-error-enospc">Stack Overflow Post</a>
-
 # Building on Windows
 For building on Windows you will need to install the Nullsoft Scriptable Install System.
 
@@ -80,24 +73,13 @@ setx PATH "%PATH%;C:\Program Files (x86)\NSIS"
 
 Or using <a href="http://nsis.sourceforge.net/Main_Page">point and click.</a>
 
-# Running on macOS
-If you are generating the error: ```Error: ENFILE: file table overflow on MacOS Sierra```, you will need to adjust the number of file watchers:
-```
-echo kern.maxfiles=65536 | sudo tee -a /etc/sysctl.conf
-echo kern.maxfilesperproc=65536 | sudo tee -a /etc/sysctl.conf
-sudo sysctl -w kern.maxfiles=65536
-sudo sysctl -w kern.maxfilesperproc=65536
-ulimit -n 65536
-```
-
 # Credits
-This application was built using the <a href="https://github.com/szwacz/electron-boilerplate/blob/master/README.md">Electron Boilerplate Project</a> for scaffolding out the Electron application, the <a href="http://electron.atom.io/">Electron Framework</a> for creating desktop apps and <a href="http://ionicframework.com/">Ionic 2</a> for the UI and creating Native Mobile Applications, Progressive Mobile Web Applications and Web Applications.
+This application was built using the <a href="http://electron.atom.io/">Electron Framework</a> for creating desktop apps and <a href="http://ionicframework.com/">Ionic 2</a> for the UI and creating Native Mobile Applications, Progressive Mobile Web Applications and Web Applications.
 
 # Todo
-- Add Karma and Protractor testing frameworks.  Use <a href="http://lathonez.github.io/2016/ionic-2-unit-testing/">Lathonez's example</a> in his <a href="https://github.com/lathonez/clicker">Clicker app</a> until the <a href="https://angular.io/docs/ts/latest/testing/">Angular 2 testing docs</a> are complete.
+- Add Karma and Protractor testing frameworks.  Use <a href="http://lathonez.github.io/2016/ionic-2-unit-testing/">Lathonez's example</a> in his <a href="https://github.com/lathonez/clicker">Clicker app.
 - Add Office 365 add-in code for running Polyonic in Office 365 applications.
 - Add instructions for running Polyonic on the Hololens (Yep we can) :sunglasses:.
-- Remove express as we can run a simple node http server instead.  As it stands this app is just an example of what can de done.
 
 # License
 Released under the MIT license.
