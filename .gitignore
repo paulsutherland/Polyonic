@@ -15,3 +15,5 @@ Thumbs.db
 /src/.tmp/
 .vscode
 /dist/*
+.sourcemaps/
+plugins/*
