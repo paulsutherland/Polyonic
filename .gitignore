@@ -17,3 +17,4 @@ Thumbs.db
 /dist/*
 .sourcemaps/
 plugins/*
+www/

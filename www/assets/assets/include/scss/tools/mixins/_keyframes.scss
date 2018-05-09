@@ -1,9 +1,0 @@
-//
-// Keyframes
-//
-
-@mixin keyframes($keyframes) {
-  @keyframes #{$keyframes} {
-    @content;
-  }
-}

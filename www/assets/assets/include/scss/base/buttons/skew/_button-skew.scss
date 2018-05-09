@@ -1,9 +1,0 @@
-/* Skew Button */
-.u-btn-skew {
-  transform: skewX(-20deg);
-
-  &__inner {
-    transform: skewX(20deg);
-    display: block;
-  }
-}
