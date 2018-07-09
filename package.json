@@ -24,7 +24,9 @@
     "ionic:watch": "ionic-app-scripts watch",
     "start": "npm run build && electron .",
     "release": "electron-builder --dir --config ./electron-build.json",
-    "dist": "electron-builder --config ./electron-build.json"
+    "dist": "electron-builder --config ./electron-build.json",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "osx": {
     "build": "1",
@@ -79,7 +81,8 @@
     "ngx-electron": "^1.0.4",
     "rxjs": "5.5.6",
     "sw-toolbox": "3.6.0",
-    "zone.js": "0.8.20"
+    "zone.js": "0.8.20",
+    "snyk": "^1.88.2"
   },
   "cordova": {
     "plugins": {
@@ -93,5 +96,6 @@
     "platforms": [
       "ios"
     ]
-  }
+  },
+  "snyk": true
 }
