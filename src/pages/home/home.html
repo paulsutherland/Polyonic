@@ -15,9 +15,11 @@
     update any existing page or create new pages.
   </p>
     <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using<pre>
-      Node v{{electron.process.versions.node}}
-      Chromium v{{electron.process.versions.chrome}}
-      Electron v{{electron.process.versions.electron}}
-    </pre>
+    <span *ngIf="electron.isElectronApp">
+      We are using<pre>
+        Node v{{electron.process.versions.node}}
+        Chromium v{{electron.process.versions.chrome}}
+        Electron v{{electron.process.versions.electron}}
+      </pre>
+    </span>
 </ion-content>
