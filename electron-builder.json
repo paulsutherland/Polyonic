@@ -1,0 +1,54 @@
+{
+  "productName": "com.polyonic.starter",
+  "directories": {
+    "buildResources": "./resources/electron",
+    "output": "release/"
+  },
+    "files": [
+        "**/*",
+        "!*.ts",
+        "!*.code-workspace",
+        "!LICENSE.md",
+        "!package.json",
+        "!package-lock.json",
+        "!src/",
+        "!e2e/",
+        "!hooks/",
+        "!.angular-cli.json",
+        "!_config.yml",
+        "!karma.conf.js",
+        "!tsconfig.json",
+        "!tslint.json"
+    ],
+  "win": {
+    "icon": "resources/electron/windows/icon.ico",
+    "target": [
+      "portable"
+    ]
+  },
+  "squirrelWindows": {
+    "msi":"true"
+  },
+  "msi" : {
+    "warningsAsErrors": false
+  },
+  "nsis" : {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
+  },
+  "appx": {
+    "publisherDisplayName":"Polyonic"
+  },
+  "mac": {
+    "icon": "resources/electron/osx/icon.icns",
+    "target": [
+      "dmg"
+    ]
+  },
+  "linux": {
+    "icon": "dist",
+    "target": [
+      "AppImage"
+    ]
+  }
+}

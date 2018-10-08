@@ -1,7 +1,5 @@
 {
-  "name": "polyonic",
-  "integrations": {
-    "gulp": {}
-  },
-  "type": "ionic-angular"
+  "name": "ionic4-fresh",
+  "integrations": {},
+  "type": "angular"
 }

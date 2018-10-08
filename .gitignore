@@ -18,3 +18,4 @@ Thumbs.db
 .sourcemaps/
 plugins/*
 www/
+release/
