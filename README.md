@@ -40,7 +40,8 @@ Clone the repo, change into the Polyonic directory, install the npm packages and
 ```
 git clone --depth 1 https://github.com/paulsutherland/Polyonic
 cd Polyonic
-git checkout ionic4
+git fetch origin beta:beta
+git checkout beta
 
 npm install
 npm run electron:local 
