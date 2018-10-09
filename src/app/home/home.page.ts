@@ -94,7 +94,7 @@ export class HomePage {
       ctx.platform.ready()
       .then(() => {
         ctx.db = new PouchDB('app.db');
-        ctx.db.simplecryptor('password');
+        ctx.db.simplecryptor('password'); // <<<<<<<<<<<<< Replace with your secret key
         resolve();
       })
       .catch(error => {
