@@ -50,7 +50,7 @@ export class HomePage {
         const ElectronPouchDB = ctx.electron.remote.require('PouchDB');
         const ElectronSimpleCryptor = ctx.electron.remote.require('simple-cryptor-pouch');
         ElectronPouchDB.plugin(ElectronSimpleCryptor);
-        ctx.db = new ElectronPouchDB('database');
+        ctx.db = new ElectronPouchDB('./database/app.db');
         ctx.db.simplecryptor('secret'); // <<<<<<<<<<<<< Replace with your secret key
         resolve();
       } catch (error) {
@@ -76,7 +76,7 @@ export class HomePage {
         //   key: 'secret', // <<<<<<<<<<<<< Replace with your secret key
         //   iosDatabaseLocation: 'Library'
         // });
-        ctx.db = new PouchDB('database');
+        ctx.db = new PouchDB('app.db');
         ctx.db.simplecryptor('secret'); // <<<<<<<<<<<<< Replace with your secret key
         resolve();
       })
@@ -93,7 +93,7 @@ export class HomePage {
       console.log('Running on a web browser');
       ctx.platform.ready()
       .then(() => {
-        ctx.db = new PouchDB('database');
+        ctx.db = new PouchDB('app.db');
         ctx.db.simplecryptor('password');
         resolve();
       })
