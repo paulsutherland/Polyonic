@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Platform } from '@ionic/angular';
 import { ElectronService } from 'ngx-electron';
 import { DataService } from '../data.service';
 
@@ -11,8 +12,17 @@ export class HomePage {
 
   public db: any;
   public dbInfo: Object;
+  public electron: any;
 
-  constructor(public electron: ElectronService, private data: DataService) {
+  constructor(public electronService: ElectronService, private data: DataService, private platform: Platform) {
+
+    this.platform.ready()
+    .then(() => {
+      this.electron = electronService
+    })
+    .catch(error => {
+      console.log('Error waiting for platform to load', error);
+    });
 
     this.db = this.data.db
 
