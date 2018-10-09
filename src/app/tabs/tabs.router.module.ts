@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core'
+import { RouterModule, Routes } from '@angular/router'
 
-import { TabsPage } from './tabs.page';
-import { HomePage } from '../home/home.page';
-import { AboutPage } from '../about/about.page';
-import { ContactPage } from '../contact/contact.page';
+import { TabsPage } from './tabs.page'
+import { HomePage } from '../home/home.page'
+import { AboutPage } from '../about/about.page'
+import { ContactPage } from '../contact/contact.page'
 
 const routes: Routes = [
   {
@@ -38,7 +38,7 @@ const routes: Routes = [
     redirectTo: '/tabs/(home:home)',
     pathMatch: 'full'
   }
-];
+]
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

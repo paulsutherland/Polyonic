@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
-import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Platform } from '@ionic/angular'
+import { SplashScreen } from '@ionic-native/splash-screen/ngx'
+import { StatusBar } from '@ionic-native/status-bar/ngx'
 import { DataService } from './data.service'
 
 @Component({
@@ -16,21 +16,21 @@ export class AppComponent {
     private statusBar: StatusBar,
     private data: DataService
   ) {
-    this.initializeApp();
+    this.initializeApp()
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
       if (this.platform.is('mobile')) {
-        this.statusBar.styleDefault();
-        this.splashScreen.hide();
+        this.statusBar.styleDefault()
+        this.splashScreen.hide()
       }
 
       this.data.setup()
       .then(info => {
         console.log('Database setup complete')
       })
-      .catch(error => console.log('Error setting up the Database: ', error));
-    });
+      .catch(error => console.log('Error setting up the Database: ', error))
+    })
   }
 }
