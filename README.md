@@ -1,6 +1,6 @@
 # Polyonic
 ## The ultimate "Universal App"
-> Now using the latest Ionic 3.9.2 release :tada:
+> Now using the latest Ionic 3.9.2 release :tada:  If your looking for Polyonic running Ionic 4 and Electron 3, checkout the <a href="https://github.com/paulsutherland/Polyonic/tree/beta/">beta branch.</a>
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![devDependencies Status](https://david-dm.org/paulsutherland/Polyonic/dev-status.svg)](https://david-dm.org/paulsutherland/Polyonic?type=dev)
