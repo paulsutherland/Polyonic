@@ -44,7 +44,7 @@ export class HomePage {
   desktopDB() {
     const ctx = this;
     return new Promise((resolve, reject) => {
-      console.log('Running on the desktop');
+      console.log('This app is running on the desktop');
       console.log('Running Electron:', ctx.electron);
       try {
         const ElectronPouchDB = ctx.electron.remote.require('PouchDB');
@@ -62,7 +62,7 @@ export class HomePage {
   mobileDB() {
     const ctx = this;
     return new Promise((resolve, reject) => {
-      console.log('Running on a mobile device');
+      console.log('This app is running on a mobile device');
       ctx.platform.ready()
       .then(() => {
         // ////////////////////////////////////////////////////////////
@@ -90,7 +90,7 @@ export class HomePage {
   webDB() {
     const ctx = this;
     return new Promise((resolve, reject) => {
-      console.log('Running on a web browser');
+      console.log('This app is running in a web browser');
       ctx.platform.ready()
       .then(() => {
         ctx.db = new PouchDB('app.db');
