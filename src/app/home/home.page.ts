@@ -13,12 +13,13 @@ export class HomePage {
   public dbInfo: Object;
 
   constructor(public electron: ElectronService, private data: DataService) {
+
     this.db = this.data.db
 
     this.data.db.info()
     .then(info => {
       this.dbInfo = info;
     })
-    .catch(error => console.log('Error connecting to Database: ', error));
+    .catch(error => console.log('Error connecting to data service: ', error));
   }
 }
