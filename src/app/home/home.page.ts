@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { ElectronService } from 'ngx-electron';
-import PouchDB from 'pouchdb';
-import cordovaSqlitePlugin from 'pouchdb-adapter-cordova-sqlite';
+import * as PouchDB from 'pouchdb/dist/pouchdb';
+import SimpleCryptor from 'simple-cryptor-pouch';
+PouchDB.plugin(SimpleCryptor);
+// import cordovaSqlitePlugin from 'pouchdb-adapter-cordova-sqlite';
 
 @Component({
   selector: 'app-home',
@@ -44,16 +46,16 @@ export class HomePage {
     return new Promise((resolve, reject) => {
       console.log('Running on the desktop');
       console.log('Running Electron:', ctx.electron);
-      ctx.platform.ready()
-      .then(() => {
+      try {
         const ElectronPouchDB = ctx.electron.remote.require('PouchDB');
-        ctx.db = new ElectronPouchDB('db');
+        const ElectronSimpleCryptor = ctx.electron.remote.require('simple-cryptor-pouch');
+        ElectronPouchDB.plugin(ElectronSimpleCryptor);
+        ctx.db = new ElectronPouchDB('database');
+        ctx.db.simplecryptor('secret'); // <<<<<<<<<<<<< Replace with your secret key
         resolve();
-      })
-      .catch(error => {
-        console.log('Error waiting for platform to load', error);
+      } catch (error) {
         reject(error);
-      });
+      }
     });
   }
 
@@ -71,10 +73,11 @@ export class HomePage {
         // PouchDB.plugin(cordovaSqlitePlugin);
         // ctx.db = new PouchDB('db',{
         //   adapter: 'cordova-sqlite',
-        //   key: 'secret', /// <<<<<<<<<<<<< Replace with your secret key
+        //   key: 'secret', // <<<<<<<<<<<<< Replace with your secret key
         //   iosDatabaseLocation: 'Library'
         // });
-        ctx.db = new PouchDB('db');
+        ctx.db = new PouchDB('database');
+        ctx.db.simplecryptor('secret'); // <<<<<<<<<<<<< Replace with your secret key
         resolve();
       })
       .catch(error => {
@@ -90,7 +93,8 @@ export class HomePage {
       console.log('Running on a web browser');
       ctx.platform.ready()
       .then(() => {
-        ctx.db = new PouchDB('db');
+        ctx.db = new PouchDB('database');
+        ctx.db.simplecryptor('password');
         resolve();
       })
       .catch(error => {

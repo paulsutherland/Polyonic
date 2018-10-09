@@ -60,6 +60,7 @@
     "pouchdb": "^7.0.0",
     "pouchdb-adapter-cordova-sqlite": "^2.0.5",
     "rxjs": "6.2.2",
+    "simple-cryptor-pouch": "^0.1.2",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

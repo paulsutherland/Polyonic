@@ -20,4 +20,5 @@ plugins/*
 www/
 release/
 db/
+database/
 platforms/
