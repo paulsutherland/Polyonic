@@ -6,13 +6,15 @@
 
 <ion-content padding>
   <h2>Welcome to Polyonic!</h2>
+  <hr>
     <!-- All of the Node.js APIs are available in this renderer process. -->
     <span *ngIf="electron.isElectronApp">
-      We are using<pre>
+    We are using<pre>
         Node v{{electron.process.versions.node}}
         Chromium v{{electron.process.versions.chrome}}
         Electron v{{electron.process.versions.electron}}
       </pre>
-      Database is PouchDB<pre>{{dbInfo | json}}</pre>
     </span>
+    Using PouchDB for our Database<small><pre>{{dbInfo | json}}</pre></small>
+
 </ion-content>
