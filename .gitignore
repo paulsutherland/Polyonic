@@ -18,3 +18,5 @@ Thumbs.db
 .sourcemaps/
 plugins/*
 www/
+platforms/
+database/
