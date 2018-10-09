@@ -14,6 +14,7 @@ function createWindow () {
   win = new BrowserWindow({
     width: 1800,
     height: 1200,
+    center: true,
     icon: path.join(__dirname, './resources/electron/icons/64x64.png')
   })
 
