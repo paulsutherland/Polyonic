@@ -1,6 +1,7 @@
 # Polyonic
 ## The ultimate "Universal App"
-> Now using the latest Ionic 4.0.0 beta release and Electron 3.0.3 :tada:
+> Now using the latest Ionic 4.0.0-beta.13 release and Electron 3.0.5 and Angular 7.0.0 :tada:
+> This branch is testing the very latest packages, so it is very likley to break!
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![devDependencies Status](https://david-dm.org/paulsutherland/Polyonic/dev-status.svg)](https://david-dm.org/paulsutherland/Polyonic?type=dev)
@@ -44,7 +45,7 @@ git fetch origin beta:beta
 git checkout beta
 
 npm install
-npm run electron:local 
+npm run electron:local
 ```
 You now have Electron and Ionic running as a Desktop app.
 
