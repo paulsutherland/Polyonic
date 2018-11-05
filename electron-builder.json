@@ -1,5 +1,5 @@
 {
-  "productName": "com.polyonic.starter",
+  "productName": "Polyonic",
   "directories": {
     "buildResources": "./resources/electron",
     "output": "release/"
@@ -21,7 +21,10 @@
         "!_config.yml",
         "!karma.conf.js",
         "!tsconfig.json",
-        "!tslint.json"
+        "!tslint.json",
+        "!app.db/",
+        "!release/",
+        "!resources/"
     ],
   "win": {
     "icon": "resources/electron/windows/icon.ico",
