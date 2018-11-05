@@ -4,7 +4,6 @@ import { environment } from '../environments/environment';
 import { ElectronService } from 'ngx-electron'
 import * as PouchDB from 'pouchdb/dist/pouchdb'
 import SimpleCryptor from 'simple-cryptor-pouch'
-PouchDB.plugin(SimpleCryptor)
 // import cordovaSqlitePlugin from 'pouchdb-adapter-cordova-sqlite'
 
 @Injectable({
@@ -85,6 +84,7 @@ export class DataService {
         //   key: 'secret', // <<<<<<<<<<<<< Replace with your secret key
         //   iosDatabaseLocation: 'Library'
         // })
+        PouchDB.plugin(SimpleCryptor)
         ctx.db = new PouchDB('app.db')
         ctx.db.simplecryptor('secret') // <<<<<<<<<<<<< Replace with your secret key
         resolve()
@@ -102,6 +102,7 @@ export class DataService {
     return new Promise((resolve, reject) => {
       ctx.platform.ready()
       .then(() => {
+        PouchDB.plugin(SimpleCryptor)
         ctx.db = new PouchDB('app.db')
         ctx.db.simplecryptor('password') // <<<<<<<<<<<<< Replace with your secret key
         resolve()
