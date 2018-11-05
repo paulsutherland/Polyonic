@@ -77,7 +77,7 @@ Or using <a href="http://nsis.sourceforge.net/Main_Page">point and click.</a>
 This application was built using the <a href="http://electron.atom.io/">Electron Framework</a> for creating desktop apps and <a href="http://ionicframework.com/">Ionic 2</a> for the UI and creating Native Mobile Applications, Progressive Mobile Web Applications and Web Applications.
 
 # Todo
-- Add Karma and Protractor testing frameworks.  Use <a href="http://lathonez.github.io/2016/ionic-2-unit-testing/">Lathonez's example</a> in his <a href="https://github.com/lathonez/clicker">Clicker app.
+- Add Karma and Protractor testing frameworks.  Use <a href="http://lathonez.github.io/2016/ionic-2-unit-testing/">Lathonez's example</a> in his <a href="https://github.com/lathonez/clicker">Clicker app.</a>
 - Add Office 365 add-in code for running Polyonic in Office 365 applications.
 - Add instructions for running Polyonic on the Hololens (Yep we can) :sunglasses:.
 
