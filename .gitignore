@@ -19,5 +19,5 @@ Thumbs.db
 plugins/*
 www/
 release/
-database/**/
 platforms/
+app.db/
