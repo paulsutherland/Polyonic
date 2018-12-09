@@ -106,8 +106,15 @@ export class DataService {
       ctx.platform.ready()
       .then(() => {
         PouchDB.plugin(SimpleCryptor)
-        ctx.db = new PouchDB('app.db')
+        return ctx.db = new PouchDB('app.db')
+
+      })
+      .then(res => {
         ctx.db.simplecryptor('password') // <<<<<<<<<<<<< Replace with your secret key
+        return ctx.db.info()
+      })
+      .then(info => {
+        ctx.events.publish('database:available', info)
         resolve()
       })
       .catch(error => {
