@@ -22,7 +22,7 @@ export class AppComponent {
   initializeApp() {
     this.platform.ready().then(() => {
       if (this.platform.is('mobile')) {
-        this.statusBar.styleDefault()
+        this.statusBar.styleLightContent()
         this.splashScreen.hide()
       }
 
