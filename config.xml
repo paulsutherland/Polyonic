@@ -3,7 +3,7 @@
     <name>Polyonic</name>
     <description>An awesome Polyonic Ionic/Cordova app.</description>
     <author email="hi@polyonic" href="http://polyonic.com/">Polyonic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.1.180:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -82,5 +82,7 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="cordova-sqlcipher-adapter" spec="0.1.12-rc2" />
+    <allow-navigation href="http://192.168.1.180:8100" sessionid="1b381136" />
     <engine name="ios" spec="4.5.5" />
 </widget>

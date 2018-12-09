@@ -8,7 +8,7 @@
   <h2>Welcome to Polyonic!</h2>
   <hr>
     <!-- All of the Node.js APIs are available in this renderer process. -->
-    <span *ngIf="electron.isElectronApp">
+    <span *ngIf="electron && electron.isElectronApp">
     We are using<pre>
         Node v{{electron.process.versions.node}}
         Chromium v{{electron.process.versions.chrome}}

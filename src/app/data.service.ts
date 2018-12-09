@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core'
-import { Platform } from '@ionic/angular'
+import { Platform, Events } from '@ionic/angular'
 import { environment } from '../environments/environment';
 import { ElectronService } from 'ngx-electron'
 import * as PouchDB from 'pouchdb/dist/pouchdb'
 import SimpleCryptor from 'simple-cryptor-pouch'
-// import cordovaSqlitePlugin from 'pouchdb-adapter-cordova-sqlite'
+import cordovaSqlitePlugin from 'pouchdb-adapter-cordova-sqlite'
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,7 @@ export class DataService {
   public db: any
   public dbInfo: any
 
-  constructor(public electron: ElectronService, private platform: Platform) {}
+  constructor(public electron: ElectronService, private platform: Platform, private events: Events) {}
 
   public setup() {
     const ctx = this
@@ -73,20 +73,23 @@ export class DataService {
     return new Promise((resolve, reject) => {
       ctx.platform.ready()
       .then(() => {
-        // ////////////////////////////////////////////////////////////
-        // The cordova Sqllite plugin does not work in Ionic4/Angular6
-        // Once resolved, we will revert to sqllite
-        // ////////////////////////////////////////////////////////////
-
-        // PouchDB.plugin(cordovaSqlitePlugin)
-        // ctx.db = new PouchDB('db',{
-        //   adapter: 'cordova-sqlite',
-        //   key: 'secret', // <<<<<<<<<<<<< Replace with your secret key
-        //   iosDatabaseLocation: 'Library'
-        // })
-        PouchDB.plugin(SimpleCryptor)
-        ctx.db = new PouchDB('app.db')
-        ctx.db.simplecryptor('secret') // <<<<<<<<<<<<< Replace with your secret key
+        // Go for either an encrypted db or encrypted data
+        // There is a greater performance hit on the encrypted data option
+        PouchDB.plugin(cordovaSqlitePlugin)
+        return ctx.db = new PouchDB('app.db', {
+          adapter: 'cordova-sqlite',
+          key: 'secret', // <<<<<<<<<<<<< Replace with your secret key
+          iosDatabaseLocation: 'Documents'
+        })
+        // PouchDB.plugin(SimpleCryptor)
+        // ctx.db = new PouchDB('app.db')
+        // ctx.db.simplecryptor('secret') // <<<<<<<<<<<<< Replace with your secret key
+      })
+      .then(res => {
+        return ctx.db.info()
+      })
+      .then(info => {
+        ctx.events.publish('database:available', info)
         resolve()
       })
       .catch(error => {
