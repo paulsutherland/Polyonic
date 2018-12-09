@@ -30,7 +30,7 @@
     "ng": "ng",
     "ng:serve": "ng serve",
     "ng:serve:web": "npm run postinstall:web && ng serve -o",
-    "postinstall": "npm run postinstall:electron && npx electron-builder install-app-deps",
+    "postinstall": "npm run postinstall:electron && npx electron-builder install-app-deps && ionic cordova resources",
     "postinstall:web": "node config/postinstall-web",
     "postinstall:electron": "node config/postinstall",
     "test": "npm run postinstall:web && ng test",
