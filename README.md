@@ -14,7 +14,7 @@
 #### Build once using web technologies and deploy everywhere!
 An Electron Ionic application shell for creating Web Apps, Progressive Mobile Web Apps, Native Mobile Apps and Desktop Apps.
 
-This project combines the <a href="http://electron.atom.io/">Electron Framework</a> with <a href="http://ionicframework.com/docs/v2/">Ionic</a> and provides a starter for building out an app that can run on either the desktop (macOS, Windows and Linux), a browser or mobile devices (iOS, Android and Windows Phone).  You can use this application to build and run on one or even all of these platforms.
+This project combines the <a href="http://electron.atom.io/">Electron Framework</a> with <a href="https://beta.ionicframework.com/docs/">Ionic</a> and provides a starter for building out an app that can run on either the desktop (macOS, Windows and Linux), a browser or mobile devices (iOS, Android and Windows Phone).  You can use this application to build and run on one or even all of these platforms.
 
 # Motivation
 When working in small teams creating web and mobile applications, it is difficult and time consuming for new team members to pick up the different technologies for each platform. I have also been asked a few questions that motivated me to try Polyonic out:
@@ -27,7 +27,7 @@ These questions made me think about the limitations of the browser for off-line 
 And that is why I decided to try combining Electron and Ionic. Is it wise to have a universal app using a mobile framework? Probably not, but it is fun :wink:
 
 # Quick start
-The dependencies for this project are <a href="https://nodejs.org">Node.js</a>, <a href="http://ionicframework.com/docs/v2/getting-started/installation/">Ionic Framework</a> and <a href="https://www.npmjs.com/package/cordova">Cordova</a>.
+The dependencies for this project are <a href="https://nodejs.org">Node.js</a>, <a href="https://beta.ionicframework.com/docs/">Ionic Framework</a> and <a href="https://www.npmjs.com/package/cordova">Cordova</a>.
 
 You will need:
 
@@ -71,7 +71,7 @@ setx PATH "%PATH%;C:\Program Files (x86)\NSIS"
 Or using <a href="http://nsis.sourceforge.net/Main_Page">point and click.</a>
 
 # Credits
-This application was built using the <a href="http://electron.atom.io/">Electron Framework</a> for creating desktop apps and <a href="http://ionicframework.com/">Ionic 2</a> for the UI and creating Native Mobile Applications, Progressive Mobile Web Applications and Web Applications.
+This application was built using the <a href="http://electron.atom.io/">Electron Framework</a> for creating desktop apps and <a href="http://ionicframework.com/">Ionic Framework</a> for the UI and creating Native Mobile Applications, Progressive Mobile Web Applications and Web Applications.
 
 # Todo
 - Add Office 365 add-in code for running Polyonic in Office 365 applications.
