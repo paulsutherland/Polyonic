@@ -39,7 +39,7 @@
         </ion-item>
         <ion-item href="https://beta.ionicframework.com/docs/layout/structure">
           <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-          <ion-label>Change Your App Layout</ion-label>
+           <ion-label>Change Your App Layout</ion-label>
         </ion-item>
         <ion-item href="https://beta.ionicframework.com/docs/theming/basics">
           <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
@@ -56,7 +56,7 @@
     </ion-card-header>
     <ion-card-content>
       <!-- All of the Node.js APIs are available in this renderer process. -->
-      <span *ngIf="electron && electron.isElectronApp">
+      <span *ngIf="electron.process && electron.isElectronApp">
         <pre>
           Node v{{electron.process.versions.node}}
           Chromium v{{electron.process.versions.chrome}}
