@@ -1,4 +1,5 @@
 const electron = require('electron')
+const shell = require('electron').shell
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 const path = require('path')
@@ -32,6 +33,11 @@ function createWindow () {
   }
 
   win.webContents.openDevTools()
+
+  win.webContents.on('will-navigate', (event, url) => {
+    event.preventDefault()
+    shell.openExternal(url)
+  })
 
   // Emitted when the window is closed.
   win.on('closed', () => {
