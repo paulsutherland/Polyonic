@@ -1,6 +1,6 @@
 # Polyonic
 ## The ultimate "Universal App"
-> Now using the latest Ionic 4.0.0-rc.2 release and Electron 4.0.1 and Angular 7.2.1 :tada:
+> Now using the latest Ionic 4.0.0 Neutronium release and Electron 4.0.2 and Angular 7.2.2 :tada:
 > This branch is testing the very latest packages, so it is very likley to break!
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
