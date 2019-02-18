@@ -3,7 +3,7 @@ import { Platform, Events } from '@ionic/angular'
 import { environment } from '../environments/environment';
 import { ElectronService } from 'ngx-electron'
 import * as PouchDB from 'pouchdb/dist/pouchdb'
-import SimpleCryptor from 'simple-cryptor-pouch'
+import SecurePouch from 'polyonic-secure-pouch'
 import cordovaSqlitePlugin from 'pouchdb-adapter-cordova-sqlite'
 
 @Injectable({
@@ -38,8 +38,8 @@ export class DataService {
       try {
 
         const ElectronPouchDB = ctx.electron.remote.require('pouchdb')
-        const ElectronSimpleCryptor = ctx.electron.remote.require('simple-cryptor-pouch')
-        ElectronPouchDB.plugin(ElectronSimpleCryptor)
+        const ElectronSecurePouch = ctx.electron.remote.require('polyonic-secure-pouch')
+        ElectronPouchDB.plugin(ElectronSecurePouch)
 
         let userDataPath = '.'
         if (environment.production) {
@@ -48,7 +48,7 @@ export class DataService {
         }
 
         ctx.db = new ElectronPouchDB(userDataPath + '/app.db')
-        ctx.db.simplecryptor('secret') // <<<<<<<<<<<<< Replace with your secret key
+        ctx.db.encrypt('secret') // <<<<<<<<<<<<< Replace with your secret key
 
         // The app database won't be created until the api is called
         // This can cause issues on a fresh production build
@@ -81,9 +81,9 @@ export class DataService {
           key: 'secret', // <<<<<<<<<<<<< Replace with your secret key
           iosDatabaseLocation: 'Documents'
         })
-        // PouchDB.plugin(SimpleCryptor)
+        // PouchDB.plugin(SecurePouch)
         // ctx.db = new PouchDB('app.db')
-        // ctx.db.simplecryptor('secret') // <<<<<<<<<<<<< Replace with your secret key
+        // ctx.db.securePouch('secret') // <<<<<<<<<<<<< Replace with your secret key
       })
       .then(res => {
         return ctx.db.info()
@@ -105,12 +105,12 @@ export class DataService {
     return new Promise((resolve, reject) => {
       ctx.platform.ready()
       .then(() => {
-        PouchDB.plugin(SimpleCryptor)
+        PouchDB.plugin(SecurePouch)
         return ctx.db = new PouchDB('app.db')
 
       })
       .then(res => {
-        ctx.db.simplecryptor('password') // <<<<<<<<<<<<< Replace with your secret key
+        ctx.db.encrypt('password') // <<<<<<<<<<<<< Replace with your secret key
         return ctx.db.info()
       })
       .then(info => {
