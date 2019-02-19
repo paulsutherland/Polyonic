@@ -146,7 +146,7 @@ You will need to include a key or password/secret from the user, or an api app, 
 ## NPM Script Commands
 
 | Platform/Commands ||
-|-|-|
+|:-|:-|
 | **Desktop** ||
 | `npm run electron:dev` | For development using live reload and opens with developer tools |
 | `npm run electron:local` | Build and run on the desktop, no livereload or developer tools |
