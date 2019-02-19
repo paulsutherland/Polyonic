@@ -205,7 +205,7 @@ This project is a generic shell/seed project that lets you build your app for mu
 - WebXR
 - WebRTC
 
-You can contact us at polyonic.com :metal:
+You can contact us at [polyonic.com](http://polyonic.com) :metal:
 
 ## License
 
