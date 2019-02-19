@@ -89,7 +89,7 @@ npm run emulate:android-dev
 npm run device:android-dev
 ```
 
-# Building on Windows
+## Building on Windows
 
 For building on Windows you will need to install the Nullsoft Scriptable Install System.
 
@@ -139,37 +139,33 @@ public setup() {
 
 If your app requires your data to be encrypted at rest, the app includes an example of using the [cordova-sqlcipher-adapter](https://github.com/brodybits/cordova-sqlcipher-adapter) plugin for Ionic and the [polyonic-secure-pouch](https://github.com/paulsutherland/polyonic-secure-pouch) plugin for the desktop and browser.
 
-The Cordova example encrypts the local sqlite database, whereas the secure pouch plugin encrypts and decrypts your data when it is saved or fetched from the browser database. Either way, at rest your data is encrypted.
+The Cordova example encrypts the local sqlite database, whereas the secure pouch plugin encrypts and decrypts your data when it is saved or fetched from the browser database. Either way, at rest, your data is encrypted.
 
 You will need to include a key or password/secret from the user, or an api app, to encrypt the data.  You can store this key in [Ionic Secure Storage](https://ionicframework.com/docs/native/secure-storage/) or for the desktop you can use [Keytar](https://github.com/atom/node-keytar).  
 
 ## NPM Script Commands
 
-| Desktop                |                                      | 
-|------------------------|--------------------------------------|
-| `npm run electron:dev` | For development using live reload and opens with developer tools   |
-| `npm run electron:local` | Build and run on the desktop, no livereload or developer tools   |
+| Platform/Commands ||
+|-|-|
+| **Desktop** ||
+| `npm run electron:dev` | For development using live reload and opens with developer tools |
+| `npm run electron:local` | Build and run on the desktop, no livereload or developer tools |
 | `npm run electron:linux` | Production build for linux platform.  (Requires Linux) |
 | `npm run electron:mac` | Production build for macOS.  (Requires macOS) |
 | `npm run electron:windows` | Production build for Windows.  (Requires Windows) |
-
-| Mobile               |                                      | 
-|------------------------|--------------------------------------|
-| iOS             |                                      | 
-| `npm run emulate:ios-dev` | For iOS development on the simulator using live reload   |
+| **iOS** ||
+| `npm run emulate:ios-dev` | For iOS development on the simulator using live reload |
 | `npm run emulate:ios` | For iOS development on the simulator |
 | `npm run device:ios-dev` | For iOS development on an iOS device using live reload |
 | `npm run device:ios` | For iOS development on an iOS device |
 | `npm run release:ios` | Production build for iOS.  (Requires XCode on macOS) |
-| Android             |                                      | 
-| `npm run emulate:android-dev` | For Android development on an emulator using live reload   |
-| `npm run emulate:android` | For Android development on an emulator  |
+| **Android** ||
+| `npm run emulate:android-dev` | For Android development on an emulator using live reload |
+| `npm run emulate:android` | For Android development on an emulator |
 | `npm run device:android-dev` | For Android development on an Android device using live reload |
 | `npm run device:android` | For Android development on an Android device |
-
-| Web Apps and PWA Apps                |                                      | 
-|------------------------|--------------------------------------|
-| `npm run ionic` | For web and progressive web app development using live reload  |
+| **Web Apps and PWA Apps** ||
+| `npm run ionic` | For web and progressive web app development using live reload |
 
 ## Publishing your apps
 
@@ -181,9 +177,11 @@ You will need to include a key or password/secret from the user, or an api app, 
 
 [How to publish a progressive web app](https://ionicframework.com/docs/publishing/progressive-web-app)
 
-## Using with Ionic App Flow
+## Ionic App Flow
 
-To prevent issues when developing your apps using Ionic App Flow for live deploy, the Polyonic app uses a script to disable deploy in development mode, and then uses a precommit hook to enable it when checking into git.
+When using [Ionic App Flow](https://ionicframework.com/docs/appflow/quickstart/installation) and the ```cordova-plugin-ionic``` plugin, you may experience the app hanging on start-up whilst developing your apps in live-reload. To prevent this, the app uses a script to disable deploy in the ```config.xml``` file in development mode.  It then then uses a pre-commit hook to enable it when checking into git.
+
+Using the above npm commands will make sure you don't run into issues with Ioinc App Flow.
 
 ## Credits
 
