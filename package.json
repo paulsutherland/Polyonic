@@ -36,7 +36,7 @@
     "ng": "ng",
     "ng:serve": "ng serve",
     "ng:serve:web": "npm run postinstall:web && ng serve -o",
-    "postinstall": "npm run postinstall:electron && npx electron-builder install-app-deps && ionic cordova resources",
+    "postinstall": "npm run postinstall:electron && npx electron-builder install-app-deps",
     "postinstall:web": "node config/postinstall-web",
     "postinstall:electron": "node config/postinstall",
     "precommit": "node config/enable-deploy && git add config.xml",
