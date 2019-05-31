@@ -7,7 +7,7 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
 
-> Now using Ionic 4.0.0 Neutronium, Electron 4.0.2 and Angular 7.2.3 :tada:. See here for [Ionic 1](https://github.com/paulsutherland/Polyonic/tree/Ionic1) and [Ionic 3](https://github.com/paulsutherland/Polyonic/tree/Ionic3).
+> Now using Ionic 4.4.2 Beryllium, Electron 4.2.2 and Angular 7.2.9 :tada:. See here for [Ionic 1](https://github.com/paulsutherland/Polyonic/tree/Ionic1) and [Ionic 3](https://github.com/paulsutherland/Polyonic/tree/Ionic3).
 
 ## Build once using web technologies and deploy everywhere!
 
