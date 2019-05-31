@@ -20,51 +20,11 @@ export class DataService {
     const ctx = this
     console.log('Setting up the application database')
 
-    if (ctx.electron.isElectronApp) {
-      return ctx.desktopDB()
-    }
     if (ctx.platform.is('mobile')) {
       return ctx.mobileDB()
     } else {
       return ctx.webDB()
     }
-  }
-
-  private desktopDB() {
-    const ctx = this
-    console.log('This app is running on the desktop')
-    return new Promise((resolve, reject) => {
-      console.log('Running Electron:', ctx.electron)
-      try {
-
-        const ElectronPouchDB = ctx.electron.remote.require('pouchdb')
-        const ElectronSecurePouch = ctx.electron.remote.require('polyonic-secure-pouch')
-        ElectronPouchDB.plugin(ElectronSecurePouch)
-
-        let userDataPath = '.'
-        if (environment.production) {
-          userDataPath = (ctx.electron.remote.app).getPath('userData')
-          console.log(`Application database is located in the application user path: ${userDataPath}`)
-        }
-
-        ctx.db = new ElectronPouchDB(userDataPath + '/app.db')
-        ctx.db.encrypt('secret') // <<<<<<<<<<<<< Replace with your secret key
-
-        // The app database won't be created until the api is called
-        // This can cause issues on a fresh production build
-        // Therefore, call db.info and then resolve to ensure the
-        // database exists
-        ctx.db.info()
-        .then(res => {
-          console.log(JSON.stringify(res, null, 2))
-          resolve()
-        })
-        .catch(error => reject(error))
-
-      } catch (error) {
-        reject(error)
-      }
-    })
   }
 
   private mobileDB() {
