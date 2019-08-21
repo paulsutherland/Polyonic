@@ -15,7 +15,10 @@ function createWindow () {
     width: 1800,
     height: 1200,
     center: true,
-    icon: path.join(__dirname, './resources/electron/icons/64x64.png')
+    icon: path.join(__dirname, './resources/electron/icons/64x64.png'),
+    webPreferences: {
+      nodeIntegration: true
+    }
   })
 
   if (serve) {
