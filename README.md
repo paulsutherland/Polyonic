@@ -69,7 +69,7 @@ npm run electron:dev:debug
 
 Open Chrome and navigate to chrome://inspect/ and select the Electron remote target that is available to attach the debugger to.
 
-If you require live reloading of the main process debugging session, then it is recommended that you install the Chrome plugin [Node.js V8 --inspector Manager (NiM)](https://chrome.google.com/webstore/detail/nodejs-v8-inspector-manag/gnhhdgbaldcilmgcpfddgdbkhjohddkj?hl=en). In the plugin settings. setting the host to localhost, the port to 9229 and the app to auto will allow you to live reload changes made to the main process (electron.js file).
+If you require live reloading of the main process debugging session, then it is recommended that you install the Chrome plugin [Node.js V8 --inspector Manager (NiM)](https://chrome.google.com/webstore/detail/nodejs-v8-inspector-manag/gnhhdgbaldcilmgcpfddgdbkhjohddkj?hl=en). In the plugin settings, set the host to localhost, the port to 9229 and the app to auto.  This will allow you to live reload changes made to the main process (electron.js file).
 
 ```node
 npm run electron:dev:debug-live
