@@ -11,6 +11,7 @@ const args = process.argv.slice(1)
 serve = args.some(val => val === '--serve')
 
 function createWindow () {
+  debugger
   win = new BrowserWindow({
     width: 1800,
     height: 1200,
@@ -22,9 +23,6 @@ function createWindow () {
   })
 
   if (serve) {
-    require('electron-reload')(__dirname, {
-      electron: require(`${__dirname}/node_modules/electron`)
-    })
     win.loadURL('http://localhost:4200')
   } else {
     win.loadURL(url.format({
