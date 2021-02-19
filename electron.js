@@ -6,9 +6,9 @@ const url = require('url')
 
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = true
 
-let win, serve
+let win
 const args = process.argv.slice(1)
-serve = args.some(val => val === '--serve')
+const serve = args.some(val => val === '--serve')
 
 function createWindow () {
   debugger
@@ -18,12 +18,14 @@ function createWindow () {
     center: true,
     icon: path.join(__dirname, './resources/electron/icons/64x64.png'),
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      enableRemoteModule: true
     }
   })
 
   if (serve) {
     win.loadURL('http://localhost:4200')
+    win.webContents.openDevTools()
   } else {
     win.loadURL(url.format({
       pathname: path.join(__dirname, 'www/index.html'),
@@ -31,8 +33,6 @@ function createWindow () {
       slashes: true
     }))
   }
-
-  win.webContents.openDevTools()
 
   // Emitted when the window is closed.
   win.on('closed', () => {

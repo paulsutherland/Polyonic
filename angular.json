@@ -20,6 +20,12 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "allowedCommonJsDependencies": [
+               "pouchdb-adapter-cordova-sqlite",
+               "polyonic-secure-pouch",
+               "pouchdb",
+               "pouchdb-utils"
+            ],
             "assets": [
               {
                 "glob": "**/*",
@@ -53,7 +59,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,

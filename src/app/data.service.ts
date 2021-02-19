@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core'
-import { Platform, Events } from '@ionic/angular'
-import { environment } from '../environments/environment';
+import { Platform } from '@ionic/angular'
+import { environment } from '../environments/environment'
 import { ElectronService } from 'ngx-electron'
+import { EventService } from './events.service'
 import * as PouchDB from 'pouchdb/dist/pouchdb'
 import SecurePouch from 'polyonic-secure-pouch'
 import cordovaSqlitePlugin from 'pouchdb-adapter-cordova-sqlite'
@@ -14,7 +15,11 @@ export class DataService {
   public db: any
   public dbInfo: any
 
-  constructor(public electron: ElectronService, private platform: Platform, private events: Events) {}
+  constructor(
+    public electron: ElectronService,
+    private events: EventService,
+    private platform: Platform
+  ) {}
 
   public setup() {
     const ctx = this
@@ -30,7 +35,7 @@ export class DataService {
   private mobileDB() {
     const ctx = this
     console.log('This app is running on a mobile device')
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
       ctx.platform.ready()
       .then(() => {
         // Go for either an encrypted db or encrypted data
@@ -62,7 +67,7 @@ export class DataService {
   private webDB() {
     const ctx = this
     console.log('This app is running in a web browser')
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
       ctx.platform.ready()
       .then(() => {
         PouchDB.plugin(SecurePouch)
