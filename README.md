@@ -7,7 +7,7 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
 
-> Now using Ionic 4.11.8, Electron 7.1.9 and Angular 8.2.14 :tada:. See here for [Ionic 1](https://github.com/paulsutherland/Polyonic/tree/Ionic1) and [Ionic 3](https://github.com/paulsutherland/Polyonic/tree/Ionic3).
+> Now using Ionic 5, Electron 11 and Angular 11 :tada:. See here for [Ionic 1](https://github.com/paulsutherland/Polyonic/tree/Ionic1) and [Ionic 3](https://github.com/paulsutherland/Polyonic/tree/Ionic3).
 
 ## Build once using web technologies and deploy everywhere!
 
@@ -31,7 +31,7 @@ And that is why I decided to try combining Electron and Ionic. Is it wise to hav
 
 The dependencies for this project are [Node.js](https://nodejs.org), [Ionic Framework](https://ionicframework.com/) and [Cordova](https://cordova.apache.org/).
 
-You will need the latest Node 10 LTS and NPM 6+ installed.
+You will need the latest Node 14 LTS and NPM 7 installed.
 
 Make sure you have [node installed and running](https://nodejs.org/en/download/), then install Ionic and Cordova globally using npm.
 
@@ -190,12 +190,6 @@ You will need to include a key or password/secret from the user, or an api app, 
 [How to publish a macOS and/or Windows App](https://ionicframework.com/docs/publishing/desktop-app)
 
 [How to publish a progressive web app](https://ionicframework.com/docs/publishing/progressive-web-app)
-
-## Ionic App Flow
-
-When using [Ionic App Flow](https://ionicframework.com/docs/appflow/quickstart/installation) and the ```cordova-plugin-ionic``` plugin, you may experience the app hanging on start-up whilst developing your apps in live-reload. To prevent this, the app uses a script to disable deploy in the ```config.xml``` file in development mode.  It then then uses a pre-commit hook to enable it when checking into git.
-
-Using the above npm commands will make sure you don't run into issues with Ioinc App Flow.
 
 ## Credits
 
