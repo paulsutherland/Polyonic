@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { ElectronService } from 'ngx-electron'
+import { ElectronService } from '../electron.service'
 import { DataService } from '../data.service'
 import { EventService } from '../events.service'
 

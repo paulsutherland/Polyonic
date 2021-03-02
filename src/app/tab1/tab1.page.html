@@ -25,11 +25,11 @@
     </ion-card-header>
     <ion-card-content>
       <!-- All of the Node.js APIs are available in this renderer process. -->
-      <span *ngIf="electron.process && electron.isElectronApp">
+      <span *ngIf="electron.remote.process && electron.isElectronApp">
         <pre>
-          Node v{{electron.process.versions.node}}
-          Chromium v{{electron.process.versions.chrome}}
-          Electron v{{electron.process.versions.electron}}
+          Node v{{electron.remote.process.versions.node}}
+          Chromium v{{electron.remote.process.versions.chrome}}
+          Electron v{{electron.remote.process.versions.electron}}
         </pre>
       </span>
       We are using PouchDB for our Database<pre>{{dbInfo | json}}</pre>
