@@ -25,7 +25,7 @@
     </ion-card-header>
     <ion-card-content>
       <!-- All of the Node.js APIs are available in this renderer process. -->
-      <span *ngIf="electron.remote.process && electron.isElectronApp">
+      <span *ngIf="electron.remote && electron.remote.process && electron.isElectronApp">
         <pre>
           Node v{{electron.remote.process.versions.node}}
           Chromium v{{electron.remote.process.versions.chrome}}
