@@ -119,18 +119,20 @@ Or using [point and click](http://nsis.sourceforge.net/Main_Page).
 
 ## Porting existing Ionic Apps
 
-It is possible to port your existing apps to run on the desktop, but you may need to make some platform adjustments to call out to an equivalent api for any mobile plugins your app uses.  The app makes use of the [ngx-electron module](https://github.com/ThorstenHans/ngx-electron) for Angular which makes is easy to call the Electron APIs from within the Ionic components.
+It is possible to port your existing apps to run on the desktop, but you may need to make some platform adjustments to call out to an equivalent api for any mobile plugins your app uses.  The app includes and angular service for electron which makes is easy to call the Electron APIs from within the Ionic components.
 
-For example you may want to check what platform you are running on before you make an api call, either calling out to an Ionic plugin, an Electron api  or a browser api.  
+For example you may want to check what platform you are running on before you make an api call, either calling out to an Ionic plugin, an Electron api or a browser api.  
 
 The data service component ```data.service.ts``` has an example of setting up a PouchDB database depending upon what platform the app is running on.  
 
 ```javascript
-import { ElectronService } from 'ngx-electron'
-import { Platform, Events } from '@ionic/angular'
+import { ElectronService } from './electron.service'
+import { Platform } from '@ionic/angular'
+
 ...
 
-constructor(public electron: ElectronService, private platform: Platform, private events: Events) {}
+constructor(public electron: ElectronService, private platform: Platform) {}
+
 ...
 
 public setup() {
