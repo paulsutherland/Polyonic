@@ -25,13 +25,13 @@ function createWindow () {
 
   if (serve) {
     win.loadURL('http://localhost:4200')
-    win.webContents.openDevTools()
   } else {
-    win.loadURL(url.format({
-      pathname: path.join(__dirname, 'www/index.html'),
-      protocol: 'file:',
-      slashes: true
-    }))
+    win.loadURL(`file://${__dirname}/www/index.html`)
+  }
+
+  console.log(`Node Environment: ${process.env.NODE_ENV}`)
+  if (process.env.NODE_ENV === 'development') {
+    win.toggleDevTools()
   }
 
   // Emitted when the window is closed.
