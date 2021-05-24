@@ -109,7 +109,8 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
-      "cordova-sqlcipher-adapter": {}
+      "cordova-sqlcipher-adapter": {},
+      "cordova-plugin-androidx-adapter": {}
     },
     "platforms": []
   }
