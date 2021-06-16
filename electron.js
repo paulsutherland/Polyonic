@@ -2,9 +2,8 @@ const electron = require('electron')
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 const path = require('path')
-const url = require('url')
 
-process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = true
+// process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = true
 
 let win
 const args = process.argv.slice(1)
@@ -19,7 +18,8 @@ function createWindow () {
     icon: path.join(__dirname, './resources/electron/icons/64x64.png'),
     webPreferences: {
       nodeIntegration: true,
-      enableRemoteModule: true
+      enableRemoteModule: true,
+      contextIsolation: false
     }
   })
 
@@ -28,6 +28,10 @@ function createWindow () {
   } else {
     win.loadURL(`file://${__dirname}/www/index.html`)
   }
+
+  win.webContents.on('did-fail-load', () => {
+    win.loadURL(`file://${__dirname}/www/index.html`)
+  })
 
   console.log(`Node Environment: ${process.env.NODE_ENV}`)
   if (process.env.NODE_ENV === 'development') {
